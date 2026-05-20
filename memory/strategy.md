@@ -24,6 +24,16 @@ to beat the S&P 500 (SPY) over a multi-month horizon. Research and then write:
 7. **Watchlist** — an initial list of 8–15 candidate tickers with one-line
    reasons.
 
+**Principles to honor when designing it:**
+- The benchmark is SPY *total return*. The strategy must have a credible reason
+  to beat it — selective stock picking, not closet-indexing.
+- Diversify: aim for 8–15 positions across several sectors. No single name
+  should sit near the 20% cap at entry.
+- Favor quality: durable revenue/earnings growth, a healthy balance sheet, a
+  defensible business, at a valuation that is not stretched.
+- Prefer liquid US large/mid-cap stocks and broad ETFs. Respect every guardrail
+  in `CLAUDE.md`.
+
 Keep it concise and actionable. The strategy is a living document — the weekly
 review updates it.
 

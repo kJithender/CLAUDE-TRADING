@@ -4,6 +4,7 @@ _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
 **Last updated:** _never_
+**Inception:** _set on the first run — date + starting equity; the SPY benchmark anchors here_
 
 ## Account
 

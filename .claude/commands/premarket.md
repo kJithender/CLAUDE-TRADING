@@ -12,6 +12,9 @@ If `memory/strategy.md` still has `STATUS: NOT_INITIALIZED`:
 - Rewrite `memory/strategy.md` with a full strategy (thesis, universe, entry
   signals, sizing, exit signals, cash policy, watchlist) and set
   `STATUS: ACTIVE`.
+- Record the inception baseline in `memory/portfolio.md`: today's date and the
+  account's current equity (from `./scripts/alpaca.sh account`). Every future
+  "vs SPY since inception" comparison anchors to this baseline.
 - Then continue with the steps below.
 
 ## 2. Sync portfolio state

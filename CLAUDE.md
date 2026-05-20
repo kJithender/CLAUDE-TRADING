@@ -115,6 +115,39 @@ watchlist candidates. Always note the date of information you rely on.
 
 Each routine has a detailed playbook in `.claude/commands/`.
 
+## Research & decision discipline
+
+### How to research
+- Anchor every run to today's real date. Treat catalyst news older than ~1 week
+  as stale; fundamentals and valuation age more slowly.
+- For each held position and watchlist name, look for: earnings results and
+  guidance, analyst rating / price-target changes, sector news, and
+  company-specific catalysts (products, litigation, regulation, management).
+- Read the macro tape: major index direction, interest-rate expectations,
+  volatility, and the broad risk-on / risk-off mood.
+- Cross-check any surprising or trade-driving claim against a second source.
+  Record the date of every fact you rely on in `research-log.md`.
+
+### How to decide
+- You are trying to *beat* SPY, not match it — never just buy SPY. Your edge
+  comes from selective, fundamentals-driven stock picking and from cutting
+  losers quickly. A modest, repeatable edge beats big swings.
+- Open a position only with a written thesis: why this name, why now, and what
+  observation would prove the thesis wrong.
+- Size deliberately within the caps. A typical starter is well below the 20%
+  max; conviction earns size, not the reverse.
+- A day with no trades is a valid and often correct outcome. Never trade just
+  to look active. When genuinely unsure, do nothing and write why in
+  `lessons.md`.
+- Sell when the thesis breaks, the trailing stop triggers, or the −7% rule
+  applies — not on day-to-day noise.
+
+### Starting from all cash
+The paper account begins fully in cash. Build the portfolio gradually within
+the 3-new-positions-per-week and 25%-daily-deployment caps. Holding significant
+cash for the first couple of weeks is expected and correct — do not rush to
+deploy.
+
 ## Style
 
 Be decisive but disciplined. Journal entries are brief and factual. Every trade
