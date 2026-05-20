@@ -102,7 +102,9 @@ routine commits to `main`.
 For each file in `routines/`, create a routine in the Desktop app:
 - Type: **Remote**, repo: this repo, branch `main`, environment: `trading`
 - Model: **Claude Opus 4.7**
-- Schedule: the cron + `America/New_York` timezone from the routine file
+- Schedule: the cron from the routine file, with timezone **America/New_York**
+  — always use NY time regardless of where you live, so the schedule stays
+  pinned to US market hours through daylight-saving changes
 - Prompt: the prompt block from the routine file
 - **Permissions → enable "allow unrestricted branch pushes"** (so the agent can
   commit to `main`). Do this for all 5.
