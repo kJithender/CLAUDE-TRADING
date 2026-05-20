@@ -1,7 +1,8 @@
 # Routine: End-of-Day Close
 
-- **Cron:** `50 15 * * 1-5`  (3:50 PM, Mon–Fri — 10 min before the bell)
-- **Timezone:** America/New_York — set this in the Claude Desktop routine UI
+- **Cron (UTC):** `50 19 * * 1-5` summer / `50 20 * * 1-5` winter → 3:50 PM US Eastern
+- The routine UI has no timezone picker — crons run in UTC. See the
+  daylight-saving note in `README.md`.
 - **Repo / branch:** this repo / `main`
 - **Environment:** your `trading` cloud environment (all 5 env vars present)
 

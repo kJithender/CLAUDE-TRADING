@@ -1,7 +1,8 @@
 # Routine: Weekly Review
 
-- **Cron:** `30 16 * * 5`  (4:30 PM, Friday only)
-- **Timezone:** America/New_York — set this in the Claude Desktop routine UI
+- **Cron (UTC):** `30 20 * * 5` summer / `30 21 * * 5` winter → 4:30 PM US Eastern, Friday
+- The routine UI has no timezone picker — crons run in UTC. See the
+  daylight-saving note in `README.md`.
 - **Repo / branch:** this repo / `main`
 - **Environment:** your `trading` cloud environment (all 5 env vars present)
 

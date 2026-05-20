@@ -1,7 +1,8 @@
 # Routine: Pre-Market
 
-- **Cron:** `0 8 * * 1-5`  (8:00 AM, Mon–Fri)
-- **Timezone:** America/New_York — set this in the Claude Desktop routine UI
+- **Cron (UTC):** `0 12 * * 1-5` summer / `0 13 * * 1-5` winter → 8:00 AM US Eastern
+- The routine UI has no timezone picker — crons run in UTC. See the
+  daylight-saving note in `README.md`.
 - **Repo / branch:** this repo / `main`
 - **Environment:** your `trading` cloud environment (all 5 env vars present)
 

@@ -1,7 +1,8 @@
 # Routine: Midday
 
-- **Cron:** `30 12 * * 1-5`  (12:30 PM, Mon–Fri)
-- **Timezone:** America/New_York — set this in the Claude Desktop routine UI
+- **Cron (UTC):** `30 16 * * 1-5` summer / `30 17 * * 1-5` winter → 12:30 PM US Eastern
+- The routine UI has no timezone picker — crons run in UTC. See the
+  daylight-saving note in `README.md`.
 - **Repo / branch:** this repo / `main`
 - **Environment:** your `trading` cloud environment (all 5 env vars present)
 

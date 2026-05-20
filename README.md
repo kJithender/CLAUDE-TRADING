@@ -41,6 +41,24 @@ scripts/
 | Close         | 3:50 PM Mon–Fri  | EOD P/L vs SPY, journal, WhatsApp summary |
 | Weekly review | 4:30 PM Friday   | Week vs SPY, self-grade, tune strategy |
 
+### Cron & daylight saving (important)
+
+The web routine UI has **no timezone picker** — schedules run in **UTC**. The
+crons below are US Eastern market time converted to UTC. US Eastern observes
+daylight saving; Arizona does not — so **the UTC crons must be shifted by one
+hour twice a year**:
+
+| Routine | Summer — US EDT (active now) | Winter — US EST (from 1st Sun of Nov) |
+|---------|------------------------------|----------------------------------------|
+| Pre-market    | `0 12 * * 1-5`  | `0 13 * * 1-5`  |
+| Market open   | `35 13 * * 1-5` | `35 14 * * 1-5` |
+| Midday        | `30 16 * * 1-5` | `30 17 * * 1-5` |
+| Close         | `50 19 * * 1-5` | `50 20 * * 1-5` |
+| Weekly review | `30 20 * * 5`   | `30 21 * * 5`   |
+
+When US clocks change, edit each routine's cron to the other column. (If a
+future UI adds a timezone field, set it to `America/New_York` and ignore this.)
+
 ---
 
 ## Setup — what you need to connect
