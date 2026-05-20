@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./scripts/alpaca.sh:*)",
+      "Bash(bash ./scripts/alpaca.sh:*)",
+      "Bash(./scripts/notify.sh:*)",
+      "Bash(bash ./scripts/notify.sh:*)",
+      "Bash(chmod:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git pull:*)",
+      "WebSearch",
+      "WebFetch"
+    ]
+  }
+}
