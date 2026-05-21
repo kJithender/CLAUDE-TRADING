@@ -39,10 +39,10 @@ Append a new dated entry to `memory/research-log.md` ending with a
 **"Planned trades for today"** section. If no trades are warranted, write
 "No trades planned." explicitly.
 
-## 5. Notify only if urgent
-Do NOT trade now (market is closed). Send a WhatsApp message via
-`./scripts/notify.sh` ONLY if something needs the human's attention before the
-open (e.g. a held name gapped hard on bad news).
+## 5. Notify
+Do NOT trade now (market is closed). Send a WhatsApp summary via
+`./scripts/notify.sh` on every run — a few words on market posture plus the
+planned trades for today (or "no trades planned"). Put anything urgent first.
 
 ## 6. Commit
 Stage all changed files, commit with a clear message, and push to `main`:

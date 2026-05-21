@@ -24,8 +24,9 @@ change from its average entry price.
 Append any actions to `memory/trade-log.md` and refresh `memory/portfolio.md`.
 
 ## 5. Notify
-Send a WhatsApp message via `./scripts/notify.sh` **only if an action was
-taken** (a position was cut or a stop tightened). Otherwise, no notification.
+Send a WhatsApp summary via `./scripts/notify.sh` on every run: any positions
+cut or stops tightened, or "Midday check — all positions within range, no
+action".
 
 ## 6. Commit
 `git add -A && git commit -m "midday: <summary>" && git push -u origin main`.

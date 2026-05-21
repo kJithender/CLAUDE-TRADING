@@ -30,9 +30,9 @@ positions/week, 25% max daily deployment, 5% min cash), then:
 - Update `memory/portfolio.md` with the new positions and balances.
 
 ## 5. Notify
-Send ONE WhatsApp summary via `./scripts/notify.sh` **only if a trade was
-placed** — what was bought/sold, fill price, stop set. If no trades, do not
-notify.
+Send one WhatsApp summary via `./scripts/notify.sh` on every run: if trades were
+placed, list what was bought/sold, fill price, and the stop set; if not, send
+"Market open — no trades, <one-line reason>".
 
 ## 6. Commit
 `git add -A && git commit -m "market-open: <summary>" && git push -u origin main`.
