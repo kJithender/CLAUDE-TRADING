@@ -3,7 +3,7 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-05-21 (pre-market)
+**Last updated:** 2026-05-21 ~13:40 ET (pre-market routine — late run)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
 ## Account
@@ -24,6 +24,11 @@ the last known state, but always re-fetches live data before trading._
 
 | Period | Bull | SPY | Difference |
 |--------|------|-----|------------|
-| Since inception (2026-05-21) | 0.00% | 0.00% | 0.00% |
+| Since inception (2026-05-21) | 0.00% | +0.44% | −0.44% |
 
-_Inception SPY price: $739.44. Bull inception equity: $100,000.00._
+_Inception SPY price: $739.44. SPY now $742.69. Bull inception equity: $100,000.00._
+
+## Notes
+
+Portfolio is 100% cash. Three starter positions (AVGO, MSFT, AMZN) are planned
+for the May 22 market open — see research-log.md for the plan and sizing.
