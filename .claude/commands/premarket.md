@@ -45,5 +45,6 @@ Do NOT trade now (market is closed). Send a WhatsApp summary via
 planned trades for today (or "no trades planned"). Put anything urgent first.
 
 ## 6. Commit
-Stage all changed files, commit with a clear message, and push to `main`:
-`git add -A && git commit -m "premarket: <summary>" && git push -u origin main`.
+Stage all changed files, commit with a clear message, and push your commits to
+`main` (you run on a temporary working branch, so push `HEAD:main`):
+`git add -A && git commit -m "premarket: <summary>" && git push origin HEAD:main`.

@@ -13,8 +13,11 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
   positions cannot use trailing-stop orders. To guarantee a trailing stop is
   possible, prefer whole-share quantities for new positions.
 - If a credential env var is missing, stop immediately and notify — never guess.
-- Commit and push to `main` at the end of every run, or the next agent loses
-  this run's work.
+- Push your work with `git push origin HEAD:main` at the end of every run. A
+  routine runs on a temporary working branch, so a plain push to `main` is a
+  no-op and the next agent loses this run's work.
+- Never put a literal `$` in a `notify.sh` message — the shell mangles it.
+  Write `USD`/plain numbers and single-quote the argument.
 
 ## Trading lessons
 

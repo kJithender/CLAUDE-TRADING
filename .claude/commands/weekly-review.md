@@ -28,4 +28,4 @@ Send a WhatsApp weekly summary via `./scripts/notify.sh`: week vs SPY,
 since-inception vs SPY, grade, and the single biggest takeaway.
 
 ## 6. Commit
-`git add -A && git commit -m "weekly-review: <summary>" && git push -u origin main`.
+`git add -A && git commit -m "weekly-review: <summary>" && git push origin HEAD:main`.

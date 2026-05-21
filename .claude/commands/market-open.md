@@ -1,8 +1,11 @@
 Run the Bull **market-open** routine.
 
 ## 0. Load memory
-Read every file in `memory/` and `CLAUDE.md`. Pay special attention to the most
-recent **"Planned trades for today"** section in `memory/research-log.md`.
+Read every file in `memory/` and `CLAUDE.md`. Find the most recent
+**"Planned trades for today"** section in `memory/research-log.md` and confirm
+it is dated **today**. If the latest plan is from an earlier day, pre-market
+did not run today — treat the plan as stale, place no trades, journal that, and
+skip to step 5.
 
 ## 1. Confirm the market is open
 `./scripts/alpaca.sh clock`. If `is_open` is false, place no trades — journal
@@ -35,4 +38,4 @@ placed, list what was bought/sold, fill price, and the stop set; if not, send
 "Market open — no trades, <one-line reason>".
 
 ## 6. Commit
-`git add -A && git commit -m "market-open: <summary>" && git push -u origin main`.
+`git add -A && git commit -m "market-open: <summary>" && git push origin HEAD:main`.

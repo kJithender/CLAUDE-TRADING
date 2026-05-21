@@ -24,4 +24,4 @@ Send a WhatsApp end-of-day summary via `./scripts/notify.sh`, e.g.:
 `Bull EOD <date>: equity $X (<+/-Y%> today). vs SPY since start: <+/-Z%>. Trades: <n>. <one-line note>.`
 
 ## 5. Commit
-`git add -A && git commit -m "close: <summary>" && git push -u origin main`.
+`git add -A && git commit -m "close: <summary>" && git push origin HEAD:main`.

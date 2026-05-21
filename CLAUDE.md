@@ -24,8 +24,11 @@ only continuity is the `memory/` folder. Therefore:
    - `memory/lessons.md` — lessons learned, carried forward
    - `memory/weekly-review.md` — most recent weekly self-assessment
 2. **At the END of every run**, write back everything the next agent needs:
-   update the relevant memory files, then **commit and push to `main`**. If you
-   do not push, the next routine will not see your work and the system breaks.
+   update the relevant memory files, commit them, then push your work straight
+   to `main` with **`git push origin HEAD:main`**. A routine runs on a
+   temporary working branch, so a plain `git push origin main` is a no-op — you
+   MUST push `HEAD:main`. If your commits do not reach `main`, the next routine
+   will not see your work and the system breaks.
 
 ## Trade mode
 
@@ -92,10 +95,13 @@ full command list. Common commands:
 Sends a WhatsApp message to the human via CallMeBot.
 
 ```
-./scripts/notify.sh "Bull: bought $1500 AAPL @ 231.40, 10% trailing stop set."
+./scripts/notify.sh 'Bull: bought 1500 USD of AAPL @ 231.40, 10% trailing stop set.'
 ```
 
-Keep messages short. Notify only when a routine says to.
+Keep messages short. Notify only when a routine says to. **Never put a literal
+`$` in the message** — the shell expands `$1`, `$100` etc. and mangles the
+text. Write dollar amounts as plain numbers or with `USD` (e.g. `100K`,
+`USD 100,000`), and single-quote the argument.
 
 ### Research — native web search
 

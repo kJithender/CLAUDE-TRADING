@@ -29,4 +29,4 @@ cut or stops tightened, or "Midday check — all positions within range, no
 action".
 
 ## 6. Commit
-`git add -A && git commit -m "midday: <summary>" && git push -u origin main`.
+`git add -A && git commit -m "midday: <summary>" && git push origin HEAD:main`.

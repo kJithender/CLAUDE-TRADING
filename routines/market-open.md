@@ -17,5 +17,6 @@ ALPACA_BASE_URL, CALLMEBOT_PHONE, CALLMEBOT_APIKEY.
 
 Read every file in memory/ before doing anything. Follow the playbook in
 .claude/commands/market-open.md exactly. When finished, commit ALL changed
-files and push to main so the next routine sees your work.
+files and push your commits to main with `git push origin HEAD:main` so the next routine
+sees your work.
 ```
