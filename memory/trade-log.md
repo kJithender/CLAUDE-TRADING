@@ -14,6 +14,15 @@ The weekly new-position count is derived from this log._
 
 -->
 
+## 2026-05-22 12:37 ET — MIDDAY CHECK (no trades)
+- **Action:** None — all positions within guardrail thresholds
+- **AVGO:** $413.875 vs entry $417.37 → −0.84% (cut threshold: −7%)
+- **MSFT:** $419.45 vs entry $422.31 → −0.68% (cut threshold: −7%)
+- **AMZN:** $267.73 vs entry $269.13 → −0.52% (cut threshold: −7%)
+- **Stops verified:** AVGO 10% trailing active (HWM $419.75, stop $377.78); MSFT 10% trailing active (HWM $424.40, stop $381.96); AMZN 10% trailing active (HWM $269.79, stop $242.81)
+- **Portfolio equity:** $99,829.68 | Cash: $75,132.58 (75.3%)
+- **Note:** Mild broad-market pullback intraday; all three names soft but well above stop levels. No tightening warranted (<15% gain). Holding.
+
 ## 2026-05-22 09:36 ET — BUY AVGO
 - **Action:** BUY 20 shares (whole shares, to allow trailing stop)
 - **Fill:** 20 shares @ $417.37 avg (order id: 5849e8d2-930f-4fbb-8862-5dd71b97070e)
