@@ -103,7 +103,8 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 | AVGO   | Tech / AI semi | AI networking & custom silicon; "Strong Buy" consensus; growing hyperscaler share |
 | MSFT   | Tech / Enterprise AI | Azure AI platform compounding; durable enterprise moat; quality FCF |
 | AMZN   | Tech / Consumer | AWS AI infrastructure + cost-conscious retail; dual growth engine |
-| LLY    | Healthcare | GLP-1 dominance; Q1 revenue +56% YoY; secular obesity/diabetes tailwind |
+| NVDA   | Tech / AI semi | Q1 FY27 blowout ($81.6B revenue +85% YoY, Q2 guide $91B); AI accelerator monopoly; entry target on pullback below $220 on contracting volume |
+| LLY    | Healthcare | GLP-1 dominance; Q1 revenue +56% YoY; secular obesity/diabetes tailwind; target ~$8K notional (~7-8 shares) to manage sizing at ~$1,039/sh |
 | JNJ    | Healthcare | Defensive quality compounder; resilient earnings; reasonable valuation |
 | META   | Tech / Ad-tech | AI-driven ad targeting + Llama open-source flywheel; strong FCF |
 | WMT    | Consumer Defensive | Market-share gains from cost-conscious consumer; AI supply-chain edge |
@@ -122,3 +123,14 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - Measure performance weekly (Friday review) and monthly.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
+
+## Active Macro Watches (updated 2026-05-22)
+
+- **10yr Treasury yield:** Currently 4.67%. If it crosses 4.75% on an
+  upward trend, halt new buys and consider tightening trailing stops on
+  high-multiple AI names (AVGO, MSFT). Multiple compression risk is real.
+- **Iran conflict / oil prices:** WTI ~$96/bbl, Brent ~$103/bbl. Strait of
+  Hormuz disruption is the dominant geopolitical risk. Watch for any
+  resolution catalyst (positive) or further escalation (tighten all stops).
+- **WMT:** Removed from near-term consideration — full-year guidance cut due
+  to Iran fuel costs. Consumer defensives are not immune to this shock.
