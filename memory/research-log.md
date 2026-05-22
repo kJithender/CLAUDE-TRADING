@@ -5,6 +5,105 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-05-22 — Pre-market research (~08:10 ET)
+
+### Macro
+
+- **SPY pre-market:** $744.52 (+0.24% from yesterday's close $742.71; +0.69% from inception $739.44).
+  S&P 500 closed May 21 at 7,445.72 (+0.17%). Dow at record 50,285.66 (+0.55%). Nasdaq +0.09%.
+- **Treasury yields — key risk:** 10-year yield at 4.67% (highest in over a year); 30-year yield at
+  5.2%, a 19-year high. Elevated yields driven by Iran war inflation fears. This is the primary
+  multiple-compression headwind for high-P/E growth names.
+- **Iran:** Trump administration says "final stages" of negotiations; Supreme Leader directive to
+  keep enriched uranium domestically complicates deal. Oil remains very elevated: WTI $96.35/bbl,
+  Brent $102.58/bbl. Strait of Hormuz effectively still closed; food prices and airfares rising.
+- **AI sentiment:** Nvidia earnings powered a massive AI momentum boost — SoftBank +11% pre-market
+  Thursday, AI-linked stocks broadly bid. This is a tailwind for our three planned positions.
+- **Economic calendar today:** University of Michigan Consumer Sentiment (final May) — watch for
+  1-year inflation expectations, which the Fed monitors for de-anchoring risk.
+- **Market posture:** Constructive — S&P at highs, AI trade very strong, momentum intact. The 10yr
+  at 4.67% and 30yr at 5.2% are genuine risks that could compress multiples on high-P/E names,
+  but the market is currently accepting these yields. Holding 75% cash post-fills gives us
+  optionality if yields cause a correction.
+
+### Held positions
+
+None — 100% cash.
+
+### Watchlist / candidate review
+
+| Ticker | Last close | Pre-mkt | Notes |
+|--------|-----------|---------|-------|
+| AVGO | $414.32 | ~$414 | Wells Fargo raised target $430→$545 (May 14); Evercore raised $490→$582 (May 19). AI chip revenue running 30–40% above prior estimates. New Meta partnership on 2nm AI chip. Trading 39x forward — elevated but supported by growth. Thesis very intact. |
+| MSFT | $419.00 | ~$420 | Q3 FY2026: EPS $4.27 beat (non-GAAP $4.14 another quarter's cut); Azure +40%; AI revenue accelerating. EY $1B+ alliance for enterprise AI. Analyst consensus target $587 — 40% upside. Thesis intact. |
+| AMZN | $268.50 | ~$268 | Q1 2026: Revenue $181.5B (+17% YoY), AWS $37.6B (+28% YoY, fastest in 15 qtrs). AI chip (Trainium) gaining traction. 57/60 analysts buy. Wells Fargo target $312 (+16% upside). Near $3T market cap milestone. Thesis intact. |
+| NVDA | ~$221 | — | Blowout Q1 FY2027 (reported May 20): Revenue $81.62B (+85% YoY), Q2 guidance $91B. AI momentum driver. Not in this week's plan — monitor for future entry on any pullback. |
+| SPY | $742.71 | $744.52 | S&P benchmark. +0.69% since inception. |
+
+### Thesis confirmations for today's plan
+
+**AVGO:** AI custom silicon / ASIC leadership confirmed. Two major sell-side upgrades this week.
+Meta 2nm chip partnership is a new concrete catalyst. Edge: analyst targets ($545–$582) vs. current
+price (~$414) imply 32–41% upside on 28-analyst Strong Buy consensus. Not technically extended —
+trading near the middle of its recent range. Treasury yield risk noted but AVGO's revenue growth
+story (30–40% above prior estimates) provides fundamental buffer against multiple compression.
+
+**MSFT:** Azure AI +40% growth at scale is the defining data point. Enterprise install-base moat
+means AI revenue has nowhere to go but up as Copilot seats compound. Down ~12% YTD from peak
+provides an improving entry vs. quality. Consensus target of $587 implies ~40% upside. The EY
+$1B+ alliance is the kind of enterprise AI deal that repeats across every sector.
+
+**AMZN:** AWS acceleration (+28% YoY, fastest in 15 quarters) is the clearest signal that AI
+cloud demand is accelerating, not slowing. $244B committed backlog growing 40% YoY makes revenue
+visibility exceptional. Near the $3T milestone with 57/60 analyst buys — broad conviction.
+
+---
+
+### Planned trades for today (Friday May 22, 2026 market open)
+
+**Three starter positions — total deployment ~$24,700 (~24.7% of portfolio; within 25% daily cap).**
+
+This week's new-position count after fills: 3 — **weekly cap reached; no new names until week of May 25.**
+
+1. **BUY AVGO 20 shares** (est. ~$8,285 at ~$414)
+   *Thesis:* AI networking and custom silicon leadership; Broadcom's hyperscaler custom ASIC
+   contracts are multi-year structural wins; CEO projects $100B+ in custom AI chip revenue by
+   end of 2027; Wells Fargo target $545, Evercore target $582; Meta 2nm chip partnership new
+   catalyst; 28 analysts Strong Buy; not overextended. 8.3% of portfolio starter.
+   *Stop:* 10% trailing stop immediately after fill.
+   *Invalidation:* major hyperscaler capex cut guidance; loss of key custom silicon customer; AVGO
+   breaks below $370 on volume.
+
+2. **BUY MSFT 20 shares** (est. ~$8,380 at ~$419)
+   *Thesis:* Azure AI growing 40% with accelerating AI revenue; Copilot embedding into 300M+
+   enterprise seats creates durable compounding revenue floor; EY $1B+ alliance signals enterprise
+   adoption inflecting; down 12% YTD provides improving entry vs. quality FCF profile; defensive
+   if macro softens. 8.4% of portfolio starter.
+   *Stop:* 10% trailing stop immediately after fill.
+   *Invalidation:* Azure growth decelerates below 30%; enterprise AI adoption stalls; MSFT breaks
+   below $375 on volume.
+
+3. **BUY AMZN 30 shares** (est. ~$8,055 at ~$268.50)
+   *Thesis:* AWS is the largest cloud/AI infrastructure platform with $244B committed backlog
+   growing 40% YoY; Q1 2026 AWS revenue $37.6B (+28% YoY, fastest in 15 quarters) confirms
+   acceleration; retail gaining market share from cost-conscious consumers; improving operating
+   margins; Trainium AI chip competitive moat; 57/60 analysts buy; avg target $312 (+16% upside).
+   8.1% of portfolio starter.
+   *Stop:* 10% trailing stop immediately after fill.
+   *Invalidation:* AWS growth decelerates sharply; AMZN breaks below $240 on volume.
+
+**Post-fill cash:** ~$75,300 (75.3%) — well above 5% minimum.
+
+**Contingency:** If SPY opens down >1% from yesterday's close (i.e., opens below $735), reduce
+each order by ~25% (AVGO 15sh, MSFT 15sh, AMZN 22sh). The Iran "final stages" narrative may
+shift quickly — monitor overnight before the open.
+
+**Treasury yield watch:** 10yr at 4.67%, 30yr at 5.2%. If 10yr crosses 4.75% intraday, tighten
+stops and do not add to positions. These yields are real multiple-compression risks. Our 75% cash
+reserve post-fills is by design.
+
+---
+
 ## 2026-05-21 — Pre-market research (late run, ~13:40 ET; market was open)
 
 > **Note:** This pre-market routine ran during market hours. No trades placed
