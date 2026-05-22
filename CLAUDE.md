@@ -23,6 +23,10 @@ only continuity is the `memory/` folder. Therefore:
    - `memory/research-log.md` — recent research, catalysts, planned trades
    - `memory/lessons.md` — lessons learned, carried forward
    - `memory/weekly-review.md` — most recent weekly self-assessment
+   - `memory/knowledge-base.md` — trading reference: fundamentals, macro,
+     sector rotation, technicals, sizing, and thesis discipline. Read it for
+     *how to reason*. It is reference, not rules — the guardrails below always
+     override any heuristic number in it.
 2. **At the END of every run**, write back everything the next agent needs:
    update the relevant memory files, commit them, then push your work straight
    to `main` with **`git push origin HEAD:main`**. A routine runs on a

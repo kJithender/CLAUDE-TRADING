@@ -2,8 +2,8 @@ Run the Bull **pre-market** routine.
 
 ## 0. Load memory
 Read every file in `memory/` (`strategy.md`, `portfolio.md`, `trade-log.md`,
-`research-log.md`, `lessons.md`, `weekly-review.md`). Also read `CLAUDE.md` for
-the guardrails.
+`research-log.md`, `lessons.md`, `weekly-review.md`, `knowledge-base.md`). Also
+read `CLAUDE.md` for the guardrails.
 
 ## 1. First-run check
 If `memory/strategy.md` still has `STATUS: NOT_INITIALIZED`:
