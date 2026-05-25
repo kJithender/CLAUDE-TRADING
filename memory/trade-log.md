@@ -14,6 +14,11 @@ The weekly new-position count is derived from this log._
 
 -->
 
+## 2026-05-25 09:36 ET — MARKET-OPEN ROUTINE (market closed — Memorial Day)
+- **Action:** None — market is closed (Memorial Day). `is_open: false`, next open 2026-05-26 09:30 ET.
+- **Trailing stops verified active:** AVGO 10% trailing (HWM $419.75, stop $377.78); MSFT 10% trailing (HWM $424.40, stop $381.96); AMZN 10% trailing (HWM $269.79, stop $242.81). All GTC, expire 2026-08-20.
+- **Plan for Tuesday May 26 open:** BUY NVDA 30sh (~$6,460) + BUY LLY 7sh (~$7,460) per research-log plan dated 2026-05-25. Plan remains valid; contingency conditions to re-check at open: SPY must not be down >1% from Friday close ($738 floor); WTI must not be above $110 at open.
+
 ## 2026-05-22 12:37 ET — MIDDAY CHECK (no trades)
 - **Action:** None — all positions within guardrail thresholds
 - **AVGO:** $413.875 vs entry $417.37 → −0.84% (cut threshold: −7%)
