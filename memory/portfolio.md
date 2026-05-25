@@ -3,43 +3,40 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-05-22 ~15:50 ET (end-of-day close routine)
+**Last updated:** 2026-05-25 ~08:15 ET (pre-market routine — Memorial Day, market closed)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
 ## Account
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,769.08 |
+| Equity | $99,776.38 |
 | Cash | $75,132.58 |
-| Long market value | $24,636.50 |
-| Buying power | $174,901.66 |
+| Long market value | $24,643.80 |
+| Buying power | $174,908.96 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
 |--------|-----|-----------|---------|-----------|----------------|----------------|---------------|
-| AVGO | 20 | $417.37 | $413.59 | $8,271.80 | −$75.52 (−0.91%) | 8.29% | 10% trailing (order a8e344f4), stop ~$372.23 (10% below HWM) |
-| MSFT | 20 | $422.31 | $418.47 | $8,369.40 | −$76.80 (−0.91%) | 8.39% | 10% trailing (order a55a3db6), stop ~$376.62 (10% below HWM) |
-| AMZN | 30 | $269.13 | $266.51 | $7,995.30 | −$78.60 (−0.97%) | 8.01% | 10% trailing (order bbcd70fa), stop ~$239.86 (10% below HWM) |
+| AVGO | 20 | $417.37 | $414.14 | $8,282.80 | −$64.52 (−0.77%) | 8.30% | 10% trailing (order a8e344f4), HWM $419.75, stop ~$377.78 |
+| MSFT | 20 | $422.31 | $418.57 | $8,371.40 | −$74.80 (−0.89%) | 8.39% | 10% trailing (order a55a3db6), HWM $424.40, stop ~$381.96 |
+| AMZN | 30 | $269.13 | $266.32 | $7,989.60 | −$84.30 (−1.04%) | 8.01% | 10% trailing (order bbcd70fa), HWM $269.785, stop ~$242.81 |
 
 ## Performance vs S&P 500
 
 | Period | Bull | SPY | Difference |
 |--------|------|-----|------------|
-| Today (2026-05-22 EOD) | −0.23% | +0.37% (close $745.46 vs $742.71) | −0.60% |
-| Since inception (2026-05-21) | −0.23% | +0.81% ($739.44 → $745.46) | −1.04% |
+| Since inception (2026-05-21 to 2026-05-22 EOD) | −0.22% | +0.84% ($739.44 → $745.67) | −1.06% |
 
-_Inception SPY price: $739.44. Bull equity $99,769.08 (−0.23% from inception $100,000).
-SPY closed at $745.46 on 2026-05-22. Positions softened modestly in afternoon; still well above all stop levels._
+_SPY closed at $745.67 on 2026-05-22 (last trading day before Memorial Day). Bull equity
+$99,776.38 (−0.22% from inception $100,000). Memorial Day — market closed May 25.
+Next trading day: Tuesday May 26._
 
 ## Notes
 
-Three starter positions opened 2026-05-22 at market open: AVGO 20sh, MSFT 20sh, AMZN 30sh.
-Total deployment: ~$24,637 (24.7% of portfolio). Cash: $75,132.58 (75.3%) — well above 5% min.
-Weekly new-position cap (3) now reached — no new positions until week of May 25.
-All three positions have 10% GTC trailing-stop orders active and verified.
-EOD check: no action required. All positions −0.91% to −0.97%; well above the −7% cut threshold.
-SPY rose +0.37% today while Bull fell −0.23% (equity slightly below prior close due to mark-to-market on deployed ~25%).
-Treasury yield context: 10yr ~4.67%, 30yr ~5.2% — multiple-compression risk persists; 75% cash buffer is intentional.
-Next routine: pre-market Monday 2026-05-26 (Memorial Day may shift to Tuesday — verify market calendar).
+Three starter positions opened 2026-05-22: AVGO 20sh (8.3%), MSFT 20sh (8.4%), AMZN 30sh (8.0%).
+Total deployed: ~24.7%. Cash: $75,132.58 (75.3%). Weekly position cap (3) resets week of May 26.
+All three 10% GTC trailing-stop orders verified active via orders re-fetch 2026-05-25.
+Planned for Tuesday May 26 open: BUY NVDA ~30sh (~$6,460, ~6.5%) + BUY LLY ~7sh (~$7,460, ~7.5%).
+After fills, estimated cash ~$61,200 (61.3%), total deployment ~38.7%, weekly count 2 of 3 used.

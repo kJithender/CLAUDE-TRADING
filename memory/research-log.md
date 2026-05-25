@@ -5,6 +5,110 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-05-25 — Pre-market research (~08:15 ET; Memorial Day — planning for Tuesday May 26 open)
+
+**Market closed today (Memorial Day).** Next open: Tuesday May 26, 9:30 AM ET.
+Weekly new-position cap resets this week (May 26–30). Trailing stops all verified active.
+
+### Macro
+
+- **S&P 500:** Closed at 8th consecutive weekly gain; SPY closed $745.67 (+0.37% vs prior close,
+  +0.84% from our inception $739.44). Dow set new record high (+294 pts May 22). Market at ATH —
+  constructive. S&P 500 index above 7,500.
+- **Treasury yields (May 22 close):** 10yr ~4.595% (EASED from 4.67%, now below our 4.75% watch
+  level — a modest positive for AI multiples). 30yr ~5.127% (highest since 2007, still a risk).
+- **OIL — MAJOR ESCALATION:** WTI surged +4.2% to $105.42/bbl on Friday May 22 (was ~$96 earlier
+  in the week). US-Iran deal stalled again. Brent near $113/bbl. Average US gas >$4.50/gal (+51%
+  since Iran war start). This is the dominant macro risk and inflation driver.
+- **Consumer sentiment:** UMich survey fell to new low in May. Consumers worried about gas prices
+  and inflation — stagflation risk remains real. Watch for PCE Thursday to confirm or ease concern.
+- **Week ahead (May 26–30):** Consumer Confidence (Tues May 26); Core PCE + GDP Q1 second
+  estimate (Thu May 28 — critical for Fed outlook). Key earnings: Marvell (MRVL), Salesforce
+  (CRM), Snowflake (SNOW) on Wed May 27; Dell (DELL), Costco (COST), Best Buy (BBY) on Thu May 28.
+  Synopsys (SNPS) reports — watch for AI EDA cycle signal.
+- **Market posture:** Constructive at ATH, with AI trade dominant. Market is looking through
+  Iran/oil shock for now. PCE Thursday is the week's pivotal risk event. Oil at $105 is the
+  primary tail risk — any further escalation above $110 warrants adding caution.
+
+### Held position updates (weekend news through May 25)
+
+**AVGO ($414.01 close May 22):** Strong Buy consensus (26 analysts); Q1 custom AI chip sales
++140% YoY; data-center networking revenue +60% YoY. New: joined a $125M "Semiconductor Hub"
+at UCLA with Meta, Applied Materials, GlobalFoundries, Synopsys — deepens AI ecosystem
+integration and signals durable hyperscaler partnership expansion. Evercore target $582 (raised
+May 19). Thesis strongly intact. 10% trailing stop active, HWM $419.75, stop $377.78. No action.
+
+**MSFT ($418.50 close May 22):** Q3 FY2026 revenue $82.9B (+18% YoY); Azure AI +40%;
+55-analyst consensus "Strong Buy," avg target $560.63; RBC $640 target. Worst-performing
+Mag-7 YTD (−13%) — improving entry vs. quality. Negatives: Gates Foundation exited (minor),
+LinkedIn 600 layoffs (minor), Activision $250M settlement (manageable). Ackman bullish.
+Thesis intact. Trailing stop active, HWM $424.40, stop $381.96. No action.
+
+**AMZN ($266.27 close May 22):** AWS backlog has grown to $364B (vs $244B in prior research) +
+new $100B Anthropic commitment (major new catalyst — reinforces AWS as the dominant AI cloud
+platform). AWS Q1 operating income $14.2B = 59% of total company earnings. Market cap
+approaching $3T. Stock +24% since early April on AI momentum. Thesis significantly strengthened.
+Trailing stop active, HWM $269.785, stop $242.81. No action.
+
+### Watchlist / new candidates
+
+| Ticker | Close May 22 | Notes |
+|--------|-------------|-------|
+| NVDA | $215.34 | **ENTRY SIGNAL MET.** Closed below $220 on contracting volume (4.84M vs 6.22M prior session). 8.7% below ATH $235.74 (May 14). Bull flag consolidating post-earnings. Q1 +85% YoY, Q2 guide $91B, $80B buyback + dividend increase. AI accelerator monopoly intact. |
+| LLY | $1,065.60 | **ENTRY SIGNAL MET.** Retatrutide (next-gen GLP-1) showed 70lb avg weight loss in 80-week trial — extraordinary obesity data. Q1 revenue +56% YoY, guidance raised $2B. Bernstein conference May 28 (potential near-term catalyst). Moved +2.3% on May 22 on trial data. 7sh = ~$7,460 (7.5% of portfolio). |
+| META | ~$607 | Q1 revenue $56.3B (+33% YoY). Strong FCF. $125–145B capex raised — overhang. Not urgent this week. |
+| XOM | ~$154 | Oil at $105 supportive but no fresh company catalyst. Watchlist; monitor for Iran resolution or further escalation. |
+
+### Guardrail checks for Tuesday's plan
+
+| Check | Value | Limit | Pass? |
+|-------|-------|-------|-------|
+| New positions this week (resets May 26) | 0 (cap reset) | ≤3 | ✓ |
+| Daily new-buy deployment (Tues) | ~$13,920 (NVDA + LLY) | ≤25% ($24,944) | ✓ |
+| NVDA position size | ~6.5% | ≤20% | ✓ |
+| LLY position size | ~7.5% | ≤20% | ✓ |
+| Cash after fills | ~$61,200 (61.3%) | ≥5% | ✓ |
+| Total tech/AI sector (AVGO+MSFT+AMZN+NVDA) | ~31.2% | ≤35% heuristic | ✓ |
+
+---
+
+### Planned trades for Tuesday May 26, 2026 market open
+
+**Two new starter positions — total deployment ~$13,920 (~13.9% of portfolio; within 25% daily cap).**
+**Weekly new-position count after fills: 2 of 3** (one remaining for later this week).
+
+1. **BUY NVDA 30 shares** (est. ~$6,460 at ~$215–217)
+   *Thesis:* AI accelerator monopoly with no credible near-term competitor; Q1 FY27 revenue
+   $81.6B (+85% YoY), Q2 guidance $91B (continued acceleration); $80B buyback + dividend increase
+   signals confidence; entry criterion met — closed $215.34, below our $220 target, on contracting
+   volume (4.84M vs 6.22M prior session); bull flag forming off ATH $235.74 (8.7% pullback).
+   Not chasing — consolidating at support. 6.5% starter position.
+   *Stop:* 10% trailing stop immediately after fill.
+   *Invalidation:* Closes below $195 on volume (flag base violated); any hyperscaler announces
+   material capex cuts; single-customer concentration risk emerges.
+
+2. **BUY LLY 7 shares** (est. ~$7,460 at ~$1,065–1,070)
+   *Thesis:* Secular GLP-1 dominance in obesity/diabetes; major new catalyst — retatrutide trial
+   showed 70lb average weight loss at 80 weeks, among the strongest obesity drug data ever
+   published; Q1 revenue +56% YoY, guidance raised $2B; Bernstein conference May 28 (potential
+   positive catalyst this week); healthcare sector adds portfolio diversification vs. concentrated
+   AI tech exposure. 7 shares at ~$1,065 = ~7.5% starter.
+   *Stop:* 10% trailing stop immediately after fill.
+   *Invalidation:* Retatrutide FDA setback or unexpected safety signal; new GLP-1 competitor
+   takes material market share; breaks below $960 on volume.
+
+**Execution guidance (applying May 22 lesson):**
+- Place limit orders ~0.3% below the opening quote for each name.
+- If SPY opens DOWN >1% from Friday close (<~$738): hold both, do not trade.
+- If WTI crude opens above $110 at 9:30 AM: reduce NVDA to 20sh, keep LLY unchanged
+  (healthcare is less sensitive to oil than high-multiple AI names).
+- PCE Thursday (May 28): if it prints hot (>0.35% MoM), tighten trailing stops on AVGO and NVDA.
+
+**Third position (later this week):** Hold in reserve. Consider META if AI-driven ad-tech thesis
+strengthens or XOM if oil/Iran dynamics present a clear catalyst. No urgency — do not force.
+
+---
+
 ## 2026-05-22 — Pre-market research (~08:10 ET)
 
 ### Macro

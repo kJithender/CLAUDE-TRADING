@@ -21,7 +21,13 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons
 
-### 2026-05-22 — Pre-market timing is non-negotiable
+### 2026-05-25 — Holiday pre-market: research and plan ahead, don't skip
+When the market is closed (e.g., Memorial Day), the pre-market routine still adds value: it
+forces a structured review of weekend news, resets the weekly cap count, and ensures the
+market-open routine on the first trading day has a clear, pre-written plan. A holiday pre-market
+run with no trades is still a full, successful routine — the deliverable is the plan, not the order.
+
+### 2026-05-22 — Opening-minute entries on strong gap-up days
 The pre-market routine must run at 8:00 AM ET. A run at 1:40 PM is too late
 for same-day execution — the market opens at 9:30 and plans must be ready.
 A missed morning costs an entire trading day. If the routine is late, accept

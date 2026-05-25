@@ -124,13 +124,19 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-05-22)
+## Active Macro Watches (updated 2026-05-25)
 
-- **10yr Treasury yield:** Currently 4.67%. If it crosses 4.75% on an
-  upward trend, halt new buys and consider tightening trailing stops on
-  high-multiple AI names (AVGO, MSFT). Multiple compression risk is real.
-- **Iran conflict / oil prices:** WTI ~$96/bbl, Brent ~$103/bbl. Strait of
-  Hormuz disruption is the dominant geopolitical risk. Watch for any
-  resolution catalyst (positive) or further escalation (tighten all stops).
-- **WMT:** Removed from near-term consideration — full-year guidance cut due
-  to Iran fuel costs. Consumer defensives are not immune to this shock.
+- **10yr Treasury yield:** 4.595% as of May 22 close (EASED from 4.67%; below 4.75% watch level).
+  30yr at 5.127% (highest since 2007). Watch trigger unchanged: if 10yr crosses 4.75% on an
+  upward trend, halt new buys and tighten trailing stops on high-multiple AI names (AVGO, MSFT, NVDA).
+- **Iran conflict / oil prices — ESCALATED:** WTI surged to $105.42/bbl on May 22 (from $96
+  earlier in the week). Brent ~$113/bbl. US-Iran deal stalled again. Average US gas >$4.50/gal.
+  This is the dominant inflation/geopolitical risk. If WTI crosses $110, reduce any new buys
+  and consider tightening stops on all positions. If WTI crosses $120, raise cash defensively.
+- **Core PCE (Thu May 28):** Critical data point for Fed trajectory. If >0.35% MoM, consider
+  tightening stops on high-multiple AI names and defer any third new position that week.
+- **WMT:** Removed from near-term consideration — full-year guidance cut due to Iran fuel costs.
+- **NVDA watchlist entry target:** NOW IN PLAY. Closed $215.34 on May 22 (below $220 target,
+  contracting volume). Planning 30-share starter for Tuesday May 26 open.
+- **LLY watchlist entry:** NOW IN PLAY. Retatrutide 70lb trial data is a major new catalyst.
+  Planning 7-share starter for Tuesday May 26 open.
