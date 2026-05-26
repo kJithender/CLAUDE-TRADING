@@ -14,6 +14,18 @@ The weekly new-position count is derived from this log._
 
 -->
 
+## 2026-05-26 12:38 ET — MIDDAY CHECK (no trades)
+- **Action:** None — all positions within guardrail thresholds
+- **AMZN:** $264.03 vs entry $269.13 → −1.90% (cut threshold: −7%) ✓
+- **AVGO:** $422.58 vs entry $417.37 → +1.25% (tighten threshold: +15%) ✓
+- **LLY:** $1,081.16 vs entry $1,072.94 → +0.77% ✓
+- **MSFT:** $415.68 vs entry $422.31 → −1.57% ✓
+- **NVDA:** $213.43 vs entry $216.302 → −1.33% ✓
+- **Stops verified:** All five 10% trailing-stop orders confirmed active. HWMs ratcheted:
+  AVGO HWM $435.31 (stop $391.78) | NVDA HWM $218.18 (stop $196.36) | LLY HWM $1,081.94 (stop $973.75) | MSFT HWM $424.40 (stop $381.96) | AMZN HWM $269.79 (stop $242.81)
+- **Portfolio equity:** $99,782.83 | Cash: $61,132.91 (61.3%)
+- **Note:** Broad market soft intraday (NVDA −0.88%, AMZN −0.86%, MSFT −0.69%) but all names well above stop thresholds. No losers approaching −7%. No winners near +15%. No tightening or cutting warranted. Holding all five positions.
+
 ## 2026-05-26 09:38–09:46 ET — BUY NVDA
 - **Action:** BUY 30 shares (market order, whole shares for trailing-stop eligibility)
 - **Fill:** 30 shares @ $216.302 avg (order id: b9b6c19a-86e5-426f-b033-f78ea12d80f4) — filled in partial batches over ~8 min via paper trading engine; final avg in line with plan price
