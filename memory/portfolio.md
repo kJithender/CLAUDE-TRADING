@@ -3,43 +3,52 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-05-26 ~08:05 ET (pre-market routine — Tuesday after Memorial Day)
+**Last updated:** 2026-05-26 ~09:46 ET (market-open routine — NVDA + LLY entries executed)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
 ## Account
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,883.98 |
-| Cash | $75,132.58 |
-| Long market value | $24,751.40 |
-| Buying power | $175,016.56 |
+| Equity | $100,022.82 |
+| Cash | $61,132.91 |
+| Long market value | $38,889.91 |
+| Buying power | $161,155.73 |
 
 ## Open positions
 
-| Symbol | Qty | Avg entry | Current (pre-mkt) | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
+| Symbol | Qty | Avg entry | Current | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
 |--------|-----|-----------|---------|-----------|----------------|----------------|---------------|
-| AVGO | 20 | $417.37 | $417.08 | $8,341.60 | −$5.72 (−0.07%) | 8.35% | 10% trailing (order a8e344f4), HWM $419.75, stop ~$377.78 |
-| MSFT | 20 | $422.31 | $419.30 | $8,386.00 | −$60.20 (−0.71%) | 8.40% | 10% trailing (order a55a3db6), HWM $424.40, stop ~$381.96 |
-| AMZN | 30 | $269.13 | $267.46 | $8,023.80 | −$50.10 (−0.62%) | 8.03% | 10% trailing (order bbcd70fa), HWM $269.785, stop ~$242.81 |
+| AVGO | 20 | $417.37 | $427.45 | $8,549 | +$201.73 (+2.42%) | 8.55% | 10% trailing (order a8e344f4), HWM $427.99, stop ~$385.19 |
+| MSFT | 20 | $422.31 | $416.81 | $8,336 | −$110.00 (−1.30%) | 8.33% | 10% trailing (order a55a3db6), HWM $424.40, stop ~$381.96 |
+| AMZN | 30 | $269.13 | $267.33 | $8,020 | −$54.15 (−0.67%) | 8.02% | 10% trailing (order bbcd70fa), HWM $269.785, stop ~$242.81 |
+| NVDA | 30 | $216.302 | $216.11 | $6,483 | −$5.76 (−0.09%) | 6.48% | 10% trailing (order 8c6b9680), HWM $216.30, stop ~$194.67 |
+| LLY | 7 | $1,072.944 | $1,066.19 | $7,463 | −$47.32 (−0.63%) | 7.46% | 10% trailing (order d4147484), HWM $1,066.19, stop ~$959.57 |
 
-_All three positions recovering from Friday levels pre-market. AVGO nearly flat vs. entry. MSFT and AMZN remain slightly below entry — well within guardrails. Trailing stops all active._
+_NVDA and LLY entered today. All five 10% GTC trailing-stop orders active and verified._
 
 ## Performance vs S&P 500
 
 | Period | Bull | SPY | Difference |
 |--------|------|-----|------------|
-| Pre-market 2026-05-26 | −0.12% ($99,884) | +1.52% ($739.44→~$750.68 pre-mkt) | −1.64% |
-| Since inception (2026-05-21 to 2026-05-22 EOD) | −0.22% | +0.84% ($739.44 → $745.67) | −1.06% |
+| Today (2026-05-26 intraday) | +$246 (+0.25%) | ~+0.5% est. | ~−0.25% |
+| Since inception (2026-05-21) | +0.02% ($99,884→$100,023) | ~+1.5% ($739.44→~$750+) | ~−1.5% |
 
-_Bull trailing SPY primarily due to 75% cash drag in a rising market. Intended — will narrow as NVDA and LLY fill today._
+_Cash drag (61% cash) remains the primary structural lag vs SPY in a rising market. Will narrow as portfolio builds._
 
 ## Notes
 
-Three starter positions since inception: AVGO 20sh, MSFT 20sh, AMZN 30sh. Total deployed ~24.8%.
-Cash: $75,132.58 (75.2%). Weekly position cap (3) resets week of May 26.
-All three 10% GTC trailing-stop orders active (per last verification 2026-05-25).
-**TODAY'S PLAN (market open 9:30 ET):** BUY NVDA 30sh + BUY LLY 7sh.
-After fills: est. cash ~$61,213 (61.3%), total deployment ~38.7%, weekly count 2 of 3 used.
-**AVGO earnings June 3** — do not add to AVGO until post-earnings. Trailing stop protects position.
-SPY pre-market ~$750.68 (>$738 floor) ✓ | WTI ~$92 (<$110 trigger) ✓ — both conditions for trading are met.
+Five positions since inception. Weekly new-position count: 2/3 used (NVDA + LLY — week of May 26).
+Cash: $61,132.91 (61.1%). One position slot remains for later this week.
+
+**Upcoming catalysts:**
+- **AVGO earnings June 3** — do NOT add to AVGO until post-earnings. Scale to 12–15% on strong beat.
+- **Core PCE Thu May 28** — if >0.35% MoM, tighten stops on NVDA/AVGO; defer third position.
+- **MRVL earnings Wed May 27** — AI networking angle; watch for third position candidate.
+- **Bernstein healthcare conference Thu May 28** — potential LLY catalyst.
+
+**Third position this week:** MRVL (post-earnings Wed), META (ad-tech), or COST (post-PCE defensive).
+No urgency — do not force. Maintain 25%+ daily deploy guardrail.
+
+**MSFT:** Down −1.30% from entry (-2.80% intraday vs. prior close). Well above −7% cut threshold. Thesis intact.
+**XOM:** Removed from near-term watchlist (WTI ~$92 on Iran deal optimism weakens energy thesis).
