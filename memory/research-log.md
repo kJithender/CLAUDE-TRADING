@@ -5,6 +5,88 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-05-26 — Pre-market research (~08:05 ET)
+
+**Today is Tuesday May 26 — first trading day after Memorial Day. Weekly new-position cap resets this week.**
+
+### Macro
+
+- **S&P 500 / SPY:** Futures up +0.54% pre-market. SPY pre-market bid/ask ~$750.68 (last close $745.67 on May 22). Well above our $738 floor for executing today's plan. Market is at all-time highs — constructive.
+- **OIL — MAJOR RELIEF:** WTI crude fell ~6% on Monday to ~$92/bbl (was $105.42 at last week's close). Brent also down ~5-6%. Catalyst: Trump announced Monday that Iran talks "proceeding nicely" and an MOU is "close to finalization." The draft deal (per Axios/CNN May 24 reports) includes a 60-day ceasefire, Strait of Hormuz reopening, Iran allowed to freely sell oil, and nuclear enrichment negotiations. **This is the dominant macro positive today.** WTI at $92 is well below our $110 trigger level. NOTE: Washington also launched fresh strikes on Iranian vessels Monday, creating residual uncertainty — deal is close but not signed.
+- **Key data this week:** Consumer Confidence (today, Tues May 26); Core PCE + GDP Q1 revision (Thu May 28 — critical); earnings from Marvell (MRVL), Salesforce (CRM), Snowflake (SNOW) on Wed May 27; Dell (DELL), Costco (COST), Best Buy (BBY) on Thu May 28; Synopsys (SNPS) also reports.
+- **Market posture:** Decidedly risk-on at open. Iran deal optimism + oil collapse + market at ATH = strong setup for deploying the two planned positions. Iran deal is not finalized (watch for breakdown risk), but risk/reward has improved materially from Friday.
+
+### Held position updates
+
+**AVGO ($417.08 pre-market, entry $417.37):**
+- Pre-market up +0.71% intraday vs. May 22 close of $414.14 → effectively recovering to near entry.
+- **Earnings June 3 (6 trading days away, after close):** Major near-term catalyst. Analyst estimates: Q2 FY2026 revenue $22.08B (vs $15B a year ago = +47% YoY); EPS normalized ~$2.39 (vs $1.58 = +51% YoY). Broadcom's own guidance implies ~47% growth.
+- LSEG renewed Broadcom cloud infrastructure partnership (minor positive).
+- **Action: HOLD with trailing stop (HWM $419.75, stop ~$377.78). Do NOT add to AVGO within 5 trading days of June 3 earnings.** Thesis remains strongly intact.
+
+**MSFT ($419.30 pre-market, entry $422.31):**
+- Predicted open ~$420.50 (+0.46%). Pre-market quote ~$419-420.
+- New: Microsoft restructured OpenAI deal — ends revenue-share arrangement, secures OpenAI IP through 2032, allows OpenAI to use any cloud. Mixed: loses OpenAI exclusivity, but Wedbush raised target to $575 and pegs ~$6B from OpenAI in 2026. Net neutral to slightly positive — Azure AI moat is independent of OpenAI exclusivity.
+- **Action: HOLD with trailing stop (HWM $424.40, stop ~$381.96). Thesis intact.**
+
+**AMZN ($267.46 pre-market, entry $269.13):**
+- Up +0.43% intraday vs. May 22 close of $266.32.
+- Jefferies added AMZN to Franchise Picks list (May 18 — confirms broad buy consensus). AWS $364B backlog + $100B Anthropic commitment thesis unchanged.
+- **Action: HOLD with trailing stop (HWM $269.785, stop ~$242.81). Thesis intact.**
+
+### Watchlist / new candidates
+
+| Ticker | Pre-market | Notes |
+|--------|-----------|-------|
+| NVDA | ~$215-217 (est. open $217.17) | **ENTRY SIGNAL — PROCEED.** Last close $215.34 (May 22). Expected open ~$217. China market expansion ($200B processor market) is a new incremental catalyst. Q1 +85%, Q2 guide $91B, $80B buyback. Ex-div June 4 ($0.25). 61 analysts Strong Buy, avg target $295.34 (+36.6%). Entry condition met: below $220 target, contracting volume on prior session. |
+| LLY | ~$1,065-1,070 (est. near Friday close) | **ENTRY SIGNAL — PROCEED.** Last close $1,065.60 (May 22). New catalyst Monday: Verve-102 Phase 1b gene-editing cholesterol data released late Monday (permanent LDL reduction with single infusion — diversifies beyond GLP-1 franchise). Retatrutide data (70lb/18mo weight loss) still driving upgrades. Bernstein conference Thu May 28 (potential further catalyst). Up 14% in May; RSI 68.3 (near overbought — use limit order to avoid chasing at open). Forward P/E 28x (elevated but supported by growth). |
+| META | ~$607 | Hold on watchlist. 3rd position slot if week develops well. No urgent entry today. |
+| XOM | ~$145-150 (est.) | With WTI falling to $92 on Iran deal optimism, XOM upside thesis is diminished near-term. Remove from urgent watchlist; revisit post-deal confirmation for any overshooting energy selloff. |
+| MRVL | Earnings Wed May 27 | AI networking angle (Broadcom competitor for hyperscaler custom ASICs). If they beat on AI data-center revenue, could be a new candidate for 3rd position slot. Watch earnings reaction Wed evening. |
+| COST | Earnings Thu May 28 | Consumer defensive with strong membership model. Watch earnings for 3rd position slot if macros stabilize post-PCE. |
+
+### Guardrail checks for today's plan
+
+| Check | Value | Limit | Pass? |
+|-------|-------|-------|-------|
+| Market open | Confirmed open at 9:30 ET | Must be open | ✓ |
+| SPY at open | Pre-market ~$750.68 | ≥$738 (>1% above May 22 close) | ✓ |
+| WTI crude | ~$92/bbl | <$110 | ✓ (significantly better) |
+| New positions this week | 0 so far (resets May 26) | ≤3 | ✓ |
+| Daily new-buy deployment (today): NVDA + LLY | ~$13,922 (~13.9% of $99,884) | ≤25% (~$24,971) | ✓ |
+| NVDA position size | 30sh × ~$215 = ~$6,460 (~6.5%) | ≤20% | ✓ |
+| LLY position size | 7sh × ~$1,065 = ~$7,460 (~7.5%) | ≤20% | ✓ |
+| Cash after fills | ~$75,133 − $13,920 = ~$61,213 (~61.3%) | ≥5% | ✓ |
+| Tech/AI sector after NVDA add (AVGO+MSFT+AMZN+NVDA) | ~31.3% + 0% change to LLY (healthcare) | ≤35% heuristic | ✓ |
+
+---
+
+### Planned trades for Tuesday May 26, 2026 market open
+
+**Two new starter positions — total deployment ~$13,920 (~13.9% of portfolio; within 25% daily cap).**
+**Weekly new-position count after fills: 2 of 3.** One slot remains for later this week.
+
+1. **BUY NVDA 30 shares** (limit order ~0.3% below opening quote — approx $216.35 if opens at $217)
+   *Thesis:* AI accelerator monopoly with no credible near-term competitor; Q1 FY27 revenue $81.6B (+85% YoY), Q2 guidance $91B (continued acceleration); $80B buyback + dividend increase; China market expansion ($200B target market) is new incremental catalyst; ex-dividend June 4 ($0.25/share, minor); 61 analyst Strong Buy consensus, avg target $295 (+36.6% upside). Entry below $220 on contracting volume — bullish consolidation signal. Not chasing.
+   *Stop:* 10% trailing stop immediately after fill.
+   *Invalidation:* Closes below $195 on volume; any major hyperscaler announces material capex cuts; single-customer concentration risk materializes.
+
+2. **BUY LLY 7 shares** (limit order ~0.3% below opening quote — approx $1,062 if opens at $1,065)
+   *Thesis:* GLP-1 secular dominance (retatrutide 70lb/18mo trial); new Monday catalyst: Verve-102 Phase 1b gene-editing cholesterol data broadens Lilly's pipeline beyond obesity; Q1 revenue +56% YoY, guidance raised; Bernstein conference May 28 (potential upgrade wave); healthcare adds diversification vs. concentrated AI tech exposure; 31 analysts Strong Buy, consensus ~13% upside.
+   *Stop:* 10% trailing stop immediately after fill.
+   *Invalidation:* Retatrutide FDA setback or unexpected safety signal; competitor takes material GLP-1 market share; breaks below $960 on volume.
+
+**Execution guidance:**
+- Place limit orders ~0.3% below the opening quote for each name (per lesson from May 22 opening-minute fills).
+- Contingency — do NOT trade if: SPY opens DOWN >1% from Friday close (<$738) OR WTI spikes above $110 at open. Both conditions are currently very favorable (SPY pre-mkt +0.54%, WTI $92) so conditions are met — expect to trade at open.
+- After fills, verify positions and orders. Place 10% trailing stops immediately.
+
+**Third position (later this week):** MRVL (watch May 27 earnings — AI networking angle) or META (ad-tech flywheel, reserve). XOM removed from near-term list given oil decline. COST could be a post-PCE defensive entry Thu/Fri. No urgency — do not force.
+
+**AVGO earnings watch (June 3):** Do NOT add to AVGO until post-earnings. Current trailing stop intact. Thesis is the strongest in the portfolio heading into what should be a strong Q2 print. If earnings beat strongly, consider scaling AVGO up to 12-15% in subsequent session.
+
+---
+
 ## 2026-05-25 — Pre-market research (~08:15 ET; Memorial Day — planning for Tuesday May 26 open)
 
 **Market closed today (Memorial Day).** Next open: Tuesday May 26, 9:30 AM ET.
