@@ -14,6 +14,22 @@ The weekly new-position count is derived from this log._
 
 -->
 
+## 2026-05-27 12:33 ET — MIDDAY CHECK (no trades)
+- **Action:** None — all positions within guardrail thresholds
+- **AMZN:** $271.46 vs entry $269.13 → **+0.87%** (cut threshold: −7%) ✓ — +2.33% today
+- **AVGO:** $419.21 vs entry $417.37 → **+0.44%** (cut threshold: −7%) ✓ — −0.67% today (pulled back from AM highs)
+- **LLY:** $1,086.07 vs entry $1,072.94 → **+1.22%** (cut threshold: −7%) ✓ — +2.00% today; thesis strengthening
+- **MSFT:** $412.68 vs entry $422.31 → **−2.28%** (cut threshold: −7%) ✓
+- **NVDA:** $210.52 vs entry $216.30 → **−2.68%** (cut threshold: −7%) ✓ — soft intraday but well above stop
+- **Stops verified (all 5 active, HWMs ratcheted):**
+  - AVGO (a8e344f4): HWM $435.31, stop $391.78 — unchanged ✓
+  - MSFT (a55a3db6): HWM $424.40, stop $381.96 — unchanged ✓
+  - AMZN (bbcd70fa): HWM **$271.72** (ratcheted from $269.79), stop **$244.54** ✓
+  - NVDA (8c6b9680): HWM $218.18, stop $196.36 — unchanged ✓
+  - LLY (d4147484): HWM **$1,093.00** (ratcheted from $1,081.94), stop **$983.70** ✓
+- **Portfolio equity:** $99,835.93 (+$84.54, +0.08% vs yesterday close $99,751.39) | Cash: $61,132.91 (61.2%)
+- **Note:** Constructive session. LLY leading (+2.00% today; Bernstein conference tomorrow with CSO Skovronsky). AMZN recovering (+2.33%). NVDA softening (−2.02% today, down to $210.52 from entry $216.30 = −2.68%) — still 6.5 points above −7% threshold; stop at $196.36. MRVL earnings after close tonight remain the key event for this week's third position slot. No action warranted.
+
 ## 2026-05-27 09:35 ET — MARKET OPEN (no trades)
 - **Action:** None — no trades planned today per pre-market research. MRVL earnings after close tonight are the gating event for the final weekly position slot.
 - **AVGO:** $430.32 vs entry $417.37 → **+3.10%** (cut threshold: −7%) ✓ — leading today +1.97%
