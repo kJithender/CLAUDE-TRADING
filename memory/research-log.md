@@ -5,6 +5,122 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-05-27 — Pre-market research (~08:10 ET)
+
+**Today is Wednesday May 27. Weekly new-position count: 2/3 used (NVDA + LLY on May 26). 1 slot remaining.**
+
+### Macro
+
+- **S&P 500 / SPY:** SPY closed $750.46 on May 26 (+0.64% from May 22 close $745.67). Pre-market
+  quotes: bid $751.48 / ask $751.58. S&P 500 futures up +0.37% pre-market.
+  **Goldman Sachs raised S&P 500 year-end target to 8,000 today** (from 7,600), citing 24% EPS
+  growth in 2026 driven by AI momentum. Morgan Stanley and Deutsche Bank similarly bullish.
+  Market at/near all-time highs — constructive.
+- **WTI Oil:** ~$93-94/bbl. Still below our $100 watch trigger. Iran ceasefire extension framework
+  in negotiation (60-day extension, Strait of Hormuz reopening). Sides remain at odds over
+  enriched uranium stockpile and transit tolls. Deal not signed but trajectory positive. Oil
+  decline continues to be the dominant macro positive vs. last week.
+- **10yr Treasury yield:** Last known ~4.595% (May 22 close). Below 4.75% watch level — no change.
+- **Key events this week:**
+  - **MRVL earnings tonight after close** — Q1 FY2027 EPS $0.79, revenue $2.41B expected.
+    Third position candidate if they beat.
+  - **LLY Bernstein conference tomorrow Thu May 28** — fireside chat 1:30 PM ET with CSO Skovronsky.
+  - **Core PCE + GDP Q1 revision Fri May 29** — **CORRECTION from prior log: it is Friday May 29,
+    not Thursday May 28.** Critical for Fed outlook; if >0.35% MoM, tighten stops on AI names.
+- **Market posture:** Decidedly risk-on. Goldman target raise + AI sentiment strong + WTI contained.
+  No defensive posture needed today.
+
+### Held position updates
+
+**AVGO ($427.80 pre-mkt, +1.37% today vs $422.01 close, entry $417.37 = +2.50% overall):**
+- Strong pre-market move. New catalyst: launched industry's first 50G PON Gateway Chip with
+  built-in AI — incremental positive confirming continued product leadership.
+- Evercore ISI reiterated Outperform, target $582. Citi named AVGO top semi pick for 2026.
+- **AVGO earnings June 3 — DO NOT ADD. Hold with trailing stop (HWM $435.31, stop $391.78).**
+
+**MSFT ($412.51 pre-mkt, -0.85% today vs $416.03 close, entry $422.31 = -2.32% overall):**
+- Mild softness pre-market; no company-specific negative news.
+- **Bullish signal:** Ackman/Pershing Square disclosed significant MSFT position — a notable
+  high-conviction value endorsement from a major fund.
+- Strong Buy consensus (55 analysts), avg target $560.63 (+36% upside). Azure AI >40% growing.
+- -2.32% from entry; well above -7% cut threshold. Stop HWM $424.40, stop $381.96. Thesis intact.
+
+**AMZN ($264.01 pre-mkt, -0.48% today vs $265.29 close, entry $269.13 = -1.90% overall):**
+- Minor softness continues. No new catalysts. AWS $364B backlog / $100B Anthropic thesis unchanged.
+- Well above -7% threshold. Stop HWM $269.79, stop $242.81. Thesis intact.
+
+**NVDA ($215.22 pre-mkt, +0.17% today, entry $216.30 = -0.50% overall):**
+- Essentially flat, consolidating post-entry. MRVL earnings tonight are an AI read-through.
+- Ex-dividend June 4 ($0.25/sh). AI accelerator monopoly thesis intact.
+- Stop HWM $218.18, stop $196.36. No action.
+
+**LLY ($1,066.60 pre-mkt, +0.18% today, entry $1,072.94 = -0.59% overall):**
+- **THESIS SIGNIFICANTLY STRENGTHENED:**
+  - Retatrutide TRIUMPH-1 Phase 3: ALL doses (4mg/9mg/12mg) met primary and key secondary
+    endpoints at 80 weeks. This is the pivotal trial that confirms retatrutide as the
+    definitive next-gen GLP-1 — extraordinary result.
+  - FDA approved Foundayo (once-daily oral GLP-1 pill, no food/water restrictions) —
+    broadens Lilly's commercial reach and removes a key patient adherence barrier.
+  - Foundayo/Zepbound weight maintenance data announced May 12 also positive.
+- Wall Street firms turning increasingly bullish on GLP-1 expansion plans.
+- **Bernstein conference tomorrow (May 28, 1:30 PM ET)** — CSO Skovronsky fireside chat.
+  Likely to discuss TRIUMPH-1 and Foundayo — potential positive catalyst.
+- -0.59% from entry is purely noise given the fundamental confirmation. Hold.
+  Stop HWM $1,081.94, stop $973.75.
+
+### MRVL — Third position candidate (earnings tonight)
+
+- **Q1 FY2027 earnings after market close tonight (May 27).**
+- Consensus: EPS $0.79 (+27% YoY), revenue $2.41B (+26% YoY). FY2026 full-year revenue was
+  $8.195B (+42% YoY) — very strong baseline.
+- AI custom silicon story: hyperscalers accelerating custom ASIC orders. Management sees >20%
+  custom revenue growth YoY in FY2027, doubling in FY2028, >$2B NIC/CXL revenue by FY2029.
+- HSBC upgraded to Buy with $300 target (from $85) yesterday — massive target raise signals
+  catch-up upgrades on AI custom silicon story just being understood.
+- **Pre-market TODAY down 5.32% to $206.77** (from prior close ~$217.21). Likely institutional
+  profit-taking ahead of a volatile print (stock doubled in 2026); not a thesis break.
+- Citi target $215, BofA/RBC/Oppenheimer ~$200-210. Wide range reflects uncertainty on timing.
+- **Plan:** DO NOT buy before the print. If Q1 beats strongly AND Q2 guidance impresses:
+  - Entry signal: MRVL as 3rd position tomorrow morning, 30 shares (~$6,200 at ~$207, ~6.2% of
+    portfolio). Within all guardrails (1 slot remaining, daily cap ample).
+  - Thesis: AI custom silicon secular wave corroborated by AVGO; MRVL plays the same tailwind
+    with network connectivity and storage; hyperscaler ASIC diversification is a real trend.
+  - Stop: 10% trailing immediately after fill.
+  - Risk: pre-earnings pops are sold; if they miss, stock drops 15-20%+. Wait for the print.
+- If MRVL MISSES or guides down: skip for this week. Evaluate META or COST for the final slot.
+
+### Guardrail check for today
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 2/3 (NVDA + LLY) | ≤3 | 1 slot remaining |
+| Cash | $61,132.91 (61.3%) | ≥5% | ✓ Ample |
+| Any position below −7% from entry? | Max: MSFT −2.32% | −7% threshold | ✓ None near |
+| Market open today? | Opens 9:30 AM ET | — | ✓ |
+
+---
+
+### Planned trades for today (Wednesday May 27, 2026)
+
+**No trades planned.**
+
+All five positions are intact and well above guardrail thresholds. MRVL earnings after close
+tonight are the gating event for this week's third position slot. Waiting for the print before
+committing capital.
+
+**Third position decision (this week's final slot):**
+- If MRVL beats Q1 + strong Q2 guidance → BUY MRVL 30 shares at tomorrow's open (limit ~0.3%
+  below opening quote). Thesis: AI custom silicon/networking, corroborates AVGO thesis.
+- If MRVL misses or cautious guide → Skip MRVL. Consider META (ad-tech AI flywheel) or COST
+  (defensive, reports earnings tomorrow May 28) as alternatives for the week's final slot.
+
+**Calendar corrections:**
+- **Core PCE is Friday May 29, not Thursday May 28** — updated across memory.
+- AVGO earnings June 3 — DO NOT ADD before. Trailing stop in place.
+- LLY Bernstein conference Thu May 28 (tomorrow) — monitor for positive commentary.
+
+---
+
 ## 2026-05-26 — Pre-market research (~08:05 ET)
 
 **Today is Tuesday May 26 — first trading day after Memorial Day. Weekly new-position cap resets this week.**
