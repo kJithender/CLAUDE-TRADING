@@ -14,6 +14,24 @@ The weekly new-position count is derived from this log._
 
 -->
 
+## 2026-05-27 15:51 ET — CLOSE (no trades)
+- **Action:** None — close routine P/L check and journal
+- **AMZN:** $271.21 vs entry $269.13 → **+0.77%** (+2.23% today) ✓ — HWM ratcheted to $272.41, stop $245.17
+- **AVGO:** $424.09 vs entry $417.37 → **+1.61%** (+0.49% today) ✓ — HWM $435.31, stop $391.78
+- **LLY:** $1,084.78 vs entry $1,072.94 → **+1.10%** (+1.88% today) ✓ — HWM $1,093.00, stop $983.70
+- **MSFT:** $413.245 vs entry $422.31 → **-2.15%** (-0.67% today) ✓
+- **NVDA:** $212.71 vs entry $216.30 → **-1.66%** (-1.00% today) ✓
+- **Stops verified (all 5 active):**
+  - AVGO (a8e344f4): HWM $435.31, stop $391.78 ✓
+  - MSFT (a55a3db6): HWM $424.40, stop $381.96 ✓
+  - AMZN (bbcd70fa): HWM **$272.41** (ratcheted from $271.72), stop **$245.17** ✓
+  - NVDA (8c6b9680): HWM $218.18, stop $196.36 ✓
+  - LLY (d4147484): HWM $1,093.00, stop $983.70 ✓
+- **Portfolio equity:** $99,990.60 (+$239.21, +0.24% vs yesterday close $99,751.39) | Cash: $61,132.91 (61.1%)
+- **SPY close:** $750.31 (-0.02% today). Bull outperformed SPY by +0.26% today.
+- **Since inception:** Bull -0.009% vs SPY +1.47% = -1.48% gap. Cash drag is the primary driver.
+- **Note:** Constructive close. LLY strongest (+1.88%, Bernstein conference tomorrow). AMZN recovering well (+2.23% today, HWM ratcheted). AVGO held gains (+0.49%). NVDA and MSFT soft but both well above -7% cut threshold. No action taken. MRVL earnings after today's close are the pivotal event for tomorrow. No lesson warranted today.
+
 ## 2026-05-27 12:33 ET — MIDDAY CHECK (no trades)
 - **Action:** None — all positions within guardrail thresholds
 - **AMZN:** $271.46 vs entry $269.13 → **+0.87%** (cut threshold: −7%) ✓ — +2.33% today
