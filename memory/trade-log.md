@@ -14,6 +14,17 @@ The weekly new-position count is derived from this log._
 
 -->
 
+## 2026-05-27 09:35 ET — MARKET OPEN (no trades)
+- **Action:** None — no trades planned today per pre-market research. MRVL earnings after close tonight are the gating event for the final weekly position slot.
+- **AVGO:** $430.32 vs entry $417.37 → **+3.10%** (cut threshold: −7%) ✓ — leading today +1.97%
+- **LLY:** $1,079.18 vs entry $1,072.94 → **+0.58%** (cut threshold: −7%) ✓ — +1.36% today
+- **AMZN:** $265.95 vs entry $269.13 → −1.18% (cut threshold: −7%) ✓
+- **MSFT:** $411.84 vs entry $422.31 → −2.48% (cut threshold: −7%) ✓
+- **NVDA:** $212.50 vs entry $216.30 → −1.76% (cut threshold: −7%) ✓
+- **All 5 trailing stops verified active:** AVGO (a8e344f4, HWM $435.31, stop $391.78) | MSFT (a55a3db6, HWM $424.40, stop $381.96) | AMZN (bbcd70fa, HWM $269.79, stop $242.81) | NVDA (8c6b9680, HWM $218.18, stop $196.36) | LLY (d4147484, HWM $1,081.94, stop $973.75)
+- **Portfolio equity:** $99,886.42 (+$135.03, +0.14% vs yesterday $99,751.39) | Cash: $61,132.91 (61.2%)
+- **Note:** Broad market open: AVGO and LLY leading; NVDA and MSFT soft early. No position approaches cut threshold. MRVL earnings tonight — if strong beat + guidance raise, plan is BUY MRVL 30sh at tomorrow's open. No action today.
+
 ## 2026-05-26 12:38 ET — MIDDAY CHECK (no trades)
 - **Action:** None — all positions within guardrail thresholds
 - **AMZN:** $264.03 vs entry $269.13 → −1.90% (cut threshold: −7%) ✓
