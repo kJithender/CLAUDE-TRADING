@@ -14,6 +14,24 @@ The weekly new-position count is derived from this log._
 
 -->
 
+## 2026-05-28 08:10 ET — PRE-MARKET (no trades)
+- **Action:** None — MRVL earnings reviewed; no entry conditions met. Market cautious pre-PCE.
+- **MRVL SKIP:** Q1 EPS $0.80 (beat $0.75 consensus, fell short of $0.85 strong-beat threshold);
+  revenue $2.418B (beat $2.41B, fell short of $2.5B threshold). Q2 guide $2.70B strong.
+  Price action: AH pop to $215 faded to ~$200 pre-market. Stock is BELOW prior close of $208.22.
+  Market signaling the print wasn't enough. Not buying into a rug-pull.
+- **Portfolio equity:** $99,839.03 | Cash: $61,132.91 (61.2%)
+- **SPY close (May 27):** $750.59. Since inception: Bull -0.161% vs SPY +1.51% = -1.67% gap.
+- **All 5 trailing stops confirmed active:**
+  - AVGO (a8e344f4): HWM $435.31, stop $391.78 ✓
+  - MSFT (a55a3db6): HWM $424.40, stop $381.96 ✓
+  - AMZN (bbcd70fa): HWM $272.41, stop $245.17 ✓
+  - NVDA (8c6b9680): HWM $218.18, stop $196.36 ✓
+  - LLY (d4147484): HWM $1,093.00, stop $983.70 ✓
+- **Note:** S&P futures -0.2%, WTI ~$90 (+1.8% on Iran strikes), 10yr ~4.48-4.50%.
+  Mild pre-PCE risk-off. LLY Bernstein conference today 1:30 PM ET. COST earnings tonight.
+  Final weekly slot decision deferred to Friday morning after COST print + PCE.
+
 ## 2026-05-27 15:51 ET — CLOSE (no trades)
 - **Action:** None — close routine P/L check and journal
 - **AMZN:** $271.21 vs entry $269.13 → **+0.77%** (+2.23% today) ✓ — HWM ratcheted to $272.41, stop $245.17

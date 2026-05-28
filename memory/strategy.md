@@ -124,28 +124,30 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-05-27)
+## Active Macro Watches (updated 2026-05-28)
 
-- **10yr Treasury yield:** 4.595% as of May 22 close (below 4.75% watch level — eased).
-  Watch trigger unchanged: if 10yr crosses 4.75% on an upward trend, halt new buys and tighten
+- **10yr Treasury yield:** ~4.48–4.50% as of May 28 (well below 4.75% watch level — constructive).
+  Watch trigger unchanged: if 10yr crosses 4.75% on upward trend, halt new buys and tighten
   trailing stops on high-multiple AI names (AVGO, MSFT, NVDA).
-- **Iran conflict / oil prices — CONTAINED:** WTI ~$93-94/bbl as of May 27 (was $92 on May 25).
-  US-Iran framework for 60-day ceasefire extension in negotiation; Strait of Hormuz reopening
-  in discussion. Both sides still at odds over enriched uranium stockpile and transit tolls.
-  Deal not signed. Watch: if WTI rises above $100, reassess. Below $85 on signed deal would
-  weaken XOM. Trend positive for market.
-- **Core PCE (Fri May 29 — CORRECTED from prior log of Thu May 28):** Critical. If >0.35% MoM,
-  tighten stops on high-multiple AI names (NVDA, AVGO) and defer any remaining new buy.
-- **AVGO earnings June 3 (7 trading days):** Major catalyst. Expect Q2 revenue $22.08B (+47% YoY),
+- **Iran conflict / oil prices:** WTI ~$90/bbl. New US military strikes on Iranian military site
+  overnight (May 27-28). WTI rose +1.8% but remains well below $100 watch trigger. Deal
+  framework still in negotiation (60-day ceasefire extension); both sides not yet signed. Trend
+  broadly positive. Watch: if WTI rises above $100, reassess. Signed deal below $85 weakens XOM.
+- **Core PCE TOMORROW Fri May 29:** Critical. If >0.35% MoM, tighten stops on high-multiple AI
+  names (NVDA, AVGO) and defer any remaining new buy this week.
+- **AVGO earnings June 3 (4 trading days):** Major catalyst. Expect Q2 revenue $22.08B (+47% YoY),
   EPS $2.39 (+51% YoY). Do NOT add to AVGO before earnings. Hold with trailing stop.
-  If beats strongly, scale up to 12-15% post-earnings.
+  If beats strongly, consider scaling up to 12-15% post-earnings.
+- **LLY thesis STRENGTHENED:** Retatrutide TRIUMPH-1 Phase 3 all doses met endpoints. FDA
+  approved Foundayo. Bernstein conference TODAY May 28 1:30 PM ET. Hold with stop.
+- **NVDA:** Entered May 26, 30sh @ $216.30. Ex-dividend June 4 ($0.25/sh). Hold with stop.
+- **MRVL earnings (May 27 after close — SKIP):** Q1 EPS $0.80 (below strong-beat threshold $0.85),
+  revenue $2.418B (below $2.5B threshold). Q2 guide $2.70B strong but stock faded to ~$200
+  pre-market despite AH pop. Do NOT buy. Market priced for more.
+- **Third position this week (1 slot remaining):** Decision Friday morning after:
+  (a) COST earnings tonight, (b) PCE tomorrow. If both constructive → COST 15sh.
+  If PCE hot → skip this week, carry to week of June 1.
+- **WMT:** Removed from near-term consideration.
+- **XOM:** Removed from near-term watchlist given Iran deal framework progress.
 - **Goldman Sachs S&P 500 target raised to 8,000** (from 7,600, May 27). Cites 24% EPS growth
   in 2026 driven by AI. Broad market bullish tailwind — stay invested, not defensive.
-- **LLY thesis STRENGTHENED:** Retatrutide TRIUMPH-1 Phase 3 all doses met endpoints. FDA
-  approved Foundayo. Bernstein conference May 28. Hold with stop.
-- **NVDA:** Entered May 26, 30sh @ $216.30. Ex-dividend June 4 ($0.25/sh). Hold with stop.
-- **WMT:** Removed from near-term consideration.
-- **XOM:** Removed from near-term watchlist given WTI ~$93/bbl on Iran deal optimism.
-- **Third position this week (1 slot remaining):** MRVL earnings tonight May 27 after close.
-  If beats strongly → BUY MRVL 30sh tomorrow morning. If miss → consider META or COST.
-- **COST earnings Thu May 28** — consumer defensive watch for defensive rotation if PCE hot.

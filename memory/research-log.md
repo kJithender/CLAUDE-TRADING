@@ -5,6 +5,117 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-05-28 — Pre-market research (~08:10 ET)
+
+**Today is Thursday May 28. Weekly new-position count: 2/3 used (NVDA + LLY on May 26). 1 slot remaining.**
+
+### Macro
+
+- **S&P 500 / SPY:** SPY closed $750.59 on May 27 (+0.04% vs May 26 close $750.31). Pre-market
+  futures down ~0.2% as oil ticks up on new Iran strikes. Mild risk-off heading into PCE tomorrow.
+  SPY pre-market bid/ask ~$748.95–$749.07.
+- **WTI Oil:** ~$90/bbl (+1.8% today). New US military strikes on Iranian military site reported
+  overnight. WTI rose from ~$88 area. Still well below $100 watch trigger; geopolitical noise
+  but trajectory remains constructive (deal framework still in progress, Strait of Hormuz
+  negotiations ongoing). No change to macro stance.
+- **10yr Treasury yield:** ~4.48–4.50% (well below 4.75% watch level — constructive for AI
+  multiples). Treasury yields tick lower as investors remain optimistic on Iran peace deal
+  despite fresh strikes.
+- **Key events today / this week:**
+  - **LLY Bernstein conference TODAY 1:30 PM ET** — CSO Skovronsky fireside chat. Potential
+    positive catalyst for LLY.
+  - **COST earnings TONIGHT after close** — Q3 2026 EPS consensus $4.92, revenue $69.64B.
+    Consumer defensive candidate for final weekly slot.
+  - **Core PCE TOMORROW Fri May 29** — critical Fed watch. If >0.35% MoM, tighten stops on
+    NVDA/AVGO and skip final weekly slot this week.
+- **Market posture:** Cautious but not bearish. PCE tomorrow is the dominant event. Mild
+  headwinds today; no defensive pivot needed. Hold all positions.
+
+### MRVL decision — SKIP
+
+**MRVL Q1 FY2027 results (reported May 27 after close):**
+- Revenue: $2.418B (+28% YoY); beat consensus $2.41B — barely above
+- Non-GAAP EPS: $0.80; beat consensus $0.75 — solid but not spectacular
+- Data center: $1.833B (+27% YoY) — 76% of revenue, confirming AI tailwind
+- Q2 guidance: $2.700B ± 5% (~$2.57–$2.84B), non-GAAP EPS $0.93
+- **Price action:** Stock closed regular session May 27 at $198.69 (down from $208.22 prior close
+  as the market sold into the print). After-hours popped to ~$215.70 on the beat, but today
+  pre-market is fading to ~$200 — effectively erasing the entire AH gain.
+- **Decision: SKIP MRVL.** My stated entry criteria required strong beat: EPS >$0.85 (got $0.80)
+  and revenue >$2.5B (got $2.418B). Neither threshold met. Q2 guide is genuinely strong ($2.70B
+  = +12% sequential) but the stock tells the truth: market expected more. A pre-market fade from
+  $215 to $200 on a strong guide means the stock was priced for perfection. Don't chase into a
+  rug-pull pattern.
+
+### Held position updates
+
+**AVGO ($421.81 close May 27, +1.06% from entry $417.37):**
+- Session was volatile (range $416–$432). Closed constructively.
+- AH: $423.42 — stable above close.
+- Thesis intact. **DO NOT ADD — earnings June 3 (4 trading days).** Hold with stop.
+- Stop: HWM $435.31, stop $391.78.
+
+**MSFT ($412.71 close May 27, -2.27% from entry $422.31):**
+- Continues soft. AH: $413.61. No new negative news. Azure AI thesis intact.
+- Ackman/Pershing Square bullish signal intact. -2.27% well above -7% cut threshold.
+- Stop: HWM $424.40, stop $381.96.
+
+**AMZN ($271.85 close May 27, +1.01% from entry $269.13):**
+- Strong session (+2.31% yesterday). Pre-market today: $271.46 — holding gains.
+- AWS $364B backlog + $100B Anthropic thesis unchanged. BofA maintained Buy, $310 target.
+- Stop: HWM $272.41, stop $245.17. May ratchet further today if session is positive.
+
+**LLY ($1,084.23 close May 27, +1.05% from entry $1,072.94):**
+- Strong +1.64% session yesterday. Bernstein conference TODAY 1:30 PM ET with CSO Skovronsky.
+- Likely to discuss retatrutide TRIUMPH-1 data and Foundayo. Expect positive commentary.
+- Thesis strongly intact. Stop: HWM $1,093.00, stop $983.70.
+
+**NVDA ($212.58 close May 27, -1.72% from entry $216.30):**
+- Softest name. MRVL earnings had negligible read-through negative (NVDA steady ~$212 AH).
+- AI accelerator thesis unchanged. Ex-div June 4 ($0.25/sh).
+- Stop: HWM $218.18, stop $196.36. Current is $16.54 above stop — safe.
+
+### Guardrail check
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 2/3 (NVDA + LLY) | ≤3 | 1 slot remaining |
+| Cash | $61,132.91 (61.2%) | ≥5% | ✓ Ample |
+| Any position below −7% from entry? | Max: MSFT −2.27% | −7% threshold | ✓ None near |
+| Market open today? | Opens 9:30 AM ET | — | ✓ |
+| Iran / WTI | ~$90 (below $100) | <$100 | ✓ |
+| 10yr yield | ~4.48–4.50% | <4.75% | ✓ |
+
+---
+
+### Planned trades for today (Thursday May 28, 2026)
+
+**No trades planned.**
+
+MRVL skip confirmed (see above). Mild risk-off pre-market + PCE tomorrow = wrong day to
+force the final weekly slot.
+
+**Final slot decision — Friday morning:**
+- Monitor COST earnings tonight after close:
+  - If strong beat (EPS >$5.10, revenue >$71B) + membership renewal >90% + positive guidance →
+    consider COST 15 shares at Friday's open (~$930/sh est. = ~$13,950, ~14% of portfolio —
+    exceeds daily 25% cap only if combined with other buys, so this would be fine as standalone).
+    Actually: COST 15sh × ~$930 = ~$13,950 = ~14% of portfolio, well within caps.
+    Thesis: Consumer defensive diversification; membership-loyalty recession resilience; AI
+    supply-chain efficiency moat; 15% EPS growth. Adds sector balance to AI-heavy book.
+  - If miss or cautious → skip COST. Evaluate META (ad-tech AI flywheel, strong FCF) or carry
+    final slot to week of June 1.
+- Core PCE tomorrow: if >0.35% MoM, skip final slot this week entirely regardless of COST.
+- Target: 3 positions/week cap used only if both prints are constructive. No forcing.
+
+**Calendar reminders:**
+- LLY Bernstein conference TODAY 1:30 PM ET — monitor.
+- COST earnings tonight.
+- Core PCE tomorrow 8:30 AM ET.
+- AVGO earnings June 3 — DO NOT add before results.
+
+---
+
 ## 2026-05-27 — Pre-market research (~08:10 ET)
 
 **Today is Wednesday May 27. Weekly new-position count: 2/3 used (NVDA + LLY on May 26). 1 slot remaining.**
