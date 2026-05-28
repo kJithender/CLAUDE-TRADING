@@ -14,6 +14,23 @@ The weekly new-position count is derived from this log._
 
 -->
 
+## 2026-05-28 12:33 ET — MIDDAY CHECK (no trades)
+- **Action:** None — all positions within guardrail thresholds
+- **Market status:** `is_open: true` ✓ (confirmed via clock endpoint)
+- **AMZN:** $269.47 vs entry $269.13 → **+0.13%** (cut threshold: −7%) ✓ — −0.88% today
+- **AVGO:** $425.10 vs entry $417.37 → **+1.85%** (cut threshold: −7%) ✓ — +0.77% today
+- **LLY:** $1,126.25 vs entry $1,072.94 → **+4.97%** (cut threshold: −7%) ✓ — **+4.00% today; Bernstein conference 1:30 PM ET live catalyst**
+- **MSFT:** $425.90 vs entry $422.31 → **+0.85%** (cut threshold: −7%) ✓ — **+3.21% today; strong recovery**
+- **NVDA:** $212.68 vs entry $216.30 → **−1.68%** (cut threshold: −7%) ✓ — essentially flat today (+0.04%)
+- **Trailing stops (all 5 confirmed active — HWMs ratcheted since morning):**
+  - AVGO (a8e344f4): HWM $435.31, stop $391.78 ✓ — unchanged
+  - MSFT (a55a3db6): HWM **$429.49** (ratcheted from $424.40 as MSFT surged today), stop **$386.54** ✓
+  - AMZN (bbcd70fa): HWM $272.41, stop $245.17 ✓ — unchanged (AMZN slightly below yesterday close)
+  - NVDA (8c6b9680): HWM $218.18, stop $196.36 ✓ — unchanged
+  - LLY (d4147484): HWM **$1,149.10** (ratcheted from $1,108.80 — LLY surged to intraday high), stop **$1,034.19** ✓
+- **Portfolio equity:** $100,502.01 (+$564.56, +0.56% vs yesterday close $99,937.45) | Cash: $61,132.91 (60.8%)
+- **Note:** Strong midday session led by LLY (+4.00% — Bernstein conference catalyst with CSO Skovronsky speaking at 1:30 PM ET today) and MSFT (+3.21% — strong intraday recovery). LLY HWM ratcheted from $1,108.80 to $1,149.10 by broker; stop now $1,034.19. MSFT HWM ratcheted from $424.40 to $429.49; stop now $386.54. NVDA remains the softest name but only −1.68% from entry — well above −7% cut threshold. No position approaches cut trigger. None above +15% tighten threshold. No action warranted. Portfolio crosses $100.5K for the first time.
+
 ## 2026-05-28 09:35 ET — MARKET OPEN (no trades)
 - **Action:** None — no trades planned today per pre-market research. MRVL skipped (price action confirmed skip). Final weekly slot deferred to Friday after COST earnings tonight + Core PCE tomorrow.
 - **Market status:** `is_open: true` ✓ (confirmed before proceeding)
