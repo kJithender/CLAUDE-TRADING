@@ -14,6 +14,23 @@ The weekly new-position count is derived from this log._
 
 -->
 
+## 2026-05-28 09:35 ET — MARKET OPEN (no trades)
+- **Action:** None — no trades planned today per pre-market research. MRVL skipped (price action confirmed skip). Final weekly slot deferred to Friday after COST earnings tonight + Core PCE tomorrow.
+- **Market status:** `is_open: true` ✓ (confirmed before proceeding)
+- **AMZN:** $269.87 vs entry $269.13 → **+0.28%** (cut threshold: −7%) ✓ — soft open, −0.73% today
+- **AVGO:** $416.78 vs entry $417.37 → **−0.14%** (cut threshold: −7%) ✓ — soft open, −1.20% today
+- **LLY:** $1,107.14 vs entry $1,072.94 → **+3.19%** (cut threshold: −7%) ✓ — LEADING today +2.24%, ahead of Bernstein conference 1:30 PM ET
+- **MSFT:** $414.99 vs entry $422.31 → **−1.73%** (cut threshold: −7%) ✓ — recovering +0.56% today
+- **NVDA:** $213.65 vs entry $216.30 → **−1.23%** (cut threshold: −7%) ✓ — recovering +0.49% today
+- **Trailing stops (all 5 confirmed active):**
+  - AVGO (a8e344f4): HWM $435.31, stop $391.78 ✓ — unchanged
+  - MSFT (a55a3db6): HWM $424.40, stop $381.96 ✓ — unchanged
+  - AMZN (bbcd70fa): HWM $272.41, stop $245.17 ✓ — unchanged
+  - NVDA (8c6b9680): HWM $218.18, stop $196.36 ✓ — unchanged
+  - LLY (d4147484): HWM **$1,108.80** (ratcheted from $1,093.00 as LLY surged), stop **$997.92** ✓
+- **Portfolio equity:** $100,016.88 (above $100K for first time!) | Cash: $61,132.91 (61.1%)
+- **Note:** LLY is the standout today (+2.24% at open), with the HWM ratcheted to $1,108.80 by broker; Bernstein conference at 1:30 PM ET may provide additional catalyst. AVGO soft (-1.20%) but 4 trading days to earnings June 3 — do not add. All positions well above -7% cut threshold. No action warranted.
+
 ## 2026-05-28 08:10 ET — PRE-MARKET (no trades)
 - **Action:** None — MRVL earnings reviewed; no entry conditions met. Market cautious pre-PCE.
 - **MRVL SKIP:** Q1 EPS $0.80 (beat $0.75 consensus, fell short of $0.85 strong-beat threshold);
