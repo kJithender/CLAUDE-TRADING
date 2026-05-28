@@ -3,6 +3,19 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-05-28 15:50 ET — CLOSE (no trades)
+- **Action:** None — end-of-day P/L check and journal
+- **AMZN:** $273.93 vs entry $269.13 → **+1.78%** (+0.76% today) ✓ — HWM ratcheted to $273.93, stop $246.53
+- **AVGO:** $426.41 vs entry $417.37 → **+2.17%** (+1.08% today) ✓ — HWM $435.31, stop $391.78
+- **LLY:** $1,133.08 vs entry $1,072.94 → **+5.61%** (+4.63% today) ✓ — Bernstein conference catalyst confirmed; HWM $1,149.10, stop $1,034.19
+- **MSFT:** $425.27 vs entry $422.31 → **+0.70%** (+3.05% today) ✓ — HWM $429.49, stop $386.54
+- **NVDA:** $214.05 vs entry $216.30 → **−1.04%** (+0.68% today) ✓ — HWM $218.18, stop $196.36
+- **Stops:** All 5 confirmed active at midday. AMZN HWM ratcheted to $273.93 (stop $246.53). All others unchanged.
+- **Portfolio equity:** $100,732.77 (+$795.32, +0.80% vs yesterday close $99,937.45) | Cash: $61,132.91 (60.7%)
+- **SPY close:** $754.78 (+0.558% today). Bull outperformed SPY by +0.24% today.
+- **Since inception:** Bull +0.73% vs SPY +2.07% = −1.34% gap. Cash drag (60.8%) remains primary driver.
+- **Note:** Strong close driven by LLY (+4.63% — Bernstein conference with CSO Skovronsky confirmed positive, TRIUMPH-1 and Foundayo in focus) and MSFT (+3.05% — second consecutive strong recovery session). AVGO (+1.08%) and AMZN (+0.76%) also solid. NVDA only softly positive (+0.68%) — still the portfolio laggard at −1.04% from entry but well within the −7% threshold. All five unrealized positions net +$737.32. AMZN HWM ratcheted as it closed above prior HWM. No action warranted. Portfolio at new equity high $100,732.77. COST earnings after close tonight and Core PCE tomorrow are the key upcoming events for the final weekly slot decision.
+
 <!-- Template for each entry:
 
 ## YYYY-MM-DD HH:MM ET — BUY/SELL SYMBOL
