@@ -3,29 +3,29 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-05-29 09:35 ET (market-open routine)
+**Last updated:** 2026-05-29 12:33 ET (midday routine)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
 ## Account
 
 | Metric | Value |
 |--------|-------|
-| Equity | $101,109.60 |
+| Equity | $101,128.48 |
 | Cash | $61,132.91 |
-| Long market value | $39,976.69 |
-| Buying power | $162,242.51 |
+| Long market value | $39,995.57 |
+| Buying power | $162,261.39 |
 
 ## Open positions
 
-| Symbol | Qty | Avg entry | Open price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
-|--------|-----|-----------|------------|-----------|----------------|----------------|---------------|
-| AVGO | 20 | $417.37 | $437.82 | $8,756.40 | +$409.08 (+4.90%) | 8.66% | 10% trailing (order a8e344f4), HWM **$439.52** (ratcheted from $435.31), stop **$395.57** |
-| MSFT | 20 | $422.31 | $439.29 | $8,785.80 | +$339.60 (+4.02%) | 8.69% | 10% trailing (order a55a3db6), HWM **$439.87** (ratcheted from $429.49), stop **$395.88** |
-| AMZN | 30 | $269.13 | $273.06 | $8,191.80 | +$117.90 (+1.46%) | 8.10% | 10% trailing (order bbcd70fa), HWM $274.37, stop $246.93 |
-| LLY | 7 | $1,072.94 | $1,120.57 | $7,843.99 | +$333.38 (+4.44%) | 7.76% | 10% trailing (order d4147484), HWM $1,149.10, stop $1,034.19 |
-| NVDA | 30 | $216.30 | $213.31 | $6,399.30 | −$89.76 (−1.38%) | 6.33% | 10% trailing (order 8c6b9680), HWM $218.18, stop $196.36 |
+| Symbol | Qty | Avg entry | Midday price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
+|--------|-----|-----------|--------------|-----------|----------------|----------------|---------------|
+| AVGO | 20 | $417.37 | $440.25 | $8,805.00 | +$457.68 (+5.48%) | 8.71% | 10% trailing (order a8e344f4), HWM ~**$440.25** (ratcheted from $439.52 at open), stop ~**$396.23** |
+| MSFT | 20 | $422.31 | $443.82 | $8,876.30 | +$430.10 (+5.09%) | 8.78% | 10% trailing (order a55a3db6), HWM ~**$443.82** (ratcheted from $439.87 at open), stop ~**$399.44** |
+| AMZN | 30 | $269.13 | $272.08 | $8,162.40 | +$88.50 (+1.10%) | 8.07% | 10% trailing (order bbcd70fa), HWM $274.37, stop $246.93 |
+| LLY | 7 | $1,072.94 | $1,094.23 | $7,659.61 | +$149.00 (+1.98%) | 7.57% | 10% trailing (order d4147484), HWM $1,149.10, stop $1,034.19 |
+| NVDA | 30 | $216.30 | $216.40 | $6,492.00 | +$2.94 (+0.04%) | 6.42% | 10% trailing (order 8c6b9680), HWM $218.18, stop $196.36 |
 
-_All five 10% GTC trailing-stop orders confirmed active (market open May 29). MSFT HWM ratcheted to $439.87 (from $429.49) at open. AVGO HWM ratcheted to $439.52 (from $435.31) at open. AMZN, LLY, NVDA stops unchanged._
+_All five 10% GTC trailing-stop orders active. AVGO HWM ratcheted to ~$440.25, stop ~$396.23. MSFT HWM ratcheted to ~$443.82, stop ~$399.44. AMZN, LLY, NVDA stops unchanged._
 
 ## Performance vs S&P 500
 
@@ -33,34 +33,34 @@ _All five 10% GTC trailing-stop orders confirmed active (market open May 29). MS
 |--------|------|-----|------------|
 | Inception (2026-05-21) | $100,000.00 | $739.44 | — |
 | Close (2026-05-28) | $100,732.77 | $754.78 | — |
-| Market open (2026-05-29) | $101,109.60 | tbd at close | tbd at close |
-| Since inception (2026-05-21) | +1.11% ($100,000 → $101,109.60) | +2.07%+ est. | **~−1.0%** est. |
+| Midday (2026-05-29) | $101,128.48 | tbd at close | tbd at close |
+| Since inception (2026-05-21) | +1.13% ($100,000 → $101,128.48) | +2.07%+ est. | **~−0.9%** est. |
 
-_Cash drag (60.5% cash) remains the structural lag vs SPY. Portfolio at new equity high $101,109.60._
+_Cash drag (60.5% cash) remains the structural lag vs SPY. Portfolio at new equity high $101,128.48._
 
 ## Notes
 
 Five positions since inception. Weekly new-position count: **2/3 used** (NVDA + LLY on May 26).
 Cash: $61,132.91 (60.5%). **One position slot carried to week of June 1** (COST criteria not met; final weekly slot deferred).
 
-**Market open snapshot (2026-05-29 09:35 ET):**
-- AVGO: $437.82 (+4.90% from entry, +2.64% today). HWM ratcheted to $439.52, stop $395.57. DO NOT ADD — AVGO earnings June 3.
-- MSFT: $439.29 (+4.02% from entry, +2.88% today). HWM ratcheted to $439.87, stop $395.88. Four consecutive strong sessions. Azure AI thesis intact.
-- AMZN: $273.06 (+1.46% from entry, −0.34% today). HWM $274.37, stop $246.93. Thesis intact.
-- LLY: $1,120.57 (+4.44% from entry, −0.55% today). HWM $1,149.10, stop $1,034.19. CVS Foundayo coverage June 1. Thesis strongest.
-- NVDA: $213.31 (−1.38% from entry, −0.44% today). HWM $218.18, stop $196.36. Soft but safe. Ex-div June 4.
+**Midday snapshot (2026-05-29 12:33 ET):**
+- AVGO: $440.25 (+5.48% from entry, +3.21% today). HWM ratcheted to ~$440.25, stop ~$396.23. Strong session — earnings June 3. DO NOT ADD.
+- MSFT: $443.82 (+5.09% from entry, +3.94% today). HWM ratcheted to ~$443.82, stop ~$399.44. Five consecutive strong sessions. Azure AI thesis fully intact.
+- AMZN: $272.08 (+1.10% from entry, −0.70% today). HWM $274.37, stop $246.93. Mild pullback. Thesis intact.
+- LLY: $1,094.23 (+1.98% from entry, −2.89% today). HWM $1,149.10, stop $1,034.19. Pulling back from recent run — thesis strongest (CVS Foundayo June 1).
+- NVDA: $216.40 (+0.04% from entry, +1.00% today). HWM $218.18, stop $196.36. Recovering. Ex-div June 4.
 
-**All positions well above −7% cut threshold. NVDA softest at −1.38%.**
+**All positions well above −7% cut threshold. No position above +15% tighten threshold. No action taken at midday.**
 
 **Upcoming catalysts:**
+- **LLY CVS Foundayo coverage June 1** — commercial access catalyst.
 - **AVGO earnings June 3** — DO NOT add before results. If strong beat, evaluate scale-up to 12-15%.
 - **NVDA ex-dividend June 4** — $0.25/sh × 30sh = $7.50.
-- **LLY CVS Foundayo coverage June 1** — commercial access catalyst.
 - **Week of June 1** — 1 open position slot. Candidates: META (ad-tech AI flywheel) or LLY scale-up post-AVGO earnings.
 
 **Thesis status:**
-- **AVGO:** +4.90% from entry. DO NOT ADD (earnings June 3). Intact. HWM $439.52, stop $395.57.
-- **MSFT:** +4.02% from entry. Four strong sessions. Azure AI thesis fully intact. HWM $439.87, stop $395.88.
-- **AMZN:** +1.46% from entry. AWS $364B backlog + $100B Anthropic thesis intact. HWM $274.37, stop $246.93.
-- **NVDA:** −1.38% from entry. Soft but stable. AI accelerator monopoly intact. Ex-div June 4. HWM $218.18, stop $196.36.
-- **LLY:** +4.44% from entry. **THESIS STRONGEST** — CVS coverage (Foundayo June 1, Zepbound Oct 1) + GLP-1 market share 60.1%. HWM $1,149.10, stop $1,034.19.
+- **AVGO:** +5.48% from entry. DO NOT ADD (earnings June 3). Intact. HWM ~$440.25, stop ~$396.23.
+- **MSFT:** +5.09% from entry. Five strong sessions. Azure AI thesis fully intact. HWM ~$443.82, stop ~$399.44.
+- **AMZN:** +1.10% from entry. AWS $364B backlog + $100B Anthropic thesis intact. HWM $274.37, stop $246.93.
+- **NVDA:** +0.04% from entry. Recovering. AI accelerator monopoly intact. Ex-div June 4. HWM $218.18, stop $196.36.
+- **LLY:** +1.98% from entry. **THESIS STRONGEST** — CVS coverage (Foundayo June 1, Zepbound Oct 1) + GLP-1 market share 60.1%. HWM $1,149.10, stop $1,034.19.
