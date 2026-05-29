@@ -3,6 +3,19 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-05-29 15:50 ET — CLOSE (no trades)
+- **Action:** None — end-of-day P/L check and journal
+- **AVGO:** $444.71 vs entry $417.37 → **+6.55%** (+4.25% today) ✓ — **new HWM $444.71**, stop ~**$400.24** (broker ratchets)
+- **MSFT:** $446.27 vs entry $422.31 → **+5.67%** (+4.52% today) ✓ — **new HWM $446.27**, stop ~**$401.64** (broker ratchets)
+- **LLY:** $1,104.03 vs entry $1,072.94 → **+2.90%** (−2.02% today) ✓ — HWM $1,149.10, stop $1,034.19 unchanged
+- **AMZN:** $271.67 vs entry $269.13 → **+0.95%** (−0.85% today) ✓ — HWM $274.37, stop $246.93 unchanged
+- **NVDA:** $214.44 vs entry $216.30 → **−0.86%** (+0.09% today) ✓ — HWM $218.18, stop $196.36 unchanged
+- **Portfolio equity:** $101,263.22 (+$523.81, +0.52% vs yesterday close $100,739.41) | Cash: $61,132.91 (60.4%)
+- **SPY close:** $756.65 (+0.25% today). Bull outperformed SPY by +0.27% today.
+- **Since inception:** Bull +1.26% vs SPY +2.33% = −1.07% gap (narrowed from −1.34% yesterday).
+- **Week summary:** Bull +1.49% vs SPY +1.47% — essentially tied this week, first week Bull has matched SPY.
+- **Note:** Strong Friday close powered by AVGO (+4.25%, new HWM $444.71, stop ~$400.24 — earnings June 3) and MSFT (+4.52%, new HWM $446.27, stop ~$401.64 — six consecutive strong sessions). LLY gave back gains (−2.02%) but +2.90% from entry — thesis strongest (CVS Foundayo June 1). AMZN mild softness (−0.85%). NVDA essentially flat (+0.09%), holding at −0.86% from entry. No position near −7% cut threshold. All five stops active. Week-over-week: Bull +1.49% vs SPY +1.47% — the since-inception gap narrowed from −1.34% to −1.07%. Weekly review routine to run at 4:30 PM ET.
+
 ## 2026-05-29 12:33 ET — MIDDAY CHECK (no trades)
 - **Action:** None — all positions within guardrail thresholds
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 12:33 ET)
