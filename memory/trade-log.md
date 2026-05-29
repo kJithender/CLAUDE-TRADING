@@ -3,6 +3,23 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-05-29 09:35 ET — MARKET OPEN (no trades)
+- **Action:** None — no trades planned per pre-market research; final weekly slot carried to week of June 1
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 09:35 ET)
+- **AMZN:** $273.06 vs entry $269.13 → **+1.46%** (cut threshold: −7%) ✓ — minor pullback −0.34% today
+- **AVGO:** $437.82 vs entry $417.37 → **+4.90%** (cut threshold: −7%) ✓ — strong +2.64% today; HWM ratcheted
+- **LLY:** $1,120.57 vs entry $1,072.94 → **+4.44%** (cut threshold: −7%) ✓ — minor pullback −0.55% today
+- **MSFT:** $439.29 vs entry $422.31 → **+4.02%** (cut threshold: −7%) ✓ — strong +2.88% today; HWM ratcheted
+- **NVDA:** $213.31 vs entry $216.30 → **−1.38%** (cut threshold: −7%) ✓ — soft −0.44% today; well above stop
+- **Trailing stops (all 5 confirmed active — HWMs ratcheted at open):**
+  - AVGO (a8e344f4): HWM **$439.52** (ratcheted from $435.31 — AVGO surged above prior HWM at open), stop **$395.57** ✓
+  - MSFT (a55a3db6): HWM **$439.87** (ratcheted from $429.49 — MSFT surged strongly at open), stop **$395.88** ✓
+  - AMZN (bbcd70fa): HWM $274.37, stop $246.93 ✓ — unchanged (AMZN below prior HWM today)
+  - NVDA (8c6b9680): HWM $218.18, stop $196.36 ✓ — unchanged
+  - LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged (LLY below prior HWM today)
+- **Portfolio equity:** $101,109.60 (new equity high) | Cash: $61,132.91 (60.5%)
+- **Note:** Strong open driven by MSFT (+2.88% — four consecutive strong sessions; Azure AI thesis intact) and AVGO (+2.64% — ahead of June 3 earnings, analysts bullish). Both trailing stops ratcheted materially: MSFT HWM $429.49→$439.87 (+$10.38), AVGO HWM $435.31→$439.52 (+$4.21). NVDA softest at −1.38% from entry but safely above −7% cut threshold and stop at $196.36. No position approaches any guardrail threshold. Pre-market plan: NO TRADES. COST earnings missed strong-beat criteria (EPS $4.93 vs $5.10 threshold). Final weekly slot (1 of 3) carried to week of June 1. Candidates: META (ad-tech AI flywheel) or LLY scale-up post-AVGO earnings June 3. Do not rush.
+
 ## 2026-05-28 15:50 ET — CLOSE (no trades)
 - **Action:** None — end-of-day P/L check and journal
 - **AMZN:** $273.93 vs entry $269.13 → **+1.78%** (+0.76% today) ✓ — HWM ratcheted to $273.93, stop $246.53

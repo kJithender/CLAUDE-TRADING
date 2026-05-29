@@ -140,13 +140,13 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - **AVGO earnings June 3 (next Tuesday — 2 trading days away):** Major catalyst. Expect Q2 revenue
   $22.08B (+47% YoY), EPS $2.39 (+51% YoY). Do NOT add to AVGO before earnings. Hold stop.
   Analyst targets raised: Citi $500, Susquehanna $490. If beats strongly → scale to 12-15%.
-  HWM $435.31, stop $391.78.
+  HWM **$439.52** (ratcheted at May 29 open from $435.31), stop **$395.57**.
 - **LLY thesis STRENGTHENING:** Bernstein conference May 28 + CVS coverage announcement.
   CVS restoring Zepbound coverage (Oct 1) + adding Foundayo to formulary (June 1) — major
   commercial access win. GLP-1 market share 60.1%. Also: vaccine pipeline deals ~$4B (Curevo, LimmaTech).
   HWM $1,149.10, stop $1,034.19. Hold. Potential scale-up candidate.
-- **MSFT:** Pre-market $434.00 — above HWM $429.49; trailing stop will ratchet at open today.
-  Three consecutive strong sessions. Azure AI thesis fully intact.
+- **MSFT:** +4.02% from entry at May 29 open ($439.29). HWM **$439.87** (ratcheted from $429.49 at
+  May 29 open), stop **$395.88**. Four consecutive strong sessions. Azure AI thesis fully intact.
 - **NVDA:** At −0.69% from entry. Ex-dividend June 4 ($0.25/sh × 30sh = $7.50). Stable.
   HWM $218.18, stop $196.36. Hold.
 - **AMZN:** HWM ratcheted to $274.37 during May 28 session. Stop $246.93. Thesis intact.
