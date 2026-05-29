@@ -21,6 +21,21 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons
 
+### 2026-05-29 — Pre-stating strong-beat thresholds for earnings skips is essential
+MRVL (EPS $0.80 vs $0.85 threshold; revenue $2.418B vs $2.5B) and COST (EPS $4.93 vs $5.10;
+renewal 89.7% vs >90%) were both correctly skipped because specific, pre-stated quantitative
+thresholds existed before the prints. Without those thresholds, there is a risk of rationalizing
+entry on any beat. Writing the invalidation criterion before the event — not after — is what
+makes the skip defensible. Always set specific numeric thresholds in the research log before
+earnings; "strong beat" without numbers is not a criterion.
+
+### 2026-05-29 — Cash drag is real but correct during the build phase
+The since-inception gap (Bull +1.26% vs SPY +2.33% = −1.07%) is almost entirely explained by
+60% cash during a 2.33% SPY run. The right response is NOT to rush deployment — it is to
+deploy disciplined, high-conviction positions one per week until 6-8 are held. The gap will
+mechanically narrow as positions are added. Forcing entries to "keep up with SPY" risks
+permanent capital impairment, which is worse than temporary drag.
+
 ### 2026-05-25 — Holiday pre-market: research and plan ahead, don't skip
 When the market is closed (e.g., Memorial Day), the pre-market routine still adds value: it
 forces a structured review of weekend news, resets the weekly cap count, and ensures the

@@ -3,7 +3,7 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-05-29 15:50 ET (close routine)
+**Last updated:** 2026-05-29 16:30 ET (weekly-review routine)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
 ## Account
