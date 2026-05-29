@@ -5,6 +5,118 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-05-29 — Pre-market research (~08:00 ET)
+
+**Today is Friday May 29. Weekly new-position count: 2/3 used (NVDA + LLY on May 26). 1 slot remaining — decision TODAY.**
+
+### Macro
+
+- **Core PCE (April 2026, released 8:30 AM ET today):** +0.2% MoM, +3.3% YoY.
+  - Monthly 0.2% is BELOW our 0.35% threshold → **NO stop tightening on NVDA/AVGO needed.**
+  - Annual 3.3% in line with estimates. The soft monthly reading suggests the prior inflation bump
+    is beginning to ease — constructive for AI multiples and rate outlook.
+  - 10yr yield watch threshold 4.75% unchanged.
+- **Iran deal:** US and Iran reached a tentative agreement for Strait of Hormuz reopening and
+  nuclear talks. WTI oil falling to ~$87.66/bbl (−1.4%), Brent ~$92.47 (−1.3%). Very positive macro
+  relief — eases energy-driven inflation pressure. Deal not yet finalized but trajectory clearly positive.
+- **S&P 500 futures:** +0.1% pre-market. Flat but constructive; market digesting benign PCE and
+  Iran deal news. No risk-off signal.
+- **Market posture:** Constructive heading into the open. PCE benign, oil falling, Iran optimism.
+  No defensive pivot warranted. Broad market risk-on bias into end of week.
+
+### COST Earnings decision — SKIP
+
+**COST Q3 2026 results (reported May 28 after close):**
+- EPS: $4.93 (barely beat consensus $4.92 — 0.2% surprise; well below our $5.10 strong-beat threshold)
+- Net sales: $69.15B (+11.6% YoY); total revenue $70.53B (beat consensus ~$69.64B but missed our $71B threshold)
+- Worldwide membership renewal: 89.7% (missed our >90% threshold; US/Canada 92.2% ✓)
+- Comparable same-store sales: +9.8% (+6.6% ex-FX/gas) — operationally solid
+- E-commerce comps: +21.5% — strong digital growth
+- After-hours reaction: "After-Hours Share Price Rises Only Slightly"
+- **Decision: SKIP COST.** Pre-stated strong-beat criteria NOT met:
+  - EPS $4.93 vs $5.10 threshold (essentially in-line with consensus, not a "beat and raise")
+  - Revenue $70.53B vs $71B threshold (missed)
+  - Worldwide renewal 89.7% vs >90% threshold (missed by 30 bps)
+  - AH reaction confirms market wasn't impressed — lukewarm print, not a catalyst print
+- **Final weekly slot CARRIED to week of June 1.** No forcing.
+
+### Held position updates (pre-market May 29)
+
+**AVGO ($433.50 pre-mkt, +1.62% vs prior close $426.58, entry $417.37 = +3.87% overall):**
+- Pre-market strength ahead of the week's close. No company-specific catalyst today.
+- Analyst upgrades: Susquehanna raised target $450→$490; Citi raised target to $500 (Buy).
+- 26 analysts Buy, 4 Hold consensus.
+- **AVGO earnings June 3 — DO NOT ADD.** Hold with trailing stop. HWM $435.31, stop $391.78.
+  If AVGO clears $435.31 intraday today, broker will ratchet the stop.
+
+**MSFT ($434.00 pre-mkt, +1.64% vs prior close $426.99, entry $422.31 = +2.77% overall):**
+- **ABOVE trailing stop HWM $429.49.** Broker will ratchet HWM and stop higher at open.
+  New HWM will be ~$434.00+; new stop will be ~$390.60+.
+- Azure AI thesis intact. No new negative catalysts.
+- Three consecutive sessions of strong recovery (+3.21% Wed, +3.05% Thu, +1.64% pre-mkt Fri).
+
+**AMZN ($271.70 pre-mkt, −0.84% vs prior close $274.00, entry $269.13 = +0.96% overall):**
+- Minor pullback after recent highs. HWM ratcheted to $274.37 (from $273.93) during May 28 session.
+  Stop now $246.93. Thesis intact. AWS backlog + Anthropic thesis unchanged.
+
+**LLY ($1,122.05 pre-mkt, −0.42% vs prior close $1,126.80, entry $1,072.94 = +4.58% overall):**
+- Minor pullback but **KEY NEW CATALYST confirmed:**
+  - **CVS announced it will restore Zepbound coverage AND add Foundayo (once-daily GLP-1 pill)
+    to its standard drug plans, effective June 1 (Foundayo) and October 1 (Zepbound).** This is
+    a major commercial access win — CVS Caremark is one of the largest PBM networks in the US.
+    Broader formulary access = higher adoption, higher revenue.
+  - Also: LLY in discussions for ~$4B in vaccine deals (Curevo, LimmaTech) — pipeline diversification.
+  - GLP-1 market share: 60.1% US obesity market (Novo Nordisk 39.4%). Lead is growing.
+- HWM $1,149.10, stop $1,034.19. Thesis STRONGEST in the portfolio. Hold.
+
+**NVDA ($214.82 pre-mkt, +0.27% vs prior close $214.25, entry $216.30 = −0.69% overall):**
+- Stable consolidation. No new catalysts. AI accelerator monopoly thesis intact.
+- Ex-dividend June 4 ($0.25/sh). HWM $218.18, stop $196.36.
+
+### Trailing stops — all 5 confirmed active
+
+| Symbol | Order ID | HWM | Stop | Status |
+|--------|----------|-----|------|--------|
+| LLY | d4147484 | $1,149.10 | $1,034.19 | ✓ active |
+| NVDA | 8c6b9680 | $218.18 | $196.36 | ✓ active |
+| AMZN | bbcd70fa | $274.37 | $246.93 | ✓ active (HWM ratcheted from $273.93) |
+| MSFT | a55a3db6 | $429.49 | $386.54 | ✓ active (will ratchet at open; current $434) |
+| AVGO | a8e344f4 | $435.31 | $391.78 | ✓ active |
+
+### Guardrail check
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 2/3 (NVDA + LLY) | ≤3 | 1 slot remaining → carried to June 1 week |
+| Cash | $61,132.91 (60.6%) | ≥5% | ✓ Ample |
+| Any position below −7% from entry? | Max: NVDA −0.69% | −7% threshold | ✓ None near |
+| PCE MoM | 0.2% | <0.35% (tighten-stop trigger) | ✓ Benign — no tightening |
+| WTI oil | ~$87.66/bbl | <$100 watch | ✓ Falling — very constructive |
+| 10yr yield | Below 4.75% watch | <4.75% | ✓ |
+
+---
+
+### Planned trades for today (Friday May 29, 2026)
+
+**No trades planned.**
+
+COST earnings did not meet the strong-beat criteria (EPS $4.93 vs $5.10 threshold; revenue $70.53B vs $71B threshold; worldwide renewal 89.7% vs >90% threshold). AH reaction minimal — market confirmed the print was uninspiring. Do not buy COST.
+
+PCE benign (0.2% MoM) means no stop tightening and no defensive pivot. Iran deal constructive. Portfolio intact.
+
+**Final weekly position slot (1 of 3) carried to week of June 1.** Candidates for that week:
+- **META** (ad-tech AI flywheel, strong FCF, ~$607+) — if week of June 1 opens constructively
+- **LLY scale-up** — if LLY thesis continues to strengthen post-CVS coverage; could scale toward 10-12%
+- **New name research** — with AVGO earnings June 3, best to wait until after the print before concentrating further in AI semis
+
+**Calendar reminders:**
+- AVGO earnings June 3 — DO NOT add. Hold stop. If strong beat → evaluate scale-up to 12-15%.
+- NVDA ex-dividend June 4 ($0.25/sh × 30sh = $7.50 dividend credit)
+- LLY CVS Foundayo coverage effective June 1
+- Weekly review routine later today (4:30 PM ET) — self-grade the week
+
+---
+
 ## 2026-05-28 — Pre-market research (~08:10 ET)
 
 **Today is Thursday May 28. Weekly new-position count: 2/3 used (NVDA + LLY on May 26). 1 slot remaining.**

@@ -124,30 +124,35 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-05-28 EOD)
+## Active Macro Watches (updated 2026-05-29 pre-market)
 
 - **10yr Treasury yield:** ~4.48–4.50% as of May 28 (well below 4.75% watch level — constructive).
   Watch trigger unchanged: if 10yr crosses 4.75% on upward trend, halt new buys and tighten
   trailing stops on high-multiple AI names (AVGO, MSFT, NVDA).
-- **Iran conflict / oil prices:** WTI ~$90/bbl. Deal framework in negotiation (60-day ceasefire
-  extension). Trend broadly positive. Watch: if WTI rises above $100, reassess.
-- **Core PCE TOMORROW Fri May 29 8:30 AM ET — CRITICAL EVENT:**
-  If >0.35% MoM → tighten stops on NVDA/AVGO; skip final weekly slot (carry to week of June 1).
-  If ≤0.35% MoM + COST earnings strong tonight → proceed with COST 15sh at Friday open.
-- **COST earnings TONIGHT May 28 after close:** Final weekly slot decision gated here.
-  Strong beat criteria: EPS >$5.10 (consensus $4.92), revenue >$71B (consensus $69.64B),
-  membership renewal >90%. Both COST beat AND PCE benign needed to proceed.
-- **AVGO earnings June 3 (3 trading days):** Major catalyst. Expect Q2 revenue $22.08B (+47% YoY),
-  EPS $2.39 (+51% YoY). Do NOT add to AVGO before earnings. Hold with trailing stop.
-  If beats strongly, consider scaling up to 12-15% post-earnings.
-- **LLY thesis CONFIRMED STRONG:** Bernstein conference May 28 completed — CSO Skovronsky
-  spoke; LLY closed +4.63% today on positive sentiment. Retatrutide TRIUMPH-1 and Foundayo
-  both in focus. HWM $1,149.10, stop $1,034.19. Hold.
-- **NVDA:** Entered May 26, 30sh @ $216.30. At −1.04% from entry. Ex-dividend June 4 ($0.25/sh).
+- **Core PCE April 2026 (released May 29):** +0.2% MoM, +3.3% YoY — BENIGN.
+  Below 0.35% threshold. No stop tightening needed. Inflation deceleration constructive for multiples.
+- **Iran conflict / oil prices:** WTI ~$87.66/bbl (−1.4%). Tentative US-Iran deal for Strait of
+  Hormuz reopening announced — deal not finalized but trajectory strongly positive. Below $100 watch.
+  If WTI falls below $80 on confirmed deal, XOM thesis weakens; energy sector rotation may reduce.
+- **COST (SKIP):** Q3 EPS $4.93 (vs $5.10 threshold), revenue $70.53B (vs $71B threshold),
+  worldwide renewal 89.7% (vs >90%). AH reaction minimal. Skip. Not a COST thesis break —
+  company executing fine — but criteria for entry not met. Re-evaluate for week of June 3+.
+- **AVGO earnings June 3 (next Tuesday — 2 trading days away):** Major catalyst. Expect Q2 revenue
+  $22.08B (+47% YoY), EPS $2.39 (+51% YoY). Do NOT add to AVGO before earnings. Hold stop.
+  Analyst targets raised: Citi $500, Susquehanna $490. If beats strongly → scale to 12-15%.
+  HWM $435.31, stop $391.78.
+- **LLY thesis STRENGTHENING:** Bernstein conference May 28 + CVS coverage announcement.
+  CVS restoring Zepbound coverage (Oct 1) + adding Foundayo to formulary (June 1) — major
+  commercial access win. GLP-1 market share 60.1%. Also: vaccine pipeline deals ~$4B (Curevo, LimmaTech).
+  HWM $1,149.10, stop $1,034.19. Hold. Potential scale-up candidate.
+- **MSFT:** Pre-market $434.00 — above HWM $429.49; trailing stop will ratchet at open today.
+  Three consecutive strong sessions. Azure AI thesis fully intact.
+- **NVDA:** At −0.69% from entry. Ex-dividend June 4 ($0.25/sh × 30sh = $7.50). Stable.
   HWM $218.18, stop $196.36. Hold.
-- **MRVL (SKIP):** Q1 results insufficient (EPS $0.80 vs $0.85 threshold; revenue $2.418B vs $2.5B
-  threshold). Stock faded. No entry.
+- **AMZN:** HWM ratcheted to $274.37 during May 28 session. Stop $246.93. Thesis intact.
+- **Week of June 1 — open position slot:** 1 slot available (carried from week of May 26).
+  Candidates: META (ad-tech AI flywheel); LLY scale-up; new name post-AVGO earnings.
+  Do not rush — wait for AVGO result June 3 before adding more AI-semi concentration.
 - **WMT:** Removed from near-term consideration.
-- **XOM:** Removed from near-term watchlist given Iran deal framework progress.
-- **Goldman Sachs S&P 500 target raised to 8,000** (from 7,600, May 27). Cites 24% EPS growth
-  in 2026 driven by AI. Broad market bullish tailwind — stay invested, not defensive.
+- **XOM:** Removed from near-term watchlist given Iran deal progress.
+- **Goldman Sachs S&P 500 target raised to 8,000** (from 7,600, May 27). Broad market bullish.
