@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
-# Send a WhatsApp notification to the human via the free CallMeBot API.
+# Send a Telegram notification via the BullTheBullishBot.
 # Credentials are read from environment variables only.
 set -euo pipefail
 
 msg="${1:?usage: ./scripts/notify.sh \"message\"}"
 
-if [[ -z "${CALLMEBOT_PHONE:-}" || -z "${CALLMEBOT_APIKEY:-}" ]]; then
-  echo "ERROR: CALLMEBOT_PHONE and CALLMEBOT_APIKEY must be set as environment variables." >&2
+if [[ -z "${TELEGRAM_BOT_TOKEN:-}" || -z "${TELEGRAM_CHAT_ID:-}" ]]; then
+  echo "ERROR: TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID must be set as environment variables." >&2
   exit 1
 fi
 
-curl -sS -G "https://api.callmebot.com/whatsapp.php" \
-  --data-urlencode "phone=${CALLMEBOT_PHONE}" \
+curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+  --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
   --data-urlencode "text=${msg}" \
-  --data-urlencode "apikey=${CALLMEBOT_APIKEY}"
+  -d "parse_mode=Markdown"
 echo

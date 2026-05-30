@@ -70,8 +70,8 @@ missing):
 - `ALPACA_API_KEY_ID`
 - `ALPACA_API_SECRET_KEY`
 - `ALPACA_BASE_URL`
-- `CALLMEBOT_PHONE`
-- `CALLMEBOT_APIKEY`
+- `TELEGRAM_BOT_TOKEN`
+- `TELEGRAM_CHAT_ID`
 
 If a credential is missing, stop, place no orders, and report the problem.
 
@@ -96,7 +96,7 @@ full command list. Common commands:
 
 ### Notifications — `scripts/notify.sh`
 
-Sends a WhatsApp message to the human via CallMeBot.
+Sends a Telegram message to the human via BullTheBullishBot.
 
 ```
 ./scripts/notify.sh 'Bull: bought 1500 USD of AAPL @ 231.40, 10% trailing stop set.'

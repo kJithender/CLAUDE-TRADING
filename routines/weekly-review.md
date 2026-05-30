@@ -13,7 +13,7 @@ Execute the /weekly-review command for the Bull trading agent.
 
 All API credentials are environment variables in this cloud environment.
 Reference them by these EXACT names: ALPACA_API_KEY_ID, ALPACA_API_SECRET_KEY,
-ALPACA_BASE_URL, CALLMEBOT_PHONE, CALLMEBOT_APIKEY.
+ALPACA_BASE_URL, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID.
 
 Read every file in memory/ before doing anything. Follow the playbook in
 .claude/commands/weekly-review.md exactly. When finished, commit ALL changed
