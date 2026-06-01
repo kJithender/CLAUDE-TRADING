@@ -3,6 +3,21 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-01 09:37 ET — MARKET OPEN — BUY META
+- **Action:** BUY 15 shares (market order, whole shares for trailing-stop eligibility)
+- **Fill:** 15 shares @ $620.637 avg (order id: 62921417-c0d7-47cf-8c61-5db4724dbbfa) — filled in partial batches over ~4 min via paper trading engine
+- **Why:** Meta's AI-driven advertising moat is compounding revenue at +33% YoY with ad impressions +19% and pricing +12%. The May 27 subscription launch (Instagram Plus/Facebook Plus, $3.99/month) layers recurring revenue atop the ad business. Llama open-source flywheel drives enterprise AI ecosystem. 64 analysts Strong Buy, avg target $826.75 (31% upside), PEG 0.64 on 30%+ growth. Entered at $620.64 — a better price than the $633 pre-market estimate (intraday pullback = improved R/R). AI sentiment at cycle highs (NVDA Computex, MSFT Build tomorrow). Carried slot from week of May 26. 9.2% starter position.
+- **Stop:** 10% trailing stop placed (order id: 4ea07e91-926d-455e-a438-62f32875827b) — HWM $620.86, initial stop $558.774, GTC exp 2026-08-28
+- **Verified:** confirmed 15sh @ $620.637 avg in positions; trailing stop order confirmed active (status: new) in open orders; all 5 prior trailing stops also confirmed active
+- **Trailing stops — all 6 active at open:**
+  - META (4ea07e91): HWM $620.86, stop $558.774 ✓ (NEW)
+  - AVGO (a8e344f4): HWM **$455.37** (ratcheted from $448.88), stop **$409.833** ✓
+  - MSFT (a55a3db6): HWM **$465.78** (ratcheted from $450.33 — MSFT surging +3.0% today), stop **$419.202** ✓
+  - NVDA (8c6b9680): HWM **$220.78** (ratcheted from $218.18), stop **$198.702** ✓
+  - AMZN (bbcd70fa): HWM $274.75, stop $247.275 ✓ — unchanged
+  - LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged
+- **Portfolio equity after fill:** $101,526.13 | Cash: $51,823.36 (51.0%)
+
 ## 2026-05-29 15:50 ET — CLOSE (no trades)
 - **Action:** None — end-of-day P/L check and journal
 - **AVGO:** $444.71 vs entry $417.37 → **+6.55%** (+4.25% today) ✓ — **new HWM $444.71**, stop ~**$400.24** (broker ratchets)
