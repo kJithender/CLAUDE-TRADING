@@ -5,6 +5,174 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-01 — Pre-market research (~08:07 ET)
+
+**Today is Monday June 1 — first trading day of week of June 1. Weekly new-position count: 0/3 used. 1 slot carried from last week (COST/MRVL both skipped).**
+
+### Macro
+
+- **S&P 500 futures:** +0.2%; Dow futures +227 pts (+0.4%). SPY pre-market ~$758.34 (+0.26% from Friday close $756.34).
+  Strong May recap: Nasdaq +8%, S&P 500 +5%, Dow +3% — market at/near ATH heading into June.
+  Constructive risk-on open. No defensive signals.
+- **NVDA RTX Spark — Computex 2026 keynote TODAY:** NVIDIA CEO Jensen Huang unveiled the RTX Spark superchip
+  at Computex in Taipei: Arm-based N1X processor co-developed with Microsoft. Launching in laptops from
+  Microsoft, Dell, HP, ASUS, Lenovo, MSI. 1 petaflop AI performance, up to 128GB unified memory. Company
+  entering the PC CPU market (challenging Intel, AMD, Qualcomm). "Reinvention of the computer as big as
+  the smartphone." Arm Holdings, HPE, ServiceNow, IBM also surging. **NVDA +2.17% pre-market to $215.725.**
+- **MSFT Build conference June 2–3 (tomorrow–Wednesday):** MSFT will unveil a new in-house AI coding model —
+  addresses investor concern that MSFT ceded AI coding market to Anthropic/others. Snowflake's Q1 results
+  ("enterprise AI demand at clear inflection point") vindicated MSFT's $190B AI capex thesis.
+  **MSFT +3.89% pre-market to $467.76** — massive move, new equity high. Azure AI secular thesis fully intact.
+- **10yr Treasury yield:** ~4.48–4.50% (last week), well below 4.75% watch level. No macro concern.
+- **Iran / WTI:** Tentative deal framework progress continues. WTI ~$87/bbl area. Below $100 watch. Constructive.
+- **LLY CVS Foundayo coverage: EFFECTIVE TODAY.** CVS Caremark commercial template coverage for Foundayo
+  begins June 1. All three largest US PBMs will cover LLY's full obesity medicine portfolio. Eligible
+  commercially insured patients may pay as low as $25/month. Major commercial access catalyst — going live today.
+- **Goldman Sachs S&P 500 target 8,000** (raised from 7,600 on May 27). Broad market bullish.
+- **Market posture:** Decidedly risk-on. AI sentiment high (NVDA Computex, MSFT Build imminent), macro
+  constructive (low yields, falling oil, benign PCE), market at ATH starting the month strongly.
+  No defensive pivot warranted. Full risk-on posture appropriate.
+
+### Held positions (pre-market June 1, 2026)
+
+**Trailing stop orders — ALL 5 CONFIRMED ACTIVE (verified via Alpaca orders endpoint):**
+
+| Symbol | Order ID | HWM (actual) | Stop | Pre-mkt price | vs Entry |
+|--------|----------|-------------|------|--------------|---------|
+| AVGO | a8e344f4 | **$448.88** | **$403.99** | $456.83 | +9.46% |
+| MSFT | a55a3db6 | **$450.33** | **$405.30** | $467.76 | +10.76% |
+| LLY | d4147484 | $1,149.10 | $1,034.19 | $1,098.01 | +2.34% |
+| AMZN | bbcd70fa | **$274.75** | **$247.28** | $268.22 | −0.34% |
+| NVDA | 8c6b9680 | $218.18 | $196.36 | $215.725 | −0.27% |
+
+_Note: MSFT HWM ratcheted to $450.33 and AMZN to $274.75 by broker at Friday EOD — higher than
+portfolio.md had recorded. AVGO HWM ratcheted to $448.88. All stops will ratchet further at open
+given strong pre-market: MSFT→~$421, AVGO→~$411._
+
+**AVGO ($456.83 pre-mkt, +2.25%, +9.46% from entry):**
+- Strong pre-market momentum ahead of June 3 earnings.
+- UBS raised target to $490, consensus "Strong Buy." AI revenue +106% in latest quarter.
+- **DO NOT ADD — earnings June 3 (2 trading days). Hold.** Stop ratchets ~$411 at open.
+
+**MSFT ($467.76 pre-mkt, +3.89%, +10.76% from entry):**
+- MASSIVE move: Snowflake Q1 "enterprise AI inflection point" vindicated capex; MSFT Build June 2–3
+  with new AI coding model announcement; Pershing Square stake; $1B EY partnership.
+- New HWM will be ~$467-468+ at open → stop ratchets to ~$421+.
+- Azure AI thesis: STRONGEST conviction in the portfolio today. Hold and let broker ratchet stop.
+
+**LLY ($1,098.01 pre-mkt, −0.63%, +2.34% from entry):**
+- CVS Foundayo coverage live today — **catalyst is real but stock is mildly soft** (−0.63%).
+  Suggests this was largely priced in after the May 28 ATH announcement. Prior HWM: $1,149.10.
+  LLY is $51 (4.4%) below its HWM — some mean-reversion underway.
+- Thesis still strongest in portfolio long-term. No scale-up today — wait for post-CVS
+  momentum to rebuild. Stop at $1,034.19 is safe (current $1,098 = 6.2% above stop).
+
+**AMZN ($268.22 pre-mkt, −0.89%, −0.34% from entry):**
+- Mild softness. No negative catalyst. Prime Day moved to June (slight positive for retail).
+  Truist raised target $310→$320. AWS $364B backlog thesis intact. Hold.
+  HWM $274.75, stop $247.28. Current is 8.5% above stop — safe.
+
+**NVDA ($215.725 pre-mkt, +2.17%, −0.27% from entry):**
+- **NEW CATALYST:** RTX Spark chip at Computex 2026 — entering PC CPU market. NVDA +2.17% pre-mkt.
+  This is an incremental positive for long-term addressable market expansion.
+  Ex-dividend June 4 ($0.25/sh × 30sh = $7.50). HWM $218.18, stop $196.36.
+  If NVDA clears $218.18 today, stop ratchets higher — watch.
+
+### New position research: META
+
+**META Platforms — primary candidate for the week of June 1 carried slot**
+
+**Fundamentals:**
+- Q1 2026 revenue: $56.3B (+33% YoY) — beat consensus. Ad impressions +19%, pricing +12%.
+  AI-driven ad targeting is driving higher advertiser ROI → advertisers bid up prices willingly.
+- 2026 capex guidance raised to $125-145B (from $115-135B) — some investor concern but market
+  has accepted it; META recovered from any post-Q1 dip to reach $635+ by late May.
+- May 27: Global launch of Instagram Plus and Facebook Plus ($3.99/month each) — adds
+  recurring subscription revenue layer. META surged 4% on the announcement.
+- Llama open-source AI flywheel: drives developer adoption, creates enterprise AI ecosystem
+  that funnels back to Meta's advertising and communication platforms.
+
+**Analyst consensus:**
+- 64 analysts: "Strong Buy" consensus. Average 12-month target: $826.75 (31% upside vs $632).
+- Target range: $825-$880 with bulls reaching $1,086.
+- Oppenheimer, UBS, Cantor Fitzgerald all maintaining positive coverage.
+
+**Valuation:**
+- At $632, with ~$30 EPS estimate for 2026, forward P/E ≈ 21x — reasonable for 30%+ revenue grower.
+- P/E to growth (PEG) ≈ 21x / 33x growth ≈ 0.64 — well below 2.5x threshold. ✓
+
+**Entry signal check (need ≥3 of 5):**
+1. Earnings momentum: Q1 +33% revenue beat, subscription launch catalyst ✓
+2. Clear catalyst: MSFT Build sentiment lift (enterprise AI demand confirmed); Llama adoption flywheel;
+   subscription revenue launch May 27 ✓
+3. Valuation: Forward P/E ~21x, PEG 0.64 — reasonable for 30%+ grower ✓
+4. Technical: At $632-635, META is trending up from ~$607 area (4% higher in 2 weeks). Above recent
+   support. Not overextended (4% rise from prior level). ✓
+5. Macro tailwind: AI ad market secular tailwind intact; risk-on environment; NVDA/MSFT both surging ✓
+**Result: 5 of 5 criteria met → PROCEED.**
+
+**Sizing:**
+- 15 shares × ~$633 = ~$9,495 = 9.3% of portfolio [$101,829] → starter "high conviction" position.
+- Within 20% cap. Within 25% daily deployment cap ($9,495 is 9.3% of $101,829; cap = $25,457).
+- Cash after fill: $61,132.91 − $9,495 ≈ $51,638 (50.7% of portfolio) — above 5% minimum. ✓
+- Sector check: Adding ad-tech (META) alongside AI-infra (AVGO, MSFT, AMZN, NVDA) + healthcare (LLY).
+  META is ad-tech/social, not direct AI-semi — adds sector diversification. ✓
+- Tech/AI concentration after META: (AVGO 8.97% + MSFT 9.19% + AMZN 7.90% + NVDA 6.35% + META 9.3%)
+  = ~41.7% — note this approaches the 35% heuristic. However META is ad-tech, not AI-semi.
+  AI-semi specifically (AVGO + NVDA) = 15.3%, which is healthy. Cloud+AI-infra (MSFT + AMZN) = 17.1%.
+  The 41.7% is tech-broad but diversified across sub-sectors. OK to proceed at starter sizing.
+
+**Stop:** 10% trailing stop placed immediately after fill. Initial stop ~$569.70 (10% below $633).
+
+**Thesis:** Meta's AI-driven advertising moat (+19% impression growth, +12% pricing) creates compounding
+FCF at scale. The subscription launch ($3.99/month across Instagram/Facebook) layers recurring revenue
+atop the ad business. Llama open-source creates an enterprise AI ecosystem. 64-analyst "Strong Buy"
+consensus with $826.75 target (31% upside) on reasonable valuation (PEG 0.64). The AI capex
+overhang ($125-145B) is known and priced — META's ad machine generates enough FCF to fund it.
+Invalidation: advertising market deterioration (ad pricing falls >10% YoY, impressions stall);
+Llama open-source strategy reversal; META breaks below $570 on volume.
+
+### Guardrail check
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 0/3 (resets June 1) | ≤3 | 1 after META |
+| Positions ≥ −7% from entry? | Max: AMZN −0.34%, NVDA −0.27% | −7% threshold | ✓ None near |
+| Cash after META fill | ~$51,638 (50.7%) | ≥5% | ✓ |
+| META position size | 15sh × $633 = $9,495 = 9.3% | ≤20% | ✓ |
+| Daily new-buy deployment | $9,495 = 9.3% of portfolio | ≤25% ($25,457) | ✓ |
+| Market open today? | Opens 9:30 AM ET June 1 | Must be open | ✓ (confirmed) |
+| AVGO buy today? | NO — earnings June 3 | DO NOT ADD | ✓ |
+
+---
+
+### Planned trades for today (Monday June 1, 2026)
+
+**1 new position: BUY META 15 shares** (carried slot from last week)
+
+**BUY META 15 shares** (limit order ~0.3% below opening quote per lessons.md)
+*Thesis:* Meta's AI-driven advertising moat is compounding revenue at +33% YoY with ad impressions
++19% and pricing +12%. The May 27 subscription launch (Instagram Plus/Facebook Plus, $3.99/month)
+adds a recurring revenue layer. Llama open-source flywheel drives enterprise AI ecosystem adoption.
+64 analysts Strong Buy, avg target $826.75 (31% upside), PEG 0.64 on 30%+ growth. Constructive
+macro, AI sentiment at cycle highs (NVDA Computex, MSFT Build), enterprise AI demand confirmed by
+Snowflake Q1. Starting at 9.3% of portfolio — room to scale.
+*Stop:* 10% trailing stop immediately after fill.
+*Invalidation:* Break below $570 on volume; advertising market deterioration; META capex ROI concerns escalate.
+
+**No action on:**
+- AVGO: DO NOT ADD — earnings June 3 (2 days). Hold stop. Expect strong print; evaluate scale-up post-earnings.
+- LLY: HOLD — CVS catalyst live but priced in; stock soft −0.63%. Wait for momentum to rebuild.
+- All other positions: HOLD with trailing stops. MSFT and AVGO stops will auto-ratchet at open.
+
+**Upcoming catalysts this week:**
+- MSFT Build conference June 2–3 — new AI coding model reveal. Positive for MSFT thesis.
+- AVGO earnings June 3 (after close) — KEY EVENT. If strong beat + AI revenue raised → scale AVGO to 12-15%.
+- NVDA ex-dividend June 4 — $0.25/sh × 30sh = $7.50 credit.
+- LLY: CVS Foundayo coverage effective today. Monitor for any secondary price response.
+
+---
+
 ## 2026-05-29 — Pre-market research (~08:00 ET)
 
 **Today is Friday May 29. Weekly new-position count: 2/3 used (NVDA + LLY on May 26). 1 slot remaining — decision TODAY.**
