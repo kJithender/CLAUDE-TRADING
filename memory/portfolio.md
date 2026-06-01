@@ -3,30 +3,28 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-01 12:33 ET (midday check)
+**Last updated:** 2026-06-01 15:50 ET (close routine)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
 ## Account
 
 | Metric | Value |
 |--------|-------|
-| Equity | $101,570.67 |
+| Equity | $101,368.53 |
 | Cash | $51,823.36 |
-| Long market value | $49,747.31 |
-| Buying power | ~$153,394 |
+| Long market value | $49,545.17 |
+| Buying power | ~$153,192 |
 
-## Open positions (midday June 1, 2026)
+## Open positions (close June 1, 2026)
 
-| Symbol | Qty | Avg entry | Midday price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
-|--------|-----|-----------|--------------|-----------|----------------|----------------|---------------|
-| AVGO | 20 | $417.37 | $461.97 | $9,239.40 | +$892.08 (+10.69%) | 9.09% | 10% trailing (order a8e344f4), HWM **$463.19** (ratcheted — AVGO surging pre-earnings), stop **$416.871** |
-| MSFT | 20 | $422.31 | $462.17 | $9,243.40 | +$797.20 (+9.44%) | 9.10% | 10% trailing (order a55a3db6), HWM **$466.32** (ratcheted — Build conference), stop **$419.688** |
-| LLY | 7 | $1,072.94 | $1,076.34 | $7,534.38 | +$23.77 (+0.32%) | 7.41% | 10% trailing (order d4147484), HWM $1,149.10, stop $1,034.19 |
-| META | 15 | $620.637 | $612.065 | $9,180.98 | −$128.58 (−1.38%) | 9.04% | 10% trailing (order 4ea07e91), HWM **$624.81** (ratcheted), stop **$562.329** |
-| AMZN | 30 | $269.13 | $262.86 | $7,885.80 | −$188.10 (−2.33%) | 7.76% | 10% trailing (order bbcd70fa), HWM $274.75, stop $247.275 |
-| NVDA | 30 | $216.30 | $222.14 | $6,664.20 | +$175.14 (+2.70%) | 6.56% | 10% trailing (order 8c6b9680), HWM **$222.40** (ratcheted — NVDA +5.21% today), stop **$200.16** |
-
-_All 6 trailing stop orders confirmed active (status: "new") via orders endpoint 12:33 ET June 1._
+| Symbol | Qty | Avg entry | Close price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
+|--------|-----|-----------|-------------|-----------|----------------|----------------|---------------|
+| AVGO | 20 | $417.37 | $458.055 | $9,161.10 | +$813.78 (+9.75%) | 9.04% | 10% trailing (order a8e344f4), HWM $463.19, stop $416.871 — unchanged (below HWM at close) |
+| MSFT | 20 | $422.31 | $460.78 | $9,215.60 | +$769.40 (+9.11%) | 9.09% | 10% trailing (order a55a3db6), HWM $466.32, stop $419.688 — unchanged |
+| META | 15 | $620.637 | $603.49 | $9,052.35 | −$257.20 (−2.76%) | 8.93% | 10% trailing (order 4ea07e91), HWM $624.81, stop $562.329 — unchanged |
+| LLY | 7 | $1,072.94 | $1,082.61 | $7,578.27 | +$67.66 (+0.90%) | 7.48% | 10% trailing (order d4147484), HWM $1,149.10, stop $1,034.19 — unchanged |
+| AMZN | 30 | $269.13 | $261.92 | $7,857.60 | −$216.30 (−2.68%) | 7.75% | 10% trailing (order bbcd70fa), HWM $274.75, stop $247.275 — unchanged |
+| NVDA | 30 | $216.302 | $222.694 | $6,680.82 | +$191.76 (+2.96%) | 6.59% | 10% trailing (order 8c6b9680), HWM **$222.694** (new EOD HWM — RTX Spark momentum), stop **$200.42** |
 
 ## Performance vs S&P 500
 
@@ -34,39 +32,46 @@ _All 6 trailing stop orders confirmed active (status: "new") via orders endpoint
 |--------|------|-----|------------|
 | Inception (2026-05-21) | $100,000.00 | $739.44 | — |
 | Close (2026-05-29) | $101,263.22 | $756.65 | — |
-| Market open (2026-06-01) | $101,526.13 | ~$758+ (est.) | — |
-| Midday (2026-06-01) | $101,570.67 | ~$759 (est.) | — |
-| Since inception (2026-05-21) | +1.57% ($100,000 → $101,570.67) | ~+2.65% (est.) | **~−1.08%** |
+| Close (2026-06-01) | $101,368.53 | $758.66 | — |
+| Since inception (2026-05-21) | +1.37% | +2.60% | **−1.23%** |
 
-_Gap vs SPY driven by 51% cash position. 6 active positions deployed._
+_Gap widened from −1.07% (Friday May 29) to −1.23% today. Bull lagged SPY by −0.16% today (+0.11% vs +0.27%). NVDA and MSFT strong; META/AMZN/LLY soft._
 
 ## Notes
 
-**Six positions as of June 1, 2026.** Week of June 1: **1/3 new positions used** (META added this morning).
+**Six positions as of June 1, 2026.** Week of June 1: **1/3 new positions used** (META opened at market open today).
 
-**Midday June 1 — no action taken:**
-- No position below −7% cut threshold. No position above +15% tighten threshold.
-- All 6 trailing stops confirmed active.
+**EOD June 1 — no trades at close:**
+- No position below −7% cut threshold (max drawdown: AMZN −2.68%, META −2.76% from entry).
+- All 6 trailing stops remain active. NVDA stop ratcheted to $200.42 (new HWM $222.694).
+- AVGO, MSFT, LLY, META, AMZN trailing stop HWMs unchanged (all positions closed below their respective HWMs).
 
-**Trailing stop HWMs ratcheted at/since open (June 1):**
-- AVGO: $455.37 → $463.19 (stop $416.871) — AVGO surging to new HWM (+10.69% from entry), earnings June 3
-- MSFT: $465.78 → $466.32 (stop $419.688) — MSFT hitting new HWM on Build conference momentum
-- NVDA: $220.78 → $222.40 (stop $200.16) — NVDA +5.21% today on Computex RTX Spark momentum
-- META: $620.86 → $624.81 (stop $562.329) — slight ratchet at open
+**Today's session summary (June 1):**
+- Leaders: NVDA +5.47% (continued Computex RTX Spark momentum, new HWM $222.694); AVGO +2.53% (building ahead of June 3 earnings); MSFT +2.34% (Build conference tomorrow).
+- Laggards: META −4.59% from prior close (first day as a position; −2.76% from our entry $620.64 — early softness expected); AMZN −3.22%; LLY −2.03% (CVS catalyst possibly "buy the rumour, sell the news" effect).
+- Portfolio: +$107.02 (+0.11% day) vs SPY +0.27% — lagged by 0.16%.
 
-**Remaining week of June 1 plan:**
+**Trailing stop HWMs at EOD:**
+- AVGO (a8e344f4): HWM $463.19, stop $416.871 ✓
+- MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓
+- META (4ea07e91): HWM $624.81, stop $562.329 ✓
+- LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓
+- AMZN (bbcd70fa): HWM $274.75, stop $247.275 ✓
+- NVDA (8c6b9680): HWM **$222.694** (ratcheted from $222.40 — new intraday high), stop **$200.42** ✓
+
+**Week of June 1 plan (remaining):**
 - 2 position slots remaining.
-- AVGO June 3 earnings: DO NOT ADD before print. If strong beat + AI revenue raised → scale to 12-15% post-earnings.
+- AVGO June 3 earnings (Tuesday): DO NOT ADD before print. If strong beat + AI revenue raised → scale to 12–15% post-earnings.
 - NVDA ex-dividend June 4: $0.25/sh × 30sh = $7.50 credit.
-- LLY: HOLD. Soft day (−2.59% intraday) but +0.32% from entry; thesis intact. HWM $1,149.10, stop $1,034.19.
-- Evaluate post-AVGO earnings for final 1-2 positions.
+- MSFT Build conference June 2–3: new AI coding model; Azure AI thesis catalyst live.
+- META: new position, monitor. Invalidation: break below $570 on volume; ad market deterioration.
 
-**Thesis status (June 1 midday):**
-- **AVGO:** +10.69% from entry. STRONG. Earnings June 3 — DO NOT ADD. HWM $463.19, stop $416.871.
-- **MSFT:** +9.44% from entry. STRONG. Build conference June 2–3. HWM $466.32, stop $419.688.
-- **NVDA:** +2.70% from entry. Computex RTX Spark catalyst driving +5.21% today. Ex-div June 4. HWM $222.40, stop $200.16.
-- **LLY:** +0.32% from entry. Pulling back mildly (−2.59% today) but thesis intact. HWM $1,149.10, stop $1,034.19.
-- **META:** −1.38% from entry. New position today; early softness normal. Thesis intact. HWM $624.81, stop $562.329.
-- **AMZN:** −2.33% from entry. Thesis intact (AWS $364B backlog). Soft day. Well above −7% threshold (stop $247.275).
+**Thesis status (June 1 EOD):**
+- **AVGO:** +9.75% from entry. STRONG. Earnings June 3 — DO NOT ADD. HWM $463.19, stop $416.871.
+- **MSFT:** +9.11% from entry. STRONG. Build conference June 2–3. HWM $466.32, stop $419.688.
+- **NVDA:** +2.96% from entry. RTX Spark / Computex momentum. New HWM $222.694. Ex-div June 4.
+- **LLY:** +0.90% from entry. CVS Foundayo live today; mild pullback. HWM $1,149.10, stop $1,034.19. Thesis intact.
+- **META:** −2.76% from entry. First day — early softness. Well above stop $562.329. Thesis intact.
+- **AMZN:** −2.68% from entry. Soft day. AWS thesis intact. HWM $274.75, stop $247.275.
 
 **All positions well above −7% cut threshold. No defensive action warranted.**

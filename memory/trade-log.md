@@ -3,6 +3,19 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-01 15:50 ET — CLOSE (no trades)
+- **Action:** None — end-of-day P/L check and journal
+- **AVGO:** $458.055 vs entry $417.37 → **+9.75%** (+2.53% today) ✓ — HWM $463.19, stop $416.871 unchanged. Earnings June 3.
+- **MSFT:** $460.78 vs entry $422.31 → **+9.11%** (+2.34% today) ✓ — HWM $466.32, stop $419.688 unchanged. Build conference June 2–3.
+- **LLY:** $1,082.61 vs entry $1,072.94 → **+0.90%** (−2.03% today) ✓ — HWM $1,149.10, stop $1,034.19 unchanged. Mild pullback; CVS Foundayo live today.
+- **META:** $603.49 vs entry $620.637 → **−2.76%** (−4.59% vs prior close $632.51) ✓ — HWM $624.81, stop $562.329 unchanged. New position first-day softness; thesis intact.
+- **AMZN:** $261.92 vs entry $269.13 → **−2.68%** (−3.22% today) ✓ — HWM $274.75, stop $247.275 unchanged. Soft; AWS thesis intact.
+- **NVDA:** $222.694 vs entry $216.302 → **+2.96%** (+5.47% today) ✓ — **new HWM $222.694** (above midday $222.40), **stop $200.42** (ratcheted from $200.16). RTX Spark momentum continued.
+- **Portfolio equity:** $101,368.53 (+$107.02, +0.11% today) | Cash: $51,823.36 (51.1%)
+- **SPY close:** $758.66 (+0.27% today). Bull lagged SPY by −0.16% today.
+- **Since inception:** Bull +1.37% vs SPY +2.60% = **−1.23%** gap (widened from −1.07% Friday; cash drag primary driver at 51% cash).
+- **Note:** Mixed close session. NVDA led (+5.47% — Computex RTX Spark enthusiasm continued to EOD, new HWM $222.694, stop ratcheted to $200.42). MSFT (+2.34%) and AVGO (+2.53%) both strong ahead of key catalysts (Build conference June 2–3 for MSFT, earnings June 3 for AVGO). META had a rough first day (−4.59% from prior session's $632.51 close; −2.76% from our entry $620.64) — early softness is normal for a new position and the AI advertising thesis remains intact. AMZN soft (−3.22%) and LLY pulled back mildly (−2.03% — possible "buy the rumour, sell the news" on CVS Foundayo launch today). All 6 positions remain well above −7% cut threshold. No trailing stop was triggered. AVGO earnings June 3 is the pivotal week event — position held, DO NOT ADD before print.
+
 ## 2026-06-01 12:33 ET — MIDDAY CHECK (no trades)
 - **Action:** None — all positions within guardrail thresholds
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 12:33 ET)
