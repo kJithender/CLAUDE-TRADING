@@ -3,6 +3,26 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-01 12:33 ET — MIDDAY CHECK (no trades)
+- **Action:** None — all positions within guardrail thresholds
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 12:33 ET)
+- **AVGO:** $461.97 vs entry $417.37 → **+10.69%** (cut threshold: −7%) ✓ — **+3.40% today; new HWM $463.19**, stop **$416.871** (earnings June 3 — DO NOT ADD)
+- **MSFT:** $462.17 vs entry $422.31 → **+9.44%** (cut threshold: −7%) ✓ — +2.65% today; new HWM $466.32, stop $419.688 — Build conference June 2-3
+- **NVDA:** $222.14 vs entry $216.30 → **+2.70%** (cut threshold: −7%) ✓ — **+5.21% today; new HWM $222.40**, stop **$200.16** (RTX Spark/Computex momentum)
+- **LLY:** $1,076.34 vs entry $1,072.94 → **+0.32%** (cut threshold: −7%) ✓ — −2.59% today (mild pullback); HWM $1,149.10, stop $1,034.19 unchanged
+- **META:** $612.065 vs entry $620.637 → **−1.38%** (cut threshold: −7%) ✓ — −3.23% today (new position, early softness); HWM $624.81, stop $562.329
+- **AMZN:** $262.86 vs entry $269.13 → **−2.33%** (cut threshold: −7%) ✓ — −2.88% today; HWM $274.75, stop $247.275 unchanged
+- **Portfolio equity:** $101,570.67 (+$309.16 vs morning open $101,261.51) | Cash: $51,823.36 (51.0%)
+- **No position below −7% cut threshold. No position above +15% tighten threshold. No action warranted.**
+- **Trailing stops (all 6 active — HWMs ratcheted on AVGO, MSFT, NVDA, META):**
+  - AVGO (a8e344f4): HWM ratcheted to **$463.19** (from $455.37 at open), stop **$416.871** ✓ — AVGO surging +10.69% ahead of June 3 earnings
+  - MSFT (a55a3db6): HWM ratcheted to **$466.32** (from $465.78), stop **$419.688** ✓ — Build conference momentum
+  - NVDA (8c6b9680): HWM ratcheted to **$222.40** (from $220.78), stop **$200.16** ✓ — Computex RTX Spark driving +5.21% today
+  - META (4ea07e91): HWM ratcheted to **$624.81** (from $620.86), stop **$562.329** ✓ — slight ratchet at open
+  - AMZN (bbcd70fa): HWM $274.75, stop $247.275 ✓ — unchanged (AMZN below HWM, soft today)
+  - LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged (LLY pulling back mildly)
+- **Note:** Strong midday session driven by NVDA (+5.21% — Computex RTX Spark catalyst, entering PC CPU market vs. Intel/AMD/Qualcomm) and AVGO (+3.40% — building momentum ahead of June 3 earnings; consensus expects Q2 revenue $22.08B +47% YoY). MSFT continuing Build conference strength (+2.65%). LLY softening mildly (−2.59%) but +0.32% from entry — well above −7% threshold, thesis intact. META early softness (−3.23%) as a brand new position; HWM $624.81 slightly above our entry avg — thesis intact. AMZN weakest today (−2.88%) but only −2.33% from entry — well above the −7% cut at $250.29. No action warranted. June 3 AVGO earnings remain the key event for the week.
+
 ## 2026-06-01 09:37 ET — MARKET OPEN — BUY META
 - **Action:** BUY 15 shares (market order, whole shares for trailing-stop eligibility)
 - **Fill:** 15 shares @ $620.637 avg (order id: 62921417-c0d7-47cf-8c61-5db4724dbbfa) — filled in partial batches over ~4 min via paper trading engine
