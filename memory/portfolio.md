@@ -3,28 +3,28 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-02 08:07 ET (pre-market routine)
+**Last updated:** 2026-06-02 09:35 ET (market-open routine)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
 ## Account
 
 | Metric | Value |
 |--------|-------|
-| Equity | $101,700.20 |
+| Equity | $101,399.62 |
 | Cash | $51,823.36 |
-| Long market value | $49,876.84 |
-| Buying power | ~$153,524 |
+| Long market value | $49,576.26 |
+| Buying power | ~$153,223 |
 
-## Open positions (pre-market June 2, 2026)
+## Open positions (market open June 2, 2026 — 09:35 ET live data)
 
-| Symbol | Qty | Avg entry | Pre-mkt price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
-|--------|-----|-----------|---------------|-----------|----------------|----------------|---------------|
-| AVGO | 20 | $417.37 | $486.51 | $9,730.20 | +$1,382.88 (+16.57%) | 9.57% | 10% trailing (order a8e344f4), HWM **$466.05** (ratcheted overnight), stop **$419.445** — will ratchet further at open |
-| MSFT | 20 | $422.31 | $449.19 | $8,983.80 | +$537.60 (+6.37%) | 8.83% | 10% trailing (order a55a3db6), HWM $466.32, stop $419.688 — unchanged (MSFT below HWM) |
-| META | 15 | $620.637 | $605.49 | $9,082.35 | −$227.20 (−2.44%) | 8.93% | 10% trailing (order 4ea07e91), HWM $624.81, stop $562.329 — unchanged |
-| LLY | 7 | $1,072.94 | $1,077.07 | $7,539.49 | +$28.88 (+0.39%) | 7.41% | 10% trailing (order d4147484), HWM $1,149.10, stop $1,034.19 — unchanged |
-| AMZN | 30 | $269.13 | $257.35 | $7,720.50 | −$353.40 (−4.38%) | 7.59% | 10% trailing (order bbcd70fa), HWM $274.75, stop $247.275 — unchanged ⚠️ WATCH |
-| NVDA | 30 | $216.302 | $227.35 | $6,820.50 | +$331.44 (+5.11%) | 6.71% | 10% trailing (order 8c6b9680), HWM **$224.87** (ratcheted overnight), stop **$202.383** — will ratchet further at open |
+| Symbol | Qty | Avg entry | Live price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
+|--------|-----|-----------|------------|-----------|----------------|----------------|---------------|
+| AVGO | 20 | $417.37 | $481.995 | $9,639.90 | +$1,292.58 (+15.49%) | 9.51% | 10% trailing (order a8e344f4), HWM **$488.82** (ratcheted at open), stop **$439.938** |
+| MSFT | 20 | $422.31 | $449.36 | $8,987.20 | +$541.00 (+6.41%) | 8.86% | 10% trailing (order a55a3db6), HWM $466.32, stop $419.688 — unchanged (MSFT below HWM) |
+| META | 15 | $620.637 | $599.35 | $8,990.25 | −$319.26 (−3.43%) | 8.87% | 10% trailing (order 4ea07e91), HWM $624.81, stop $562.329 — unchanged |
+| LLY | 7 | $1,072.94 | $1,077.00 | $7,539.00 | +$28.39 (+0.38%) | 7.43% | 10% trailing (order d4147484), HWM $1,149.10, stop $1,034.19 — unchanged |
+| AMZN | 30 | $269.13 | $255.74 | $7,672.20 | −$401.70 (−4.98%) | 7.57% | 10% trailing (order bbcd70fa), HWM $274.75, stop $247.275 — unchanged ⚠️ WATCH |
+| NVDA | 30 | $216.302 | $225.91 | $6,777.30 | +$288.24 (+4.44%) | 6.68% | 10% trailing (order 8c6b9680), HWM **$227.50** (ratcheted at open), stop **$204.75** |
 
 ## Performance vs S&P 500
 
@@ -34,34 +34,30 @@ the last known state, but always re-fetches live data before trading._
 | Close (2026-05-29) | $101,263.22 | $756.65 | — |
 | Close (2026-06-01) | $101,368.53 | $758.44 | — |
 | Pre-mkt (2026-06-02) | $101,700.20 | $756.75 | — |
-| Since inception (2026-05-21) | +1.70% | +2.34% | **−0.64%** |
+| Open (2026-06-02) | $101,399.62 | $757.29 | — |
+| Since inception (2026-05-21) | +1.40% | +2.41% | **−1.01%** |
 
-_Gap significantly narrowed from −1.23% (June 1 close) to −0.64% this morning — driven by AVGO +5.77% and NVDA +1.33% pre-market. SPY slightly lower overnight (−0.22%). Bull trailing SPY since inception primarily due to 51% cash position._
+_Bull equity slipped from pre-market $101,700 to $101,399 at open as AVGO pulled back from $486.51 to $481.99 and AMZN dipped further from $257.35 to $255.74. SPY ticked up from $756.75 to $757.29. Cash drag (51%) remains primary structural lag._
 
 ## Notes
 
 **Six positions as of June 2, 2026.** Week of June 1: **1/3 new positions used** (META June 1). 2 slots remaining.
 
-**Pre-market June 2 — no trades planned:**
-- **AVGO:** +16.57% from entry — enormous pre-market surge. Earnings TOMORROW June 3. DO NOT ADD.
-  Trailing stop HWMs ratcheted overnight by broker: HWM $466.05, stop $419.445. Will ratchet
-  further to ~$486+ HWM, ~$437 stop at open.
-- **NVDA:** +5.11% from entry. Broker ratcheted overnight: HWM $224.87, stop $202.383. Continuing
-  RTX Spark / Computex momentum. Ex-dividend June 4 ($0.25/sh × 30sh = $7.50).
-- **MSFT:** +6.37% from entry. Down −2.46% pre-market (Build Day 1 "sell the news" pattern).
-  Stop $419.688 unchanged — MSFT below HWM $466.32.
-- **META:** −2.44% from entry. Recovering (+0.84% today). Dividend $0.525/sh payable June 25.
-- **LLY:** +0.39% from entry. Medicare GLP-1 Bridge July 1 new catalyst. Thesis strongest.
-- **AMZN:** −4.38% from entry. ⚠️ WATCHING. European cloud regs + AWS talent issues. Stop $247.275
-  (4.1% below current $257.35). Cut threshold $250.19.
+**Market open June 2 — no trades (09:35 ET live data):**
+- **AVGO:** +15.49% from entry ($481.995). Broker ratcheted HWM at open: **HWM $488.82, stop $439.938**. Earnings TOMORROW June 3 — DO NOT ADD.
+- **NVDA:** +4.44% from entry ($225.91). Broker ratcheted at open: **HWM $227.50, stop $204.75**. Ex-dividend Thursday June 4 ($7.50 credit).
+- **MSFT:** +6.41% from entry ($449.36). Down -2.42% today (Build Day 1 "sell the news"). Stop $419.688 unchanged — MSFT below HWM $466.32.
+- **META:** -3.43% from entry ($599.35). Down -0.19% today. HWM $624.81, stop $562.329 unchanged.
+- **LLY:** +0.38% from entry ($1,077.00). Down -0.48% today. HWM $1,149.10, stop $1,034.19 unchanged.
+- **AMZN:** -4.98% from entry ($255.74). Down -2.11% today. ⚠️ WATCH. Stop $247.275, cut threshold $250.19 (current $5.55 above cut).
 
-**Trailing stop HWMs (live broker data as of pre-market June 2):**
-- AVGO (a8e344f4): HWM **$466.05** (overnight ratchet), stop **$419.445** ✓
-- MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓
-- META (4ea07e91): HWM $624.81, stop $562.329 ✓
-- LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓
-- AMZN (bbcd70fa): HWM $274.75, stop $247.275 ✓
-- NVDA (8c6b9680): HWM **$224.87** (overnight ratchet), stop **$202.383** ✓
+**Trailing stop HWMs (live broker data as of market open June 2, 09:35 ET):**
+- AVGO (a8e344f4): HWM **$488.82** (ratcheted at open from $466.05), stop **$439.938** ✓
+- MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — unchanged
+- META (4ea07e91): HWM $624.81, stop $562.329 ✓ — unchanged
+- LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged
+- AMZN (bbcd70fa): HWM $274.75, stop $247.275 ✓ — unchanged
+- NVDA (8c6b9680): HWM **$227.50** (ratcheted at open from $224.87), stop **$204.75** ✓
 
 **Week of June 1 plan (remaining):**
 - 2 position slots remaining.
@@ -70,14 +66,14 @@ _Gap significantly narrowed from −1.23% (June 1 close) to −0.64% this mornin
   ~$3,900–$4,900 notional). Uses slot 2.
 - **Slot 3:** New name or LLY scale-up after AVGO result. Candidates: LLY (10% target), V, COST.
 - **NVDA ex-div June 4:** $7.50 dividend credit.
-- **Iran watch:** WTI at $92/bbl (up from $87.66). Below $100 watch. Monitor daily.
+- **Iran watch:** WTI at ~$92/bbl. Below $100 watch. Monitor daily.
 
-**Thesis status (June 2 pre-market):**
-- **AVGO:** +16.57% from entry. Earnings tomorrow. DO NOT ADD. HWM $466.05, stop $419.445.
-- **MSFT:** +6.37% from entry. Build Day 1 today. Pre-market softness. HWM $466.32, stop $419.688.
-- **NVDA:** +5.11% from entry. Strong. HWM $224.87, stop $202.383. Ex-div June 4.
-- **LLY:** +0.39% from entry. Mild. Medicare GLP-1 Bridge July 1. HWM $1,149.10, stop $1,034.19.
-- **META:** −2.44% from entry. Recovering. HWM $624.81, stop $562.329.
-- **AMZN:** −4.38% from entry. ⚠️ WATCH. HWM $274.75, stop $247.275. Cut threshold $250.19.
+**Thesis status (June 2 market open):**
+- **AVGO:** +15.49% from entry. Earnings tomorrow. DO NOT ADD. HWM $488.82, stop $439.938.
+- **MSFT:** +6.41% from entry. Build Day 1 softness. HWM $466.32, stop $419.688.
+- **NVDA:** +4.44% from entry. Strong. HWM $227.50, stop $204.75. Ex-div June 4.
+- **LLY:** +0.38% from entry. Mild drift. Medicare GLP-1 Bridge July 1. HWM $1,149.10, stop $1,034.19.
+- **META:** -3.43% from entry. Mild softness. HWM $624.81, stop $562.329.
+- **AMZN:** -4.98% from entry. ⚠️ WATCH. HWM $274.75, stop $247.275. Cut threshold $250.19.
 
-**All positions above −7% cut threshold. No defensive action warranted.**
+**All positions above -7% cut threshold. No defensive action warranted.**

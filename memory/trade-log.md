@@ -3,6 +3,27 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-02 09:35 ET — MARKET OPEN (no trades)
+- **Action:** None — no trades planned per pre-market plan dated today. AVGO earnings tomorrow June 3; plan is to hold all 6 positions and let trailing stops run.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 09:35 ET)
+- **Account:** Equity $101,399.62 | Cash $51,823.36 (51.2%) | Long market value $49,576.26
+- **AVGO** ($481.995, +15.49% from entry $417.37) ✓ — **Broker ratcheted HWM → $488.82, stop → $439.938** at open (up from pre-mkt HWM $466.05/stop $419.445). Earnings TOMORROW June 3 — DO NOT ADD.
+- **MSFT** ($449.36, +6.41% from entry $422.31) ✓ — Down -2.42% today ("sell the news" Build Day 1). HWM $466.32, stop $419.688 unchanged. $29.67 above stop — safe. Build Day 2 continues tomorrow.
+- **META** ($599.35, -3.43% from entry $620.64) ✓ — Down -0.19% today. HWM $624.81, stop $562.329 unchanged. $37.02 above stop.
+- **LLY** ($1,077.00, +0.38% from entry $1,072.94) ✓ — Down -0.48% today (mild drift). HWM $1,149.10, stop $1,034.19 unchanged.
+- **AMZN** ($255.74, -4.98% from entry $269.13) ⚠️ WATCH — Down -2.11% today. Cut threshold $250.19 ($5.55 above it). Stop $247.275 ($8.47 above it). Thesis intact but price action soft. Monitor at midday.
+- **NVDA** ($225.91, +4.44% from entry $216.302) ✓ — Up +0.69% today. **Broker ratcheted HWM → $227.50, stop → $204.75** at open (up from pre-mkt HWM $224.87/stop $202.383). Ex-dividend Thursday June 4 ($7.50 credit).
+- **All 6 trailing stops confirmed active at open:**
+  - AVGO (a8e344f4): HWM **$488.82** (ratcheted from $466.05), stop **$439.938** ✓
+  - MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — unchanged
+  - META (4ea07e91): HWM $624.81, stop $562.329 ✓ — unchanged
+  - LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged
+  - AMZN (bbcd70fa): HWM $274.75, stop $247.275 ✓ — unchanged
+  - NVDA (8c6b9680): HWM **$227.50** (ratcheted from $224.87), stop **$204.75** ✓
+- **Guardrail check:** No position below -7% cut threshold (worst: AMZN -4.98%). All stops active. Cash 51.2% > 5% minimum. No defensive action warranted.
+- **Since inception:** Bull +1.40% vs SPY +2.41% ($757.29 at 09:35 ET) = **-1.01%** gap. Cash drag (51%) is primary driver.
+- **Week of June 1:** 1/3 positions used (META June 1). 2 slots remaining. Slot 2 reserved for AVGO scale-up June 4 if earnings beat (AI revenue >$5B + guidance raised).
+
 ## 2026-06-02 08:07 ET — PRE-MARKET (no trades)
 - **Action:** None — no trades planned today. AVGO earnings TOMORROW June 3.
 - **Account:** Equity $101,700.20 | Cash $51,823.36 (51.0%)
