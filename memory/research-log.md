@@ -5,6 +5,139 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-02 — Pre-market research (~08:07 ET)
+
+**Today is Tuesday June 2. Week of June 1: 1/3 new positions used (META June 1). 2 slots remaining.**
+
+### Macro
+
+- **S&P 500 futures:** +0.2%; Nasdaq futures +0.3%. SPY pre-market $756.75 (−0.22% from June 1 close
+  $758.44). Broad market off slightly overnight. Market closed June 1 at fresh record highs (10th
+  consecutive weekly gain confirmed). No defensive signal.
+- **10yr Treasury yield:** 4.46% (+0.01% from prior session) — well below 4.75% watch level.
+  Constructive for AI multiples. No stop tightening warranted.
+- **Iran — REVERSAL:** Iran suspended communications with Washington June 1, citing US "mixed
+  signals." WTI crude surged 6–8% to ~$92/bbl on June 1 (up from ~$87.66). Still below our $100
+  watch level. Trump later indicated Lebanon/Hezbollah ceasefire agreed and talks continuing, which
+  pulled WTI off session highs. Net: Iran deal trajectory now LESS certain. WTI at $92 is fine
+  for now, but the direction reversed. Watch if it re-approaches $100.
+- **MSFT Build 2026 — Day 1 TODAY:** Microsoft Build conference at Fort Mason Center, San Francisco.
+  Satya Nadella keynote at 9:30 AM PT (12:30 PM ET). Key announcements: new in-house AI coding model
+  (addresses investor concern MSFT ceded AI coding to Anthropic/OpenAI), GitHub Copilot as autonomous
+  agent, Azure AI Foundry enterprise orchestration dashboard, Copilot Runtime for Windows on-device AI.
+  Morgan Stanley eyeing 52% Azure upside. MSFT down −2.46% pre-market ($449.19 from $460.52 last
+  session) — likely "sell the news" ahead of conference; initial trading range $450–$472 per reports.
+- **Market posture:** Risk-on with modest Iran uncertainty. No defensive pivot. AI sentiment remains
+  high (NVDA Computex RTX Spark, MSFT Build, AVGO earnings tomorrow). Proceed with all 6 positions.
+
+### Held positions (pre-market June 2, 2026 — live Alpaca data 08:07 ET)
+
+**All 6 trailing stop orders confirmed ACTIVE (verified via Alpaca orders endpoint):**
+
+| Symbol | Order ID | Live HWM | Live Stop | Pre-mkt price | vs Entry |
+|--------|----------|----------|-----------|--------------|---------|
+| AVGO | a8e344f4 | **$466.05** (ratcheted overnight) | **$419.445** | $486.51 | +16.57% |
+| MSFT | a55a3db6 | $466.32 | $419.688 | $449.19 | +6.37% |
+| META | 4ea07e91 | $624.81 | $562.329 | $605.49 | −2.44% |
+| LLY | d4147484 | $1,149.10 | $1,034.19 | $1,077.07 | +0.39% |
+| AMZN | bbcd70fa | $274.75 | $247.275 | $257.35 | −4.38% |
+| NVDA | 8c6b9680 | **$224.87** (ratcheted overnight) | **$202.383** | $227.35 | +5.11% |
+
+**AVGO ($486.51 pre-mkt, +5.77% from $459.97 close, +16.57% from entry $417.37):**
+- Extraordinary pre-market surge. Earnings TOMORROW June 3 after close (2 PM PT / 5 PM ET).
+- Consensus: EPS $2.40 (+51.9% YoY), revenue $22.11B (+47% YoY). Buy-side bar: AI revenue >$5B
+  (vs $4.1B in Q1). EPS consensus raised 11% over past 90 days — growing confidence.
+- Broker ratcheted HWM overnight from $463.19 → $466.05. At $486.51, broker will ratchet
+  HWM → $486.51+ at open → stop → ~$437.86 (10% below HWM).
+- **HARD RULE: DO NOT ADD before earnings. Hold with trailing stop. Post-earnings scale plan below.**
+
+**MSFT ($449.19 pre-mkt, −2.46% from $460.52, +6.37% from entry $422.31):**
+- Pre-market softness on Build Day 1 open. Classic "sell the news" pattern at conference start.
+- Conference runs today and tomorrow June 3 — new AI coding model, GitHub Copilot agent, Azure AI.
+  Morgan Stanley raised target citing 52% Azure upside. Thesis very intact.
+- Trailing stop HWM $466.32. Stop $419.688. MSFT at $449.19 is $29.73 above stop — safe. Stop
+  will NOT ratchet today (MSFT below HWM). This is fine — trend is intact, just a pullback day.
+- **Action: HOLD. No concern at this level.**
+
+**META ($605.49 pre-mkt, +0.84% from $600.47, −2.44% from entry $620.64):**
+- Recovering. META declared quarterly cash dividend $0.525/sh payable June 25 — modest positive.
+- Thesis intact: AI-driven ad moat, +33% revenue, subscription layer, Llama flywheel. Current
+  price $605.49 = $43.16 above stop $562.329. Safe. HWM $624.81 (only $19.32 above entry).
+- **Action: HOLD. Normal early-position volatility.**
+
+**LLY ($1,077.07 pre-mkt, −0.47% from $1,082.20, +0.39% from entry $1,072.94):**
+- Mild softness. Medicare GLP-1 Bridge program starts July 1 (new catalyst) — Medicare beneficiaries
+  get discounted LLY obesity medicines through end of 2027. Materially expands access beyond commercial.
+- CVS Foundayo coverage live since June 1. All three major PBMs now covering full portfolio.
+- Phase 3 Libretto-432 trial (Retevmo) met primary endpoint May 31 — pipeline diversification catalyst.
+- Trailing stop HWM $1,149.10, stop $1,034.19. Current $1,077.07 = 4.2% above stop. Safe.
+- **Action: HOLD. Thesis is the strongest long-term in the portfolio.**
+
+**AMZN ($257.35 pre-mkt, −1.50% from $261.26, −4.38% from entry $269.13):** ⚠️ WATCH
+- Drifting lower. Headwinds: European cloud regulations potentially limiting AWS government contracts,
+  AWS outage May 7–8 (resolved), regretted attrition among senior AWS engineers noted.
+- Near-term catalyst: Prime Day June 23–26 (moved back to June for first time since 2021).
+- Cut threshold: entry $269.13 × 0.93 = $250.19. Current $257.35 = $7.16 above cut.
+- Stop $247.275. Current = 4.1% above stop. Thesis (AWS $364B backlog, $100B Anthropic) intact.
+  57/60 analysts buy, avg target $312.83.
+- **Action: HOLD. Monitor intraday. If AMZN approaches $252–254, re-evaluate thesis.**
+
+**NVDA ($227.35 pre-mkt, +1.33% from $224.36, +5.11% from entry $216.302):**
+- Strong. Broker ratcheted HWM overnight $222.694 → $224.87, stop $200.42 → $202.383.
+- At $227.35, broker will ratchet HWM → $227.35+ at open → stop → ~$204.62.
+- Ex-dividend THURSDAY June 4: $0.25/sh × 30sh = $7.50 credit.
+- RTX Spark momentum continues. Pre-market reportedly +6.25% around $229.72 per some sources
+  (vs Alpaca's $227.35 at 8:07 AM — pre-market price may have moved after data pull).
+- **Action: HOLD. Let trailing stop ratchet.**
+
+### New position research
+
+**No new position candidates for today.** Reasoning:
+- AVGO earnings TOMORROW (June 3) — reserve 1 slot for post-earnings scale-up if strong beat.
+- Iran oil trend reversal ($92 and rising vs falling): modest added uncertainty, prefer caution.
+- 2 slots remaining. Optimal use:
+  - Slot 2: AVGO scale-up June 4 open (if beat strongly: AI revenue >$5B, guidance raised)
+  - Slot 3: New name research after AVGO print — candidates: LLY scale-up to 10%, V (Visa),
+    COST (re-evaluate), or new name with fresh catalyst.
+- Forcing a new entry today, before the week's pivotal earnings event, is suboptimal.
+
+### Guardrail check
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 1/3 (META June 1) | ≤3 | 2 slots remaining |
+| Cash | $51,823.36 (51.0%) | ≥5% | ✓ Ample |
+| Any position below −7% from entry? | Max: AMZN −4.38% | −7% threshold | ✓ None triggered |
+| AVGO — no add before earnings? | Earnings June 3 | DO NOT ADD | ✓ |
+| WTI oil | ~$92/bbl | <$100 watch | ✓ (below watch, but rising trend) |
+| 10yr yield | 4.46% | <4.75% | ✓ |
+
+---
+
+### Planned trades for today (Tuesday June 2, 2026)
+
+**No trades planned.**
+
+All 6 positions intact. AVGO earnings tomorrow is the dominant week event — do not add concentration
+before the print. Iran oil reversal introduces modest caution. AMZN drifting toward watch territory
+but well above −7% cut threshold and stop. All stops confirmed active.
+
+**Post-AVGO plan (June 4 open):**
+- **Strong beat** (AI revenue >$5B, guidance raised, hyperscaler commentary positive): Scale AVGO
+  toward 12–14%. Currently 20sh × ~$490 = 9.6%. Add 8–10 shares (~$3,900–$4,900) for 10.4–11.4%.
+  → Uses 1 position slot (slot 2 of week). Thesis: AI custom silicon monopoly with multi-year
+  hyperscaler ASIC demand; earnings confirmation of the investment thesis.
+- **In-line or miss:** Hold existing 20sh with trailing stop. Do not add. Let stop protect gains.
+
+**Upcoming catalysts:**
+- MSFT Build Day 2 June 3 — continued developer AI announcements.
+- **AVGO earnings June 3 (after close)** — KEY WEEK EVENT.
+- **NVDA ex-dividend June 4** — $0.25/sh × 30sh = $7.50 credit.
+- META dividend payable June 25 ($0.525/sh × 15sh = $7.875).
+- LLY Medicare GLP-1 Bridge program July 1.
+
+---
+
 ## 2026-06-01 — Pre-market research (~08:07 ET)
 
 **Today is Monday June 1 — first trading day of week of June 1. Weekly new-position count: 0/3 used. 1 slot carried from last week (COST/MRVL both skipped).**

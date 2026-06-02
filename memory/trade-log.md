@@ -3,6 +3,25 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-02 08:07 ET — PRE-MARKET (no trades)
+- **Action:** None — no trades planned today. AVGO earnings TOMORROW June 3.
+- **Account:** Equity $101,700.20 | Cash $51,823.36 (51.0%)
+- **Macro:** S&P futures +0.2%; 10yr 4.46% (constructive). Iran suspended US communications June 1
+  → WTI surged to ~$92/bbl. Below $100 watch. MSFT Build Day 1 today.
+- **AVGO** ($486.51 pre-mkt, +16.57% from entry) ✓ — Broker ratcheted HWM to $466.05/stop $419.445
+  overnight. Earnings TOMORROW — DO NOT ADD. Will scale post-earnings if AI revenue >$5B + guidance raised.
+- **MSFT** ($449.19 pre-mkt, +6.37% from entry) ✓ — Down −2.46% pre-mkt ("sell the news" Build Day 1).
+  Stop $419.688 unchanged. Thesis intact.
+- **META** ($605.49 pre-mkt, −2.44% from entry) ✓ — Recovering +0.84%. Dividend $0.525/sh June 25.
+- **LLY** ($1,077.07 pre-mkt, +0.39% from entry) ✓ — Medicare GLP-1 Bridge July 1 new catalyst.
+- **AMZN** ($257.35 pre-mkt, −4.38% from entry) ⚠️ — Soft; European cloud regs, AWS talent issues.
+  Stop $247.275 (4.1% below current). Cut threshold $250.19. Monitor intraday.
+- **NVDA** ($227.35 pre-mkt, +5.11% from entry) ✓ — Broker ratcheted HWM to $224.87/stop $202.383.
+  Ex-dividend Thursday June 4 ($7.50 credit).
+- **Since inception:** Bull +1.70% vs SPY +2.34% = **−0.64%** (gap improved from −1.23% at June 1 close).
+- **Week of June 1:** 1/3 positions used (META). 2 slots remaining.
+  Slot 2 reserved: AVGO scale-up June 4 if earnings beat. Slot 3: new name or LLY scale-up.
+
 ## 2026-06-01 15:50 ET — CLOSE (no trades)
 - **Action:** None — end-of-day P/L check and journal
 - **AVGO:** $458.055 vs entry $417.37 → **+9.75%** (+2.53% today) ✓ — HWM $463.19, stop $416.871 unchanged. Earnings June 3.
