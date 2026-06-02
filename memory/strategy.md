@@ -124,7 +124,7 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-02 pre-market)
+## Active Macro Watches (updated 2026-06-02 close)
 
 - **10yr Treasury yield:** 4.46% (June 2) — well below 4.75% watch level. Constructive.
   Watch trigger unchanged: if 10yr crosses 4.75% on upward trend, halt new buys and tighten
@@ -132,28 +132,31 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - **Core PCE April 2026 (released May 29):** +0.2% MoM, +3.3% YoY — BENIGN.
   Below 0.35% threshold. No stop tightening needed.
 - **Iran conflict / oil prices:** ⚠️ TREND REVERSED. Iran suspended communications with US June 1.
-  WTI surged 6–8% to ~$92/bbl. Trump Lebanon/Hezbollah ceasefire pulled oil off highs. WTI
-  at $92 is below $100 watch level but direction is now UP (vs. declining). Monitor daily.
-  If WTI rises above $100, halt new buys and tighten stops on AI names. XOM remains off watchlist
-  pending Iran resolution, but if oil reaches $100, XOM thesis strengthens.
-- **AVGO earnings June 3 (TOMORROW):** Q2 consensus EPS $2.40 (+51.9% YoY), revenue $22.11B
-  (+47% YoY). Buy-side bar: AI revenue >$5B (vs $4.1B Q1). DO NOT ADD before earnings.
-  Live stop: HWM $466.05, stop $419.445. At pre-mkt $486.51 (+16.57% from entry).
-  IF strong beat (AI >$5B + guidance raised) → scale AVGO to 12–14% at June 4 open.
-- **LLY thesis STRENGTHENING further:** Medicare GLP-1 Bridge program July 1 (discounted access
-  for Medicare beneficiaries through 2027). All three major PBMs covering full portfolio. Phase 3
-  Libretto-432 (Retevmo) met primary endpoint May 31. HWM $1,149.10, stop $1,034.19.
-- **MSFT Build June 2–3:** Day 1 today (Satya Nadella keynote 12:30 PM ET). New AI coding model,
-  GitHub Copilot as autonomous agent, Azure AI Foundry. Morgan Stanley: 52% Azure upside.
-  Pre-mkt down −2.46% ($449.19) — "sell the news" at conference open. HWM $466.32, stop $419.688.
-- **NVDA:** +5.11% from entry. Ex-dividend June 4 ($0.25/sh × 30sh = $7.50). HWM $224.87
-  (overnight ratchet), stop $202.383. Momentum continues from RTX Spark / Computex.
-- **AMZN:** −4.38% from entry. ⚠️ WATCH. European cloud regs + AWS talent issues. Stop $247.275,
-  cut threshold $250.19. Thesis intact — AWS $364B backlog, 57/60 analysts buy.
-- **META:** −2.44% from entry. Recovering. Quarterly dividend $0.525/sh payable June 25. HWM
-  $624.81, stop $562.329. AI ad moat thesis intact.
+  WTI surged 6–8% to ~$92/bbl. Below $100 watch but direction is UP. Monitor daily.
+  If WTI rises above $100, halt new buys and tighten stops on AI names.
+- **AVGO earnings June 3 (TONIGHT after close):** Q2 consensus EPS $2.40 (+51.9% YoY), revenue
+  $22.11B (+47% YoY). Buy-side bar: AI revenue >$5B (vs $4.1B Q1). AVGO closed June 2 at
+  $479.39 (+14.86% from entry $417.37). HWM $488.82, stop $439.938.
+  **Scale plan for June 4 open:** IF strong beat (AI >$5B + guidance raised) → add 8–10 shares
+  (~$3,800–$4,800) scaling to 12–14% of portfolio. Uses slot 2 of week.
+  IF in-line or miss → hold with trailing stop; do not add.
+- **LLY thesis STRENGTHENING:** Medicare GLP-1 Bridge program July 1 (discounted access for
+  Medicare beneficiaries through 2027). All three major PBMs covering full portfolio. Phase 3
+  Libretto-432 (Retevmo) met primary endpoint May 31. Close June 2: $1,067.99 (−0.46% from entry).
+  HWM $1,149.10, stop $1,034.19.
+- **MSFT Build June 2–3:** Day 1 (June 2) confirmed severe "sell the news" (−4.10%, from $460.52 to
+  $441.63). Day 2 (TOMORROW June 3). New AI coding model, GitHub Copilot agent, Azure AI Foundry.
+  Close June 2: $441.63 (+4.57% from entry $422.31). HWM $466.32, stop $419.688 — $22 above current.
+  Thesis intact. Expect continued volatility around Day 2 announcements.
+- **NVDA:** +2.70% from entry. **Ex-dividend TOMORROW June 3** ($0.25/sh × 30sh = $7.50 credit).
+  Close June 2: $222.14. HWM $232.28, stop $209.052.
+- **AMZN:** ⚠️ −4.25% from entry. Close June 2: $257.70. Cut threshold $250.29 (only $7.40 margin).
+  Four consecutive soft sessions. Stop $247.275. Thesis intact (AWS $364B backlog, Prime Day
+  June 23–26, 57/60 analysts buy) but watch closely. Tomorrow midday: close if AMZN < $250.29.
+- **META:** −3.27% from entry. Close June 2: $600.37. Quarterly dividend $0.525/sh payable June 25.
+  HWM $624.81, stop $562.329. AI ad moat thesis intact.
 - **Week of June 1 — slots remaining:** 2/3. Planned use:
-  - Slot 2: AVGO scale-up June 4 (if strong beat — AI revenue >$5B + guidance raised)
+  - Slot 2: AVGO scale-up June 4 open (if strong beat — AI revenue >$5B + guidance raised)
   - Slot 3: New name or LLY scale-up after AVGO result. Candidates: LLY (to ~10%), V, COST.
 - **WMT:** Removed from consideration.
 - **Goldman Sachs S&P 500 target 8,000** (May 27). Broad market bullish. 10th consecutive weekly
