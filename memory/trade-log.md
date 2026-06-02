@@ -3,6 +3,28 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-02 12:35 ET — MIDDAY CHECK (no trades)
+- **Action:** None — all positions within guardrail thresholds
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 12:34 ET)
+- **Account:** Equity $101,428.32 | Cash $51,823.36 (51.1%) | Long market value $49,604.96
+- **AVGO** ($483.01, +15.73% from entry $417.37) ✓ — **Qualifies for +15% stop tightening rule, but WAIVED.** Earnings TOMORROW June 3 after close; tightening from 10% to 7% (stop ~$454.60) risks being triggered on earnings-night volatility and would undermine the planned post-earnings scale-up. Existing 10% stop (HWM $488.82, stop $439.938) already locks in +5.4% from entry if triggered. HWM unchanged — AVGO intraday at $483 is below $488.82 HWM. DO NOT ADD before earnings.
+- **MSFT** ($443.97, +5.13% from entry $422.31) ✓ — Down -3.59% today (MSFT Build Day 1 "sell the news" deepening). HWM $466.32, stop $419.688 unchanged — MSFT well below HWM, no ratchet. $24.28 above stop. Thesis intact.
+- **META** ($607.21, -2.16% from entry $620.64) ✓ — Up +1.12% today (recovering from yesterday's softness). HWM $624.81, stop $562.329 unchanged. $45.12 above stop.
+- **LLY** ($1,065.74, -0.67% from entry $1,072.94) ✓ — Down -1.52% today (mild intraday softness). HWM $1,149.10, stop $1,034.19 unchanged. $31.55 above stop.
+- **AMZN** ($258.66, -3.89% from entry $269.13) ✓ — Down -0.99% today; recovery from morning low $255.74 to $258.66. Cut threshold $250.19 ($8.47 above it). HWM $274.75, stop $247.275 unchanged. Thesis intact; AWS backlog, Prime Day June 23–26.
+- **NVDA** ($225.37, +4.19% from entry $216.302) ✓ — Up +0.45% today. **Broker ratcheted HWM → $232.28 (from $227.50 at open), stop → $209.052 (from $204.75).** NVDA hit intraday high of $232.28 during today's session. Ex-dividend Thursday June 4 ($7.50 credit).
+- **Trailing stops — all 6 confirmed active (live from Alpaca orders):**
+  - AVGO (a8e344f4): HWM $488.82, stop $439.938 ✓ — unchanged (AVGO below HWM)
+  - MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — unchanged (MSFT below HWM)
+  - META (4ea07e91): HWM $624.81, stop $562.329 ✓ — unchanged (META below HWM)
+  - LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged (LLY below HWM)
+  - AMZN (bbcd70fa): HWM $274.75, stop $247.275 ✓ — unchanged (AMZN below HWM)
+  - NVDA (8c6b9680): HWM **$232.28** (ratcheted from $227.50), stop **$209.052** (from $204.75) ✓ — NVDA set new intraday high
+- **No position below -7% cut threshold. AVGO +15.73% qualifies for stop tightening — discretion exercised to hold 10% stop through earnings tomorrow.**
+- **Portfolio:** Equity $101,428.32 (+$44.11 from yesterday close $101,384.21) | Cash $51,823.36 (51.1%)
+- **SPY midday:** $759.23. Since inception: Bull +1.43% vs SPY +2.68% = **-1.25%** gap (widened slightly from -1.01% at market open due to cash drag while SPY continues higher).
+- **Week of June 1:** 1/3 positions used (META June 1). 2 slots remaining. No new positions at midday — risk management only.
+
 ## 2026-06-02 09:35 ET — MARKET OPEN (no trades)
 - **Action:** None — no trades planned per pre-market plan dated today. AVGO earnings tomorrow June 3; plan is to hold all 6 positions and let trailing stops run.
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 09:35 ET)
