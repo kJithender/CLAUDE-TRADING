@@ -3,6 +3,29 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-03 15:53 ET — CLOSE (no trades)
+- **Action:** None — end-of-day P/L check and journal
+- **Market status:** `is_open: true` (next close 16:00 ET — running at 15:53 ET June 3)
+- **Account:** Equity $100,950.97 | Cash $59,299.66 (58.7%) | Long market value $41,651.31
+- **AVGO** ($485.25, +16.27% from entry $417.366, **+0.76% today**) ✓ — Steady ahead of earnings TONIGHT. HWM $495.00, stop $445.50. No new HWM ($485.25 < $495.00 HWM). DO NOT ADD. Scale plan active for June 4 open (see portfolio.md).
+- **META** ($622.32, +0.27% from entry $620.637, **+4.13% today**) ✓ — Strong recovery. HWM $624.81, stop $562.329. META came to within $2.49 of its HWM but did not exceed it — no ratchet. Thesis validating. Dividend June 25 ($7.875).
+- **LLY** ($1,082.53, +0.89% from entry $1,072.944, **+1.73% today**) ✓ — Solid day. HWM $1,149.10, stop $1,034.19 ($48.34 above current). Medicare GLP-1 Bridge July 1 thesis intact.
+- **MSFT** ($428.25, +1.41% from entry $422.31, **−2.96% today**) ✓ — Continued Build conference "sell the news" pullback. HWM $466.32, stop $419.688 ($8.56 above current). Thesis intact — Azure AI secular growth story unchanged.
+- **NVDA** ($215.665, −0.29% from entry $216.302, **−3.21% today**) ✓ — **EX-DIVIDEND TODAY.** 30sh × USD 0.25 = USD 7.50 credit. Price decline −3.21% is predominantly market-driven AI softness, not the dividend (which is only ~0.11% dilution on price). HWM $232.28, stop $209.052 ($6.61 above current). Thesis intact.
+- **Trailing stops — all 5 confirmed active (verified via Alpaca open orders):**
+  - AVGO (a8e344f4): HWM $495.00, stop $445.50 ✓ — unchanged
+  - META (4ea07e91): HWM $624.81, stop $562.329 ✓ — unchanged
+  - MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — unchanged
+  - LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged
+  - NVDA (8c6b9680): HWM $232.28, stop $209.052 ✓ — unchanged
+  - AMZN (bbcd70fa): CANCELED ✓ (confirmed in orders, position closed at midday)
+- **Today P/L:** −$166.60 (−0.16% vs June 2 close $101,117.57). META +4.13% ($370.35) and LLY +1.73% ($128.66) were positives; MSFT −2.96% (−$261.20) and NVDA −3.21% (−$214.65) were drags. AVGO +0.76% (+$73.60) offset partially.
+- **SPY close June 3:** $754.80 (−0.61% from June 2 close $759.47). Bull outperformed SPY by **+0.45% today**.
+- **Since inception:** Bull +0.95% vs SPY +2.08% = **−1.13%** gap (improved from −1.23% at midday; META recovery closed the gap slightly).
+- **Note:** Session characterized by rotation within the portfolio. META had its best single-day since entry (+4.13%), nearly recovering to its all-time high in our book ($624.81). MSFT continues the anticipated "sell the news" pattern from the Build conference — now −7.7% from its Build Day 1 high but still $8.56 above its stop. NVDA ex-dividend day — the $7.50 credit will appear in account. AVGO held steady ahead of tonight's pivotal earnings print. No positions triggered any guardrail today. All stops intact.
+- **AVGO earnings TONIGHT (after close):** Scale plan for June 4 open — see portfolio.md. This is the decisive event for the week.
+- **Week of June 1:** 1/3 positions used (META June 1). 2 slots remaining. AMZN close does NOT consume a slot (exits are not new positions).
+
 ## 2026-06-03 12:33 ET — MIDDAY CHECK — SELL AMZN
 - **Action:** SELL 30 shares AMZN (market order) — −7% cut rule triggered
 - **Fill:** 30 shares @ $249.21 avg (order id: 35f52817-62dc-4c02-a41a-d36048f8b9e9) — filled immediately
