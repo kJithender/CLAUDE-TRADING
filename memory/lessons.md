@@ -21,6 +21,14 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons
 
+### 2026-06-03 — Earnings beat thresholds must be anchored to what management GUIDED, not to stale buy-side bars
+AVGO's pre-market research originally used ">$5B AI revenue" as the scale-up trigger — taken from
+market commentary at the time. But in its Q1 March report Broadcom itself GUIDED Q2 AI semiconductor
+revenue of $10.7B (+140% YoY). The real bar for a "beat" is whether the actual print exceeds the
+company's own guidance. Writing "AI revenue >$5B" without refreshing against the company's own
+prior guidance was sloppy. Always check management guidance for the period before defining the
+earnings trigger threshold. An in-line $10.7B is NOT a beat relative to guide; only exceeding it is.
+
 ### 2026-05-29 — Pre-stating strong-beat thresholds for earnings skips is essential
 MRVL (EPS $0.80 vs $0.85 threshold; revenue $2.418B vs $2.5B) and COST (EPS $4.93 vs $5.10;
 renewal 89.7% vs >90%) were both correctly skipped because specific, pre-stated quantitative
