@@ -3,6 +3,28 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-03 09:36 ET — MARKET OPEN (no trades)
+- **Action:** None — no trades planned per pre-market plan dated today. AVGO earnings tonight.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 09:36 ET — next close 16:00 ET June 3)
+- **Account:** Equity $100,990.59 | Cash $51,823.36 (51.3%) | Long market value $49,167.23
+- **AVGO** ($478.72, +14.71% from entry $417.37, **−0.36% today**) ✓ — **Broker ratcheted HWM to $495.00 at open** (up from $488.82; AVGO hit intraday high $495.00 at the open bell), **stop ratcheted to $445.50** (up from $439.938). Currently pulling back intraday from the $495 open high. EARNINGS TONIGHT June 3 after close (5 PM ET). DO NOT ADD. Post-earnings scale plan remains: if Q2 AI semiconductor revenue BEATS $10.7B guide AND Q3 AI guidance raised >$11.5B → add 8–10 shares at June 4 open.
+- **MSFT** ($435.42, +3.10% from entry $422.31, **−1.34% today**) ✓ — Build Day 2 in progress (Autopilots, Copilot desktop, Azure AI Foundry, Aion 1.0). HWM $466.32, stop $419.688 ($15.73 above current). Thesis intact — thesis continues to strengthen.
+- **META** ($611.40, −1.49% from entry $620.637, **+2.13% today**) ✓ — Recovering strongly today. HWM $624.81, stop $562.329 ($48.07 above current). AI ad thesis intact.
+- **LLY** ($1,066.10, −0.64% from entry $1,072.94, **−0.01% today**) ✓ — Essentially flat. HWM $1,149.10, stop $1,034.19 ($31.91 above current). Thesis intact (Medicare GLP-1 Bridge July 1).
+- **AMZN** ($256.135, −4.84% from entry $269.13, **−0.19% today**) ⚠️ WATCH — Soft again. Cut threshold $250.29 ($5.84 above current). Stop $247.275 ($8.86 above current). **Midday check critical: close AMZN if price < $250.29 per −7% rule.**
+- **NVDA** ($219.32, +1.41% from entry $216.302, **−1.56% today**) ✓ — **EX-DIVIDEND TODAY** ($0.25/sh × 30sh = $7.50 credit). Price down intraday partly reflecting ex-div adjustment. HWM $232.28, stop $209.052 ($10.27 above current). Normal. Credit expected today or next business day.
+- **Trailing stops — all 6 confirmed active (verified via Alpaca open orders):**
+  - AVGO (a8e344f4): HWM **$495.00** (ratcheted from $488.82 — AVGO touched $495 at open), stop **$445.50** ✓
+  - MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — unchanged
+  - META (4ea07e91): HWM $624.81, stop $562.329 ✓ — unchanged
+  - LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged
+  - AMZN (bbcd70fa): HWM $274.75, stop $247.275 ✓ — unchanged
+  - NVDA (8c6b9680): HWM $232.28, stop $209.052 ✓ — unchanged
+- **Guardrail check:** No position below −7% cut threshold (worst: AMZN −4.84%). AVGO +15% tighten rule: at +14.71% — just below trigger, and WAIVED regardless (earnings tonight). All stops active. Cash 51.3% > 5%. Week: 1/3 positions used. No action warranted.
+- **SPY:** $757.72 at 09:37 ET. Since inception: Bull +0.99% vs SPY +2.47% = **−1.48%** gap. (Equity declined ~$127 from yesterday's close of $101,117.57 — broad softness at open, AVGO giving back pre-market gains, MSFT continuing Build Day 2 pullback.)
+- **Today's plan:** No trades. Hold all 6 positions. AVGO earnings after close tonight is the week's pivotal event. AMZN midday cut threshold $250.29 remains the active risk management trigger.
+- **Week of June 1:** 1/3 positions used (META June 1). 2 slots remaining.
+
 ## 2026-06-02 15:51 ET — CLOSE (no trades)
 - **Action:** None — end-of-day P/L check and journal
 - **Market status:** `is_open: true`, next close 16:00 ET (confirmed via clock)
