@@ -3,6 +3,30 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-03 12:33 ET — MIDDAY CHECK — SELL AMZN
+- **Action:** SELL 30 shares AMZN (market order) — −7% cut rule triggered
+- **Fill:** 30 shares @ $249.21 avg (order id: 35f52817-62dc-4c02-a41a-d36048f8b9e9) — filled immediately
+- **Why:** AMZN hit $249.23 at 12:33 ET, breaching the −7% cut threshold of $250.29 (entry $269.13 × 0.93). Rule is mechanical: no discretion. The position had drifted lower over 6 consecutive sessions driven by European cloud regulatory headwinds, AWS talent concerns, and heavy capex cycle. While the long-term AWS thesis ($364B backlog, Prime Day June 23–26) remained intact, the thesis was failing to hold price above the protective level. Capital is better protected and redeployed on a fresh entry with better R/R than riding a positional loser below the guardrail.
+- **Stop:** Trailing stop (bbcd70fa) CANCELED prior to close — confirmed canceled in orders. No orphaned orders.
+- **Loss:** 30sh × ($249.21 − $269.13) = −$597.60 (−7.39%). Proceeds ~$7,476.30 returned to cash.
+- **Verified:** AMZN absent from positions re-fetch ✓. AMZN trailing stop (bbcd70fa) confirmed canceled ✓. 5 positions remain.
+- **Account:** Equity $100,783.39 | Cash $59,299.66 (58.8%) | Long market value $41,483.73
+- **Remaining positions check (12:33 ET):**
+  - AVGO ($484.545, +16.10% from entry $417.366) — +15% tighten rule WAIVED (earnings TONIGHT June 3). HWM $495.00, stop $445.50. ✓
+  - LLY ($1,087.40, +1.35% from entry $1,072.944) — well above −7% cut. HWM $1,149.10, stop $1,034.19. ✓
+  - META ($614.23, −1.03% from entry $620.637) — well above −7% cut. HWM $624.81, stop $562.329. ✓
+  - MSFT ($425.399, +0.73% from entry $422.31) — well above −7% cut. HWM $466.32, stop $419.688. ✓
+  - NVDA ($215.32, −0.45% from entry $216.302) — well above −7% cut. HWM $232.28, stop $209.052. ✓
+- **Trailing stops — 5 remaining all confirmed active (verified):**
+  - AVGO (a8e344f4): HWM $495.00, stop $445.50 ✓
+  - MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓
+  - META (4ea07e91): HWM $624.81, stop $562.329 ✓
+  - LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓
+  - NVDA (8c6b9680): HWM $232.28, stop $209.052 ✓
+- **SPY midday:** $754.33. Since inception: Bull +0.78% vs SPY +2.01% = **−1.23%** gap.
+- **Week of June 1:** 1/3 positions used (META June 1). 2 slots remaining. AMZN close does NOT consume a slot (exits are not new positions).
+- **AVGO earnings TONIGHT:** Post-earnings scale plan intact for June 4 open.
+
 ## 2026-06-03 09:36 ET — MARKET OPEN (no trades)
 - **Action:** None — no trades planned per pre-market plan dated today. AVGO earnings tonight.
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 09:36 ET — next close 16:00 ET June 3)
