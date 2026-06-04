@@ -5,6 +5,158 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-04 — Pre-market research (~08:07 ET)
+
+**Today is Thursday June 4. Week of June 1: 1/3 new positions used (META June 1). 2 slots remaining.**
+
+### CRITICAL: AVGO earnings — post-earnings gap down
+
+**AVGO reported Q2 FY2026 after close June 3. Results were MIXED:**
+
+| Metric | Actual | Estimate / Guide | vs. Expectation |
+|--------|--------|-----------------|-----------------|
+| Revenue | $22.19B | $22.27B est | Slight miss |
+| EPS (adj) | $2.44 | $2.40 est | Beat ✓ |
+| AI semiconductor revenue | $10.8B (+143% YoY) | $10.7B guide | Marginal beat ✓ |
+| Infrastructure software | $7.18B | $7.32B est | **MISS** ✗ |
+| Q3 revenue guidance | $29.4B | $28.53B est | Beat ✓ |
+| Q3 AI semiconductor guide | $16.0B | >$11.5B threshold | Crushed threshold ✓ |
+| Full-year AI semi guidance | Reaffirmed >$100B (FY2027) | Expected raise | **Not raised** ✗ |
+
+**Market reaction: AVGO -14.93% pre-market at ~$408.98.**
+- Stock gapped from official June 3 close ~$478.62 to ~$408-409 overnight
+- "Buy the rumor, sell the news" — stock ran +17.98% from entry before print
+- Software miss ($7.18B vs $7.32B) and failure to raise full-year AI guidance disappointed bulls
+- Options implied ±10.65% move; actual move is ~15%
+
+**AVGO trailing stop situation:**
+- Stop (a8e344f4): HWM $495.00, stop **$445.50** — ACTIVE (confirmed in Alpaca orders)
+- Pre-market AVGO: ~$408.98 — well below $445.50 stop
+- **The trailing stop WILL FIRE at market open.** AVGO exits at ~$408-410 (gap risk: stop fills at market price, not $445.50)
+- Result: 20 shares × ~($409 − $417.37) = ~**−$170 loss** from entry (−2.0%)
+- This is gap risk — the stop protects against further decline but cannot prevent the gap itself
+
+**Scale-up decision: DO NOT SCALE UP. CANCELLED.**
+- Technical conditions were met (AI rev $10.8B > $10.7B guide; Q3 AI $16.0B >> $11.5B threshold)
+- BUT: buying into a −15% post-earnings gapper is chasing a falling knife
+- Market's verdict is clearly negative; software miss + guidance-not-raised disappointed
+- Additionally, the trailing stop fires at open — AVGO exits automatically; can't scale up a closing position
+- The scale-up plan's spirit was "add on confirmation with positive market reaction" — that condition is NOT met
+- **No action needed. Trailing stop handles AVGO exit.**
+
+---
+
+### Macro (June 4, 2026 pre-market)
+
+- **S&P futures:** Likely under pressure from AVGO's -15% move. AI semi sector broader sympathy selling possible.
+- **10yr Treasury yield:** ~4.44–4.50% (constructive range, unchanged)
+- **WTI crude:** **$95.68** — rising for 3rd consecutive session on US-Iran peace-talk uncertainty. Only $4.32 away from $100 halt-new-buys trigger. ⚠️ WATCH.
+- **Market posture:** Cautious today. AVGO fallout will pressure AI/tech names at open. WTI elevated. No defensive pivot warranted but no new buys today.
+
+---
+
+### Held positions (pre-market June 4, 2026 — live Alpaca data 08:07 ET)
+
+**Account:** Equity $99,461.64 | Cash $59,299.64 (59.6%) | Long market value $40,162.00
+
+**Active trailing stops (confirmed via Alpaca orders):**
+
+| Symbol | Order ID | HWM | Stop | Pre-mkt price | vs Entry | Status |
+|--------|----------|-----|------|--------------|---------|--------|
+| AVGO | a8e344f4 | $495.00 | **$445.50** | ~$408.98 | **−2.01%** | ⚠️ FIRES AT OPEN |
+| META | 4ea07e91 | $624.81 | $562.329 | $618.24 | −0.39% | ✓ Active |
+| MSFT | a55a3db6 | $466.32 | $419.688 | $433.50 | +2.65% | ✓ Active |
+| LLY | d4147484 | $1,149.10 | $1,034.19 | $1,098.51 | +2.38% | ✓ Active |
+| NVDA | 8c6b9680 | $232.28 | $209.052 | $212.53 | **−1.76%** | ⚠️ WATCH — 1.6% buffer |
+
+**AVGO (~$408.98, trailing stop fires at open):**
+- Trailing stop at $445.50 will execute at market open. Position closes at ~$408-410 (gap-filled below stop)
+- Entry $417.37; proceeds ~$8,180; net loss from entry ~−$170 (−2.01% on cost basis)
+- The big gain (+$1,357 at June 3 close) is wiped by the gap-down — this is gap risk
+- THESIS STATUS: Mixed print. AI semi thesis partially intact (Q3 $16B guide is extraordinary) but software miss and FY guidance not raised weaken the thesis. Not a name to reload in the short term.
+- **NO scale-up. Let stop execute.**
+
+**META (~$618.24, −0.76% today, −0.39% from entry $620.64):**
+- Minor softness, consistent with AI-sector sympathy selling
+- Stop $562.329 ($55.91 above current — safe 8.3% buffer). Thesis intact.
+- No action.
+
+**MSFT (~$433.50, +1.44% today, +2.65% from entry $422.31):**
+- Strong pre-market recovery. AVGO earnings' Q3 AI revenue guide ($16B) is bullish for MSFT's Azure AI demand
+- Stop $419.688 ($13.81 above current — safe 3.3% buffer). Thesis intact.
+- No action.
+
+**LLY (~$1,098.51, +1.83% today, +2.38% from entry $1,072.94):**
+- Medicare GLP-1 Bridge program July 1 catalyst confirmed. Medicare/Medicaid coverage agreement
+  announced — estimated 20–30M Medicare beneficiaries eligible. LLY 2026 revenue guidance $80–83B.
+- Strong pre-market move validating thesis.
+- HWM $1,149.10, stop $1,034.19 ($64.32 above current — safe 6.2% buffer). Thesis STRONGEST in portfolio.
+- No action. Could scale up to 10% with Slot 2 or 3 — evaluate at June 5 pre-market.
+
+**NVDA (~$212.53, −1.05% today, −1.76% from entry $216.302):** ⚠️ WATCH
+- Stop $209.052; buffer only $3.48 = 1.6%.
+- AI sector selling at open (AVGO fallout) could pressure NVDA toward the stop.
+- Ex-dividend credit $7.50 (30sh × $0.25) should post today or next business day.
+- Thesis intact (AI accelerator monopoly, no credible competitor). Stop is there for a reason — let it run.
+- **Key watch at open.** If NVDA opens ≤$209.05, stop fires. DO NOT intervene.
+
+---
+
+### Guardrail check (pre-market June 4)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 1/3 (META June 1) | ≤3 | 2 slots remaining |
+| Cash | $59,299.64 (59.6%); ~$67,480 after AVGO exit | ≥5% | ✓ Ample |
+| Any position below −7% from entry? | Worst: NVDA −1.76% | −7% threshold | ✓ None triggered |
+| AVGO trailing stop | $445.50, pre-mkt $408.98 | Fires at open | ⚠️ Automatic |
+| NVDA stop buffer | $212.53 vs $209.052 | 1.6% gap | ⚠️ Narrow — watch |
+| WTI oil | $95.68 | <$100 watch | ⚠️ Rising, $4.32 below trigger |
+| 10yr yield | ~4.44–4.50% | <4.75% | ✓ |
+
+---
+
+### New position research
+
+**No new positions today.** Reasons:
+1. AVGO gap-down creates AI sector uncertainty at open — observe before deploying
+2. NVDA's stop buffer is critically narrow; watch first
+3. WTI $95.68 is approaching $100 halt trigger — no new buys until oil direction clarifies
+4. After AVGO stop fires, cash rises to ~$67K (68%); plenty of room — no urgency
+5. Slots 2 and 3 remain available; better to deploy with higher conviction next week or after sector settles
+
+**Candidate evaluation deferred to June 5 pre-market:**
+- **LLY scale-up** (+3 shares, ~10% portfolio weight) — Medicare July 1 catalyst, thesis strengthening
+- **V (Visa)** — payments infrastructure, sector diversification from AI-heavy book
+- Re-evaluate after AVGO and NVDA situations resolve today
+
+---
+
+### Planned trades for today (Thursday June 4, 2026)
+
+**No trades planned.**
+
+The AVGO trailing stop (a8e344f4, stop $445.50) will execute automatically at market open — no action needed from me. AVGO position closes at ~$408-410. No scale-up.
+
+Watch NVDA at open: stop $209.052, pre-market $212.53 (1.6% buffer). Potential AI-sector sympathy selling from AVGO fallout. DO NOT manually intervene; let the trailing stop protect if triggered.
+
+All other positions (MSFT, META, LLY) have adequate stop buffers (3.3%, 8.3%, 6.2% respectively).
+
+**Post-AVGO-exit portfolio plan:**
+- 4 positions remain (MSFT, META, LLY, NVDA — contingent on NVDA stop not triggering)
+- Cash rises to ~$67,480 (68%)
+- No new positions this week. Evaluate at June 5 pre-market.
+- **Slot 2:** LLY scale-up +3 shares OR new name — decide June 5
+- **Slot 3:** V (Visa) or other name — decide June 5+
+
+**Upcoming catalysts:**
+- NVDA ex-dividend credit $7.50 today (June 4) or next business day
+- META dividend payable June 25 ($7.875)
+- LLY Medicare GLP-1 Bridge program effective July 1
+- May nonfarm payrolls (Friday June 5) — key macro read
+
+---
+
 ## 2026-06-03 — Pre-market research (~08:07 ET)
 
 **Today is Wednesday June 3. Week of June 1: 1/3 new positions used (META June 1). 2 slots remaining.**

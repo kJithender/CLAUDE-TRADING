@@ -124,43 +124,35 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-03 pre-market)
+## Active Macro Watches (updated 2026-06-04 pre-market)
 
-- **10yr Treasury yield:** 4.46% (June 2) — well below 4.75% watch level. Constructive.
-  Watch trigger unchanged: if 10yr crosses 4.75% on upward trend, halt new buys and tighten
-  trailing stops on high-multiple AI names (AVGO, MSFT, NVDA).
-- **Core PCE April 2026 (released May 29):** +0.2% MoM, +3.3% YoY — BENIGN.
-  Below 0.35% threshold. No stop tightening needed.
-- **Iran conflict / oil prices:** ⚠️ RISING. WTI at $93.64–$96.04 on June 3 pre-market, rising for
-  3rd consecutive session on continued US-Iran peace-talk uncertainty. Still below $100 watch but
-  now only $4–6 away. If WTI crosses $100, halt new buys and tighten stops on AI names.
-- **AVGO earnings June 3 (TONIGHT after close):** Q2 consensus EPS $2.40 (+51.9% YoY), revenue
-  $22.11B (+47% YoY). **REVISED AI revenue bar:** Broadcom already guided Q2 AI semiconductor
-  revenue of $10.7B (+140% YoY) in its Q1 March report. Beat threshold for scale-up is:
-  (1) Q2 AI semiconductor revenue BEATS $10.7B guidance, AND (2) Q3/FY AI guidance raised
-  materially (Q3 AI guide >$11.5B or FY trajectory raised). Options imply ±10.65% post-earnings
-  move. AVGO pre-mkt June 3 at $492.42 (+17.98% from entry $417.37). Stop ratchets to ~$443 at open.
-  **Scale plan for June 4 open:** IF beat + raised guidance → add 8–10 shares (~$3,900–$5,000)
-  scaling to 12–14% of portfolio. Uses slot 2 of week.
-  IF in-line/miss or guidance flat/lower → hold existing 20sh with trailing stop; do not add.
-- **LLY thesis STRENGTHENING:** Medicare GLP-1 Bridge program July 1 (discounted access for
-  Medicare beneficiaries through 2027). All three major PBMs covering full portfolio. Phase 3
-  Libretto-432 (Retevmo) met primary endpoint May 31. Pre-mkt June 3: $1,066.46 (−0.60% from entry).
-  HWM $1,149.10, stop $1,034.19.
-- **MSFT Build June 2–3:** Day 2 (TODAY June 3). Announcements confirmed: Autopilots (autonomous AI
-  agents w/ Entra ID), Microsoft Scout, GitHub Copilot desktop app, Azure AI Foundry GA end-June,
-  Aion 1.0 reasoning model (14B params, ships in-box with Windows). Thesis materially strengthening.
-  Pre-mkt June 3: $439.87 (+4.16% from entry $422.31). HWM $466.32, stop $419.688 ($20 above current).
-- **NVDA:** +3.65% from entry. **Ex-dividend TODAY June 3** ($0.25/sh × 30sh = $7.50 credit).
-  Pre-mkt June 3: $224.20. HWM $232.28, stop $209.052.
-- **AMZN:** ⚠️ −4.88% from entry. Pre-mkt June 3: $256.01. Cut threshold $250.29 (only $5.72 margin).
-  Five consecutive soft sessions. Stop $247.275. Thesis intact (AWS $364B backlog, Prime Day
-  June 23–26, 57/60 analysts buy) but watch closely. TODAY midday: close if AMZN < $250.29.
-- **META:** −2.89% from entry. Pre-mkt June 3: $602.69. Quarterly dividend $0.525/sh payable June 25.
-  HWM $624.81, stop $562.329. AI ad moat thesis intact.
-- **Week of June 1 — slots remaining:** 2/3. Planned use:
-  - Slot 2: AVGO scale-up June 4 open (if Q2 AI revenue BEATS $10.7B guide + Q3/FY guidance raised)
-  - Slot 3: LLY scale-up to ~10% or V (Visa) new name — decide June 5 pre-market.
-- **WMT:** Removed from consideration.
+- **10yr Treasury yield:** ~4.44–4.50% range — well below 4.75% watch level. Constructive.
+  Watch trigger: if 10yr crosses 4.75% on upward trend, halt new buys, tighten stops on high-multiple AI names.
+- **Core PCE April 2026 (released May 29):** +0.2% MoM, +3.3% YoY — BENIGN. Below 0.35% threshold.
+- **Iran conflict / oil prices:** ⚠️ RISING. WTI $95.68 on June 4 pre-market — 3rd consecutive session
+  rising on US-Iran peace-talk uncertainty. Only $4.32 below $100 halt-new-buys trigger. CLOSE WATCH.
+  If WTI crosses $100: halt new buys immediately and tighten stops on MSFT, NVDA.
+- **AVGO (CLOSED — trailing stop fires at open June 4):** Q2 FY2026 actual results: Revenue $22.19B
+  (slight miss); AI semiconductor $10.8B (+143% YoY, beat $10.7B guide); software $7.18B (MISS vs $7.32B);
+  Q3 revenue guide $29.4B (beat); Q3 AI guide $16.0B (strong). Full-year AI guidance NOT raised.
+  Market reaction: −14.93% overnight. Trailing stop (a8e344f4) at $445.50 fires at market open today.
+  AVGO position exits at ~$408-410. Gap risk realized. Scale-up cancelled (negative market reaction).
+  AVGO not on re-entry consideration near-term — await stabilization and earnings digestion.
+- **LLY thesis STRENGTHENING:** Pre-mkt June 4 +1.83% ($1,098.51, +2.38% from entry). Medicare/Medicaid
+  GLP-1 coverage agreement confirmed — 20-30M Medicare beneficiaries eligible. Foundayo FDA-approved,
+  now commercially available. Medicare GLP-1 Bridge program effective July 1. Thesis STRONGEST in portfolio.
+  HWM $1,149.10, stop $1,034.19. **Scale-up candidate: +3 shares at June 5 open (Slot 2 or 3).**
+- **MSFT:** +2.65% from entry. Pre-mkt June 4: $433.50. Azure AI secular thesis intact. AVGO's Q3 AI
+  guide of $16B is constructive for Azure AI demand. HWM $466.32, stop $419.688. No action needed.
+- **NVDA:** ⚠️ −1.76% from entry. Pre-mkt June 4: $212.53. Stop $209.052 — only **1.6% buffer**.
+  Ex-dividend credit $7.50 due today or tomorrow. AI sector pressure from AVGO results may affect NVDA.
+  Stop is the protection mechanism. DO NOT manually intervene if stop triggers.
+- **META:** −0.39% from entry. Pre-mkt June 4: $618.24. Quarterly dividend $0.525/sh payable June 25.
+  HWM $624.81, stop $562.329 (safe 8.3% buffer). AI ad moat thesis intact.
+- **Week of June 1 — slots remaining:** 2/3 (both slots 2 and 3 available).
+  - **Slot 2:** LLY scale-up +3 shares (~10% portfolio weight) — decide at June 5 pre-market
+  - **Slot 3:** V (Visa) or new name — decide June 5+
+  - WTI must be below $100 before executing any new buy.
+- **AMZN:** CLOSED June 3 at midday per −7% rule (−7.39%). Not on consideration list near-term.
 - **Goldman Sachs S&P 500 target 8,000** (May 27). Broad market bullish. 10th consecutive weekly
-  gain confirmed as of June 1.
+  gain as of June 1.

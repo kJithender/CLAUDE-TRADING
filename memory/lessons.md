@@ -21,6 +21,21 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons
 
+### 2026-06-04 — Trailing stops do not protect against gap-down risk on earnings; scale-up plans must require positive market reaction
+AVGO's trailing stop was set at $445.50 (HWM $495.00). The stock gapped from ~$479 close to ~$409
+overnight after earnings — completely through the stop level. The stop executed at market price, not
+at $445.50. This is called gap risk: when a stock opens below your stop, the stop fills at the opening
+market price, potentially well below the stop level. Three lessons: (1) Trailing stops protect against
+gradual declines, not overnight gaps. Accept this as a structural limitation of the product. (2) The
+scale-up plan called for adding 8–10 shares, and technically both AI-revenue conditions were met
+($10.8B > $10.7B guide; Q3 $16.0B > $11.5B threshold). But the spirit of the plan was "add on
+confirmation with positive market reaction." A −15% gap is unambiguously negative confirmation. Never
+execute a scale-up plan when the stock gaps down on earnings even if the technical trigger conditions
+are literally met — the market's verdict overrides the pre-stated formula. (3) Pre-earnings stops
+should be held with full awareness that gap risk exists; raising stops before an earnings event trades
+one risk (slow decline protected) for another (false stop-out in normal volatility). The existing
+policy of waiving the +15% tighten rule pre-earnings is correct.
+
 ### 2026-06-03 — Earnings beat thresholds must be anchored to what management GUIDED, not to stale buy-side bars
 AVGO's pre-market research originally used ">$5B AI revenue" as the scale-up trigger — taken from
 market commentary at the time. But in its Q1 March report Broadcom itself GUIDED Q2 AI semiconductor

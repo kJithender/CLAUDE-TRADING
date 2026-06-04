@@ -3,27 +3,29 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-03 15:53 ET (close routine — AVGO earnings tonight)
+**Last updated:** 2026-06-04 08:07 ET (pre-market — AVGO post-earnings gap down)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
-## Account
+## Account (pre-market June 4, 2026)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,950.97 |
-| Cash | $59,299.66 |
-| Long market value | $41,651.31 |
-| Buying power | ~$160,251 |
+| Equity | $99,461.64 |
+| Cash | $59,299.64 |
+| Long market value | $40,162.00 |
+| Buying power | ~$158,761 |
 
-## Open positions (close June 3, 2026 — ~15:53 ET live data)
+_Note: AVGO trailing stop fires at market open — equity/positions will update after fill._
 
-| Symbol | Qty | Avg entry | Price (15:53) | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
+## Open positions (pre-market June 4, 2026 — ~08:07 ET live data)
+
+| Symbol | Qty | Avg entry | Pre-mkt price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
 |--------|-----|-----------|--------------|-----------|----------------|----------------|---------------|
-| AVGO | 20 | $417.366 | $485.25 | $9,705.00 | +$1,357.68 (+16.27%) | 9.61% | 10% trailing (a8e344f4), HWM $495.00, stop $445.50 — **EARNINGS TONIGHT — tighten rule WAIVED** |
-| META | 15 | $620.637 | $622.32 | $9,334.80 | +$25.25 (+0.27%) | 9.25% | 10% trailing (4ea07e91), HWM $624.81, stop $562.329 |
-| MSFT | 20 | $422.31 | $428.25 | $8,565.00 | +$118.80 (+1.41%) | 8.48% | 10% trailing (a55a3db6), HWM $466.32, stop $419.688 |
-| LLY | 7 | $1,072.944 | $1,082.53 | $7,577.71 | +$67.10 (+0.89%) | 7.51% | 10% trailing (d4147484), HWM $1,149.10, stop $1,034.19 |
-| NVDA | 30 | $216.302 | $215.665 | $6,469.95 | −$19.11 (−0.29%) | 6.41% | 10% trailing (8c6b9680), HWM $232.28, stop $209.052 |
+| ⚠️ AVGO | 20 | $417.366 | ~$408.98 | ~$8,180 | ~−$170 (−2.01%) | 8.22% | **TRAILING STOP FIRES AT OPEN** — (a8e344f4) HWM $495.00, stop $445.50 — gap-down to ~$409 means stop fills at market open |
+| META | 15 | $620.637 | $618.24 | $9,273.60 | −$35.95 (−0.39%) | 9.33% | 10% trailing (4ea07e91), HWM $624.81, stop $562.329 |
+| MSFT | 20 | $422.31 | $433.50 | $8,670.00 | +$223.80 (+2.65%) | 8.72% | 10% trailing (a55a3db6), HWM $466.32, stop $419.688 |
+| LLY | 7 | $1,072.944 | $1,098.51 | $7,689.57 | +$178.97 (+2.38%) | 7.73% | 10% trailing (d4147484), HWM $1,149.10, stop $1,034.19 |
+| ⚠️ NVDA | 30 | $216.302 | $212.53 | $6,375.90 | −$114.06 (−1.76%) | 6.41% | 10% trailing (8c6b9680), HWM $232.28, stop $209.052 — **NARROW 1.6% BUFFER** |
 | ~~AMZN~~ | ~~30~~ | ~~$269.13~~ | — | — | **CLOSED −$597.60 (−7.39%)** | — | **CANCELED** (bbcd70fa) ✓ |
 
 ## Performance vs S&P 500
@@ -41,40 +43,39 @@ the last known state, but always re-fetches live data before trading._
 | Open (2026-06-03) | $100,990.59 | $757.72 | — |
 | Midday (2026-06-03) | $100,783.39 | $754.33 | — |
 | Close (2026-06-03) | $100,950.97 | $754.80 | — |
-| Since inception (2026-05-21) | +0.95% | +2.08% | **−1.13%** |
+| Pre-mkt (2026-06-04) | $99,461.64 | ~$757 est | **~−2.9%** |
+| Since inception (2026-05-21) | **−0.54%** | ~+2.37% est | **~−2.91%** |
 
-_Close June 3: Equity $100,950.97 (−$166.60, −0.16% vs June 2 close). SPY fell −0.61% today — Bull outperformed by +0.45%. META recovered strongly +4.13%; MSFT −2.96% and NVDA −3.21% (ex-div day) were the drags. AVGO earnings after close tonight is the pivotal week event. Gap narrowed slightly from −1.23% at midday to −1.13% at close._
+_Pre-mkt June 4: Equity $99,461.64 — AVGO post-earnings gap-down (-15%) caused significant decline. AVGO trailing stop fires at open, locking in a small net loss from entry (~−$170). Gap widened sharply from −1.13% to ~−2.91%. Cash-heavy portfolio (60%+) now fully shows as a defensive asset — the 4 remaining positions are all healthy. SPY estimate based on June 3 close $754.80; will update at market open._
 
 ## Notes
 
-**Five positions as of June 3 close, 2026.** Week of June 1: **1/3 new positions used** (META June 1). 2 slots remaining.
+**Pre-market June 4, 2026 — AVGO post-earnings situation.** Week of June 1: **1/3 new positions used** (META June 1). **2 slots remaining** (Slot 2 NOT used — AVGO scale-up cancelled due to negative market reaction).
 
-**Close June 3 — no trades during market hours:**
-- AMZN was closed at midday (12:33 ET) per the −7% rule. Already journaled in midday routine.
-- **AVGO** ($485.25, +16.27% from entry) — +0.76% today, steady ahead of earnings TONIGHT. HWM $495.00, stop $445.50. No new HWM ($485.25 < $495.00). **EARNINGS TONIGHT June 3 after close.** Scale plan for June 4 open: IF Q2 AI semiconductor revenue BEATS $10.7B guide AND Q3/FY guidance raised materially → add 8–10 shares at limit ~0.3% below opening quote.
-- **META** ($622.32, +0.27% from entry) — strong recovery +4.13% today. HWM $624.81, stop $562.329. Just below HWM — no ratchet ($622.32 vs $624.81). AI ad thesis validating. Dividend June 25 ($7.875).
-- **MSFT** ($428.25, +1.41% from entry) — down −2.96% today (continued Build conference "sell the news"). HWM $466.32, stop $419.688 ($8.56 above current). Thesis intact.
-- **LLY** ($1,082.53, +0.89% from entry) — up +1.73% today. HWM $1,149.10, stop $1,034.19 ($48.34 above current). Medicare GLP-1 Bridge July 1 thesis intact.
-- **NVDA** ($215.665, −0.29% from entry) — down −3.21% today. Ex-dividend today (USD 7.50 credit for 30sh × USD 0.25). HWM $232.28, stop $209.052 ($6.61 above current). Thesis intact.
+**AVGO Q2 FY2026 results (June 3 after close):**
+- Revenue $22.19B (slight miss vs $22.27B); AI semi $10.8B (+143%, beat $10.7B guide); software $7.18B (MISS vs $7.32B); Q3 revenue $29.4B (beat); Q3 AI guide $16.0B (beats >$11.5B threshold)
+- Full-year AI guidance NOT raised — major disappointment to bulls
+- Stock: −14.93% pre-market from ~$479 → ~$409
+- **Trailing stop (a8e344f4) at $445.50 fires at market open.** AVGO exits at ~$408-410. Gap risk realized.
+- **Scale-up CANCELLED:** DO NOT ADD. Negative market reaction + falling knife + stop fires = no action.
 
-**Trailing stop HWMs (close June 3, 15:53 ET — verified via Alpaca open orders):**
-- AVGO (a8e344f4): HWM $495.00, stop $445.50 ✓ — unchanged (no new high today)
-- META (4ea07e91): HWM $624.81, stop $562.329 ✓ — unchanged (META $622.32 just below HWM)
-- MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — unchanged
-- LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged
-- NVDA (8c6b9680): HWM $232.28, stop $209.052 ✓ — unchanged
+**Trailing stop status (pre-market June 4):**
+- AVGO (a8e344f4): HWM $495.00, stop $445.50 — **FIRES AT OPEN** (pre-mkt $408.98 << stop)
+- META (4ea07e91): HWM $624.81, stop $562.329 ✓ — safe ($55.91 buffer, 8.3%)
+- MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — safe ($13.81 buffer, 3.3%)
+- LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — safe ($64.32 buffer, 6.2%)
+- NVDA (8c6b9680): HWM $232.28, stop $209.052 ⚠️ — NARROW ($3.48 buffer, 1.6%)
 - AMZN (bbcd70fa): CANCELED ✓
 
-**Week of June 1 plan (remaining):**
-- 2 position slots remaining.
-- **Slot 2:** AVGO scale-up June 4 open — IF Q2 AI semiconductor revenue BEATS $10.7B guide AND Q3 guidance raised materially (>$11.5B or FY trajectory raised). Add 8–10 shares at limit ~0.3% below opening quote.
-- **Slot 3:** LLY scale-up (+3 shares), new name (V), or AMZN re-entry (only on fresh catalyst + price stabilization). Decide at June 5 pre-market.
-- **Iran watch:** WTI $93–96 range. Below $100 halt trigger. Monitor.
+**Week of June 1 plan (updated):**
+- **Slot 2:** CANCELLED (AVGO scale-up not executed; market reaction negative)
+- **Slot 3:** LLY scale-up (+3 shares, ~10% portfolio) or V (Visa) — decide at June 5 pre-market
+- Both slots 2 and 3 remain available; do not rush to deploy in today's uncertain AI-sector environment
 
-**Thesis status (June 3 close):**
-- **AVGO:** +16.27% from entry. EARNINGS TONIGHT. HWM $495.00, stop $445.50. Scale plan active.
-- **META:** +0.27% from entry. Recovered strongly +4.13% today. Dividend June 25. Thesis intact.
-- **MSFT:** +1.41% from entry. Build conference "sell the news" continues. Thesis (Azure AI secular) intact.
-- **LLY:** +0.89% from entry. Strong day +1.73%. Medicare GLP-1 Bridge July 1 thesis intact.
-- **NVDA:** −0.29% from entry. Ex-div today (USD 7.50 credit). Thesis intact.
-- **AMZN:** CLOSED at −7.39% per mechanical −7% rule (midday June 3).
+**Thesis status (pre-mkt June 4):**
+- **AVGO:** Trailing stop fires at open. Position closes at ~$409, small loss from entry (~−$170). Thesis partially intact (AI Q3 guide extraordinary at $16B) but software miss + guidance-not-raised = thesis weakened. Not a re-entry candidate near-term.
+- **META:** −0.39% from entry. AI ad thesis intact. Dividend June 25 ($7.875). No action.
+- **MSFT:** +2.65% from entry. Azure AI secular thesis intact. AVGO's $16B Q3 AI guide is bullish for Azure demand.
+- **LLY:** +2.38% from entry. Strong pre-market +1.83%. Medicare GLP-1 Bridge July 1. Thesis STRONGEST in portfolio.
+- **NVDA:** −1.76% from entry. Stop buffer only 1.6%. Watch at open. Thesis intact (AI accelerator monopoly). Ex-div credit $7.50 due today.
+- **AMZN:** CLOSED at −7.39% per −7% rule (midday June 3).
