@@ -124,35 +124,31 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-04 pre-market)
+## Active Macro Watches (updated 2026-06-04 EOD)
 
 - **10yr Treasury yield:** ~4.44–4.50% range — well below 4.75% watch level. Constructive.
   Watch trigger: if 10yr crosses 4.75% on upward trend, halt new buys, tighten stops on high-multiple AI names.
 - **Core PCE April 2026 (released May 29):** +0.2% MoM, +3.3% YoY — BENIGN. Below 0.35% threshold.
-- **Iran conflict / oil prices:** ⚠️ RISING. WTI $95.68 on June 4 pre-market — 3rd consecutive session
-  rising on US-Iran peace-talk uncertainty. Only $4.32 below $100 halt-new-buys trigger. CLOSE WATCH.
-  If WTI crosses $100: halt new buys immediately and tighten stops on MSFT, NVDA.
-- **AVGO (CLOSED — trailing stop fires at open June 4):** Q2 FY2026 actual results: Revenue $22.19B
-  (slight miss); AI semiconductor $10.8B (+143% YoY, beat $10.7B guide); software $7.18B (MISS vs $7.32B);
-  Q3 revenue guide $29.4B (beat); Q3 AI guide $16.0B (strong). Full-year AI guidance NOT raised.
-  Market reaction: −14.93% overnight. Trailing stop (a8e344f4) at $445.50 fires at market open today.
-  AVGO position exits at ~$408-410. Gap risk realized. Scale-up cancelled (negative market reaction).
-  AVGO not on re-entry consideration near-term — await stabilization and earnings digestion.
-- **LLY thesis STRENGTHENING:** Pre-mkt June 4 +1.83% ($1,098.51, +2.38% from entry). Medicare/Medicaid
-  GLP-1 coverage agreement confirmed — 20-30M Medicare beneficiaries eligible. Foundayo FDA-approved,
-  now commercially available. Medicare GLP-1 Bridge program effective July 1. Thesis STRONGEST in portfolio.
-  HWM $1,149.10, stop $1,034.19. **Scale-up candidate: +3 shares at June 5 open (Slot 2 or 3).**
-- **MSFT:** +2.65% from entry. Pre-mkt June 4: $433.50. Azure AI secular thesis intact. AVGO's Q3 AI
-  guide of $16B is constructive for Azure AI demand. HWM $466.32, stop $419.688. No action needed.
-- **NVDA:** ⚠️ −1.76% from entry. Pre-mkt June 4: $212.53. Stop $209.052 — only **1.6% buffer**.
-  Ex-dividend credit $7.50 due today or tomorrow. AI sector pressure from AVGO results may affect NVDA.
-  Stop is the protection mechanism. DO NOT manually intervene if stop triggers.
-- **META:** −0.39% from entry. Pre-mkt June 4: $618.24. Quarterly dividend $0.525/sh payable June 25.
-  HWM $624.81, stop $562.329 (safe 8.3% buffer). AI ad moat thesis intact.
+- **Iran conflict / oil prices:** ⚠️ WATCH. WTI was $95.68 on June 4 pre-market — below $100 halt trigger
+  but rising trend. Monitor at June 5 pre-market. If WTI crosses $100: halt new buys immediately.
+- **AVGO — CLOSED June 4 at open:** Trailing stop (a8e344f4) filled at $408.61 (20 shares). Gap risk
+  fully realized. Net loss from entry −$175.12 (−2.1%). AVGO not on re-entry near-term.
+- **LLY thesis STRONGEST in portfolio:** EOD June 4: $1,123.39 (+4.70% from entry, +4.14% today).
+  Medicare/Medicaid GLP-1 Bridge program July 1 driving sustained institutional buying. Today's +4.14%
+  is the second-strongest single-session since entry. HWM $1,149.10, stop $1,034.19 ($89.20 buffer, 7.9%).
+  **Scale-up: +3 shares at June 5 open if NFP benign and WTI < $100. Target ~10.5% portfolio weight.**
+- **MSFT:** +1.25% from entry, EOD $427.60. Azure AI secular thesis intact. HWM $466.32, stop $419.688
+  ($7.91 buffer, 1.9%). No action needed.
+- **NVDA:** +1.37% from entry, EOD $219.26. **Recovered fully** from pre-market low $212.53. Stop buffer
+  improved to 4.7% ($10.21). Ex-div credit $7.50 should post today/tomorrow. Thesis intact.
+- **META:** +0.50% from entry, EOD $623.74. HWM $642.38, stop $578.142 ($45.59 buffer, 7.3%). AI ad
+  moat thesis intact. Dividend June 25 ($7.875). No action needed.
 - **Week of June 1 — slots remaining:** 2/3 (both slots 2 and 3 available).
-  - **Slot 2:** LLY scale-up +3 shares (~10% portfolio weight) — decide at June 5 pre-market
+  - **Slot 2:** LLY scale-up +3 shares (~$3,370, ~10.5% weight) — decision June 5 pre-market (post-NFP)
   - **Slot 3:** V (Visa) or new name — decide June 5+
   - WTI must be below $100 before executing any new buy.
+- **Key event June 5:** May Nonfarm Payrolls (8:30 AM ET). Strong payrolls may push yields up — check
+  10yr vs 4.75% watch level. If benign: proceed with LLY scale-up at open.
 - **AMZN:** CLOSED June 3 at midday per −7% rule (−7.39%). Not on consideration list near-term.
 - **Goldman Sachs S&P 500 target 8,000** (May 27). Broad market bullish. 10th consecutive weekly
-  gain as of June 1.
+  gain as of June 1. SPY +2.45% since Bull inception.

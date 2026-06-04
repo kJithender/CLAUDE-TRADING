@@ -3,6 +3,44 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-04 15:50 ET — CLOSE (no trades)
+- **Action:** None — end-of-day P/L check and journal
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 15:50 ET — close at 16:00 ET June 4)
+- **Account:** Equity $99,820.82 | Cash $67,471.84 (67.6%) | Long market value $32,348.98
+
+### Position review (EOD June 4)
+- **LLY** ($1,123.39, **+4.70% from entry $1,072.944**, **+4.14% today**) ✓ — STRONGEST performer today. Medicare/Medicaid GLP-1 Bridge July 1 catalyst continuing to drive price. Closed $25.71 below HWM $1,149.10 — no ratchet. Stop $1,034.19 ($89.20 above current, 7.9% buffer). Scale-up primary candidate at June 5 pre-market.
+- **META** ($623.74, **+0.50% from entry $620.637**, **+0.12% today**) ✓ — Gave back afternoon gains. HWM $642.38, stop $578.142 ($45.59 buffer). AI ad thesis intact. Dividend June 25.
+- **MSFT** ($427.60, **+1.25% from entry $422.31**, **+0.06% today**) ✓ — Essentially flat. Azure AI secular thesis intact. HWM $466.32, stop $419.688 ($7.91 buffer, 1.9%).
+- **NVDA** ($219.26, **+1.37% from entry $216.302**, **+2.10% today**) ✓ — Recovered from pre-market weakness, closed solidly above entry. HWM $232.28, stop $209.052 ($10.21 buffer, 4.7% — improved vs midday 4.1%). Thesis intact.
+
+### Guardrail checks (EOD)
+- No position below −7% cut threshold (best: LLY +4.70%) ✓
+- No position above +15% tighten threshold ✓
+- Cash $67,471.84 (67.6%) >> 5% minimum ✓
+- New positions this week: 1/3 (META June 1). 2 slots remaining ✓
+- No new positions today per plan ✓
+
+### Trailing stops (EOD — no ratchets today)
+- META (4ea07e91): HWM $642.38, stop $578.142 ✓ — unchanged (META closed below HWM)
+- LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged (LLY closed $25.71 below HWM)
+- NVDA (8c6b9680): HWM $232.28, stop $209.052 ✓ — unchanged (NVDA closed $13.02 below HWM)
+- MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — unchanged (MSFT closed $38.72 below HWM)
+
+### Performance (EOD June 4)
+- **Equity:** $99,820.82
+- **Today P/L:** −$948.88 (−0.94%) — AVGO gap-down vs prior mark (~−$1,413) partially offset by remaining-position gains (+$464.17: LLY +$312.27, NVDA +$135.30, META +$11.40, MSFT +$5.20)
+- **SPY close June 4:** $757.55 (+0.36% today from $754.80 June 3 close). Bull lagged SPY by −1.30% today.
+- **Since inception (2026-05-21):** Bull −0.18% ($100K → $99,820.82) vs SPY +2.45% ($739.44 → $757.55) = **−2.63% gap** (widened from −2.26% at midday as SPY climbed in the afternoon)
+
+### Notes
+- Today was entirely driven by the AVGO gap-down. AVGO's trailing stop filled at $408.61 at open (vs June 3 mark ~$485), creating a ~$1,413 unrealized-to-realized loss vs the prior close. The remaining 4 positions showed net gains (+$464), primarily led by LLY (+4.14%).
+- LLY continues to be the portfolio's standout. Medicare/Medicaid GLP-1 coverage agreement and the July 1 Bridge program are driving sustained institutional interest. At $1,123.39, LLY is $25.71 below its all-time portfolio HWM of $1,149.10. A breakout above that level would ratchet the trailing stop higher. Scale-up of +3 shares (~10.5% portfolio weight) remains the top candidate for June 5.
+- NVDA recovered well, closing at $219.26 (+2.10% today) vs the alarming pre-market level of $212.53. The AVGO sympathy selling dissipated entirely. Stop buffer improved to 4.7% ($10.21). Ex-div credit $7.50 should appear in account.
+- META and MSFT essentially flat days — consistent with the broader AI sector digesting AVGO results.
+- **Key event tomorrow:** May Nonfarm Payrolls (June 5, 8:30 AM ET). Strong payrolls = potential yield spike = caution on high-multiple AI names. Evaluate before any trades.
+- **Week of June 1:** 1/3 positions used. 2 slots remaining. Plan: evaluate LLY scale-up (+3 shares) and/or V (Visa) at June 5 pre-market, contingent on NFP read and WTI oil remaining below $100.
+
 ## 2026-06-04 12:34 ET — MIDDAY CHECK (no trades)
 - **Action:** None — all positions within guardrail thresholds
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 12:34 ET — next close 16:00 ET June 4)
