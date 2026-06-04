@@ -3,6 +3,48 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-04 09:35 ET — MARKET OPEN (no trades — AVGO trailing stop executed at open)
+- **Action:** None — no new positions. AVGO trailing stop (a8e344f4) executed automatically at open.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 09:35 ET — next close 16:00 ET June 4)
+- **Account:** Equity $99,774.35 | Cash $67,471.84 (67.6%) | Long market value $32,302.51
+
+### AVGO — EXIT via trailing stop (confirmed fill)
+- **Action:** SELL 20 shares AVGO (trailing stop order a8e344f4, filled at open)
+- **Fill:** 20 shares @ $408.61 avg (filled 09:34 ET — confirmed in orders)
+- **Why:** Trailing stop (HWM $495.00, stop $445.50) triggered on gap-down after AVGO Q2 FY2026 earnings. Stock opened ~$408-409, well below the $445.50 stop level — gap risk realized. Stop executes at market price when stock opens below the stop level. No manual intervention needed or appropriate.
+- **P/L from entry:** 20sh × ($408.61 − $417.366) = **−$175.12 (−2.1%)** from entry. Note: June 3 close was ~$485.25; gap-down loss vs mark = ~−$1,528 unrealized erased overnight.
+- **Verified:** AVGO absent from positions ✓. Stop order a8e344f4 shows status "filled" at $408.61 ✓. Cash increased from $59,299.64 → $67,471.84 (+$8,172.20 = 20 × $408.61 proceeds) ✓.
+
+### Remaining 4 positions (09:35 ET)
+- **META** ($636.35, **+2.4% from entry $620.637**, **+2.1% today**) ✓ — **NEW HWM $637.66** (ratcheted from $624.81 — META surged at open, triggering broker ratchet). Stop ratcheted to **$573.894** (from $562.329). AI ad thesis validating strongly. Medicare GLP-1 macro environment constructive.
+- **LLY** ($1,104.79, **+3.0% from entry $1,072.944**, **+2.1% today**) ✓ — Medicare GLP-1 Bridge July 1 thesis playing out. HWM $1,149.10, stop $1,034.19 ($70.60 buffer, 6.4%). Thesis STRONGEST in portfolio.
+- **MSFT** ($430.14, **+1.9% from entry $422.31**, **+0.5% today**) ✓ — Azure AI secular thesis intact. HWM $466.32, stop $419.688 ($10.45 buffer, 2.5%).
+- **NVDA** ($214.65, **−0.8% from entry $216.302**, **−0.1% today**) ✓ — AVGO sympathy selling did NOT trigger NVDA stop at open. Price $214.65 vs stop $209.052 — buffer $5.60 (2.6%). HWM $232.28. Thesis intact (AI accelerator monopoly). Ex-div credit $7.50 expected today or next business day.
+
+### Trailing stops — 4 active (verified via Alpaca open orders)
+- META (4ea07e91): HWM **$637.66** (ratcheted from $624.81), stop **$573.894** ✓ — META surged at open
+- LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged (LLY below HWM)
+- NVDA (8c6b9680): HWM $232.28, stop $209.052 ✓ — unchanged (NVDA below HWM)
+- MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — unchanged (MSFT below HWM)
+- ~~AVGO (a8e344f4)~~: **FILLED** at $408.61 ✓ — position closed
+
+### Guardrail check (09:35 ET)
+- Cash $67,471.84 (67.6%) >> 5% minimum ✓
+- No position below −7% from entry (worst: NVDA −0.8%) ✓
+- No position above +15% from entry (LLY +3.0%, META +2.4%) ✓
+- New positions this week: 1/3 (META June 1). 2 slots remaining ✓
+- No new buys today per pre-market plan ✓
+
+### Performance (09:35 ET)
+- **Equity:** $99,774.35 (Alpaca last_equity $100,769.70)
+- **Today P/L:** −$995.35 (−0.99%) — primarily AVGO gap-down realized loss vs prior mark
+- **SPY open (09:35 ET):** $752.69 (−0.20% today from $754.18 June 3 close)
+- **Since inception (2026-05-21):** Bull −0.23% ($100K → $99,774) vs SPY +1.80% ($739.44 → $752.69) = **−2.03% gap**
+- **Week of June 1:** 1/3 positions used (META). 2 slots remain. WTI oil watch continues.
+
+### Plan
+No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 remain for June 5 onwards (LLY scale-up +3 shares and/or V — evaluate at June 5 pre-market). WTI must be below $100 before executing any new buy.
+
 ## 2026-06-03 15:53 ET — CLOSE (no trades)
 - **Action:** None — end-of-day P/L check and journal
 - **Market status:** `is_open: true` (next close 16:00 ET — running at 15:53 ET June 3)
