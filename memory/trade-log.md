@@ -3,6 +3,44 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-04 12:34 ET — MIDDAY CHECK (no trades)
+- **Action:** None — all positions within guardrail thresholds
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 12:34 ET — next close 16:00 ET June 4)
+- **Account:** Equity $100,024.52 | Cash $67,471.84 (67.4%) | Long market value $32,552.68
+
+### Position review (12:34 ET)
+- **LLY** ($1,138.18, **+6.08% from entry $1,072.944**, **+5.51% today**) ✓ — STRONGEST session since entry. Medicare/Medicaid GLP-1 coverage agreement catalysts continuing to drive price. HWM $1,149.10 (not yet exceeded — $10.92 below HWM), stop $1,034.19 ($103.99 above current, 9.1% buffer). -7% cut threshold $997.84 (very remote). Tighten rule at $1,233.89 — not triggered.
+- **META** ($632.255, **+1.87% from entry $620.637**, **+1.49% today**) ✓ — **HWM ratcheted to $642.38** (from $637.66 at open — META hit intraday high $642.38 today). Stop ratcheted to **$578.142** (from $573.894). AI ad thesis validating. -7% cut threshold $577.19. Tighten rule at $713.73 — not triggered.
+- **MSFT** ($427.71, **+1.28% from entry $422.31**, **+0.09% today**) ✓ — Essentially flat. Azure AI secular thesis intact. HWM $466.32, stop $419.688 ($7.02 buffer, 1.6%). -7% cut threshold $392.75. Tighten rule at $485.66 — not triggered.
+- **NVDA** ($217.97, **+0.77% from entry $216.302**, **+1.50% today**) ✓ — **Recovered strongly** from pre-market level ($212.53). Now comfortably above entry. HWM $232.28, stop $209.052 ($8.92 buffer, 4.1%). -7% cut threshold $201.16. Tighten rule at $248.75 — not triggered.
+
+### Guardrail checks (12:34 ET)
+- No position below −7% cut threshold (best: NVDA +0.77%) ✓
+- No position above +15% tighten threshold (best: LLY +6.08%, threshold $1,233.89) ✓
+- All 4 trailing stops confirmed active (live Alpaca orders):
+  - META (4ea07e91): HWM **$642.38** (ratcheted from $637.66 at open — META hit intraday high), stop **$578.142** ✓
+  - LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged (LLY below HWM)
+  - NVDA (8c6b9680): HWM $232.28, stop $209.052 ✓ — unchanged (NVDA below HWM)
+  - MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — unchanged (MSFT below HWM)
+- Cash $67,471.84 (67.4%) >> 5% minimum ✓
+- New positions this week: 1/3 (META June 1). 2 slots remaining ✓
+- No new positions at midday — risk management only ✓
+
+### Performance (12:34 ET)
+- **Equity:** $100,024.52 (up +$250.17 from open $99,774.35)
+- **Today's P/L vs yesterday close:** −$745.18 (equity $100,769.70 → $100,024.52) — AVGO gap-down realized loss (~−$1,404 vs prior close) partially offset by intraday gains on remaining positions (+$658.93 combined)
+- **SPY (12:34 ET):** $756.31 (+0.50% today from $752.69 open)
+- **Since inception (2026-05-21):** Bull +0.02% ($100K → $100,024.52) vs SPY +2.28% ($739.44 → $756.31) = **−2.26% gap** (slightly worse than market-open gap of −2.03% as SPY rallied intraday)
+- **Intraday unrealized gains by position:** LLY +$415.80, NVDA +$96.60, META +$139.13, MSFT +$7.40 = **+$658.93 total**
+
+### Notes
+- LLY's strong session (+5.51%) is the standout today. Medicare/Medicaid GLP-1 bridge program catalyst (effective July 1) continues driving price. LLY at $1,138.18 is within $10.92 of its all-time HWM ($1,149.10) — if it breaches that level, the stop will ratchet above $1,034.19. Watch at close.
+- NVDA recovered sharply from pre-market level ($212.53 at 08:07) to $217.97 at midday (+2.6% from pre-market lows). The initial AVGO sympathy selling pressure at open has fully dissipated.
+- META ratcheted HWM to $642.38 intraday. Broker auto-protection is working. Stop now tighter at $578.142.
+- MSFT essentially flat today — Azure AI thesis unchanged, no newsflow.
+- WTI oil check: per pre-market data $95.68; monitoring approach to $100 halt trigger. No new buys today regardless.
+- Week of June 1: 1/3 new positions used. Slots 2 and 3 remain for June 5+ evaluation (LLY scale-up +3 shares, and/or V/new name).
+
 ## 2026-06-04 09:35 ET — MARKET OPEN (no trades — AVGO trailing stop executed at open)
 - **Action:** None — no new positions. AVGO trailing stop (a8e344f4) executed automatically at open.
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 09:35 ET — next close 16:00 ET June 4)
