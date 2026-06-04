@@ -23,6 +23,17 @@ Prepend a dated entry to `memory/weekly-review.md` using the template there
 If the review suggests changes, edit `memory/strategy.md` (entry/exit signals,
 sizing, watchlist) and/or add lessons to `memory/lessons.md`. Be specific.
 
+## 4b. Learn from Aggressive Bull (the parallel experiment)
+A separate **Aggressive Bull** trades its own paper account with looser limits.
+Study what it did this week: read `memory/aggressive/weekly-review.md`,
+`memory/aggressive/trade-log.md`, and `memory/aggressive/portfolio.md`. Compare
+its results to yours and append a dated **"From Aggressive Bull"** note to
+`memory/lessons.md` — which high-conviction bets paid off, which blew up,
+whether wider stops and faster deployment helped or hurt. You may adopt a
+refined idea, but you **never** relax your own CLAUDE.md guardrails to imitate
+it. (If `memory/aggressive/` has no data yet because Aggressive Bull hasn't run,
+skip this and note that.)
+
 ## 5. Notify
 Send a WhatsApp weekly summary via `./scripts/notify.sh`: week vs SPY,
 since-inception vs SPY, grade, and the single biggest takeaway.
