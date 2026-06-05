@@ -3,6 +3,46 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-05 15:54 ET — CLOSE (no trades)
+- **Action:** None — end-of-day P/L check and journal. Market open confirmed `is_open: true` (closes 16:00 ET).
+- **Account:** Equity $98,916.92 | Cash $78,705.62 (79.6%) | Long market value $20,211.30
+
+### Position review (EOD June 5)
+- **LLY** ($1,133.88, **+3.69% from avg entry $1,093.534**, **+0.77% today** [+$8.61/sh]) — Pulled back from today's intraday HWM $1,166.29 but closed constructively. Medicare GLP-1 Bridge July 1 thesis intact. Stop buffer: $1,133.88 − $1,049.661 = $84.22 (7.43%). Stops unchanged (LLY closed below HWM today — no further ratchet after midday).
+- **META** ($591.51, **−4.69% from entry $620.637**, **−5.75% today** [−$36.06/sh]) ⚠️ WATCH — Major selloff today. Broad market risk-off drove META down sharply. Stop $578.142 — only $13.37 buffer (2.26%). −7% cut threshold $577.19 — META is $14.32 above it. AI ad thesis intact; this appears to be macro-driven (SPY −2.41% today), not a META-specific thesis break. If META opens below $582 on Monday, treat as very high alert.
+
+### Guardrail checks (EOD)
+- No position below −7% cut threshold (LLY +3.69%, META −4.69%, threshold −7.00%) ✓
+- No position above +15% tighten threshold (LLY at +3.69%) ✓
+- Active trailing stops confirmed via Alpaca orders:
+  - LLY (d4147484): 7sh — HWM $1,166.29, stop $1,049.661, status "new" ✓
+  - LLY (25989fb5): 3sh — HWM $1,166.29, stop $1,049.661, status "new" ✓
+  - META (4ea07e91): HWM $642.38, stop $578.142, status "new" ✓ ⚠️ Narrow buffer
+- Cash $78,705.62 (79.6%) >> 5% minimum ✓
+- Week of June 1: 2/3 new-position slots used. Slot 3 (V/Visa) deferred to next week ✓
+- No new positions at close ✓
+
+### SPY performance
+- **SPY today (June 5):** Opened $752.31, closed $739.265 — **−2.41%** from June 4 close $757.55.
+  (Also opened at gap-down vs prior close: $757.55 → $752.31 gap = −0.69%; then fell further intraday −1.73%)
+- Since inception SPY $739.44 → $739.265 = **−0.02%**
+
+### Performance (EOD June 5)
+- **Equity:** $98,916.92 (down from last_equity $99,883.06)
+- **Today P/L:** −$966.14 (−0.97%) — detailed: LLY +$86.10, META −$540.90, NVDA realized vs June 4 close −$306.54, MSFT realized vs June 4 close −$164.74 = ~−$926 (close to actual −$966 with minor rounding/timing differences)
+- **SPY today:** −2.41% ($757.55 → $739.265)
+- **Bull outperformed SPY today by +1.44%** — high cash protected against the market selloff
+- **Since inception (2026-05-21):** Bull −1.08% ($100K → $98,916.92) vs SPY −0.02% ($739.44 → $739.265) = **−1.06% gap** (massively improved from −3.08% at midday; SPY's −2.41% selloff closed the gap)
+
+### Notes
+- Today was a significant down day for US equities. SPY fell −2.41% — likely driven by the strong NFP print (172K vs 85–125K consensus) pushing rate-cut expectations further out, combined with pre-existing market weakness.
+- Bull's 79% cash position provided substantial downside protection. The high-cash posture, which lagged in the bull run from inception through June 3, paid off today.
+- NVDA and MSFT trailing stops that triggered at midday protected against further losses: NVDA closed around $209 area (consistent with stop fill), MSFT similarly. Both would have fallen further in the afternoon session given the market selloff.
+- META is the key risk going into next week. At $591.51 with a stop at $578.142 (2.26% buffer), any continued market weakness Monday morning could trigger the stop. The −7% cut threshold ($577.19) is essentially co-located with the stop. At pre-market on Monday, close attention required.
+- LLY held up better than the market today (+0.77% vs SPY −2.41%). GLP-1 thesis and July 1 catalyst are holding.
+- Week of June 1 final tally: 2/3 slots used (META June 1, LLY +3sh June 5). All 4 exits (AMZN −7.39%, AVGO −2.1%, NVDA −3.36%, MSFT −0.70%) were via guardrails — no discretionary selling. Capital preserved correctly.
+- **Weekly review runs at 4:30 PM ET today (Friday June 5).**
+
 ## 2026-06-05 12:33 ET — MIDDAY CHECK — NVDA and MSFT trailing stops triggered (no manual action)
 
 - **Action:** None — no manual action. Two trailing stops (NVDA, MSFT) executed automatically earlier in the session. Remaining 2 positions (LLY, META) within guardrail thresholds.
