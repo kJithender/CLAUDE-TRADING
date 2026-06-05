@@ -124,28 +124,29 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-05 pre-market)
+## Active Macro Watches (updated 2026-06-05 market-open)
 
-- **10yr Treasury yield:** 4.46% — well below 4.75% watch level. Constructive (-4 bps on Iran ceasefire).
+- **10yr Treasury yield:** ~4.47% post-NFP — well below 4.75% watch level. Constructive.
   Watch trigger: if 10yr crosses 4.75% on upward trend, halt new buys, tighten stops on high-multiple AI names.
 - **Core PCE April 2026 (released May 29):** +0.2% MoM, +3.3% YoY — BENIGN. Below 0.35% threshold.
-- **May NFP (June 5, 8:30 AM ET):** ⏳ PENDING. Consensus 85K–125K. If benign: proceed with LLY scale-up at open.
-  Decision rule: PROCEED if 50K–250K + AHE mild + 10yr stays <4.75%. HOLD if extreme miss or hawkish shock.
-- **Iran conflict / oil prices:** WTI $92.13 — below $100 halt trigger. Ceasefire fragile but holding.
-  Constructive vs. June 4 ($95.68). Monitor daily.
+- **May NFP (released June 5, 8:30 AM ET):** ✅ BENIGN. 172K jobs (consensus 85K–125K — strong beat).
+  AHE +3.4% YoY (softened from 3.6%). Unemployment 4.3% unchanged. All conditions met — LLY scale-up executed.
+- **Iran conflict / oil prices:** WTI $92.13 — below $100 halt trigger. Ceasefire fragile but holding. Monitor daily.
 - **AVGO — CLOSED June 4 at open:** Trailing stop (a8e344f4) filled at $408.61 (20 shares). Gap risk
   fully realized. Net loss from entry −$175.12 (−2.1%). AVGO not on re-entry near-term.
-- **LLY thesis STRONGEST in portfolio:** Pre-mkt June 5: $1,137.24 (+5.99% from entry, +1.06% today).
-  CVS additional positive news June 5. Medicare/Medicaid GLP-1 Bridge program July 1. HWM $1,149.10,
-  stop $1,034.19 ($103.05 buffer, 9.1%). **Scale-up: +3 shares at June 5 open if NFP benign. Target 11.4% weight.**
-- **MSFT:** +1.71% from entry, pre-mkt $429.55. Azure AI secular thesis intact. HWM $466.32, stop $419.688
-  ($9.86 buffer, 2.3%). ⚠️ Narrow stop buffer — watch.
-- **NVDA:** -0.51% from entry, pre-mkt $215.20. Senator Warren June 11 Senate Banking hearing on
-  China/export controls (regulatory noise, not thesis break). Stop $209.052 ($6.15 buffer, 2.9%). ⚠️ Watch at open.
-- **META:** +0.59% from entry, pre-mkt $624.30. HWM $642.38, stop $578.142 ($46.16 buffer, 7.4%). AI ad
+- **LLY thesis STRONGEST in portfolio:** SCALE-UP EXECUTED June 5 open. Now 10 shares @ avg $1,093.534.
+  Current $1,139.51 (+4.20% from new avg). HWM $1,155.74 (new portfolio high set today!),
+  stop $1,040.17 (d4147484, 7sh) and stop $1,026.74 (25989fb5, 3sh). ~11.4% portfolio weight.
+  CVS June 5 news; Medicare GLP-1 Bridge July 1 catalyst intact.
+- **MSFT:** +1.27% from entry, $427.67. Azure AI secular thesis intact. HWM $466.32, stop $419.688
+  ($7.98 buffer, 1.9%). ⚠️ Narrow stop buffer — watch at midday.
+- **NVDA:** -1.30% from entry, $213.50 (−2.36% today). Senator Warren June 11 Senate Banking hearing on
+  China/export controls (regulatory noise, not thesis break). Stop $209.052 ($4.45 buffer, 2.1%). ⚠️ Watch at midday.
+- **META:** +0.90% from entry, $626.24. HWM $642.38, stop $578.142 ($48.10 buffer, 7.7%). AI ad
   moat thesis intact. Dividend ex-date ~June 15 ($7.875). No action needed.
-- **Week of June 1 — slots remaining:** 2/3 (slots 2 and 3 available).
-  - **Slot 2:** LLY scale-up +3 shares (~$3,412, ~11.4% weight) — execute June 5 open post-NFP
+- **Week of June 1 — slots used:** 2/3 (META June 1 slot 1; LLY scale-up June 5 slot 2).
+  - ~~Slot 1: META June 1 ✓~~
+  - ~~Slot 2: LLY +3 shares June 5 ✓~~
   - **Slot 3:** V (Visa) — defer to next week (CFO insider selling >50% warrants more research)
   - WTI must be below $100 before executing any new buy.
 - **AMZN:** CLOSED June 3 at midday per −7% rule (−7.39%). Not on consideration list near-term.

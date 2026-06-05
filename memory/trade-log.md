@@ -3,6 +3,41 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-05 09:38 ET — MARKET OPEN — BUY LLY +3 shares (scale-up, Slot 2)
+- **Action:** BUY 3 shares LLY (market order, whole shares for trailing-stop eligibility)
+- **Fill:** 3 shares @ avg $1,141.58 (order id: 376f7a4d-8e7c-4430-a427-2050ec1d219d) — paper trading partial fills: 2sh @ $1,141.02 (09:38 ET), 1sh @ ~$1,142.70 (09:40 ET). Total position now 10 shares, avg entry $1,093.534.
+- **Why (Slot 2 of 3, week of June 1):** GLP-1 franchise dominance is strengthening: Medicare/Medicaid GLP-1 Bridge program effective July 1 expanding access to ~20–30M beneficiaries; all three major PBMs covering full Lilly portfolio; CVS additional positive announcement June 5 (Zepbound/Foundayo); Q1 revenue +56% YoY; 60.1% GLP-1 market share. NFP condition confirmed met: 172K jobs (within 50K–250K benign range), AHE +3.4% YoY (softening from 3.6%, not shocking), 10yr ~4.47% (below 4.75% threshold). Adding to a winner — LLY +5.99% from original entry at time of scale-up decision. Scale from 7sh (7.97% weight) to 10sh (~11.4% weight) on fundamental confirmation, not chasing.
+- **Stop (3 new shares):** 10% trailing stop placed (order id: 25989fb5-eedd-47f1-bde5-569c16f4e102) — HWM $1,140.82, initial stop $1,026.74, GTC exp 2026-09-03
+- **Verified:** 10 shares confirmed in positions (avg entry $1,093.534, market value ~$11,395) ✓; trailing stop 25989fb5 confirmed active (status: new) ✓; original 7-share stop d4147484 (HWM $1,155.74, stop $1,040.17 — auto-ratcheted today to new portfolio HWM) also confirmed ✓
+
+### Guardrail checks at execution
+- Cash after fill: $64,047.09 (64.2%) >> 5% minimum ✓
+- LLY 10sh × ~$1,140 = ~$11,400 = 11.4% of equity ✓ (≤20% cap)
+- Daily deployment today: ~$3,425 = 3.4% of equity ✓ (≤25% cap)
+- New positions this week: 2/3 (META June 1 slot 1 + LLY scale-up June 5 slot 2) ✓
+- WTI $92.13 ✓ | 10yr ~4.47% ✓ | NFP 172K benign ✓
+- Market confirmed open `is_open: true` via clock at 09:36 ET ✓
+
+### Trailing stops (09:40 ET — all 5 confirmed ACTIVE)
+- LLY (d4147484): 7sh — HWM **$1,155.74** (ratcheted from $1,149.10 — LLY set new portfolio HWM today), stop **$1,040.17** ✓
+- LLY (25989fb5): 3sh — HWM $1,140.82, stop $1,026.74 ✓ (NEW — placed at market-open June 5)
+- META (4ea07e91): HWM $642.38, stop $578.142 ✓
+- NVDA (8c6b9680): HWM $232.28, stop $209.052 ✓ — buffer $4.45 (2.1%) ⚠️ watch
+- MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — buffer $7.98 (1.9%) ⚠️ watch
+
+### Position review (09:40 ET)
+- **LLY** ($1,139.51, **+6.22% from original 7sh entry $1,072.944**, **+4.20% from new 10sh avg $1,093.534**, **+1.27% today**) ✓ — STRONGEST portfolio position. Medicare GLP-1 Bridge July 1; CVS June 5 news. Two trailing stops covering 10sh total.
+- **META** ($626.24, **+0.90% from entry $620.637**, **-0.21% today**) ✓ — AI ad thesis intact. Stop $578.142 ($48.10 buffer, 7.7%).
+- **MSFT** ($427.67, **+1.27% from entry $422.31**, **-0.09% today**) ✓ — Azure AI thesis intact. Stop $419.688 ($7.98 buffer, 1.9%) ⚠️ narrow.
+- **NVDA** ($213.50, **-1.30% from entry $216.302**, **-2.36% today**) ⚠️ WATCH — Senator Warren hearing June 11 regulatory noise. Stop $209.052 ($4.45 buffer, 2.1%). No manual intervention; let stop protect. Not below −7% cut threshold ($201.16).
+
+### Performance (09:40 ET)
+- **Equity:** $99,808.65
+- **Today P/L vs yesterday close ($99,883.06 pre-mkt last equity):** −$74.41 (−0.07%) — NVDA −2.36% drag, LLY +1.27% partial offset
+- **Cash:** $64,047.09 (64.2%) | Long market value: $35,761.56
+- **Since inception (2026-05-21):** Bull −0.19% ($100K → $99,808) vs SPY ~+2.45% est = **~−2.64% gap**
+- **Week of June 1:** 2/3 positions used. 1 slot remaining (Visa/V — defer to next week).
+
 ## 2026-06-04 15:50 ET — CLOSE (no trades)
 - **Action:** None — end-of-day P/L check and journal
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 15:50 ET — close at 16:00 ET June 4)
