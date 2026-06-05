@@ -37,6 +37,12 @@ surprises you._
   drawdown risk if a macro or sector shock hits. Per strategy.md, AI semis as a group should
   not exceed 50%. Day 2 MSFT + VST add will dilute this appropriately.
 
+### 2026-06-05 — Weekly review (Week 1 recap)
+- **Post-earnings gap entries carry 1–2 day continuation risk.** We entered AVGO on Day 1 at $406 (15% below the prior $479 close) and the stock continued to fall. The entry was still profitable from *our* basis, but the broader chip-sector sentiment following AVGO's guidance required 2 days to clear. For future post-earnings dip entries: if a sector-wide catalyst (not just company-specific), allow 1–2 sessions for the noise to clear before deploying full size.
+- **Semi concentration is the single biggest portfolio risk.** NVDA + AVGO + AMD at 43.5% created a portfolio that outperformed in flat/up semi environments but significantly underperformed in a semi selloff. Cap any future semi-group adds at 45–48% (hard ceiling; strategy says 50% but real discipline starts at 45%).
+- **18% trailing stops are the right width for this volatility regime.** AMD fell -10.98% intraday but did not breach the stop. A 12–15% stop would have stopped us out at the bottom. The wide leash is earning its keep.
+- **MSFT and VST are genuine diversifiers.** Both fell less than half of the semi average on the selloff day. Worth sizing them adequately — not tokens. At 12% and 8% they are correctly weighted.
+
 ### 2026-06-05 — Day 2 close
 - **Correlated semi drawdown: the core risk materialized.** AMD -10.98% intraday, NVDA -6.57%,
   AVGO -8.00% — all three chip names moved in lockstep in a risk-off tech selloff. Portfolio

@@ -131,6 +131,15 @@ are trading at a fraction of the value they deserve.
 
 ---
 
+## Week 2 priorities (as of 2026-06-05 weekly review)
+
+- **AMD watchpoint**: At -8.66% from entry, AMD is 3.34pp from the -12% midday-cut threshold (~USD 447). Monday pre-market: run full thesis check. If data-center AI growth story is intact, hold. If thesis is cracking, pre-empt the cut — do not wait for the midday rule.
+- **Semi concentration cap**: NVDA + AVGO + AMD = 43.5% of portfolio. Any new semi add is frozen until the group drops below 40%. Next new positions must reduce semi-group weight, not add to it.
+- **Preferred next entries (if deploying)**: AMZN (AWS + Trainium; lower semi correlation) or GOOGL (cheapest hyperscaler on P/E; GCP AI angle). These diversify the AI thesis without adding chip-sector concentration.
+- **No averaging down**: If any semi continues to weaken, do not add. Exit at the stop, re-evaluate, re-enter only after price recovers above entry.
+
+---
+
 ## Benchmark tracking
 
 Every weekly review computes:

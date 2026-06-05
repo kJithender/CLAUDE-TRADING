@@ -17,27 +17,27 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-05 EOD (~3:50 ET)
+## Last snapshot — 2026-06-05 EOD (Weekly review, ~4:30 ET)
 
 | Field | Value |
 |---|---|
-| Equity | USD 96,234.84 |
+| Equity | USD 96,193.58 |
 | Cash | USD 21,240.98 |
-| Long market value | USD 74,993.86 |
+| Long market value | USD 74,952.60 |
 | Open positions | 6 |
 
 **Open positions:**
 
 | Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Trailing Stop Order | Stop % |
 |---|---|---|---|---|---|---|---|---|
-| NVDA | 103 | USD 213.60 | USD 204.29 | USD 21,041.87 | -USD 958.93 | -4.36% | `54d7d851` | 18% |
-| META | 23 | USD 630.12 | USD 590.33 | USD 13,577.59 | -USD 915.17 | -6.32% | `11c3a1bf` | 18% |
-| AVGO | 34 | USD 406.23 | USD 385.40 | USD 13,103.60 | -USD 708.22 | -5.13% | `36f5a45f` | 18% |
-| MSFT | 28 | USD 426.21 | USD 415.50 | USD 11,634.00 | -USD 299.88 | -2.51% | `ef211767` | 18% |
-| AMD | 17 | USD 508.43 | USD 465.76 | USD 7,917.92 | -USD 725.39 | -8.39% | `7540e83d` | 18% |
-| VST | 52 | USD 151.47 | USD 148.44 | USD 7,718.88 | -USD 157.56 | -2.00% | `5b347be3` | 18% |
+| NVDA | 103 | USD 213.60 | USD 204.87 | USD 21,101.62 | -USD 899.18 | -4.09% | `54d7d851` | 18% |
+| META | 23 | USD 630.12 | USD 589.90 | USD 13,567.70 | -USD 925.06 | -6.38% | `11c3a1bf` | 18% |
+| AVGO | 34 | USD 406.23 | USD 385.30 | USD 13,100.20 | -USD 711.62 | -5.15% | `36f5a45f` | 18% |
+| MSFT | 28 | USD 426.21 | USD 414.40 | USD 11,603.20 | -USD 330.68 | -2.77% | `ef211767` | 18% |
+| AMD | 17 | USD 508.43 | USD 464.40 | USD 7,894.80 | -USD 748.51 | -8.66% | `7540e83d` | 18% |
+| VST | 52 | USD 151.47 | USD 147.79 | USD 7,685.08 | -USD 191.36 | -2.43% | `5b347be3` | 18% |
 
-**Notes:** Day 2 EOD. Brutal broad-market and tech selloff — SPY -2.61% on the day. Chip sector hit hardest: AMD -10.98% intraday, NVDA -6.57%, AVGO -8.00%. META -5.93% intraday. MSFT and VST held up relatively better (-2.93% and -3.42%). AMD now -8.39% from entry — approaching watched territory but still inside -12% cut threshold. No positions cut. All 6 trailing stops remain active (18%). No trades post-open.
+**Notes:** Week 1 close (weekly review). Broad tech and chip-sector selloff over 2 days. AMD is most stressed at -8.66% — midday-cut threshold is -12% (trigger price ~USD 447). All 6 trailing stops remain active (18%). Portfolio return since inception: -3.81% vs SPY -2.22%; alpha -1.59pp. Thesis intact for all positions. See weekly-review.md for full assessment.
 
 ---
 
@@ -59,3 +59,4 @@ Review pre-market June 6. If semi-sector stabilizes, may look at AMZN (AWS diver
 | 2026-06-05 (market-open) | 99,407.74 | — | -0.59% | — | — |
 | 2026-06-05 (midday) | 97,571.05 | — | -2.43% | — | — |
 | 2026-06-05 (EOD close) | 96,234.84 | 737.41 | -3.77% | -2.22% | **-1.55%** |
+| 2026-06-05 (weekly review) | 96,193.58 | 737.45 | -3.81% | -2.22% | **-1.59%** |
