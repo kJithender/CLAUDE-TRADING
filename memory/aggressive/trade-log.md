@@ -88,3 +88,43 @@ order id, and a "verified" confirmation._
 **Account:** Equity USD 100,911.69 (+0.91% from inception). Cash USD 41,051.31 (40.7%).
 
 **Result:** All positions within range. No trades executed. Trailing stops intact (all 18%). Next action: pre-market routine tomorrow (June 5) to plan MSFT and VST entries.
+
+---
+
+## 2026-06-05 — DAY 2 MARKET OPEN (executed ~09:46 ET)
+
+### Trade 5 — BUY MSFT
+| Field | Value |
+|---|---|
+| Action | BUY |
+| Symbol | MSFT |
+| Qty | 28 shares |
+| Fill price | USD 426.21 avg |
+| Cost basis | USD 11,933.88 |
+| Portfolio % | ~12.0% |
+| Thesis | Azure cloud revenue +40% YoY; Copilot monetization curve beginning to show in numbers. Build 2026 conference unveiled 7 in-house AI models; Morgan Stanley expects materially stronger monetization ahead. Enterprise AI stack (Teams/Copilot/Azure) is stickiest AI monetization layer for businesses. 56-analyst consensus Strong Buy; avg target USD 560.95 (+31% upside). Sector rotation from pure-play semis toward hyperscalers benefits MSFT — it is a buyer of chips, not a seller. |
+| Trailing stop | 18%; order id `ef211767`; stop price ~USD 349.61 (HWM USD 426.35) |
+| Verified | ✓ position confirmed live |
+
+### Trade 6 — BUY VST
+| Field | Value |
+|---|---|
+| Action | BUY |
+| Symbol | VST |
+| Qty | 52 shares |
+| Fill price | USD 151.47 avg |
+| Cost basis | USD 7,876.44 |
+| Portfolio % | ~7.9% |
+| Thesis | Nuclear power operator with 20-year PPAs to Meta (3 plants) and AWS (Comanche Peak). AI data-center electricity demand is the binding constraint on AI buildout. VST has the second-largest nuclear fleet in the US. FY26 EBITDA guide USD 6.8–7.6B; consensus USD 7.34B. FCF growth guide +20% YoY. Eight analyst Strong Buy ratings; median target USD 232 (+53% upside from entry). Long-term PPAs lock in cash flow visibility. Not a chip name — no sympathy selling from AVGO guidance. |
+| Trailing stop | 18%; order id `5b347be3`; stop price ~USD 124.01 (HWM USD 151.23) |
+| Verified | ✓ position confirmed live |
+
+### Day 2 deployment summary
+| Metric | Value |
+|---|---|
+| Total new deployed today | USD 19,810 (19.9% of portfolio — well under 60% daily cap) |
+| Cumulative deployed | USD 78,167 (78.6% of portfolio) |
+| Cash remaining | USD 21,241 (21.4%) |
+| New positions opened today | 2 (MSFT, VST) |
+| Weekly new-position count | 6 / 8 allowed |
+| All guardrails | ✓ passed |
