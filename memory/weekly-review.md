@@ -2,6 +2,36 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-06-05 (Week 3 — 5 active trading days: Mon Jun 1 – Fri Jun 5)
+
+- **Bull return (week):** −2.32% ($101,263.22 → $98,916.92)
+- **SPY return (week):** −2.52% ($756.65 → $737.55)
+- **Result:** Beat SPY by **+0.20%** — first outperformance in a down week
+- **Since inception (2026-05-21):** Bull −1.08% vs SPY −0.26% = **−0.82% gap**
+- **Grade:** B−
+
+**What worked:**
+- **High-cash position (79%) as shock absorber.** SPY fell −2.52% on the week, with a −2.41% free-fall on Friday alone (strong NFP pushed rate-cut expectations out). Bull fell only −2.32% on the week and only −0.97% on Friday. The build-phase cash posture delivered its clearest demonstration of value since inception.
+- **LLY is the portfolio's standout.** Thesis triple-confirmed this week: CVS June 5 positive news, Medicare GLP-1 Bridge July 1 effective, Q1 revenue +56% YoY. Scale-up from 7sh to 10sh (avg entry $1,093.534) was well-timed on fundamental confirmation — adding to a winner, not chasing. Current +3.69% from avg entry.
+- **All 4 exits via guardrails, zero discretionary panic.** AMZN (−7% rule, Jun 3), AVGO (trailing stop gap-fill, Jun 4), NVDA (trailing stop, Jun 5 ~11:20 AM), MSFT (trailing stop, Jun 5 ~12:08 PM). The system worked as designed — no manual second-guessing.
+- **NVDA and MSFT stops triggering mid-session prevented afternoon continuation losses.** Both stocks fell further in the afternoon after the stops fired; the early exits were better than holding through the close.
+- **Visa (Slot 3) correctly deferred.** CFO insider selling of >50% warrants more research — the discipline of not forcing a trade was correct.
+
+**What didn't work:**
+- **AVGO gap-down earnings (-14.9%) wiped a paper gain of +17%.** The trailing stop could not protect against the overnight gap (stop was $445.50; stock opened ~$409). Net realized P/L from entry: −$175 (−2.1%) — a disappointing result for the portfolio's largest initial winner. The gap risk was known but the magnitude was not. The lesson from the prior week about the $10.7B guide threshold was well-applied; the gap risk itself is structural and cannot be fully avoided.
+- **META entered June 1 into a macro reversal.** All 5 entry signals were met, but the stock dropped −4.69% from entry ($620.637 → $591.51 Jun 5 EOD) — primarily macro-driven (SPY −2.52% week). Stop is at $578.142 with only $13.37 buffer (2.26%) going into Monday. The AI ad thesis remains intact, but the position is on life support.
+- **NVDA never recovered above entry after AVGO sympathy selling.** Entered at $216.302; best close during the week was $222.694 (Jun 1). The Senate Banking Committee hearing (June 11) added regulatory overhang that kept the stock subdued. Stopped out at $209.042 (−3.36%). Entry timing was poor — AVGO gap risk was known to create sympathy pressure the day NVDA was held.
+- **Portfolio shrank from 6 positions to 2.** Starting the week with 5 inherited positions plus 1 new entry (META), we end with 2 (LLY + META, and META is at risk). Capital preservation is correct, but rebuilding with conviction takes time.
+- **Since-inception gap is −0.82%.** Three weeks in, we lag SPY by 82 basis points. Almost entirely explained by cash drag while SPY rallied in weeks 1–2, then realized losses this week from AMZN, NVDA, MSFT, AVGO exits.
+
+**Strategy adjustments (applied where noted):**
+- **META Monday morning (June 8):** If META opens below $582, treat as HIGHEST ALERT. The stop at $578.142 and the −7% cut at $577.19 are essentially co-located. Even if the AI ad thesis is intact, the price action requires respect. Do not hold through a thesis break.
+- **Rebuild portfolio gradually (week of June 8):** 3 new-position slots available. Primary research: V (Visa, Slot 1 — resolve CFO selling concern), LRCX (semi equipment, AI fab wave, Slot 2), and one more. Do NOT rush to fill all 3 slots — only trade with high conviction.
+- **Earnings gap-down protocol (added to strategy.md):** When holding a position into earnings, the +15% tighten rule is correctly waived. However, the scale-up plan must always require positive market reaction on the day (not just literal trigger satisfaction). For future earnings plays: if stock gaps down >8% on earnings, do NOT add even if AI-revenue threshold technically met. Exit gracefully via trailing stop. No scale-up into a falling knife.
+- **Consider energy/utility as portfolio diversifier:** Aggro Bull's VST position (nuclear, data-center PPAs with Meta and AWS) is an interesting non-correlated idea. Research VST for Cautious Bull's universe — adds sector balance and is not correlated with AI semi selloffs.
+
+---
+
 <!-- Template for each entry:
 
 ## Week ending YYYY-MM-DD

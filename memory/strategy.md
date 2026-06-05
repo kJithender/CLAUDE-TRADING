@@ -80,6 +80,12 @@ In priority order:
    catalyst and is now > 25% of portfolio mark-to-market (trim to 20%).
 5. **Macro deterioration** — Fed pivot to hikes, recession signals, or major
    geopolitical shock that reverses risk appetite.
+6. **Earnings gap-down override:** If a held stock gaps down >8% on earnings,
+   do NOT execute a pre-planned scale-up even if the literal trigger conditions
+   are met. The market's verdict overrides a pre-stated formula. Exit gracefully
+   via trailing stop. Never add to a falling knife on a gap-down earnings day.
+   _(Lesson from AVGO Jun 4 2026: scale-up plan had two technical conditions
+   met, but a −15% gap is unambiguously negative market confirmation.)_
 
 Do NOT sell on day-to-day noise. Sell on thesis changes.
 
@@ -113,6 +119,7 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 | COST   | Consumer Defensive | Membership model loyalty; defensive + growing |
 | V      | Financials | Payments infrastructure; durable compounder; consumer spending proxy |
 | UNH    | Healthcare | Market leader; 8% EPS growth expected; normalizing post-regulatory overhang |
+| VST    | Energy / Utilities | Nuclear operator; 20-yr PPAs with Meta + AWS; AI data-center power demand secular tailwind; non-correlated to AI semi selling |
 
 ---
 
@@ -124,7 +131,7 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-05 EOD close)
+## Active Macro Watches (updated 2026-06-05 EOD / weekly review)
 
 - **10yr Treasury yield:** ~4.47% post-NFP — below 4.75% watch level. Constructive.
   Watch trigger: if 10yr crosses 4.75% on upward trend, halt new buys, tighten stops on high-multiple AI names.

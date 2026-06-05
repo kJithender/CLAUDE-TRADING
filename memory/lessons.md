@@ -21,6 +21,9 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons
 
+### 2026-06-05 (weekly review) — From Aggressive Bull: faster deployment + wider stops in volatile markets
+Aggro Bull launched June 4 and deployed 79% of capital across 6 positions in just 2 days (NVDA, META, AVGO, AMD, MSFT, VST). By June 5 EOD it is −3.77% while SPY fell −2.20% from its inception anchor — alpha −1.57%. Cautious Bull over the same 2 days fell less. The lesson: rapid full deployment into a volatile market amplifies drawdown risk. Aggro's 18% trailing stops kept all 6 positions alive (AMD most stressed at −8.39%, still inside −12% threshold), while Cautious Bull's 10% stops triggered on NVDA and MSFT — Aggro has more positions alive for a recovery, Cautious Bull has more cash protection. Neither is universally better; the trade-off is real. One actionable idea from Aggro: **VST (Vistra Energy)** — nuclear power operator with long-term PPAs to Meta and AWS for AI data-center electricity. It held up far better than semis on the June 5 selloff (−2.00% vs NVDA −4.36%). Non-correlated to AI semi selling. Worth researching for Cautious Bull as a diversifier.
+
 ### 2026-06-05 — High cash during a broad market selloff provides strong relative protection
 SPY fell −2.41% today (strong NFP print pushed rate-cut expectations out). Bull fell only −0.97%, outperforming by +1.44% — entirely because 79% of the portfolio was in cash. The since-inception performance gap vs SPY narrowed from −3.08% at midday to −1.06% at close, driven almost entirely by SPY's large down day. Lesson: cash drag hurts in bull markets but provides real protection in downturns. The build-phase high-cash posture is correct and has now demonstrated its protective value. Do not rush to deploy capital just to reduce cash drag in up markets — the protection has tangible value.
 
