@@ -36,3 +36,24 @@ surprises you._
 - **Concentration in AI semis (NVDA+AVGO+AMD) is 45% of portfolio.** Watch for correlated
   drawdown risk if a macro or sector shock hits. Per strategy.md, AI semis as a group should
   not exceed 50%. Day 2 MSFT + VST add will dilute this appropriately.
+
+### 2026-06-05 — Day 2 close
+- **Correlated semi drawdown: the core risk materialized.** AMD -10.98% intraday, NVDA -6.57%,
+  AVGO -8.00% — all three chip names moved in lockstep in a risk-off tech selloff. Portfolio
+  lost -4.85% today vs SPY -2.61%. The semi-sector concentration (43.5% of portfolio by market
+  value) amplified losses. This was the risk flagged on Day 1 and it arrived on Day 2.
+- **18% trailing stops correctly held through volatility.** No position was stopped out despite
+  double-digit intraday moves in AMD/NVDA/AVGO. The wide leash is working as designed — premature
+  exits would have locked in losses right before any potential recovery. This is what the wider
+  stop is for.
+- **AMD most stressed at -8.39% from entry.** Still inside -12% midday cut threshold. At pre-market
+  June 6, re-evaluate AMD thesis: is the data-center +57% story still intact, or is sector rotation
+  away from pure-play semis a structural signal? Thesis intact until evidence breaks it — but watch
+  closely. The -12% cut rule means AMD could be forced out if it drops to ~USD 447.43.
+- **MSFT and VST acted as partial diversifiers.** Both down on the day (-2.93% and -3.42%) but
+  significantly less than the semis. This confirms the value of the non-semi allocation — MSFT and
+  VST are not correlated to chip-cycle sentiment.
+- **Day 2 inception: now trailing SPY since inception (-1.55pp alpha).** Being aggressive in a
+  risk-off tech selloff costs more than being defensive. The thesis (AI supercycle) hasn't broken
+  — but the near-term macro sentiment shift is real. Stay patient, hold stops, let the 18% trailing
+  stops do their job. Do not panic-sell thesis-intact positions just because they're down.
