@@ -128,3 +128,27 @@ order id, and a "verified" confirmation._
 | New positions opened today | 2 (MSFT, VST) |
 | Weekly new-position count | 6 / 8 allowed |
 | All guardrails | ✓ passed |
+
+---
+
+## 2026-06-05 — MIDDAY CHECK (~12:40 ET)
+
+### Position review
+
+| Symbol | Entry | Current | P/L % | Action |
+|---|---|---|---|---|
+| NVDA | USD 213.60 | USD 207.52 | -2.85% | No action — within range |
+| META | USD 630.12 | USD 609.53 | -3.27% | No action — within range |
+| AVGO | USD 406.23 | USD 393.52 | -3.13% | No action — within range |
+| MSFT | USD 426.21 | USD 419.75 | -1.52% | No action — within range |
+| AMD | USD 508.43 | USD 475.37 | -6.50% | No action — within range (threshold -12%) |
+| VST | USD 151.47 | USD 149.34 | -1.41% | No action — within range |
+
+**Cut rule check (>-12% from entry):** No positions triggered. AMD most stressed at -6.50% — still well above the -12% threshold.
+**Tighten stop rule check (>+25% from entry):** No positions triggered. All positions are in a drawdown today.
+
+**Account:** Equity USD 97,571.05 (-2.43% from inception). Cash USD 21,241 (21.8%).
+
+**Context:** Broad tech selloff today. Chip sector down hard — AMD -9.1% intraday (from yesterday's $523.20 close), NVDA -5.1% intraday. All names pulling back but none have breached exit thresholds from our entry prices. All 6 trailing stops remain active (18%).
+
+**Result:** No trades executed. All positions within range. Thesis intact for all 6 names. Continue to hold.

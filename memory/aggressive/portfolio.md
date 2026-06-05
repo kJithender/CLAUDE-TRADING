@@ -17,27 +17,27 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-05 market-open (~9:47 ET)
+## Last snapshot — 2026-06-05 midday (~12:40 ET)
 
 | Field | Value |
 |---|---|
-| Equity | USD 99,407.74 |
+| Equity | USD 97,571.05 |
 | Cash | USD 21,240.98 |
-| Long market value | USD 78,166.76 |
+| Long market value | USD 76,330.07 |
 | Open positions | 6 |
 
 **Open positions:**
 
-| Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Trailing Stop Order | Stop % | Stop Price |
-|---|---|---|---|---|---|---|---|---|---|
-| NVDA | 103 | USD 213.60 | USD 213.29 | USD 21,969 | -USD 32 | -0.15% | `54d7d851` | 18% | ~USD 181.71 (HWM 221.60) |
-| META | 23 | USD 630.12 | USD 622.67 | USD 14,321 | -USD 171 | -1.18% | `11c3a1bf` | 18% | ~USD 526.75 (HWM 642.38) |
-| AVGO | 34 | USD 406.23 | USD 401.99 | USD 13,668 | -USD 144 | -1.04% | `36f5a45f` | 18% | ~USD 349.71 (HWM 426.48) |
-| MSFT | 28 | USD 426.21 | USD 426.45 | USD 11,941 | +USD 7 | +0.06% | `ef211767` | 18% | ~USD 349.61 (HWM 426.35) |
-| AMD | 17 | USD 508.43 | USD 493.34 | USD 8,387 | -USD 257 | -2.97% | `7540e83d` | 18% | ~USD 436.40 (HWM 532.19) |
-| VST | 52 | USD 151.47 | USD 151.58 | USD 7,882 | +USD 6 | +0.07% | `5b347be3` | 18% | ~USD 124.01 (HWM 151.23) |
+| Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Trailing Stop Order | Stop % |
+|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 207.52 | USD 21,375 | -USD 626 | -2.85% | `54d7d851` | 18% |
+| META | 23 | USD 630.12 | USD 609.53 | USD 14,019 | -USD 474 | -3.27% | `11c3a1bf` | 18% |
+| AVGO | 34 | USD 406.23 | USD 393.52 | USD 13,380 | -USD 432 | -3.13% | `36f5a45f` | 18% |
+| MSFT | 28 | USD 426.21 | USD 419.75 | USD 11,753 | -USD 181 | -1.52% | `ef211767` | 18% |
+| AMD | 17 | USD 508.43 | USD 475.37 | USD 8,081 | -USD 562 | -6.50% | `7540e83d` | 18% |
+| VST | 52 | USD 151.47 | USD 149.34 | USD 7,765 | -USD 111 | -1.41% | `5b347be3` | 18% |
 
-**Notes:** Day 2 market-open. Bought MSFT (28 shares @ USD 426.21) and VST (52 shares @ USD 151.47) as planned. Portfolio now 78.6% deployed — on target for ≥80% by end of week. Chip sector (NVDA -2.5%, AVGO -4.0%, AMD -5.7%) experiencing continued second-day selling after AVGO's earnings. All positions remain well above -12% midday-cut threshold. All 6 trailing stops confirmed active. AMD is most at risk intraday (-5.7% today) but still only -2.97% from entry — far from the -12% cut level.
+**Notes:** Day 2 midday. Broad risk-off / tech selloff in progress — chip sector down hard today (AMD -9.1% intraday, NVDA -5.1%). No positions have breached the -12% cut threshold from entry. AMD is most stressed at -6.50% from entry but still well within range. No stops were tightened (no position at +25%). No trades executed. All 6 trailing stops remain active.
 
 ---
 
@@ -57,3 +57,4 @@ No new positions planned for Day 3 yet. Portfolio at 78.6% deployed — reviewin
 | 2026-06-04 (EOD close) | 100,993.61 | 757.16 | +0.99% | +0.40% | **+0.60%** |
 | 2026-06-05 (pre-market) | 100,139.18 | — | +0.14% | — | — |
 | 2026-06-05 (market-open) | 99,407.74 | — | -0.59% | — | — |
+| 2026-06-05 (midday) | 97,571.05 | — | -2.43% | — | — |
