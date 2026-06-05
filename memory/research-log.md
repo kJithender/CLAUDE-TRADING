@@ -5,6 +5,163 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-05 — Pre-market research (~08:08 ET)
+
+**Today is Friday June 5. Week of June 1: 1/3 new positions used (META June 1). 2 slots remaining.**
+
+### CRITICAL EVENT: May Nonfarm Payrolls — due 8:30 AM ET today
+
+The NFP report drops 22 minutes from now. This is the dominant macro event for today and the swing
+factor for whether to execute the LLY scale-up at the 9:35 AM open.
+
+**Pre-release consensus:**
+- NFP expected: 85K–125K (FactSet median 105K; FXStreet 85K)
+- April actual: +115K; March: +178K
+- Unemployment rate: 4.3% expected (unchanged)
+- Average Hourly Earnings: +3.4% YoY expected (vs +3.6% April) — softening
+- Article headline: "NFP set to show US job creation slowed in May, yet not enough to shift Fed's hawkish tilt"
+
+**S&P 500 futures: -0.61% pre-NFP** — market cautious but not alarmed (also dragged by Lululemon
+earnings miss/guidance cut after close June 4).
+
+**NFP decision rule for LLY scale-up:**
+- **PROCEED with LLY scale-up** if: jobs 50K–250K, AHE not shocking (monthly < 0.4%), 10yr stays
+  below 4.75% post-release
+- **HOLD (no trades)** if: jobs < 50K (recession fear) OR jobs > 300K + hot wages (hawkish shock)
+  OR 10yr crosses 4.75% post-NFP
+
+---
+
+### Macro (pre-market June 5, 2026 ~08:08 ET)
+
+| Indicator | Value | Threshold | Status |
+|-----------|-------|-----------|--------|
+| WTI crude oil | $92.13/bbl | <$100 halt-new-buys | ✓ Constructive (Iran ceasefire largely holding; oil in $89.72–$94.91 range) |
+| 10yr Treasury yield | 4.46% | <4.75% watch | ✓ Constructive (-4 bps from Thursday; Israel-Lebanon ceasefire + Iran deal hopes) |
+| S&P 500 futures | -0.61% | — | ⚠️ Pre-NFP caution; Lululemon guidance cut weighing |
+| May NFP | TBD (8:30 AM) | 50K–250K benign | ⏳ KEY EVENT — decision pending |
+| Iran deal | Fragile ceasefire; stalled talks | Oil <$100 | ✓ Below trigger |
+
+---
+
+### Held positions (pre-market June 5, 2026 — live Alpaca data 08:08 ET)
+
+**Account:** Equity $99,844 | Cash $67,471.82 (67.6%) | Long market value $32,372.18
+
+**All 4 trailing stops confirmed ACTIVE (verified via Alpaca orders 08:08 ET):**
+
+| Symbol | Order ID | Live HWM | Live Stop | Pre-mkt price | vs Entry | Pre-mkt % change |
+|--------|----------|----------|-----------|--------------|---------|-----------------|
+| LLY | d4147484 | $1,149.10 | $1,034.19 | $1,137.24 | **+5.99%** | **+1.06% today** |
+| META | 4ea07e91 | $642.38 | $578.142 | $624.30 | +0.59% | -0.52% today |
+| MSFT | a55a3db6 | $466.32 | $419.688 | $429.55 | +1.71% | +0.35% today |
+| NVDA | 8c6b9680 | $232.28 | $209.052 | $215.20 | **-0.51%** | **-1.58% today** ⚠️ |
+
+**LLY ($1,137.24 pre-mkt, +1.06% today, +5.99% from entry $1,072.944):** ⭐ SCALE-UP CANDIDATE
+- CVS Health announced "fantastic news" on June 5 (Motley Fool headline) — likely related to
+  Zepbound/Foundayo coverage expansion. Reinforces the Medicare/Medicaid GLP-1 Bridge July 1 thesis.
+- Lilly cutting German investment (EUR 2.3B → ~EUR 1.15B) to focus on US manufacturing — capital
+  discipline signal; redirecting to Pennsylvania site or new US facility.
+- LLY approaching HWM $1,149.10 (currently $11.86 below it, 1.04%). If LLY breaks $1,149.10
+  today, trailing stop ratchets higher automatically.
+- GF Score 98 (GuruFocus) — exceptional fundamental quality rating.
+- **Stop buffer:** $1,137.24 - $1,034.19 = $103.05 (9.1% from current price). Well protected. ✓
+- **PLAN: ADD 3 shares at open (Slot 2) — subject to NFP being benign.**
+
+**META ($624.30 pre-mkt, -0.52% today, +0.59% from entry $620.637):**
+- Minor softness. No significant new catalysts. AI ad thesis intact.
+- Dividend ex-date revised to June 15 (earlier than June 25 previously noted — confirm at open).
+- Stop buffer: $624.30 - $578.142 = $46.16 (7.4%) ✓
+- No action.
+
+**MSFT ($429.55 pre-mkt, +0.35% today, +1.71% from entry $422.31):**
+- Essentially flat, constructive. Morgan Stanley "time to act" — "bullish on upside potential."
+- Azure AI thesis intact. Post-Build conference digestion ongoing.
+- Stop buffer: $429.55 - $419.688 = $9.86 (2.3%) — narrow but within tolerance.
+  Watch if NFP causes a broad risk-off that pushes MSFT down materially.
+- No action.
+
+**NVDA ($215.20 pre-mkt, -1.58% today, -0.51% from entry $216.302):** ⚠️ WATCH
+- Down -1.58% pre-market. Specific catalyst: Senator Elizabeth Warren invited NVDA CEO Jensen
+  Huang to testify before the Senate Banking Committee June 11 about China business and US export
+  controls. This introduces regulatory overhang noise but is NOT a thesis break.
+- AI accelerator monopoly thesis intact. China business hearing is a known risk, not new.
+- Stop buffer: $215.20 - $209.052 = $6.15 (2.9%) — narrowing. With S&P futures -0.61%, NVDA
+  could face additional pressure at open.
+- **If NVDA opens ≤ $209.05, stop fires automatically. DO NOT intervene.**
+- Ex-div credit $7.50 should have posted to cash; verify at market open.
+
+---
+
+### Guardrail check (pre-market June 5)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 1/3 (META June 1) | ≤3 | 2 slots remaining |
+| Cash | $67,471.82 (67.6%) | ≥5% | ✓ Ample |
+| Cash after LLY +3sh add | $67,472 - ~$3,412 = ~$64,060 (64.1%) | ≥5% | ✓ |
+| LLY position after add | 10sh × ~$1,137 = ~$11,370 = 11.4% portfolio | ≤20% | ✓ |
+| Daily new-buy deployment (LLY add only) | ~$3,412 = 3.4% of portfolio | ≤25% ($24,961) | ✓ |
+| WTI oil | $92.13 | <$100 | ✓ |
+| 10yr yield | 4.46% | <4.75% | ✓ |
+| NVDA stop buffer | $215.20 vs $209.052 (2.9%) | watch | ⚠️ Narrow |
+| MSFT stop buffer | $429.55 vs $419.688 (2.3%) | watch | ⚠️ Narrow-ish |
+
+---
+
+### New position research
+
+**Slot 2 — LLY scale-up (+3 shares):**
+Fully researched above. Execute at open conditional on NFP.
+
+**Slot 3 — V (Visa):**
+- Q2 FY2026: Net revenue $11.2B (+17% YoY), non-GAAP EPS $3.31 (beat by 2.8%). $20B buyback authorized.
+- Stock up +3.36% on June 4 — strong momentum.
+- Payments infrastructure, sector diversification from AI-heavy book.
+- ⚠️ **CONCERN: CFO Chris Suh reduced his position by >50% in May** (insider selling). Significant.
+  Per strategy.md entry signals, insider selling clusters are a flag to "dig deeper." Not an
+  automatic skip, but warrants scrutiny.
+- **Decision: DEFER Visa to next week.** Insider selling flag is unresolved. With LLY scale-up
+  already in plan for today, no need to rush Slot 3. Research V thoroughly next week before committing.
+
+---
+
+### Planned trades for today (Friday June 5, 2026)
+
+**Primary: BUY LLY +3 shares at market open (Slot 2 of 3 for week of June 1) — CONDITIONAL**
+
+**Thesis for LLY scale-up:**
+GLP-1 franchise dominance is strengthening: Medicare/Medicaid GLP-1 Bridge program effective
+July 1 expanding access to ~20-30M beneficiaries; all three major PBMs covering full Lilly portfolio;
+CVS additional positive announcement today (June 5); Q1 revenue +56% YoY; GLP-1 market share 60.1%.
+Stock at $1,137.24 pre-market is +5.99% from our entry — scale-up adds to a thesis that is
+actively confirming. Adding to a winner on fundamental confirmation, not chasing.
+Scale from 7 shares (7.97% portfolio weight) to 10 shares (~11.4% portfolio weight).
+
+**Condition:** NFP must be in the "benign" range (50K–250K, AHE not shocking, 10yr stays below 4.75%).
+The market-open routine should check the NFP result and 10yr yield at 9:35 AM before executing.
+
+**Stop for added 3 shares:** Place new 10% trailing stop on 3 additional shares immediately after fill.
+(Existing stop d4147484 covers 7 shares. Need separate stop for +3.)
+
+**Secondary: HOLD all 4 existing positions.**
+Watch NVDA at open — stop $209.052, 2.9% buffer.
+
+**Slot 3 (V/Visa): DEFER to next week.** CFO insider selling requires more research.
+
+**If NFP is NOT benign (yield spike >4.75%, or extreme print):**
+- No new buys. Hold all positions. Tighten attention on NVDA stop.
+- Flag in next routine.
+
+**Upcoming catalysts:**
+- May NFP **TODAY** 8:30 AM ET — gates today's trade
+- META dividend ex-date likely June 15 (15sh × $0.525 = $7.875 credit) — verify at open
+- LLY Medicare GLP-1 Bridge program effective July 1
+- NVDA Senate Banking Committee hearing June 11 (regulatory noise; not thesis break)
+- V (Visa) — research for Slot 3 next week
+
+---
+
 ## 2026-06-04 — Pre-market research (~08:07 ET)
 
 **Today is Thursday June 4. Week of June 1: 1/3 new positions used (META June 1). 2 slots remaining.**

@@ -3,26 +3,26 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-04 15:50 ET (close — no trades)
+**Last updated:** 2026-06-05 08:08 ET (pre-market)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
-## Account (EOD June 4, 2026 — 15:50 ET live data)
+## Account (pre-market June 5, 2026 — 08:08 ET live Alpaca data)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,820.82 |
-| Cash | $67,471.84 |
-| Long market value | $32,348.98 |
-| Buying power | ~$334,585 |
+| Equity | $99,844.00 |
+| Cash | $67,471.82 |
+| Long market value | $32,372.18 |
+| Buying power | ~$334,632 |
 
-## Open positions (15:50 ET June 4, 2026 — live Alpaca data)
+## Open positions (pre-market June 5, 2026 — 08:08 ET live Alpaca data)
 
-| Symbol | Qty | Avg entry | EOD price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
-|--------|-----|-----------|-----------|-----------|----------------|----------------|---------------|
-| META | 15 | $620.637 | $623.74 | $9,356.10 | +$46.55 (+0.50%) | 9.37% | 10% trailing (4ea07e91), HWM $642.38, stop $578.142 |
-| LLY | 7 | $1,072.944 | $1,123.39 | $7,863.73 | +$353.12 (+4.70%) | 7.88% | 10% trailing (d4147484), HWM $1,149.10, stop $1,034.19 |
-| MSFT | 20 | $422.31 | $427.60 | $8,552.00 | +$105.80 (+1.25%) | 8.57% | 10% trailing (a55a3db6), HWM $466.32, stop $419.688 |
-| NVDA | 30 | $216.302 | $219.26 | $6,577.80 | +$88.74 (+1.37%) | 6.59% | 10% trailing (8c6b9680), HWM $232.28, stop $209.052 — $10.21 buffer (4.7%) |
+| Symbol | Qty | Avg entry | Pre-mkt price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
+|--------|-----|-----------|---------------|-----------|----------------|----------------|---------------|
+| LLY | 7 | $1,072.944 | $1,137.24 | $7,960.68 | +$450.07 (+5.99%) | 7.97% | 10% trailing (d4147484), HWM $1,149.10, stop $1,034.19 — $103.05 buffer (9.1%) |
+| META | 15 | $620.637 | $624.30 | $9,364.50 | +$54.95 (+0.59%) | 9.38% | 10% trailing (4ea07e91), HWM $642.38, stop $578.142 — $46.16 buffer (7.4%) |
+| MSFT | 20 | $422.31 | $429.55 | $8,591.00 | +$144.80 (+1.71%) | 8.61% | 10% trailing (a55a3db6), HWM $466.32, stop $419.688 — $9.86 buffer (2.3%) ⚠️ narrow |
+| NVDA | 30 | $216.302 | $215.20 | $6,456.00 | -$33.06 (-0.51%) | 6.47% | 10% trailing (8c6b9680), HWM $232.28, stop $209.052 — $6.15 buffer (2.9%) ⚠️ narrow |
 | ~~AVGO~~ | ~~20~~ | ~~$417.366~~ | — | — | **CLOSED −$175.12 (−2.1%) via trailing stop** | — | **FILLED** (a8e344f4) at $408.61 ✓ |
 | ~~AMZN~~ | ~~30~~ | ~~$269.13~~ | — | — | **CLOSED −$597.60 (−7.39%) per −7% rule** | — | **CANCELED** (bbcd70fa) ✓ |
 
@@ -45,40 +45,39 @@ the last known state, but always re-fetches live data before trading._
 | Open (2026-06-04) | $99,774.35 | $752.69 | — |
 | Midday (2026-06-04) | $100,024.52 | $756.31 | **−2.26%** |
 | Close (2026-06-04) | $99,820.82 | $757.55 | **−2.63%** |
-| Since inception (2026-05-21) | **−0.18%** | +2.45% | **−2.63%** |
+| Pre-mkt (2026-06-05) | $99,844.00 | ~$757 est | — |
+| Since inception (2026-05-21) | **−0.16%** | +2.45% est | **~−2.61%** |
 
 ## Notes
 
-**Close June 4, 2026 — all 4 positions within guardrails. No trades today.** Week of June 1: **1/3 new positions used** (META June 1). **2 slots remaining** for deployment at June 5 (pre-market NFP, then open).
+**Pre-market June 5, 2026 — NFP due 8:30 AM ET. Plan: LLY scale-up +3 shares at open (Slot 2) conditional on benign NFP.** Week of June 1: **1/3 new positions used** (META June 1). **2 slots remaining.**
 
-**AVGO exit (confirmed):**
-- Trailing stop (a8e344f4) filled at **$408.61** (20 shares) at 09:34 ET today
-- Entry $417.366 → loss = −$175.12 (−2.1% from entry); gap-down realization confirmed
-- Cash: $59,299.64 → $67,471.84 after proceeds. AVGO not re-entry candidate near-term.
+**Trailing stop status (pre-market June 5 — all confirmed ACTIVE via Alpaca orders):**
+- META (4ea07e91): HWM **$642.38**, stop **$578.142** ✓ — $46.16 buffer (7.4%)
+- LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — $103.05 buffer (9.1%)
+- MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — $9.86 buffer (2.3%) ⚠️
+- NVDA (8c6b9680): HWM $232.28, stop $209.052 ✓ — $6.15 buffer (2.9%) ⚠️
+- ~~AVGO (a8e344f4)~~: FILLED $408.61 ✓ (June 4 open)
+- ~~AMZN (bbcd70fa)~~: CANCELED ✓ (June 3 midday)
 
-**Trailing stop status (EOD June 4 — midday-verified; no new ratchets at close):**
-- ~~AVGO (a8e344f4)~~: **FILLED $408.61** ✓ — position closed
-- META (4ea07e91): HWM **$642.38**, stop **$578.142** ✓ — LLY did not breach HWM today ($623.74 EOD)
-- MSFT (a55a3db6): HWM $466.32, stop $419.688 ✓ — unchanged ($7.91 buffer, 1.9%)
-- LLY (d4147484): HWM $1,149.10, stop $1,034.19 ✓ — unchanged (LLY $1,123.39 EOD, $25.71 below HWM)
-- NVDA (8c6b9680): HWM $232.28, stop $209.052 ✓ — unchanged ($10.21 buffer, 4.7% — improved from 4.1% at midday)
-- AMZN (bbcd70fa): CANCELED ✓
+**Week of June 1 plan (updated pre-market June 5):**
+- **Slot 2:** LLY scale-up (+3 shares, ~$3,412, ~11.4% portfolio weight) — execute at June 5 open IF NFP benign
+- **Slot 3:** V (Visa) — research further (CFO insider selling concern); defer to next week
+- WTI $92.13 ✓; 10yr 4.46% ✓; NFP due 8:30 AM ET (benign = proceed, surprise = reassess)
 
-**Week of June 1 plan (updated EOD June 4):**
-- **Slot 2:** LLY scale-up (+3 shares, ~$3,370, ~10.5% portfolio weight) — evaluate at June 5 pre-market after NFP
-- **Slot 3:** V (Visa) or new name — decide June 5+
-- WTI oil must remain below $100 before executing any new buy
-
-**Thesis status (EOD June 4):**
-- **AVGO:** CLOSED. Not a re-entry near-term.
-- **META:** +0.50% from entry. Gave back midday gains, closed $623.74. HWM $642.38, stop $578.142. AI ad thesis intact. Dividend June 25 ($7.875). No action.
-- **MSFT:** +1.25% from entry. Essentially flat day. Azure AI secular thesis intact. Stop at $419.688.
-- **LLY:** +4.70% from entry. **Strongest in portfolio today (+4.14%).** Medicare/Medicaid GLP-1 Bridge catalyst continuing. Closed $1,123.39 — $25.71 below HWM $1,149.10. Scale-up primary candidate June 5.
-- **NVDA:** +1.37% from entry. Recovered well from pre-market weakness, closed $219.26. Stop buffer improved to $10.21 (4.7%). Thesis intact.
-- **AMZN:** CLOSED at −7.39% per −7% rule (midday June 3).
+**Thesis status (pre-market June 5):**
+- **LLY:** +5.99% from entry. Pre-mkt $1,137.24 (+1.06% today). **Thesis strongest in portfolio.**
+  CVS "fantastic news" on Foundayo/Zepbound. Medicare GLP-1 Bridge July 1. Scale-up to 10 shares pending NFP.
+- **META:** +0.59% from entry. Pre-mkt $624.30 (-0.52%). AI ad thesis intact. Stop $578.142 ($46 buffer).
+- **MSFT:** +1.71% from entry. Pre-mkt $429.55 (+0.35%). Azure AI thesis intact. Stop $419.688 ($9.86 buffer) — narrow.
+- **NVDA:** -0.51% from entry. Pre-mkt $215.20 (-1.58%). Senator Warren June 11 hearing on China/export controls
+  (regulatory noise). Stop $209.052 ($6.15 buffer) — narrow. Watch at open.
+- **AVGO:** CLOSED June 4 open. Not a re-entry near-term.
+- **AMZN:** CLOSED June 3 midday per −7% rule.
 
 **Upcoming catalysts:**
-- **May Nonfarm Payrolls** (Friday June 5, 8:30 AM ET) — critical macro read; NFP result drives rate expectations and sets tone for June 5 trades
-- NVDA ex-div credit $7.50 (June 4 — should appear in account today or next business day)
-- META dividend payable June 25 ($7.875)
+- **May Nonfarm Payrolls TODAY** (June 5, 8:30 AM ET) — gates today's LLY scale-up decision
+- NVDA ex-div credit $7.50 (June 4 ex-date — should post today or next business day)
+- META dividend ex-date ~June 15 ($0.525/sh × 15sh = $7.875 credit — verify)
 - LLY Medicare GLP-1 Bridge program effective July 1
+- NVDA Senate Banking Committee hearing June 11 (regulatory noise)

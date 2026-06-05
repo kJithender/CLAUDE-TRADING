@@ -124,31 +124,29 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-04 EOD)
+## Active Macro Watches (updated 2026-06-05 pre-market)
 
-- **10yr Treasury yield:** ~4.44–4.50% range — well below 4.75% watch level. Constructive.
+- **10yr Treasury yield:** 4.46% — well below 4.75% watch level. Constructive (-4 bps on Iran ceasefire).
   Watch trigger: if 10yr crosses 4.75% on upward trend, halt new buys, tighten stops on high-multiple AI names.
 - **Core PCE April 2026 (released May 29):** +0.2% MoM, +3.3% YoY — BENIGN. Below 0.35% threshold.
-- **Iran conflict / oil prices:** ⚠️ WATCH. WTI was $95.68 on June 4 pre-market — below $100 halt trigger
-  but rising trend. Monitor at June 5 pre-market. If WTI crosses $100: halt new buys immediately.
+- **May NFP (June 5, 8:30 AM ET):** ⏳ PENDING. Consensus 85K–125K. If benign: proceed with LLY scale-up at open.
+  Decision rule: PROCEED if 50K–250K + AHE mild + 10yr stays <4.75%. HOLD if extreme miss or hawkish shock.
+- **Iran conflict / oil prices:** WTI $92.13 — below $100 halt trigger. Ceasefire fragile but holding.
+  Constructive vs. June 4 ($95.68). Monitor daily.
 - **AVGO — CLOSED June 4 at open:** Trailing stop (a8e344f4) filled at $408.61 (20 shares). Gap risk
   fully realized. Net loss from entry −$175.12 (−2.1%). AVGO not on re-entry near-term.
-- **LLY thesis STRONGEST in portfolio:** EOD June 4: $1,123.39 (+4.70% from entry, +4.14% today).
-  Medicare/Medicaid GLP-1 Bridge program July 1 driving sustained institutional buying. Today's +4.14%
-  is the second-strongest single-session since entry. HWM $1,149.10, stop $1,034.19 ($89.20 buffer, 7.9%).
-  **Scale-up: +3 shares at June 5 open if NFP benign and WTI < $100. Target ~10.5% portfolio weight.**
-- **MSFT:** +1.25% from entry, EOD $427.60. Azure AI secular thesis intact. HWM $466.32, stop $419.688
-  ($7.91 buffer, 1.9%). No action needed.
-- **NVDA:** +1.37% from entry, EOD $219.26. **Recovered fully** from pre-market low $212.53. Stop buffer
-  improved to 4.7% ($10.21). Ex-div credit $7.50 should post today/tomorrow. Thesis intact.
-- **META:** +0.50% from entry, EOD $623.74. HWM $642.38, stop $578.142 ($45.59 buffer, 7.3%). AI ad
-  moat thesis intact. Dividend June 25 ($7.875). No action needed.
-- **Week of June 1 — slots remaining:** 2/3 (both slots 2 and 3 available).
-  - **Slot 2:** LLY scale-up +3 shares (~$3,370, ~10.5% weight) — decision June 5 pre-market (post-NFP)
-  - **Slot 3:** V (Visa) or new name — decide June 5+
+- **LLY thesis STRONGEST in portfolio:** Pre-mkt June 5: $1,137.24 (+5.99% from entry, +1.06% today).
+  CVS additional positive news June 5. Medicare/Medicaid GLP-1 Bridge program July 1. HWM $1,149.10,
+  stop $1,034.19 ($103.05 buffer, 9.1%). **Scale-up: +3 shares at June 5 open if NFP benign. Target 11.4% weight.**
+- **MSFT:** +1.71% from entry, pre-mkt $429.55. Azure AI secular thesis intact. HWM $466.32, stop $419.688
+  ($9.86 buffer, 2.3%). ⚠️ Narrow stop buffer — watch.
+- **NVDA:** -0.51% from entry, pre-mkt $215.20. Senator Warren June 11 Senate Banking hearing on
+  China/export controls (regulatory noise, not thesis break). Stop $209.052 ($6.15 buffer, 2.9%). ⚠️ Watch at open.
+- **META:** +0.59% from entry, pre-mkt $624.30. HWM $642.38, stop $578.142 ($46.16 buffer, 7.4%). AI ad
+  moat thesis intact. Dividend ex-date ~June 15 ($7.875). No action needed.
+- **Week of June 1 — slots remaining:** 2/3 (slots 2 and 3 available).
+  - **Slot 2:** LLY scale-up +3 shares (~$3,412, ~11.4% weight) — execute June 5 open post-NFP
+  - **Slot 3:** V (Visa) — defer to next week (CFO insider selling >50% warrants more research)
   - WTI must be below $100 before executing any new buy.
-- **Key event June 5:** May Nonfarm Payrolls (8:30 AM ET). Strong payrolls may push yields up — check
-  10yr vs 4.75% watch level. If benign: proceed with LLY scale-up at open.
 - **AMZN:** CLOSED June 3 at midday per −7% rule (−7.39%). Not on consideration list near-term.
-- **Goldman Sachs S&P 500 target 8,000** (May 27). Broad market bullish. 10th consecutive weekly
-  gain as of June 1. SPY +2.45% since Bull inception.
+- **Goldman Sachs S&P 500 target 8,000** (May 27). Broad market bullish. SPY ~+2.45% since Bull inception.
