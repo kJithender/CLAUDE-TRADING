@@ -3,6 +3,60 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-05 12:33 ET — MIDDAY CHECK — NVDA and MSFT trailing stops triggered (no manual action)
+
+- **Action:** None — no manual action. Two trailing stops (NVDA, MSFT) executed automatically earlier in the session. Remaining 2 positions (LLY, META) within guardrail thresholds.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 12:33 ET — next close 16:00 ET June 5)
+- **Account:** Equity $99,370.92 | Cash $78,705.62 (79.2%) | Long market value $20,665.30
+
+### NVDA — EXIT via trailing stop (auto-executed 11:20 AM ET)
+- **Action:** SELL 30 shares NVDA (trailing stop order 8c6b9680, filled 11:20 AM ET)
+- **Fill:** 30 shares @ $209.042 avg (filled ~11:20 AM ET — confirmed in orders)
+- **Why:** NVDA stop (HWM $232.28, stop $209.052) triggered on intraday decline. At market-open NVDA was at $213.50 with only $4.45 buffer (2.1%) — flagged as ⚠️ watch at the open routine. Senator Warren Senate Banking hearing June 11 regulatory noise continued to weigh. Stop filled near the trigger level ($209.042 vs $209.052 stop — essentially at stop price, no meaningful gap).
+- **P/L from entry:** 30sh × ($209.042 − $216.302) = **−$217.80 (−3.36%)** from entry. Thesis was intact but the price never recovered above entry after the AVGO sympathy selling June 4.
+- **Verified:** NVDA absent from positions ✓. Stop order 8c6b9680 shows status "filled" at $209.042 ✓. No orphaned orders for NVDA.
+
+### MSFT — EXIT via trailing stop (auto-executed 12:08 PM ET)
+- **Action:** SELL 20 shares MSFT (trailing stop order a55a3db6, filled ~12:08 PM ET)
+- **Fill:** 20 shares @ $419.363 avg (filled ~12:08 PM ET — confirmed in orders)
+- **Why:** MSFT stop (HWM $466.32, stop $419.688) triggered on intraday decline. At market-open MSFT was at $427.67 with only $7.98 buffer (1.9%) — flagged as ⚠️ narrow. The stock had been under pressure since the Build conference "sell the news" pattern and deteriorated further today. Stop filled slightly below the $419.688 trigger level ($419.363 — small gap of $0.325).
+- **P/L from entry:** 20sh × ($419.363 − $422.31) = **−$58.94 (−0.70%)** from entry. Azure AI thesis was intact but price action failed to recover from the post-Build pullback.
+- **Verified:** MSFT absent from positions ✓. Stop order a55a3db6 shows status "filled" at $419.363 ✓. No orphaned orders for MSFT.
+
+### Remaining position review (12:33 ET)
+- **LLY** ($1,153.41, **+5.48% from avg entry $1,093.534**, **+2.50% today**) ✓ — STRONGEST position. LLY set new HWM $1,166.29 today; both stops auto-ratcheted (d4147484 + 25989fb5, each HWM $1,166.29, stop $1,049.661). Medicare GLP-1 Bridge July 1 thesis intact. Tighten threshold at $1,257.56 (+15%) — not triggered. Cut threshold $1,016.99 (−7%) — remote. **No action.**
+- **META** ($608.71, **−1.92% from entry $620.637**, **−3.00% today**) ✓ — Weaker today. Stop $578.142 ($30.57 buffer, 4.7% from current price). Cut threshold $577.19 — safely above it. AI ad thesis intact. **No action.**
+
+### Guardrail checks (12:33 ET)
+- No position below −7% cut threshold (LLY +5.48%, META −1.92%) ✓
+- No position above +15% tighten threshold (LLY at +5.48%, threshold $1,257.56) ✓
+- Active trailing stops (all confirmed):
+  - LLY (d4147484): 7sh — HWM **$1,166.29** (auto-ratcheted — new HWM!), stop **$1,049.661** ✓
+  - LLY (25989fb5): 3sh — HWM **$1,166.29** (auto-ratcheted), stop **$1,049.661** ✓
+  - META (4ea07e91): HWM $642.38, stop $578.142 ✓ — unchanged (META below HWM today)
+  - ~~NVDA (8c6b9680)~~: **FILLED** at $209.042 ✓
+  - ~~MSFT (a55a3db6)~~: **FILLED** at $419.363 ✓
+- Cash $78,705.62 (79.2%) >> 5% minimum ✓
+- No new positions at midday — risk management only ✓
+- No orphaned trailing-stop orders for exited positions ✓
+
+### Performance (12:33 ET)
+- **Equity:** $99,370.92 (down from $99,883.06 last_equity)
+- **Today P/L:** −$512.14 (−0.51%) — NVDA stop exit −$217.80, MSFT stop exit −$58.94, LLY +$281.40 intraday, META −$282.90 intraday = net ~−$278 realized + ~−$1.50 unrealized
+- **Cash:** $78,705.62 (79.2%) | Long market value: $20,665.30
+- **Since inception (2026-05-21):** Bull −0.63% ($100K → $99,370.92) vs SPY ~+2.45% est = **~−3.08% gap** (wider; NVDA and MSFT exits locked in losses)
+
+### Notes
+- Both NVDA and MSFT had been flagged with narrow stop buffers at the market-open routine today (NVDA 2.1% buffer, MSFT 1.9% buffer). Both stopped out as the session progressed — this is exactly how the trailing stop protection is meant to work. No manual intervention was appropriate.
+- NVDA never recovered above entry ($216.302) after the AVGO sympathy selling on June 4. Senator Warren hearing June 11 added regulatory overhang. With only $4.45 buffer at open, a modest down day was sufficient to trigger.
+- MSFT had been under pressure since the Build conference "sell the news" pattern. The stock never returned to its May highs ($466.32 HWM). The narrow $7.98 buffer did not survive today's weakness.
+- Portfolio now concentrated in 2 positions (LLY + META) + 79% cash. This is correct — exited positions via guardrails, not thesis breaks. Capital is preserved for future deployment.
+- **Week of June 1 new-position count: 2/3 (META June 1 slot 1; LLY scale-up June 5 slot 2). Slot 3 remains.**
+- NVDA and MSFT exits do NOT consume weekly new-position slots (exits are not new positions).
+- Next consideration: research new candidates for next week (week of June 8). V (Visa) — CFO insider selling concern still unresolved, defer research to next week.
+
+---
+
 ## 2026-06-05 09:38 ET — MARKET OPEN — BUY LLY +3 shares (scale-up, Slot 2)
 - **Action:** BUY 3 shares LLY (market order, whole shares for trailing-stop eligibility)
 - **Fill:** 3 shares @ avg $1,141.58 (order id: 376f7a4d-8e7c-4430-a427-2050ec1d219d) — paper trading partial fills: 2sh @ $1,141.02 (09:38 ET), 1sh @ ~$1,142.70 (09:40 ET). Total position now 10 shares, avg entry $1,093.534.
