@@ -17,34 +17,34 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-04 EOD close (~3:50 ET)
+## Last snapshot — 2026-06-05 pre-market (~8:00 ET)
 
 | Field | Value |
 |---|---|
-| Equity | USD 100,993.61 |
+| Equity | USD 100,139.18 |
 | Cash | USD 41,051.31 |
-| Long market value | USD 59,942.30 |
+| Long market value | USD 59,087.88 |
 | Open positions | 4 |
 
 **Open positions:**
 
 | Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Trailing Stop Order | Stop % |
 |---|---|---|---|---|---|---|---|---|
-| NVDA | 103 | USD 213.60 | USD 218.14 | USD 22,468 | +USD 468 | +2.13% | `54d7d851` | 18% (~USD 174.96) |
-| META | 23 | USD 630.12 | USD 625.37 | USD 14,384 | -USD 109 | -0.75% | `11c3a1bf` | 18% (~USD 516.54) |
-| AVGO | 34 | USD 406.23 | USD 418.10 | USD 14,215 | +USD 404 | +2.92% | `36f5a45f` | 18% (~USD 333.23) |
-| AMD | 17 | USD 508.43 | USD 522.05 | USD 8,875 | +USD 232 | +2.68% | `7540e83d` | 18% (~USD 417.21) |
+| NVDA | 103 | USD 213.60 | USD 215.37 | USD 22,183 | +USD 182 | +0.83% | `54d7d851` | 18% (~USD 174.96) |
+| META | 23 | USD 630.12 | USD 624.41 | USD 14,361 | -USD 131 | -0.91% | `11c3a1bf` | 18% (~USD 516.54) |
+| AVGO | 34 | USD 406.23 | USD 409.79 | USD 13,933 | +USD 121 | +0.88% | `36f5a45f` | 18% (~USD 333.23) |
+| AMD | 17 | USD 508.43 | USD 506.50 | USD 8,611 | -USD 33 | -0.38% | `7540e83d` | 18% (~USD 417.21) |
 
-**Notes:** Day 1 close. AVGO fell -12.76% from the June 3 prior close ($479.23 → $418.10) but that is the post-earnings gap we bought into at $406.23 — from our entry, AVGO is up +2.92%. All four positions are above their entry prices except META (-0.75% from entry), which is well within the 18% trailing-stop cushion. No stops triggered, no -12% rule cuts needed. Trailing stops all intact at 18%.
+**Notes:** Day 2 pre-market. Overnight equity dipped to $100,139 from $100,993 yesterday's close, reflecting after-hours chip-sector selling (AVGO's Q3 guide of $16B missed $17.2B whisper; sector sympathy). All positions within range from entry; no stop risk (-12% midday rule requires any name to fall to ~entry -12% — none near that threshold). MSFT (~$430) and VST (~$153) buys planned for today to reach ~80% invested.
 
 ---
 
-## Planned next positions (Day 2, June 5)
+## Planned next positions (Day 2, June 5 — execute at open)
 
 | Symbol | Notional | Target % | Thesis |
 |---|---|---|---|
-| MSFT | ~12,000 | 12% | Azure +40%; Copilot monetization; enterprise AI |
-| VST | ~8,000 | 8% | Nuclear PPAs with Meta/AWS; AI power crunch; EBITDA guide raised |
+| MSFT | ~12,000 | 12% | Azure +40%; Copilot monetization; enterprise AI; Build 2026 reinforced AI story |
+| VST | ~8,000 | 8% | Nuclear PPAs with Meta/AWS; AI power crunch; EBITDA $6.8-7.6B; $220-232 analyst targets |
 
 ---
 
@@ -56,3 +56,4 @@ but always re-fetches live data before trading._
 | 2026-06-04 (market-open) | 100,009.58 | — | +0.01% | — | — |
 | 2026-06-04 (midday) | 100,911.69 | — | +0.91% | — | — |
 | 2026-06-04 (EOD close) | 100,993.61 | 757.16 | +0.99% | +0.40% | **+0.60%** |
+| 2026-06-05 (pre-market) | 100,139.18 | — | +0.14% | — | — |

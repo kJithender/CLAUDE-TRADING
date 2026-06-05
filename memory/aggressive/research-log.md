@@ -120,3 +120,90 @@ Remaining cash after day 1: ~USD 40,000 (40%)
 - Buy MSFT ~12,000 (12%)
 - Buy VST ~8,000 (8%)
 - End-of-week target: ~80% invested
+
+---
+
+## 2026-06-05 — DAY 2 PRE-MARKET
+
+### Market posture
+
+**Overall: Cautiously risk-on with short-term chip-sector headwind. Proceed with Day 2 plan.**
+
+- **Nasdaq futures**: Lower this morning on second-day chip selling after AVGO's earnings. AVGO guided Q3 AI chip revenue to $16B (vs $17.2B whisper) and left FY2027 AI target unchanged at "in excess of $100B". Market reads this as a micro-miss, not a thesis-break.
+- **May jobs report**: Due 8:30 AM ET. Consensus expects 80,000–105,000 jobs added, down from April. A weak number could be MSFT/growth-friendly (less Fed tightening pressure); a strong number is neutral for our names.
+- **Chip sector**: NVDA, AVGO, AMD all down overnight in sympathy. S&P 500 / Dow firmer — rotation out of semis and into broader market. MSFT and VST not chip names; not materially impacted.
+- **VIX**: Not elevated. Market near highs. Risk-on overall.
+- **Fed**: On hold at 3.5–3.75%. No meeting impact imminent.
+
+### Held positions review (overnight / pre-market)
+
+| Symbol | Entry | Current | P/L% | Status |
+|---|---|---|---|---|
+| NVDA | $213.60 | $215.37 | +0.83% | ✓ Intact. Overnight down -1.51% on chip sympathy. RTX Spark laptop chip launch shows NVDA expanding AI from cloud to edge. Thesis (GPU monopoly, Blackwell) fully intact. |
+| META | $630.12 | $624.41 | -0.91% | ✓ Intact. Minor drift, no negative news. Ad+AI thesis unchanged. |
+| AVGO | $406.23 | $409.79 | +0.88% | ✓ Intact from our entry. AVGO continues to fall vs its pre-earnings close; however we entered at $406 (well below the prior $479 close) and are still up. AI rev tripling to $16B. No thesis break. |
+| AMD | $508.43 | $506.50 | -0.38% | ✓ Intact. Sympathy sell with chip sector. AMD has no AVGO-specific guidance; moved on macro semi sentiment. Data center +57% thesis unchanged. |
+
+All stops comfortably intact (18% trailing stops placed yesterday; AMD stop ~$417, META stop ~$516 — both far from current prices).
+
+### MSFT (Microsoft) — new position today
+
+- **Latest trade**: $429.63 (June 5 pre-market). Yesterday close: $428.09.
+- **Thesis**: Azure cloud revenue +40% YoY; Copilot monetization beginning to show in numbers. Build 2026 conference unveiled 7 in-house AI models; Morgan Stanley expects materially stronger monetization ahead. Defense contract adds recurring cloud revenue. 56-analyst consensus Strong Buy; avg target $560.95 (+30% upside). Enterprise AI stack (Teams/Copilot/Azure) = stickiest AI monetization layer for businesses.
+- **Entry signals met**: Sector rotation from pure-play semis toward hyperscalers (positive for MSFT); stock at multi-day consolidation zone; thesis re-confirmed by Build 2026 catalyst.
+- **Not impacted by today's chip sector weakness** — MSFT is a buyer of chips, not a seller.
+- **Size**: ~$12,000 notional (~12% of portfolio). Within 35% cap, within 60% daily-deploy cap.
+- **Stop**: 18% trailing placed immediately after fill.
+
+### VST (Vistra Energy) — new position today
+
+- **Latest trade**: $153.68 (yesterday close). Premarket bid/ask wide ($143/$160) due to thin after-hours liquidity — expect normal spread at open.
+- **Thesis**: Nuclear power operator with 20-year PPAs to Meta (3 plants) and AWS (Comanche Peak). AI data-center electricity demand is the binding constraint on AI buildout. VST has the second-largest nuclear fleet in the US. FY26 EBITDA guide $6.8–7.6B; consensus $7.34B. FCF growth guide +20% YoY. Eight analyst Strong Buy ratings; median target $232 (+51% upside from $153). Long-term PPAs lock in cash flow visibility — rate-insensitive, long-duration asset.
+- **Entry signals met**: Q1 2026 results confirmed thesis (revenue $5.63B, op margin 26.6%); nuclear scarcity premium not yet fully priced; AI power crunch narrative gaining mainstream attention but stock still at reasonable valuation.
+- **Not a chip name** — no sympathy selling from AVGO guidance.
+- **Size**: ~$8,000 notional (~8% of portfolio). Within 35% cap.
+- **Stop**: 18% trailing placed immediately after fill.
+
+### Guardrail checklist for today's planned trades
+
+| Rule | Limit | Planned | Status |
+|---|---|---|---|
+| Single position max | 35% | MSFT ~12%, VST ~8% | ✓ |
+| Daily deploy max | 60% of portfolio | ~$20,000 / $100,139 = 20% | ✓ |
+| Cash floor | 2% min | ($41,051 - $20,000) / $100,139 = ~21% | ✓ |
+| Weekly new positions | 8 max | 4 (June 4) + 2 today = 6 | ✓ |
+| AI semi concentration | 50% max | NVDA+AVGO+AMD = $44,727 / $100,139 = 44.7% | ✓ |
+
+All guardrails pass. Proceed with plan.
+
+### Post-buy end-state target
+
+| Symbol | Notional | % of portfolio |
+|---|---|---|
+| NVDA | ~22,183 | 22.1% |
+| META | ~14,361 | 14.3% |
+| AVGO | ~13,933 | 13.9% |
+| MSFT | ~12,000 | 12.0% |
+| AMD | ~8,611 | 8.6% |
+| VST | ~8,000 | 8.0% |
+| **Total invested** | **~79,088** | **~78.9%** |
+| Cash remaining | ~21,051 | ~21.0% |
+
+Target ~79% invested after today — on pace for ≥80% by end of week. ✓
+
+---
+
+## Planned trades for today (June 5, 2026 — market open)
+
+**Execute at the open (9:35 AM ET) — to be carried out by the market-open routine:**
+
+| # | Action | Symbol | Notional | Method | Notes |
+|---|---|---|---|---|---|
+| 1 | BUY | MSFT | ~12,000 | `buy --notional` | Azure AI monetization; enterprise stack; 12% of portfolio |
+| 2 | BUY | VST | ~8,000 | `buy --notional` | Nuclear PPA / AI power; 8% of portfolio |
+
+**After each fill: immediately place 18% trailing stop.**
+
+Total Day 2 deployment: ~USD 20,000 (20% of portfolio — well within 60% daily cap ✓)
+Remaining cash after Day 2: ~USD 21,000 (~21%)
+Weekly new-position count after today: 6 / 8 allowed
