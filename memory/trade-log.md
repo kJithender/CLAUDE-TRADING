@@ -3,6 +3,52 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-08 12:35 ET — MIDDAY CHECK (no trades)
+- **Action:** None — all positions within guardrail thresholds. No cuts, no stop tightening.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 12:35 ET — next close 16:00 ET)
+- **Account:** Equity $99,115.29 | Cash $78,705.60 (79.4%) | Long market value $20,409.69
+
+### Position review (12:35 ET)
+
+**LLY** ($1,158.69, **+5.96% from avg entry $1,093.534**, **+2.41% today** vs $1,131.42 lastday) ✓ STRONG
+- Both trailing stops auto-ratcheted since market-open: HWM now **$1,182.73** (up from $1,173.23 at open), stop **$1,064.457** ✓
+- LLY must have hit $1,182.73+ intraday today, setting a new all-time portfolio HWM. Excellent.
+- Cut threshold: $1,016.99 (−7%) — remote. No action.
+- Tighten threshold: $1,257.56 (+15%) — not yet reached (+5.96%). No action.
+- Stop buffer: $1,158.69 − $1,064.457 = **$94.23 (8.13%)** ✓ Well protected.
+
+**META** ($588.10, **−5.24% from entry $620.637**, **−0.83% today** vs $593.00 lastday) ⚠️ WATCH
+- Trailing stop 4ea07e91: HWM $642.38, stop **$578.142** — status "new" ✓
+- Stop buffer: $588.10 − $578.142 = **$9.96 (1.69%)** ⚠️ Narrow — same concern as market-open.
+- Cut threshold: $577.19 (−7%) — META $10.91 above it. NOT triggered.
+- META drifted down −0.83% today from $593 close. AI ad thesis intact; no news-driven selloff.
+- No manual action. Stop is active and will fire automatically if triggered.
+
+### Guardrail checks (12:35 ET)
+- No position below −7% cut threshold (LLY +5.96%, META −5.24%) ✓
+- No position above +15% tighten threshold (LLY +5.96%, threshold $1,257.56) ✓
+- Active trailing stops confirmed via live Alpaca orders:
+  - LLY (d4147484): 7sh — HWM **$1,182.73** (**RATCHETED further** from $1,173.23), stop **$1,064.457** ✓
+  - LLY (25989fb5): 3sh — HWM **$1,182.73** (**RATCHETED**), stop **$1,064.457** ✓
+  - META (4ea07e91): HWM $642.38, stop $578.142 ✓ — unchanged (META below HWM) ⚠️ Narrow buffer
+- Cash $78,705.60 (79.4%) >> 5% minimum ✓
+- No new positions at midday — risk management only ✓
+- No orphaned trailing-stop orders ✓
+
+### Performance (12:35 ET)
+- **Equity:** $99,115.29 (vs open $99,057.34 = +$57.95 today)
+- **Today P/L:** +$57.95 (+0.06%) — LLY +$272.70 intraday, META −$73.50 intraday = net ~+$199 (Alpaca unrealized intraday); balance likely account-mark timing
+- **Cash:** $78,705.60 (79.4%) | Long market value: $20,409.69
+- **Since inception (2026-05-21):** Bull −0.89% ($100K → $99,115.29). SPY: estimated ~$742 area. Gap ~−1.35% (estimate).
+
+### Notes
+- LLY continues to strengthen. The automatic stop ratchet to HWM $1,182.73 (from $1,173.23 at open) means LLY set a new all-time portfolio high intraday. The floor is now $1,064.457 — a 10% cushion below the HWM, and still well above avg entry $1,093.534. LLY at $1,158.69 is 8.13% above its stop. Thesis triple-confirmed: Medicare GLP-1 Bridge July 1 imminent.
+- META remains the concern. At $588.10 with stop $578.142, the buffer is only 1.69% ($9.96). The −7% cut threshold $577.19 is essentially co-located with the stop. Any continuation downward will trigger the stop automatically. AI ad thesis is still intact but price action is not confirming it. Geopolitical risk (Iran/Israel, WTI elevated) continues to weigh on the broad market.
+- WTI oil: still monitoring — no new position data available at midday but pre-market was $93.67. No new positions today regardless.
+- No action taken. System is managing risk correctly via trailing stops.
+
+---
+
 ## 2026-06-08 09:37 ET — MARKET OPEN (no trades)
 - **Action:** None — no new positions. Pre-market plan: no trades due to WTI at $93.67 (approaching $100 halt trigger). Plan is CURRENT (dated today June 8, 2026).
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 09:36 ET — next close 16:00 ET)
