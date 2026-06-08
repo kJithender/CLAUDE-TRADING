@@ -63,3 +63,9 @@ surprises you._
   risk-off tech selloff costs more than being defensive. The thesis (AI supercycle) hasn't broken
   — but the near-term macro sentiment shift is real. Stay patient, hold stops, let the 18% trailing
   stops do their job. Do not panic-sell thesis-intact positions just because they're down.
+
+### 2026-06-08 — Day 3 close
+- **First day outperforming SPY since Day 1:** Aggro +0.68% vs SPY +0.24% = +0.44pp alpha today. Semi bounce (AMD +5.0%, AVGO +3.0%, NVDA +1.7%) drove the improvement. The 18% trailing stops kept all positions alive through the June 5 selloff and are now participating in the recovery. Patient discipline through volatility is the correct posture.
+- **META is the priority watchpoint entering Week 2 Day 4:** At -7.05% from entry USD 630.12, META has drifted a further -1.23% today. The -12% cut threshold sits at USD 554.51; current price USD 585.70 = 5.05pp of buffer. The unconfirmed equity offering speculation (per Bloomberg June 5, Meta spokesperson called it "pure speculation") is the key tail risk. If June 9 pre-market brings confirmed equity issuance + any downgrade of AI monetization guide, exit immediately. Otherwise hold — the ad revenue +33% YoY thesis is intact.
+- **Semi concentration (44.6%) is approaching the 45% real discipline line.** No further semi adds warranted. Any future deployment should go to non-semi names (GOOGL, AMZN add, or sector rotation plays). This is consistent with Week 2 strategy already on file.
+- **Since-inception alpha narrowed from -1.59pp to -0.91pp.** The portfolio is recovering relative to SPY as semis stabilize. If this continues, Aggro may overtake SPY within the week — but the trajectory depends on META and continued semi recovery.
