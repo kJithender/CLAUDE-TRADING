@@ -17,35 +17,36 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-08 pre-market (~8:00 AM ET)
+## Last snapshot — 2026-06-08 market-open (~9:46 AM ET)
 
 | Field | Value |
 |---|---|
-| Equity | USD 97,687.25 |
-| Cash | USD 21,240.97 |
-| Long market value | USD 76,446.28 |
-| Open positions | 6 |
+| Equity | USD 97,455.37 |
+| Cash | USD 12,313.29 |
+| Long market value | USD 85,142.08 |
+| Open positions | 7 |
 
 **Open positions:**
 
 | Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Trailing Stop Order | Stop % | -12% Cut Trigger |
 |---|---|---|---|---|---|---|---|---|---|
-| NVDA | 103 | USD 213.60 | USD 209.76 | USD 21,605.28 | -USD 395.52 | -1.80% | `54d7d851` | 18% | ~USD 187.97 |
-| META | 23 | USD 630.12 | USD 596.53 | USD 13,720.26 | -USD 772.50 | -5.33% | `11c3a1bf` | 18% | ~USD 554.51 |
-| AVGO | 34 | USD 406.23 | USD 397.10 | USD 13,501.40 | -USD 310.42 | -2.25% | `36f5a45f` | 18% | ~USD 357.48 |
-| MSFT | 28 | USD 426.21 | USD 415.05 | USD 11,621.40 | -USD 312.48 | -2.62% | `ef211767` | 18% | ~USD 375.06 |
-| AMD | 17 | USD 508.43 | USD 479.72 | USD 8,155.31 | -USD 488.00 | -5.65% | `7540e83d` | 18% | **~USD 447.42** |
-| VST | 52 | USD 151.47 | USD 150.82 | USD 7,842.64 | -USD 33.80 | -0.43% | `5b347be3` | 18% | ~USD 133.29 |
+| NVDA | 103 | USD 213.60 | USD 208.61 | USD 21,486.83 | -USD 513.97 | -2.34% | `54d7d851` | 18% | ~USD 187.97 |
+| META | 23 | USD 630.12 | USD 587.87 | USD 13,521.01 | -USD 971.75 | -6.71% | `11c3a1bf` | 18% | ~USD 554.51 |
+| AVGO | 34 | USD 406.23 | USD 398.39 | USD 13,545.26 | -USD 266.56 | -1.93% | `36f5a45f` | 18% | ~USD 357.48 |
+| MSFT | 28 | USD 426.21 | USD 413.32 | USD 11,572.96 | -USD 360.92 | -3.02% | `ef211767` | 18% | ~USD 375.06 |
+| AMZN | 36 | USD 247.99 | USD 248.13 | USD 8,932.68 | +USD 5.00 | +0.06% | `b55bef05` | 18% | ~USD 218.23 |
+| AMD | 17 | USD 508.43 | USD 488.02 | USD 8,296.34 | -USD 346.97 | -3.41% | `7540e83d` | 18% | **~USD 447.42** |
+| VST | 52 | USD 151.47 | USD 148.47 | USD 7,720.44 | -USD 156.00 | -1.98% | `5b347be3` | 18% | ~USD 133.29 |
 
-**Notes:** Week 2 Monday pre-market. All 6 positions recovering from Week 1 selloff. AMD most stressed at -5.65% (was -8.66% Friday EOD — significantly improved). AMD thesis STRONGLY intact: MI450 demand exceeding plans, Lisa Su raised long-term AI revenue confidence. All positions well above -12% cut thresholds. Semi-group (NVDA+AVGO+AMD) = $43,262 / $97,687 = 44.3% of portfolio (below 50% cap). Mideast escalation adds oil/inflation tail risk but market taking it in stride. META equity offering reports (potential $64B raise) are dilution watchpoint — stock already repriced for some of this. Market-open routine plans to initiate AMZN (~$9,000 notional) to diversify away from semi concentration.
+**Notes:** Week 2 Day 3 market-open. AMZN initiated at $247.99 (36 shares, ~$8,928 notional). Semis recovering today — AMD +4.64%, AVGO +3.28%, NVDA +1.71%. META most stressed at -6.71% from entry; monitoring equity offering news (no confirmation yet). All positions comfortably above -12% cut thresholds. Semi-group (NVDA+AVGO+AMD) = $43,328 / $97,455 = 44.5% (below 50% cap). Cash now $12,313 (12.6% — above 2% floor). Weekly new-position count: 1/8 (Week 2).
 
 ---
 
 ## Planned next positions (Week 2)
 
-- **AMZN**: Initiate at market open June 8; ~$9,000 notional (9%); AWS +28%, AI run rate >$15B; diversifies away from semi-sector concentration.
-- **GOOGL**: Deferred to Tuesday/Wednesday June 9–10; wait for post-equity-offering dust to settle and today's session clarity.
-- Possible MSFT or VST add if they recover cleanly and weekly position count allows.
+- **AMZN**: ✅ INITIATED June 8 market-open; 36 shares @ $247.99; 18% trailing stop `b55bef05`.
+- **GOOGL**: Deferred to Tuesday/Wednesday June 9–10; wait for post-equity-offering dust to settle.
+- Possible MSFT or VST add if they recover cleanly and weekly position count allows (7 slots remaining).
 
 ---
 
@@ -63,3 +64,4 @@ but always re-fetches live data before trading._
 | 2026-06-05 (EOD close) | 96,234.84 | 737.41 | -3.77% | -2.22% | **-1.55%** |
 | 2026-06-05 (weekly review) | 96,193.58 | 737.45 | -3.81% | -2.22% | **-1.59%** |
 | 2026-06-08 (pre-market) | 97,687.25 | — | -2.32% | — | — |
+| 2026-06-08 (market-open) | 97,455.37 | — | -2.54% | — | — |

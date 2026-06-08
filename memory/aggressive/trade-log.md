@@ -152,3 +152,30 @@ order id, and a "verified" confirmation._
 **Context:** Broad tech selloff today. Chip sector down hard — AMD -9.1% intraday (from yesterday's $523.20 close), NVDA -5.1% intraday. All names pulling back but none have breached exit thresholds from our entry prices. All 6 trailing stops remain active (18%).
 
 **Result:** No trades executed. All positions within range. Thesis intact for all 6 names. Continue to hold.
+
+---
+
+## 2026-06-08 — DAY 3 MARKET OPEN (executed ~09:46 ET)
+
+### Trade 7 — BUY AMZN
+| Field | Value |
+|---|---|
+| Action | BUY |
+| Symbol | AMZN |
+| Qty | 36 shares |
+| Fill price | USD 247.99 avg |
+| Cost basis | USD 8,927.68 |
+| Portfolio % | ~9.2% |
+| Thesis | AWS revenue $37.6B Q1 2026 (+28% YoY, fastest growth in 15 quarters); AI revenue run rate >$15B ascending rapidly; Trainium custom chips gaining enterprise traction; Graviton CPU reducing cloud costs. Diversifies portfolio away from semi-sector concentration — AMZN is a chip buyer, not a chip maker, so it carries materially lower correlated drawdown risk vs NVDA/AVGO/AMD. JPMorgan PT $330 (~33% upside from entry). |
+| Trailing stop | 18%; order id `b55bef05`; stop price ~USD 203.50 (HWM USD 248.17) |
+| Verified | ✓ position confirmed live; trailing stop confirmed in open orders |
+
+### Day 3 deployment summary
+| Metric | Value |
+|---|---|
+| Total new deployed today | USD 8,928 (9.2% of portfolio — well under 60% daily cap) |
+| Cumulative deployed | USD 87,096 (89.4% of portfolio) |
+| Cash remaining | USD 12,313 (12.6%) |
+| New positions opened today | 1 (AMZN) |
+| Weekly new-position count (Week 2) | 1 / 8 allowed |
+| All guardrails | ✓ passed |
