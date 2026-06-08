@@ -5,6 +5,158 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-08 — Pre-market research (~08:12 ET)
+
+**Today is Monday June 8. Week of June 8: 0/3 new positions used. 3 fresh slots.**
+
+### ⚠️ CRITICAL: WTI OIL AT $93.67 — Approaching $100 halt trigger
+
+Iran and Israel exchanged strikes over the weekend (June 7–8 local time). WTI crude futures jumped **+3.46% to $93.67** (Brent $96.47). This is only **$6.33 below the $100 halt-new-buys trigger**. The direction is upward. This dramatically changes new-buy appetite for today — no new positions until oil direction clarifies.
+
+---
+
+### Macro (pre-market June 8, 2026 ~08:12 ET)
+
+| Indicator | Value | Threshold | Status |
+|-----------|-------|-----------|--------|
+| WTI crude oil | **$93.67** (+3.46% today) | <$100 halt-new-buys | ⚠️ RISING FAST — $6.33 below trigger |
+| Brent crude | $96.47 | — | ⚠️ Iran/Israel escalation |
+| S&P 500 futures / SPY pre-mkt | $742.81 (+0.73% from Jun 5 close $737.45) | — | ✓ Slightly constructive |
+| 10yr Treasury yield | ~4.47% est (post-NFP, stable over weekend) | <4.75% watch | ✓ Constructive |
+| Iran/Israel | Exchanged strikes Jun 7–8 — fragile ceasefire threatened | Oil <$100 | ⚠️ HIGH ALERT |
+| MRVL | +9% pre-mkt (added to S&P 500 Jun 22) | — | ✓ Positive for semis broadly |
+
+**Macro posture: Cautious.** Iran/Israel escalation creates oil-price risk. WTI at $93.67 with upward trajectory means no new buys today. Market is slightly up pre-market (S&P futures edging higher) but Iran/oil is the dominant risk factor. Hold positions; research candidates for later this week.
+
+---
+
+### Account (pre-market June 8, 2026 — live Alpaca data 08:12 ET)
+
+| Metric | Value |
+|--------|-------|
+| Equity | $99,157.77 |
+| Cash | $78,705.60 (79.4%) |
+| Long market value | $20,452.17 |
+| Buying power | ~$372,088 |
+
+---
+
+### Held positions (pre-market June 8, 2026)
+
+**All 3 trailing stop orders confirmed ACTIVE (verified via Alpaca orders 08:12 ET):**
+
+| Symbol | Order ID | Live HWM | Live Stop | Pre-mkt price | vs Entry (avg) | Pre-mkt % change |
+|--------|----------|----------|-----------|--------------|---------|-----------------|
+| LLY | d4147484 | $1,166.29 | $1,049.661 | $1,150.62 | **+5.22%** | **+1.70% today** ⭐ |
+| LLY | 25989fb5 | $1,166.29 | $1,049.661 | $1,150.62 | (same 10-share position) | — |
+| META | 4ea07e91 | $642.38 | $578.142 | $596.40 | **−3.91%** | **+0.57% today** ✓ |
+
+**LLY ($1,150.62 pre-mkt, +1.70% today, +5.22% from avg entry $1,093.534):** ⭐ EXCEPTIONAL
+- **BREAKING: Eli Lilly hits $1.01 TRILLION market capitalization today** (FX Leaders, June 8).
+- Foundayo: FDA-approved GLP-1 pill that can be taken any time of day — widening moat.
+- All three major PBMs (CVS, Express Scripts, OptumRx) covering full LLY obesity portfolio.
+- Medicare GLP-1 Bridge program: effective July 1 — expands to ~20-30M Medicare beneficiaries.
+- Q1 FY2026 revenue +56% YoY; full-year guidance raised by $2B.
+- **Stop buffer:** $1,150.62 − $1,049.661 = $100.96 (8.77%) ✓ Well protected.
+- **Distance from HWM:** $1,166.29 − $1,150.62 = $15.67 (1.36% below HWM). If LLY breaks $1,166.29 today, stops ratchet higher automatically.
+- **No action needed. Thesis is the strongest in the portfolio. Let it run.**
+
+**META ($596.40 pre-mkt, +0.57% today, −3.91% from entry $620.637):** ✓ ABOVE ALERT THRESHOLD
+- **ALERT CLEARED:** META is above the $582 Monday-open alert level. Buffer from alert level: $14.40.
+- Stop buffer: $596.40 − $578.142 = **$18.26 (3.07%)** — improved from 2.26% at EOD June 5.
+- Thesis intact: Q1 2026 revenue +33% YoY (reported April 29 — strong beat). AI ad targeting improving conversion rates. $145B capex at scale. Subscription layer (Instagram Plus / Facebook Plus) live.
+- June 5 selloff (-5.75% that day) was macro-driven (NFP shock + broad risk-off), not META-specific.
+- June 7: Motley Fool "Why Meta Platforms Stock Is Worth Buying Despite It Being 'Speculative'" — bullish analysis continuing.
+- Meta's selloff called "mispriced against its AI-driven earnings power" by Investing.com.
+- **Watch if META approaches $582 intraday today — but pre-market signal is constructive.**
+- **No action. Let stop protect.** 
+
+---
+
+### Guardrail check (pre-market June 8)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 0/3 (fresh week) | ≤3 | 3 slots available |
+| Cash | $78,705.60 (79.4%) | ≥5% | ✓ Ample |
+| LLY stop buffer | $100.96 (8.77%) | watch | ✓ Well protected |
+| META stop buffer | $18.26 (3.07%) | watch | ✓ Improved |
+| META above alert ($582)? | Yes — $596.40 | $582 threshold | ✓ Alert cleared |
+| WTI oil | $93.67 (+3.46%) | <$100 halt-new-buys | ⚠️ APPROACHING TRIGGER |
+| 10yr yield | ~4.47% est | <4.75% | ✓ |
+| Week of Jun 8: slots used | 0/3 | ≤3/week | ✓ |
+
+---
+
+### New position research
+
+**Slot 1 — V (Visa): CONTINUE DEFER**
+- Q2 FY2026: Net revenue $11.2B (+17% YoY), EPS $3.31 (beat by 2.8%). $20B buyback authorized.
+- Held up well June 5 (closed $323.66, essentially flat vs market −2.41%) — positive relative strength.
+- ⚠️ **CFO Chris Suh: open-market sale of 10,639 shares @ $324.88 on May 12, 2026 — total $3.46M.**
+  After sale, holds only 9,872 shares. Pre-sale position: ~20,511 shares. **SOLD 51.9% of his stake.**
+  This is an open-market transaction — NOT confirmed as 10b5-1 plan. No secondary insiders confirmed selling, but this is a single CFO disposing of >50% of holdings at highs. Highly concerning.
+- Visa stock at $323.66 (June 5) — around the CFO's sale price. If the CFO thought $324 was a good sale price, that's a valuation signal.
+- **Decision: DEFER again.** Research whether sale was 10b5-1 plan-based or discretionary. Need to verify. Will not buy until CFO concern resolved.
+
+**Slot 2 — LRCX (Lam Research): DEFER**
+- June 5 close: $303.26. LRCX fell **−9.87% on June 5** (from $336.44 June 4) — massive single-session selloff.
+- Prior to that: all-time high close $343.71 (June 3). Stock went $343 → $303 in two sessions = −11.7%.
+- RSI at ~71-72 (approaching overbought) even after the drop — still technically extended on longer timeframe.
+- 52-week return +304.79% — massive run before correction.
+- Semi equipment sector faces near-term headwinds: NVDA Senate Banking hearing June 11 (regulatory noise), Iran/Israel geopolitical uncertainty.
+- Entry signal #4 (technical): stock needs to stabilize/base before clean entry. −9.87% in one day is not a controlled pullback.
+- Strategy.md: "not extended >10% above its 50-day moving average." Need 50-day SMA data — but after a +304% run, the 50-day is far below current levels. The stock is likely still well above it even at $303.
+- **Decision: DEFER. Wait for stable basing action. Could revisit Tuesday/Wednesday once Iran/oil settles and semi sector finds a floor post-NVDA hearing.**
+
+**Slot 3 — VST (Vistra Energy): RESEARCH CANDIDATE for mid-week**
+- Current price: $148.75 (June 5 close). Down 7% YTD.
+- Strong Buy consensus from 19 analysts. Avg target $225.29 (51% upside).
+- Q1 2026: EPS $1.46 vs $1.32 est (+10.52% surprise). Revenue $5.64B vs $5.22B est (+8.0%).
+- 20-year PPAs with Meta (AI data centers) and Amazon for PJM nuclear power.
+- Restarting Perry nuclear plant (additional baseload capacity for AI power demand).
+- **Iran/Israel impact:** WTI spiking today is bullish for natural gas prices and VST's conventional fleet. However, macro uncertainty may weigh on the stock short-term. Want to see how VST opens today before committing.
+- Non-correlated to AI semi sector (didn't correlate with the June 5 AI semi selloff as badly as NVDA/MSFT/AVGO).
+- Entry signal check:
+  1. Earnings momentum: Q1 +10.52% EPS beat ✓
+  2. Clear catalyst: 20-yr PPAs with Meta+Amazon locked; nuclear restart; AI power demand secular ✓
+  3. Valuation: At $148, FY26 FCF yield looks attractive. 51% upside to consensus $225 target ✓
+  4. Technical: Stock down 7% YTD in rising market = lagging. Need 50-day SMA confirmation.
+  5. Macro: Iran/Israel adds near-term uncertainty but could BENEFIT VST (rising energy prices)
+- **Decision: RESEARCH for Tuesday/Wednesday buy once WTI direction clarifies and VST opens cleanly.**
+  Starter size would be 40-45 shares (~$6,000-6,700 = 6-7% of portfolio). Full thesis pending.
+
+**Also consider (not yet researched for week of June 8):**
+- **COST (Costco):** Consumer defensive. Q4 FY2026 earnings due mid-August — but pre-earn entry possible.
+- **META add?** If META recovers past $620 (back above entry), a scale-up could be considered.
+
+---
+
+### Planned trades for today (Monday June 8, 2026)
+
+**No new positions today.**
+
+WTI crude at $93.67 (+3.46%) due to Iran/Israel strikes is approaching the $100 halt-new-buys trigger. Entering new positions into a macro shock day is poor process. All three slot candidates (V, LRCX, VST) require more research or cleaner technical setups.
+
+- **LLY:** Hold. Approaching HWM $1,166.29 (+1.70% pre-mkt). Let stops ratchet if LLY breaks the HWM today. No manual intervention needed.
+- **META:** Hold. Above $582 alert — constructive recovery. Monitor if META drifts toward $582 intraday. Stop at $578.142. If META opens strongly, watch for HWM approach ($642.38 is far away).
+- **All 3 stops active** (d4147484, 25989fb5, 4ea07e91) — confirmed via Alpaca ✓
+
+**Planned for Tuesday/Wednesday:**
+- Research VST (Vistra) fully — complete pre-trade checklist. Target entry if WTI stabilizes below $95, macro settles.
+- Check Visa Form 4 details — was May 12 sale a 10b5-1 plan or discretionary? This determines whether V slot can open.
+- Monitor LRCX for stable base after -9.87% June 5 drop.
+- Watch NVDA Senate Banking hearing June 11 — potential catalyst for AI semi recovery or further pressure.
+
+**Upcoming catalysts (week of June 8):**
+- META dividend ex-date ~June 15 ($0.525/sh × 15sh = $7.875 credit)
+- LLY Medicare GLP-1 Bridge program effective July 1
+- NVDA Senate Banking Committee hearing June 11 — regulatory noise
+- Iran/Israel ceasefire status — key oil price driver
+- V (Visa) Form 4 investigation — determines slot availability
+
+---
+
 ## 2026-06-05 — Pre-market research (~08:08 ET)
 
 **Today is Friday June 5. Week of June 1: 1/3 new positions used (META June 1). 2 slots remaining.**
