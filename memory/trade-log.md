@@ -3,6 +3,60 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-08 15:53 ET — CLOSE (no trades)
+- **Action:** None — end-of-day P/L check and journal.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 15:53 ET — next close 16:00 ET)
+- **Account:** Equity $99,019.89 | Cash $78,705.60 (79.5%) | Long market value $20,314.29
+
+### Position review (EOD June 8)
+
+**LLY** ($1,148.91, **+5.06% from avg entry $1,093.534**, **+1.55% today** vs $1,131.42 lastday close) ✓ STRONG
+- Pulled back from midday high ($1,158.69) but closed constructively above entry by a solid margin.
+- Both trailing stops last broker-updated at 14:06 ET: HWM **$1,182.73** unchanged (LLY did not exceed HWM after midday), stop **$1,064.457** ✓
+- Stop buffer: $1,148.91 − $1,064.457 = **$84.45 (7.35%)** ✓ Well protected.
+- Medicare GLP-1 Bridge July 1 now 23 days away. Thesis strongest in portfolio.
+
+**META** ($588.445, **−5.19% from entry $620.637**, **−0.77% today** vs $593.00 lastday close) ⚠️ WATCH
+- Trailing stop 4ea07e91: HWM $642.38, stop **$578.142** — status "new" ✓
+- Stop buffer: $588.445 − $578.142 = **$10.30 (1.75%)** ⚠️ Narrow — unchanged critical concern from morning.
+- Cut threshold: $577.19 (−7%) — META $11.26 above it. NOT triggered.
+- SPY opened +0.55% ($743.36) and faded to close $739.30; META tracked the fade. No company-specific news.
+- No manual action. Stop is active and will fire automatically if triggered. Tuesday open is critical.
+
+### Guardrail checks (EOD)
+- No position below −7% cut threshold (LLY +5.06%, META −5.19%) ✓
+- No position above +15% tighten threshold (LLY +5.06%, threshold $1,257.56) ✓
+- Active trailing stops confirmed via live Alpaca orders:
+  - LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (broker last updated 14:06 ET)
+  - LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+  - META (4ea07e91): HWM $642.38, stop $578.142 ✓ — unchanged (META below HWM) ⚠️ Narrow buffer
+- Cash $78,705.60 (79.5%) >> 5% minimum ✓
+- No new positions today — WTI oil elevated + no clean setups ✓
+- Week of June 8: 0/3 new-position slots used ✓
+- No orphaned trailing-stop orders ✓
+
+### SPY performance
+- **SPY today (June 8):** Opened $743.36, closed $739.30 — **−0.55% from open**; essentially **+0.005% from Friday close** ($739.265 → $739.30)
+- Since inception SPY $739.44 → $739.30 = **−0.02%**
+
+### Performance (EOD June 8)
+- **Equity:** $99,019.89 (up from last_equity $98,853.30)
+- **Today P/L:** +$166.59 (+0.17%)
+  - LLY intraday: +$174.90 (+$17.49/sh × 10sh)
+  - META intraday: −$68.33 (−$4.555/sh × 15sh)
+  - Net intraday unrealized: +$106.57; remainder from account mark adjustments
+- **SPY today:** essentially flat (+0.005% from Friday close); opened strongly +0.55% then faded all session
+- **Bull outperformed SPY today by +0.17%** — modest outperformance as SPY intraday faded
+- **Since inception (2026-05-21):** Bull −0.98% ($100K → $99,019.89) vs SPY −0.02% ($739.44 → $739.30) = **−0.96% gap** (improved from −1.06% at June 5 close; gap narrowed by +0.10%)
+
+### Notes
+- SPY had a deceptive session: gapped up to $743.36 (+0.55%) at open, then faded all day to close at $739.30, essentially flat from Friday. The intraday fade reflected continued Iran/Israel geopolitical caution and risk-off pressure persisting from the June 5 NFP shock.
+- LLY closed at $1,148.91 (+1.55%). Medicare GLP-1 Bridge July 1 imminent (23 days). Both trailing stops healthy at 7.35% buffer. No action needed.
+- META is the key risk overnight. Stop at $578.142 is only $10.30 (1.75%) away. The position has drifted lower each day since June 5 NFP shock. AI ad thesis intact but price action is not confirming. If broad market continues weak Tuesday, the stop will fire — this is the stop doing its job, do NOT override manually.
+- No new positions — correct decision. WTI oil $93.67 at pre-market (Iran/Israel). Week of June 8: 0/3 slots used. Research priority Tuesday/Wednesday: V (Visa CFO selling resolution), VST (Vistra once WTI direction clarifies), LRCX (once basing action confirms).
+
+---
+
 ## 2026-06-08 12:35 ET — MIDDAY CHECK (no trades)
 - **Action:** None — all positions within guardrail thresholds. No cuts, no stop tightening.
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 12:35 ET — next close 16:00 ET)
