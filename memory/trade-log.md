@@ -3,6 +3,54 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-08 09:37 ET — MARKET OPEN (no trades)
+- **Action:** None — no new positions. Pre-market plan: no trades due to WTI at $93.67 (approaching $100 halt trigger). Plan is CURRENT (dated today June 8, 2026).
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 09:36 ET — next close 16:00 ET)
+- **Account:** Equity $99,057.34 | Cash $78,705.60 (79.5%) | Long market value $20,351.74
+
+### Position review (09:37 ET)
+
+**LLY** ($1,161.52, **+6.22% from avg entry $1,093.534**, **+2.54% today** vs June 5 close $1,132.80) ⭐ EXCELLENT
+- LLY hit intraday high **$1,171.865** today — **CLEARED the prior HWM of $1,166.29**.
+- Both trailing stops (d4147484 and 25989fb5) **auto-ratcheted** to new HWM:
+  - Old: HWM $1,166.29, stop $1,049.661
+  - **New: HWM $1,173.23, stop $1,055.907** (confirmed via live Alpaca orders) ✓
+- Thesis triple-confirmed: Eli Lilly hit $1.01T market cap, Medicare GLP-1 Bridge July 1, all 3 PBMs covering. Strong upward momentum.
+- No action — let stops ratchet with price. ✓
+
+**META** ($583.775, **−6.10% from entry $620.637**, **−1.52% today** vs June 5 close $592.85) ⚠️ CRITICAL
+- **Intraday low: $579.23** — came within **$1.08 of triggering the $578.142 stop**.
+- Current buffer from stop: $583.775 − $578.142 = **$5.63 (0.97%)** — EXTREMELY THIN.
+- −7% cut threshold: $577.19 (entry $620.637 × 0.93). Not breached — META at $583.775 is $6.56 above it.
+- Thesis intact: AI ad moat, Q1 +33% revenue. Selloff appears to be broad-market/geopolitical (Iran/Israel), not META-specific.
+- **No manual action.** Stop at $578.142 is active and will fire automatically if hit. This is the stop doing its job. DO NOT intervene before the midday check.
+- If META is still in this range at 12:30 PM midday check: close immediately if price < $577.19 per −7% rule.
+
+### Guardrail checks (09:37 ET)
+- No position above +15% tighten threshold (LLY at +6.22%, threshold $1,257.26) ✓
+- No position below −7% cut threshold (LLY +6.22%, META −6.10%) ✓ — META close but not triggered
+- Active trailing stops (all 3 confirmed via live Alpaca orders):
+  - LLY (d4147484): 7sh — HWM **$1,173.23** (**RATCHETED** from $1,166.29), stop **$1,055.907** ✓
+  - LLY (25989fb5): 3sh — HWM **$1,173.23** (**RATCHETED** from $1,166.29), stop **$1,055.907** ✓
+  - META (4ea07e91): HWM $642.38, stop $578.142 ✓ — unchanged (META below HWM) ⚠️ NARROW BUFFER
+- Cash $78,705.60 (79.5%) >> 5% minimum ✓
+- New positions this week: 0/3 ✓
+- WTI oil ~$93.67 — approaching $100 halt trigger → NO NEW POSITIONS ✓
+
+### Performance (09:37 ET)
+- **Equity:** $99,057.34 (vs last_equity $98,853.30) — up +$204.04 from Friday EOD
+- **Today P/L:** +$204.04 (+0.21%) — LLY +$273.85 intraday, META −$141.75 intraday (per Alpaca unrealized_intraday_pl) = net +$132.10; remainder likely from account mark timing
+- **Cash:** $78,705.60 (79.5%) | Long market value: $20,351.74
+- **Since inception (2026-05-21):** Bull −0.95% ($100K → $99,057.34). SPY: ~$742.81 (pre-mkt was +0.73% from June 5 close $737.45 = ~$742.81 estimated at open). SPY since inception: $739.44 → ~$742.81 = +0.46%. **Gap: −1.41%** (estimate).
+
+### Notes
+- Iran/Israel geopolitical escalation is the dominant macro risk today. WTI at $93.67 (+3.46%) was the basis for no new positions, per pre-market plan. No new positions is the correct decision.
+- LLY is the portfolio standout. The stop ratchet to HWM $1,173.23 locks in a $1,055.907 floor (−3.60% from avg entry $1,093.534). LLY is now above entry by 6.22% with a floor well above entry — excellent risk management by design.
+- META is on high alert. The $1.08 intraday gap between the low ($579.23) and the stop ($578.142) was extremely narrow. The broad-market Iran/geopolitical selloff is what's driving META lower. If today ends without the stop firing, meta will need close monitoring at midday (12:30 PM) and the −7% rule will be the governing threshold.
+- Week of June 8: 0/3 new-position slots used. Next new-position consideration deferred to Tuesday/Wednesday pending WTI stabilization.
+
+---
+
 ## 2026-06-05 15:54 ET — CLOSE (no trades)
 - **Action:** None — end-of-day P/L check and journal. Market open confirmed `is_open: true` (closes 16:00 ET).
 - **Account:** Equity $98,916.92 | Cash $78,705.62 (79.6%) | Long market value $20,211.30
