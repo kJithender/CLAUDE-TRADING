@@ -179,3 +179,28 @@ order id, and a "verified" confirmation._
 | New positions opened today | 1 (AMZN) |
 | Weekly new-position count (Week 2) | 1 / 8 allowed |
 | All guardrails | ✓ passed |
+
+---
+
+## 2026-06-08 — MIDDAY CHECK (~12:40 PM ET)
+
+### Position review
+
+| Symbol | Entry | Current | P/L % | -12% Trigger | Action |
+|---|---|---|---|---|---|
+| NVDA | USD 213.60 | USD 208.36 | -2.45% | USD 187.97 | No action — within range |
+| META | USD 630.12 | USD 587.93 | **-6.70%** | USD 554.51 | No action — within range |
+| AVGO | USD 406.23 | USD 394.34 | -2.93% | USD 357.48 | No action — within range |
+| MSFT | USD 426.21 | USD 410.02 | -3.80% | USD 375.06 | No action — within range |
+| AMZN | USD 247.99 | USD 246.16 | -0.74% | USD 218.23 | No action — within range |
+| AMD | USD 508.43 | USD 489.10 | -3.80% | USD 447.42 | No action — within range |
+| VST | USD 151.47 | USD 147.08 | -2.90% | USD 133.29 | No action — within range |
+
+**Cut rule check (>-12% from entry):** No positions triggered. META most stressed at -6.70% — 5.30pp above the -12% threshold.
+**Tighten-stop rule check (>+25% from entry):** No positions triggered. All in drawdown.
+
+**Account:** Equity USD 97,033.54 (-2.97% from inception). Cash USD 12,313.29 (12.7%).
+
+**Context:** Broad continuation of the June 5 tech selloff. MSFT down -1.60% today; META -0.86%; VST -1.13%. Semiconductors partially recovering — NVDA +1.59%, AMD +4.87%, AVGO +2.23%. META equity offering remains unconfirmed speculation; no new thesis-breaking information.
+
+**Result:** No trades executed. All 7 positions within guardrail thresholds. All 18% trailing stops active. Continue to hold.

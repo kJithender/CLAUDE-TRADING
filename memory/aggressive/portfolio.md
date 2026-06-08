@@ -17,28 +17,28 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-08 market-open (~9:46 AM ET)
+## Last snapshot — 2026-06-08 midday (~12:40 PM ET)
 
 | Field | Value |
 |---|---|
-| Equity | USD 97,455.37 |
+| Equity | USD 97,033.54 |
 | Cash | USD 12,313.29 |
-| Long market value | USD 85,142.08 |
+| Long market value | USD 84,720.25 |
 | Open positions | 7 |
 
 **Open positions:**
 
 | Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Trailing Stop Order | Stop % | -12% Cut Trigger |
 |---|---|---|---|---|---|---|---|---|---|
-| NVDA | 103 | USD 213.60 | USD 208.61 | USD 21,486.83 | -USD 513.97 | -2.34% | `54d7d851` | 18% | ~USD 187.97 |
-| META | 23 | USD 630.12 | USD 587.87 | USD 13,521.01 | -USD 971.75 | -6.71% | `11c3a1bf` | 18% | ~USD 554.51 |
-| AVGO | 34 | USD 406.23 | USD 398.39 | USD 13,545.26 | -USD 266.56 | -1.93% | `36f5a45f` | 18% | ~USD 357.48 |
-| MSFT | 28 | USD 426.21 | USD 413.32 | USD 11,572.96 | -USD 360.92 | -3.02% | `ef211767` | 18% | ~USD 375.06 |
-| AMZN | 36 | USD 247.99 | USD 248.13 | USD 8,932.68 | +USD 5.00 | +0.06% | `b55bef05` | 18% | ~USD 218.23 |
-| AMD | 17 | USD 508.43 | USD 488.02 | USD 8,296.34 | -USD 346.97 | -3.41% | `7540e83d` | 18% | **~USD 447.42** |
-| VST | 52 | USD 151.47 | USD 148.47 | USD 7,720.44 | -USD 156.00 | -1.98% | `5b347be3` | 18% | ~USD 133.29 |
+| NVDA | 103 | USD 213.60 | USD 208.36 | USD 21,461.08 | -USD 539.72 | -2.45% | `54d7d851` | 18% | ~USD 187.97 |
+| META | 23 | USD 630.12 | USD 587.93 | USD 13,522.39 | -USD 970.37 | **-6.70%** | `11c3a1bf` | 18% | ~USD 554.51 |
+| AVGO | 34 | USD 406.23 | USD 394.34 | USD 13,407.39 | -USD 404.43 | -2.93% | `36f5a45f` | 18% | ~USD 357.48 |
+| MSFT | 28 | USD 426.21 | USD 410.02 | USD 11,480.56 | -USD 453.32 | -3.80% | `ef211767` | 18% | ~USD 375.06 |
+| AMZN | 36 | USD 247.99 | USD 246.16 | USD 8,861.76 | -USD 65.92 | -0.74% | `b55bef05` | 18% | ~USD 218.23 |
+| AMD | 17 | USD 508.43 | USD 489.10 | USD 8,314.70 | -USD 328.61 | -3.80% | `7540e83d` | 18% | ~USD 447.42 |
+| VST | 52 | USD 151.47 | USD 147.08 | USD 7,647.90 | -USD 228.54 | -2.90% | `5b347be3` | 18% | ~USD 133.29 |
 
-**Notes:** Week 2 Day 3 market-open. AMZN initiated at $247.99 (36 shares, ~$8,928 notional). Semis recovering today — AMD +4.64%, AVGO +3.28%, NVDA +1.71%. META most stressed at -6.71% from entry; monitoring equity offering news (no confirmation yet). All positions comfortably above -12% cut thresholds. Semi-group (NVDA+AVGO+AMD) = $43,328 / $97,455 = 44.5% (below 50% cap). Cash now $12,313 (12.6% — above 2% floor). Weekly new-position count: 1/8 (Week 2).
+**Notes:** Week 2 Day 3 midday check. No positions cut or stops tightened — all within guardrail ranges. META most stressed at -6.70% from entry (threshold -12%); equity offering speculation remains unconfirmed. MSFT/AMD both at -3.80% — recovering but remain soft. Semis (NVDA+AVGO+AMD) = $43,243 / $97,034 = 44.6% (below 50% cap). Cash $12,313 (12.7% — above 2% floor). All 7 trailing stops active (18%). Weekly new-position count: 1/8 (Week 2).
 
 ---
 
@@ -65,3 +65,4 @@ but always re-fetches live data before trading._
 | 2026-06-05 (weekly review) | 96,193.58 | 737.45 | -3.81% | -2.22% | **-1.59%** |
 | 2026-06-08 (pre-market) | 97,687.25 | — | -2.32% | — | — |
 | 2026-06-08 (market-open) | 97,455.37 | — | -2.54% | — | — |
+| 2026-06-08 (midday) | 97,033.54 | — | -2.97% | — | — |
