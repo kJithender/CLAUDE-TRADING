@@ -3,6 +3,11 @@
 _Carried forward across every run. Add a dated line whenever something works
 well, fails, or surprises you. Keep the highest-value lessons near the top._
 
+## Trading lessons (recent)
+
+### 2026-06-09 — Cash cushion compressed the since-inception gap by over half in one day
+SPY had its biggest intraday swing since inception: opened $743.63, peaked $746.90, crashed to a low of $722.59 (-2.9% from open), then recovered to close $733.06 (-0.84% from prior close). Bull with 73.7% cash fell only -0.20%. The since-inception gap narrowed from -0.96% to -0.36% in a single session — cash drag hurts in up markets but repeatedly pays off in volatile/down sessions. This is the second major down-day demonstration since the Jun 5 NFP shock. META showed notable relative strength: +0.15% on a day SPY fell -0.84% and hit a -2.9% intraday low, suggesting some support is forming near the $578-580 stop level. Still, the 1.39% stop buffer remains the primary risk going into Wednesday.
+
 ## Operating lessons (seed)
 
 - Always run `./scripts/alpaca.sh clock` before trading; do nothing if the
