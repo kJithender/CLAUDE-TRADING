@@ -3,6 +3,47 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-09 09:37 ET — MARKET OPEN — BUY VST 40 shares (Slot 1 of 3)
+- **Action:** BUY 40 shares VST (market order)
+- **Fill:** 40 shares @ avg $148.81 (order id: b3a639f0-b839-407a-9100-5140cebf8afe, filled ~09:37 ET June 9)
+- **Why (Slot 1 of 3, week of June 8):** Nuclear power operator with locked 20-year PPAs with Meta + Amazon for AI data-center baseload electricity. Secular AI power demand story — VST owns contracted nuclear capacity to reliably power hyperscaler data centers. Q1 adj EBITDA +20% YoY. $220+ analyst consensus target (49%+ upside at $148.81). Non-correlated to AI semi volatility — portfolio diversification benefit. VST opened $148.73 (≥$145 condition met). 4 of 5 entry signals met (technical below 50-day SMA is the miss; noted caution).
+- **Stop (40 shares):** 10% trailing stop placed (order id: c4c200a5-b5fb-454d-bd7e-77ece5909810) — HWM $148.40 (ratcheted from initial $148.01), stop $133.56, GTC exp 2026-09-04
+- **Verified:** 40 shares confirmed in positions (avg entry $148.81, market value $5,935.20) ✓; trailing stop c4c200a5 confirmed active (status: new, HWM $148.40, stop $133.56) ✓
+
+### Guardrail checks at execution
+- Cash after fill: $72,753.20 (73.3%) >> 5% minimum ✓
+- VST 40sh × $148.81 = $5,952.40 = 6.0% of equity ✓ (≤20% cap)
+- Daily deployment today: $5,952 = 6.0% of equity ✓ (≤25% cap)
+- New positions this week: 1/3 (VST June 9 slot 1) ✓
+- WTI $90.20 (<$100) ✓ | 10yr ~4.55% (<4.75%) ✓ | Market confirmed open `is_open: true` via clock at 09:36 ET ✓
+- VST opened at $148.73 (≥$145 condition met) ✓
+
+### All trailing stops (09:37 ET — 4 active, all confirmed via Alpaca orders)
+- VST (c4c200a5): 40sh — HWM **$148.40** (ratcheted from $148.01), stop **$133.56** ✓ NEW
+- LLY (d4147484): 7sh — HWM $1,182.73, stop $1,064.457 ✓
+- LLY (25989fb5): 3sh — HWM $1,182.73, stop $1,064.457 ✓
+- META (4ea07e91): 15sh — HWM $642.38, stop $578.142 ✓
+
+### Position review (09:37 ET)
+- **VST** ($148.38, **−0.29% from entry $148.81**, **+1.01% today** vs $146.90 last close) NEW ✓ — Vistra Energy nuclear operator. 20-yr PPAs with Meta + AWS. AI power demand secular tailwind. Trailing stop c4c200a5 active (HWM $148.40, stop $133.56, 10.1% buffer from stop).
+- **LLY** ($1,165.09, **+6.54% from avg entry $1,093.534**, **+1.39% today**) ⭐ EXCEPTIONAL — Both stops (d4147484, 25989fb5): HWM $1,182.73, stop $1,064.457. Buffer: $100.63 (8.64%) ✓. LLY approaching HWM from below ($17.64 away = 1.51%). Retatrutide Phase 3 data strongly positive.
+- **META** ($592.54, **−4.53% from entry $620.637**, **+1.22% today**) ✓ RECOVERING — Stop 4ea07e91: HWM $642.38, stop $578.142. Buffer: $14.40 (2.43%) ✓ improving. Enterprise AI agent launch positive. −7% threshold $577.19 — $15.35 above it ✓.
+
+### Performance (09:37 ET)
+- **Equity:** $99,222.15 (vs last_equity $98,977.95 = +$244.20 today)
+- **Today P/L (unrealized):** LLY +$159.40, META +$107.25, VST −$17.20 = net +$249.45
+- **Cash:** $72,753.20 (73.3%) | Long market value: $26,468.95
+- **Since inception (2026-05-21):** Bull −0.78% ($100K → $99,222.15). SPY ~$747 est (+1.04% from Jun 8 close $739.30). **Gap: ~−1.82% est** (widens mechanically as SPY gaps up on rebound; cash drag; gap narrows as VST + further positions compound).
+- **Week of June 8:** 1/3 positions used (VST June 9). 2 slots remaining.
+
+### Notes
+- VST buy executed cleanly. Opened $148.73, filled at $148.81 avg (reasonable $0.08 slippage). Trailing stop at $133.56 (10% below HWM $148.40) provides defined exit risk.
+- LLY approaching its all-time portfolio HWM ($1,182.73) — only $17.64 away. If LLY breaks above today, both stops ratchet higher. Retatrutide Phase 3 data from ADA is fresh bullish fuel. Medicare GLP-1 Bridge July 1 is 22 days away.
+- META recovering (+1.22% today) from the June 5 NFP shock. Stop buffer improved from pre-market $13.88 to $14.40. No action needed.
+- No further trades planned today. V and LRCX remain deferred. 2 slots available for Wednesday/Thursday.
+
+---
+
 ## 2026-06-09 08:07 ET — PRE-MARKET (no trades; plan set)
 - **Action:** None — market closed (next open 09:30 ET). Plan set for market open.
 - **Market status:** `is_open: false` ✓ (confirmed via clock at 08:07 ET — next open 09:30 ET June 9)
