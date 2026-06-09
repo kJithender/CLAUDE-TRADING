@@ -3,6 +3,58 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-09 08:07 ET — PRE-MARKET (no trades; plan set)
+- **Action:** None — market closed (next open 09:30 ET). Plan set for market open.
+- **Market status:** `is_open: false` ✓ (confirmed via clock at 08:07 ET — next open 09:30 ET June 9)
+- **Account:** Equity $99,135.90 | Cash $78,705.60 (79.3%) | Long market value $20,430.30
+
+### Position review (pre-market June 9)
+
+**LLY** ($1,155.00, **+5.62% from avg entry $1,093.534**, **+0.51% today** vs $1,149.15 lastday close) ⭐ EXCEPTIONAL
+- Retatrutide Phase 3 data at ADA June 6 (triple-agonist; weight loss + osteoarthritis + sleep apnea + T2D) — NEXT-GEN beyond tirzepatide. Pipeline expanding significantly.
+- Foundayo oral GLP-1 FDA-approved; CVS formulary active. All 3 major PBMs covering full portfolio.
+- Medicare GLP-1 Bridge July 1 now 22 days away.
+- Both trailing stops (d4147484, 25989fb5): HWM **$1,182.73**, stop **$1,064.457**, status "new" ✓
+- Stop buffer: $1,155.00 − $1,064.457 = **$90.54 (7.84%)** ✓ Well protected.
+
+**META** ($592.02, **−4.61% from entry $620.637**, **+1.13% today** vs $585.39 lastday close) ✓ RECOVERING
+- Enterprise AI business agent launched across WhatsApp/Instagram/Messenger — new revenue catalyst.
+- BofA maintained Buy. Analyst consensus 64/6 buy/hold, $856 avg target.
+- Trailing stop 4ea07e91: HWM $642.38, stop **$578.142**, status "new" ✓
+- Stop buffer: $592.02 − $578.142 = **$13.88 (2.34%)** ✓ Improved from 1.75% at EOD June 8.
+- −7% cut threshold $577.19 — META is $14.83 above it. NOT triggered.
+
+### Macro (pre-market June 9)
+- WTI $90.20 (−1.2%) — Iran/Israel tensions easing. Oil falling. $100 halt trigger now $9.80 away. **NEW POSITIONS ELIGIBLE.**
+- S&P futures +0.71% — chip stocks leading recovery. AI sentiment recovering.
+- 10yr ~4.55–4.57% est — below 4.75% watch level ✓
+- NVDA CEO Huang DECLINED Senate testimony — reduces regulatory tail risk.
+
+### Guardrail check (pre-market June 9)
+- New positions this week: 0/3 — 3 slots available ✓
+- Cash $78,705.60 (79.3%) >> 5% minimum ✓
+- LLY stop buffer 7.84% ✓ | META stop buffer 2.34% ✓ (improved)
+- META above −7% cut threshold ($577.19) ✓
+- WTI $90.20 (<$100) ✓ | 10yr ~4.56% (<4.75%) ✓
+- All 3 trailing stops confirmed active via Alpaca orders ✓
+
+### Plan for market open (09:35 ET)
+- **BUY VST 40 shares** if VST opens at or above $145. Place 10% trailing stop immediately after fill. (Slot 1 of 3)
+  - Thesis: Nuclear operator with 20-yr PPAs to Meta+AWS for AI data-center baseload power. Adj EBITDA +20% YoY. $220+ analyst target (50%+ upside). Non-correlated to AI semi volatility.
+  - If VST opens below $145: defer to Wednesday.
+- **HOLD LLY** — let trailing stops ratchet. Thesis strengthening with retatrutide data.
+- **HOLD META** — let stop manage risk. Do NOT manually intervene.
+- **V (Visa): DEFER** — CFO open-market 51.9% stake sale, no 10b5-1 confirmed.
+- **LRCX: DEFER** — needs base; NVDA hearing June 11.
+
+### Performance (pre-market)
+- **Equity:** $99,135.90 (vs last_equity $98,977.95 = +$157.95 overnight, up from Jun 8 EOD $99,019.89 = +$116.01)
+- **Today P/L (unrealized):** LLY +$58.50 (+$5.85/sh × 10sh); META +$99.45 (+$6.63/sh × 15sh) = net +$157.95
+- **Since inception (2026-05-21):** Bull −0.86% ($100K → $99,135.90). SPY ~$744 est (+0.62%). **Gap: ~−1.49% est**
+  (Gap widened slightly vs Jun 8 close −0.96% as SPY gapped up +0.71% in pre-market; Bull positions only partially tracking.)
+
+---
+
 ## 2026-06-08 15:53 ET — CLOSE (no trades)
 - **Action:** None — end-of-day P/L check and journal.
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 15:53 ET — next close 16:00 ET)

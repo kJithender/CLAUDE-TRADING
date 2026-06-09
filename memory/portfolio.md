@@ -3,24 +3,24 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-08 16:00 ET (close)
+**Last updated:** 2026-06-09 08:07 ET (pre-market)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
-## Account (close June 8, 2026 — 15:53 ET live Alpaca data)
+## Account (pre-market June 9, 2026 — live Alpaca data ~08:07 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,019.89 |
+| Equity | $99,135.90 |
 | Cash | $78,705.60 |
-| Long market value | $20,314.29 |
-| Buying power | ~$371,702 |
+| Long market value | $20,430.30 |
+| Buying power | ~$372,027 |
 
-## Open positions (close June 8, 2026 — confirmed via live Alpaca data 15:53 ET)
+## Open positions (pre-market June 9, 2026 — confirmed via live Alpaca data ~08:07 ET)
 
-| Symbol | Qty | Avg entry | Price (close) | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
+| Symbol | Qty | Avg entry | Price (pre-mkt) | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
 |--------|-----|-----------|----------------|-----------|----------------|----------------|---------------|
-| LLY | 10 | $1,093.534 | $1,148.91 | $11,489.10 | +$553.76 (+5.06%) | 11.60% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, HWM **$1,182.73**, stop **$1,064.457**) ✓ |
-| META | 15 | $620.637 | $588.445 | $8,826.68 | -$482.88 (-5.19%) | 8.92% | 4ea07e91, HWM $642.38, stop $578.142 ✓ — buffer **$10.30 (1.75%)** ⚠️ NARROW |
+| LLY | 10 | $1,093.534 | $1,155.00 | $11,550.00 | +$614.66 (+5.62%) | 11.65% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, HWM **$1,182.73**, stop **$1,064.457**) ✓ |
+| META | 15 | $620.637 | $592.02 | $8,880.30 | -$429.25 (-4.61%) | 8.96% | 4ea07e91, HWM $642.38, stop $578.142 ✓ — buffer **$13.88 (2.34%)** ✓ improved |
 | ~~NVDA~~ | ~~30~~ | ~~$216.302~~ | — | — | **CLOSED -$217.80 (-3.36%) via trailing stop** | — | **FILLED** (8c6b9680) at $209.042 ~11:20 AM ET Jun 5 ✓ |
 | ~~MSFT~~ | ~~20~~ | ~~$422.31~~ | — | — | **CLOSED -$58.94 (-0.70%) via trailing stop** | — | **FILLED** (a55a3db6) at $419.363 ~12:08 PM ET Jun 5 ✓ |
 | ~~AVGO~~ | ~~20~~ | ~~$417.366~~ | — | — | **CLOSED -$175.12 (-2.1%) via trailing stop** | — | **FILLED** (a8e344f4) at $408.61 Jun 4 ✓ |
@@ -52,30 +52,34 @@ the last known state, but always re-fetches live data before trading._
 | Pre-mkt (2026-06-08) | $99,157.77 | $742.81 | -1.30% |
 | Open (2026-06-08) | $99,057.34 | ~$742.81 | ~-1.41% |
 | Midday (2026-06-08) | $99,115.29 | ~$742 est | ~-1.35% est |
-| **Close (2026-06-08)** | **$99,019.89** | **$739.30** | **-0.96%** |
-| **Since inception (2026-05-21)** | **-0.98%** | **-0.02%** | **-0.96%** |
+| Close (2026-06-08) | $99,019.89 | $739.30 | -0.96% |
+| **Pre-mkt (2026-06-09)** | **$99,135.90** | **~$744 est (+0.71% futures)** | **~-1.49% est** |
+| **Since inception (2026-05-21)** | **-0.86%** | **+0.62% est** | **~-1.49% est** |
 
 ## Notes
 
-**Close June 8, 2026 — key developments:**
-- **LLY** ⭐ closed $1,148.91 (+5.06%, +1.55% today). Pulled back from midday high ($1,158.69) but held well above entry. HWM $1,182.73 unchanged (LLY did not exceed HWM after midday). Stop buffer 7.35% ($84.45). Medicare GLP-1 Bridge July 1 now 23 days away.
-- **META** ⚠️ WATCH: closed $588.445 (−0.77% today). SPY opened +0.55% then faded; META followed. Stop $578.142 — buffer **$10.30 (1.75%)**. −7% cut threshold $577.19. AI ad thesis intact but price action weak. Tuesday morning open is critical.
-- **SPY June 8:** Opened $743.36 (+0.55%), closed $739.30 — essentially flat from Friday ($739.265). Intraday fade driven by continued Iran/Israel geopolitical caution.
+**Pre-market June 9, 2026 — key developments:**
+- **WTI oil $90.20 (−1.2%):** Iran/Israel tensions easing overnight. Oil falling, $100 halt trigger $9.80 away and moving away. NEW POSITIONS ELIGIBLE.
+- **S&P futures +0.71%:** Chip stock recovery leading market rebound. AI sentiment recovering.
+- **NVDA CEO Jensen Huang DECLINED Senate testimony (June 11):** Removes CEO-testifies tail risk. Mildly positive for AI semis.
+- **LLY** ⭐ pre-mkt $1,155.00 (+5.62%, +$58.50 today). NEW: Retatrutide Phase 3 ADA data very positive (triple-agonist; weight loss + osteoarthritis + sleep apnea + T2D). Pipeline getting stronger. Stop buffer 7.84% ($90.54). Medicare GLP-1 Bridge July 1 now 22 days away.
+- **META** ✓ pre-mkt $592.02 (+1.13% today, −4.61% from entry). Recovering. Enterprise AI business agent launch (WhatsApp/Instagram/Messenger). BofA maintained Buy. Stop buffer improved to 2.34% ($13.88) from 1.75% yesterday. Alert cleared.
+- **Planned: VST starter 40 shares if opens ≥$145.** Nuclear operator, 20yr PPAs with Meta+AWS, AI power demand thesis. 4/5 entry signals (technical below 50-day SMA is the miss). Slot 1 of 3 for week of June 8.
 
-**Trailing stop status (close June 8 — confirmed via live Alpaca orders 15:53 ET):**
-- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (last broker update 14:06 ET — HWM unchanged from midday peak)
+**Trailing stop status (pre-market June 9 — confirmed via live Alpaca orders ~08:07 ET):**
+- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (status "new"; last updated 14:06 ET Jun 8)
 - LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
-- META (4ea07e91): HWM $642.38, stop $578.142 ✓ — buffer $10.30 (1.75%) ⚠️ NARROW
+- META (4ea07e91): HWM $642.38, stop $578.142 ✓ — buffer $13.88 (2.34%) ✓ improved
 - ~~NVDA (8c6b9680)~~: FILLED ✓ | ~~MSFT (a55a3db6)~~: FILLED ✓ | ~~AVGO (a8e344f4)~~: FILLED ✓ | ~~AMZN (bbcd70fa)~~: CANCELED ✓
 
-**Week of June 8 — new position slots:**
-- **Slot 1:** V (Visa) — CFO insider selling (>50% open-market); DEFER until 10b5-1 status confirmed
-- **Slot 2:** VST (Vistra Energy) — RESEARCH CANDIDATE; defer until WTI direction clarifies mid-week
-- **Slot 3:** LRCX or new name — DEFER; LRCX needs base after -9.87% June 5 drop; watch NVDA hearing June 11
+**Week of June 8 — new position slots (updated June 9 pre-market):**
+- **Slot 1:** VST (Vistra Energy) — PLAN BUY TODAY if opens ≥$145 (Slot 1)
+- **Slot 2:** V (Visa) — DEFER; CFO 51.9% open-market sale, no 10b5-1 confirmation
+- **Slot 3:** LRCX — DEFER; needs base after −9.87% June 5 drop; NVDA hearing June 11
 
 **Upcoming catalysts:**
-- LLY Medicare GLP-1 Bridge program effective July 1
+- LLY Medicare GLP-1 Bridge program effective July 1 (22 days)
 - META dividend ex-date ~June 15 (USD 7.875 credit for 15 shares)
-- NVDA Senate Banking hearing June 11 (regulatory noise; not currently held)
-- Iran/Israel ceasefire status — key oil price driver all week
-- V (Visa) Form 4 investigation — determines slot availability
+- NVDA Senate Banking hearing June 11 (CEO Huang declined; hearing proceeds without him)
+- LLY retatrutide Phase 3 data (already released June 6 at ADA) — very positive pipeline news
+- Iran/Israel status — oil direction key watch

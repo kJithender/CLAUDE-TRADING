@@ -5,6 +5,177 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-09 — Pre-market research (~08:07 ET)
+
+**Today is Tuesday June 9. Week of June 8: 0/3 new positions used. 3 fresh slots.**
+
+### Macro (pre-market June 9, 2026 ~08:07 ET)
+
+| Indicator | Value | Threshold | Status |
+|-----------|-------|-----------|--------|
+| WTI crude oil | **$90.20** (−1.2% today) | <$100 halt-new-buys | ✓ FALLING — Iran/Israel tensions easing |
+| Brent crude | ~$93.30 | — | ✓ Pulling back from recent highs |
+| S&P 500 futures | **+0.71%** | — | ✓ Strong rebound; chip stocks leading |
+| 10yr Treasury yield | ~4.55–4.57% (est; post-NFP level) | <4.75% watch | ✓ Below trigger |
+| Iran/Israel | Pause in attacks overnight — tensions easing | Oil <$100 | ✓ Improving; WTI falling |
+| NVDA CEO testimony | Jensen Huang **DECLINED** Senate testimony June 11 | — | ✓ Reduces CEO testimony tail risk |
+| Economic data today | Wholesale inventories, existing home sales, NFIB small biz sentiment | — | Watch — not expected to be market-moving |
+
+**Macro posture: CONSTRUCTIVE.** Iran/Israel easing is the dominant overnight development. WTI fell −1.2% to $90.20, pulling the $100 halt trigger $9.80 further away — and moving in the right direction. S&P futures +0.71% led by chip stock rebound. NVDA CEO declining Senate testimony removes the tail risk of CEO-testifies-and-makes-damaging-admissions scenario; the hearing proceeds without NVDA's cooperation. New positions are **ELIGIBLE** today (WTI <$100 ✓, 10yr <4.75% ✓, oil direction improving ✓).
+
+---
+
+### Account (pre-market June 9, 2026 — live Alpaca data ~08:07 ET)
+
+| Metric | Value |
+|--------|-------|
+| Equity | $99,135.90 |
+| Cash | $78,705.60 (79.3%) |
+| Long market value | $20,430.30 |
+| Buying power | ~$372,027 |
+
+---
+
+### Held positions (pre-market June 9, 2026)
+
+**All 3 trailing stop orders confirmed ACTIVE (verified via Alpaca orders 08:07 ET):**
+
+| Symbol | Order ID | Live HWM | Live Stop | Pre-mkt price | vs Entry (avg) | Pre-mkt % change |
+|--------|----------|----------|-----------|--------------|---------|-----------------|
+| LLY | d4147484 | $1,182.73 | $1,064.457 | $1,155.00 | **+5.62%** | **+0.51% today** ⭐ |
+| LLY | 25989fb5 | $1,182.73 | $1,064.457 | $1,155.00 | (same 10-share position) | — |
+| META | 4ea07e91 | $642.38 | $578.142 | $592.02 | **−4.61%** | **+1.13% today** ✓ (recovering) |
+
+**LLY ($1,155.00 pre-mkt, +0.51% today, +5.62% from avg entry $1,093.534):** ⭐ EXCEPTIONAL
+- **BREAKING (June 6): Positive Phase 3 data for retatrutide at ADA 86th Scientific Sessions.**
+  - Retatrutide is Lilly's NEXT-GENERATION triple-agonist (GIP + GLP-1 + glucagon receptors) vs tirzepatide's dual-agonist
+  - TRIUMPH-1 and TRANSCEND-T2D-1 trials: substantial weight loss + improvements in knee osteoarthritis pain, obstructive sleep apnea, and type 2 diabetes
+  - This is the step-change beyond Mounjaro/Zepbound; significantly widens LLY's moat vs Novo Nordisk
+- Foundayo oral GLP-1 pill: FDA-approved, no food/water restrictions — addressing needle aversion, the primary adoption barrier. CVS formulary already active.
+- Medicare GLP-1 Bridge program effective July 1 — now **22 days away**. ~20-30M Medicare beneficiaries eligible.
+- All 3 major PBMs (CVS, Express Scripts, OptumRx) covering full LLY obesity portfolio.
+- Q1 FY2026 revenue +56% YoY; full-year guidance raised $2B.
+- **Stop buffer:** $1,155.00 − $1,064.457 = $90.54 (7.84%) ✓ Well protected.
+- **Distance from HWM:** $1,182.73 − $1,155.00 = $27.73 (2.34% below HWM). If LLY breaks $1,182.73 today, stops ratchet higher automatically.
+- **No action needed. Thesis is the strongest in the portfolio and getting stronger with retatrutide data.**
+
+**META ($592.02 pre-mkt, +1.13% today, −4.61% from entry $620.637):** ✓ RECOVERING
+- **Alert status: CLEAR.** Pre-market $592.02 is well above $582 Monday alert level and above $577.19 cut threshold.
+- NEW CATALYST: Meta launched enterprise AI business agent across WhatsApp, Instagram, and Messenger — enables companies to automate lead qualification, booking, sales closing, and customer escalation. Validates the AI ad platform thesis with a new revenue layer.
+- Bank of America maintained Buy rating. Analyst consensus: 64 Buy, 6 Hold, avg target $856 (44% upside).
+- Stop buffer: $592.02 − $578.142 = **$13.88 (2.34%)** — improved from 1.75% at yesterday's close.
+- −7% cut threshold: $577.19 — META is $14.83 above it. NOT triggered.
+- Pre-market recovery +1.13% shows market beginning to re-price AI ad thesis positively.
+- **No action. Stop is active and properly positioned. Hold and let enterprise AI catalyst work.**
+
+---
+
+### Guardrail check (pre-market June 9)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 0/3 | ≤3 | 3 slots available |
+| Cash | $78,705.60 (79.3%) | ≥5% | ✓ Ample |
+| LLY stop buffer | $90.54 (7.84%) | watch | ✓ Well protected |
+| META stop buffer | $13.88 (2.34%) | watch | ✓ Improved from 1.75% yesterday |
+| META above −7% cut threshold? | Yes — $14.83 above $577.19 | $577.19 | ✓ Safe |
+| WTI oil | $90.20 (−1.2%) | <$100 halt-new-buys | ✓ FALLING — eligible for new buys |
+| 10yr yield | ~4.55–4.57% est | <4.75% | ✓ |
+| Week of Jun 8: slots used | 0/3 | ≤3/week | ✓ |
+
+---
+
+### New position research
+
+**Slot 1 — VST (Vistra Energy): CONDITIONAL BUY TODAY**
+
+**Current price:** $146.885 (June 8 close). Last week's range: $147.52–$154.29 (Jun 5).
+
+**Thesis:**
+VST is a nuclear power operator that has locked in **20-year PPAs with Meta Platforms and Amazon** for baseload AI data-center electricity supply. As AI hyperscalers demand 24/7 clean baseload power (not intermittent solar/wind), nuclear is the only reliable answer at scale. VST is uniquely positioned: it owns the Perry nuclear plant (restarting), has existing nuclear fleet capacity, and has secured long-term contracted revenue streams with two of the world's largest AI buildout spenders.
+
+**Entry signal check (need ≥3 of 5):**
+1. ✓ Earnings momentum: Q1 2026 EPS +10.52% beat, revenue +8%, adj EBITDA +20% YoY. Stock jumped +14% on Q1 results.
+2. ✓ Clear catalyst: 20-yr PPAs with Meta + AWS locked; Perry nuclear plant restart; AI power demand secular — hyperscaler electricity consumption doubling every 2 years.
+3. ✓ Valuation: $220-225 analyst consensus target vs $146.89 current = **50%+ upside**. FCF yield highly attractive. 19 analysts Strong Buy.
+4. ✗ Technical: VST at $146.885 is BELOW its 50-day SMA (~$154). ⚠️ Stock down 7% YTD.
+   _Note: Below 50-day SMA is a genuine technical caution flag. However, the Q1 +14% jump and subsequent pullback to $146 may represent a "buy the dip after Q1 pop" opportunity._
+5. ✓ Macro: WTI falling (eases near-term energy market uncertainty); Iran/Israel easing reduces commodity shock risk; AI data-center buildout continuing at accelerating pace. VST non-correlated to AI semi volatility (held up far better during June 5 AI semi selloff — −2.0% vs NVDA −4.4%).
+
+**Result: 4 of 5 criteria met (strategy requires ≥3) → QUALIFIES with noted technical caution.**
+
+**Sizing:**
+- 40 shares × ~$147 = ~$5,880 = **5.9% of portfolio** (starter conviction)
+- Cash after fill: $78,705.60 − $5,880 = $72,825.60 = ~73.4% of equity >> 5% minimum ✓
+- Daily deployment: $5,880 = 5.9% of portfolio ≤ 25% cap ✓
+- Single position cap: 5.9% ≤ 20% cap ✓
+- Sector diversification: Adds Energy/Utilities. Current sectors: Healthcare (LLY 11.65%), Ad-tech (META 8.97%). VST brings sector balance ✓
+
+**Stop:** 10% trailing stop immediately after fill.
+
+**Entry condition:** VST must open at or above $145. If VST opens below $145 (making new lows), defer to Wednesday. This ensures we're not buying into a gap-down.
+
+**Invalidation criteria:** WTI crude >$100 (macro shock), VST cuts FCF guidance, AI hyperscaler PPA cancellation or major modification, VST breaks below $130 on volume.
+
+**This is Slot 1 of 3 for week of June 8.**
+
+---
+
+**Slot 2 — V (Visa): DEFER AGAIN**
+- V closed $319.72 (June 8) — BELOW CFO's May 12 sale price of $324.88. Mildly concerning (CFO sold at $324.88 believing that was a fair price; V has since dropped −$5.16 = −1.6% from his sale level).
+- CEO Ryan McInerney exercised options and sold 31,455 shares at $340.14 on April 29 under a **10b5-1 plan dated May 15, 2025** — PLANNED, not discretionary.
+- CFO Chris Suh sold 10,639 shares at $324.88 on May 12 via **open-market transaction** — NO 10b5-1 confirmation found. This was after the CEO's planned 10b5-1 sale, suggesting the CFO acted independently.
+- The CFO sold 51.9% of his directly held stake at market highs ($324.88) via what appears to be a discretionary open-market sale. This is the most meaningful negative insider signal.
+- **Decision: DEFER V until CFO situation resolves.** May re-evaluate next week if V Form 4 details confirm 10b5-1, or if a new positive catalyst outweighs the insider signal.
+
+---
+
+**Slot 3 — LRCX (Lam Research): DEFER**
+- June 8 close: need to check, but June 5 was $303.26 (−9.87% from $336.44 June 4).
+- NVDA CEO declined Senate testimony → slightly positive for AI semis broadly, but LRCX still needs time to base.
+- RSI was elevated even after the drop (70-72 on longer timeframe). Not enough consolidation yet.
+- **Decision: DEFER. Target re-evaluation late next week once post-hearing sentiment clarifies.**
+
+---
+
+### Performance estimate (pre-market June 9)
+
+- **Bull equity pre-market:** $99,135.90 (−0.87% since inception)
+- **SPY estimate:** ~$744 (futures +0.71% on June 8 close $739.30) = +0.62% since inception
+- **Estimated gap:** ~−1.49% (widened slightly from −0.96% at June 8 close as SPY gapped up strongly)
+- Note: Gap widening is expected when market recovers sharply and Bull holds 79% cash. This will narrow as new positions are deployed.
+
+---
+
+### Planned trades for today (Tuesday June 9, 2026)
+
+**Primary: BUY VST 40 shares at market open — CONDITIONAL**
+
+**Thesis for VST starter:**
+Nuclear power operator with locked 20-year PPAs with Meta + Amazon for AI data-center baseload electricity. The secular AI power demand story is the mirror image of the hyperscaler AI infra build — someone has to power those data centers reliably, and VST owns contracted nuclear capacity to do exactly that. Q1 adj EBITDA +20% YoY confirms the financial momentum. At $147 vs $220+ consensus target, the market is still valuing this as a traditional utility. Non-correlated to AI semi volatility — portfolio diversification benefit.
+
+**Entry condition:** VST opens at or above $145. If VST opens below $145, defer to Wednesday.
+**Size:** 40 shares (whole shares, trailing-stop eligible).
+**Stop:** 10% trailing stop placed immediately after fill.
+**Slot:** 1 of 3 for week of June 8.
+
+**Secondary: HOLD LLY and META.**
+- LLY: Let trailing stops ratchet with price. Retatrutide ADA data is fresh positive news — thesis strengthening.
+- META: Stop at $578.142 is active. Pre-market recovery +1.13% is encouraging. Enterprise AI agent launch is a new positive. Hold and let stop manage risk. Do NOT manually intervene.
+
+**Explicit non-trades:**
+- V (Visa): DEFER. CFO 51.9% open-market stake sale unresolved.
+- LRCX: DEFER. Still needs basing action.
+- No NVDA re-entry yet (hearing June 11 still pending even without CEO testimony).
+
+**Upcoming catalysts:**
+- **NVDA Senate Banking hearing June 11** — proceeds without CEO Huang; watch for market reaction
+- **META dividend ex-date ~June 15** ($0.525/sh × 15sh = $7.875 credit)
+- **LLY Medicare GLP-1 Bridge July 1** — now 22 days away
+- **Existing home sales + NFIB today** — minor macro releases
+
+---
+
 ## 2026-06-08 — Pre-market research (~08:12 ET)
 
 **Today is Monday June 8. Week of June 8: 0/3 new positions used. 3 fresh slots.**
