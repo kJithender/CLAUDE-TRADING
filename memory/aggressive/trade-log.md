@@ -231,3 +231,42 @@ order id, and a "verified" confirmation._
 | New positions opened today | 1 (GOOGL) |
 | Weekly new-position count (Week 2) | 2 / 8 allowed (AMZN June 8 + GOOGL June 9) |
 | All guardrails | ✓ passed |
+
+---
+
+## 2026-06-09 — MIDDAY CHECK (~12:41 PM ET)
+
+### Position review
+
+| Symbol | Entry | Current | P/L % | -12% Trigger | Action |
+|---|---|---|---|---|---|
+| NVDA | USD 213.60 | USD 200.06 | -6.34% | USD 187.97 | No action — within range |
+| AVGO | USD 406.23 | USD 371.73 | -8.49% | USD 357.48 | No action — within range |
+| META | USD 630.12 | USD 581.88 | -7.66% | USD 554.51 | No action — within range |
+| MSFT | USD 426.21 | USD 399.03 | -6.38% | USD 375.06 | No action — within range |
+| AMZN | USD 247.99 | USD 241.72 | -2.53% | USD 218.23 | No action — within range |
+| AMD | USD 508.43 | USD 438.62 | **-13.73%** | USD 447.42 | **CLOSED — -12% rule triggered** |
+| GOOGL | USD 370.22 | USD 357.83 | -3.35% | USD 325.79 | No action — within range |
+| VST | USD 151.47 | USD 142.05 | -6.22% | USD 133.29 | No action — within range |
+
+**Cut rule check (>-12% from entry):** AMD triggered at -13.73%. Position closed. Trailing stop `7540e83d` canceled first (shares were held for orders), then market close order submitted.
+**Tighten-stop rule check (>+25% from entry):** No positions triggered. All in drawdown.
+
+### Trade — CLOSE AMD (midday cut rule)
+| Field | Value |
+|---|---|
+| Action | SELL / CLOSE |
+| Symbol | AMD |
+| Qty | 17 shares |
+| Fill price | USD 440.92 avg |
+| Proceeds | USD 7,495.64 |
+| Entry cost basis | USD 8,643.31 |
+| Realized P/L | **-USD 1,147.67 (-13.28%)** |
+| Trailing stop canceled | `7540e83d` (canceled first to free shares) |
+| Close order ID | `6f9d9e0c` |
+| Verified | ✓ AMD position gone; `7540e83d` status canceled; no orphaned AMD orders remain |
+| Rule triggered | -12% midday cut rule (AMD -13.73% from entry exceeded -12% threshold) |
+
+**Context:** Broad market selloff today — SPY down ~-2.1% intraday (USD 739.23 → ~USD 723). Tech sector under pressure. AMD particularly hard-hit: -10.5% intraday. The -13.73% breach of the -12% cut threshold mandates immediate exit under guardrails, regardless of thesis. No averaging down.
+
+**Account after close:** Equity USD 93,506.59 | Cash USD 13,885.40 (14.8%) | 7 open positions | Long market value USD 79,621.19
