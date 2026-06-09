@@ -328,3 +328,132 @@ Remaining cash after trade: ~USD 12,241 (~12.5%)
 Weekly new-position count after today: 1 / 8 allowed
 
 **No other trades planned.** Hold all 6 existing positions. Monitor META equity offering news.
+
+---
+
+## 2026-06-09 — WEEK 2 PRE-MARKET (Tuesday)
+
+### Portfolio update (live Alpaca data, ~8:00 AM ET)
+
+| Symbol | Qty | Avg Entry | Current | P/L % | Overnight change |
+|---|---|---|---|---|---|
+| NVDA | 103 | $213.60 | $209.30 | -2.01% | +0.32% |
+| META | 23 | $630.12 | $592.34 | **-5.99%** | +1.19% |
+| AVGO | 34 | $406.23 | $400.50 | -1.41% | +0.98% |
+| MSFT | 28 | $426.21 | $410.43 | -3.70% | -0.32% |
+| AMZN | 36 | $247.99 | $246.69 | -0.52% | +0.60% |
+| AMD | 17 | $508.43 | $501.82 | -1.30% | +2.34% |
+| VST | 52 | $151.47 | $148.07 | -2.24% | +0.80% |
+
+**Account equity: USD 97,715.46** (up USD 632.84 from prior day USD 97,082.62)
+**Cash: USD 12,313.28 (12.6% of portfolio)**
+**Semi-group concentration (NVDA+AVGO+AMD): USD 43,706 / USD 97,715 = 44.7%** (at 45% real discipline line — no new semi adds)
+**Weekly new-position count (Week 2): 1/8 (AMZN initiated June 8)**
+
+---
+
+### Market posture
+
+**Overall: Risk-on. Chip sector stabilizing. Oil de-escalation is a positive catalyst.**
+
+- **Nasdaq futures**: Climbing this morning on chip rebound continuation (TheStreet). Positive tape heading into open.
+- **Oil / Mideast**: WTI -2.3% to USD 89.22; Brent -1.8% to USD 92.55. Trump said US-Iran deal could be reached in "2–3 days." Easing geopolitical risk → reduced inflation tail → risk-on. Direct positive for high-multiple tech names.
+- **Semi sector**: Day 4 of recovery from the June 5 selloff. AMD +2.34% overnight, AVGO +0.98%, NVDA +0.32%. Stabilization trend intact.
+- **Big Tech equity offerings**: GOOGL USD 85B offering fully digested and behind us. META offering remains "pure speculation" (no banks appointed); Microsoft/Amazon offers speculated but not confirmed.
+- **SPY pre-market**: ~USD 742 (latest quote); inception anchor USD 754.18. SPY return ~ -1.57% since inception. Aggro return -2.28%. Alpha ~ -0.71pp (improving from -0.91pp at June 8 EOD).
+
+---
+
+### Held positions thesis checks
+
+**META (Priority watchpoint):**
+- Bloomberg June 5: "pure speculation," no banks appointed. Spokesperson denial consistent. No confirmation overnight.
+- Fundamental: Q1 2026 ad revenue +33% YoY; EPS USD 10.44 (57% beat); revenue USD 56.3B. AI monetization thesis fully intact.
+- Current: USD 592.34 = **-5.99%** from entry USD 630.12. -12% cut threshold = USD 554.51; buffer = USD 37.83 (6.4pp).
+- Stock recovering +1.19% overnight — market pricing in "no confirmed offering."
+- **Verdict: HOLD. Thesis intact. No banks, no deal. Exit only if offering is formally confirmed AND AI monetization guide is downgraded. Neither has happened.**
+
+**AMD:**
+- Recovered from -8.66% (weekly review) to -1.30% from entry. Data center +57% thesis intact; MI450 exceeding demand expectations per CEO Lisa Su.
+- **Verdict: INTACT. Continue to hold.**
+
+**NVDA:**
+- LG Group humanoid robotics + data center partnership (June 8). AI GPU moat expanding to edge/robotics beyond cloud.
+- **Verdict: INTACT. No action.**
+
+**AVGO:**
+- Stabilizing. AI revenue USD 10.8B Q2, ~USD 16B Q3 guide (+48% QoQ). "Buying opportunity" analyst consensus.
+- **Verdict: INTACT. No action.**
+
+**MSFT:**
+- Azure +40% YoY, Copilot monetization on track. Equity offering speculation not confirmed.
+- Slightly down today (-0.32%) — minor drift, no new thesis-breaking news.
+- **Verdict: INTACT. No action.**
+
+**AMZN:**
+- AWS USD 37.6B Q1 2026 (+28% YoY). AI revenue run rate ascending rapidly. Up +0.60% overnight.
+- **Verdict: INTACT. No action.**
+
+**VST:**
+- Oil de-escalation is slightly negative for VST's narrative (nuclear power premium vs gas), but the long-term AI data center electricity demand story is unchanged. AI capex cycle is not slowing.
+- Wells Fargo maintained Buy June 6. Q1 EPS USD 2.90 (+53% beat). Quarterly dividend declared.
+- Stock still trading at ~16x forward P/E — not expensive.
+- **Verdict: INTACT. Near-term oil decline is noise; AI power demand is a multi-year secular story. No action.**
+
+---
+
+### New position research — GOOGL (Alphabet)
+
+**Thesis:**
+- **GCP Q1 2026: +63% YoY** — highest hyperscaler cloud growth rate, surpassing AWS (+28%) and Azure (+40%). Cloud backlog: USD 460B. Operating margin: 32.9%.
+- USD 85B equity offering (largest in history, majority earmarked for AI infrastructure) was announced and completed June 3, 2026. It was heavily oversubscribed. **The dilution event is already priced in and behind us.** Stock has had 6 sessions to digest it.
+- Berkshire Hathaway (USD 10B private placement) and massive institutional subscription signal investor confidence in the AI-infrastructure buildout.
+- AI capex 2026: USD 180–190B. Gemini models, TPU custom silicon, Vertex AI, DeepMind. Full-stack AI moat.
+- Valuation: Cheapest hyperscaler on P/E relative to its growth rate (63% cloud growth). GCP cloud backlog USD 460B provides multi-year visibility.
+- Pre-market price: USD 366.08 (vs ~USD 398 pre-offering = ~8% discount from pre-offering level, fully reflecting dilution).
+- JPMorgan PT: USD 460.
+
+**Entry signals met:**
+1. Post-dilution dip with thesis intact — the stock repriced for the offering; offering is done.
+2. Sector/macro tailwind confirmed: AI capex cycle ongoing; oil de-escalation = risk-on.
+3. GCP momentum re-confirmed by Q1 2026 earnings (+63%, record backlog).
+4. Lower semi-sector correlation than NVDA/AVGO/AMD — GOOGL is a chip BUYER (TPU) not a chip SELLER; no sympathy selling risk from AVGO-type guidance.
+
+**Portfolio fit:**
+- Reduces dependency on the AI-semi-seller complex (NVDA/AVGO/AMD at 44.7%). GOOGL is a diversifier within the AI thesis.
+- Semi-group concentration unchanged by GOOGL entry (GOOGL is not a semiconductor company).
+
+**Size: 16 shares at ~USD 366 = ~USD 5,856 notional (~6.0% of portfolio).**
+Tier 3 / exploratory conviction level. 18% trailing stop immediately after fill.
+
+---
+
+### Guardrail checklist for GOOGL
+
+| Rule | Limit | Planned | Status |
+|---|---|---|---|
+| Single position max | 35% | USD 5,856 / USD 97,715 = 6.0% | ✓ |
+| Daily deploy max | 60% | USD 5,856 / USD 97,715 = 6.0% | ✓ |
+| Cash floor | 2% min | (USD 12,313 - USD 5,856) / USD 97,715 = 6.6% | ✓ |
+| Weekly new positions (Week 2) | 8 max | 1 (AMZN) + 1 (GOOGL) = 2/8 | ✓ |
+| Semi-group concentration | ≤50% | USD 43,706 / USD 97,715 = 44.7% (GOOGL not a semi — unchanged) | ✓ |
+
+All guardrails pass.
+
+---
+
+## Planned trades for today (June 9, 2026 — market open)
+
+**Execute at the open (9:35 AM ET) — to be carried out by the market-open routine:**
+
+| # | Action | Symbol | Notional | Method | Notes |
+|---|---|---|---|---|---|
+| 1 | BUY | GOOGL | ~5,856 (16 shares) | `buy --notional 5856` | GCP 63% YoY; post-USD 85B offering digested; cheapest hyperscaler; 6% of portfolio |
+
+**After fill: immediately place 18% trailing stop on GOOGL.**
+
+Total Day 4 deployment: ~USD 5,856 (~6% of portfolio — well within 60% daily cap ✓)
+Remaining cash after trade: ~USD 6,457 (~6.6%)
+Weekly new-position count after today: 2 / 8 allowed
+
+**No other trades planned.** Hold all 7 existing positions. Continue monitoring META equity offering status.

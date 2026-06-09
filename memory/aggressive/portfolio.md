@@ -17,36 +17,36 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-08 EOD (~3:50 PM ET)
+## Last snapshot — 2026-06-09 pre-market (~8:00 AM ET)
 
 | Field | Value |
 |---|---|
-| Equity | USD 97,102.72 |
-| Cash | USD 12,313.29 |
-| Long market value | USD 84,789.43 |
+| Equity | USD 97,715.46 |
+| Cash | USD 12,313.28 |
+| Long market value | USD 85,402.18 |
 | Open positions | 7 |
 
 **Open positions:**
 
-| Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Today % | Trailing Stop Order | Stop % | -12% Cut Trigger |
+| Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Overnight % | Trailing Stop Order | Stop % | -12% Cut Trigger |
 |---|---|---|---|---|---|---|---|---|---|---|
-| NVDA | 103 | USD 213.60 | USD 208.50 | USD 21,475.50 | -USD 525.30 | -2.39% | +1.66% | `54d7d851` | 18% | ~USD 187.97 |
-| META | 23 | USD 630.12 | USD 585.70 | USD 13,471.10 | -USD 1,021.66 | **-7.05%** | -1.23% | `11c3a1bf` | 18% | ~USD 554.51 |
-| AVGO | 34 | USD 406.23 | USD 397.38 | USD 13,510.92 | -USD 300.90 | -2.18% | +3.02% | `36f5a45f` | 18% | ~USD 357.48 |
-| MSFT | 28 | USD 426.21 | USD 411.76 | USD 11,529.28 | -USD 404.60 | -3.39% | -1.18% | `ef211767` | 18% | ~USD 375.06 |
-| AMZN | 36 | USD 247.99 | USD 245.54 | USD 8,839.44 | -USD 88.24 | -0.99% | -0.20% | `b55bef05` | 18% | ~USD 218.23 |
-| AMD | 17 | USD 508.43 | USD 489.67 | USD 8,324.39 | -USD 318.92 | -3.69% | +4.99% | `7540e83d` | 18% | ~USD 447.42 |
-| VST | 52 | USD 151.47 | USD 146.90 | USD 7,638.80 | -USD 237.64 | -3.02% | -1.25% | `5b347be3` | 18% | ~USD 133.29 |
+| NVDA | 103 | USD 213.60 | USD 209.30 | USD 21,557.90 | -USD 442.90 | -2.01% | +0.32% | `54d7d851` | 18% | ~USD 187.97 |
+| META | 23 | USD 630.12 | USD 592.34 | USD 13,623.82 | -USD 868.94 | **-5.99%** | +1.19% | `11c3a1bf` | 18% | ~USD 554.51 |
+| AVGO | 34 | USD 406.23 | USD 400.50 | USD 13,617.00 | -USD 194.82 | -1.41% | +0.98% | `36f5a45f` | 18% | ~USD 357.48 |
+| MSFT | 28 | USD 426.21 | USD 410.43 | USD 11,492.04 | -USD 441.84 | -3.70% | -0.32% | `ef211767` | 18% | ~USD 375.06 |
+| AMZN | 36 | USD 247.99 | USD 246.69 | USD 8,880.84 | -USD 46.84 | -0.52% | +0.60% | `b55bef05` | 18% | ~USD 218.23 |
+| AMD | 17 | USD 508.43 | USD 501.82 | USD 8,530.94 | -USD 112.37 | -1.30% | +2.34% | `7540e83d` | 18% | ~USD 447.42 |
+| VST | 52 | USD 151.47 | USD 148.07 | USD 7,699.64 | -USD 176.80 | -2.24% | +0.80% | `5b347be3` | 18% | ~USD 133.29 |
 
-**Notes:** Week 2 Day 3 EOD. No positions cut or stops tightened — all within guardrail ranges. Portfolio up +0.68% today (vs SPY +0.24%), first day outperforming SPY since Day 1. Semis bounced: AMD +5.0%, AVGO +3.0%, NVDA +1.7%. META most stressed at -7.05% from entry (threshold -12%); equity offering remains unconfirmed speculation — monitor in pre-market June 9. Semis (NVDA+AVGO+AMD) = USD 43,311 / USD 97,103 = 44.6% (below 50% cap). Cash USD 12,313 (12.7% — above 2% floor). All 7 trailing stops active (18%). Weekly new-position count: 1/8 (Week 2).
+**Notes:** Week 2 Day 4 pre-market. Portfolio equity up USD 632 overnight to USD 97,715 (+0.65%). All 7 positions improved: META recovering from -7.05% to -5.99% from entry (equity offering remains "pure speculation," no banks appointed — thesis intact). AMD fully recovered to -1.30% from entry vs -8.66% at weekly review. Semis (NVDA+AVGO+AMD) = USD 43,706 / USD 97,715 = 44.7% (below 50% cap, at 45% real discipline line — no new semi adds). Cash USD 12,313 (12.6%). All 7 trailing stops active (18%). Weekly new-position count: 1/8 (Week 2). SPY pre-market ~USD 742 (latest quote); Aggro return -2.28%; SPY return -1.57% (using pre-market); alpha approx -0.71pp (narrowing from -0.91pp EOD June 8).
 
 ---
 
 ## Planned next positions (Week 2)
 
 - **AMZN**: ✅ INITIATED June 8 market-open; 36 shares @ $247.99; 18% trailing stop `b55bef05`.
-- **GOOGL**: Deferred to Tuesday/Wednesday June 9–10; wait for post-equity-offering dust to settle.
-- Possible MSFT or VST add if they recover cleanly and weekly position count allows (7 slots remaining).
+- **GOOGL**: ⏳ PLANNED for June 9 market-open. USD 85B equity offering completed June 3 — fully digested. GCP +63% YoY; USD 460B cloud backlog; cheapest hyperscaler on P/E. Pre-market price ~USD 366. Target ~16 shares / ~USD 5,860 notional (~6% of portfolio).
+- Possible MSFT or VST add if they recover cleanly and weekly position count allows (6 slots remaining after GOOGL).
 
 ---
 
@@ -67,3 +67,4 @@ but always re-fetches live data before trading._
 | 2026-06-08 (market-open) | 97,455.37 | — | -2.54% | — | — |
 | 2026-06-08 (midday) | 97,033.54 | — | -2.97% | — | — |
 | 2026-06-08 (EOD close) | 97,102.72 | 739.22 | -2.90% | -1.98% | **-0.91pp** |
+| 2026-06-09 (pre-market) | 97,715.46 | ~742.30 (pre-mkt) | -2.28% | ~-1.57% | **~-0.71pp** |
