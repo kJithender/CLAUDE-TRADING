@@ -204,3 +204,30 @@ order id, and a "verified" confirmation._
 **Context:** Broad continuation of the June 5 tech selloff. MSFT down -1.60% today; META -0.86%; VST -1.13%. Semiconductors partially recovering — NVDA +1.59%, AMD +4.87%, AVGO +2.23%. META equity offering remains unconfirmed speculation; no new thesis-breaking information.
 
 **Result:** No trades executed. All 7 positions within guardrail thresholds. All 18% trailing stops active. Continue to hold.
+
+---
+
+## 2026-06-09 — DAY 4 MARKET OPEN (executed ~09:46 ET)
+
+### Trade 8 — BUY GOOGL
+| Field | Value |
+|---|---|
+| Action | BUY |
+| Symbol | GOOGL |
+| Qty | 16 shares |
+| Fill price | USD 370.22 avg |
+| Cost basis | USD 5,923.52 |
+| Portfolio % | ~6.0% |
+| Thesis | GCP Q1 2026 +63% YoY (fastest hyperscaler growth); cloud backlog USD 460B; USD 85B equity offering (June 3) completed and fully digested — dilution already priced in. Berkshire Hathaway USD 10B private placement confirms institutional confidence. Cheapest hyperscaler on P/E relative to growth rate. Diversifies away from semi-seller concentration (GOOGL is a chip BUYER via TPU). JPMorgan PT USD 460 (+24% upside). |
+| Trailing stop | 18%; order id `e52a43f1`; initial stop price ~USD 303.53 (HWM USD 370.16) |
+| Verified | ✓ position confirmed live (16 shares @ USD 370.22); trailing stop confirmed in open orders |
+
+### Day 4 deployment summary
+| Metric | Value |
+|---|---|
+| Total new deployed today | USD 5,924 (6.0% of portfolio — well within 60% daily cap) |
+| Cumulative deployed | USD 93,020 (~94.9% of portfolio) |
+| Cash remaining | USD 6,390 (6.5%) |
+| New positions opened today | 1 (GOOGL) |
+| Weekly new-position count (Week 2) | 2 / 8 allowed (AMZN June 8 + GOOGL June 9) |
+| All guardrails | ✓ passed |
