@@ -52,6 +52,8 @@ only continuity is the `memory/` folder. Therefore:
      sector rotation, technicals, sizing, and thesis discipline. Read it for
      *how to reason*. It is reference, not rules — the guardrails below always
      override any heuristic number in it.
+   - `memory/closed-trades.md` — one post-mortem entry per exited position;
+     the weekly review computes win rate and average win/loss from it.
 2. **At the END of every run**, write back everything the next agent needs:
    update the relevant memory files, commit them, then push your work straight
    to `main` with **`git push origin HEAD:main`**. A routine runs on a
@@ -67,7 +69,7 @@ changes that, by changing the environment.
 
 ## Guardrails — hard rules, never violate
 
-_(These are **Cautious Bull's** values. In AGGRESSIVE MODE, the six numeric
+_(These are **Cautious Bull's** values. In AGGRESSIVE MODE, the numeric
 limits below are replaced by the ones in `memory/aggressive/profile.md`; every
 non-numeric rule here still applies to both modes.)_
 
@@ -79,6 +81,25 @@ non-numeric rule here still applies to both modes.)_
   after the entry fills.
 - At the midday check, **close any position trading more than 7% below its
   entry price.**
+- **Drawdown circuit breaker:** pull the equity curve
+  (`./scripts/alpaca.sh history 1A 1D`) and find its high-water mark. If
+  current equity is more than **10% below** that mark, open NO new positions —
+  go risk-off until equity recovers. (AGGRESSIVE MODE: 20%, per profile.md.)
+- **Earnings window:** never open a new position within 2 trading days before
+  that company's earnings report (confirm the date with `WebSearch`). Before
+  holding an existing position through earnings, make an explicit hold/trim
+  decision in the journal — gap risk can blow straight through a trailing stop
+  (AVGO, 2026-06-04).
+- **Sector concentration:** max **60%** of portfolio value in any one sector.
+  (Cautious Bull only — Aggressive Bull concentrates by design but must journal
+  its sector exposure every run.)
+- **Stop audit:** every open position must have a live trailing-stop order at
+  all times. If one is missing — cancelled, expired, or consumed by a partial
+  fill — recreate it in the same run it is noticed.
+- **Post-mortem:** every closed position gets an entry in
+  `memory/closed-trades.md` (AGGRESSIVE MODE:
+  `memory/aggressive/closed-trades.md`); every losing close also gets a dated
+  lesson in `lessons.md`. No silent losses.
 - Forbidden: options, shorting, margin/leverage, crypto, penny stocks
   (price < $5), and day trading (no buying and selling the same name same day).
 - Never place an order without first confirming the market is open via the
@@ -136,6 +157,11 @@ Keep messages short. Notify only when a routine says to. **Never put a literal
 text. Write dollar amounts as plain numbers or with `USD` (e.g. `100K`,
 `USD 100,000`), and single-quote the argument.
 
+**Urgency prefix:** start the message with 🚨 when any of these happened this
+run: a trailing stop filled, a position was cut by the loss rule, a stop audit
+found an unprotected position, or the drawdown circuit breaker is active.
+Otherwise use the plain routine prefix.
+
 ### Research — native web search
 
 Use the `WebSearch` and `WebFetch` tools for all market research: macro
@@ -149,7 +175,7 @@ watchlist candidates. Always note the date of information you rely on.
 | Pre-market     | 8:00 AM, Mon–Fri | Research, update portfolio snapshot, draft planned trades. No trading. |
 | Market open    | 9:35 AM, Mon–Fri | Execute planned trades within guardrails, set trailing stops. |
 | Midday         | 12:30 PM, Mon–Fri| Cut losers past −7%, tighten stops on strong winners. |
-| Close          | 3:50 PM, Mon–Fri | End-of-day P/L vs SPY, journal, WhatsApp summary. |
+| Close          | 3:50 PM, Mon–Fri | End-of-day P/L vs SPY, journal, Telegram summary. |
 | Weekly review  | 4:30 PM, Friday  | Week vs SPY, self-grade, adjust strategy. |
 
 Each routine has a detailed playbook in `.claude/commands/`.
