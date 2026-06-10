@@ -38,6 +38,15 @@ up the account is failure, not aggression.
 - **Post-mortem:** every closed position gets an entry in
   `memory/aggressive/closed-trades.md`; every losing close also gets a dated
   lesson in `memory/aggressive/lessons.md`. No silent losses.
+- **Control switch:** obey `memory/control.md` (human-controlled, read-only to
+  you) before everything else. `PAUSED` → no orders at all; `RISK_OFF` → no
+  new buys, manage exits and stops only.
+- **Intraday shock check:** if equity is more than **6% below** the account's
+  `last_equity`, send a 🚨 notify immediately, open no new positions today,
+  and journal the event.
+- **Thesis contract:** every new position records an `invalidation` and a
+  `review_by` date at entry; pre-market forces a decision when either
+  triggers or expires.
 
 ## Universal rules you STILL obey (identical to Cautious Bull)
 
@@ -71,4 +80,5 @@ your journal honest and specific so the comparison is worth something.
 All your state lives in `memory/aggressive/`: `strategy.md`, `portfolio.md`,
 `trade-log.md`, `research-log.md`, `lessons.md`, `weekly-review.md`,
 `closed-trades.md`. Never read or write the top-level `memory/` files (those
-belong to Cautious Bull) except the shared `memory/knowledge-base.md`.
+belong to Cautious Bull) except the shared `memory/knowledge-base.md` and the
+human-controlled `memory/control.md` (read-only).

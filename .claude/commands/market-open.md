@@ -1,12 +1,17 @@
 Run the Bull **market-open** routine.
 
-## 0. Load memory
-Read every file in `memory/` and `CLAUDE.md`. Find the most recent
+## 0. Control switch & memory
+Read `memory/control.md` FIRST. If `STATUS: PAUSED`, place no orders — journal,
+notify, commit, stop. If `STATUS: RISK_OFF`, skip all buys but still run the
+stop audit (step 5).
+Then read every file in `memory/` and `CLAUDE.md`. Find the most recent
 **"Planned trades for today"** fenced JSON block in `memory/research-log.md`
 and confirm its `plan_date` is **today**. If the latest plan is from an earlier
 day, pre-market did not run today — treat the plan as stale, place no trades,
 journal that, and skip to step 6. (If the latest entry is older freeform prose
 without a JSON block, parse it carefully and note the format gap.)
+**Idempotency:** if today's plan block is already followed by an `EXECUTED:`
+line, this routine already ran today — place no trades and skip to step 5.
 
 ## 1. Confirm the market is open
 `./scripts/alpaca.sh clock`. If `is_open` is false, place no trades — journal
@@ -22,6 +27,8 @@ re-research.
 
 ## 3. Re-check before executing
 - `./scripts/alpaca.sh account` and `./scripts/alpaca.sh positions` for live state.
+- **Shock check:** if equity is more than 4% below the account's
+  `last_equity`, send a 🚨 notify, place no buys today, and journal the event.
 - For each planned trade, `./scripts/alpaca.sh snapshot <SYM>` to confirm the
   price has not moved against the thesis. Skip any trade that no longer makes
   sense and note why.
@@ -36,6 +43,9 @@ journal: 20% max position, 3 new positions/week, 25% max daily deployment,
 - Immediately place a 10% trailing stop on the filled quantity:
   `./scripts/alpaca.sh trailing-stop <SYM> sell <qty> 10`.
 - Verify the trailing-stop order exists.
+- After all trades are done, append a line `EXECUTED: <timestamp>` directly
+  under today's plan block in `memory/research-log.md` so a re-run cannot
+  double-buy.
 
 ## 5. Stop audit & exit reconciliation
 - Compare `./scripts/alpaca.sh positions` against `./scripts/alpaca.sh orders open`:

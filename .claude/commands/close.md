@@ -1,7 +1,9 @@
 Run the Bull **end-of-day close** routine.
 
-## 0. Load memory
-Read every file in `memory/` and `CLAUDE.md`.
+## 0. Control switch & memory
+Read `memory/control.md` FIRST and note its STATUS in the journal (close
+places no orders, so PAUSED/RISK_OFF only changes what you report).
+Then read every file in `memory/` and `CLAUDE.md`.
 
 ## 1. Pull final numbers
 - `./scripts/alpaca.sh account` — equity, cash.
@@ -35,12 +37,38 @@ or threatens Bull's current position theses.
 - If anything notable happened today, append a dated lesson to
   `memory/lessons.md`.
 
+## 5b. Race scoreboard
+Read `memory/aggressive/portfolio.md` (read-only) and compute the race:
+Bull % vs AGGRO % vs SPY % since inception. Include one scoreboard line in
+the notify, e.g. `Race: Bull +1.2 | AGGRO -4.2 | SPY +2.3 (pct since start)`.
+
+## 5c. Performance history
+Append one row to `memory/performance.csv` — create it with the header
+`date,agent,equity,spy_close` if missing: today's date, `bull`, final equity,
+SPY's closing price. This feeds the dashboard in `docs/`.
+
+## 5d. Friday watchdog
+If today is Friday and the newest entry in `memory/weekly-review.md` is more
+than 7 days old, last week's review never ran — flag it with 🚨 in the notify
+so the human can check the routine schedule.
+
+## 5e. Monthly housekeeping
+- On the first trading day of each month: move `research-log.md` and
+  `trade-log.md` entries older than 30 days into
+  `memory/archive/<YYYY-MM>.md` (create the folder if needed), leaving a
+  one-line pointer at the top of each log.
+- Quarterly (Mar/Jun/Sep/Dec, mid-month): WebSearch the latest SPY
+  ex-dividend amount and add it to a cumulative-dividends note in
+  `portfolio.md`, so the vs-SPY comparison reflects total return, not just
+  price.
+
 ## 6. Notify (every weekday)
 Send a Telegram end-of-day summary via `./scripts/notify.sh`, starting with
-`Bull EOD <date>:` — equity in USD, today's %, vs SPY since inception, number
-of trades today, and a one-line note. Start with 🚨 if a position exited at a
-loss today or the circuit breaker is near/active. Never put a literal `$` in
-the message; use `USD`/plain numbers and single-quote the argument.
+`Bull EOD <date>:` — equity in USD, today's %, vs SPY since inception, the
+race scoreboard line, number of trades today, and a one-line note. Start with
+🚨 if a position exited at a loss today, the circuit breaker is near/active,
+or the Friday watchdog fired. Never put a literal `$` in the message; use
+`USD`/plain numbers and single-quote the argument.
 
 ## 7. Commit
 `git add -A && git commit -m "close: <summary>" && git push origin HEAD:main`.

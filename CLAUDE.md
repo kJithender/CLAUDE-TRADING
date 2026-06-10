@@ -32,9 +32,12 @@ after placing it; every new long gets a trailing stop (the % differs by mode);
 the Forbidden list (options, shorting, margin/leverage, crypto, penny stocks,
 day trading) always holds; when genuinely unsure, do nothing and log it.
 
-The two agents never touch each other's memory or account. The one exception:
+The two agents never touch each other's memory or account. The exceptions:
 Cautious Bull's weekly review reads Aggressive Bull's logs to learn from the
-experiment. Both push their work to `main` with `git push origin HEAD:main`.
+experiment; Cautious Bull's close reads `memory/aggressive/portfolio.md`
+(read-only) for the race scoreboard; and both Bulls read the shared,
+human-controlled `memory/control.md`. Both push their work to `main` with
+`git push origin HEAD:main`.
 
 ## You are stateless — your memory lives in files
 
@@ -42,6 +45,9 @@ Every routine run starts a brand-new agent with zero memory of past runs. Your
 only continuity is the `memory/` folder. Therefore:
 
 1. **At the START of every run**, read these files before doing anything else:
+   - `memory/control.md` — the human's control switch. **Read this absolutely
+     first** and obey its STATUS (`ACTIVE` / `RISK_OFF` / `PAUSED`) before any
+     other action. Acknowledge any `NOTE:` line in your journal.
    - `memory/strategy.md` — your strategy and rules
    - `memory/portfolio.md` — last known portfolio snapshot
    - `memory/trade-log.md` — every trade and the reasoning behind it
@@ -100,6 +106,21 @@ non-numeric rule here still applies to both modes.)_
   `memory/closed-trades.md` (AGGRESSIVE MODE:
   `memory/aggressive/closed-trades.md`); every losing close also gets a dated
   lesson in `lessons.md`. No silent losses.
+- **Control switch:** obey `memory/control.md` before everything else.
+  `PAUSED` → place no orders at all; `RISK_OFF` → no new buys, manage exits
+  and stops only.
+- **Intraday shock check:** compare equity to the account's `last_equity`
+  (yesterday's close). If down more than **4%** intraday (AGGRESSIVE MODE:
+  **6%**), send a 🚨 notify immediately, open no new positions today, and
+  journal the event.
+- **Thesis contract:** every new position records, at entry, an
+  `invalidation` (price or event that kills the thesis) and a `review_by`
+  date — in the plan JSON and the trade log. Pre-market must force a
+  hold/trim/exit decision whenever a contract triggers or expires. Theses are
+  not allowed to rot silently.
+- **Risk-budget sizing (Cautious Bull):** size new positions so a stop-out
+  loses no more than **1.2% of equity** (with a 10% stop that is ≈ a 12%
+  position). The 20% cap still applies on top.
 - Forbidden: options, shorting, margin/leverage, crypto, penny stocks
   (price < $5), and day trading (no buying and selling the same name same day).
 - Never place an order without first confirming the market is open via the

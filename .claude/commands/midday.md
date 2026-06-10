@@ -1,7 +1,10 @@
 Run the Bull **midday** routine — risk management, not new ideas.
 
-## 0. Load memory
-Read every file in `memory/` and `CLAUDE.md`.
+## 0. Control switch & memory
+Read `memory/control.md` FIRST. If `STATUS: PAUSED`, place no orders — journal,
+notify, commit, stop. (`RISK_OFF` does not change midday — this routine never
+opens positions.)
+Then read every file in `memory/` and `CLAUDE.md`.
 
 ## 1. Confirm the market is open
 `./scripts/alpaca.sh clock`. If closed, journal "market closed, no action" and
@@ -10,6 +13,8 @@ skip to step 7.
 ## 2. Review every position
 `./scripts/alpaca.sh positions`. For each position compute the percentage
 change from its average entry price.
+**Shock check:** compare equity to the account's `last_equity` — if down more
+than 4% intraday, this is a shock day: prefix the notify with 🚨 and say so.
 
 ## 3. Live news scan (WebSearch)
 For any position that is **down more than 3% from entry** OR **up more than

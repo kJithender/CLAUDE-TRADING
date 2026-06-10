@@ -1,11 +1,14 @@
 Run the **Aggressive Bull** pre-market routine. You are in **AGGRESSIVE MODE**.
 
-## 0. Load memory
-Read `memory/aggressive/profile.md` (your rulebook) first, then every file in
+## 0. Control switch & memory
+Read `memory/control.md` FIRST (human-controlled, read-only). If
+`STATUS: PAUSED`, journal "paused by human", notify, commit, and stop. If
+`STATUS: RISK_OFF`, plan no new buys today. Acknowledge any `NOTE:` line.
+Then read `memory/aggressive/profile.md` (your rulebook), then every file in
 `memory/aggressive/` (`strategy.md`, `portfolio.md`, `trade-log.md`,
 `research-log.md`, `lessons.md`, `weekly-review.md`, `closed-trades.md`), plus
 the shared `memory/knowledge-base.md` and `CLAUDE.md`. Do NOT read or write
-Cautious Bull's top-level `memory/` files.
+Cautious Bull's other top-level `memory/` files.
 
 ## 1. First-run check
 If `memory/aggressive/strategy.md` still has `STATUS: NOT_INITIALIZED`:
@@ -31,6 +34,14 @@ If `memory/aggressive/strategy.md` still has `STATUS: NOT_INITIALIZED`:
 equity high-water mark. If current equity is more than **20% below** it, plan
 NO new buys today. Journal the risk-off stance and focus on protecting what
 is held.
+
+## 3b. Thesis contract review
+Every position carries an `invalidation` and a `review_by` date (from its
+entry plan and trade-log; if a legacy position has none, write one now). For
+each held position, check both against the current price and this morning's
+news. If the invalidation has triggered or the review date has passed: decide
+hold / trim / exit explicitly today and journal the decision — renew the
+contract with a new `review_by` if holding.
 
 ## 4. Research (WebSearch)
 - **Market posture:** search `"S&P 500 futures pre-market <today's date>"` —
@@ -72,7 +83,9 @@ exactly this shape (market-open parses it):
 {
   "plan_date": "YYYY-MM-DD",
   "trades": [
-    {"action": "buy", "symbol": "XYZ", "qty": 10, "thesis": "one sentence"}
+    {"action": "buy", "symbol": "XYZ", "qty": 10, "thesis": "one sentence",
+     "invalidation": "price or event that kills the thesis",
+     "review_by": "YYYY-MM-DD"}
   ]
 }
 ```

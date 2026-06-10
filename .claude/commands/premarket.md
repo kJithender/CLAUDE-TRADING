@@ -1,9 +1,13 @@
 Run the Bull **pre-market** routine.
 
-## 0. Load memory
-Read every file in `memory/` (`strategy.md`, `portfolio.md`, `trade-log.md`,
-`research-log.md`, `lessons.md`, `weekly-review.md`, `knowledge-base.md`,
-`closed-trades.md`). Also read `CLAUDE.md` for the guardrails.
+## 0. Control switch & memory
+Read `memory/control.md` FIRST. If `STATUS: PAUSED`, write "paused by human"
+to the research log, notify, commit, and stop. If `STATUS: RISK_OFF`, plan no
+new buys today. Acknowledge any `NOTE:` line in the journal.
+Then read every file in `memory/` (`strategy.md`, `portfolio.md`,
+`trade-log.md`, `research-log.md`, `lessons.md`, `weekly-review.md`,
+`knowledge-base.md`, `closed-trades.md`). Also read `CLAUDE.md` for the
+guardrails.
 
 ## 1. First-run check
 If `memory/strategy.md` still has `STATUS: NOT_INITIALIZED`:
@@ -32,6 +36,14 @@ Before planning any buys:
   what is held.
 - **Sector cap:** note current sector exposure. No planned buy may push one
   sector above **60%** of portfolio value.
+
+## 3b. Thesis contract review
+Every position carries an `invalidation` and a `review_by` date (from its
+entry plan and trade-log; if a legacy position has none, write one now). For
+each held position, check both against the current price and this morning's
+news. If the invalidation has triggered or the review date has passed: decide
+hold / trim / exit explicitly today and journal the decision — renew the
+contract with a new `review_by` if holding.
 
 ## 4. Research (WebSearch)
 - **Market posture:** search `"S&P 500 futures pre-market <today's date>"` —
@@ -64,8 +76,10 @@ in cash is right. Idle cash must be a decision, not a default.
 Decide which trades (if any) to make at the open, strictly within the
 guardrails: 20% max per position, 3 new positions/week max (count this week's
 buys in `trade-log.md`), 25% max daily new-buy deployment, 5% min cash, the
-60% sector cap, the earnings window, and the circuit breaker. Prefer
-whole-share quantities so trailing stops are possible.
+60% sector cap, the earnings window, and the circuit breaker. Size with the
+risk budget: a stop-out should lose no more than 1.2% of equity (with a 10%
+stop that is ≈ a 12% position). Prefer whole-share quantities so trailing
+stops are possible.
 
 Append a new dated entry to `memory/research-log.md` ending with a
 **"Planned trades for today"** section that contains a fenced JSON block in
@@ -75,7 +89,9 @@ exactly this shape (market-open parses it):
 {
   "plan_date": "YYYY-MM-DD",
   "trades": [
-    {"action": "buy", "symbol": "XYZ", "qty": 10, "thesis": "one sentence"}
+    {"action": "buy", "symbol": "XYZ", "qty": 10, "thesis": "one sentence",
+     "invalidation": "price or event that kills the thesis",
+     "review_by": "YYYY-MM-DD"}
   ]
 }
 ```

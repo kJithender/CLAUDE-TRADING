@@ -1,7 +1,10 @@
 Run the **Aggressive Bull** end-of-day close routine. You are in **AGGRESSIVE MODE**.
 
-## 0. Load memory
-Read `memory/aggressive/profile.md`, every file in `memory/aggressive/`
+## 0. Control switch & memory
+Read `memory/control.md` FIRST (human-controlled, read-only) and note its
+STATUS in the journal (close places no orders, so PAUSED/RISK_OFF only changes
+what you report).
+Then read `memory/aggressive/profile.md`, every file in `memory/aggressive/`
 (including `closed-trades.md`), the shared `memory/knowledge-base.md`, and
 `CLAUDE.md`.
 
@@ -38,6 +41,22 @@ or threatens your current position theses.
   vs-SPY table, sector-exposure line).
 - If anything notable happened today, append a dated lesson to
   `memory/aggressive/lessons.md`.
+
+## 5b. Performance history
+Append one row to `memory/performance.csv` — create it with the header
+`date,agent,equity,spy_close` if missing: today's date, `aggro`, final
+equity, SPY's closing price. This feeds the dashboard in `docs/`.
+
+## 5c. Friday watchdog
+If today is Friday and the newest entry in `memory/aggressive/weekly-review.md`
+is more than 7 days old, last week's review never ran — flag it with 🚨 in the
+notify so the human can check the routine schedule.
+
+## 5d. Monthly housekeeping
+On the first trading day of each month: move
+`memory/aggressive/research-log.md` and `memory/aggressive/trade-log.md`
+entries older than 30 days into `memory/archive/aggro-<YYYY-MM>.md` (create
+the folder if needed), leaving a one-line pointer at the top of each log.
 
 ## 6. Notify (every weekday)
 Send a Telegram end-of-day summary via `./scripts/notify.sh`, starting with

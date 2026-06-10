@@ -1,8 +1,11 @@
 Run the **Aggressive Bull** midday routine — risk management, not new ideas.
 You are in **AGGRESSIVE MODE**.
 
-## 0. Load memory
-Read `memory/aggressive/profile.md`, every file in `memory/aggressive/`
+## 0. Control switch & memory
+Read `memory/control.md` FIRST (human-controlled, read-only). If
+`STATUS: PAUSED`, place no orders — journal, notify, commit, stop. (`RISK_OFF`
+does not change midday — this routine never opens positions.)
+Then read `memory/aggressive/profile.md`, every file in `memory/aggressive/`
 (including `closed-trades.md`), the shared `memory/knowledge-base.md`, and
 `CLAUDE.md`.
 
@@ -13,6 +16,8 @@ skip to step 7.
 ## 2. Review every position
 `./scripts/alpaca.sh positions`. For each position compute the percentage change
 from its average entry price.
+**Shock check:** compare equity to the account's `last_equity` — if down more
+than 6% intraday, this is a shock day: prefix the notify with 🚨 and say so.
 
 ## 3. Live news scan (WebSearch)
 For any position that is **down more than 5% from entry** OR **up more than
