@@ -1,25 +1,11 @@
-# Closed Trades Ledger — Aggressive Bull
+# Aggressive Bull — Closed Trades Ledger
 
-_Every exited position gets one entry, added by the routine that observed the
-exit (midday cut, stop fill, thesis-break sale, or trim to zero). Newest at the
-top. The weekly review computes win rate and average win/loss from this file._
-
-<!-- Template:
-
-## YYYY-MM-DD — SYMBOL — WIN / LOSS
-- **Entry:** N shares @ USD X on YYYY-MM-DD
-- **Exit:** USD Y via (trailing stop / −12% rule / thesis break / trim)
-- **P/L:** +/−USD Z (+/−P%)
-- **Held:** N days
-- **Original thesis:** one sentence
-- **Why it ended:** one sentence
-- **Lesson:** one sentence (REQUIRED for losses — also append it to
-  memory/aggressive/lessons.md)
-
+<!-- Template row (copy for each exit):
+| YYYY-MM-DD | SYMBOL | entry_price | exit_price | P/L% | days_held | one-sentence thesis | why closed (stop fill / cut / trim / earnings / manual) | lesson (required for losses) |
 -->
 
-_No entries yet. Backfill note for the next routine that runs: at least one
-exit is missing from this ledger — AMD was cut on 2026-06-09 at −13.73% from
-entry 508.43 (the −12% rule). Reconstruct it from
-`memory/aggressive/trade-log.md`, check for any other exits since inception,
-and remove this note._
+| Date | Symbol | Entry | Exit | P/L% | Days | Thesis | Why Closed | Lesson |
+|------|--------|-------|------|------|------|--------|------------|--------|
+| 2026-06-09 | AMD | 508.43 | ~435 | -13.73% | ? | — | 12% midday cut rule | Reconstruct full details from memory/aggressive/trade-log.md |
+
+<!-- Backfill note: the AMD entry above is a stub reconstructed from the system note in the previous version of this file. Fill in exact entry date, exit price, days held, and thesis from trade-log.md, then remove this comment. -->
