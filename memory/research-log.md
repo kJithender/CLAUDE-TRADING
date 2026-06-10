@@ -5,6 +5,196 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-10 — Pre-market research (~08:08 ET)
+
+**Today is Wednesday June 10. Week of June 8: 1/3 new positions used (VST June 9). 2 slots remaining.**
+
+### Macro (pre-market June 10, 2026 ~08:08 ET)
+
+| Indicator | Value | Threshold | Status |
+|-----------|-------|-----------|--------|
+| WTI crude oil | **~$88/bbl** (−3% as Iran/Israel halt attacks) | <$100 halt-new-buys | ✓ FALLING — new buys eligible |
+| S&P 500 futures | **−0.47%** | — | ⚠️ Weak — Polymarket 22% chance positive open |
+| 10yr Treasury yield | ~4.54% (June 9 close; pre-mkt unchanged) | <4.75% watch | ✓ Below trigger — but CPI risk |
+| **May CPI — due 8:30 AM ET TODAY** | Expected 4.2% YoY (core 2.9%) | 4.75% 10yr trigger | ⏳ KEY EVENT — first above 4% since May 2023 |
+| Iran/US conflict | US and Iran exchanged military strikes overnight; Israel-Iran agreed to halt attacks; WTI falling | Oil <$100 | ⚠️ Volatile but de-escalating |
+| Tech sector | AI names extending losses — overheating AI concern + inflation | — | ⚠️ Headwind |
+
+**Macro posture: CAUTIOUS.** The dominant risk is the May CPI report at 8:30 AM ET. Expected headline 4.2% YoY — the highest reading since May 2023. If CPI prints hot or the 10yr yield spikes above 4.75% post-release, NO new buys today. The US-Iran exchange of strikes was alarming overnight, but WTI fell ~3% to ~$88 after a halt agreement, pulling the $100 oil trigger further away. Net oil direction: constructive for new buys. But the CPI gating condition is paramount — the market-open routine MUST check the actual CPI print and 10yr yield at 9:35 AM before executing any buy.
+
+---
+
+### Account (pre-market June 10, 2026 — live Alpaca data ~08:08 ET)
+
+| Metric | Value |
+|--------|-------|
+| Equity | $98,568.84 |
+| Cash | $72,753.19 (73.8%) |
+| Long market value | $25,815.65 |
+| Buying power | ~$363,297 |
+
+---
+
+### Held positions (pre-market June 10, 2026)
+
+**Active trailing stops confirmed via Alpaca orders (08:08 ET):**
+
+| Symbol | Order ID | Live HWM | Live Stop | Pre-mkt price | vs Entry | Pre-mkt % change |
+|--------|----------|----------|-----------|--------------|---------|-----------------|
+| LLY | d4147484 | $1,182.73 | $1,064.457 | $1,137.01 | **+3.98%** | −0.67% today |
+| LLY | 25989fb5 | $1,182.73 | $1,064.457 | $1,137.01 | (same) | — |
+| META | 4ea07e91 | $642.38 | $578.142 | $580.00 | **−6.55%** | **−0.785% today** ⚠️ CRITICAL |
+| VST | c4c200a5 | $150.30 | $135.270 | $143.638 | −3.48% | −1.765% today |
+
+**LLY ($1,137.01 pre-mkt, −0.67% today, +3.98% from avg entry $1,093.534):** ⭐ STRONG
+- Jefferies raised price target to $1,350 (from $1,330) — analyst conviction increasing.
+- LLY down modestly pre-market; no negative thesis events. Retatrutide Phase 3 data, all PBMs covering, Medicare Bridge July 1 (21 days) all intact.
+- Stop buffer: $1,137.01 − $1,064.457 = **$72.55 (6.38%)** ✓ Well protected.
+- **No action needed. Thesis strongest in portfolio.**
+- What changed since yesterday: analyst PT raise positive; mild pre-market weakness consistent with broad market tone; thesis unchanged.
+
+**META ($580.00 pre-mkt, −0.785% today, −6.55% from entry $620.637):** ⚠️ CRITICAL
+- Stop 4ea07e91: HWM $642.38, stop **$578.142** — buffer **$1.858 (0.32%) CRITICAL**.
+- -7% cut threshold: $577.19 — META is only **$2.81 above it**.
+- Dividend ex-date: June 15 ($0.525 × 15sh = $7.875 credit) — 5 days away. If META stops out before June 15, we miss this dividend.
+- Next earnings: July 29, 2026.
+- No META-specific negative catalyst today; weakness is macro-driven (market -0.47%, CPI risk, AI sector headwind).
+- AI ad thesis (Q1 revenue +33% YoY, enterprise AI agents, BofA Buy $856 PT) remains intact.
+- **With market futures −0.47% and hot CPI risk at 8:30 AM, META's trailing stop may fire at market open. This is the stop doing its job. DO NOT manually intervene. Let the stop manage the exit.**
+- What changed since yesterday: no company-specific news; broader market pressure continues; stop buffer narrowed from 1.39% EOD to 0.32% pre-market.
+
+**VST ($143.638 pre-mkt, −1.765% today, −3.48% from entry $148.81):** ✓ WITHIN RANGE
+- Stop c4c200a5: HWM $150.30, stop **$135.270** — buffer **$8.368 (5.83%)** ✓
+- Dividend ex-date: June 22 ($0.229 × 40sh = $9.16 credit) — 12 days away. ✓
+- -7% cut threshold: $138.39 — VST is $5.24 above it. NOT triggered.
+- Thesis: Nuclear PPAs with Meta + AWS unchanged. Q1 2026 adj EBITDA +20% YoY; revenue +43% YoY confirmed.
+- Pre-market weakness consistent with broader market tone and energy sector correlation.
+- **No action. Thesis intact. Stop protecting.** ✓
+- What changed since yesterday: dividend ex-date confirmed June 22; no thesis changes; mild pre-market weakness is market-correlated.
+
+---
+
+### Thesis contract review (June 10)
+
+- **LLY:** invalidation = stop fires ($1,064.457) or Medicare GLP-1 Bridge reversed. review_by = July 1 (Bridge effective). Current $1,137 >> invalidation. Thesis intact. **CONTINUE.** ✓
+- **META:** invalidation = price hits $577.19 (-7% threshold, co-located with stop $578.142). review_by = June 15. At $580 pre-market, META is at the invalidation boundary. **Decision: HOLD and let stop manage. If stop fires, the position exits automatically — that is correct process.** The AI ad thesis is not broken; the price action is responding to macro shock. Do NOT manually force an exit or extension.
+- **VST:** invalidation = WTI >$100, FCF guidance cut, hyperscaler PPA cancellation, or breaks below $130 on volume. review_by = July 7, 2026 (set today — 4 weeks from June 9 entry). Thesis intact on all invalidation criteria. WTI $88 ✓. No guidance changes ✓. PPAs unchanged ✓. **CONTINUE.** ✓
+
+---
+
+### Guardrail check (pre-market June 10)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 1/3 (VST June 9) | ≤3 | 2 slots remaining |
+| Cash | $72,753 (73.8%) | ≥5% | ✓ Ample |
+| LLY stop buffer | $72.55 (6.38%) | watch | ✓ Well protected |
+| META stop buffer | $1.858 (0.32%) | WATCH | ⚠️ CRITICAL — may fire at open |
+| META above −7% cut threshold ($577.19)? | Yes — $2.81 above | — | ⚠️ Barely |
+| VST stop buffer | $8.368 (5.83%) | watch | ✓ Adequate |
+| WTI oil | ~$88 (−3%) | <$100 | ✓ ELIGIBLE |
+| 10yr yield | ~4.54% (June 9) | <4.75% | ✓ — WATCH post-CPI 8:30 AM |
+| Drawdown circuit breaker | $98,568 vs HWM $101,384 = −2.78% | <−10% | ✓ Not triggered |
+| Intraday shock (vs last_equity $98,817) | −$248.80 = −0.25% | <−4% | ✓ |
+| Week of Jun 8: slots used | 1/3 | ≤3/week | ✓ |
+
+---
+
+### New position research
+
+**Slot 2 — V (Visa): CONDITIONAL BUY — concern RESOLVED**
+
+**BLOCKER RESOLVED:** CFO Chris Suh's May 12 sale of 10,639 shares at $324.88 was executed under a **pre-arranged Rule 10b5-1 trading plan** (confirmed via SEC filing). This was NOT a discretionary open-market sale. The concern that has blocked V for two weeks is now cleared.
+
+**Current price:** $325.055 (June 9 close). V is trading ABOVE the CFO's $324.88 sale price — constructive.
+
+**Thesis:**
+Visa is the world's largest payments network — an asset-light moat that processes every dollar of digital commerce, earns a fee on each transaction, and benefits structurally from cash-to-card conversion and the secular growth in AI-driven digital commerce. Q2 FY26: net revenue $11.2B (+17% YoY), non-GAAP EPS $3.31 (beat). $20B buyback just authorized — signals management confidence. The company faces no existential threat from crypto or CBDCs in the near term. Adds Financials sector diversification to a portfolio currently heavy in Healthcare/Tech/Energy.
+
+**Entry signal check (need ≥3 of 5):**
+1. ✓ Earnings momentum: Q2 FY26 +17% revenue YoY, EPS beat by 2.8%; strong track record
+2. ✓ Clear catalyst: $20B buyback authorized; AI commerce growth driving transaction volumes; Q3 earnings July 28
+3. ✓ Reasonable valuation: Visa's durable moat and minimal capex justify premium; reasonable vs. history given rate environment
+4. ✓ Technical: V closed $325 on June 9, up from $319.72 June 8 — recovering after CFO-overhang suppressed price. Now trading at/above CFO sale price. Momentum is constructive.
+5. ✓ Macro tailwind: Strong US consumer; digital payments penetration growing; AI-driven commerce volumes accelerating. Financials sector not correlated with AI semi volatility.
+
+**Result: 5 of 5 criteria met → STRONG BUY signal (conditional on CPI).**
+
+**Earnings window:** V Q3 FY26 earnings July 28, 2026 — **48 days away**. Well outside 2-day earnings window. ✓
+
+**ATR check:** V June 9 range: $325.45−$317.13 = $8.32 (2.56%). June 8 range: $4.88 (1.53%). Estimated 20-day ATR ~2.0% — well below 3% threshold. No position halving needed. ✓
+
+**Sizing:**
+- 22 shares × $325 = **$7,150 = 7.3% of portfolio** (starter conviction)
+- Cash after fill: $72,753 − $7,150 = $65,603 = 66.5% >> 5% minimum ✓
+- Daily deployment: $7,150 = 7.3% ≤ 25% cap ✓
+- Single position cap: 7.3% ≤ 20% cap ✓
+- Sector: Financials — adds diversification ✓
+- New positions this week: 2/3 (VST June 9, V June 10) ✓
+- Risk budget: 22sh × $325 × 10% stop = $715 loss = 0.73% of equity ✓ (≤1.2%)
+
+**Stop:** 10% trailing stop immediately after fill.
+
+**CPI condition (CRITICAL):** The market-open routine MUST verify at 9:35 AM:
+(1) Actual May CPI headline ≤ 4.2% YoY AND 10yr Treasury below 4.75% at market open time.
+(2) V opens in the $310–$340 range (not gapping beyond 5% from prior close).
+If CPI comes in hot (> 4.2%) or 10yr spikes above 4.75% → DEFER V to Thursday or next week.
+
+---
+
+**Slot 3 — LRCX: DEFER**
+- LRCX closed $327 on June 9 but had a massive intraday range: high $349, low $306 (13.1% single-day range). Still too volatile.
+- NVDA Senate Banking Committee hearing June 11 (tomorrow) — CEO Huang declined to testify; hearing proceeds. This is primarily an AI semi regulatory catalyst. Semi equipment sector (LRCX) will react to hearing outcome.
+- Pre-market LRCX: ~$309 — still below recent closes. Not basing cleanly.
+- **Decision: DEFER. Re-evaluate Thursday or next week once post-hearing AI semi sentiment clarifies.** Slot 3 remains open.
+
+---
+
+### Performance estimate (pre-market June 10)
+
+- **Bull equity pre-market:** $98,568.84 (−1.43% since inception $100,000)
+- **SPY estimate:** ~$729.6 (futures −0.47% from $733.06 June 9 close) → −1.33% since inception
+- **Estimated gap:** ~−0.10% (essentially at par — SPY weakness pre-market bringing it toward Bull)
+- Today P/L (unrealized, pre-mkt): LLY −$76.70, META −$68.85, VST −$103.25 = **−$248.80** (−0.25%)
+
+---
+
+### Planned trades for today (Wednesday June 10, 2026)
+
+**Primary: BUY V (Visa) 22 shares — CONDITIONAL on CPI and 10yr yield**
+
+**Conditions (market-open routine must verify before executing):**
+- Actual May CPI ≤ 4.2% YoY headline AND 10yr Treasury yield < 4.75% at 9:35 AM
+- V opens in the $310–$340 range
+- Market not in freefall (SPY not down > 1.5% at open)
+
+**Hold LLY, META (stop active), VST.**
+
+```json
+{
+  "plan_date": "2026-06-10",
+  "trades": [
+    {"action": "buy", "symbol": "V", "qty": 22, "thesis": "Payments infrastructure compounder; Q2 FY26 revenue +17% YoY; CFO 10b5-1 sale confirmed (not discretionary); $20B buyback; sector diversification into Financials; 5-of-5 entry signals met",
+     "invalidation": "V closes below entry × 0.90 (10% trailing stop fires), or Visa loses major network exclusivity, or regulatory mandate forces open access",
+     "review_by": "2026-07-28"}
+  ]
+}
+```
+
+**CPI hot-case (10yr > 4.75% at open):** No trades today. Defer V to Thursday/Friday once rate shock is absorbed.
+
+**META watch:** If META opens at or below $578.142, the trailing stop fires automatically — no manual intervention needed. If META opens at $578–$582, it is on life support; midday -7% rule at $577.19 is the next guardrail.
+
+**Upcoming catalysts:**
+- **May CPI TODAY 8:30 AM ET** — key rate trigger for V buy decision
+- **NVDA Senate Banking hearing June 11 (tomorrow)** — CEO Huang declined; hearing proceeds; AI semi reaction watch
+- **META dividend ex-date June 15** ($7.875 credit — hold if possible)
+- **VST dividend ex-date June 22** ($9.16 credit)
+- **LLY Medicare GLP-1 Bridge July 1** — 21 days away
+- **V Q3 FY26 earnings July 28** — review_by date set
+
+---
+
 ## 2026-06-09 — Pre-market research (~08:07 ET)
 
 **Today is Tuesday June 9. Week of June 8: 0/3 new positions used. 3 fresh slots.**

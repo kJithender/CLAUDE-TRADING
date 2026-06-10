@@ -3,25 +3,25 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-09 15:50 ET (close)
+**Last updated:** 2026-06-10 08:08 ET (pre-market)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
-## Account (EOD June 9, 2026 — live Alpaca data ~15:50 ET)
+## Account (Pre-market June 10, 2026 — live Alpaca data ~08:08 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $98,778.88 |
-| Cash | $72,753.20 |
-| Long market value | $26,025.68 |
-| Buying power | ~$363,885 |
+| Equity | $98,568.84 |
+| Cash | $72,753.19 (73.8%) |
+| Long market value | $25,815.65 |
+| Buying power | ~$363,297 |
 
-## Open positions (EOD June 9, 2026 — confirmed via live Alpaca data ~15:50 ET)
+## Open positions (Pre-market June 10, 2026 — confirmed via live Alpaca data ~08:08 ET)
 
-| Symbol | Qty | Avg entry | Price (EOD) | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
+| Symbol | Qty | Avg entry | Price (pre-mkt) | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
 |--------|-----|-----------|-------------|-----------|----------------|----------------|---------------|
-| LLY | 10 | $1,093.534 | $1,139.8225 | $11,398.23 | +$462.885 (+4.23%) | 11.54% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, HWM **$1,182.73**, stop **$1,064.457**) ✓ |
-| META | 15 | $620.637 | $586.27 | $8,794.05 | -$515.50 (-5.54%) | 8.90% | 4ea07e91, HWM $642.38, stop $578.142 ✓ — buffer **$8.13 (1.39%)** ⚠️ CRITICAL |
-| VST | 40 | $148.81 | $145.835 | $5,833.40 | -$119.00 (-2.00%) | 5.90% | c4c200a5 (40sh, HWM **$150.30**, stop **$135.270**) ✓ — 7.24% buffer |
+| LLY | 10 | $1,093.534 | $1,137.01 | $11,370.10 | +$434.76 (+3.98%) | 11.54% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, HWM **$1,182.73**, stop **$1,064.457**) ✓ |
+| META | 15 | $620.637 | $580.00 | $8,700.00 | -$609.55 (-6.55%) | 8.83% | 4ea07e91, HWM $642.38, stop $578.142 ✓ — buffer **$1.858 (0.32%)** ⚠️⚠️ CRITICAL — may fire at open |
+| VST | 40 | $148.81 | $143.638 | $5,745.55 | -$206.85 (-3.48%) | 5.83% | c4c200a5 (40sh, HWM **$150.30**, stop **$135.270**) ✓ — 5.83% buffer |
 | ~~NVDA~~ | ~~30~~ | ~~$216.302~~ | — | — | **CLOSED -$217.80 (-3.36%) via trailing stop** | — | **FILLED** (8c6b9680) at $209.042 ~11:20 AM ET Jun 5 ✓ |
 | ~~MSFT~~ | ~~20~~ | ~~$422.31~~ | — | — | **CLOSED -$58.94 (-0.70%) via trailing stop** | — | **FILLED** (a55a3db6) at $419.363 ~12:08 PM ET Jun 5 ✓ |
 | ~~AVGO~~ | ~~20~~ | ~~$417.366~~ | — | — | **CLOSED -$175.12 (-2.1%) via trailing stop** | — | **FILLED** (a8e344f4) at $408.61 Jun 4 ✓ |
@@ -58,40 +58,42 @@ the last known state, but always re-fetches live data before trading._
 | Open (2026-06-09) | $99,222.15 | ~$747 est (+1.04% from Jun 8 close) | ~-1.82% est |
 | Midday (2026-06-09) | $98,734.63 | ~$747 est | ~-2.03% est |
 | **Close (2026-06-09)** | **$98,778.88** | **$733.06** | **-0.36%** |
-| **Since inception (2026-05-21)** | **-1.22%** | **-0.86%** | **-0.36%** |
+| Pre-mkt (2026-06-10) | $98,568.84 | ~$729.6 est (futures −0.47%) | **~−0.10% est** |
+| **Since inception (2026-05-21)** | **-1.43%** | **~-1.33% est** | **~-0.10% est** |
 
 ## Notes
 
-**EOD June 9, 2026 — Position summary:**
-- **LLY** ⭐ $1,139.8225 (+4.23% from avg entry $1,093.534, -0.81% today). Both trailing stops (d4147484, 25989fb5): HWM $1,182.73, stop $1,064.457 ✓. Buffer $75.37 (6.61%). Medicare GLP-1 Bridge July 1 in 22 days. Thesis strongest in portfolio.
-- **META** ⚠️ $586.27 (-5.54% from entry $620.637, +0.15% today). Stop 4ea07e91: HWM $642.38, stop $578.142 ✓. Buffer **$8.13 (1.39%) CRITICAL**. -7% cut threshold $577.19 — only $9.08 above it. Wednesday open is critical.
-- **VST** $145.835 (-2.00% from entry $148.81, -0.73% today). Stop c4c200a5: HWM $150.30, stop $135.270 ✓. Buffer $10.565 (7.24%). Nuclear power AI demand thesis intact; PPAs with Meta+AWS unchanged.
+**Pre-market June 10, 2026 — Position summary:**
+- **LLY** ⭐ $1,137.01 (+3.98% from avg entry $1,093.534, -0.67% pre-mkt). Both trailing stops: HWM $1,182.73, stop $1,064.457 ✓. Buffer $72.55 (6.38%). Jefferies raised PT to $1,350. Medicare GLP-1 Bridge July 1 in 21 days. Thesis STRONGEST.
+- **META** ⚠️⚠️ $580.00 (-6.55% from entry $620.637, -0.785% pre-mkt). Stop 4ea07e91: HWM $642.38, stop $578.142 ✓. Buffer **$1.858 (0.32%) CRITICAL**. -7% cut threshold $577.19 — only $2.81 above it. Stop likely fires at open (market futures -0.47%, CPI risk). Ex-div June 15.
+- **VST** $143.638 (-3.48% from entry $148.81, -1.765% pre-mkt). Stop c4c200a5: HWM $150.30, stop $135.270 ✓. Buffer $8.368 (5.83%). Nuclear PPAs with Meta+AWS intact. Dividend ex-date June 22 ($9.16 credit).
 
-**SPY today (June 9):**
-- SPY had dramatic intraday reversal: opened $743.63, peaked $746.90, crashed to low $722.59, recovered to close $733.06.
-- SPY today: -0.84% from June 8 close ($739.30 → $733.06).
-- Bull outperformed SPY today by +0.64% — 73.7% cash cushion at work.
+**SPY today (June 9 final):**
+- SPY had dramatic intraday reversal: opened $743.63, peaked $746.90, crashed to $722.59, recovered to close $733.06 (-0.84%).
+- Bull outperformed SPY by +0.64% that day — 73.7% cash cushion at work.
 
-**Since-inception gap NARROWED to -0.36%:**
-- Significant improvement from -0.96% at June 8 close.
-- Bull -1.22% vs SPY -0.86% since inception.
-- Cash drag still present but SPY's afternoon selloff compressed the gap substantially.
+**Pre-market June 10 note:**
+- CPI report at 8:30 AM ET — May headline 4.2% YoY expected (first above 4% since May 2023). Key rate gating event.
+- META stop at $578.142 — pre-market $580.00 — buffer only 0.32%. Stop may fire at open.
+- V (Visa) conditional buy planned pending CPI benign (10yr < 4.75%).
+- VST thesis contract review_by: July 7, 2026 (set today).
 
-**Trailing stop status (EOD June 9 — confirmed via live Alpaca orders ~15:50 ET):**
-- VST (c4c200a5): 40sh — HWM **$150.30**, stop **$135.270** ✓ (7.24% buffer)
-- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (6.61% buffer)
+**Trailing stop status (pre-market June 10 — confirmed via live Alpaca orders ~08:08 ET):**
+- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (6.38% buffer)
 - LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
-- META (4ea07e91): HWM $642.38, stop $578.142 ✓ — buffer $8.13 (1.39%) ⚠️ CRITICAL
+- META (4ea07e91): HWM $642.38, stop $578.142 ✓ — buffer **$1.858 (0.32%) ⚠️⚠️ CRITICAL**
+- VST (c4c200a5): 40sh — HWM **$150.30**, stop **$135.270** ✓ (5.83% buffer)
 - ~~NVDA (8c6b9680)~~: FILLED ✓ | ~~MSFT (a55a3db6)~~: FILLED ✓ | ~~AVGO (a8e344f4)~~: FILLED ✓ | ~~AMZN (bbcd70fa)~~: CANCELED ✓
 
-**Week of June 8 — new position slots (updated June 9 EOD):**
+**Week of June 8 — new position slots (updated June 10 pre-market):**
 - **Slot 1:** VST — **BOUGHT** 40sh @ $148.81 ✓ (June 9)
-- **Slot 2:** V (Visa) — DEFER; CFO 51.9% open-market sale, no 10b5-1 confirmation
-- **Slot 3:** LRCX — DEFER; needs base after -9.87% June 5 drop; NVDA hearing June 11
+- **Slot 2:** V (Visa) — **CONDITIONAL BUY June 10** (if CPI ≤ 4.2% and 10yr < 4.75%); CFO 10b5-1 confirmed ✓
+- **Slot 3:** LRCX — DEFER; NVDA hearing June 11 tomorrow; still volatile
 
 **Upcoming catalysts:**
-- LLY Medicare GLP-1 Bridge program effective July 1 (22 days)
-- META dividend ex-date ~June 15 (USD 7.875 credit for 15 shares)
-- NVDA Senate Banking hearing June 11 (CEO Huang declined; hearing proceeds without him)
-- LLY retatrutide Phase 3 data (released June 6 at ADA) — very positive pipeline news
-- VST Perry nuclear plant restart — AI baseload power secular demand
+- **May CPI June 10 at 8:30 AM ET** — gates V buy; first >4% reading since May 2023 expected
+- LLY Medicare GLP-1 Bridge program effective July 1 (21 days)
+- META dividend ex-date June 15 (USD 7.875 credit for 15 shares)
+- VST dividend ex-date June 22 (USD 9.16 credit for 40 shares)
+- NVDA Senate Banking hearing June 11 (CEO Huang declined; hearing proceeds)
+- V Q3 FY26 earnings July 28 (thesis review_by date)

@@ -5,6 +5,12 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons (recent)
 
+### 2026-06-10 — V (Visa) CFO 10b5-1 confirmation: always verify Form 4 transaction type before labeling insider selling as bearish
+The Visa CFO's May 12 sale of 10,639 shares ($3.46M, 51.9% of holdings) was initially flagged as a bearish open-market discretionary sale and blocked the V buy for two weeks. SEC filing review confirms the transaction was under a pre-arranged Rule 10b5-1 plan — scheduled months in advance, NOT a discretionary sale. Two weeks of correct deferral turned into two weeks of unnecessary delay once the 10b5-1 status was confirmed. Lesson: always verify whether an insider sale was executed under a 10b5-1 plan before treating it as a conviction-level bearish signal. A plan-based sale is structurally different from a discretionary sale.
+
+### 2026-06-03 — Regulatory headwinds (EU cloud rules) silently eroded AMZN below the -7% threshold
+AMZN drifted from entry $269.13 to the -7% cut threshold ($250.29) over 12 days with no single catalyst. European cloud regulation pressures (AWS government contract risk) and heavy capex cycle created sustained downward drift. The position hit the guardrail not with a bang but a slow grind. Lesson: before entry, explicitly score structural regulatory headwinds (EU, DOJ, FTC scrutiny) as a negative entry signal — not just a "risk to monitor." A position facing both capex headwinds and regulatory uncertainty requires higher conviction to justify the entry.
+
 ### 2026-06-09 — Cash cushion compressed the since-inception gap by over half in one day
 SPY had its biggest intraday swing since inception: opened $743.63, peaked $746.90, crashed to a low of $722.59 (-2.9% from open), then recovered to close $733.06 (-0.84% from prior close). Bull with 73.7% cash fell only -0.20%. The since-inception gap narrowed from -0.96% to -0.36% in a single session — cash drag hurts in up markets but repeatedly pays off in volatile/down sessions. This is the second major down-day demonstration since the Jun 5 NFP shock. META showed notable relative strength: +0.15% on a day SPY fell -0.84% and hit a -2.9% intraday low, suggesting some support is forming near the $578-580 stop level. Still, the 1.39% stop buffer remains the primary risk going into Wednesday.
 
