@@ -5,6 +5,9 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons (recent)
 
+### 2026-06-10 — META stop-out: entering high-beta names near macro inflections co-locates the stop with the -7% rule
+META entered June 1 into a macro reversal (strong NFP June 5 → delayed rate cuts → multiple compression on high-P/E names). With trailing stop HWM $642.38 and stop $578.142, the stop was co-located with the -7% cut threshold at $577.19. Any thesis-consistent broad-market weakness resulted in a near-maximum-loss automatic exit at $578.00 (−6.87%). Lesson: before initiating a high-multiple name, check the macro calendar for imminent rate-risk events (major payroll, CPI, FOMC) that could create sustained multiple compression. When the stop and the -7% rule are within 1% of each other, the expected-loss on a stop-out is nearly the same as the maximum guardrail loss — that is an unfavorable entry setup.
+
 ### 2026-06-10 — V (Visa) CFO 10b5-1 confirmation: always verify Form 4 transaction type before labeling insider selling as bearish
 The Visa CFO's May 12 sale of 10,639 shares ($3.46M, 51.9% of holdings) was initially flagged as a bearish open-market discretionary sale and blocked the V buy for two weeks. SEC filing review confirms the transaction was under a pre-arranged Rule 10b5-1 plan — scheduled months in advance, NOT a discretionary sale. Two weeks of correct deferral turned into two weeks of unnecessary delay once the 10b5-1 status was confirmed. Lesson: always verify whether an insider sale was executed under a 10b5-1 plan before treating it as a conviction-level bearish signal. A plan-based sale is structurally different from a discretionary sale.
 

@@ -3,6 +3,72 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-10 12:34 ET — MIDDAY CHECK — META trailing stop filled; VST near -7% threshold
+
+- **Action:** No manual trades. META trailing stop auto-executed 11:06 AM ET. Stop audit passed. VST on high alert.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 12:34 ET — next close 16:00 ET)
+- **Account:** Equity $98,428.62 | Cash $74,304.65 (75.5%) | Long market value $24,123.97
+
+### META — EXIT via trailing stop (auto-executed 11:06 AM ET)
+- **Action:** SELL 15 shares META (trailing stop order 4ea07e91, filled 11:06 AM ET June 10)
+- **Fill:** 15 shares @ $578.00 avg (confirmed in filled orders)
+- **Why:** Trailing stop HWM $642.38, stop $578.142 triggered on continued broad market weakness. META has drifted lower since June 5 NFP shock and never recovered to HWM. Stop auto-executed at $578.00.
+- **P/L from entry:** 15sh × ($578.00 − $620.637) = **−$639.56 (−6.87%)** from entry.
+- **Verified:** META absent from positions ✓. Stop order 4ea07e91 shows status "filled" at $578.00 ✓. No orphaned orders for META.
+
+### Shock check
+- Equity $98,428.62 vs last_equity $98,817.64 = −$389.02 = **−0.39%** today — well below −4% threshold ✓ No shock day.
+
+### Position review (12:34 ET)
+
+**LLY** ($1,147.77, **+4.96% from avg entry $1,093.534**, **+0.27% today** vs $1,144.68 lastday) ⭐ STRONG
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** — status "new" ✓
+- Stop buffer: $1,147.77 − $1,064.457 = **$83.31 (7.26%)** ✓ Well protected.
+- −7% cut threshold: $1,016.99 — CLEAR. Tighten (+15%) threshold: $1,257.56 — NOT triggered.
+- No action.
+
+**V** ($321.085, **−0.77% from entry $323.57**, **−1.22% today** vs $325.05 lastday) ✓ WITHIN RANGE
+- Trailing stop 66033918: HWM $325.51, stop **$292.959** — status "new" ✓
+- Stop buffer: $321.085 − $292.959 = **$28.13 (8.75%)** ✓ Adequate.
+- −7% cut threshold: $300.92 — CLEAR. Tighten (+15%) threshold: $372.11 — NOT triggered.
+- No action. New position (day 1); mild softness is market-correlated.
+
+**VST** ($139.56, **−6.22% from entry $148.81**, **−4.56% today** vs $146.22 lastday) ⚠️ HIGH WATCH
+- Trailing stop c4c200a5: HWM **$150.30**, stop **$135.270** — status "new" ✓
+- Stop buffer: $139.56 − $135.270 = **$4.29 (3.08%)** ⚠️ Thin.
+- −7% cut threshold: **$138.39** — VST is only **$1.17 above it**.
+- Live news scan: No VST-specific negative catalyst found. Decline appears broad-market correlated. Nuclear PPA thesis with Meta + AWS unchanged. Q1 adj EBITDA +20% YoY confirmed. Dividend ex-date June 22 intact.
+- **Decision: HOLD. Thesis intact. Stop active. −7% rule has NOT been breached ($139.56 > $138.39). Do NOT cut manually — let stop manage exit if deterioration continues. If VST closes below $138.39 or touches $135.27 stop, exit will be automatic.**
+- Tighten (+15%) threshold: $171.13 — NOT triggered.
+
+### Guardrail checks (12:34 ET)
+- No position below −7% cut threshold: LLY +4.96%, V −0.77%, VST −6.22% ($1.17 above threshold) ✓
+- No position above +15% tighten threshold ✓
+- Drawdown circuit breaker: Equity $98,429 vs HWM $101,384 = **−2.53%** — well within −10% limit ✓
+- Active trailing stops (all 3 confirmed via live Alpaca orders):
+  - LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+  - LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+  - V (66033918): 22sh — HWM **$325.51**, stop **$292.959** ✓
+  - VST (c4c200a5): 40sh — HWM **$150.30**, stop **$135.270** ✓
+  - ~~META (4ea07e91)~~: **FILLED** $578.00 ✓
+- Cash $74,304.65 (75.5%) >> 5% minimum ✓
+- No new positions at midday — risk management only ✓
+- No orphaned trailing-stop orders ✓
+
+### Performance (12:34 ET)
+- **Equity:** $98,428.62 (vs last_equity $98,817.64 = −$389.02 today = −0.39%)
+- **Today P/L:** META stop fill impact (realized −$639.56 vs yesterday mark); LLY +$30.90 intraday, V −$54.67 intraday, VST −$266.40 intraday
+- **Cash:** $74,304.65 (75.5%) | Long market value: $24,123.97
+- **Since inception (2026-05-21):** Bull **−1.57%** ($100K → $98,428.62)
+- **Week of June 8:** 2/3 positions used (VST June 9, V June 10). 1 slot remaining (LRCX deferred — NVDA hearing today June 11 pending).
+
+### Notes
+- META trailing stop filled cleanly at $578 this morning. Thesis was intact (AI ad moat, enterprise agents) but the price never recovered to HWM after the June 5 NFP shock. The stop did its job — no manual intervention was appropriate at any point. Post-mortem logged in closed-trades.md; lesson logged in lessons.md.
+- VST is the immediate risk. At $139.56 with the −7% threshold at $138.39, only $1.17 of cushion remains. No specific catalyst found — broad market weakness is the culprit. The thesis (nuclear PPAs with Meta + AWS, AI power demand secular tailwind) is unchanged. The stop at $135.27 provides a defined exit floor. DO NOT pre-empt the stop unless the −7% rule is breached at midday. If VST holds $138.39 through close, no action. If it breaches $138.39 before close: close immediately.
+- Portfolio now has 3 positions (LLY, V, VST) with 75.5% cash. LLY remains the standout (+4.96%). The high-cash posture is again providing relative protection on a down market day.
+
+---
+
 ## 2026-06-10 09:39 ET — MARKET OPEN — BUY V 22 shares (Slot 2 of 3)
 - **Action:** BUY 22 shares V (limit order at $324.68 — bid×1.003; actual fill $323.57 avg, better than limit)
 - **Fill:** 22 shares @ avg $323.57 (order id: 4d966b86-5dd3-46c8-9e16-82aa9aa7dd42, filled ~09:39 ET June 10)

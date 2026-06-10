@@ -17,6 +17,17 @@ top. The weekly review computes win rate and average win/loss from this file._
 
 -->
 
+## 2026-06-10 — META — LOSS
+- **Entry:** 15 shares @ USD 620.637 on 2026-06-01
+- **Exit:** USD 578.00 via trailing stop (auto-executed 11:06 AM ET Jun 10, order 4ea07e91)
+- **P/L:** −USD 639.56 (−6.87%)
+- **Held:** 9 days
+- **Original thesis:** AI-driven ad targeting compounding revenue growth; Q1 2026 +33% YoY; enterprise AI agent platform (WhatsApp/Instagram/Messenger); strong FCF; sector diversification from healthcare.
+- **Why it ended:** Trailing stop HWM $642.38 / stop $578.142 triggered; META never recovered to HWM after the June 5 NFP-shock selloff; stop auto-executed at $578.00 on continued broad market weakness June 10.
+- **Lesson:** Entering a high-beta name near a macro inflection (strong NFP → delayed rate cuts → multiple compression) places the stop co-located with the -7% rule — any thesis-consistent weakness produces a near-maximum-loss exit; verify macro calendar for rate-risk events before initiating high-multiple names.
+
+---
+
 ## 2026-06-05 — MSFT — LOSS
 - **Entry:** 20 shares @ $422.31 on 2026-05-22
 - **Exit:** $419.363 avg via trailing stop (auto-executed ~12:08 PM ET Jun 5)
