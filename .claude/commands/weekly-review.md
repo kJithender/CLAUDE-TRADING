@@ -1,7 +1,9 @@
 Run the Bull **weekly review** routine (Fridays).
 
-## 0. Load memory
-Read every file in `memory/` and `CLAUDE.md`, including
+## 0. Control switch & memory
+Read `memory/control.md` FIRST and note its STATUS in the journal (weekly
+review places no orders, so PAUSED/RISK_OFF only changes what you report).
+Then read every file in `memory/` and `CLAUDE.md`, including
 `memory/closed-trades.md`.
 
 ## 1. Gather the week's data
