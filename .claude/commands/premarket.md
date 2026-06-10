@@ -1,13 +1,21 @@
 Run the Bull **pre-market** routine.
 
-## 0. Control switch & memory
-Read `memory/control.md` FIRST. If `STATUS: PAUSED`, write "paused by human"
-to the research log, notify, commit, and stop. If `STATUS: RISK_OFF`, plan no
-new buys today. Acknowledge any `NOTE:` line in the journal.
-Then read every file in `memory/` (`strategy.md`, `portfolio.md`,
-`trade-log.md`, `research-log.md`, `lessons.md`, `weekly-review.md`,
-`knowledge-base.md`, `closed-trades.md`). Also read `CLAUDE.md` for the
-guardrails.
+## 0. Live-switch guard, lock, control switch, memory
+- **Live-switch guard:** if `ALPACA_BASE_URL` does not contain `paper`, send
+  🚨 "live endpoint detected, halting", place no orders, stop.
+- **Lock:** read `memory/_lock`. If present and not expired, abort and notify
+  "skipped, another routine active". Otherwise write `_lock` with
+  `{routine: premarket, started, expires: +8min}` and continue.
+- **Control switch:** read `memory/control.md`. If `STATUS: PAUSED`, write
+  "paused by human" to the research log, notify, release the lock, commit,
+  and stop. If `STATUS: RISK_OFF`, plan no new buys today. Acknowledge any
+  `NOTE:` line in the journal. If a `QUERY:` line is present, draft a
+  paragraph answer for inclusion in the notify (step 9) and clear the line by
+  rewriting the file.
+- **Memory:** read every file in `memory/` (`strategy.md`, `portfolio.md`,
+  `trade-log.md`, `research-log.md`, `lessons.md`, `weekly-review.md`,
+  `knowledge-base.md`, `closed-trades.md`, last ~50 lines of `trades.jsonl`).
+  Also read `CLAUDE.md` for the guardrails.
 
 ## 1. First-run check
 If `memory/strategy.md` still has `STATUS: NOT_INITIALIZED`:
@@ -45,6 +53,17 @@ news. If the invalidation has triggered or the review date has passed: decide
 hold / trim / exit explicitly today and journal the decision — renew the
 contract with a new `review_by` if holding.
 
+## 3c. Conviction-weighted holding review (Monday only)
+On Mondays, re-rank every held position **A / B / C**:
+- **A** — original thesis intact, working, conviction still high.
+- **B** — working but flat, or thesis intact but the catalyst slipped.
+- **C** — thesis is wobbling, position is dragging, or it's been quiet too long.
+
+Track each position's rating in `memory/portfolio.md`. **If a name has been
+rated C for 3 consecutive Monday reviews and has not been promoted to B+,
+plan to trim it by half today.** Forces decisions on quiet underperformers
+instead of letting them rot toward the −7% rule.
+
 ## 4. Research (WebSearch)
 - **Market posture:** search `"S&P 500 futures pre-market <today's date>"` —
   overnight direction, macro news (Fed, CPI, jobs, geopolitical), and the
@@ -58,6 +77,10 @@ contract with a new `review_by` if holding.
 
 Record findings as dated bullets in `memory/research-log.md` (source,
 headline, relevance, date of the fact).
+
+For **every held position**, the research-log entry MUST contain a one-line
+"what changed since yesterday" — even if it is "nothing material, thesis
+unchanged". Forces engagement with overnight news instead of stale theses.
 
 ## 5. Earnings-window rule
 - **No new buy** in any name reporting earnings within the next 2 trading days.

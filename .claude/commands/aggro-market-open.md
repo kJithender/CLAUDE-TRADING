@@ -1,19 +1,27 @@
 Run the **Aggressive Bull** market-open routine. You are in **AGGRESSIVE MODE**.
 
-## 0. Control switch & memory
-Read `memory/control.md` FIRST (human-controlled, read-only). If
-`STATUS: PAUSED`, place no orders — journal, notify, commit, stop. If
-`STATUS: RISK_OFF`, skip all buys but still run the stop audit (step 5).
-Then read `memory/aggressive/profile.md`, every file in `memory/aggressive/`
-(including `closed-trades.md`), the shared `memory/knowledge-base.md`, and
-`CLAUDE.md`. Find the most recent **"Planned trades for today"** fenced JSON
-block in `memory/aggressive/research-log.md` and confirm its `plan_date` is
-**today**. If the latest plan is from an earlier day, aggressive pre-market did
-not run today — treat the plan as stale, place no trades, journal that, and
-skip to step 6. (If the latest entry is older freeform prose without a JSON
-block, parse it carefully and note the format gap.)
-**Idempotency:** if today's plan block is already followed by an `EXECUTED:`
-line, this routine already ran today — place no trades and skip to step 5.
+## 0. Live-switch guard, lock, control switch, memory
+- **Live-switch guard:** if `ALPACA_BASE_URL` does not contain `paper`, 🚨
+  "live endpoint detected, halting", stop.
+- **Lock:** read `memory/_lock`. If present and not expired, abort and notify
+  "skipped, another routine active". Otherwise write `_lock` with
+  `{routine: aggro-market-open, started, expires: +8min}`.
+- **Control switch:** read `memory/control.md` (read-only). If
+  `STATUS: PAUSED`, place no orders — journal, notify, release lock, commit,
+  stop. If `STATUS: RISK_OFF`, skip all buys but still run the stop audit
+  (step 5).
+- **Memory:** read `memory/aggressive/profile.md`, every file in
+  `memory/aggressive/` (including `closed-trades.md`), the shared
+  `memory/knowledge-base.md`, and `CLAUDE.md`. Find the most recent
+  **"Planned trades for today"** fenced JSON block in
+  `memory/aggressive/research-log.md` and confirm its `plan_date` is **today**.
+  If the latest plan is from an earlier day, aggressive pre-market did not run
+  today — treat the plan as stale, place no trades, journal that, skip to
+  step 6. (If the latest entry is older freeform prose without a JSON block,
+  parse it carefully and note the format gap.)
+- **Idempotency:** if today's plan block is already followed by an
+  `EXECUTED:` line, this routine already ran today — place no trades, skip
+  to step 5.
 
 ## 1. Confirm the market is open
 `./scripts/alpaca.sh clock`. If `is_open` is false, place no trades — journal
@@ -44,6 +52,10 @@ journal: 35% max position, 8 new positions/week, 60% max daily deployment,
 - Immediately place an **18%** trailing stop on the filled quantity:
   `./scripts/alpaca.sh trailing-stop <SYM> sell <qty> 18`.
 - Verify the trailing-stop order exists.
+- After **each** verified fill, append one JSON line to
+  `memory/trades.jsonl` (`agent: "aggro"`, ts, action, symbol, qty,
+  fill_price, thesis, invalidation, review_by) — the structured feed for
+  weekly-review stats.
 - After all trades are done, append a line `EXECUTED: <timestamp>` directly
   under today's plan block in `memory/aggressive/research-log.md` so a re-run
   cannot double-buy.

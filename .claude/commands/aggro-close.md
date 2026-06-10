@@ -1,12 +1,21 @@
 Run the **Aggressive Bull** end-of-day close routine. You are in **AGGRESSIVE MODE**.
 
-## 0. Control switch & memory
-Read `memory/control.md` FIRST (human-controlled, read-only) and note its
-STATUS in the journal (close places no orders, so PAUSED/RISK_OFF only changes
-what you report).
-Then read `memory/aggressive/profile.md`, every file in `memory/aggressive/`
-(including `closed-trades.md`), the shared `memory/knowledge-base.md`, and
-`CLAUDE.md`.
+## 0. Live-switch guard, lock, control switch, memory
+- **Live-switch guard:** assert `ALPACA_BASE_URL` contains `paper`.
+- **Lock:** read `memory/_lock`. If present and not expired, abort and notify.
+  Otherwise write `_lock` with `{routine: aggro-close, started, expires:
+  +8min}`.
+- **Control switch:** read `memory/control.md` (read-only) and note STATUS
+  in the journal (close places no orders).
+- **Memory:** read `memory/aggressive/profile.md`, every file in
+  `memory/aggressive/` (including `closed-trades.md`), the shared
+  `memory/knowledge-base.md`, and `CLAUDE.md`.
+
+## 0b. Half-day / dedup guard
+- Check the Alpaca clock's `next_close` field. Half-days run normally — note
+  it in the journal.
+- **Dedup:** if `memory/performance.csv` already has a row for today + `aggro`,
+  update that row instead of appending a duplicate.
 
 ## 1. Pull final numbers
 - `./scripts/alpaca.sh account` — equity, cash.

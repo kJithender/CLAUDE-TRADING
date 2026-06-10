@@ -73,6 +73,26 @@ only continuity is the `memory/` folder. Therefore:
 real money is at risk. Never switch to live trading on your own — only the human
 changes that, by changing the environment.
 
+**Live-switch guard.** At the start of every routine that can place orders
+(premarket plans them, market-open/midday place them), assert that
+`ALPACA_BASE_URL` contains the substring `paper`. If it does not, treat the
+environment as live, send a 🚨 Telegram message saying "live endpoint
+detected, halting", place no orders, and stop. Only the human flips this, and
+only by deliberately editing the environment variable.
+
+## Concurrency — one routine at a time
+
+`memory/_lock` is a single-writer lock. Before any other work, every routine:
+1. Reads `_lock` if present. If its `expires` ISO timestamp is in the future
+   (the lock is still hot), abort the run, notify "skipped, another routine
+   active", and stop. No commits.
+2. Otherwise, write `_lock` with `{"routine": "<name>", "started":
+   "<iso-utc>", "expires": "<iso-utc + 8 minutes>"}` and proceed.
+3. Delete `_lock` (or write `{}`) before the final commit, success or failure.
+
+This kills the git race between Cautious and Aggressive routines that fire
+simultaneously and corrupt each other's pushes.
+
 ## Guardrails — hard rules, never violate
 
 _(These are **Cautious Bull's** values. In AGGRESSIVE MODE, the numeric

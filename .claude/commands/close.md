@@ -1,9 +1,23 @@
 Run the Bull **end-of-day close** routine.
 
-## 0. Control switch & memory
-Read `memory/control.md` FIRST and note its STATUS in the journal (close
-places no orders, so PAUSED/RISK_OFF only changes what you report).
-Then read every file in `memory/` and `CLAUDE.md`.
+## 0. Live-switch guard, lock, control switch, memory
+- **Live-switch guard:** assert `ALPACA_BASE_URL` contains `paper`. If not,
+  🚨 notify and stop.
+- **Lock:** read `memory/_lock`. If present and not expired, abort and notify.
+  Otherwise write `_lock` with `{routine: close, started, expires: +8min}`.
+- **Control switch:** read `memory/control.md` and note its STATUS in the
+  journal (close places no orders, so PAUSED/RISK_OFF only changes what you
+  report).
+- **Memory:** read every file in `memory/` and `CLAUDE.md`.
+
+## 0b. Half-day / dedup guard
+- Check the Alpaca clock's `next_close` field. If today is a **half-day**
+  (next_close was at 13:00 ET, not 16:00 ET), still run — but mark it in the
+  journal so the dashboard knows.
+- **Dedup:** if `memory/performance.csv` already has a row for today's date
+  + `bull`, do NOT append another. Update the existing row instead. The
+  routine sometimes fires late on a half-day after the market is already
+  closed and would otherwise double-write.
 
 ## 1. Pull final numbers
 - `./scripts/alpaca.sh account` — equity, cash.

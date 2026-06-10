@@ -18,3 +18,20 @@ STATUS: ACTIVE
 
 Add a line starting with `NOTE:` and both Bulls will read it at the start of
 their next run and acknowledge it in their journal.
+
+## Asking Bull a question
+
+Add a line starting with `QUERY:` and the next routine to run will read it,
+include a paragraph answer in its Telegram notify, and clear the line by
+rewriting the file. Bull does NOT trade on a query — answers only.
+
+## Cross-Bull learning trigger
+
+If Aggressive Bull beats Cautious Bull by more than 5 percentage points
+(since-inception return) for **2 consecutive weekly reviews**, Cautious Bull's
+next weekly review must journal one specific lesson learned from AGGRO and
+propose one concrete rule change (sizing, deployment pace, watchlist, or
+exit). Set the line below to `TRIGGERED: <date>` when this condition first
+fires; clear it once the lesson is journaled. Both Bulls read this line.
+
+CROSS_BULL_LEARNING:

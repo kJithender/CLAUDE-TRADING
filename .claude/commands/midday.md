@@ -1,10 +1,15 @@
 Run the Bull **midday** routine — risk management, not new ideas.
 
-## 0. Control switch & memory
-Read `memory/control.md` FIRST. If `STATUS: PAUSED`, place no orders — journal,
-notify, commit, stop. (`RISK_OFF` does not change midday — this routine never
-opens positions.)
-Then read every file in `memory/` and `CLAUDE.md`.
+## 0. Live-switch guard, lock, control switch, memory
+- **Live-switch guard:** if `ALPACA_BASE_URL` does not contain `paper`, send
+  🚨 "live endpoint detected, halting", stop.
+- **Lock:** read `memory/_lock`. If present and not expired, abort and notify
+  "skipped, another routine active". Otherwise write `_lock` with
+  `{routine: midday, started, expires: +8min}`.
+- **Control switch:** read `memory/control.md`. If `STATUS: PAUSED`, journal,
+  notify, release the lock, commit, stop. (`RISK_OFF` does not change midday
+  — this routine never opens positions.)
+- **Memory:** read every file in `memory/` and `CLAUDE.md`.
 
 ## 1. Confirm the market is open
 `./scripts/alpaca.sh clock`. If closed, journal "market closed, no action" and
@@ -44,6 +49,11 @@ since the last run: add an entry to `memory/closed-trades.md` using its
 template — entry, exit, P/L, holding period, original thesis, why it ended,
 lesson. For **losses**, the lesson line is mandatory and must ALSO be appended
 as a dated bullet to `memory/lessons.md`. No silent losses.
+
+Also append one JSON line to `memory/trades.jsonl` for each exit
+(`agent: "bull"`, action `close` / `trim` / `stop_fill`, ts, symbol, qty,
+fill_price, pnl_pct). This is the structured feed for the weekly review's
+stats — narrative goes in `closed-trades.md`, numbers go here.
 
 ## 7. Journal
 Append any actions to `memory/trade-log.md` and refresh `memory/portfolio.md`.

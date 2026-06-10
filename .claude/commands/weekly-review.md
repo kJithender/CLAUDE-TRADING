@@ -1,10 +1,17 @@
 Run the Bull **weekly review** routine (Fridays).
 
-## 0. Control switch & memory
-Read `memory/control.md` FIRST and note its STATUS in the journal (weekly
-review places no orders, so PAUSED/RISK_OFF only changes what you report).
-Then read every file in `memory/` and `CLAUDE.md`, including
-`memory/closed-trades.md`.
+## 0. Live-switch guard, lock, control switch, memory
+- **Live-switch guard:** assert `ALPACA_BASE_URL` contains `paper`.
+- **Lock:** read `memory/_lock`. If present and not expired, abort and notify.
+  Otherwise write `_lock` with `{routine: weekly-review, started, expires:
+  +8min}`.
+- **Control switch:** read `memory/control.md` and note STATUS in the journal.
+- **Cross-Bull learning trigger:** check the `CROSS_BULL_LEARNING:` line in
+  `control.md`. If `TRIGGERED:` is set (AGGRO has beat Cautious by >5pp for
+  2 weeks running), this review MUST journal one specific lesson learned
+  from AGGRO and propose one concrete rule change. Clear the line after.
+- **Memory:** read every file in `memory/` and `CLAUDE.md`, including
+  `memory/closed-trades.md` and `memory/trades.jsonl`.
 
 ## 1. Gather the week's data
 - `./scripts/alpaca.sh account` and `./scripts/alpaca.sh positions`.
@@ -25,10 +32,17 @@ Then read every file in `memory/` and `CLAUDE.md`, including
 Record key findings as dated bullets in `memory/research-log.md`.
 
 ## 3. Trade statistics
-From `memory/closed-trades.md` (all-time, plus this week if any closed):
+Compute from `memory/trades.jsonl` (structured fills, source of truth):
 - **Win rate** (wins / total closed trades).
 - **Average win %** and **average loss %**.
 - **Profit factor** (gross wins ÷ gross losses).
+- **Average holding days** of winners vs losers — if losers are held longer,
+  that's the discipline gap.
+
+Cross-check counts against `memory/closed-trades.md`; if they disagree, the
+narrative ledger is out of sync — flag it.
+
+From the lessons in `closed-trades.md`:
 - The biggest lesson repeated across losers.
 
 Put these numbers in the weekly review entry. With few data points, say so
@@ -72,6 +86,13 @@ high-conviction bets paid off, which blew up, whether wider stops and faster
 deployment helped or hurt. You may adopt a refined idea, but you **never**
 relax your own CLAUDE.md guardrails to imitate it. (If `memory/aggressive/`
 has no data yet because Aggressive Bull hasn't run, skip this and note that.)
+
+**Then update the cross-Bull learning trigger:** compute since-inception
+return difference (AGGRO − Cautious in percentage points). If AGGRO is ahead
+by >5pp, increment an internal counter in this section of the review. If that
+counter has now hit 2 consecutive weeks, set `CROSS_BULL_LEARNING: TRIGGERED:
+<this Friday's date>` in `memory/control.md`. If AGGRO is ahead by ≤5pp,
+reset the counter to 0.
 
 ## 8. Notify
 Send a Telegram weekly summary via `./scripts/notify.sh`, starting with

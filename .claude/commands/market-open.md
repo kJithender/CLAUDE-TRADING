@@ -1,17 +1,24 @@
 Run the Bull **market-open** routine.
 
-## 0. Control switch & memory
-Read `memory/control.md` FIRST. If `STATUS: PAUSED`, place no orders — journal,
-notify, commit, stop. If `STATUS: RISK_OFF`, skip all buys but still run the
-stop audit (step 5).
-Then read every file in `memory/` and `CLAUDE.md`. Find the most recent
-**"Planned trades for today"** fenced JSON block in `memory/research-log.md`
-and confirm its `plan_date` is **today**. If the latest plan is from an earlier
-day, pre-market did not run today — treat the plan as stale, place no trades,
-journal that, and skip to step 6. (If the latest entry is older freeform prose
-without a JSON block, parse it carefully and note the format gap.)
-**Idempotency:** if today's plan block is already followed by an `EXECUTED:`
-line, this routine already ran today — place no trades and skip to step 5.
+## 0. Live-switch guard, lock, control switch, memory
+- **Live-switch guard:** if `ALPACA_BASE_URL` does not contain `paper`, send
+  🚨 "live endpoint detected, halting", stop.
+- **Lock:** read `memory/_lock`. If present and not expired, abort and notify
+  "skipped, another routine active". Otherwise write `_lock` with
+  `{routine: market-open, started, expires: +8min}`.
+- **Control switch:** read `memory/control.md`. If `STATUS: PAUSED`, journal,
+  notify, release the lock, commit, stop. If `STATUS: RISK_OFF`, skip all
+  buys but still run the stop audit (step 5).
+- **Memory:** read every file in `memory/` and `CLAUDE.md`. Find the most
+  recent **"Planned trades for today"** fenced JSON block in
+  `memory/research-log.md` and confirm its `plan_date` is **today**. If the
+  latest plan is from an earlier day, pre-market did not run today — treat
+  the plan as stale, place no trades, journal that, and skip to step 6. (If
+  the latest entry is older freeform prose without a JSON block, parse it
+  carefully and note the format gap.)
+- **Idempotency:** if today's plan block is already followed by an
+  `EXECUTED:` line, this routine already ran today — place no trades and
+  skip to step 5.
 
 ## 1. Confirm the market is open
 `./scripts/alpaca.sh clock`. If `is_open` is false, place no trades — journal
@@ -43,6 +50,11 @@ journal: 20% max position, 3 new positions/week, 25% max daily deployment,
 - Immediately place a 10% trailing stop on the filled quantity:
   `./scripts/alpaca.sh trailing-stop <SYM> sell <qty> 10`.
 - Verify the trailing-stop order exists.
+- After **each** verified fill, append one JSON line to
+  `memory/trades.jsonl` with the schema documented in
+  `memory/trades.jsonl.md` (`agent: "bull"`, ts, action, symbol, qty,
+  fill_price, thesis, invalidation, review_by). This is the structured
+  feed for the weekly review's stats.
 - After all trades are done, append a line `EXECUTED: <timestamp>` directly
   under today's plan block in `memory/research-log.md` so a re-run cannot
   double-buy.

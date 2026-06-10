@@ -1,13 +1,18 @@
 Run the **Aggressive Bull** midday routine — risk management, not new ideas.
 You are in **AGGRESSIVE MODE**.
 
-## 0. Control switch & memory
-Read `memory/control.md` FIRST (human-controlled, read-only). If
-`STATUS: PAUSED`, place no orders — journal, notify, commit, stop. (`RISK_OFF`
-does not change midday — this routine never opens positions.)
-Then read `memory/aggressive/profile.md`, every file in `memory/aggressive/`
-(including `closed-trades.md`), the shared `memory/knowledge-base.md`, and
-`CLAUDE.md`.
+## 0. Live-switch guard, lock, control switch, memory
+- **Live-switch guard:** if `ALPACA_BASE_URL` does not contain `paper`, 🚨
+  "live endpoint detected, halting", stop.
+- **Lock:** read `memory/_lock`. If present and not expired, abort and notify.
+  Otherwise write `_lock` with `{routine: aggro-midday, started, expires:
+  +8min}`.
+- **Control switch:** read `memory/control.md` (read-only). If
+  `STATUS: PAUSED`, journal, notify, release lock, commit, stop. (`RISK_OFF`
+  does not change midday — this routine never opens positions.)
+- **Memory:** read `memory/aggressive/profile.md`, every file in
+  `memory/aggressive/` (including `closed-trades.md`), the shared
+  `memory/knowledge-base.md`, and `CLAUDE.md`.
 
 ## 1. Confirm the market is open
 `./scripts/alpaca.sh clock`. If closed, journal "market closed, no action" and
@@ -47,6 +52,10 @@ since the last run: add an entry to `memory/aggressive/closed-trades.md` using
 its template — entry, exit, P/L, holding period, original thesis, why it
 ended, lesson. For **losses**, the lesson line is mandatory and must ALSO be
 appended as a dated bullet to `memory/aggressive/lessons.md`. No silent losses.
+
+Also append one JSON line to `memory/trades.jsonl` for each exit
+(`agent: "aggro"`, action `close`/`trim`/`stop_fill`, ts, symbol, qty,
+fill_price, pnl_pct).
 
 ## 7. Journal
 Append any actions to `memory/aggressive/trade-log.md` and refresh

@@ -1,14 +1,22 @@
 Run the **Aggressive Bull** pre-market routine. You are in **AGGRESSIVE MODE**.
 
-## 0. Control switch & memory
-Read `memory/control.md` FIRST (human-controlled, read-only). If
-`STATUS: PAUSED`, journal "paused by human", notify, commit, and stop. If
-`STATUS: RISK_OFF`, plan no new buys today. Acknowledge any `NOTE:` line.
-Then read `memory/aggressive/profile.md` (your rulebook), then every file in
-`memory/aggressive/` (`strategy.md`, `portfolio.md`, `trade-log.md`,
-`research-log.md`, `lessons.md`, `weekly-review.md`, `closed-trades.md`), plus
-the shared `memory/knowledge-base.md` and `CLAUDE.md`. Do NOT read or write
-Cautious Bull's other top-level `memory/` files.
+## 0. Live-switch guard, lock, control switch, memory
+- **Live-switch guard:** if `ALPACA_BASE_URL` does not contain `paper`, 🚨
+  "live endpoint detected, halting", stop.
+- **Lock:** read `memory/_lock`. If present and not expired, abort and notify
+  "skipped, another routine active". Otherwise write `_lock` with
+  `{routine: aggro-premarket, started, expires: +8min}`.
+- **Control switch:** read `memory/control.md` (read-only). If
+  `STATUS: PAUSED`, journal "paused by human", notify, release lock, commit,
+  stop. If `STATUS: RISK_OFF`, plan no new buys today. Acknowledge any
+  `NOTE:` line. If `QUERY:` is present, draft a paragraph answer for the
+  notify (step 8) and clear the line.
+- **Memory:** read `memory/aggressive/profile.md` (your rulebook), then every
+  file in `memory/aggressive/` (`strategy.md`, `portfolio.md`, `trade-log.md`,
+  `research-log.md`, `lessons.md`, `weekly-review.md`, `closed-trades.md`),
+  plus the shared `memory/knowledge-base.md`, the last ~50 lines of
+  `memory/trades.jsonl` filtered to `agent: "aggro"`, and `CLAUDE.md`. Do NOT
+  read or write Cautious Bull's other top-level `memory/` files.
 
 ## 1. First-run check
 If `memory/aggressive/strategy.md` still has `STATUS: NOT_INITIALIZED`:
@@ -43,6 +51,13 @@ news. If the invalidation has triggered or the review date has passed: decide
 hold / trim / exit explicitly today and journal the decision — renew the
 contract with a new `review_by` if holding.
 
+## 3c. Conviction-weighted holding review (Monday only)
+On Mondays, re-rank every held position **A / B / C** in
+`memory/aggressive/portfolio.md`. AGGRO's bar is high — at concentrated 12–35%
+sizing, **a C-rated position for 2 consecutive Mondays gets trimmed by half**
+(faster than Cautious because each AGGRO position carries more risk). Plan
+that trim today.
+
 ## 4. Research (WebSearch)
 - **Market posture:** search `"S&P 500 futures pre-market <today's date>"` —
   overnight direction, macro news, risk-on/off mood.
@@ -55,6 +70,10 @@ contract with a new `review_by` if holding.
 
 Record findings as dated bullets in `memory/aggressive/research-log.md`
 (source, headline, relevance, date of the fact).
+
+For **every held position**, the research-log entry MUST include a one-line
+"what changed since yesterday" — even if it is "nothing material, thesis
+unchanged". No stale theses.
 
 ## 5. Earnings-window rule
 - **No new buy** in any name reporting earnings within the next 2 trading days.

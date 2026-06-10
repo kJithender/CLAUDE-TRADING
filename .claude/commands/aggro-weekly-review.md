@@ -1,11 +1,16 @@
 Run the **Aggressive Bull** weekly review routine (Fridays). You are in
 **AGGRESSIVE MODE**.
 
-## 0. Control switch & memory
-Read `memory/control.md` FIRST (human-controlled, read-only) and note its
-STATUS in the journal. Then read `memory/aggressive/profile.md`, every file in
-`memory/aggressive/` (including `closed-trades.md`), the shared
-`memory/knowledge-base.md`, and `CLAUDE.md`.
+## 0. Live-switch guard, lock, control switch, memory
+- **Live-switch guard:** assert `ALPACA_BASE_URL` contains `paper`.
+- **Lock:** read `memory/_lock`. If present and not expired, abort and notify.
+  Otherwise write `_lock` with `{routine: aggro-weekly-review, started,
+  expires: +8min}`.
+- **Control switch:** read `memory/control.md` (read-only) and note STATUS.
+- **Memory:** read `memory/aggressive/profile.md`, every file in
+  `memory/aggressive/` (including `closed-trades.md`), the shared
+  `memory/knowledge-base.md`, `memory/trades.jsonl` (filtered to
+  `agent: "aggro"`), and `CLAUDE.md`.
 
 ## 1. Gather the week's data
 - `./scripts/alpaca.sh account` and `./scripts/alpaca.sh positions`.
@@ -26,12 +31,19 @@ STATUS in the journal. Then read `memory/aggressive/profile.md`, every file in
 
 Record key findings as dated bullets in `memory/aggressive/research-log.md`.
 
-## 3. Trade statistics from the closed-trades ledger
-From `memory/aggressive/closed-trades.md` (all-time, plus this week's exits):
-- **Win rate:** wins ÷ total closed trades (a win = P/L% > 0).
-- **Average win %:** mean P/L% of all winning trades.
-- **Average loss %:** mean P/L% of all losing trades.
-- **Profit factor:** sum of winning P/L% ÷ sum of absolute losing P/L%.
+## 3. Trade statistics
+Compute from `memory/trades.jsonl` rows where `agent == "aggro"` (structured
+fills, source of truth):
+- **Win rate:** wins ÷ total closed trades (a win = `pnl_pct` > 0).
+- **Average win %** and **average loss %** (mean `pnl_pct` of each group).
+- **Profit factor:** sum of winning `pnl_pct` ÷ sum of absolute losing.
+- **Average holding days** of winners vs losers — losers held longer = a
+  discipline gap.
+
+Cross-check counts against `memory/aggressive/closed-trades.md`; if they
+disagree, the narrative ledger is out of sync — flag it.
+
+From the lessons in `closed-trades.md`:
 - Biggest single lesson repeated across losers.
 
 Put these four numbers prominently in the weekly review entry. With fewer than
