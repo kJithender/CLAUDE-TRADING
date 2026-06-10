@@ -3,6 +3,70 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-10 15:52 ET — CLOSE — EOD journal
+
+- **Action:** No trades. End-of-day P/L check, exit reconciliation, journal.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 15:50 ET — next close 16:00 ET)
+- **Account:** Equity $98,374.22 | Cash $74,304.65 (75.5%) | Long market value $24,069.57
+
+### Market context (June 10, 2026)
+S&P 500 fell ~1% today (SPY -0.71% to $727.87). Three drivers: (1) May CPI 4.2% YoY — 3-year high but matched expectations; core CPI 2.9% / 0.2% MoM benign; (2) US-Iran military strikes escalating with near-closure of Strait of Hormuz driving oil higher; (3) AI sector extended selloff (NVDA, Micron). VIX +12%. 10yr yield held ~4.54%, below 4.75% trigger. Bull's 75.5% cash posture provided strong protection: Bull -0.45% vs SPY -0.71% = **+0.26% outperformance today**.
+
+### Position review (EOD June 10)
+
+**LLY** ($1,140.49, **+4.29% from avg entry $1,093.534**, **-0.37% today** vs $1,144.68 lastday) ⭐ STRONG
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** — status "new" ✓
+- Buffer: $1,140.49 − $1,064.457 = **$76.03 (6.67%)** ✓ Well protected.
+- -7% cut threshold: $1,016.99 — remote. No action.
+
+**V** ($323.08, **-0.15% from entry $323.57**, **-0.61% today** vs $325.05 lastday) ✓ WITHIN RANGE
+- Trailing stop 66033918: HWM $325.51, stop **$292.959** — status "new" ✓
+- Buffer: $323.08 − $292.959 = **$30.12 (9.32%)** ✓ Healthy.
+- Day 1 close essentially flat from entry — mild market-correlated weakness. Payments thesis intact. No action.
+
+**VST** ($138.91, **-6.65% from entry $148.81**, **-5.00% today** vs $146.22 lastday) ⚠️⚠️ CRITICAL
+- Trailing stop c4c200a5: HWM **$150.30**, stop **$135.270** — status "new" ✓
+- Buffer: $138.91 − $135.270 = **$3.64 (2.62%)** ⚠️ Critically thin.
+- **-7% cut threshold: $138.39 — VST closed only $0.52 above it.** Fell -5.00% today.
+- No specific VST catalyst — Iran/oil macro pressure + broad market selloff. Nuclear PPAs with Meta + AWS intact. Dividend ex-date June 22 in 12 days (USD 9.16 credit for 40sh).
+- **Close routine does NOT cut. -7% rule applies at Thursday midday. Stop at $135.27 is the defined exit floor. Pre-market Thursday: HIGHEST PRIORITY CHECK.**
+
+### Exit reconciliation
+- **META** exited today via trailing stop at $578.00 (11:06 AM ET). Post-mortem in closed-trades.md ✓; lesson in lessons.md ✓ (recorded at midday). Ledger current.
+- **V buy** executed at market-open today (22sh @ $323.57, order 4d966b86). Trailing stop 66033918 confirmed ✓.
+- All other active positions (LLY, V, VST) unchanged vs midday.
+
+### Guardrail checks (EOD June 10)
+- No position below -7% cut threshold: LLY +4.29%, V -0.15%, VST -6.65% ($138.91 > $138.39) ✓
+- No position above +15% tighten threshold ✓
+- Drawdown circuit breaker: Equity $98,374 vs HWM $101,384 = **-2.97%** — well within -10% ✓
+- Intraday shock: -$443.42 = -0.45% — below -4% threshold ✓
+- Active trailing stops (all 4 confirmed via live Alpaca orders):
+  - LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+  - LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+  - V (66033918): 22sh — HWM **$325.51**, stop **$292.959** ✓
+  - VST (c4c200a5): 40sh — HWM **$150.30**, stop **$135.270** ✓
+  - ~~META (4ea07e91)~~: **FILLED** $578.00 ✓
+- Cash $74,304.65 (75.5%) >> 5% minimum ✓
+- Week of June 8: 2/3 slots used (VST June 9, V June 10). Slot 3 (LRCX) deferred pending NVDA hearing June 11 ✓
+- No orphaned trailing-stop orders ✓
+
+### Performance (EOD June 10)
+- **Equity:** $98,374.22 (vs last_equity $98,817.64 = -$443.42 today = -0.45%)
+- **Today P/L breakdown:** LLY -$41.90, V -$10.78, VST -$292.40, META realized vs prior mark ~-$98 = net ~-$443 ✓
+- **Cash:** $74,304.65 (75.5%) | Long market value: $24,069.57
+- **SPY today:** $727.87 (vs $733.06 Jun 9 close = -0.71%) — **Bull outperformed SPY by +0.26%**
+- **Since inception (2026-05-21):** Bull **-1.63%** ($100,000 → $98,374.22) vs SPY **-1.57%** ($739.44 → $727.87) = **-0.07% gap** — NEAR PAR, best result since inception
+
+### Notes
+- Today was another broad-market down day. Bull's 75.5% cash posture provided real protection: outperforming SPY by +0.26% and narrowing the since-inception gap to just -0.07%. Third consecutive demonstration of the cash cushion (Jun 5, Jun 9, Jun 10).
+- **The since-inception gap is now essentially at par (-0.07%).** Despite 5 realized losses totaling ~-$1,689, LLY's +4.29% unrealized gain and cash cushion have held near-parity with SPY.
+- **VST is the immediate risk Thursday.** At $138.91 with -7% threshold $138.39, only $0.52 of cushion remains. Iran/oil escalation is the culprit, not a VST-specific catalyst. Stop at $135.27 is the defined exit floor. Do NOT pre-empt unless -7% rule is breached at Thursday midday.
+- NVDA Senate Banking hearing June 11 (tomorrow) — watching for AI semi sentiment; affects LRCX slot 3 decision.
+- Race: Bull -1.63% | AGGRO ~-6.16% (midday est.) | SPY -1.57% — Bull leads AGGRO by ~4.5pp.
+
+---
+
 ## 2026-06-10 12:34 ET — MIDDAY CHECK — META trailing stop filled; VST near -7% threshold
 
 - **Action:** No manual trades. META trailing stop auto-executed 11:06 AM ET. Stop audit passed. VST on high alert.
