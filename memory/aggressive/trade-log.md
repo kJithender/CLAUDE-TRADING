@@ -317,3 +317,65 @@ order id, and a "verified" confirmation._
 - AVGO at -6.98% continues as second-most-stressed position; stop price USD 349.71 is the key floor. Current price USD 377.86 gives USD 28.15 buffer above stop.
 - Sector exposure: Tech 77.5%, Utilities 7.8%, Cash 14.7%. Semi concentration (NVDA+AVGO): 35.9%. All within guardrails.
 - No new positions: cash at 14.7% is appropriate buffer in risk-off environment.
+
+---
+
+## 2026-06-10 — MIDDAY CHECK (~12:41 PM ET)
+
+**No trades executed.** Risk management only. All positions within guardrails.
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Clear ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Market open | true (next close 4:00 PM ET) ✓ |
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 93,840.73 |
+| Last equity (prev close) | USD 95,625.88 |
+| Intraday change | **-1.87%** (shock threshold 6% — NOT triggered ✓) |
+| Cash | USD 13,885.38 (14.8%) |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-7.22%** (circuit breaker 20% — NOT triggered ✓) |
+
+### Position review
+
+| Symbol | Entry | Current | P/L % | -12% Trigger | Buffer | News | Action |
+|---|---|---|---|---|---|---|---|
+| NVDA | USD 213.60 | USD 203.67 | -4.65% | USD 187.97 | 7.35pp | Macro selloff, no company news | No action |
+| META | USD 630.12 | USD 577.87 | **-8.29%** | USD 554.51 | **3.71pp 🚨** | Capex raised to USD 145B; buyback paused — NOT an invalidation event | No action — thesis intact |
+| AVGO | USD 406.23 | USD 374.99 | **-7.69%** | USD 357.48 | **4.31pp ⚠️** | Geopolitical/macro; USD 100B+ FY2027 AI guide reaffirmed | No action — thesis intact |
+| MSFT | USD 426.21 | USD 403.57 | -5.31% | USD 375.06 | 6.69pp | KPMG Agent 365 partnership (thesis-positive); flat intraday +0.04% | No action |
+| AMZN | USD 247.99 | USD 239.41 | -3.46% | USD 218.23 | 8.54pp | Macro selloff, no company news | No action |
+| VST | USD 151.47 | USD 139.74 | **-7.74%** | USD 133.29 | **4.26pp ⚠️** | Profit-taking from +16% spike last week; Q1 EPS USD 2.90 (+213% YoY); PPAs intact | No action — thesis intact |
+| GOOGL | USD 370.22 | USD 358.82 | -3.08% | USD 325.79 | 8.92pp | Macro selloff, no company news | No action |
+
+**Cut rule check (>-12% from entry): NO positions triggered. All clear.**
+**Tighten-stop rule check (>+25% from entry): NO positions triggered. All in drawdown.**
+
+### Stop audit — 7/7 positions confirmed ✓
+
+| Symbol | Stop Order ID | Stop Price | Status |
+|---|---|---|---|
+| NVDA | `54d7d851` | USD 181.71 (HWM 221.60) | ✓ live |
+| META | `11c3a1bf` | USD 526.75 (HWM 642.38) | ✓ live |
+| AVGO | `36f5a45f` | USD 349.71 (HWM 426.48) | ✓ live |
+| MSFT | `ef211767` | USD 350.56 (HWM 427.51) | ✓ live |
+| AMZN | `b55bef05` | USD 205.35 (HWM 250.43) | ✓ live |
+| VST | `5b347be3` | USD 124.57 (HWM 151.91) | ✓ live |
+| GOOGL | `e52a43f1` | USD 304.81 (HWM 371.72) | ✓ live |
+
+**No stops missing. No stops needing recreation.**
+
+### News scan summary [search: WebSearch fallback — MiniMax M3 MCP not available]
+- **META**: Capex plan raised to USD 145B (from USD 115–135B); buyback program paused. Both are near-term price headwinds but do NOT meet the invalidation condition (requires: formal new equity offering confirmed + explicit AI monetization downgrade). Ad revenue +33% YoY thesis intact. Decision: HOLD.
+- **AVGO**: Geopolitical tensions driving semiconductor sector weakness today (-1.75%). USD 100B+ FY2027 AI revenue guide reaffirmed. Slight Q2 revenue miss already baked in from June 4 earnings. Thesis intact. Decision: HOLD.
+- **VST**: VST was up 16% to USD 156 last week; current USD 139.74 is a natural pullback. Q1 results excellent (EPS USD 2.90 vs USD -0.93 loss Q1 2025; revenue +43% YoY). Nuclear PPAs with Meta/AWS still intact. Dividend ex-date June 22 (USD 0.229/share — positive). Thesis intact. Decision: HOLD.
+- **MSFT**: Flat intraday (+0.04%). KPMG using Microsoft Agent 365 is thesis-positive AI monetization news. Suleyman AI remarks from June 9 already in yesterday's price. Thesis intact. Decision: HOLD.
+
+### Result
+All 7 positions within guardrails. No trades. All 18% trailing stops active and audited. Three HIGH ALERT positions (META, AVGO, VST) to monitor closely at EOD close routine.
