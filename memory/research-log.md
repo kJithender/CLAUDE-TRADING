@@ -181,6 +181,8 @@ If CPI comes in hot (> 4.2%) or 10yr spikes above 4.75% → DEFER V to Thursday 
 }
 ```
 
+EXECUTED: 2026-06-10T13:39:48Z — BUY V 22sh @ $323.57 avg; 10% trailing stop 66033918 (HWM $323.735, stop $291.362) placed and confirmed ✓
+
 **CPI hot-case (10yr > 4.75% at open):** No trades today. Defer V to Thursday/Friday once rate shock is absorbed.
 
 **META watch:** If META opens at or below $578.142, the trailing stop fires automatically — no manual intervention needed. If META opens at $578–$582, it is on life support; midday -7% rule at $577.19 is the next guardrail.

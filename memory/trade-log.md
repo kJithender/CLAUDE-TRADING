@@ -3,6 +3,46 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-10 09:39 ET — MARKET OPEN — BUY V 22 shares (Slot 2 of 3)
+- **Action:** BUY 22 shares V (limit order at $324.68 — bid×1.003; actual fill $323.57 avg, better than limit)
+- **Fill:** 22 shares @ avg $323.57 (order id: 4d966b86-5dd3-46c8-9e16-82aa9aa7dd42, filled ~09:39 ET June 10)
+- **Why (Slot 2 of 3, week of June 8):** Payments infrastructure compounder. Q2 FY26 net revenue +17% YoY; non-GAAP EPS $3.31 beat; $20B buyback authorized. CFO Chris Suh's May 12 sale confirmed via SEC filing as pre-arranged 10b5-1 plan (NOT discretionary) — the blocker that deferred V for 2 weeks is resolved. V trading at/above CFO's 10b5-1 sale price ($323.57 vs $324.88 CFO sale) — constructive. 5-of-5 entry signals met. Adds Financials sector diversification. CPI 4.2% (≤4.2% threshold met ✓), 10yr 4.54% (<4.75% ✓), V opened $326.62 (within $310-$340 ✓), SPY -0.38% (<-1.5% ✓). All conditions met.
+- **Limit order note:** Ask quote of $343.64 was anomalous (clearly stale/odd-lot); used bid $323.71 × 1.003 = $324.68 as marketable limit. Filled at $323.57 (better than limit).
+- **Stop (22 shares):** 10% trailing stop placed (order id: 66033918-ab5e-4d38-802a-3e98b62bfca4) — HWM $323.735, stop $291.362, GTC exp 2026-09-08
+- **Verified:** 22 shares confirmed in positions (avg entry $323.57, market value $7,121.84) ✓; trailing stop 66033918 confirmed active (status: new, HWM $323.735, stop $291.362) ✓
+
+### Guardrail checks at execution
+- Cash after fill: $65,634.65 (66.5%) >> 5% minimum ✓
+- V 22sh × $323.57 = $7,118.54 = 7.21% of equity ✓ (≤20% cap)
+- Daily deployment today: $7,118.54 = 7.21% of equity ✓ (≤25% cap)
+- New positions this week: 2/3 (VST June 9 slot 1, V June 10 slot 2) ✓
+- Sector: Financials (V) = 7.21% — no sector above 60% ✓
+- Earnings window: V Q3 FY26 earnings July 28 — 48 days away ✓
+- Drawdown circuit breaker: $98,754 vs HWM $101,384 = -2.59%, within -10% ✓
+- Risk budget: 22sh × $323.57 × 10% = $711.85 = 0.72% of equity ≤ 1.2% ✓
+- CPI 4.2% (≤4.2%) ✓ | 10yr ~4.54% (<4.75%) ✓ | Market open confirmed ✓
+
+### All trailing stops (09:39 ET — 5 active, all confirmed via Alpaca orders)
+- V (66033918): 22sh — HWM **$323.735**, stop **$291.362** ✓ NEW
+- VST (c4c200a5): 40sh — HWM $150.30, stop $135.270 ✓
+- LLY (d4147484): 7sh — HWM $1,182.73, stop $1,064.457 ✓
+- LLY (25989fb5): 3sh — HWM $1,182.73, stop $1,064.457 ✓
+- META (4ea07e91): 15sh — HWM $642.38, stop $578.142 ✓
+
+### Position review (09:39 ET)
+- **V** ($323.72, **+0.05% from entry $323.57**) NEW ✓ — Visa payments network. $20B buyback, +17% revenue growth, CFO 10b5-1 confirmed. Stop 66033918 (HWM $323.735, stop $291.362).
+- **LLY** ($1,146.07, **+4.80% from avg entry $1,093.534**) ⭐ STRONG — Both stops active. Medicare Bridge July 1 in 21 days. Buffer: $81.61 (7.12%) ✓
+- **META** ($588.365, **-5.20% from entry $620.637**) ⚠️ Watch — Stop $578.142 (buffer $10.22, 1.74%). Recovering today +0.65%.
+- **VST** ($142.80, **-4.04% from entry $148.81**) ✓ — Stop $135.270 (buffer $7.53, 5.27%). Nuclear PPA thesis intact.
+
+### Performance (09:39 ET)
+- **Equity:** $98,754.29 (vs last_equity $98,817.64 = -$63.35 today = -0.06%)
+- **Cash:** $65,634.65 (66.5%) | Long market value: $33,119.64
+- **Since inception (2026-05-21):** Bull -1.25% ($100K → $98,754.29).
+- **Week of June 8:** 2/3 positions used (VST June 9, V June 10). 1 slot remaining.
+
+---
+
 ## 2026-06-09 12:34 ET — MIDDAY CHECK (no trades)
 - **Action:** None — all positions within guardrail thresholds. No cuts, no stop tightening.
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 12:34 ET — next close 16:00 ET)
