@@ -1,27 +1,21 @@
 Run the **Aggressive Bull** weekly review routine (Fridays). You are in
 **AGGRESSIVE MODE**.
 
-## 0. Load memory
-Read `memory/aggressive/profile.md`, every file in `memory/aggressive/`, the
-shared `memory/knowledge-base.md`, and `CLAUDE.md`.
+## 0. Control switch & memory
+Read `memory/control.md` FIRST (human-controlled, read-only) and note its
+STATUS in the journal. Then read `memory/aggressive/profile.md`, every file in
+`memory/aggressive/` (including `closed-trades.md`), the shared
+`memory/knowledge-base.md`, and `CLAUDE.md`.
 
 ## 1. Gather the week's data
 - `./scripts/alpaca.sh account` and `./scripts/alpaca.sh positions`.
-- `./scripts/alpaca.sh history 1M 1D` for the equity curve.
+- `./scripts/alpaca.sh history 1A 1D` for the equity curve and high-water mark.
 - `./scripts/alpaca.sh bars SPY 1Day 10` for SPY's weekly move.
 - Re-read this week's entries in `memory/aggressive/trade-log.md`,
   `memory/aggressive/research-log.md`, and
   `memory/aggressive/closed-trades.md`.
 
-## 2. Live macro and sector research
-Use `mcp__minimax__web_search` with `model: "MiniMax-M3"` as the primary
-search engine. If MiniMax errors, returns empty results, or has not responded
-within 60s, abandon it and re-run using the built-in `WebSearch` tool. Do not
-retry MiniMax once it fails — use WebSearch for all remaining queries this run.
-Log `[search: MiniMax M3]` or `[search: WebSearch fallback]` in each
-research-log entry.
-
-Run:
+## 2. Live macro and sector research (WebSearch)
 - `"S&P 500 weekly performance <this week's dates>"` — index return for the week.
 - `"stock market week in review <today's date>"` — macro drivers, Fed news,
   sector winners and losers.
@@ -45,9 +39,9 @@ Put these four numbers prominently in the weekly review entry. With fewer than
 over-read — but still compute them.
 
 ## 4. Drawdown check
-Find the all-time equity high in `memory/aggressive/performance.csv`. Compute
-current drawdown. If within 5% of the −20% circuit-breaker level, flag it in
-the journal and notify with 🚨.
+From the `./scripts/alpaca.sh history 1A 1D` equity curve, find the all-time
+high-water mark and compute current drawdown. If within 5% of the −20%
+circuit-breaker level, flag it in the journal and notify with 🚨.
 
 ## 5. Process audit (grade the process, not just P/L)
 - **Earnings discipline:** did every position with an earnings event in the
@@ -56,12 +50,13 @@ the journal and notify with 🚨.
   times? Were any stops missing at any point this week?
 - **Post-mortem completeness:** does every closed trade have an entry in
   `memory/aggressive/closed-trades.md`? Does every loss have a lesson?
-- **Cash drag:** average cash % this week (from
-  `memory/aggressive/performance.csv`) vs. the strategy's target band. If cash
-  sat above the band with weekly slots unused and no journaled justification,
+- **Deployment pace:** average cash % this week (from the `aggro` rows in
+  `memory/performance.csv`) vs. the profile's fast-deploy expectation. If
+  cash sat high with weekly slots unused and no journaled justification,
   grade the process down.
-- **Sector cap:** current exposure vs. the 35% max-per-position rule; is
-  concentration helping or hurting vs. SPY?
+- **Concentration:** position sizes vs. the 35% single-position cap, and
+  overall sector exposure — is the concentration deliberate, journaled, and
+  helping vs. SPY?
 
 Assign an honest **A–F grade** that reflects *process* adherence (discipline,
 journal quality, rule adherence, post-mortem completeness) — not just P/L.
@@ -88,12 +83,12 @@ If the review suggests changes, edit `memory/aggressive/strategy.md`
 to refresh the watchlist with new names that showed up as this week's leaders.
 
 ## 9. No trading
-Return / plan no new trades.
+Place no orders in this routine.
 
 ## 10. Notify
 Send a Telegram weekly summary via `./scripts/notify.sh`. Start with:
-- 🚨 `AGGRO Bull weekly <date>:` — if the drawdown is near/active or process
-  grade is D or F.
+- 🚨 `AGGRO Bull weekly <date>:` — if the drawdown is near/active or the
+  process grade is D or F.
 - 🔥 `AGGRO Bull weekly <date>:` — otherwise.
 
 Content: week vs SPY, since-inception vs SPY, process grade, win rate, profit

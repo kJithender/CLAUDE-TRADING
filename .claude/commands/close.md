@@ -44,8 +44,9 @@ the notify, e.g. `Race: Bull +1.2 | AGGRO -4.2 | SPY +2.3 (pct since start)`.
 
 ## 5c. Performance history
 Append one row to `memory/performance.csv` — create it with the header
-`date,agent,equity,spy_close` if missing: today's date, `bull`, final equity,
-SPY's closing price. This feeds the dashboard in `docs/`.
+`date,agent,equity,cash,spy_close` if missing: today's date, `bull`, final
+equity, final cash, SPY's closing price. This feeds the dashboard in `docs/`
+and the weekly cash-drag audit.
 
 ## 5d. Friday watchdog
 If today is Friday and the newest entry in `memory/weekly-review.md` is more

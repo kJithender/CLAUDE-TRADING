@@ -44,8 +44,9 @@ or threatens your current position theses.
 
 ## 5b. Performance history
 Append one row to `memory/performance.csv` — create it with the header
-`date,agent,equity,spy_close` if missing: today's date, `aggro`, final
-equity, SPY's closing price. This feeds the dashboard in `docs/`.
+`date,agent,equity,cash,spy_close` if missing: today's date, `aggro`, final
+equity, final cash, SPY's closing price. This feeds the dashboard in `docs/`
+and the weekly deployment-pace audit.
 
 ## 5c. Friday watchdog
 If today is Friday and the newest entry in `memory/aggressive/weekly-review.md`
