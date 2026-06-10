@@ -17,38 +17,38 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-10 pre-market (~8:00 AM ET)
+## Last snapshot — 2026-06-10 market-open (~9:46 AM ET)
 
 | Field | Value |
 |---|---|
-| Equity | USD 94,388.86 |
+| Equity | USD 94,721.05 |
 | Cash | USD 13,885.38 |
-| Long market value | USD 80,503.48 |
+| Long market value | USD 80,835.67 |
 | Open positions | 7 |
 | last_equity (prev close) | USD 95,625.88 |
-| Intraday change vs last_equity | -1.29% (shock threshold: 6% — not triggered) |
+| Intraday change vs last_equity | -0.95% (shock threshold: 6% — not triggered) |
 
 **Open positions:**
 
 | Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Trailing Stop Order | Stop % | Stop Price | -12% Cut Trigger |
 |---|---|---|---|---|---|---|---|---|---|---|
-| NVDA | 103 | USD 213.60 | USD 203.82 | USD 20,993.46 | -USD 1,007.34 | -4.58% | `54d7d851` | 18% | USD 181.71 (HWM: 221.60) | ~USD 187.97 |
-| META | 23 | USD 630.12 | USD 581.00 | USD 13,363.00 | -USD 1,129.76 | **-7.80%** | `11c3a1bf` | 18% | USD 526.75 (HWM: 642.38) | ~USD 554.51 |
-| AVGO | 34 | USD 406.23 | USD 381.93 | USD 12,985.69 | -USD 826.13 | -5.98% | `36f5a45f` | 18% | USD 349.71 (HWM: 426.48) | ~USD 357.48 |
-| MSFT | 28 | USD 426.21 | USD 398.75 | USD 11,165.00 | -USD 768.88 | -6.44% | `ef211767` | 18% | USD 350.56 (HWM: 427.51) | ~USD 375.06 |
-| AMZN | 36 | USD 247.99 | USD 242.49 | USD 8,729.64 | -USD 198.04 | -2.22% | `b55bef05` | 18% | USD 205.35 (HWM: 250.43) | ~USD 218.23 |
-| VST | 52 | USD 151.47 | USD 144.30 | USD 7,503.60 | -USD 372.84 | -4.73% | `5b347be3` | 18% | USD 124.57 (HWM: 151.91) | ~USD 133.29 |
-| GOOGL | 16 | USD 370.22 | USD 360.19 | USD 5,763.09 | -USD 160.43 | -2.71% | `e52a43f1` | 18% | USD 304.81 (HWM: 371.72) | ~USD 325.79 |
+| NVDA | 103 | USD 213.60 | USD 205.83 | USD 21,199.99 | -USD 800.81 | -3.64% | `54d7d851` | 18% | USD 181.71 (HWM: 221.60) | ~USD 187.97 |
+| META | 23 | USD 630.12 | USD 589.17 | USD 13,550.91 | -USD 941.85 | **-6.50%** | `11c3a1bf` | 18% | USD 526.75 (HWM: 642.38) | ~USD 554.51 |
+| AVGO | 34 | USD 406.23 | USD 377.86 | USD 12,847.24 | -USD 964.58 | -6.98% | `36f5a45f` | 18% | USD 349.71 (HWM: 426.48) | ~USD 357.48 |
+| MSFT | 28 | USD 426.21 | USD 402.56 | USD 11,271.68 | -USD 662.20 | -5.55% | `ef211767` | 18% | USD 350.56 (HWM: 427.51) | ~USD 375.06 |
+| AMZN | 36 | USD 247.99 | USD 241.78 | USD 8,704.08 | -USD 223.60 | -2.50% | `b55bef05` | 18% | USD 205.35 (HWM: 250.43) | ~USD 218.23 |
+| VST | 52 | USD 151.47 | USD 142.62 | USD 7,416.24 | -USD 460.20 | -5.84% | `5b347be3` | 18% | USD 124.57 (HWM: 151.91) | ~USD 133.29 |
+| GOOGL | 16 | USD 370.22 | USD 364.57 | USD 5,833.04 | -USD 90.48 | -1.53% | `e52a43f1` | 18% | USD 304.81 (HWM: 371.72) | ~USD 325.79 |
 
-**Stop audit (2026-06-10 pre-market): ALL 7 positions confirmed with live 18% trailing stop orders. ✓**
+**Stop audit (2026-06-10 market-open): ALL 7 positions confirmed with live 18% trailing stop orders. ✓**
 
 **Sector exposure summary (journaled decision — intentional concentration):**
 | Sector | Market Value | % of Portfolio |
 |---|---|---|
-| Technology (NVDA, META, AVGO, MSFT, AMZN, GOOGL) | USD 73,000.88 | 77.3% |
-| Utilities/Energy (VST) | USD 7,503.60 | 7.9% |
+| Technology (NVDA, META, AVGO, MSFT, AMZN, GOOGL) | USD 73,406.94 | 77.5% |
+| Utilities/Energy (VST) | USD 7,416.24 | 7.8% |
 | Cash | USD 13,885.38 | 14.7% |
-_Technology overweight is BY DESIGN for Aggressive Bull — concentrated AI-supercycle thesis. The 7.9% utilities/energy (VST) provides non-correlated diversification via nuclear PPAs._
+_Technology overweight is BY DESIGN for Aggressive Bull — concentrated AI-supercycle thesis. The 7.8% utilities/energy (VST) provides non-correlated diversification via nuclear PPAs._
 
 **Thesis contracts (assigned 2026-06-10, all legacy positions):**
 | Symbol | Invalidation | Review By |
@@ -63,7 +63,7 @@ _Technology overweight is BY DESIGN for Aggressive Bull — concentrated AI-supe
 
 _Status 2026-06-10: No invalidations triggered. No review_by dates expired. All contracts active._
 
-**Key watchpoint: META at -7.80% — only 4.20pp buffer to the -12% midday cut threshold (USD 554.51). Monitor closely at midday; geopolitical risk-off environment adds pressure.**
+**Key watchpoints:** META at -6.50% (5.50pp buffer to -12% cut threshold USD 554.51; recovered from pre-market -7.80%). AVGO at -6.98% (5.02pp buffer). Both HIGH ALERT at midday.
 
 ---
 
@@ -99,3 +99,4 @@ _Status 2026-06-10: No invalidations triggered. No review_by dates expired. All 
 | 2026-06-09 (midday) | 93,506.59 | ~723.44 (intraday) | -6.49% | ~-4.08% | **~-2.41pp** |
 | 2026-06-09 (EOD close) | 95,762.44 | 737.11 | -4.24% | -2.26% | **-1.98pp** |
 | 2026-06-10 (pre-market) | 94,388.86 | — | **-5.61%** | — | — |
+| 2026-06-10 (market-open) | 94,721.05 | ~737.11 (prev close) | **-5.28%** | -2.26% | **-3.02pp** |

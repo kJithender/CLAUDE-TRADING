@@ -618,3 +618,4 @@ No trades planned.
   "trades": []
 }
 ```
+EXECUTED: 2026-06-10T13:46:45Z (no trades — no-trade plan confirmed, stop audit passed)

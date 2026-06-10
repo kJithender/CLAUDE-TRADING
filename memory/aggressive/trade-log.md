@@ -270,3 +270,50 @@ order id, and a "verified" confirmation._
 **Context:** Broad market selloff today — SPY down ~-2.1% intraday (USD 739.23 → ~USD 723). Tech sector under pressure. AMD particularly hard-hit: -10.5% intraday. The -13.73% breach of the -12% cut threshold mandates immediate exit under guardrails, regardless of thesis. No averaging down.
 
 **Account after close:** Equity USD 93,506.59 | Cash USD 13,885.40 (14.8%) | 7 open positions | Long market value USD 79,621.19
+
+---
+
+## 2026-06-10 — MARKET OPEN (~9:46 AM ET)
+
+**No trades executed.** Pre-market plan was correctly no-trade (risk-off environment, Iran escalation, stressed positions).
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Clear (empty `{}`) ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Plan date | June 10, 2026 — matches today ✓ |
+| Plan trades | [] — empty, no trades planned ✓ |
+| Idempotency | No prior EXECUTED: marker ✓ |
+
+### Market & account status
+| Check | Result |
+|---|---|
+| Market open | true (next close 4:00 PM ET) ✓ |
+| Equity | USD 94,721.05 |
+| Last equity (prev close) | USD 95,625.88 |
+| Intraday change | -0.95% (shock threshold 6% — NOT triggered ✓) |
+| Cash | USD 13,885.38 (14.7%) |
+| Cash floor (2% min) | ✓ |
+| Drawdown from HWM | -6.35% (USD 94,721 vs HWM USD 101,144.73 — circuit breaker 20% NOT triggered ✓) |
+
+### Stop audit — 7/7 positions confirmed with live 18% trailing stops ✓
+
+| Symbol | Qty | Current Price | P/L % | Stop Price | Stop Order ID | Buffer to -12% |
+|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 205.83 | -3.64% | USD 181.71 (`54d7d851`) | ✓ live | 8.36pp |
+| META | 23 | USD 589.17 | -6.50% | USD 526.75 (`11c3a1bf`) | ✓ live | 5.50pp |
+| AVGO | 34 | USD 377.86 | -6.98% | USD 349.71 (`36f5a45f`) | ✓ live | 5.02pp |
+| MSFT | 28 | USD 402.56 | -5.55% | USD 350.56 (`ef211767`) | ✓ live | 6.45pp |
+| AMZN | 36 | USD 241.78 | -2.50% | USD 205.35 (`b55bef05`) | ✓ live | 9.50pp |
+| VST | 52 | USD 142.62 | -5.84% | USD 124.57 (`5b347be3`) | ✓ live | 6.16pp |
+| GOOGL | 16 | USD 364.57 | -1.53% | USD 304.81 (`e52a43f1`) | ✓ live | 10.47pp |
+
+**No stops missing. No stops needing recreation. All positions protected.**
+
+### Notable observations
+- META recovered from pre-market low of USD 581.00 to USD 589.17 at open (+1.4%) — buffer to -12% cut threshold (USD 554.51) improved from 4.20pp to 5.50pp. Still HIGH ALERT but tension eased slightly.
+- AVGO at -6.98% continues as second-most-stressed position; stop price USD 349.71 is the key floor. Current price USD 377.86 gives USD 28.15 buffer above stop.
+- Sector exposure: Tech 77.5%, Utilities 7.8%, Cash 14.7%. Semi concentration (NVDA+AVGO): 35.9%. All within guardrails.
+- No new positions: cash at 14.7% is appropriate buffer in risk-off environment.
