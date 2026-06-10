@@ -34,6 +34,7 @@ Market data:
 Trading:
   buy  <SYM> --notional <$>        Market buy by dollar amount
   buy  <SYM> --qty <n>             Market buy by share count
+  buy-limit <SYM> <qty> <limit>    Limit buy (day) — bounded entry price
   sell <SYM> --qty <n>             Market sell by share count
   trailing-stop <SYM> <side> <qty> <trail%>   Place a trailing-stop order
   close  <SYM>                     Close (liquidate) a position
@@ -75,6 +76,11 @@ case "$cmd" in
   trailing-stop)
     sym="${1:?symbol required}"; side="${2:?side required}"; qty="${3:?qty required}"; trail="${4:?trail% required}"
     body=$(printf '{"symbol":"%s","qty":"%s","side":"%s","type":"trailing_stop","trail_percent":"%s","time_in_force":"gtc"}' "$sym" "$qty" "$side" "$trail")
+    curl -sS "${AUTH[@]}" "${JSON[@]}" -d "$body" "${BASE_URL}/v2/orders"
+    ;;
+  buy-limit)
+    sym="${1:?symbol required}"; qty="${2:?qty required}"; limit="${3:?limit price required}"
+    body=$(printf '{"symbol":"%s","qty":"%s","side":"buy","type":"limit","limit_price":"%s","time_in_force":"day"}' "$sym" "$qty" "$limit")
     curl -sS "${AUTH[@]}" "${JSON[@]}" -d "$body" "${BASE_URL}/v2/orders"
     ;;
   close)  curl -sS -X DELETE "${AUTH[@]}" "${BASE_URL}/v2/positions/${1:?symbol required}" ;;

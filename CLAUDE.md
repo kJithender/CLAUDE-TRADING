@@ -218,6 +218,7 @@ watchlist candidates. Always note the date of information you rely on.
 | Midday         | 12:30 PM, Mon–Fri| Cut losers past −7%, tighten stops on strong winners. |
 | Close          | 3:50 PM, Mon–Fri | End-of-day P/L vs SPY, journal, Telegram summary. |
 | Weekly review  | 4:30 PM, Friday  | Week vs SPY, self-grade, adjust strategy. |
+| Monthly review | 5:00 PM, 1st Friday | Rebuy test, sizing audit, strategy drift check. |
 
 Each routine has a detailed playbook in `.claude/commands/`.
 

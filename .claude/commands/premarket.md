@@ -104,6 +104,13 @@ risk budget: a stop-out should lose no more than 1.2% of equity (with a 10%
 stop that is ≈ a 12% position). Prefer whole-share quantities so trailing
 stops are possible.
 
+**Volatility check:** for each planned buy, pull
+`./scripts/alpaca.sh bars <SYM> 1Day 21` and estimate the 20-day average
+daily range as a % of price (mean of `(high − low) / close`). If it exceeds
+**3%**, halve the planned position size and journal the ATR figure — a 10%
+trailing stop on a 4%-a-day name is only ~2.5 quiet days of room, so size
+must carry the extra risk, not hope.
+
 Append a new dated entry to `memory/research-log.md` ending with a
 **"Planned trades for today"** section that contains a fenced JSON block in
 exactly this shape (market-open parses it):

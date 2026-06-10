@@ -44,10 +44,16 @@ re-research.
 For each approved trade, re-verify the guardrails — write the math in the
 journal: 20% max position, 3 new positions/week, 25% max daily deployment,
 5% min cash, 60% sector cap, earnings window, drawdown circuit breaker. Then:
-- Place the buy: `./scripts/alpaca.sh buy <SYM> --qty <n>` (prefer whole shares).
-- Wait for the fill, then `./scripts/alpaca.sh orders open` /
-  `./scripts/alpaca.sh position <SYM>` to verify.
-- Immediately place a 10% trailing stop on the filled quantity:
+- Get the current ask: `./scripts/alpaca.sh quote <SYM>`. Compute a
+  **marketable limit** = ask × 1.003 (rounded to cents) — pays at most 0.3%
+  over the ask instead of whatever the opening auction does.
+- Place the buy: `./scripts/alpaca.sh buy-limit <SYM> <qty> <limit>`.
+- Verify the fill: `./scripts/alpaca.sh orders open` /
+  `./scripts/alpaca.sh position <SYM>`. If still unfilled after a couple of
+  minutes: cancel it, re-quote, and re-place at the new ask × 1.003 **once**.
+  If the second attempt also doesn't fill, cancel, skip the trade, and
+  journal "missed fill — price ran away" (chasing is how slippage wins).
+- Immediately place a 10% trailing stop on the **filled** quantity:
   `./scripts/alpaca.sh trailing-stop <SYM> sell <qty> 10`.
 - Verify the trailing-stop order exists.
 - After **each** verified fill, append one JSON line to

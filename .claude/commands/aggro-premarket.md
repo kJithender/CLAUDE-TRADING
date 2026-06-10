@@ -94,6 +94,12 @@ Decide which trades (if any) to make at the open, within **your** guardrails:
 cash, the earnings window, and the circuit breaker. Concentrate into
 conviction. Prefer whole-share quantities so trailing stops are possible.
 
+**Volatility check:** for each planned buy, pull
+`./scripts/alpaca.sh bars <SYM> 1Day 21` and estimate the 20-day average
+daily range as a % of price (mean of `(high − low) / close`). You take
+volatility by design, so there is no cap — but journal the figure, and if it
+exceeds **5%**, say explicitly why the 18% stop gives this name enough room.
+
 Append a dated entry to `memory/aggressive/research-log.md` ending with a
 **"Planned trades for today"** section that contains a fenced JSON block in
 exactly this shape (market-open parses it):

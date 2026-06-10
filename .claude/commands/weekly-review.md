@@ -76,6 +76,11 @@ sizing, watchlist) and/or add lessons to `memory/lessons.md`. Be specific.
 Use the live research from step 2 to refresh the watchlist with any new names
 that showed up as this week's leaders.
 
+**Watchlist hygiene:** every watchlist entry carries a **date added** and a
+one-line **catalyst with an expiry date**. This week: purge any name whose
+catalyst expired or that has sat 4+ weeks without a trigger; date-stamp any
+new additions. A watchlist of stale names is decoration, not a pipeline.
+
 ## 7b. Learn from Aggressive Bull (the parallel experiment)
 A separate **Aggressive Bull** trades its own paper account with looser limits.
 Study what it did this week: read `memory/aggressive/weekly-review.md`,
