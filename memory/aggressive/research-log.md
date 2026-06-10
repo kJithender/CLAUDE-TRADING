@@ -457,3 +457,164 @@ Remaining cash after trade: ~USD 6,457 (~6.6%)
 Weekly new-position count after today: 2 / 8 allowed
 
 **No other trades planned.** Hold all 7 existing positions. Continue monitoring META equity offering status.
+
+---
+
+## 2026-06-10 — WEEK 2 PRE-MARKET (Wednesday)
+[search: WebSearch fallback — MiniMax M3 not available in this session]
+
+### Portfolio snapshot (live Alpaca data, ~8:00 AM ET)
+
+| Symbol | Qty | Avg Entry | Current | P/L % | Overnight change |
+|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 203.82 | -4.58% | -2.10% (geopolitical selloff; Apple AI client positive) |
+| META | 23 | USD 630.12 | USD 581.00 | **-7.80%** | -0.61% (no confirmed offering; ongoing risk-off) |
+| AVGO | 34 | USD 406.23 | USD 381.93 | -5.98% | -2.61% (geopolitical selloff; AI XPV Platform positive) |
+| MSFT | 28 | USD 426.21 | USD 398.75 | -6.44% | -1.16% (thesis intact; Azure 40%; dividend June 11) |
+| AMZN | 36 | USD 247.99 | USD 242.49 | -2.22% | -0.70% (AWS partnerships intact; Prime Day June 23-26) |
+| VST | 52 | USD 151.47 | USD 144.30 | -4.73% | -1.31% (oil surge POSITIVE for nuclear competitive moat) |
+| GOOGL | 16 | USD 370.22 | USD 360.19 | -2.71% | -1.12% (GCP +63% thesis intact; Apple using GCP) |
+
+**Account equity: USD 94,388.86** (down USD 1,237.02 = -1.29% vs prev close USD 95,625.88; shock threshold 6% = not triggered)
+**Cash: USD 13,885.38 (14.7% of portfolio)**
+**Semi-group concentration (NVDA+AVGO only, post-AMD): USD 33,979 / USD 94,389 = 36.0%** (well below 50%)
+**Weekly new-position count (Week 2): 2/8 (AMZN June 8, GOOGL June 9)**
+
+---
+
+### Drawdown circuit breaker check
+- Equity history high-water mark: USD 101,144.73 (inception week peak)
+- Current equity: USD 94,388.86
+- Drawdown from HWM: -6.68%
+- Circuit breaker threshold: 20%
+- **Status: NOT TRIGGERED. Normal operation continues.**
+
+---
+
+### Market posture (June 10, 2026)
+**Overall: RISK-OFF. Fresh US-Iran military escalation. Oil surging. Tech futures selling hard.**
+
+- **US-Iran war (day ~100):** US launched fresh strikes against Iran after Trump confirmed Iran shot down a US Apache helicopter over the Strait of Hormuz. The 2026 Iran war has restricted nearly all Strait of Hormuz traffic — IEA characterizes this as "the largest supply disruption in history." Brent crude ~+36% above pre-war; WTI ~+50% above pre-war. Source: TheStreet June 10, 2026; CNBC June 7.
+- **S&P 500 / Nasdaq futures:** Lower pre-market. NVDA -2.10%, MU -3.9%, ARM -4% in pre-market. Tech leading the decline. Source: TheStreet pre-market update June 10.
+- **Context:** The broader S&P 500 has previously "looked through" the Iran war (hit new ATHs during the conflict), but today's escalation (helicopter downing = direct US military casualty event) is a step change. Risk-off is likely to persist through the open.
+- **Fed:** Still on hold at 3.5–3.75%. Oil surge = persistent CPI headwind = no cuts. Stagflation tail risk rising.
+- **Macro impact on our thesis:** AI supercycle (hyperscaler capex $180-200B) has NOT slowed. None of the hyperscalers has cut AI capex guidance. The oil shock is a macro headwind to multiples, but our names are compounding earnings at 30-80% YoY — still dominates the discount rate effect.
+- **Date of facts:** June 10, 2026 pre-market.
+
+---
+
+### Held positions — "what changed since yesterday" (required for each)
+
+**NVDA — Thesis: INTACT. Strengthened.**
+- *What changed:* NVDA secured Apple as a major AI client (new catalyst — Apple previously seen as a potential NVDA-avoider using its own in-house chips for consumer AI; securing Apple for data-center AI GPU is a meaningful demand expansion). Stock at USD 203.82 (-2.10%) in pre-market, pulled down by broad geopolitical selloff, not company-specific negatives.
+- Next earnings: August 26, 2026. No earnings window risk.
+- Invalidation check: No hyperscaler relationship lost. Q2 guide remains ~USD 91B. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- Source: Robinhood/stock analysis June 10, 2026.
+
+**META — Thesis: INTACT. HIGH ALERT (-7.80%).**
+- *What changed:* No formal equity offering confirmed. Finance Chief and President leading discussions — "no banks hired yet" and Meta officially denies plans ("pure speculation"). HOWEVER: Meta raised capex guide to USD 125-145B and Q1 2026 ad revenue +33% YoY is the underlying thesis pillar. Market's anxiety is about dilution timing, not about the ad business deteriorating.
+- Current price USD 581.00; -12% cut threshold USD 554.51; **buffer = 4.20pp = USD 26.49**. This is thin.
+- The risk-off environment from Iran escalation is an added headwind today.
+- **Hold/trim decision:** HOLD. The invalidation event (confirmed offering + monetization downgrade) has NOT occurred. Offering remains speculation. Exiting here would be selling on noise rather than on thesis break. However, the midday routine must watch META closely — if it breaks toward USD 555-560 range intraday, the cut rule may fire.
+- Next earnings: July 29, 2026. No earnings window risk.
+- Invalidation check: ✓ Not triggered (no confirmed offering + no monetization downgrade).
+- Review by: 2026-06-17. ✓ Not expired.
+- Source: cryptobriefing.com, fxleaders.com, investing.com, June 5-10 2026.
+
+**AVGO — Thesis: INTACT. Positive development.**
+- *What changed:* Broadcom, Apollo Global Management, and Blackstone launched a $35B AI infrastructure financing platform (AI XPV Platform). This confirms AVGO's central role in AI infrastructure beyond just chip sales — AVGO is now financing/orchestrating AI build-out. Analyst consensus Strong Buy, 12-month PT ~USD 520 (+36% from current USD 381.93).
+- Stock at USD 381.93 (-2.61% today, geopolitical selloff). AI revenue guide ~USD 16B Q3 intact.
+- Invalidation check: AI revenue not cut, no guide withdrawal. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- Source: stockanalysis.com/stocks/avgo, June 10 2026.
+
+**MSFT — Thesis: INTACT.**
+- *What changed:* Nothing material new today. Azure +40% confirmed. Build 2026 catalyst (7 in-house AI models, Copilot Agent Mode, Azure AI Foundry) still fresh. Morgan Stanley PT USD 650, consensus Strong Buy. Next dividend ex-date June 11 — minor positive (we hold 28 shares, eligible for a small dividend payment).
+- Stock at USD 398.75 (-1.16% today, geopolitical selloff).
+- Invalidation check: Azure growth not decelerating, Copilot not explicitly called out as underperforming. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- Source: techtimes.com Build 2026 article; CNBC Q3 earnings report.
+
+**AMZN — Thesis: INTACT.**
+- *What changed:* AWS partnerships deepening — Snowflake committed USD 6B over 5 years on AWS for AI workloads; Pinterest AWS expansion for AI visual search. Amazon Prime Day June 23-26 (retail catalyst). Globalstar acquisition (USD 10.9B) expanding infrastructure. Morningstar fair value ~USD 313 vs current USD 242.49 = 29% upside.
+- Stock at USD 242.49 (-0.70% today, mild geopolitical pullback vs semis).
+- Invalidation check: AWS growth not decelerating, Trainium gaining enterprise traction. ✓ Not triggered.
+- Review by: 2026-06-22. ✓ Not expired.
+- Source: Yahoo Finance, simplywall.st, June 2026.
+
+**VST — Thesis: INTACT. STRENGTHENED by oil surge.**
+- *What changed:* Oil WTI +50% from pre-war level = nuclear electricity more competitive vs gas-fired generation. VST's AI data center PPAs (20-year, fixed-rate) are more valuable in an inflationary energy environment because nuclear operators face no fuel-cost volatility. Ex-dividend June 22 (USD 0.229/share). Q1 2026 EBITDA beat expectations; Morgan Stanley and JPMorgan raised PTs (Overweight maintained). Cogentrix acquisition expanding nuclear/gas fleet.
+- Stock at USD 144.30 (-1.31% today — this pullback is counterintuitive given oil strength; likely dragged by broad tech/risk-off sentiment).
+- **Iran war = structural VST tailwind.** Higher oil prices = gas-fired power more expensive = nuclear more competitive = VST's PPAs worth more per MWh. This is a positive macro read-through.
+- Invalidation check: No PPA cancellations, no regulatory action. ✓ Not triggered.
+- Review by: 2026-07-15. ✓ Not expired.
+- Source: Yahoo Finance/VST, stockanalysis.com, June 2026.
+
+**GOOGL — Thesis: INTACT. Strong.**
+- *What changed:* Apple is using Google Cloud for AI needs (confirmed). Multi-year SpaceX deal for Nvidia GPUs via GCP. Alphabet backed Anthropic's USD 35B AI chip deal. GCP Q1 2026 +63% YoY; cloud backlog USD 462B (nearly doubled in one quarter). Cheapest hyperscaler on P/E relative to growth rate. Ex-dividend passed June 8 (we initiated June 9, so we don't collect this dividend).
+- Stock at USD 360.19 (-1.12% today, mild geopolitical drag).
+- Invalidation check: GCP growth accelerating not decelerating; investment plan not cut. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- Source: Google Finance, CNN Markets, June 2026.
+
+---
+
+### Earnings window check
+| Symbol | Next Earnings | Within 2 trading days? | Action |
+|---|---|---|---|
+| NVDA | Aug 26, 2026 | No | None required |
+| META | Jul 29, 2026 | No | None required |
+| AVGO | Sep 3, 2026 | No | None required |
+| MSFT | ~Late Jul 2026 | No | None required |
+| AMZN | ~Late Jul 2026 | No | None required |
+| VST | Aug 6, 2026 | No | None required |
+| GOOGL | ~Late Jul 2026 | No | None required |
+
+**No earnings window risk for any position. ✓**
+
+---
+
+### New position research
+
+**AMD re-entry:** AMD last price USD 480.96 (June 9 close). Entry was USD 508.43. AMD is -5.4% below our entry — rule is never average down, re-enter only after recovery above entry. In a risk-off Iran escalation session, adding semi exposure is wrong regardless. **No AMD re-entry today.**
+
+**Other candidates:** None compelling in the current risk-off environment. No new longs justified when existing book is under stress and geopolitical escalation is acute today.
+
+---
+
+### Deployment check
+- Cash: USD 13,885.38 = 14.7% of equity
+- 20% cash threshold for mandatory deployment note: **not triggered** (14.7% < 20%)
+- Portfolio already 85.3% invested — well above the ≥80% target
+- No deployment pressure; holding cash as buffer in volatile environment is correct
+- **Explicit decision: No new buys today.** Risk-off environment, positions stressed, no compelling entries. Cash reserve is appropriate.
+
+---
+
+### Guardrail check for today
+| Rule | Limit | Status |
+|---|---|---|
+| Single position max | 35% | NVDA 22.2% — largest position. ✓ All clear |
+| Cash floor | 2% min | 14.7% — well above minimum ✓ |
+| Weekly new positions (Week 2) | 8 max | 2/8 used ✓ |
+| Semi-group concentration (NVDA+AVGO) | ≤50% | 36.0% ✓ |
+| Circuit breaker | >20% below HWM | -6.68% — not triggered ✓ |
+| Intraday shock | >6% below last_equity | -1.29% — not triggered ✓ |
+| Stop audit | All positions covered | 7/7 live 18% trailing stops confirmed ✓ |
+| Earnings window | No new buys within 2 days of earnings | Nearest: META Jul 29 ✓ |
+
+---
+
+No trades planned.
+
+## Planned trades for today (June 10, 2026 — market open)
+
+**No trades warranted.** Risk-off environment (fresh US-Iran military escalation), existing positions under stress, no compelling entries. AMD re-entry blocked (below entry price). Hold all 7 positions and let trailing stops protect the book.
+
+```json
+{
+  "plan_date": "2026-06-10",
+  "trades": []
+}
+```

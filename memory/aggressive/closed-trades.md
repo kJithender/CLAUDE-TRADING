@@ -6,6 +6,4 @@
 
 | Date | Symbol | Entry | Exit | P/L% | Days | Thesis | Why Closed | Lesson |
 |------|--------|-------|------|------|------|--------|------------|--------|
-| 2026-06-09 | AMD | 508.43 | ~435 | -13.73% | ? | — | 12% midday cut rule | Reconstruct full details from memory/aggressive/trade-log.md |
-
-<!-- Backfill note: the AMD entry above is a stub reconstructed from the system note in the previous version of this file. Fill in exact entry date, exit price, days held, and thesis from trade-log.md, then remove this comment. -->
+| 2026-06-09 | AMD | USD 508.43 (2026-06-04) | USD 440.92 | -13.28% (-USD 1,147.67) | 5 | Structural AI GPU second-source; data center +57% YoY; MI300/MI400 gaining hyperscaler share; EPYC CPU dominance | -12% midday cut rule triggered at -13.73% intraday during June 9 broad tech selloff (SPY -2.1% intraday). Trailing stop `7540e83d` canceled first, then market close `6f9d9e0c` submitted. Correct sequence confirmed. | Highly correlated semi exposed to any chip-sector selloff. Despite intact data-center thesis, -10.98%+ single-day moves are possible when sector sentiment breaks. 18% stop was about to fire anyway; midday cut rule pre-empted by ~2 points. Rule-based exit was correct — no regret on thesis. Re-entry only after AMD recovers above USD 508.43. |

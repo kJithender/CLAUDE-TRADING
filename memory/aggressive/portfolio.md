@@ -17,37 +17,63 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-09 EOD close (~3:50 PM ET)
+## Last snapshot — 2026-06-10 pre-market (~8:00 AM ET)
 
 | Field | Value |
 |---|---|
-| Equity | USD 95,762.44 |
-| Cash | USD 13,885.40 |
-| Long market value | USD 81,877.04 |
+| Equity | USD 94,388.86 |
+| Cash | USD 13,885.38 |
+| Long market value | USD 80,503.48 |
 | Open positions | 7 |
+| last_equity (prev close) | USD 95,625.88 |
+| Intraday change vs last_equity | -1.29% (shock threshold: 6% — not triggered) |
 
 **Open positions:**
 
-| Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Trailing Stop Order | Stop % | -12% Cut Trigger |
-|---|---|---|---|---|---|---|---|---|---|
-| NVDA | 103 | USD 213.60 | USD 208.62 | USD 21,487.35 | -USD 513.46 | -2.33% | `54d7d851` | 18% | ~USD 187.97 |
-| META | 23 | USD 630.12 | USD 585.90 | USD 13,475.70 | -USD 1,017.06 | **-7.02%** | `11c3a1bf` | 18% | ~USD 554.51 |
-| AVGO | 34 | USD 406.23 | USD 393.10 | USD 13,365.40 | -USD 446.42 | -3.23% | `36f5a45f` | 18% | ~USD 357.48 |
-| MSFT | 28 | USD 426.21 | USD 403.91 | USD 11,309.56 | -USD 624.32 | -5.23% | `ef211767` | 18% | ~USD 375.06 |
-| AMZN | 36 | USD 247.99 | USD 244.50 | USD 8,802.00 | -USD 125.68 | -1.41% | `b55bef05` | 18% | ~USD 218.23 |
-| VST | 52 | USD 151.47 | USD 146.22 | USD 7,603.44 | -USD 273.00 | -3.47% | `5b347be3` | 18% | ~USD 133.29 |
-| GOOGL | 16 | USD 370.22 | USD 364.60 | USD 5,833.60 | -USD 89.92 | -1.52% | `e52a43f1` | 18% | ~USD 325.79 |
+| Symbol | Qty | Avg Entry | Current Price | Market Value | Unrealized P/L | P/L % | Trailing Stop Order | Stop % | Stop Price | -12% Cut Trigger |
+|---|---|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 203.82 | USD 20,993.46 | -USD 1,007.34 | -4.58% | `54d7d851` | 18% | USD 181.71 (HWM: 221.60) | ~USD 187.97 |
+| META | 23 | USD 630.12 | USD 581.00 | USD 13,363.00 | -USD 1,129.76 | **-7.80%** | `11c3a1bf` | 18% | USD 526.75 (HWM: 642.38) | ~USD 554.51 |
+| AVGO | 34 | USD 406.23 | USD 381.93 | USD 12,985.69 | -USD 826.13 | -5.98% | `36f5a45f` | 18% | USD 349.71 (HWM: 426.48) | ~USD 357.48 |
+| MSFT | 28 | USD 426.21 | USD 398.75 | USD 11,165.00 | -USD 768.88 | -6.44% | `ef211767` | 18% | USD 350.56 (HWM: 427.51) | ~USD 375.06 |
+| AMZN | 36 | USD 247.99 | USD 242.49 | USD 8,729.64 | -USD 198.04 | -2.22% | `b55bef05` | 18% | USD 205.35 (HWM: 250.43) | ~USD 218.23 |
+| VST | 52 | USD 151.47 | USD 144.30 | USD 7,503.60 | -USD 372.84 | -4.73% | `5b347be3` | 18% | USD 124.57 (HWM: 151.91) | ~USD 133.29 |
+| GOOGL | 16 | USD 370.22 | USD 360.19 | USD 5,763.09 | -USD 160.43 | -2.71% | `e52a43f1` | 18% | USD 304.81 (HWM: 371.72) | ~USD 325.79 |
 
-**Notes:** Week 2 Day 4 EOD. AMD CLOSED at midday per -12% cut rule (AMD -13.73% from entry USD 508.43; closed at USD 440.92; realized loss -USD 1,147.67). Afternoon recovery from intraday lows (SPY bottomed ~722.59, closed 737.11; NVDA recovered from 200 to 208.62; AVGO from 371 to 393). Cash USD 13,885 (14.5% of portfolio). Semis (NVDA+AVGO only) = USD 34,853 / USD 95,762 = 36.4%. META at -7.02% is the key watchpoint entering June 10 (4.98pp buffer to -12% cut threshold USD 554.51).
+**Stop audit (2026-06-10 pre-market): ALL 7 positions confirmed with live 18% trailing stop orders. ✓**
+
+**Sector exposure summary (journaled decision — intentional concentration):**
+| Sector | Market Value | % of Portfolio |
+|---|---|---|
+| Technology (NVDA, META, AVGO, MSFT, AMZN, GOOGL) | USD 73,000.88 | 77.3% |
+| Utilities/Energy (VST) | USD 7,503.60 | 7.9% |
+| Cash | USD 13,885.38 | 14.7% |
+_Technology overweight is BY DESIGN for Aggressive Bull — concentrated AI-supercycle thesis. The 7.9% utilities/energy (VST) provides non-correlated diversification via nuclear PPAs._
+
+**Thesis contracts (assigned 2026-06-10, all legacy positions):**
+| Symbol | Invalidation | Review By |
+|---|---|---|
+| NVDA | NVDA loses a major hyperscaler customer OR Q2 FY2027 guide drops below USD 80B | 2026-06-25 |
+| META | Meta formally confirms equity offering AND management explicitly downgrades AI monetization | 2026-06-17 |
+| AVGO | AI revenue guide cut below USD 12B for next quarter OR Q3 total revenue miss >10% | 2026-06-25 |
+| MSFT | Azure growth decelerates below 30% YoY OR Copilot explicitly called underperforming | 2026-06-25 |
+| AMZN | AWS growth decelerates to <20% YoY OR Trainium adoption fails hyperscaler traction | 2026-06-22 |
+| VST | Nuclear PPAs with Meta/AWS cancelled or renegotiated; OR material regulatory action vs nuclear fleet | 2026-07-15 |
+| GOOGL | GCP growth decelerates below 40% YoY OR AI investment plan explicitly cut | 2026-06-25 |
+
+_Status 2026-06-10: No invalidations triggered. No review_by dates expired. All contracts active._
+
+**Key watchpoint: META at -7.80% — only 4.20pp buffer to the -12% midday cut threshold (USD 554.51). Monitor closely at midday; geopolitical risk-off environment adds pressure.**
 
 ---
 
-## Planned next positions (Week 2)
+## Planned next positions (Week 2 — as of June 10)
 
-- **AMZN**: ✅ INITIATED June 8 market-open; 36 shares @ $247.99; 18% trailing stop `b55bef05`.
-- **GOOGL**: ✅ INITIATED June 9 market-open; 16 shares @ $370.22; 18% trailing stop `e52a43f1`.
+- **AMZN**: ✅ INITIATED June 8 market-open; 36 shares @ USD 247.99; 18% trailing stop `b55bef05`.
+- **GOOGL**: ✅ INITIATED June 9 market-open; 16 shares @ USD 370.22; 18% trailing stop `e52a43f1`.
 - **AMD**: ✅ CLOSED June 9 midday; cut rule -12% triggered at -13.73% from entry.
-- No new positions planned at midday (midday routine is risk management only). Evaluate re-entry into AMD or other names at next pre-market when thesis can be properly reviewed.
+- **AMD re-entry**: AMD last close USD 480.96 — still below entry USD 508.43. Re-entry only after recovery above entry. Rule: no averaging down.
+- **No new positions planned for June 10**: Risk-off environment (US-Iran fresh escalation), existing positions stressed. Holding book, letting stops work.
 
 ---
 
@@ -72,3 +98,4 @@ but always re-fetches live data before trading._
 | 2026-06-09 (market-open) | 98,044.78 | ~746.14 (intraday) | -1.96% | ~-1.07% | **~-0.89pp** |
 | 2026-06-09 (midday) | 93,506.59 | ~723.44 (intraday) | -6.49% | ~-4.08% | **~-2.41pp** |
 | 2026-06-09 (EOD close) | 95,762.44 | 737.11 | -4.24% | -2.26% | **-1.98pp** |
+| 2026-06-10 (pre-market) | 94,388.86 | — | **-5.61%** | — | — |
