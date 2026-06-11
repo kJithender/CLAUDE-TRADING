@@ -3,26 +3,26 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-11 08:05 ET (pre-market)
+**Last updated:** 2026-06-11 09:36 ET (market-open)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
-## Account (Pre-market June 11, 2026 — live Alpaca data ~08:05 ET)
+## Account (Market-open June 11, 2026 — live Alpaca data ~09:36 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $98,438.13 |
+| Equity | $98,361.27 |
 | Cash | $74,304.63 (75.5%) |
-| Long market value | $24,133.50 |
-| Buying power | ~$364,792 |
+| Long market value | $24,056.64 |
+| Buying power | ~$364,577 |
 | Last equity (June 10 close) | $98,315.05 |
 
-## Open positions (Pre-market June 11, 2026 — live Alpaca data ~08:05 ET)
+## Open positions (Market-open June 11, 2026 — live Alpaca data ~09:36 ET)
 
-| Symbol | Qty | Avg entry | Pre-mkt price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
-|--------|-----|-----------|---------------|-----------|----------------|----------------|---------------|
-| LLY | 10 | $1,093.534 | $1,135.50 | $11,355.00 | +$419.66 (+3.84%) | 11.54% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, HWM **$1,182.73**, stop **$1,064.457**) ✓ — buffer $71.04 (6.26%) |
-| V | 22 | $323.57 | $323.75 | $7,122.50 | +$3.96 (+0.06%) | 7.24% | 66033918 (22sh, HWM **$325.51**, stop **$292.959**) ✓ — buffer $30.79 (9.51%) |
-| VST | 40 | $148.81 | $141.40 | $5,656.00 | -$296.40 (-4.98%) | 5.75% | c4c200a5 (40sh, HWM **$150.30**, stop **$135.270**) ✓ — buffer $6.13 (4.33%) ⬆️ RECOVERING (was critical 2.62% on Wed close at $138.51) |
+| Symbol | Qty | Avg entry | Open price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
+|--------|-----|-----------|------------|-----------|----------------|----------------|---------------|
+| LLY | 10 | $1,093.534 | $1,133.20 | $11,332.00 | +$396.66 (+3.63%) | 11.52% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, HWM **$1,182.73**, stop **$1,064.457**) ✓ — buffer $68.74 (6.06%) |
+| V | 22 | $323.57 | $321.845 | $7,080.59 | -$37.95 (-0.53%) | 7.20% | 66033918 (22sh, HWM **$325.51**, stop **$292.959**) ✓ — buffer $28.89 (8.98%) |
+| VST | 40 | $148.81 | $141.06 | $5,642.40 | -$310.00 (-5.21%) | 5.74% | c4c200a5 (40sh, HWM **$150.30**, stop **$135.270**) ✓ — buffer $5.79 (4.11%) ⬆️ RECOVERING (+1.82% today, -7% threshold $138.39 ✓ clear by $2.67) |
 | ~~META~~ | ~~15~~ | ~~$620.637~~ | — | — | **CLOSED -$639.56 (-6.87%) via trailing stop** | — | **FILLED** (4ea07e91) at $578.00 ~11:06 AM ET Jun 10 ✓ |
 | ~~NVDA~~ | ~~30~~ | ~~$216.302~~ | — | — | **CLOSED -$217.80 (-3.36%) via trailing stop** | — | **FILLED** (8c6b9680) at $209.042 ~11:20 AM ET Jun 5 ✓ |
 | ~~MSFT~~ | ~~20~~ | ~~$422.31~~ | — | — | **CLOSED -$58.94 (-0.70%) via trailing stop** | — | **FILLED** (a55a3db6) at $419.363 ~12:08 PM ET Jun 5 ✓ |
@@ -65,53 +65,54 @@ the last known state, but always re-fetches live data before trading._
 | Midday (2026-06-10) | $98,428.62 | ~$728 est (market weak today) | ~−1.28% est |
 | **Close (2026-06-10)** | **$98,315.05** | **$724.73** | **+0.30%** |
 | **Pre-mkt (2026-06-11)** | **$98,438.13** | **~$730 est (+0.78% futures)** | **~-0.34% est** |
-| **Since inception (2026-05-21)** | **-1.56%** | **-1.99% (Jun 10 close) / ~-1.22% (pre-mkt est)** | **+0.30% at Jun 10 close** |
+| **Open (2026-06-11)** | **$98,361.27** | **~$730 est** | **~+0.35% est** |
+| **Since inception (2026-05-21)** | **-1.64%** | **-1.99% (Jun 10 close)** | **Bull leads SPY ~+0.35%** |
 
 ## Notes
 
-**Pre-market June 11, 2026 — summary:**
-- **Market context:** Futures +0.78%, rebounding from Wednesday's larger-than-recorded SPY decline (actual close $724.73, -1.67% from Jun 9's $737.07). Two risk events today: May PPI 8:30 AM ET and NVDA Senate hearing 10 AM ET. Iran/US conflict ongoing. Bull's 75.5% cash continues to cushion the drawdown.
-- **LLY** ⭐ $1,135.50 pre-mkt (+3.84% from avg entry). Both stops active: HWM $1,182.73, stop $1,064.457 ✓. Buffer $71.04 (6.26%). Foundayo safety: one liver failure case assessed unlikely drug-related — manageable. Three acquisitions (~USD 4B) into vaccines/ID expand pipeline. Medicare GLP-1 Bridge July 1 in 20 days. Thesis STRONGEST.
-- **V** $323.75 pre-mkt (+0.06% from avg entry $323.57). Stop 66033918: HWM $325.51, stop $292.959 ✓. Buffer $30.79 (9.51%). POSITIVE: Visa-OpenAI partnership for AI agent-driven transactions confirmed. Swipe fee settlement resolved. Thesis INTACT.
-- **VST** ⬆️ $141.40 pre-mkt (+2.06% from $138.54 June 10 close, -4.98% from entry $148.81). Stop c4c200a5: HWM $150.30, stop $135.270 ✓. Buffer $6.13 (4.33%). SIGNIFICANT RECOVERY — VST's official June 10 close was $138.51, only $0.12 above the -7% cut threshold. Pre-market recovery to $141.40 provides $3.01 cushion above threshold. Dividend ex-date June 22 (USD 9.16). Thesis INTACT.
+**Market-open June 11, 2026 — summary:**
+- **Market context:** Market open +0.047% from last_equity ($98,315.05). No shock. NVDA Senate Banking hearing proceeds at 10 AM ET (Huang not testifying). May PPI results already absorbed pre-open. Iran/US conflict ongoing; WTI ~$88 (below $100 trigger). Bull's 75.5% cash posture continues.
+- **LLY** ⭐ $1,133.20 at open (-0.28% today, +3.63% from entry). Both stops: HWM $1,182.73, stop $1,064.457 ✓. Buffer $68.74 (6.06%). Medicare GLP-1 Bridge July 1 in 20 days. Thesis STRONGEST.
+- **V** $321.845 at open (-0.35% today, -0.53% from entry $323.57). Stop 66033918: HWM $325.51, stop $292.959 ✓. Buffer $28.89 (8.98%). OpenAI-Visa partnership thesis confirming. Thesis INTACT.
+- **VST** ⬆️ $141.06 at open (+1.82% today, -5.21% from entry). Stop c4c200a5: HWM $150.30, stop $135.270 ✓. Buffer $5.79 (4.11%). -7% threshold $138.39 clear by $2.67 ✓. Dividend ex-date June 22. Thesis INTACT. **Midday check required at 12:30 PM.**
 
-**Since inception performance (June 10 close — Alpaca data):**
-- Bull: $100,000 → $98,315.05 = **-1.69%**
-- SPY: $739.44 → $724.73 = **-1.99%**
-- Gap at June 10 close: **Bull LEADS SPY by +0.30%** — first time Bull definitively ahead of SPY since inception ✓
+**Since inception performance (market-open June 11 — Alpaca data):**
+- Bull: $100,000 → $98,361.27 = **-1.64%**
+- SPY: $739.44 → $724.73 (Jun 10 close) = **-1.99%**
+- Gap at market-open June 11: **Bull LEADS SPY by ~+0.35%** ✓
 
 **Race scoreboard:**
-- Bull: **-1.69%** (since May 21) — **LEADS SPY by +0.30%**
+- Bull: **-1.64%** (since May 21) — **LEADS SPY by ~+0.35%**
 - AGGRO: (last estimate ~-6%)
-- SPY: **-1.99%** (since May 21)
+- SPY: **-1.99%** (since May 21, Jun 10 close)
 
-**Trailing stop status (pre-market June 11 — confirmed via live Alpaca open orders):**
-- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (buffer $71.04 = 6.26%)
+**Trailing stop status (market-open June 11 — confirmed via live Alpaca open orders):**
+- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (buffer $68.74 = 6.06%)
 - LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
-- V (66033918): 22sh — HWM **$325.51**, stop **$292.959** ✓ (buffer $30.79 = 9.51%)
-- VST (c4c200a5): 40sh — HWM **$150.30**, stop **$135.270** ✓ (buffer $6.13 = 4.33%) ⬆️ recovering
+- V (66033918): 22sh — HWM **$325.51**, stop **$292.959** ✓ (buffer $28.89 = 8.98%)
+- VST (c4c200a5): 40sh — HWM **$150.30**, stop **$135.270** ✓ (buffer $5.79 = 4.11%) ⬆️ recovering
 - ~~META (4ea07e91)~~: FILLED at $578.00 Jun 10 ✓
 
-**Week of June 8 — new position slots (updated June 11 pre-market):**
+**Week of June 8 — new position slots (updated June 11 market-open):**
 - **Slot 1:** VST — **BOUGHT** 40sh @ $148.81 ✓ (June 9)
 - **Slot 2:** V (Visa) — **BOUGHT** 22sh @ $323.57 ✓ (June 10)
-- **Slot 3:** **UNUSED (deliberate deferral)** — LRCX ATR ~11% disqualifies entry; NVDA hearing today; next week 3 fresh slots.
+- **Slot 3:** **UNUSED (deliberate deferral)** — LRCX ATR ~11% disqualifies entry; NVDA hearing today; Slot 3 expires unused. Next week: 3 fresh slots, LRCX re-evaluation first priority.
 
-**Sector exposure (pre-market June 11):**
-- Healthcare (LLY): $11,355.00 = 11.54%
-- Financials (V): $7,122.50 = 7.24%
-- Energy/Utilities (VST): $5,656.00 = 5.75%
+**Sector exposure (market-open June 11):**
+- Healthcare (LLY): $11,332.00 = 11.52%
+- Financials (V): $7,080.59 = 7.20%
+- Energy/Utilities (VST): $5,642.40 = 5.74%
 - Cash: $74,304.63 = 75.5%
 - No sector above 60% cap ✓
 
 **Upcoming catalysts:**
-- **May PPI 8:30 AM ET TODAY** — rate trigger watch
 - **NVDA Senate hearing 10 AM ET TODAY** — AI semi sentiment; Huang not testifying
-- **VST midday check:** Must remain > $138.39 at 12:30 PM per -7% rule (pre-mkt $141.40 ✓)
+- **VST midday check:** Must remain > $138.39 at 12:30 PM per -7% rule ($141.06 at open ✓)
 - LLY Medicare GLP-1 Bridge program effective July 1 (20 days)
-- VST dividend ex-date June 22 (USD 9.16 credit for 40 shares)
+- VST dividend ex-date June 22 (USD 9.16 credit for 40 shares — 11 days)
 - V Q3 FY26 earnings July 28 (thesis review_by date)
 - VST thesis review_by July 7
+- LRCX re-evaluation next week (June 16+) — Slot 1 of 3 when ATR normalizes
 - LRCX re-evaluation June 16+ (next week)
 
 ---

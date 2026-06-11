@@ -3,6 +3,68 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-11 09:36 ET — MARKET OPEN (no trades; stop audit passed)
+- **Action:** No trades — plan_date 2026-06-11 has trades: []. No new positions this session.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 09:36 ET — next close 16:00 ET)
+- **Account:** Equity $98,361.27 | Cash $74,304.63 (75.5%) | Long market value $24,056.64
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+### Shock check
+- Equity $98,361.27 vs last_equity $98,315.05 = **+$46.22 = +0.047%** — POSITIVE. No shock day. ✓
+
+### Position review (09:36 ET)
+
+**LLY** ($1,133.20, **+3.63% from avg entry $1,093.534**, **-0.28% today** vs $1,136.37 last close) ⭐ STRONG
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** ✓
+- Stop buffer: $1,133.20 − $1,064.457 = **$68.74 (6.06%)** ✓ Well protected.
+- -7% cut threshold: $1,016.99 — CLEAR by $116. No action.
+- Medicare GLP-1 Bridge July 1 in 20 days. Thesis STRONGEST. HOLD.
+
+**V** ($321.845, **-0.53% from entry $323.57**, **-0.35% today** vs $322.96 last close) ✓ INTACT
+- Trailing stop 66033918: HWM $325.51, stop **$292.959** ✓
+- Stop buffer: $321.845 − $292.959 = **$28.89 (8.98%)** ✓ Healthy.
+- -7% cut threshold: $300.92 — CLEAR by $21. No action. OpenAI partnership thesis confirming. HOLD.
+
+**VST** ($141.06, **-5.21% from entry $148.81**, **+1.82% today** vs $138.54 last close) ⬆️ RECOVERING
+- Trailing stop c4c200a5: HWM **$150.30**, stop **$135.270** ✓
+- Stop buffer: $141.06 − $135.270 = **$5.79 (4.11%)** ✓ Improving.
+- -7% cut threshold: **$138.39** — VST at $141.06 is **$2.67 above it** (1.93% cushion). ✓ NOT triggered.
+- Pre-market recovery continuing into open (+1.82% today). Nuclear PPA thesis intact. Dividend ex-date June 22. HOLD.
+- **Midday check required:** VST must remain > $138.39 at 12:30 PM.
+
+### Stop audit (market-open June 11)
+All 4 trailing stops confirmed active via Alpaca open orders endpoint:
+- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (buffer $68.74 = 6.06%)
+- LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+- V (66033918): 22sh — HWM **$325.51**, stop **$292.959** ✓ (buffer $28.89 = 8.98%)
+- VST (c4c200a5): 40sh — HWM **$150.30**, stop **$135.270** ✓ (buffer $5.79 = 4.11%)
+No orphaned stops. No missing stops. Stop audit: 4/4 PASS ✓
+
+### Exit reconciliation
+No trailing stops filled since pre-market run. All 3 positions still held. No new closed-trade entries needed.
+
+### Guardrail checks (market-open June 11)
+- No position below -7% cut threshold: LLY +3.63%, V -0.53%, VST -5.21% ($141.06 > $138.39) ✓
+- No position above +15% tighten threshold (LLY at +3.63%, threshold $1,257.56) ✓
+- Drawdown circuit breaker: Equity $98,361 vs HWM $101,384 = **-2.98%** — within -10% ✓
+- Intraday shock: +$46.22 = +0.047% — POSITIVE ✓
+- Cash $74,304.63 (75.5%) >> 5% minimum ✓
+- Week of June 8: 2/3 slots used (VST, V). Slot 3 expires unused — deliberate decision ✓
+- No new positions today (plan_date 2026-06-11, trades: []) ✓
+
+### No-trade explicit confirmation
+No new positions today. Plan date confirmed 2026-06-11. Reasons: (1) LRCX ATR ~11% disqualifies entry; (2) NVDA Senate Banking hearing 10 AM ET creates mid-session AI semi volatility; (3) May PPI at 8:30 AM (already released — need to monitor 10yr for any spike above 4.75%). Slot 3 week of June 8 intentionally expires unused.
+
+### Performance (market-open June 11)
+- **Equity:** $98,361.27 (vs last_equity $98,315.05 = +$46.22 = +0.047% today)
+- **Today P/L:** LLY -$31.70, V -$24.53, VST +$100.80 = net +$44.57 (Alpaca mark ~+$46.22)
+- **Cash:** $74,304.63 (75.5%) | Long market value: $24,056.64
+- **Since inception (2026-05-21):** Bull **-1.64%** ($100,000 → $98,361.27) vs SPY **-1.99%** (Jun 10 close $724.73 / $739.44 anchor) = **Bull leads SPY by ~+0.35%** ✓
+
+---
+
 ## 2026-06-11 08:05 ET — PRE-MARKET (no trades; plan set)
 - **Action:** None — market closed (next open 09:30 ET). Plan set: no new positions today.
 - **Market status:** `is_open: false` ✓ (confirmed via clock at 08:04 ET — next open 09:30 ET June 11)
