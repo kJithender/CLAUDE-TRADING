@@ -3,6 +3,73 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-11 08:05 ET — PRE-MARKET (no trades; plan set)
+- **Action:** None — market closed (next open 09:30 ET). Plan set: no new positions today.
+- **Market status:** `is_open: false` ✓ (confirmed via clock at 08:04 ET — next open 09:30 ET June 11)
+- **Account:** Equity $98,438.13 | Cash $74,304.63 (75.5%) | Long market value $24,133.50
+
+### Stop audit (pre-market June 11)
+All 4 trailing stops confirmed active via Alpaca open orders endpoint:
+- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+- LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+- V (66033918): 22sh — HWM **$325.51**, stop **$292.959** ✓
+- VST (c4c200a5): 40sh — HWM **$150.30**, stop **$135.270** ✓
+
+### Position review (pre-market June 11)
+
+**LLY** ($1,135.50 pre-mkt, **+3.84% from avg entry $1,093.534**, **-0.74% today** vs $1,143.94 June 10 close) ⭐ STRONG
+- Stop buffer: $1,135.50 − $1,064.457 = **$71.04 (6.26%)** ✓
+- Foundayo safety: one liver failure case assessed by Lilly as unlikely drug-related — immaterial. Pipeline acquisitions (~USD 4B) positive. Medicare GLP-1 Bridge July 1 in 20 days. Thesis STRONGEST.
+- No action.
+
+**V** ($323.75 pre-mkt, **+0.06% from entry $323.57**, **-0.40% today** vs $325.055 June 10 close) ✓ INTACT
+- Stop buffer: $323.75 − $292.959 = **$30.79 (9.51%)** ✓
+- OpenAI partnership announced — AI agent-driven transactions thesis confirmation. Swipe fee settlement resolved. No action.
+
+**VST** ($141.40 pre-mkt per positions API, **-4.98% from entry $148.81**, **+2.06% today** vs $138.54 June 10 close) ⬆️ RECOVERING
+- Official June 10 close was $138.51 — only $0.12 above the -7% cut threshold $138.39 (more critical than the $138.91 I noted at 15:52 ET Wednesday).
+- Pre-market recovery to $141.40 provides $3.01 (2.18%) cushion above threshold. Much improved.
+- Stop buffer: $141.40 − $135.270 = **$6.13 (4.33%)** ✓
+- No VST-specific negative news. Broad market rebound (+0.78% futures) driving recovery. Dividend ex-date June 22 intact. Thesis unchanged.
+- **Decision: HOLD. Stop at $135.27 is the defined floor. Midday check required: if VST < $138.39 at 12:30 PM, close per -7% rule.**
+
+### Macro context (pre-market June 11)
+- S&P 500 futures: +0.78% — rebounding from Wednesday's -1.67% SPY decline (actual close $724.73)
+- May PPI due 8:30 AM ET — potential rate shock if hot (watch: 10yr crossing 4.75%)
+- NVDA Senate Banking hearing at 10 AM ET — Huang declined to testify; non-NVDA witnesses only; AI semi sector sentiment uncertain during session
+- Iran/US conflict ongoing; WTI ~$88 (<$100 ✓)
+
+### Thesis contract review
+- LLY: invalidation = stop fires ($1,064.46) or Medicare Bridge reversed. review_by July 1. $1,135.50 >> stop. **INTACT. HOLD.**
+- V: invalidation = trailing stop fires ($292.96) or regulatory mandate. review_by July 28. $323.75 >> stop. **INTACT. HOLD.**
+- VST: invalidation = WTI >$100, FCF cut, PPA cancellation, or breaks $130 on volume. review_by July 7. $141.40 >> $130 invalidation. **INTACT. HOLD.**
+
+### Guardrail checks
+- Drawdown circuit breaker: Equity $98,438 vs HWM $101,384 = **-2.91%** — within -10% ✓
+- Intraday shock: +$123 = +0.13% vs last_equity — positive ✓
+- Cash 75.5% >> 5% minimum ✓
+- All trailing stops active (4/4) ✓
+- No position below -7% cut threshold (LLY +3.84%, V +0.06%, VST -4.98% pre-mkt) ✓
+
+### New position decision — Slot 3 (week of June 8)
+
+**LRCX: DEFER — ATR disqualifies entry this week.**
+- Next earnings: August 5, 2026 ✓
+- Q3 2026 results: +24% revenue YoY, EPS +40% YoY, UBS PT $375 — strong fundamentals
+- **ATR check:** June 9 range 13.13%, June 10 range 8.91% — 2-day average ~11% >> 3% threshold
+- Even halved position: at 11% ATR, a 10% trailing stop provides ~1 average day of cushion. Unacceptable risk profile.
+- NVDA hearing during market session creates additional AI semi uncertainty
+- **Decision: DEFER to next week. Slot 3 expires unused — deliberate cash decision, not passive default.**
+
+### Cash-drag note (explicit)
+Cash 75.5% > strategy target 25-40%. Slot 3 unused. Explicit reasoning: LRCX ATR ~11% disqualifies entry under volatility rule; NVDA hearing outcome unknown until 10 AM; May PPI unknown until 8:30 AM; VST pre-market recovery needs confirmation through the session. NEXT WEEK: LRCX re-evaluation as first priority if ATR normalizes and AI semi sentiment clears.
+
+### Performance (pre-market June 11)
+- **Equity:** $98,438.13 (vs last_equity $98,315.05 — +$123.08 overnight = +0.13%)
+- **Since inception (2026-05-21):** Bull **-1.69%** ($98,315.05 at June 10 close) vs SPY **-1.99%** ($724.73 at June 10 close) = **Bull LEADS SPY by +0.30%** — first time definitively ahead since inception
+
+---
+
 ## 2026-06-10 15:52 ET — CLOSE — EOD journal
 
 - **Action:** No trades. End-of-day P/L check, exit reconciliation, journal.
