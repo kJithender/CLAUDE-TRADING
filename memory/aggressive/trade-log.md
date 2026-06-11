@@ -320,6 +320,55 @@ order id, and a "verified" confirmation._
 
 ---
 
+## 2026-06-11 — MARKET OPEN (~9:46 AM ET)
+
+**No trades executed.** Pre-market plan correctly called no-trade.
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Clear (empty `{}`) ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Plan date | June 11, 2026 — matches today ✓ |
+| Plan trades | [] — empty, no trades planned ✓ |
+| Idempotency | No prior EXECUTED: marker ✓ |
+
+### Market & account status
+| Check | Result |
+|---|---|
+| Market open | true (next close 4:00 PM ET) ✓ |
+| Equity | USD 93,115.96 |
+| Last equity (prev close June 10) | USD 92,912.82 |
+| Intraday change | +0.22% (shock threshold 6% — NOT triggered ✓) |
+| Cash | USD 13,885.38 (14.9%) |
+| Cash floor (2% min) | ✓ |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -7.94% (circuit breaker 20% — NOT triggered ✓) |
+
+### Stop audit — 7/7 positions confirmed with live 18% trailing stops ✓
+
+| Symbol | Qty | Current Price | P/L % | Stop Price | Stop Order ID | Buffer to -12% |
+|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 202.79 | -5.06% | USD 181.71 (`54d7d851`) | ✓ live | 6.94pp |
+| META | 23 | USD 563.51 | **-10.57%** | USD 526.75 (`11c3a1bf`) | ✓ live | **🚨 1.60pp** |
+| AVGO | 34 | USD 379.05 | -6.69% | USD 349.71 (`36f5a45f`) | ✓ live | 5.31pp ⚠️ |
+| MSFT | 28 | USD 390.24 | -8.44% | USD 350.56 (`ef211767`) | ✓ live | 3.56pp ⚠️ |
+| AMZN | 36 | USD 236.94 | -4.46% | USD 205.35 (`b55bef05`) | ✓ live | 7.54pp |
+| VST | 52 | USD 143.10 | -5.53% | USD 124.57 (`5b347be3`) | ✓ live | 6.47pp |
+| GOOGL | 16 | USD 350.005 | -5.46% | USD 304.81 (`e52a43f1`) | ✓ live | 6.54pp |
+
+**No stops missing. No stops needing recreation. All positions protected.**
+
+### Notable observations
+- META at -10.57% (USD 563.51): CRITICAL. Only 1.60pp buffer before -12% midday cut rule fires at USD 554.51. DOWN -1.31% today. Thesis: ad revenue +33% YoY intact, NO formal equity offering confirmed. Per guardrails, -12% cut fires at MIDDAY, not at open. Midday routine must check META price immediately.
+- MSFT at -8.44%: 3.56pp buffer. DOWN -1.79% today. Azure thesis intact.
+- AVGO, VST, GOOGL bouncing today on Oracle catalyst (+1.87%, +3.29%, -1.79% respectively).
+- NVDA bouncing +1.18% intraday on Oracle AI demand confirmation (USD 638B RPO, USD 70B FY2027 capex).
+- PPI data for May released 8:30 AM ET — result unknown at this log entry; outcome will affect intraday positioning.
+
+---
+
 ## 2026-06-10 — MIDDAY CHECK (~12:41 PM ET)
 
 **No trades executed.** Risk management only. All positions within guardrails.
