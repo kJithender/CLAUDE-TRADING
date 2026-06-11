@@ -619,3 +619,162 @@ No trades planned.
 }
 ```
 EXECUTED: 2026-06-10T13:46:45Z (no trades — no-trade plan confirmed, stop audit passed)
+
+---
+
+## 2026-06-11 — WEEK 2 PRE-MARKET (Thursday)
+[search: WebSearch fallback — MiniMax M3 not available in this session]
+
+### Portfolio snapshot (live Alpaca data, ~8:00 AM ET)
+
+| Symbol | Qty | Avg Entry | Pre-mkt Price | P/L % | Change vs June 10 close |
+|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 203.13 | -4.90% | +1.35% (Oracle catalyst) |
+| META | 23 | USD 630.12 | USD 572.08 | **-9.21%** | +0.19% (slight overnight recovery) |
+| AVGO | 34 | USD 406.23 | USD 375.62 | **-7.54%** | +0.95% (bouncing with semis) |
+| MSFT | 28 | USD 426.21 | USD 397.51 | -6.73% | +0.04% (stable) |
+| AMZN | 36 | USD 247.99 | USD 240.19 | -3.15% | +0.92% (Graviton5 launch) |
+| VST | 52 | USD 151.47 | USD 141.69 | -6.46% | +2.27% (bouncing) |
+| GOOGL | 16 | USD 370.22 | USD 357.69 | -3.38% | +0.37% (stable) |
+
+**Account equity: USD 93,604.88** (up USD 692.06 = +0.74% vs prev close USD 92,912.82; shock threshold 6% = NOT triggered ✓)
+**Cash: USD 13,885.38 (14.8% of portfolio)**
+**Semi-group concentration (NVDA+AVGO only): USD 33,693 / USD 93,605 = 36.0%** (well below 50%)
+**Weekly new-position count (Week 2): 2/8 (AMZN June 8, GOOGL June 9)**
+
+---
+
+### Drawdown circuit breaker check
+- Equity history high-water mark: USD 101,144.73
+- Current equity: USD 93,604.88
+- Drawdown from HWM: **-7.45%**
+- Circuit breaker threshold: 20%
+- **Status: NOT TRIGGERED. Normal operation continues.**
+
+---
+
+### Intraday shock check
+- Current equity: USD 93,604.88 vs last_equity: USD 92,912.82
+- Intraday change: +0.74% (positive!)
+- Shock threshold: -6%
+- **Status: NOT TRIGGERED.**
+
+---
+
+### Market posture (June 11, 2026)
+**Overall: RISK-ON BOUNCE. Oracle AI demand confirmation driving semiconductor rally pre-market.**
+
+- **Primary catalyst — Oracle Q4 FY2026 earnings (reported after June 10 close):** Oracle reported Q4 FY2026 revenue of USD 19.2B (+21% YoY), adj EPS USD 2.11 vs USD 1.97 estimate (beat). OCI cloud revenue +93% to USD 5.8B. Total cloud +47%. Remaining performance obligations (RPO): **USD 638B (+363% YoY)** — an astonishing confirmation of AI infrastructure demand. FY2027 capex plan: **USD 70B** in data center/compute. Oracle's CEO explicitly stated AI demand is "trillions." This is the most concrete third-party confirmation of GPU demand since NVDA's own Q1 beat. Source: Digitimes/Oracle 8-K, June 11, 2026. Date: June 11, 2026.
+- **Oracle stock reaction:** ORCL itself fell 8-12% pre-market — investors worried about capital intensity (raised $48B in FY2026, plans another $40B in FY2027). For us, this is irrelevant — we don't hold ORCL. What matters is ORCL's capex demand signals = massive GPU/semiconductor demand. Source: Bloomberg/NextWeb, June 10-11, 2026.
+- **Semi stocks:** NVDA, AMD, DELL, SMCI all surging pre-market on Oracle demand confirmation. NVDA trading range USD 198.88-207.22. TipRanks confirms "AI hardware and chip stocks are rising today." Source: TipRanks June 11, 2026.
+- **S&P 500 futures:** +0.78%, implying higher open. SPX futures at 7,321.50 (vs June 10 close of 7,266.99). Polymarket showed 95% probability of higher open. Source: Benzinga/Polymarket, June 11, 2026.
+- **PPI for May (due 8:30 AM ET today):** April PPI was +6.0% YoY / +1.4% MoM (highest since Dec 2022). May consensus: +0.7% MoM (significant deceleration). If comes in below consensus → relief rally for growth names. If hot → inflation scare, growth headwind. This is the biggest domestic risk event of the day. Source: BLS schedule, June 11, 2026.
+- **Iran war:** Trump threatened further military action after Iran shot down US Apache helicopter. Market largely "looking through" geopolitics (S&P hit ATHs during the conflict). Today's bounce suggests market is positioning off geopolitics and onto AI demand fundamentals. Source: Benzinga June 11, 2026.
+- **Date of facts:** June 11, 2026 pre-market.
+
+---
+
+### Held positions — "what changed since yesterday" (required for each)
+
+**NVDA — Thesis: INTACT. Significantly strengthened.**
+- *What changed:* Oracle's USD 638B RPO and USD 70B FY2027 data center capex plan = most concrete third-party GPU demand confirmation since NVDA's own Q1 results. NVDA is the primary beneficiary — every Oracle GPU deployment flows through NVDA (the company has no viable GPU alternative at scale). NVDA surging +1.35% pre-market. Analyst consensus: Strong Buy, ~50% upside.
+- Invalidation check: No hyperscaler relationship lost. Q2 guide ~USD 91B. Oracle's RPO strengthens thesis. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. Do NOT add (still at -4.90% from entry — would be averaging down per rules). Let price recover above USD 213.60 before any pyramid add.**
+- Source: TipRanks/Digitimes, June 11, 2026.
+
+**META — Thesis: INTACT. HIGH ALERT (-9.21%, 3.07pp from cut).**
+- *What changed:* (1) FT report of potential equity sale persists — no banks formally appointed, no confirmation. (2) NEW POSITIVE: Meta and Reliance Industries agreed to develop/lease a 168MW AI-enabled data center in Jamnagar, India. This is exactly what META's USD 125-145B capex is building — AI infrastructure. Thesis-positive. (3) Truist initiated coverage noting Meta subscriptions could reach USD 20B+ by 2030 — new revenue stream diversification. (4) Stock bounced +0.19% overnight, now at USD 572.08.
+- Buffer to -12% cut: USD 572.08 - USD 554.51 = USD 17.57 = 3.07pp. THIN.
+- Invalidation check: No formal equity offering + no AI monetization downgrade. Ad revenue +33% YoY thesis intact. ✓ Not triggered.
+- Review by: 2026-06-17. ✓ Not expired.
+- **Decision: HOLD. Thesis intact. However, if META opens BELOW USD 558 today and continues declining, midday routine MUST be ready to execute the -12% cut at USD 554.51. No preemptive action at pre-market — the rule fires at midday, not at open.**
+- Source: FXLeaders/Truist/CNBC, June 7-11, 2026.
+
+**AVGO — Thesis: INTACT. Recovering.**
+- *What changed:* Bouncing +0.95% pre-market with chip sector on Oracle catalyst. AI revenue guide USD 16B Q3 intact. No new company-specific news. Drawdown improved from -8.50% yesterday to -7.54% today.
+- Invalidation check: AI revenue not cut, no guide withdrawal. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. Buffer improved. Oracle AI demand confirmation is directly thesis-positive.**
+- Source: StockAnalysis/Broadcom, June 11, 2026.
+
+**MSFT — Thesis: INTACT.**
+- *What changed:* (1) Dividend USD 0.91/share payable today (June 11) to shareholders of record May 21 — we hold 28 shares, expect ~USD 25 dividend credit (minor). (2) Gaming division "Project Helix" Xbox update — immaterial to thesis. (3) Azure China layoffs due to US-China data regulations — minor negative but immaterial to global Azure +40% growth story.
+- Invalidation check: Azure growth not decelerating, Copilot not underperforming. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD.**
+- Source: CNBC/MSFT investor relations, June 11, 2026.
+
+**AMZN — Thesis: INTACT. New positive developments.**
+- *What changed:* (1) Amazon launched **Graviton5 CPU** for AWS cloud and AI customers — generational performance improvement for AI inference workloads (thesis-positive: differentiates AWS from Azure/GCP on price-performance). (2) Amazon secured **USD 17.5B line of credit** from Citibank — AI infrastructure financing flexibility. (3) Prime Day confirmed June 23-26 (retail revenue catalyst). Analyst median PT: USD 319.50.
+- Invalidation check: AWS growth not decelerating, Trainium/Graviton AI traction ongoing. ✓ Not triggered.
+- Review by: 2026-06-22. ✓ Not expired.
+- **Decision: HOLD. Graviton5 is the most significant AWS development in weeks — directly strengthens the AI infrastructure thesis.**
+- Source: Motley Fool/Yahoo Finance, June 10-11, 2026.
+
+**VST — Thesis: INTACT. Dividend confirmed.**
+- *What changed:* (1) Dividend USD 0.229/share ex-date confirmed June 22, 2026 — minor positive for Q2 yield. (2) No new negative news. (3) Oil prices remain elevated from Iran war — nuclear electricity competitive advantage vs gas-fired generation remains in force. Stock bouncing +2.27% pre-market — first meaningful bounce in several sessions.
+- Invalidation check: No PPA cancellations, no regulatory action. ✓ Not triggered.
+- Review by: 2026-07-15. ✓ Not expired.
+- **Decision: HOLD. Nuclear PPA thesis intact; dividend upcoming; oil surge continues to strengthen economic moat.**
+- Source: Vistra investor relations/Yahoo Finance, June 11, 2026.
+
+**GOOGL — Thesis: INTACT. Dilution headwind noted.**
+- *What changed:* (1) Alphabet issued ~USD 19B in mandatory convertible preferred shares last week — additional dilution on top of the USD 85B offering June 3. This is further dilutive pressure (near-term headwind). HOWEVER, it signals continued massive AI capex commitment — consistent with the thesis. TD Cowen raised PT to USD 475 from USD 450 (Strong Buy). Consensus avg PT: USD 409 (+15.8% upside). (2) GOOGL bouncing +0.37% pre-market.
+- Invalidation check: GCP +63% YoY, investment plan not cut. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. Additional equity raises are dilutive but confirm AI investment commitment. Thesis intact.**
+- Source: Simply Wall St/Alphabet investor relations, June 11, 2026.
+
+---
+
+### Earnings window check
+| Symbol | Next Earnings | Within 2 trading days? | Action |
+|---|---|---|---|
+| NVDA | Aug 26, 2026 | No | None required |
+| META | Jul 29, 2026 | No | None required |
+| AVGO | Sep 3, 2026 | No | None required |
+| MSFT | ~Late Jul 2026 | No | None required |
+| AMZN | ~Late Jul 2026 | No | None required |
+| VST | Aug 6, 2026 | No | None required |
+| GOOGL | ~Late Jul 2026 | No | None required |
+
+**No earnings window risk for any position. ✓**
+
+---
+
+### Deployment check
+- Cash: USD 13,885.38 = 14.8% of equity
+- 20% cash threshold for mandatory deployment note: **NOT triggered** (14.8% < 20%)
+- Portfolio 85.2% invested — above the ≥80% target
+- Week 2 positions: 2/8 used (AMZN June 8, GOOGL June 9)
+- **Explicit decision: No new buys today.** Portfolio is above 80% invested target. Cash at 14.8% serves as buffer against potential META -12% cut (which would free ~USD 13K). PPI data at 8:30 AM ET is a potential volatility catalyst. The Oracle AI demand confirmation benefits our EXISTING positions — no need to add new complexity. AMD re-entry remains blocked (price USD ~480 < entry USD 508.43).
+
+---
+
+### Guardrail check for today
+| Rule | Limit | Status |
+|---|---|---|
+| Single position max | 35% | NVDA 22.4% — largest position. ✓ All clear |
+| Cash floor | 2% min | 14.8% — well above minimum ✓ |
+| Weekly new positions (Week 2) | 8 max | 2/8 used ✓ |
+| Semi-group concentration (NVDA+AVGO) | ≤50% | 36.0% ✓ |
+| Circuit breaker | >20% below HWM | -7.45% — not triggered ✓ |
+| Intraday shock | >6% below last_equity | +0.74% (UP) — not triggered ✓ |
+| Stop audit | All positions covered | 7/7 live 18% trailing stops confirmed ✓ |
+| Earnings window | No new buys within 2 days of earnings | Nearest: META Jul 29 ✓ |
+
+---
+
+No trades planned.
+
+## Planned trades for today (June 11, 2026 — market open)
+
+**No trades warranted.** Portfolio already 85.2% invested (above 80% target). Oracle AI demand catalyst benefits existing positions — no need to add new names. META at 3.07pp from cut rule provides reason to maintain cash buffer; PPI data at 8:30 AM ET is a volatility risk event. Let existing positions participate in the Oracle-driven recovery.
+
+```json
+{
+  "plan_date": "2026-06-11",
+  "trades": []
+}
+```
