@@ -428,3 +428,66 @@ order id, and a "verified" confirmation._
 
 ### Result
 All 7 positions within guardrails. No trades. All 18% trailing stops active and audited. Three HIGH ALERT positions (META, AVGO, VST) to monitor closely at EOD close routine.
+
+---
+
+## 2026-06-11 — MIDDAY CHECK (~12:41 PM ET)
+
+**No trades executed.** Risk management only. All positions within guardrails.
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Clear (empty `{}`) ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Market open | true (next close 4:00 PM ET) ✓ |
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 92,974.10 |
+| Last equity (prev close June 10) | USD 92,912.82 |
+| Intraday change vs last_equity | **+0.07%** (shock threshold 6% — NOT triggered ✓) |
+| Cash | USD 13,885.38 (14.9%) |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-8.08%** (circuit breaker 20% — NOT triggered ✓) |
+
+### Position review
+
+| Symbol | Entry | Current | P/L % | -12% Trigger | Buffer | News summary | Action |
+|---|---|---|---|---|---|---|---|
+| NVDA | USD 213.60 | USD 201.37 | -5.73% | USD 187.97 | 6.27pp | Oracle USD 70B capex confirms GPU demand; +0.47% intraday | No action |
+| META | USD 630.12 | USD 563.31 | **-10.60%** | USD 554.51 | **🚨 1.57pp** | No equity offering confirmed; Meta-Reliance India AI data center; ex-div June 15; -1.34% today | No action — thesis intact, invalidation NOT triggered |
+| AVGO | USD 406.23 | USD 378.71 | -6.77% | USD 357.48 | **5.23pp ⚠️** | USD 35B AI infra platform (Apollo/Blackstone); USD 2.5B debt tender; +1.78% intraday | No action |
+| MSFT | USD 426.21 | USD 387.86 | **-9.00%** | USD 375.06 | **3.00pp ⚠️** | Azure China cuts minor; gaming layoffs irrelevant; -2.39% today | No action — thesis intact |
+| AMZN | USD 247.99 | USD 237.06 | -4.41% | USD 218.23 | 7.59pp | Graviton5/USD 17.5B credit facility; -0.40% today | No action |
+| VST | USD 151.47 | USD 144.71 | -4.46% | USD 133.29 | 7.54pp | +4.45% strong bounce; ex-div June 22; nuclear moat intact | No action |
+| GOOGL | USD 370.22 | USD 348.97 | -5.74% | USD 325.79 | 6.26pp | AI Overview scrutiny (consumer, not GCP); Samsung TPU "Icefish" positive; -2.08% today | No action |
+
+**Cut rule check (>-12% from entry): NO positions triggered. All clear.**
+**Tighten-stop rule check (>+25% from entry): NO positions triggered. All in drawdown.**
+
+### Stop audit — 7/7 positions confirmed ✓
+
+| Symbol | Stop Order ID | Stop Price | Status |
+|---|---|---|---|
+| NVDA | `54d7d851` | USD 181.71 (HWM USD 221.60) | ✓ live |
+| META | `11c3a1bf` | USD 526.75 (HWM USD 642.38) | ✓ live |
+| AVGO | `36f5a45f` | USD 349.71 (HWM USD 426.48) | ✓ live |
+| MSFT | `ef211767` | USD 350.56 (HWM USD 427.51) | ✓ live |
+| AMZN | `b55bef05` | USD 205.35 (HWM USD 250.43) | ✓ live |
+| VST | `5b347be3` | USD 124.57 (HWM USD 151.91) | ✓ live |
+| GOOGL | `e52a43f1` | USD 304.81 (HWM USD 371.72) | ✓ live |
+
+**No stops missing. No stops needing recreation.**
+
+### News scan [search: WebSearch fallback — MiniMax M3 not available]
+- **META**: No equity offering formally confirmed. Meta-Reliance India AI data center (thesis-positive — this is exactly the kind of AI capex the stock is being punished for spending). Ex-dividend date June 15 (Monday) — minor price artifact on that date. Decision: HOLD. Invalidation (confirmed offering + monetization downgrade) not triggered.
+- **MSFT**: Azure China unit cuts and Xbox layoffs are immaterial to Azure AI enterprise thesis. Microsoft restricting Claude Fable 5 use internally is a minor policy item unrelated to revenue growth. Thesis intact. Decision: HOLD.
+- **AVGO**: USD 35B AI infrastructure financing platform with Apollo and Blackstone confirms AVGO's deepening role as an AI infrastructure orchestrator beyond chip sales. USD 2.5B senior notes tender offer = healthy debt management (positive for balance sheet). Thesis intact. Decision: HOLD.
+- **NVDA**: Oracle USD 70B FY2027 data center capex is the most concrete third-party GPU demand signal available. NVDA up slightly intraday. CPU pivot questions are noise relative to the GPU supercycle. Thesis STRENGTHENED. Decision: HOLD.
+- **GOOGL**: AI Overview (consumer search product) scrutiny does not touch GCP enterprise revenue. Samsung TPU "Icefish" chip manufacturing talks confirm GOOGL's AI hardware roadmap. Thesis intact. Decision: HOLD.
+
+### Result
+All 7 positions within guardrails. No trades. All 18% trailing stops active and audited. META remains CRITICAL (1.57pp from -12% cut). EOD close routine must check META price immediately upon run.
