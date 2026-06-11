@@ -3,6 +3,81 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-11 15:51 ET — CLOSE — EOD journal
+
+- **Action:** No trades. End-of-day P/L check, exit reconciliation, journal.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 15:51 ET — next close 16:00 ET; not a half-day)
+- **Account:** Equity $98,825.30 | Cash $74,304.63 (75.2%) | Long market value $24,520.67
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+### Market context (June 11, 2026)
+SPY rallied approximately +1.34% today ($727.87 Jun 10 close → $737.62 est. close at 3:51 PM ET), driven primarily by Iran signaling a nuclear deal is imminent — reducing geopolitical oil-price risk premium. The rebound was broad: AI infra, energy, and healthcare participated. LLY +2.36% and VST +5.12% outperformed; V -0.75% lagged as financials rotated. A hot PPI print was noted but did not derail the rally — Iran deal signal dominated. Today's context supports Bull's current position theses.
+
+### Position review (EOD June 11 — ~3:51 PM ET)
+
+**LLY** ($1,163.2201, **+6.37% from avg entry $1,093.534**, **+2.36% today** vs $1,136.37 lastday) ⭐ EXCEPTIONAL
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** — status "new" ✓
+- Stop buffer: $1,163.22 − $1,064.457 = **$98.76 (8.49%)** ✓ Excellent.
+- Distance to HWM: $1,182.73 − $1,163.22 = **$19.51** (1.68% below). If LLY breaks HWM on Friday/next week, stops auto-ratchet higher.
+- -7% cut threshold: $1,016.99 — remote. Medicare GLP-1 Bridge July 1 in 20 days. Thesis STRONGEST. HOLD.
+
+**V** ($320.55, **-0.93% from entry $323.57**, **-0.75% today** vs $322.96 lastday) ✓ WITHIN RANGE
+- Trailing stop 66033918: HWM $325.51, stop **$292.959** — status "new" ✓
+- Stop buffer: $320.55 − $292.959 = **$27.59 (8.60%)** ✓ Healthy.
+- Mild weakness (-0.75%) in an up market reflects risk-on rotation away from financials toward cyclicals/energy. Not thesis-specific. OpenAI partnership thesis intact. Review_by July 28. HOLD.
+
+**VST** ($145.63, **-2.14% from entry $148.81**, **+5.12% today** vs $138.54 lastday) ⬆️ STRONG RECOVERY
+- Trailing stop c4c200a5: HWM **$150.2999**, stop **$135.270** — status "new" ✓
+- Stop buffer: $145.63 − $135.270 = **$10.36 (7.11%)** ✓ Well recovered from Wednesday's crisis level.
+- -7% cut threshold: $138.39 — VST at $145.63 is **$7.24 above it** ✓ Solid cushion.
+- 2-day recovery: $138.54 (Wed, only $0.15 above -7% threshold) → $145.63 today (+5.12%) = +$7.09 in 2 sessions. Iran deal expectations reduce oil price pressure; nuclear relative economics improve. Dividend ex-date June 22 in 11 days (USD 9.16 for 40sh). Thesis INTACT and reinforced. HOLD.
+
+### Stop audit (EOD June 11)
+All 4 trailing stops confirmed active via Alpaca open orders endpoint:
+- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (buffer $98.76 = 8.49%)
+- LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+- V (66033918): 22sh — HWM **$325.51**, stop **$292.959** ✓ (buffer $27.59 = 8.60%)
+- VST (c4c200a5): 40sh — HWM **$150.30**, stop **$135.270** ✓ (buffer $10.36 = 7.11%)
+No orphaned stops. No missing stops. Stop audit: 4/4 PASS ✓
+
+### Exit reconciliation
+No trailing stops filled today. Last exit: META June 10 via trailing stop at $578.00 — already in closed-trades.md ✓. No new closed-trade entries needed. All 3 positions active through EOD.
+
+### Guardrail checks (EOD June 11)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| LLY above -7% cut threshold | +6.37% from entry | -7% | ✓ |
+| V above -7% cut threshold | -0.93% from entry | -7% | ✓ |
+| VST above -7% cut threshold | -2.14%, $145.63 > $138.39 | -7% | ✓ Clear by $7.24 |
+| LLY below +15% tighten threshold | +6.37% | +15% ($1,257.56) | ✓ |
+| V below +15% tighten threshold | -0.93% | +15% ($372.11) | ✓ |
+| VST below +15% tighten threshold | -2.14% | +15% ($171.13) | ✓ |
+| Intraday shock (vs last_equity $98,315.05) | +$510.25 = +0.519% | <-4% | ✓ Positive |
+| Drawdown circuit breaker | $98,825 vs HWM $101,384 = -2.52% | <-10% | ✓ |
+| Cash | $74,304.63 (75.2%) | ≥5% | ✓ Ample |
+| All trailing stops active | 4/4 confirmed | required | ✓ |
+
+### Performance (EOD June 11)
+- **Equity:** $98,825.30 (vs last_equity $98,315.05 = +$510.25 today = +0.519%)
+- **Today P/L breakdown:** LLY +$268.50 intraday, V −$53.02, VST +$283.60 = net +$499.08 (account-level +$510.25 ✓)
+- **Cash:** $74,304.63 (75.2%) | Long market value: $24,520.67
+- **SPY today:** ~$737.62 (vs $727.87 Jun 10 close = +$9.75 = +1.34%) — Iran deal expectations drove broad risk-on
+- **Bull today vs SPY today:** +0.519% vs +1.34% = **−0.82% underperformance** (75% cash limits upside capture — expected)
+- **Since inception (2026-05-21):** Bull **-1.18%** ($100,000 → $98,825.30) vs SPY **-0.25%** (est. $737.62 / $739.44 anchor) = **Bull trails SPY by ~0.93pp**
+
+### Notes
+- LLY hit $1,163.22 (+6.37% from entry), now only $19.51 below the portfolio HWM ($1,182.73). A break above HWM on Friday or next week auto-ratchets both stops — compounding protection. Medicare GLP-1 Bridge July 1 in 20 days.
+- VST's Wednesday crisis ($138.54 close, $0.15 above -7% threshold) resolved decisively: +4.29% Wed + +5.12% today. Iran deal de-escalation improves nuclear relative economics vs. natural gas. Dividend June 22 (USD 9.16 for 40sh).
+- V mild drift (-0.75%) in up market — financials/cyclical rotation day, not thesis-specific. Stop buffer 8.60% comfortable.
+- Cash drag cost: +0.52% vs SPY +1.34% = -0.82pp underperformance today. Since-inception gap widened to -0.93pp (from midday +0.70pp lead) as SPY rebounded. Expected behavior; the cash cushion repeatedly protected on Jun 5/9/10 down days.
+- Week of June 8 CLOSED: 2/3 slots used (VST Jun 9, V Jun 10). Slot 3 unused — deliberate LRCX ATR disqualification ✓. Next week: 3 fresh slots, LRCX re-evaluation priority.
+- Race: Bull -1.18% | AGGRO ~-7.0% (midday est.) | SPY -0.25% — Bull leads AGGRO by ~5.8pp.
+
+---
+
 ## 2026-06-11 12:32 ET — MIDDAY CHECK (no action; all positions within range)
 
 - **Action:** No trades. All positions within guardrail thresholds. No cuts, no stop tightening.
