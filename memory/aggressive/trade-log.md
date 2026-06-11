@@ -491,3 +491,58 @@ All 7 positions within guardrails. No trades. All 18% trailing stops active and 
 
 ### Result
 All 7 positions within guardrails. No trades. All 18% trailing stops active and audited. META remains CRITICAL (1.57pp from -12% cut). EOD close routine must check META price immediately upon run.
+
+---
+
+## 2026-06-11 — EOD CLOSE (~3:50 PM ET)
+
+**No trades executed.** No exits today.
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 94,155.63 |
+| Last equity (prev close June 10) | USD 92,912.82 |
+| Today's P/L | **+USD 1,242.81 (+1.34%)** |
+| Cash | USD 13,885.38 (14.7%) |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -6.91% (circuit breaker 20% — NOT triggered ✓) |
+
+### Market context [search: WebSearch fallback — MiniMax M3 not available]
+Iran ceasefire progress: President Trump announced the US would cancel planned strikes this evening with "all points of a deal essentially agreed upon" — markets rallied broadly (SPY +1.70%, Nasdaq 100 +0.8%). Tech was mixed: semis recovered while MSFT and Salesforce lagged on enterprise software rotation. SpaceX IPO begins trading June 12 — potential market narrative driver tomorrow.
+
+### EOD position review vs midday
+
+| Symbol | Midday Price | EOD Price | Δ | P/L% from Entry | Buffer to -12% |
+|---|---|---|---|---|---|
+| NVDA | USD 201.37 | USD 204.75 | +1.68% | -4.14% | 7.86pp |
+| META | USD 563.31 | USD 569.89 | +1.17% | **-9.56%** | **🔴 2.44pp** (↑ from 1.57pp) |
+| AVGO | USD 378.71 | USD 383.40 | +1.24% | -5.62% | 6.38pp |
+| MSFT | USD 387.86 | USD 391.51 | +0.94% | **-8.14%** | **3.86pp ⚠️** (↑ from 3.00pp) |
+| AMZN | USD 237.06 | USD 241.60 | +1.92% | -2.58% | 9.42pp |
+| VST | USD 144.71 | USD 147.00 | **+1.58%** | -2.95% | 9.05pp |
+| GOOGL | USD 348.97 | USD 358.87 | +2.84% | -3.07% | 8.93pp |
+
+Afternoon recovery improved every position. META and MSFT both pulled back from their critical levels. All theses intact.
+
+### Performance vs SPY
+| Metric | Value |
+|---|---|
+| Aggro today | +1.34% |
+| SPY today (725.43 → 737.76) | +1.70% |
+| Today vs SPY | -0.36pp |
+| Aggro since inception | -5.84% |
+| SPY since inception (754.18 → 737.76) | -2.18% |
+| Alpha since inception | **-3.66pp** |
+
+### Stop audit — 7/7 confirmed ✓ (no changes — all below HWMs)
+
+| Symbol | Stop Order ID | Stop Price | HWM | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 181.71 | USD 221.60 | ✓ live |
+| META | `11c3a1bf` | USD 526.75 | USD 642.38 | ✓ live |
+| AVGO | `36f5a45f` | USD 349.71 | USD 426.48 | ✓ live |
+| MSFT | `ef211767` | USD 350.56 | USD 427.51 | ✓ live |
+| AMZN | `b55bef05` | USD 205.35 | USD 250.43 | ✓ live |
+| VST | `5b347be3` | USD 124.57 | USD 151.91 | ✓ live |
+| GOOGL | `e52a43f1` | USD 304.81 | USD 371.72 | ✓ live |
