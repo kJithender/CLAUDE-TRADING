@@ -5,6 +5,203 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-12 — Pre-market research (~08:04 ET)
+
+**Today is Friday June 12. Week of June 8: 2/3 new positions used (VST June 9, V June 10). Slot 3 expires unused today (deliberate). Week of June 16 starts Monday — 3 fresh slots.**
+
+---
+
+### Macro (pre-market June 12, 2026 ~08:04 ET)
+
+| Indicator | Value | Threshold | Status |
+|-----------|-------|-----------|--------|
+| S&P 500 futures | **+0.41%** (ESM26) | — | ✓ Extending yesterday's +1.75% — Iran peace deal imminent |
+| S&P 500 June 11 close | ~7,394 (SPY ~$737-740) | — | ✓ +1.75% yesterday — broad risk-on |
+| Iran/US peace deal | Trump signals imminent signing — Polymarket 83% chance higher open | Oil <$100 | ✓ Oil FALLING — massive tailwind |
+| 10yr Treasury yield | ~4.47% (est., post-Iran rally) | <4.75% | ✓ Below trigger |
+| WTI crude | Falling on Iran peace signal (<$90 est.) | <$100 | ✓ Well below trigger — NEW BUYS ELIGIBLE |
+| SpaceX Nasdaq IPO | USD 75B raise / USD 1.77T valuation (largest IPO in history) | — | ⚡ Broad risk appetite signal |
+
+**Macro posture: CONSTRUCTIVELY BULLISH.** Iran peace deal signal drove S&P +1.75% Thursday and futures are extending +0.41% Friday. Oil is falling rapidly as the geopolitical risk premium unwinds — this is a direct VST thesis tailwind (cheap natural gas prices make nuclear power more competitive on margin; and oil/war de-escalation removes the "risk premium" that was crushing VST). The SpaceX IPO captures discretionary capital but broad risk appetite is healthy. Both market conditions and sector-specific factors are favorable for our three holdings. No new positions today (Friday weekend risk + slot 3 intentionally expired + LRCX ATR ~10%).
+
+---
+
+### Account (pre-market June 12, 2026 — live Alpaca data ~08:04 ET)
+
+| Metric | Value |
+|--------|-------|
+| Equity | $98,949.03 |
+| Cash | $74,304.63 (75.1%) |
+| Long market value | $24,644.40 |
+| Buying power | ~$366,222 |
+| Last equity (June 11 close) | $98,788.43 |
+
+**Intraday shock check:** $98,949.03 vs last_equity $98,788.43 = **+$160.60 = +0.16%** — POSITIVE. No shock. ✓
+
+**Drawdown circuit breaker:** HWM $101,384.21 (from equity history); current $98,949.03 = **-2.40%** — well within -10% limit. ✓ No restriction on new buys.
+
+---
+
+### Trailing stop audit (pre-market June 12 — confirmed via Alpaca open orders)
+
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new |
+| 66033918 | V | 22sh | $325.51 | $292.959 | ✓ new |
+| c4c200a5 | VST | 40sh | $150.2999 | $135.270 | ✓ new |
+
+All 4 trailing stops confirmed active. ✓
+
+---
+
+### Held positions (pre-market June 12, 2026)
+
+**LLY ($1,165.35 pre-mkt, +0.38% today from $1,160.95 June 11 close, +6.57% from avg entry $1,093.534):** ⭐ EXCEPTIONAL
+- **What changed since yesterday:** New pipeline expansion announced — Phase 2 trial initiated for Chronic Low Back Pain Relief; new Osteoarthritis trial added. Both expand Lilly's addressable market beyond obesity/diabetes into chronic pain. This is positive — pipeline diversification reduces single-catalyst dependency. June 11 all-time portfolio HWM was set at $1,182.73 (June 8); today's pre-mkt $1,165.35 is $17.38 below HWM. Medicare GLP-1 Bridge July 1 in 19 days — key thesis catalyst approaching.
+- **Earnings window:** Next earnings August 5, 2026 — 54 days away ✓ (well outside 2-day window)
+- **Thesis contract:** invalidation = stop fires ($1,064.46) or Medicare Bridge reversed. review_by = July 1. Current $1,165.35 >> $1,064.46. **THESIS INTACT. No invalidation triggered.** ✓
+- **Stop buffer:** $1,165.35 - $1,064.457 = **$100.89 (8.66%)** ✓ Excellent.
+- **Decision: HOLD. Thesis strengthening (pipeline expansion). Medicare Bridge catalyst 19 days away.**
+
+**V ($320.55 pre-mkt, +0.47% today from $319.05 June 11 close, -0.93% from avg entry $323.57):** ✓ INTACT
+- **What changed since yesterday:** Visa announced new AI, stablecoin, and token capabilities at its Payments Forum 2026 — directly confirms the AI-driven digital commerce thesis. The OpenAI partnership (agentic transactions) plus new stablecoin/token layer reinforces Visa's payments infrastructure moat. However, V dropped -1.24% on June 11 despite SPY +1.75% — persistent underperformance in risk-on rallies suggests financial sector rotation lag vs tech/energy. Not thesis-specific.
+- **Earnings window:** Next earnings July 28, 2026 — 46 days away ✓
+- **Thesis contract:** invalidation = trailing stop fires ($292.96) or regulatory mandate forces open access. review_by = July 28. Current $320.55 >> $292.96. **THESIS INTACT.** ✓
+- **Stop buffer:** $320.55 - $292.959 = **$27.59 (8.60%)** ✓ Healthy.
+- **Note on underperformance:** V has lagged the market on 3 of 4 positive trading days since entry. This is not thesis-breaking — financials rotate slower than tech/energy in AI-driven rallies. But it is worth noting. Will track whether V begins to participate as Iran-deal risk-off unwinds and payment volumes re-accelerate. Current -0.93% from entry is within normal variance for a 3-day-old position. **HOLD.**
+
+**VST ($148.47 pre-mkt, +1.43% today from $146.38 June 11 close, -0.23% from avg entry $148.81):** ⭐⭐ THESIS MAJOR UPGRADE
+- **What changed since yesterday:** MAJOR CATALYST — KKR, Kuwait Investment Authority, NVIDIA, and Vistra jointly launched **Helix Digital Infrastructure** (June 11, 2026). Helix is a new $10B+ AI infrastructure platform. Key details:
+  - **Vistra is the PREFERRED POWER PARTNER** for Helix — not just a PPA counterparty but embedded as the preferred provider for the entire KKR/NVIDIA AI infrastructure ecosystem
+  - $10B+ in total long-duration capital commitments secured at launch
+  - Led by Adam Selipsky (former AWS CEO) — credibility signal
+  - Kuwait Investment Authority as co-investor — sovereign wealth validation
+  - Helix serves as single coordination point for hyperscalers' data centers, power, connectivity needs
+  - NVIDIA as cornerstone strategic partner — means NVIDIA is directing GPU customers to Helix-powered infrastructure where VST provides the power
+  - This transcends the existing Meta/Amazon PPAs: VST is now EMBEDDED in a NEW AI infrastructure platform backed by the most important names in AI capital (KKR) and compute (NVIDIA)
+- **Earnings window:** Next earnings August 6, 2026 — 55 days away ✓
+- **Thesis contract (REVISED):** invalidation = WTI >$100 (FALLING — further away ✓), FCF guidance cut, PPA/Helix partnership cancellation, or breaks below $130 on volume. review_by = July 7. Current $148.47. WTI well below $100. Helix launch REINFORCES and EXPANDS thesis. **THESIS INTACT AND MATERIALLY STRENGTHENED.** ✓
+- **Stop buffer:** $148.47 - $135.270 = **$13.20 (8.89%)** ✓ Strong recovery.
+- **-7% cut threshold:** $138.39 — VST at $148.47 is **$10.08 above it** ✓ CLEAR
+- **Dividend ex-date:** June 22 (10 days) — USD 9.20 for 40 shares (confirmed $0.23/sh × 40sh)
+- **Decision: HOLD. Helix launch is a material thesis upgrade. VST is now more than a "nuclear PPA story" — it is the preferred power infrastructure backbone for KKR+NVIDIA's AI infrastructure platform. Do not let the trailing stop close this prematurely. Current stop at $135.27 is $13.20 below market.**
+
+---
+
+### Thesis contract review (June 12)
+
+- **LLY:** ✅ Intact. Stop $1,064.46. review_by July 1. Distance to stop: $100.89. No invalidation triggered. **CONTINUE.**
+- **V:** ✅ Intact. Stop $292.96. review_by July 28. Distance to stop: $27.59. No invalidation triggered. **CONTINUE.**
+- **VST:** ✅ MATERIALLY STRENGTHENED. Invalidation criteria: WTI >$100 (NO ✓ — falling), FCF cut (NO ✓), PPA/Helix cancellation (NO ✓ — Helix JUST LAUNCHED), breaks $130 on volume (NO ✓ — $148.47). review_by July 7. **CONTINUE. Thesis upgrade.**
+
+---
+
+### Risk posture check (pre-market June 12)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 2/3 (VST Jun 9, V Jun 10) | ≤3 | Slot 3 expires unused today |
+| Cash | $74,304.63 (75.1%) | ≥5% | ✓ Ample |
+| LLY stop buffer | $100.89 (8.66%) | watch | ✓ Well protected |
+| V stop buffer | $27.59 (8.60%) | watch | ✓ Healthy |
+| VST stop buffer | $13.20 (8.89%) | watch | ✓ Strong — Helix catalyst |
+| VST above -7% threshold ($138.39)? | $10.08 above | — | ✓ Clear |
+| Drawdown circuit breaker | $98,949 vs HWM $101,384 = -2.40% | <-10% | ✓ Not triggered |
+| Intraday shock (vs last_equity $98,788) | +$160.60 = +0.16% | <-4% | ✓ Positive |
+| 10yr yield | ~4.47% (est.) | <4.75% | ✓ Below trigger |
+| WTI oil | Falling (Iran peace deal) | <$100 | ✓ Well below trigger |
+| All trailing stops active | 4/4 confirmed | required | ✓ |
+| Sector caps | Healthcare 11.78%, Financials 7.13%, Energy 6.01%, Cash 75.1% | <60% each | ✓ |
+
+---
+
+### New position research — Slot 3 (Week of June 8, expires today)
+
+**LRCX (Lam Research): DEFER — ATR still elevated; stock extended**
+
+**ATR check (3-day, June 9-11 — from Alpaca bars):**
+- June 11: H $364.59 / L $336.285 / C $362.58 → range **$28.305 = 7.81%** ❌ (WAY above 3%)
+- June 10: H $347.66 / L $319.01 / C $321.74 → range **$28.65 = 8.91%** ❌
+- June 9: H $349.00 / L $306.03 / C $327.195 → range **$42.97 = 13.13%** ❌
+- **3-day average ATR: ~9.95%** — still far above the 3% ATR threshold
+
+**Extension check:** LRCX +12.7% on June 11 alone ($321.74 → $362.58). In 6 trading days since June 5 ($303.26), LRCX is up +19.5%. This is a parabolic extension, not a controlled basing pattern. The stock needs to consolidate for several sessions before a clean risk-defined entry is possible.
+
+**Additional factors against Friday entry:**
+- Weekend risk: opening a position on Friday that's +19.5% in 6 days with ~10% ATR creates substantial gap risk over the weekend
+- Slot 3 was explicitly deferred all week — the discipline of that decision should hold
+
+**Decision: SLOT 3 EXPIRES UNUSED. Deliberate and correct.**
+
+**LRCX re-evaluation week of June 16:**
+Conditions for re-entry:
+1. ATR normalizes to ≤3% (needs 3+ consecutive quiet sessions with ranges <3%)
+2. Stock bases (2-3 sessions with tight closes, contracting volume, no new lows)
+3. Not extended >10% above 50-day SMA (need to verify — but at $362.58 after +19.5% 6-day run, extension is likely significant)
+4. No earnings in next 2 trading days (confirmed: August 5, 2026 ✓)
+
+---
+
+### Cash-drag explicit decision (June 12 — Friday)
+
+Cash at 75.1% remains above strategy target (25-40%). Slot 3 of June 8 week expires unused today — fourth consecutive deferral since Monday. Explicit reasoning:
+1. **LRCX ATR ~10%** — structurally inadvisable; even halved position creates unacceptable stop exposure
+2. **LRCX extended** — +19.5% in 6 sessions, not a controlled base entry
+3. **Friday weekend risk** — new position on a Friday after a parabolic run carries gap risk
+4. **VST Helix upgrade** — the preferred power provider thesis is now materially stronger; the existing portfolio (LLY + V + VST) has improved quality while maintaining low drawdown risk
+
+Next week (June 16) brings 3 fresh slots. No urgency to force any position today.
+
+---
+
+### Performance estimate (pre-market June 12)
+
+- **Bull equity pre-market:** $98,949.03 (−1.05% since inception $100,000)
+- **SPY June 11 close (est.):** ~$737.62
+- **SPY pre-mkt estimate (futures +0.41%):** ~$740.65 → +0.16% since inception ($739.44)
+- **Estimated gap:** Bull −1.05% vs SPY +0.16% = **~−1.21%** (gap widening slightly as SPY continues recovering from June 10 selloff; 75% cash limits upside capture)
+- **Today P/L (unrealized, pre-mkt):** LLY +$44 (0.38%), V +$33 (0.47%), VST +$83.60 (1.43%) = net +$160.60 ✓
+
+---
+
+### Planned trades for today (Friday June 12, 2026)
+
+**No new positions today.**
+
+Reasons: (1) LRCX ATR ~9.95% — disqualified per volatility rule; stock extended +19.5% in 6 sessions; (2) Friday weekend risk — no new position opens with parabolic, high-ATR names before weekend; (3) Slot 3 of June 8 week intentionally expired unused — disciplined decision upheld all week; (4) Existing 3 positions (LLY, V, VST) all have intact/strengthened theses and healthy stop buffers. No urgency to force a fourth.
+
+**Hold LLY, V, VST.** Let trailing stops work.
+
+**Next week (June 16+):** 3 fresh slots. Priority research:
+1. **LRCX** — re-evaluate if ATR normalizes and chart bases after 3+ quiet sessions
+2. **NVDA** — Senate hearing passed (Huang didn't testify; hearing proceeded without CEO testimony). Re-evaluate post-hearing regulatory clarity. Prior stop-out was at $209.042. Would be a fresh entry.
+3. **One new name** — COST (consumer defensive quality compounder), or MSFT (Azure AI thesis intact, may have re-based since stop-out at $419).
+
+**VST watch:** Dividend ex-date June 22 in 10 days. Helix launch is thesis-upgradeable — monitor if market reprices VST significantly higher into next week. If VST breaks above HWM $150.30, stop auto-ratchets higher — protecting expanded gains.
+
+```json
+{
+  "plan_date": "2026-06-12",
+  "trades": []
+}
+```
+
+No trades planned.
+
+**Upcoming catalysts:**
+- **VST Helix Digital Infrastructure** — ongoing (KKR+NVIDIA platform positioning) — thesis upgrade watch
+- **VST dividend ex-date June 22** (USD 9.20 credit for 40sh = $0.23/sh — 10 days)
+- **LLY Medicare GLP-1 Bridge July 1** (19 days — thesis review_by date)
+- **VST thesis review_by July 7** (25 days)
+- **V Q3 FY26 earnings July 28** (46 days — thesis review_by date)
+- **LLY Q2 FY26 earnings ~August 5** (54 days)
+- **VST Q2 FY26 earnings August 6** (55 days)
+- **LRCX next earnings ~August 5** (54 days — not in window ✓)
+- **Weekly review today at 4:30 PM** — Friday routine (separate from this pre-market)
+
+---
+
 ## 2026-06-11 — Pre-market research (~08:05 ET)
 
 **Today is Thursday June 11. Week of June 8: 2/3 new positions used (VST June 9, V June 10). 1 slot remaining.**

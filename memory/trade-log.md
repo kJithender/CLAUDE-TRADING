@@ -3,6 +3,96 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-12 08:04 ET — PRE-MARKET (no trades; plan set; VST thesis upgrade)
+- **Action:** None — market closed (next open 09:30 ET). Plan set: no new positions today. Slot 3 of week of June 8 expires unused (deliberate). Week of June 16: 3 fresh slots.
+- **Market status:** `is_open: false` ✓ (confirmed via clock at 08:03 ET — next open 09:30 ET June 12)
+- **Account:** Equity $98,949.03 | Cash $74,304.63 (75.1%) | Long market value $24,644.40
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+### Shock check
+- Equity $98,949.03 vs last_equity $98,788.43 = **+$160.60 = +0.16%** — POSITIVE. No shock day. ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21 (confirmed from equity history API); current $98,949.03 = **-2.40%** — within -10% ✓ No restriction.
+
+### Stop audit (pre-market June 12)
+All 4 trailing stops confirmed active via Alpaca open orders endpoint:
+- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (buffer $100.89 = 8.66%)
+- LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+- V (66033918): 22sh — HWM **$325.51**, stop **$292.959** ✓ (buffer $27.59 = 8.60%)
+- VST (c4c200a5): 40sh — HWM **$150.30**, stop **$135.270** ✓ (buffer $13.20 = 8.89%)
+No orphaned stops. Stop audit: 4/4 PASS ✓
+
+### Macro context (pre-market June 12)
+- S&P 500 futures: +0.41% (ESM26) — extending Thursday's +1.75% rally
+- Iran/US peace deal signal: Trump says signing imminent; Polymarket 83% probability of higher open; oil prices falling rapidly
+- SpaceX Nasdaq IPO at USD 1.77T valuation — largest IPO in history; broad risk appetite signal
+- 10yr yield: ~4.47% est. — below 4.75% watch level ✓
+- WTI: falling below $90 on Iran peace news — well below $100 trigger ✓
+
+### Position review (pre-market June 12)
+
+**LLY** ($1,165.35 pre-mkt, **+6.57% from avg entry $1,093.534**, **+0.38% today**) ⭐ EXCEPTIONAL
+- New Phase 2 trials: Chronic Low Back Pain Relief + Osteoarthritis expansion — pipeline diversification positive
+- Medicare GLP-1 Bridge July 1 in 19 days. Next earnings August 5, 2026 (outside 2-day window ✓)
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** ✓
+- Stop buffer: $1,165.35 − $1,064.457 = **$100.89 (8.66%)** ✓ Excellent.
+- -7% threshold: $1,016.99 — remote. HOLD. Thesis STRONGEST.
+
+**V** ($320.55 pre-mkt, **-0.93% from entry $323.57**, **+0.47% today**) ✓ INTACT
+- Payments Forum 2026: new AI, stablecoin, token capabilities — positive. OpenAI partnership intact.
+- V underperformed SPY June 11 (-1.24% vs SPY +1.75%) — financials sector rotation lag. Not thesis-specific.
+- Next earnings July 28, 2026 (outside 2-day window ✓)
+- Stop 66033918: HWM $325.51, stop **$292.959** ✓
+- Stop buffer: $320.55 − $292.959 = **$27.59 (8.60%)** ✓ HOLD.
+
+**VST** ($148.47 pre-mkt, **-0.23% from entry $148.81**, **+1.43% today**) ⭐⭐ MAJOR THESIS UPGRADE
+- **HELIX DIGITAL INFRASTRUCTURE (June 11, 2026):** KKR, Kuwait Investment Authority, NVIDIA, and Vistra jointly launched Helix Digital Infrastructure — a new $10B+ AI infrastructure platform. Vistra is the **PREFERRED POWER PARTNER** embedded at the core of this platform. Led by Adam Selipsky (former AWS CEO). This materially expands the VST thesis from "nuclear PPAs with Meta and Amazon" to "preferred power provider for KKR/NVIDIA's entire AI infrastructure ecosystem."
+- Dividend ex-date June 22 in 10 days (USD 9.20 credit for 40sh)
+- Next earnings August 6, 2026 (outside 2-day window ✓)
+- Stop c4c200a5: HWM **$150.30**, stop **$135.270** ✓
+- Stop buffer: $148.47 − $135.270 = **$13.20 (8.89%)** ✓ Strong.
+- -7% threshold: $138.39 — VST at $148.47 is **$10.08 above it** ✓ Well clear. HOLD. Thesis upgraded.
+
+### Thesis contract review (June 12)
+- **LLY:** ✅ Intact. Stop $1,064.46. review_by July 1. No invalidation triggered. CONTINUE.
+- **V:** ✅ Intact. Stop $292.96. review_by July 28. No invalidation triggered. CONTINUE.
+- **VST:** ✅ MATERIALLY STRENGTHENED. Invalidation: WTI >$100 (NO ✓ — falling), FCF cut (NO ✓), PPA/Helix cancellation (NO ✓ — Helix just launched), breaks $130 on volume (NO ✓ — $148.47). review_by July 7. CONTINUE. Thesis upgrade.
+
+### Guardrail checks (pre-market June 12)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 2/3 (VST Jun 9, V Jun 10) | ≤3/week | Slot 3 expires unused today ✓ |
+| LLY above -7% cut threshold | +6.57% from entry | -7% | ✓ |
+| V above -7% cut threshold | -0.93% from entry | -7% | ✓ |
+| VST above -7% cut threshold | -0.23%, $148.47 > $138.39 | -7% | ✓ Clear by $10.08 |
+| Drawdown circuit breaker | $98,949 vs HWM $101,384 = -2.40% | <-10% | ✓ |
+| Intraday shock | +$160.60 = +0.16% | <-4% | ✓ Positive |
+| Cash | $74,304.63 (75.1%) | ≥5% | ✓ Ample |
+| All trailing stops active | 4/4 confirmed | required | ✓ |
+| Sector caps | Healthcare 11.78%, Financials 7.13%, Energy 6.00% | <60% each | ✓ |
+
+### LRCX ATR check (for slot 3 / next week planning)
+- June 11: H $364.59 / L $336.285 / C $362.58 → **7.81%** ❌
+- June 10: H $347.66 / L $319.01 / C $321.74 → **8.91%** ❌
+- June 9: H $349.00 / L $306.03 / C $327.195 → **13.13%** ❌
+- 3-day avg: **~9.95%** — WAY above 3% threshold; stock extended +19.5% in 6 sessions since June 5
+- **DECISION: DEFER to week of June 16. Slot 3 expires unused.**
+
+### Cash-drag note (explicit)
+Cash 75.1% > strategy target 25-40%. Slot 3 unused. Explicit reasoning: (1) LRCX ATR ~10% — structurally inadvisable; (2) LRCX extended after +19.5% in 6 sessions — not a clean base; (3) Friday weekend risk — new parabolic-ATR position on Friday unacceptable; (4) Existing 3 positions all have intact/upgraded theses with healthy stop buffers. No urgency. Next week: 3 fresh slots.
+
+### Performance (pre-market June 12)
+- **Equity:** $98,949.03 (vs last_equity $98,788.43 = +$160.60 = +0.16% overnight)
+- **Today P/L (unrealized, pre-mkt):** LLY +$44 (+0.38%), V +$33 (+0.47%), VST +$83.60 (+1.43%) = net +$160.60 ✓
+- **Cash:** $74,304.63 (75.1%) | Long market value: $24,644.40
+- **Since inception (2026-05-21):** Bull **-1.05%** ($100,000 → $98,949.03) vs SPY **~+0.16%** (~$740.65 pre-mkt est. vs $739.44 anchor) = **Bull trails SPY by ~1.21pp**
+
+---
+
 ## 2026-06-11 15:51 ET — CLOSE — EOD journal
 
 - **Action:** No trades. End-of-day P/L check, exit reconciliation, journal.
