@@ -609,3 +609,65 @@ Afternoon recovery improved every position. META and MSFT both pulled back from 
 | Aggro since inception | -6.53% |
 | SPY since inception | -2.47% |
 | Alpha since inception | **-4.06pp** |
+
+---
+
+## 2026-06-12 — MIDDAY CHECK (~12:41 PM ET)
+
+**No trades executed.** Risk management only. All positions within guardrails.
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Clear (empty `{}`) ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Market open | true (next close 4:00 PM ET) ✓ |
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 93,959.99 |
+| Last equity (prev close June 11) | USD 94,130.22 |
+| Intraday change vs last_equity | **-0.18%** (shock threshold 6% — NOT triggered ✓) |
+| Cash | USD 13,885.38 (14.8%) |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-7.10%** (circuit breaker 20% — NOT triggered ✓) |
+
+### Position review
+
+| Symbol | Entry | Current | P/L % | -12% Trigger | Buffer | Change vs Open | News | Action |
+|---|---|---|---|---|---|---|---|---|
+| NVDA | USD 213.60 | USD 204.81 | -4.115% | USD 187.97 | 7.89pp | +0.35% from open | No company news; Helix consortium intact | No action |
+| META | USD 630.12 | USD 571.22 | **-9.347%** | USD 554.51 | **🔴 2.65pp** | +1.31% from open (↑ from 1.48pp buffer) | No offering confirmed; job cuts 1,400 (margin-positive); dividend ex-date June 15 (USD 0.525/share) | No action — thesis intact, invalidation NOT triggered |
+| AVGO | USD 406.23 | USD 381.165 | -6.17% | USD 357.48 | 5.83pp | +0.17% from open | Nasdaq rebound; USD 2.5B senior notes tender (positive debt mgmt); analyst target USD 522 | No action |
+| MSFT | USD 426.21 | USD 388.245 | **-8.908%** | USD 375.06 | **3.09pp ⚠️** | +1.01% from open (↑ from 2.18pp buffer) | Xbox/storage memo immaterial to Azure; earnings July 28; AI spending intact | No action — thesis intact |
+| AMZN | USD 247.99 | USD 236.46 | -4.65% | USD 218.23 | 7.35pp | +0.60% from open | No company news; AWS thesis intact | No action |
+| VST | USD 151.47 | USD 148.51 | -1.954% | USD 133.29 | 10.05pp | +0.58% from open | +1.45% today; ex-div June 22; nuclear PPAs intact | No action |
+| GOOGL | USD 370.22 | USD 361.475 | -2.362% | USD 325.79 | 9.64pp | +1.48% from open | +1.04% today; GCP +63% YoY thesis intact | No action |
+
+**Cut rule check (>-12% from entry): NO positions triggered. All clear.**
+**Tighten-stop rule check (>+25% from entry): NO positions triggered. All in drawdown.**
+
+### Stop audit — 7/7 positions confirmed with live 18% trailing stops ✓
+
+| Symbol | Stop Order ID | Stop Price | HWM | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 181.71 | USD 221.60 | ✓ live |
+| META | `11c3a1bf` | USD 526.75 | USD 642.38 | ✓ live |
+| AVGO | `36f5a45f` | USD 349.71 | USD 426.48 | ✓ live |
+| MSFT | `ef211767` | USD 350.56 | USD 427.51 | ✓ live |
+| AMZN | `b55bef05` | USD 205.35 | USD 250.43 | ✓ live |
+| VST | `5b347be3` | USD 124.57 | USD 151.91 | ✓ live |
+| GOOGL | `e52a43f1` | USD 304.81 | USD 371.72 | ✓ live |
+
+**No stops missing. No stops needing recreation.**
+
+### News scan [search: WebSearch fallback — MiniMax M3 not available]
+- **META**: No equity offering formally confirmed. 1,400 job cuts announced — margin-positive, does NOT trigger invalidation (requires offering confirmation + monetization downgrade). Cash dividend USD 0.525/share, ex-date June 15 (minor positive — we hold through it). Position recovered +1.31% from open to USD 571.22. Analyst consensus: 58 buy / 0 sell, avg target USD 828.80. Decision: HOLD. Invalidation NOT triggered.
+- **MSFT**: Xbox CEO memo on storage/memory supply issues is immaterial to Azure AI enterprise thesis. Broad AI spending concerns are generic macro noise. No Azure-specific negative. Next earnings July 28. Decision: HOLD. Thesis intact.
+- **AVGO**: Nasdaq rebound (+3-4% for AVGO per search result); USD 2.5B senior notes tender offer = healthy capital management (positive for balance sheet). Analyst consensus: 48 buy, avg target USD 522. Decision: HOLD. Thesis intact.
+
+### Result
+All 7 positions within guardrails. No trades. All 18% trailing stops active and audited. No stops recreated. META remains HIGH ALERT (2.65pp buffer, improved from 1.48pp). MSFT watch (3.09pp buffer, improved from 2.18pp). EOD close must check META and MSFT prices first.
+
