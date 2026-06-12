@@ -779,3 +779,167 @@ No trades planned.
 }
 ```
 EXECUTED: 2026-06-11T13:46:57Z (no trades — no-trade plan confirmed, stop audit passed 7/7; META CRITICAL at -10.57% / 1.60pp from -12% cut)
+
+---
+
+## 2026-06-12 — WEEK 2 PRE-MARKET (Friday)
+[search: WebSearch fallback — MiniMax M3 not available in this session]
+
+### Portfolio snapshot (live Alpaca data, ~8:00 AM ET)
+
+| Symbol | Qty | Avg Entry | Pre-mkt Price | P/L % | Change vs June 11 close |
+|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 206.10 | -3.51% | +0.60% (Helix Digital Infrastructure consortium) |
+| META | 23 | USD 630.12 | USD 574.52 | **-8.82%** | +1.07% (offering still unconfirmed, buffer 3.18pp) |
+| AVGO | 34 | USD 406.23 | USD 387.23 | -4.68% | +0.43% (Nasdaq rebound, AI XPV Platform) |
+| MSFT | 28 | USD 426.21 | USD 394.03 | **-7.55%** | +0.95% (Azure thesis intact) |
+| AMZN | 36 | USD 247.99 | USD 245.08 | -1.17% | +1.48% (Claude Fable 5 on Bedrock catalyst) |
+| VST | 52 | USD 151.47 | USD 148.50 | -1.96% | +1.45% (Helix consortium; oil -20% from peak = minor narrative headwind) |
+| GOOGL | 16 | USD 370.22 | USD 364.21 | -1.62% | +1.80% (constructive tape, no new news) |
+
+**Account equity: USD 94,898.51** (up USD 768.29 = +0.82% vs prev close USD 94,130.22; shock threshold -6% = NOT triggered ✓)
+**Cash: USD 13,885.38 (14.6% of portfolio)**
+**Semi-group concentration (NVDA+AVGO only): USD 34,394 / USD 94,899 = 36.2%** (well below 50%)
+**Weekly new-position count (Week 2): 2/8 (AMZN June 8, GOOGL June 9)**
+
+---
+
+### Drawdown circuit breaker check
+- Equity history high-water mark: USD 101,144.73
+- Current equity: USD 94,898.51
+- Drawdown from HWM: **-6.17%**
+- Circuit breaker threshold: 20%
+- **Status: NOT TRIGGERED. Normal operation continues.**
+
+---
+
+### Intraday shock check
+- Current equity: USD 94,898.51 vs last_equity: USD 94,130.22
+- Intraday change: +0.82% (positive!)
+- Shock threshold: -6%
+- **Status: NOT TRIGGERED.**
+
+---
+
+### Market posture (June 12, 2026)
+**Overall: RISK-ON. Iran ceasefire continuation + SpaceX mega-IPO = positive sentiment but liquidity absorption risk.**
+
+- **S&P 500 futures:** ESM26 up +0.41% pre-market. Polymarket 83% probability of higher open. Source: Benzinga/Polymarket, June 12, 2026. Date of fact: June 12, 2026.
+- **SpaceX IPO (SPCX):** Begins trading today on Nasdaq at USD 135/share. Raised USD 75B; valuation USD 1.77T (largest IPO in history). Over USD 250B in demand; 70% Polymarket odds SPCX closes >USD 2T market cap. Five US companies currently at USD 2T+ (NVDA, AAPL, GOOGL, MSFT, AMZN — all in our portfolio). Potential liquidity absorption from retail/institutional investors rotating into SPCX. No direct thesis impact on held names but watch for late-morning tech sector rotation as IPO trades. Source: CNBC IPO live updates, June 12, 2026. Date of fact: June 12, 2026.
+- **Iran 60-day ceasefire:** Trump announced 60-day ceasefire to facilitate comprehensive talks. Oil down ~20% from 2026 peak (global oil benchmark off ~19% in May). Risk-on for high-multiple tech names. Slight VST headwind — nuclear vs gas competitive premium narrows as gas prices fall; however, VST's PPAs are long-term fixed-rate and insulated from fuel price movements. Source: CNBC Iran/oil, renewablematter.eu, May-June 2026. Date of fact: June 12, 2026.
+- **Macro:** Fed still on hold 3.5–3.75%. CPI May was 4.2% (3-year high, from CPI report June 10) — inflation headwind persists but Iran ceasefire oil-drop may moderate June CPI print. Source: prior research log, June 10, 2026.
+- **Date of all facts:** June 12, 2026 pre-market.
+
+---
+
+### Held positions — "what changed since yesterday" (required for each)
+
+**NVDA — Thesis: INTACT. Significantly strengthened.**
+- *What changed:* NEW CATALYST — KKR, NVDA, VST (Vistra), and the Kuwait Investment Authority are committing >USD 10B to Helix Digital Infrastructure, a new AI data-center infrastructure platform. This is the most direct real-economy evidence of AI data-center demand materializing: two of our portfolio holdings (NVDA + VST) are co-investors in a USD 10B+ AI infrastructure consortium, directly validating the AI supercycle and power-infrastructure theses simultaneously. Pre-market +0.62% (USD 206.10). Analyst target USD 298.42 (Strong Buy, 62 analysts, +49% upside). Note: "fourth consecutive week of retail-sentiment losses" per some outlets — this is noise vs. fundamentals.
+- Invalidation check: No hyperscaler relationship lost, Q2 guide ~USD 91B intact. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. Do not add (still -3.51% from entry — would be averaging down per rules).**
+- Source: NVDA Robinhood/search, June 12, 2026.
+
+**META — Thesis: INTACT. HIGH ALERT (-8.82%, 3.18pp from cut).**
+- *What changed:* Equity offering remains unconfirmed — per latest search, no banks hired, still "considering" or "exploring options." Meta has NOT formally confirmed the offering. Stock at USD 574.52 (+1.07% from yesterday's close USD 568.43). Buffer to -12% cut (USD 554.51) = 3.18pp — improved from 2.44pp but still below the 4pp "safe" zone.
+- **Review_by June 17 is 3 trading days away.** Pre-market June 17 MUST include an explicit hold/trim/exit decision for META, regardless of price level. Renew contract with a new review_by if holding.
+- Invalidation check: No formal offering confirmed, no AI monetization downgrade from management. Ad revenue +33% YoY thesis intact. ✓ Not triggered.
+- **Decision: HOLD through today's session. Midday routine MUST check META price first. If META approaches USD 558-560 intraday, the -12% cut may fire at midday.**
+- Source: Investing.com/Yahoo Finance META, June 12, 2026.
+
+**AVGO — Thesis: INTACT. Recovering.**
+- *What changed:* Broadcom stock up +0.43% this morning. The USD 35B AI XPV Platform with Apollo/Blackstone (announced June 10-11) is a new business line beyond chip sales — AVGO is becoming an AI infrastructure orchestrator. No new negative news. Analyst target USD 522 (Strong Buy, 48 analysts, +35% upside). Drawdown improved from -5.62% to -4.68%.
+- Invalidation check: AI revenue not cut, Q3 guide ~USD 16B intact. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD.**
+- Source: StockAnalysis/AVGO, June 12, 2026.
+
+**MSFT — Thesis: INTACT.**
+- *What changed:* Xbox division restructuring memo (gaming hardware challenges) — COMPLETELY IMMATERIAL to the Azure/AI enterprise thesis. Azure accelerating; Build 2026 AI agent expansion (Copilot Agent Mode, GitHub Copilot autonomous coding agent, Azure AI Foundry) is the driver. Analyst target USD 561.39 (Strong Buy, 56 analysts, +43% upside). Stock at USD 394.03 (+0.95% today), buffer improved to 4.45pp from 3.86pp.
+- Invalidation check: Azure not decelerating, Copilot not explicitly underperforming. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD.**
+- Source: TechTimes/CNN Markets MSFT, June 12, 2026.
+
+**AMZN — Thesis: INTACT. New thesis-positive catalyst.**
+- *What changed:* Amazon confirmed **Claude Fable 5 is available on Amazon Bedrock and Claude Platform on AWS** — this is a direct, named AI capability differentiation catalyst for AWS. Bedrock being the delivery platform for the most advanced available LLM strengthens the AWS-as-AI-platform thesis. Stock at USD 245.08 (+1.48% today). Analyst target USD 312.71 (Strong Buy, 66 analysts, +31% upside). USD 17.5B credit facility also confirms financial flexibility.
+- Invalidation check: AWS growth not decelerating, Trainium/Graviton AI traction ongoing. ✓ Not triggered.
+- Review by: 2026-06-22. ✓ Not expired (10 days away).
+- **Decision: HOLD. Claude Fable 5 on Bedrock is a meaningful AI differentiation catalyst.**
+- Source: CNN Markets/Amazon, June 12, 2026.
+
+**VST — Thesis: INTACT. New consortium catalyst.**
+- *What changed:* KKR + Nvidia + Vistra + Kuwait Investment Authority committing >USD 10B to Helix Digital Infrastructure — VST is a co-investor/partner in the largest AI data-center infrastructure consortium announced this week. This is the PPAs thesis playing out in concrete form: VST's nuclear power is so critical to AI buildout that it's a co-investor alongside NVDA and KKR in a USD 10B+ fund. Oil -20% from peak = gas gets cheaper = nuclear competitive premium narrows near-term, but VST's 20-year PPAs are fixed-rate and insulated. Fair value USD 234.26 vs current USD 148.50 (+58% upside). Ex-dividend June 22 (USD 0.229/share).
+- Invalidation check: No PPA cancellations, no regulatory action. ✓ Not triggered.
+- Review by: 2026-07-15. ✓ Not expired.
+- **Decision: HOLD. Helix consortium confirms VST's central role in AI infrastructure. Oil decline is a near-term narrative headwind, not a fundamental threat.**
+- Source: NVDA Robinhood/Yahoo Finance VST, June 12, 2026.
+
+**GOOGL — Thesis: INTACT.**
+- *What changed:* Nothing material new today. Stock at USD 364.21 (+1.80% today). Analyst avg target USD 428.15. JPMorgan raised price targets post-Q1 earnings. GCP +63% YoY thesis unchanged. Additional equity dilution risk (convertible preferreds) is already priced in.
+- Invalidation check: GCP +63% YoY, investment plan not cut. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD.**
+- Source: TipRanks/Google Finance, June 12, 2026.
+
+---
+
+### Earnings window check
+| Symbol | Next Earnings | Within 2 trading days? | Action |
+|---|---|---|---|
+| NVDA | Aug 26, 2026 | No | None required |
+| META | Jul 29–Aug 3, 2026 | No | None required |
+| AVGO | Sep 3, 2026 | No | None required |
+| MSFT | Jul 29–31, 2026 | No | None required |
+| AMZN | ~Late Jul 2026 | No | None required |
+| VST | Aug 6, 2026 | No | None required |
+| GOOGL | ~Late Jul 2026 | No | None required |
+
+**No earnings window risk for any position. ✓**
+
+---
+
+### Thesis contract review — upcoming deadlines
+- **META review_by June 17** (3 trading days): Pre-market June 17 MUST make explicit hold/trim/exit decision. Renew contract with new review_by date if holding. This is NOT optional — silent thesis rot is forbidden.
+- **AMZN review_by June 22** (7 trading days): Standard review. AWS thesis strong.
+- **All others:** 2026-06-25 or 2026-07-15 — no urgency.
+
+---
+
+### Deployment check
+- Cash: USD 13,885.38 = 14.6% of equity
+- 20% cash threshold for mandatory deployment note: **NOT triggered** (14.6% < 20%)
+- Portfolio 85.4% invested — above the ≥80% target
+- Week 2 positions: 2/8 used (AMZN June 8, GOOGL June 9)
+- AMD: at USD 488 (pre-market June 11 close USD 488.41) — still below entry USD 508.43. No re-entry allowed. AMD is recovering but has not yet crossed the re-entry threshold.
+- **Explicit decision: No new buys today.** Rationale: (1) META buffer 3.18pp still in HIGH ALERT zone — cash is the safety buffer if META gets cut at midday. (2) SpaceX IPO may absorb tech-sector liquidity today, creating wider spreads and potential for intraday volatility in AI names. (3) Portfolio 85.4% invested is above the deployment target. (4) Friday afternoon liquidity is lower. No compelling entry that beats the risk of deploying while META is stressed.
+
+---
+
+### Guardrail check for today
+| Rule | Limit | Status |
+|---|---|---|
+| Single position max | 35% | NVDA 22.4% — largest position. ✓ All clear |
+| Cash floor | 2% min | 14.6% — well above minimum ✓ |
+| Weekly new positions (Week 2) | 8 max | 2/8 used ✓ |
+| Semi-group concentration (NVDA+AVGO) | ≤50% | 36.2% ✓ |
+| Circuit breaker | >20% below HWM | -6.17% — NOT triggered ✓ |
+| Intraday shock | >6% below last_equity | +0.82% (UP) — NOT triggered ✓ |
+| Stop audit | All positions covered | 7/7 live 18% trailing stops confirmed ✓ |
+| Earnings window | No new buys within 2 days of earnings | Nearest: META Jul 29 ✓ |
+
+---
+
+No trades planned.
+
+## Planned trades for today (June 12, 2026 — market open)
+
+**No trades warranted.** Portfolio 85.4% invested. META at 3.18pp from -12% cut requires cash buffer. SpaceX IPO (SPCX) absorbs market liquidity and narrative today. AMD recovery blocked (USD 488 < entry USD 508.43). All 7 theses intact — hold and let stops protect.
+
+```json
+{
+  "plan_date": "2026-06-12",
+  "trades": []
+}
+```

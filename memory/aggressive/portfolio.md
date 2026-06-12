@@ -17,33 +17,33 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-11 EOD close (~3:50 PM ET)
+## Last snapshot — 2026-06-12 pre-market (~8:00 AM ET)
 
 | Field | Value |
 |---|---|
-| Equity | USD 94,155.63 |
+| Equity | USD 94,898.51 |
 | Cash | USD 13,885.38 |
-| Long market value | USD 80,270.25 |
+| Long market value | USD 81,013.13 |
 | Open positions | 7 |
-| last_equity (prev close June 10) | USD 92,912.82 |
-| Today's change vs last_equity | +USD 1,242.81 (+1.34%) |
+| last_equity (prev close June 11) | USD 94,130.22 |
+| Today's change vs last_equity | +USD 768.29 (+0.82%) |
 | HWM | USD 101,144.73 |
-| Drawdown from HWM | -6.91% (circuit breaker: 20% — NOT triggered) |
+| Drawdown from HWM | -6.17% (circuit breaker: 20% — NOT triggered) |
 
 **Open positions:**
 
-| Symbol | Qty | Avg Entry | Close Price | Market Value | Unrealized P/L | P/L % | -12% Cut Trigger | Buffer | Trailing Stop Order | Stop Price |
+| Symbol | Qty | Avg Entry | Price | Market Value | Unrealized P/L | P/L % | -12% Cut Trigger | Buffer | Trailing Stop Order | Stop Price |
 |---|---|---|---|---|---|---|---|---|---|---|
-| NVDA | 103 | USD 213.60 | USD 204.75 | USD 21,089.25 | -USD 911.55 | -4.14% | USD 187.97 | 7.86pp | `54d7d851` | USD 181.71 |
-| META | 23 | USD 630.12 | USD 569.89 | USD 13,107.47 | -USD 1,385.29 | **-9.56%** | USD 554.51 | **🔴 2.44pp** | `11c3a1bf` | USD 526.75 |
-| AVGO | 34 | USD 406.23 | USD 383.40 | USD 13,035.60 | -USD 776.22 | -5.62% | USD 357.48 | 6.38pp | `36f5a45f` | USD 349.71 |
-| MSFT | 28 | USD 426.21 | USD 391.51 | USD 10,962.28 | -USD 971.60 | **-8.14%** | USD 375.06 | **3.86pp ⚠️** | `ef211767` | USD 350.56 |
-| AMZN | 36 | USD 247.99 | USD 241.60 | USD 8,697.60 | -USD 230.08 | -2.58% | USD 218.23 | 9.42pp | `b55bef05` | USD 205.35 |
-| VST | 52 | USD 151.47 | USD 147.00 | USD 7,644.00 | -USD 232.44 | -2.95% | USD 133.29 | 9.05pp | `5b347be3` | USD 124.57 |
-| GOOGL | 16 | USD 370.22 | USD 358.87 | USD 5,741.91 | -USD 181.61 | -3.07% | USD 325.79 | 8.93pp | `e52a43f1` | USD 304.81 |
+| NVDA | 103 | USD 213.60 | USD 206.10 | USD 21,228.30 | -USD 772.50 | -3.51% | USD 187.97 | 8.49pp | `54d7d851` | USD 181.71 |
+| META | 23 | USD 630.12 | USD 574.52 | USD 13,213.96 | -USD 1,278.80 | **-8.82%** | USD 554.51 | **🔴 3.18pp** | `11c3a1bf` | USD 526.75 |
+| AVGO | 34 | USD 406.23 | USD 387.23 | USD 13,165.82 | -USD 646.00 | -4.68% | USD 357.48 | 7.32pp | `36f5a45f` | USD 349.71 |
+| MSFT | 28 | USD 426.21 | USD 394.03 | USD 11,032.81 | -USD 901.07 | **-7.55%** | USD 375.06 | **4.45pp ⚠️** | `ef211767` | USD 350.56 |
+| AMZN | 36 | USD 247.99 | USD 245.08 | USD 8,822.88 | -USD 104.80 | -1.17% | USD 218.23 | 10.83pp | `b55bef05` | USD 205.35 |
+| VST | 52 | USD 151.47 | USD 148.50 | USD 7,722.00 | -USD 154.44 | -1.96% | USD 133.29 | 10.04pp | `5b347be3` | USD 124.57 |
+| GOOGL | 16 | USD 370.22 | USD 364.21 | USD 5,827.36 | -USD 96.16 | -1.62% | USD 325.79 | 10.38pp | `e52a43f1` | USD 304.81 |
 
-**Stop audit (2026-06-11 EOD): ALL 7 positions confirmed with live 18% trailing stop orders. ✓**
-_(Stop prices unchanged from midday — all positions remain below their respective HWMs.)_
+**Stop audit (2026-06-12 pre-market): ALL 7 positions confirmed with live 18% trailing stop orders. ✓**
+_(Stop prices unchanged — no position has made a new intraday high since the stops were set; all stops remain at their last-recorded levels.)_
 
 | Symbol | Stop Order ID | Stop Price | HWM | Status |
 |---|---|---|---|---|
@@ -58,26 +58,27 @@ _(Stop prices unchanged from midday — all positions remain below their respect
 **Sector exposure summary (journaled decision — intentional concentration):**
 | Sector | Market Value | % of Portfolio |
 |---|---|---|
-| Technology (NVDA, META, AVGO, MSFT, AMZN, GOOGL) | USD 72,633.11 | 77.1% |
-| Utilities/Energy (VST) | USD 7,644.00 | 8.1% |
-| Cash | USD 13,885.38 | 14.7% |
+| Technology (NVDA, META, AVGO, MSFT, AMZN, GOOGL) | USD 73,291.13 | 77.2% |
+| Utilities/Energy (VST) | USD 7,722.00 | 8.1% |
+| Cash | USD 13,885.38 | 14.6% |
 _Technology overweight is BY DESIGN for Aggressive Bull — concentrated AI-supercycle thesis. VST provides non-correlated diversification via nuclear power PPAs._
 
-**Thesis contracts (2026-06-11 EOD status):**
+**Thesis contracts (2026-06-12 pre-market status):**
 | Symbol | Invalidation | Review By | Status |
 |---|---|---|---|
-| NVDA | NVDA loses a major hyperscaler customer OR Q2 FY2027 guide drops below USD 80B | 2026-06-25 | ✓ INTACT — Oracle USD 70B FY2027 capex reaffirms GPU demand; +2.16% today |
-| META | Meta formally confirms equity offering AND management explicitly downgrades AI monetization | 2026-06-17 | ✓ INTACT — no formal offering; ad revenue +33% thesis intact; **EOD -9.56%, 2.44pp buffer**; ex-div June 15 (Monday) |
-| AVGO | AI revenue guide cut below USD 12B for next quarter OR Q3 total revenue miss >10% | 2026-06-25 | ✓ INTACT — USD 35B AI infra platform confirmed; +3.04% recovery today |
-| MSFT | Azure growth decelerates below 30% YoY OR Copilot explicitly called underperforming | 2026-06-25 | ✓ INTACT — Azure thesis intact; down -1.47% today on broad Salesforce/MSFT weakness; EOD -8.14%, 3.86pp buffer |
-| AMZN | AWS growth decelerates to <20% YoY OR Trainium adoption fails hyperscaler traction | 2026-06-22 | ✓ INTACT — Graviton5/USD 17.5B credit facility; +1.51% today |
-| VST | Nuclear PPAs with Meta/AWS cancelled or renegotiated; OR material regulatory action vs nuclear fleet | 2026-07-15 | ✓ INTACT — **+6.11% today** (star performer); Iran ceasefire progress = risk-on; ex-div June 22 |
-| GOOGL | GCP growth decelerates below 40% YoY OR AI investment plan explicitly cut | 2026-06-25 | ✓ INTACT — GCP +63% YoY; +0.70% today |
+| NVDA | NVDA loses a major hyperscaler customer OR Q2 FY2027 guide drops below USD 80B | 2026-06-25 | ✓ INTACT — KKR+NVDA+VST+KIA committing USD 10B+ to Helix Digital Infrastructure; pre-mkt +0.62%; analyst target USD 298.42 |
+| META | Meta formally confirms equity offering AND management explicitly downgrades AI monetization | **2026-06-17** | ✓ INTACT — no banks hired, no confirmation; ad revenue +33% thesis intact; **pre-mkt -8.82%, 3.18pp buffer 🔴**; review_by NEXT WEDNESDAY — explicit hold/trim/exit decision required June 17 pre-market |
+| AVGO | AI revenue guide cut below USD 12B for next quarter OR Q3 total revenue miss >10% | 2026-06-25 | ✓ INTACT — AI XPV Platform USD 35B with Apollo/Blackstone; +0.43% today; analyst target USD 522 |
+| MSFT | Azure growth decelerates below 30% YoY OR Copilot explicitly called underperforming | 2026-06-25 | ✓ INTACT — Azure accelerating, Build 2026 AI agent expansion confirmed; +0.95% today; -7.55% from entry |
+| AMZN | AWS growth decelerates to <20% YoY OR Trainium adoption fails hyperscaler traction | 2026-06-22 | ✓ INTACT — Claude Fable 5 on Amazon Bedrock (AWS AI differentiation); +1.48% today; analyst target USD 312.71 |
+| VST | Nuclear PPAs with Meta/AWS cancelled or renegotiated; OR material regulatory action vs nuclear fleet | 2026-07-15 | ✓ INTACT — KKR+NVDA+VST consortium (Helix Digital Infrastructure); ex-div June 22; oil -20% from peak (neutral-to-minor headwind vs prior narrative) |
+| GOOGL | GCP growth decelerates below 40% YoY OR AI investment plan explicitly cut | 2026-06-25 | ✓ INTACT — GCP +63% YoY; +1.80% today; analyst avg target USD 428.15 |
 
-**CRITICAL watchpoints for June 12 pre-market:**
-1. 🔴 META at -9.56% (USD 569.89) → 2.44pp buffer to -12% forced cut (threshold USD 554.51). IMPROVED from midday 1.57pp. Ex-dividend date MONDAY June 15 — minor price artifact (~USD 0.XX shed on ex-div). Check for any equity offering news pre-market.
-2. MSFT at -8.14% (USD 391.51) → 3.86pp buffer ⚠️. Improved from midday 3.00pp. Microsoft was a weak spot today (-1.47% on Salesforce/enterprise software rotation). Monitor at open.
-3. SpaceX IPO begins trading June 12 — could dominate market narrative and affect tech sector sentiment. No direct thesis impact on any held name, but watch for knock-on sentiment effects.
+**CRITICAL watchpoints for June 12 session:**
+1. 🔴 META at -8.82% (USD 574.52) → 3.18pp buffer to -12% forced cut (threshold USD 554.51). Improved from 2.44pp yesterday close. Offering STILL unconfirmed (no banks hired). Review_by June 17 = 3 trading days away. Midday routine must check META price immediately.
+2. ⚠️ MSFT at -7.55% (USD 394.03) → 4.45pp buffer. Improving from 3.86pp yesterday. Xbox restructuring immaterial.
+3. SpaceX IPO (SPCX): First trading day on Nasdaq at USD 135/share; USD 1.77T valuation; may absorb tech liquidity — watch for AI-name underperformance during IPO frenzy. No direct thesis impact.
+4. Iran 60-day ceasefire: Oil -20% from 2026 peak. Risk-on for tech. Slight VST headwind (nuclear vs gas competitive gap narrows) but PPA-locked revenue is unchanged.
 
 ---
 
@@ -118,3 +119,4 @@ _Technology overweight is BY DESIGN for Aggressive Bull — concentrated AI-supe
 | 2026-06-11 (market-open) | 93,115.96 | — | **-6.88%** | — | — |
 | 2026-06-11 (midday) | 92,974.10 | — | **-7.03%** | — | — |
 | 2026-06-11 (EOD close) | **94,155.63** | **737.76** | **-5.84%** | **-2.18%** | **-3.66pp** |
+| 2026-06-12 (pre-market) | **94,898.51** | ~741.94 (pre-mkt) | **-5.10%** | ~-1.62% | **~-3.48pp** |
