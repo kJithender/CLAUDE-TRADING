@@ -140,6 +140,29 @@ are trading at a fraction of the value they deserve.
 
 ---
 
+## Week 3 priorities (as of 2026-06-12 weekly review)
+
+- **META decision Monday June 15 (CRITICAL):** Review_by date is June 17. Pre-market June 15 is the mandatory hold/trim/exit decision point. Current price $567.55 (-9.93%), buffer 2.07pp to -12% cut ($554.51). Recommended decision tree:
+  - If equity offering formally confirmed AND management downgrades AI monetization → **EXIT full position at open**.
+  - If META opens below $562 Monday with no offering confirmation → **TRIM 25% (sell ~6 shares)** to reduce binary risk while maintaining core thesis.
+  - If META opens above $562 and thesis intact → **HOLD**, renew thesis contract with new review_by date June 24, updated invalidation.
+- **MSFT monitoring:** Buffer at 3.74pp (USD 375.06 trigger). No new action unless buffer falls below 2pp. Azure thesis intact.
+- **AMD re-entry remains blocked** until AMD recovers above entry USD 508.43. No averaging down. Do not chase the recovery.
+- **No new positions** until META buffer widens above 4pp OR META position is resolved. Cash $13,885 is the safety net.
+- **Iran ceasefire catalyst Monday:** If deal signed over the weekend, expect risk-on Monday open. Tech recovery likely (especially MSFT, META which lagged). VST may face narrative headwind on oil drop — monitor but thesis structurally intact (PPAs are fixed-rate).
+- **Watchlist for deployment after META resolved:** MRVL (custom silicon breakout), TSM (foundry bottleneck), ETN (AI power capex). None actionable until META buffer is healthy.
+
+### Proactive trim heuristic (added Week 3)
+
+When a position meets ALL of the following conditions, evaluate a **25% trim** at the next pre-market session rather than waiting for the -12% midday rule to fire:
+1. Position is within **3pp** of the -12% forced cut threshold AND
+2. Thesis contract's **review_by date is within 5 trading days** AND
+3. **No near-term catalyst** (earnings, announcement, resolution) is expected within 2 trading days
+
+This is NOT a hard rule — it is a discretionary risk management tool. A trim reduces binary exit risk (getting stopped out at a worse price in a fast market) while preserving most of the thesis. Document the decision explicitly in the journal.
+
+---
+
 ## Benchmark tracking
 
 Every weekly review computes:

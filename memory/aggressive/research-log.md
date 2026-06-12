@@ -944,3 +944,54 @@ No trades planned.
 }
 ```
 EXECUTED: 2026-06-12T13:46:12Z (no trades — no-trade plan confirmed, stop audit passed 7/7; META CRITICAL at -10.52% / 1.48pp from -12% cut; MSFT at -9.82% / 2.18pp from cut)
+
+---
+
+## 2026-06-12 — WEEK 2 WEEKLY REVIEW
+[search: WebSearch fallback — MiniMax M3 not available in this session]
+
+### Market week in review (June 8-12, 2026) — dated June 12, 2026
+
+**S&P 500:** +1.6% for the week; 9th consecutive weekly gain; multiple record highs. S&P closed June 12 at 7,449 pts (+0.74% on the day). SPY: 737.41 (June 5) → 741.75 (June 12) = +0.59% WoW. Source: Schwab market update, Seeking Alpha, Advisor Perspectives, June 2026.
+
+**Iran 60-day ceasefire:** Full ceasefire announced June 11; potential oil-sanctions-lift deal could close Sunday. Oil ~$85/bbl (-2% on day), down ~20% from 2026 peak. Risk-on for high-multiple tech; minor nuclear power narrative headwind for VST (but PPAs are fixed-rate). Source: CNBC, Schwab, June 2026.
+
+**Semiconductor sector:** SOXX rebounded sharply after prior week's ~10% selloff. Oracle Q4 FY2026 earnings ($638B RPO +363% YoY; $70B FY2027 capex) confirmed massive GPU/AI infrastructure demand. Intel selected by Alphabet for chip manufacturing (June 8). Chip stocks week overall: positive recovery, though our portfolio semi names remained in drawdown from June 4 entry. Source: Intellectia AI, Schwab, MoneyMorning, June 2026.
+
+**Macro:** CPI May 4.2% (3-year high, released June 10). CME FedWatch: 70% odds of 25bp rate hike by Dec 2026. Fed on hold at 3.5-3.75%. Inflation remains a multiple headwind for high-growth AI names. Source: CaixaBank Financial Markets Daily, June 12, 2026.
+
+**Sentiment:** AAII bearish sentiment 47.7% (+10pp WoW) — near contrarian bullish signal. Bullish at 30.4% (3-month low). This level of pessimism historically precedes market recoveries. Source: CaixaBank/AAII, June 2026.
+
+**SpaceX IPO (SPCX):** Priced June 12 at $135, closed +19% ($161.11). $75B raise, $1.77T valuation — largest IPO in history. Capital absorption and AI-sector rotation created drag on AI-tech names on June 12 even as S&P rose +0.34%. Source: CNBC IPO live, June 2026.
+
+### Held position thesis checks (weekly sweep) — dated June 12, 2026
+
+**META (Critical):** Stock range $561-$576 during week. Equity offering still unconfirmed — "pure speculation," no banks hired. Capex raised to $125-145B. Ad revenue +33% YoY thesis intact. Review_by June 17 requires explicit hold/trim/exit decision at pre-market June 15. Buffer June 12 EOD: 2.07pp — CRITICAL. Source: Cryptobriefing, TradingView, Yahoo Finance META, June 2026.
+
+**NVDA:** Oracle $638B RPO + $70B capex confirms GPU demand. Helix consortium (KKR+NVDA+VST) confirms real-economy AI buildout. Still in drawdown (-3.88%) from entry. Analyst avg target $298.42 (+45% upside). Thesis intact. Source: intellectia.ai, June 2026.
+
+**AVGO:** Recovery week after prior selloff. Closed ~$382. AI revenue guide ~$16B Q3 intact; USD 100B+ FY2027 guide maintained. AI XPV Platform with Apollo/Blackstone is new revenue vector. Thesis intact. Source: StockAnalysis/AVGO, Intellectia AI, June 2026.
+
+**MSFT:** Azure thesis intact. Buffer 3.74pp from -12% cut. Next earnings late July. No Azure-specific negative news. Thesis intact. Source: prior research, June 2026.
+
+**AMZN:** Claude Fable 5 on Bedrock + Graviton5 + $17.5B credit line all thesis-positive. AWS +28% Q1. Buffer comfortable (8.15pp). Thesis intact. Source: CNN Markets, June 2026.
+
+**VST:** Helix consortium co-investor (KKR+NVDA+VST) validates nuclear AI power thesis. Oil drop = minor narrative headwind but PPAs are fixed-rate. Ex-div June 22 (USD 0.229/share). Thesis intact. Source: Yahoo Finance VST, June 2026.
+
+**GOOGL:** GCP +63% Q1. Alphabet selected Intel for chip manufacturing (news June 8 — confirms hyperscaler hardware investment). Recovering intraday. Buffer comfortable (9.28pp). Thesis intact. Source: Intellectia AI, June 2026.
+
+### Best performing names missed this week — watchlist refresh, dated June 12, 2026
+
+**Week leaders outside our portfolio:**
+- Broad S&P 500 breadth names (energy, industrials, defense) led as SPY hit record highs
+- SpaceX (SPCX) +19% IPO debut — not actionable for us (brand new issue, no earnings history, not our style)
+- MRVL (Marvell): Tier 3 watchlist name — custom silicon breakout not confirmed this week; monitor for breakout above consolidation
+- KLA Corporation (KLAC): Semiconductor equipment, AI infrastructure demand. Not in our universe but performing well — adds to AI capex confirmation signal
+- AMD: 130%+ YTD despite our exit at -13.28%. AMD recovered after our cut, confirming the thesis was ultimately intact. Re-entry warranted only after AMD recovers above entry USD 508.43. NOTE: this is a painful observation — the midday rule fired correctly given the information at the time, but AMD recovered. This is expected behavior for rule-based systems.
+
+**Watchlist candidates for Week 3 (only actionable after META is resolved):**
+- MRVL (Marvell): custom silicon for hyperscalers; watch for confirmed technical setup above consolidation zone
+- TSM: If AI chip demand signals compound further (post-Oracle confirmation), TSMC foundry becomes a cleaner play than AMD on the same theme
+- ETN (Eaton): AI power capex + data center electrical equipment; pure-play on power infrastructure theme alongside VST
+
+No new positions planned for Monday — META buffer requires cash preservation.
