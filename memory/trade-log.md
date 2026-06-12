@@ -3,6 +3,99 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-12 15:51 ET — CLOSE — EOD journal
+
+- **Action:** No trades. End-of-day P/L check, stop audit, exit reconciliation, journal.
+- **Market status:** `is_open: true` ✓ (confirmed via clock — next close 16:00 ET; NOT a half-day — normal session)
+- **Account:** Equity $98,696.00 | Cash $74,304.63 (75.3%) | Long market value $24,391.37
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+### Half-day check
+- Next close: 16:00 ET (normal session). NOT a half-day. ✓
+
+### Shock check
+- Equity $98,696.00 vs last_equity $98,788.43 = **−$92.43 = −0.093%** — well above −4% threshold. No shock day. ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21; current $98,696.00 = **−2.65%** — within −10% limit. ✓ Not triggered. Not within 2% of the −10% trigger. ✓
+
+### Position review (EOD ~15:51 ET — live Alpaca data)
+
+**LLY** ($1,138.355, **+4.10% from avg entry $1,093.534**, **−1.95% intraday** vs $1,160.95 lastday) ⭐ STRONG
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** — status "new" ✓
+- Stop buffer: $1,138.355 − $1,064.457 = **$73.90 (6.49%)** ✓ Well protected.
+- −7% cut threshold: $1,016.99 — remote. Medicare GLP-1 Bridge July 1 in 19 days. Thesis STRONGEST. HOLD.
+- Intraday softness (−1.95%) attributed to SpaceX SPCX IPO capital rotation; no LLY-specific negative catalyst.
+
+**V** ($322.21, **−0.42% from avg entry $323.57**, **+0.99% intraday** vs $319.05 lastday) ✓ INTACT
+- Trailing stop 66033918: HWM **$325.93**, stop **$293.337** — status "new" ✓ (updated 15:02 ET)
+- Stop buffer: $322.21 − $293.337 = **$28.87 (8.96%)** ✓ Healthy.
+- −7% cut threshold: $300.92 — CLEAR by $21.29. No action.
+- V +0.99% intraday — financials resilient on Nasdaq-weak day. OpenAI/AI commerce thesis intact. Review_by July 28. HOLD.
+
+**VST** ($147.98, **−0.56% from avg entry $148.81**, **+1.09% intraday** vs $146.38 lastday) ✓ RECOVERING
+- Trailing stop c4c200a5: HWM **$150.50**, stop **$135.45** — status "new" ✓
+- Stop buffer: $147.98 − $135.45 = **$12.53 (8.47%)** ✓ Strong.
+- −7% cut threshold: $138.39 — CLEAR by $9.59. No action.
+- VST +1.09% intraday — oil −2% on Iran/US peace deal supports nuclear relative economics. Helix thesis intact. Dividend ex-date June 22 in 10 days (USD 9.20 for 40sh). HOLD.
+
+### Stop audit (EOD June 12 — confirmed via Alpaca open orders endpoint)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new |
+| 66033918 | V | 22sh | **$325.93** | **$293.337** | ✓ new (updated 15:02 ET) |
+| c4c200a5 | VST | 40sh | **$150.50** | **$135.45** | ✓ new |
+
+No orphaned stops. No missing stops. Stop audit: **4/4 PASS ✓**
+
+### Exit reconciliation
+No trailing stops filled today. Last exit: META June 10 via trailing stop at $578.00 — already in closed-trades.md ✓. All 3 positions (LLY, V, VST) active through EOD. Ledger current. ✓
+
+### Guardrail checks (EOD June 12)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| LLY above −7% cut threshold | +4.10% from entry | −7% | ✓ |
+| V above −7% cut threshold | −0.42% from entry | −7% | ✓ |
+| VST above −7% cut threshold | −0.56%, $147.98 > $138.39 | −7% | ✓ Clear by $9.59 |
+| Intraday shock (vs last_equity $98,788.43) | −$92.43 = −0.093% | <−4% | ✓ |
+| Drawdown circuit breaker | $98,696 vs HWM $101,384 = −2.65% | <−10% | ✓ |
+| Cash | $74,304.63 (75.3%) | ≥5% | ✓ Ample |
+| All trailing stops active | 4/4 confirmed | required | ✓ |
+| Sector caps | Healthcare 11.54%, Financials 7.18%, Energy 6.00%, Cash 75.29% | <60% each | ✓ |
+
+### Market context (June 12, 2026)
+SpaceX (SPCX) debuted today at $135/sh, surged ~19% to ~$161 — largest IPO in history ($1.77T valuation) — capturing significant tech capital and creating sector rotation: S&P 500 +0.34%, Dow +0.40%, Nasdaq 100 −0.5%. Amazon −2.17%, Apple −1.95% (SpaceX liquidity absorption). Iran/US peace deal continues to advance; crude oil −2% to ~$85/bbl — direct VST nuclear thesis tailwind. LLY −1.95% intraday (rotation, not thesis-specific). V +0.99% financials resilient. VST +1.09% on oil decline. Context is neutral-to-supportive for all three theses.
+
+### Quarterly SPY dividend note (June quarter mid-month check)
+- **Q2 2026 SPY dividend:** $1.76/share, ex-date June 18, 2026 (6 days), pay date July 31, 2026.
+- Cumulative SPY dividends since Bull inception May 21, 2026: **$0.00** (Q1 ex-date March 20 was before inception).
+- After June 18: SPY total-return adjustment = +$1.76/$739.44 = **+0.238pp** in SPY's favor.
+- Current since-inception comparisons use price-only return. After June 18, add $1.76 to SPY anchor for accurate total-return benchmarking.
+
+### Performance (EOD June 12)
+- **Equity:** $98,696.00 (vs last_equity $98,788.43 = −$92.43 today = **−0.093%**)
+- **Today P/L breakdown:** LLY −$225.95 (−1.95% intraday), V +$69.52 (+0.99%), VST +$64.00 (+1.09%) = net −$92.43 ✓
+- **Unrealized P/L:** LLY +$448.21, V −$29.92, VST −$33.20 = net **+$385.09**
+- **Cash:** $74,304.63 (75.3%) | Long market value: $24,391.37
+- **SPY today:** ~$741.02 (vs $737.62 est. June 11 close = +0.46%)
+- **Bull today vs SPY today:** −0.093% vs +0.46% = **−0.55pp underperformance** (75% cash limits upside — expected)
+- **Since inception (2026-05-21):** Bull **−1.304%** ($100,000 → $98,696.00) vs SPY **+0.213%** ($739.44 → ~$741.02) = **Bull trails SPY by ~1.52pp**
+
+### Race scoreboard (EOD June 12)
+- Bull: **−1.30%** (since May 21, USD 100K start)
+- AGGRO: **~−6.04%** (since Jun 4, midday June 12 estimate; last full EOD −5.84% June 11)
+- SPY: **+0.21%** (since May 21, Bull's benchmark anchor)
+- Bull leads AGGRO by ~4.74pp.
+
+### Notes
+- Clean EOD close. All 3 positions held, all theses intact, all stops active. 75.3% cash drag expected in positive sessions. SpaceX IPO rotation was the dominant market story; no portfolio-specific disruptions. Weekly review at 4:30 PM ET today. Week of June 16: 3 fresh slots (LRCX, NVDA, one new name).
+
+---
+
 ## 2026-06-12 12:32 ET — MIDDAY CHECK (no action; all positions within range; stop audit 4/4)
 
 - **Action:** No trades. All positions within guardrail thresholds. No cuts, no stop tightening.
