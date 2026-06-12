@@ -2,6 +2,95 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-06-12 (Week 4 — 5 trading days: Mon Jun 8 – Fri Jun 12)
+
+- **Bull return (week):** −0.22% ($98,916.92 → $98,696.00)
+- **SPY return (week):** +0.58% ($737.45 → $741.75 actual Alpaca close)
+- **Result:** Lagged SPY by **−0.81pp**
+- **Since inception (2026-05-21):** Bull −1.30% vs SPY +0.31% = **−1.62pp gap**
+- **HWM:** $101,384.21 | drawdown −2.65% — well within −10% circuit breaker ✓
+- **Grade:** B−
+
+### Trade statistics (week 4 cumulative — from closed-trades.md, source of truth)
+
+| Metric | Value |
+|--------|-------|
+| Total closed trades | 5 (AMZN, AVGO, NVDA, MSFT, META) |
+| Wins | 0 |
+| Losses | 5 |
+| Win rate | **0%** |
+| Average loss % | **4.08%** (META −6.87%, AMZN −7.39%, NVDA −3.36%, AVGO −2.10%, MSFT −0.70%) |
+| Total realized losses | **−$1,689.02** |
+| Profit factor | N/A (no wins) |
+| Avg holding days (all losses) | **11.6 days** (META 9, MSFT 14, NVDA 10, AVGO 13, AMZN 12) |
+| Biggest repeated lesson | Entries into macro-inflection environments with co-located stop and −7% rule → near-maximum loss exits |
+
+⚠️ **trades.jsonl system defect flagged:** Only 2 records in JSONL (V buy and META stop_fill, both Jun 10) vs 5 closed trades in narrative ledger. Initial position buys (AVGO, MSFT, NVDA, AMZN, META) and their exit fills were never written to JSONL. The JSONL is materially incomplete. **closed-trades.md is the authoritative source for trade statistics until all future buys/sells are consistently logged to JSONL.** Future routines must write every fill to JSONL at execution time.
+
+### Process audit
+
+| Check | Result | Grade |
+|-------|--------|-------|
+| Cash drag (~75% vs 25–40% target) | Slot 3 LRCX unused — explicitly journaled justification (ATR ~10%, extended +19.5% in 6 sessions, Friday weekend risk). Not a passive default. | ✓ Justified |
+| Sector caps | Healthcare 11.54%, Financials 7.18%, Energy 6.00% — all far below 60% cap | ✓ |
+| Stop discipline | 4/4 stops confirmed at every session audit throughout the week | ✓ PERFECT |
+| Loss post-mortem | META stop-out Jun 10: closed-trades.md ✓, lesson in lessons.md ✓ | ✓ |
+| Weekly new-position count | 2/3 slots used (VST Jun 9, V Jun 10) — deliberate | ✓ |
+| Written thesis at entry | VST: nuclear PPA + Helix thesis ✓; V: 5-of-5 entry signals ✓ | ✓ |
+| Guardrail checks at every routine | All checks completed and logged | ✓ |
+
+### What worked
+
+- **VST Helix thesis upgrade (June 11):** KKR + NVIDIA + Kuwait Investment Authority launched Helix Digital Infrastructure — VST is the preferred power provider for a $10B+ AI infrastructure platform. Position held through June 10 crisis close ($138.54, $0.15 above −7% cut threshold) on intact thesis. Confirmed correct: VST recovered to $147.98 by Friday with a materially stronger thesis than at entry.
+- **LLY continued to perform:** +4.10% from avg entry $1,093.53 EOD June 12. Medicare GLP-1 Bridge July 1 approaching (19 days). Phase 2 trial expansions (chronic low back pain, osteoarthritis) announced — pipeline diversification positive. Stop HWM $1,182.73 provides 6.49% buffer.
+- **V entry thesis confirmed:** 5-of-5 entry signals met. OpenAI partnership announced (AI agent-driven transactions), Payments Forum 2026 stablecoin/token capabilities confirmed. Essentially flat (−0.42%) in 3 sessions — within normal variance.
+- **High-cash cushion on volatile week:** SPY fell −1.67% on June 10 (CPI 4.2% YoY + Iran/US military strikes). Bull at 75% cash fell only −0.30% that session — cash drag paid off as a protective buffer repeatedly this week.
+- **META trailing stop executed correctly:** No manual intervention — rules-based exit at $578.00. Post-mortem completed. Lesson added. Clean process.
+- **LRCX slot 3 discipline held all week:** Four consecutive justified deferrals (ATR ~10% each day). Deliberate, not passive.
+
+### What didn't work
+
+- **META stop-out at $578.00 (−6.87%):** Near-maximum realized loss. Stop at $578.142 and −7% rule at $577.19 were co-located — as warned in Week 3 review. The June 10 broad-market shock (CPI hot, Iran strikes, VIX +12%) triggered the exit. $639.56 realized loss. Entry into a macro inflection with a high-beta name remains the system's biggest flaw.
+- **Bull lagged SPY by 0.81pp this week:** Primarily cash drag (75% cash in a week where SPY gained +0.58%) amplified by the META $639 realized loss.
+- **VST near-miss:** June 10 close $138.54 vs −7% threshold $138.39 = $0.15 of cushion. One bad close away from a forced exit. The thesis was correct to hold — but the position sizing (started at 6%) and entry price ($148.81 on a stock that promptly fell 7%) were cutting it close.
+- **Open positions all slightly underwater at EOD:** LLY +4.10% but V −0.42% and VST −0.56%. Portfolio net unrealized P/L ≈ +$326.
+
+### Macro context (week of June 8–12, 2026)
+
+- **Iran/US peace deal:** Draft agreement advancing — US to lift oil sanctions, Iran to reopen Strait of Hormuz within 30 days. WTI fell to ~$85/bbl. Market rallied broadly on de-escalation. Oil below $100 trigger ✓.
+- **FOMC June 16–17 (next week):** 89% probability of rate hold. Possible hawkish bias shift given CPI 4.2% YoY and NFP 172K (strong). If Fed signals no cuts and hints at hikes, 10yr could spike above 4.75% trigger. No new positions until Wednesday afternoon post-FOMC.
+- **SpaceX SPCX IPO June 12:** Opened at $135, surged ~19% to $161 — largest IPO in history ($1.77T). Absorbed tech capital → Nasdaq 100 −0.5% vs S&P 500 +0.34%. Explains LLY −1.95% intraday despite intact thesis.
+- **10yr yield:** ~4.47% — below 4.75% watch trigger ✓.
+
+### Aggressive Bull lesson (section 7b)
+
+**AGGRO performance (EOD June 12):**
+- AGGRO since inception (June 4): **−5.95%** ($94,051.73)
+- SPY since AGGRO inception: **−1.65%** ($754.18 → $741.75)
+- AGGRO alpha: **−4.30pp** vs SPY
+
+**Cautious Bull since AGGRO inception (June 4):**
+- Bull June 4 EOD: $99,820.82 → June 12 EOD: $98,696.00 = **−1.13%**
+- Cautious Bull leads AGGRO by **+4.82pp** since June 4.
+
+**Key AGGRO lesson this week:** AGGRO's wider 18% trailing stops kept all positions alive through the volatile week, but META is now at −9.88% (only 2.12pp from the −12% forced cut) — far worse than Cautious Bull's −6.87% exit. Cautious Bull's 10% stop on META was the **correct** choice: it limited the loss to −6.87% vs AGGRO sitting on a live −9.88% position that could deteriorate further. Wider stops are not always better; in a volatile macro environment with a macro-inflection thesis, tighter stops protect against larger structural drawdowns.
+
+AGGRO's 77% tech concentration (NVDA+META+AVGO+MSFT+AMZN+GOOGL) amplified every sector selloff. Cautious Bull's diversification (LLY healthcare, V financials, VST energy) provided meaningfully lower sector correlation and less drawdown.
+
+**No rule change proposed** (AGGRO is not outperforming; it is underperforming by 4.82pp). AGGRO's approach is performing as designed — high-conviction concentration means higher upside potential in a sustained trend but larger drawdowns in volatile markets. No lesson requires a rule change; the existing 10% stop + diversification approach is proven correct this week.
+
+**Cross-Bull learning counter:** AGGRO TRAILS Cautious by 4.82pp since AGGRO inception. Trigger condition (AGGRO beats Cautious by >5pp for 2 consecutive weeks) is **NOT MET**. Counter = 0. No change to `memory/control.md` CROSS_BULL_LEARNING line.
+
+### Strategy adjustments for week of June 16+
+
+1. **FOMC gate:** No new positions before Wednesday June 18 afternoon unless the entry signal is exceptional (all 5-of-5 criteria met, low-ATR name). FOMC could shift bias hawkish — risk of 10yr crossing 4.75% trigger. After FOMC, reassess with rate outlook confirmed.
+2. **LRCX re-evaluation:** Cantor Fitzgerald raised PT to $425 June 10. The stock is consolidating after a +19.5% run. Conditions for entry: (a) ATR normalizes to ≤3% (need 3+ quiet sessions), (b) stock closes 2+ sessions in a tight range on contracting volume, (c) price not extended >10% above 50-day SMA. Check pre-market Monday June 16 — if all three met, Slot 1.
+3. **VST dividend ex-date June 22:** 10 days away. USD 9.20 credit (40sh × $0.23). Confirm stop ratchets above ex-div adjusted price after June 22.
+4. **LLY review_by July 1** (Medicare GLP-1 Bridge effective date): Must make explicit hold/trim/exit decision at pre-market June 30 or July 1 based on bridge implementation data.
+5. **NVDA re-entry eligibility:** Senate Banking hearing passed without CEO Huang testimony. Regulatory overhang somewhat reduced. Re-evaluate for June 16+ entry if NVDA shows basing above $205 with normalizing ATR.
+
+---
+
 ## Week ending 2026-06-05 (Week 3 — 5 active trading days: Mon Jun 1 – Fri Jun 5)
 
 - **Bull return (week):** −2.32% ($101,263.22 → $98,916.92)

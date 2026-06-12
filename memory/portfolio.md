@@ -72,7 +72,8 @@ the last known state, but always re-fetches live data before trading._
 | **Open (2026-06-12)** | **$98,996.63** | **$739.08 (live ~09:36 ET)** | **~-0.95%** |
 | **Midday (2026-06-12)** | **$98,808.86** | **~$740.44 (live ~12:32 ET)** | **~-1.33%** |
 | **Close (2026-06-12)** | **$98,696.00** | **$741.02 (est. close)** | **-1.52%** |
-| **Since inception (2026-05-21)** | **-1.304%** | **+0.213% ($741.02 est. Jun 12 close)** | **Bull trails SPY ~1.52pp** |
+| **Since inception (2026-05-21)** | **-1.304%** | **+0.312% ($741.75 actual Jun 12 close)** | **Bull trails SPY ~1.62pp** |
+| **Week 4 (Jun 8–12)** | **-0.22%** | **+0.58%** | **Bull lagged SPY 0.81pp** |
 
 ## Notes
 

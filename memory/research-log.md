@@ -5,6 +5,32 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-12 — Weekly Review research (~16:30 ET)
+
+_Dated research findings for the weekly review of the week of June 8–12, 2026._
+
+### Macro — week of June 8–12 review
+
+- **S&P 500 weekly performance:** SPY +0.58% for the week ($737.45 → $741.75 actual close). Market driven by Iran/US peace deal progress — WTI crude fell to ~$85/bbl. Roller-coaster week: Monday oil spike ($93.67 on Iran/Israel strikes), then steady recovery. June 10 worst day (CPI 4.2% YoY, Iran strikes, VIX +12%, SPY −1.67%). June 11–12 recovered on peace-deal optimism. Source: Schwab weekly update 2026-06-12, Alpaca bars.
+- **FOMC June 16–17 (next week):** 89% probability of rate hold. Possible bias shift from easing to neutral/tightening — first explicit hawkish pivot signal. Announcement Wednesday June 18, 2 PM ET. 10yr yield watch: any spike above 4.75% post-FOMC is the halt-new-buys trigger. New Fed Chair Kevin Warsh known to be hawkish. Source: IndexBox FOMC preview 2026-06-12.
+- **SpaceX SPCX IPO June 12:** Debuted $135 → closed $161 (+19%). Largest IPO in history ($1.77T). Tech capital rotation explains Nasdaq 100 −0.5% vs S&P +0.34% on June 12. Source: market context, today's routines.
+- **Iran/US peace deal:** Draft agreement largely complete. WTI $85/bbl — below $100 trigger ✓. Strait of Hormuz to reopen within 30 days. Constructive for market; slight VST nuclear relative economics headwind as natural gas improves when oil falls (but nuclear 24/7 reliability advantage intact). Source: Schwab update, today's pre-market.
+- **10yr yield:** ~4.47% — below 4.75% watch trigger ✓. Constructive despite hot CPI.
+
+### Held positions — week review (2026-06-12)
+
+- **LLY:** +4.50% week per VantagePoint AI. ATH $1,182.73 hit June 8. EOD $1,138.355 (+4.10% from entry). Medicare GLP-1 Bridge July 1 in 19 days. Pipeline expansion: Phase 2 trials initiated for chronic low back pain and osteoarthritis. GLP-1 market leadership intact. THESIS: STRONGEST. Sources: VantagePoint AI June 2026, today's research.
+- **VST:** Fell ~4.82% week-over-week from prior highs but recovered strongly by June 12. Helix Digital Infrastructure launch June 11 (KKR+NVIDIA+Kuwait, $10B+, VST preferred power partner) — major thesis upgrade. Ex-dividend June 22 ($0.23/sh, $9.20 credit for 40sh). Analyst PT $230.50 median; 19 Buy. EOD $147.98 (−0.56% from entry). Source: Finviz, stockinvest.us, today's routine data.
+- **V:** Flat week. EOD $322.34 (−0.42% from entry $323.57). Trading range $319–$325 all week. OpenAI partnership confirms AI-commerce thesis. 52-week low $293.89 (Apr 1). Source: MarketBeat, Yahoo Finance.
+
+### Watchlist research (2026-06-12)
+
+- **LRCX:** Consolidating. June 9 close $327.16 (vs June 3 peak $343.71 = −4.8% from peak). ATR ~5.85% at June 9 — still above 3% threshold ❌. Cantor Fitzgerald PT raised to $425 (from $320) June 10. Barclays PT raised to $335. MACD bullish; above 20-day SMA. Re-evaluate June 16+: need 3+ sessions with <3% daily range. Source: historicaloptiondata.com June 9, 2026, Cantor/Barclays upgrades.
+- **NVDA:** Senate Banking hearing passed without CEO Huang testimony — regulatory overhang reduced. Helix consortium (KKR+NVIDIA+VST) is a positive real-world AI contract signal. Bull stopped out at $209.04 June 5. Re-entry possible post-FOMC if stock bases above $205 with normalized ATR.
+- **PWR (Quanta Services) — NEW CANDIDATE:** Q1 2026 EPS +31.4% beat, revenue +26.3% beat. Infrastructure play on AI data-center grid buildout. Not on watchlist yet — add to research queue for June 16+ evaluation. Fits "real-economy AI beneficiary" theme from strategy thesis. Source: top performers search June 2026.
+
+---
+
 ## 2026-06-12 — Pre-market research (~08:04 ET)
 
 **Today is Friday June 12. Week of June 8: 2/3 new positions used (VST June 9, V June 10). Slot 3 expires unused today (deliberate). Week of June 16 starts Monday — 3 fresh slots.**

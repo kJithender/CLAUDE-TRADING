@@ -104,22 +104,27 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 
 ## Watchlist
 
-| Ticker | Sector | One-line reason |
-|--------|--------|-----------------|
-| AVGO   | Tech / AI semi | AI networking & custom silicon; "Strong Buy" consensus; growing hyperscaler share |
-| MSFT   | Tech / Enterprise AI | Azure AI platform compounding; durable enterprise moat; quality FCF |
-| AMZN   | Tech / Consumer | AWS AI infrastructure + cost-conscious retail; dual growth engine |
-| NVDA   | Tech / AI semi | Q1 FY27 blowout ($81.6B revenue +85% YoY, Q2 guide $91B); AI accelerator monopoly; entry target on pullback below $220 on contracting volume |
-| LLY    | Healthcare | GLP-1 dominance; Q1 revenue +56% YoY; secular obesity/diabetes tailwind; target ~$8K notional (~7-8 shares) to manage sizing at ~$1,039/sh |
-| JNJ    | Healthcare | Defensive quality compounder; resilient earnings; reasonable valuation |
-| META   | Tech / Ad-tech | AI-driven ad targeting + Llama open-source flywheel; strong FCF |
-| WMT    | Consumer Defensive | Market-share gains from cost-conscious consumer; AI supply-chain edge |
-| XOM    | Energy | Supply discipline + strong FCF; energy demand from AI data centers |
-| LRCX   | Semi Equipment | 26% revenue growth expected; AI fab investment wave |
-| COST   | Consumer Defensive | Membership model loyalty; defensive + growing |
-| V      | Financials | Payments infrastructure; durable compounder; consumer spending proxy |
-| UNH    | Healthcare | Market leader; 8% EPS growth expected; normalizing post-regulatory overhang |
-| VST    | Energy / Utilities | Nuclear operator; 20-yr PPAs with Meta + AWS; AI data-center power demand secular tailwind; non-correlated to AI semi selling |
+_Watchlist hygiene (updated 2026-06-12 weekly review): entries require date added + catalyst with expiry. Stale entries (4+ weeks, catalyst expired) purged._
+
+| Ticker | Sector | Date Added | One-line reason | Catalyst Expiry |
+|--------|--------|------------|-----------------|-----------------|
+| NVDA   | Tech / AI semi | 2026-05-22 | AI accelerator monopoly; Helix consortium (KKR+NVIDIA preferred AI infra); post-stop-out ($209.04) re-entry eligible post-FOMC if ATR normalizes; target entry on base above $205 | Re-evaluate June 16+ after FOMC |
+| LLY    | Healthcare | 2026-05-22 | **HELD** 10sh @ $1,093.53 — GLP-1 dominance; Medicare Bridge July 1; Phase 2 expansions | Review by July 1 (Bridge effective) |
+| V      | Financials | 2026-06-10 | **HELD** 22sh @ $323.57 — payments infrastructure; OpenAI partnership; stablecoin capabilities | Review by July 28 (earnings) |
+| VST    | Energy / Utilities | 2026-06-09 | **HELD** 40sh @ $148.81 — nuclear operator; Helix Digital Infrastructure (KKR+NVDA preferred power partner); dividend Jun 22 | Review by July 7 |
+| LRCX   | Semi Equipment | 2026-06-08 | AI fab investment wave; Cantor PT $425 (raised June 10); consolidating post +19.5% run — entry ONLY when ATR ≤3% for 3+ sessions and stock bases cleanly | Re-evaluate June 16+; catalyst: AI equipment cycle, no hard expiry |
+| MSFT   | Tech / Enterprise AI | 2026-05-22 | Azure AI platform compounding; stop-out at $419.36 June 5; thesis still intact — possible re-entry post-FOMC if re-based | Ongoing; FOMC June 16–17 gate |
+| COST   | Consumer Defensive | 2026-05-29 | Membership model loyalty; consumer defensive; Q4 earnings mid-August | Re-evaluate July+ (pre-earnings) |
+| PWR    | Industrials | 2026-06-12 | NEW — Quanta Services; grid/data-center infrastructure buildout; Q1 EPS +31.4% beat; +26.3% revenue beat; benefits from AI power demand wave | Research June 16+ before FOMC |
+| JNJ    | Healthcare | 2026-05-22 | Defensive quality compounder; resilient earnings; reasonable valuation | Ongoing; no hard expiry |
+| WMT    | Consumer Defensive | 2026-05-22 | Market-share gains from cost-conscious consumer; AI supply-chain edge | Ongoing; no hard expiry |
+
+_Purged from watchlist (2026-06-12):_
+- **AVGO:** Trailing stop gap-fill June 4 (−2.10%). Thesis still directionally intact but recent earnings gap-down and stock now recovering. Re-evaluate in 4+ weeks when gap is digested and stock has re-based cleanly. Removed to avoid re-entering too soon.
+- **AMZN:** Closed June 3 per −7% rule (−7.39%). EU regulatory headwinds ongoing. Not a near-term candidate.
+- **META:** Closed June 10 per trailing stop (−6.87%). Macro inflection entry was the mistake. Re-evaluate for cycle entry when macro headwinds (rate uncertainty) clear and stock re-bases above $620.
+- **XOM:** No specific catalyst in near term; energy sector rotating on Iran peace deal (oil falling). Re-evaluate if thesis sharpens.
+- **UNH:** No specific near-term catalyst; regulatory overhang normalizing slowly. Re-evaluate in monthly review.
 
 ---
 
@@ -131,29 +136,17 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-05 EOD / weekly review)
+## Active Macro Watches (updated 2026-06-12 weekly review)
 
-- **10yr Treasury yield:** ~4.47% post-NFP — below 4.75% watch level. Constructive.
-  Watch trigger: if 10yr crosses 4.75% on upward trend, halt new buys, tighten stops on high-multiple AI names.
-- **Core PCE April 2026 (released May 29):** +0.2% MoM, +3.3% YoY — BENIGN. Below 0.35% threshold.
-- **May NFP (released June 5, 8:30 AM ET):** ✅ 172K jobs (consensus 85K–125K — strong beat).
-  AHE +3.4% YoY. Unemployment 4.3% unchanged. Market sold off sharply post-NFP — SPY −2.41% today.
-  Strong NFP pushed rate-cut expectations further out, weighing on equities.
-- **SPY June 5 selloff:** SPY closed $739.265 (from $757.55 June 4) = −2.41% today.
-  SPY now −0.02% since Bull inception ($739.44). Bull −1.08%. Gap −1.06% (improved from −3.08% at midday).
-- **Iran conflict / oil prices:** WTI below $100 halt trigger. Monitor weekly.
-- **LLY — STRONGEST position:** 10 shares @ avg $1,093.534. EOD $1,133.88 (+3.69%). 
-  Stops: d4147484 (7sh, HWM $1,166.29, stop $1,049.661); 25989fb5 (3sh, same HWM/stop). ~11.47% weight.
-  Medicare GLP-1 Bridge July 1 catalyst intact. Stop buffer 7.43% — well protected.
-- **META — ⚠️ WATCH:** −4.69% from entry. EOD $591.51. Stop $578.142 (buffer $13.37, 2.26%).
-  META dropped −5.75% today. −7% cut threshold $577.19. If META opens below $582 Monday, HIGH ALERT.
-  Broad-market selloff drove the decline; AI ad thesis intact. But stop is very near.
-- **NVDA — CLOSED:** Trailing stop filled June 5 ~11:20 AM ET at $209.042 (−3.36% from entry). Not on re-entry near-term (Senate Banking hearing June 11 still pending).
-- **MSFT — CLOSED:** Trailing stop filled June 5 ~12:08 PM ET at $419.363 (−0.70% from entry). Azure AI thesis intact; may re-evaluate entry in weeks ahead.
-- **Week of June 1 — FINAL:** 2/3 slots used.
-  - ~~Slot 1: META June 1 ✓~~
-  - ~~Slot 2: LLY +3 shares June 5 ✓~~
-  - **Slot 3 deferred:** V (Visa) — CFO insider selling >50% warrants more research. Week of June 8.
-- **AMZN:** CLOSED June 3 at midday per −7% rule (−7.39%). Not on consideration list near-term.
-- **Week of June 8 candidates:** V (Visa) Slot 1, plus 2 new slots. Research V at Monday pre-market.
-  Also consider: LRCX (semi equipment, AI fab wave), COST (if thesis still intact post-recent results).
+- **FOMC June 16–17 2026 — CRITICAL:** Rate hold expected (89% probability). But possible hawkish bias shift (inflation 4.2% YoY + strong NFP 172K). Announcement Wednesday June 18, 2 PM ET. **No new positions before Wednesday afternoon.** If Fed signals hawkish shift: 10yr could spike above 4.75% → halt new buys, tighten stops on high-multiple AI names. This is the single biggest near-term risk event.
+- **10yr Treasury yield:** ~4.47% — below 4.75% watch level ✓. Constructive. Watch trigger: if 10yr crosses 4.75% on upward trend, halt new buys and tighten stops on high-multiple names.
+- **Iran/US peace deal:** Largely agreed per Trump — US lifts oil sanctions, Iran reopens Strait of Hormuz within 30 days. WTI ~$85/bbl — well below $100 trigger ✓. Constructive for equities. Slight VST nuclear headwind (cheaper gas) but 24/7 reliability advantage intact.
+- **LLY — STRONGEST position:** 10 shares @ avg $1,093.534. EOD June 12 $1,138.355 (+4.10%). Stops HWM $1,182.73, stop $1,064.457. Review_by July 1 (Medicare GLP-1 Bridge effective date — make explicit hold/trim/exit decision at pre-market June 30).
+- **V — NEW position:** 22 shares @ $323.57 (entered June 10). EOD $322.34 (−0.42%). Stop HWM $325.93, stop $293.337 ✓. Review_by July 28 (Q3 earnings).
+- **VST — NEW position:** 40 shares @ $148.81 (entered June 9). EOD $147.98 (−0.56%). Stop HWM $150.50, stop $135.45 ✓. Helix Digital Infrastructure MAJOR thesis upgrade June 11. Dividend ex-date June 22 ($9.20 credit). Review_by July 7.
+- **META — CLOSED June 10:** Trailing stop filled $578.00 (−6.87%). Not on near-term re-entry list. Macro inflection lesson applied.
+- **NVDA — CLOSED June 5:** Trailing stop filled $209.042 (−3.36%). Senate Banking hearing passed without CEO testimony. Re-entry eligible post-FOMC (June 18+) if stock bases above $205 with normalized ATR.
+- **MSFT — CLOSED June 5:** Trailing stop filled $419.363 (−0.70%). Azure AI thesis intact. Re-evaluate post-FOMC.
+- **AMZN — CLOSED June 3:** Per −7% rule (−7.39%). Not near-term candidate.
+- **Week of June 16:** 3 fresh slots. Ordering: (1) post-FOMC clarity Wednesday; (2) LRCX if ATR normalizes; (3) NVDA or PWR.
+- **SPY dividend June 18, 2026 ex-date:** $1.76/sh. After June 18, benchmark total return +0.238pp vs Bull. Benchmarking note: add $1.76 to SPY anchor for total-return comparisons post-June 18.
