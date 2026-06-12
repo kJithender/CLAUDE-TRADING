@@ -3,6 +3,92 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-12 09:36 ET — MARKET OPEN (no trades; stop audit 4/4; VST stop ratcheted)
+- **Action:** No trades — plan_date 2026-06-12 has trades: []. No new positions this session. Week of June 8 Slot 3 expires unused today (deliberate and pre-committed).
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 09:36 ET — next close 16:00 ET June 12)
+- **Account:** Equity $98,996.63 | Cash $74,304.63 (75.1%) | Long market value $24,692.00
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+### Shock check
+- Equity $98,996.63 vs last_equity $98,788.43 = **+$208.20 = +0.211%** — POSITIVE. No shock day. ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21 (from equity history); current $98,996.63 = **-2.35%** — within -10% limit ✓ No restriction.
+
+### Position review (09:36 ET — live Alpaca data)
+
+**LLY** ($1,167.985, **+6.81% from avg entry $1,093.534**, **+0.61% today** vs $1,160.95 lastday) ⭐ EXCEPTIONAL
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** ✓
+- Stop buffer: $1,167.985 − $1,064.457 = **$103.53 (8.87%)** ✓ Excellent.
+- -7% cut threshold: $1,016.99 — CLEAR by $151. No action.
+- Medicare GLP-1 Bridge July 1 in 19 days. Thesis STRONGEST. HOLD.
+
+**V** ($320.75, **-0.87% from avg entry $323.57**, **+0.53% today** vs $319.05 lastday) ✓ INTACT
+- Trailing stop 66033918: HWM $325.51, stop **$292.959** ✓
+- Stop buffer: $320.75 − $292.959 = **$27.79 (8.67%)** ✓ Healthy.
+- -7% cut threshold: $300.92 — CLEAR by $19.83. No action.
+- AI/stablecoin payments thesis intact. OpenAI partnership ongoing. Review_by July 28. HOLD.
+
+**VST** ($148.39, **-0.28% from avg entry $148.81**, **+1.37% today** vs $146.38 lastday) ⭐⭐ HELIX UPGRADE — STOP RATCHETED
+- Trailing stop c4c200a5: HWM **$150.50** (ratcheted from $150.30!), stop **$135.45** (ratcheted from $135.270!) ✓
+- Stop buffer: $148.39 − $135.45 = **$12.94 (8.72%)** ✓ Strong.
+- VST hit a new intraday high ($150.50) at market open — stop auto-ratcheted. Excellent.
+- -7% cut threshold: $138.39 — VST at $148.39 is **$10.00 above it** ✓ Well clear.
+- Helix Digital Infrastructure (KKR+NVIDIA preferred power partner) thesis strengthening. Dividend ex-date June 22 in 10 days (USD 9.20 for 40sh). HOLD.
+
+### Stop audit (market-open June 12 — confirmed via Alpaca open orders endpoint)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new |
+| 66033918 | V | 22sh | $325.51 | $292.959 | ✓ new |
+| c4c200a5 | VST | 40sh | **$150.50** | **$135.45** | ✓ new ⬆️ RATCHETED |
+
+No orphaned stops. No missing stops. Stop audit: **4/4 PASS ✓**
+
+### Exit reconciliation
+No trailing stops filled since pre-market run. All 3 positions still held. No new closed-trade entries needed.
+
+### Breaking-news gate (fast check)
+- **LLY:** No adverse news. Medicare GLP-1 Bridge July 1 thesis intact. Phase 2 trial expansions ongoing. ✓
+- **V:** No adverse news. Payments Forum AI/stablecoin capabilities confirmed. OpenAI partnership intact. ✓
+- **VST:** No adverse news. Helix Digital Infrastructure (KKR+NVIDIA) thesis intact and strengthening. Dividend ex-date June 22 in 10 days. ✓
+
+### Guardrail checks (market-open June 12)
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 2/3 (VST Jun 9, V Jun 10) | ≤3/week | Slot 3 expires unused today ✓ |
+| LLY above -7% cut threshold | +6.81% from entry | -7% | ✓ |
+| V above -7% cut threshold | -0.87% from entry | -7% | ✓ |
+| VST above -7% cut threshold | -0.28%, $148.39 > $138.39 | -7% | ✓ Clear by USD 10.00 |
+| Drawdown circuit breaker | $98,997 vs HWM $101,384 = -2.35% | <-10% | ✓ |
+| Intraday shock | +$208.20 = +0.211% | <-4% | ✓ Positive |
+| Cash | $74,304.63 (75.1%) | ≥5% | ✓ Ample |
+| All trailing stops active | 4/4 confirmed | required | ✓ |
+| Sector caps | Healthcare 11.80%, Financials 7.13%, Energy 6.00% | <60% each | ✓ |
+
+### Performance (market-open June 12)
+- **Equity:** $98,996.63 (vs last_equity $98,788.43 = +$208.20 today = +0.211%)
+- **Today P/L (unrealized):** LLY +$70.35, V +$37.40, VST +$80.40 = net +$188.15
+- **Cash:** $74,304.63 (75.1%) | Long market value: $24,692.00
+- **Unrealized P/L:** LLY +$744.51, V -$62.04, VST -$16.80 = net +$665.67
+- **SPY current (09:36 ET):** $739.08 (vs $739.44 inception anchor = -0.05% since inception; vs $737.67 June 11 close = +0.19% today)
+- **Since inception (2026-05-21):** Bull **-1.003%** ($100,000 → $98,996.63) vs SPY **-0.05%** ($739.44 → $739.08) = **Bull trails SPY by ~0.95pp**
+
+### No-trade explicit confirmation
+No new positions today. Plan date confirmed 2026-06-12. Reasons: (1) Plan has trades: []; (2) LRCX ATR ~9.95% disqualifies entry; (3) Friday weekend risk — no new parabolic-ATR position before weekend; (4) Slot 3 week of June 8 intentionally expires unused — 4th consecutive deferral, correct and disciplined. All 3 held positions have intact theses and healthy stop buffers.
+
+### Week of June 8 — CLOSED
+- **Slot 1:** VST — BOUGHT 40sh @ $148.81 (June 9) ✓
+- **Slot 2:** V — BOUGHT 22sh @ $323.57 (June 10) ✓
+- **Slot 3:** UNUSED (deliberate — LRCX ATR ~10% all week, extended +19.5% in 6 sessions) ✓
+
+Next week (June 16): 3 fresh slots. Priority: LRCX (if ATR normalizes ≤3% and chart bases), NVDA (post-hearing re-evaluation), and one new name.
+
+---
+
 ## 2026-06-12 08:04 ET — PRE-MARKET (no trades; plan set; VST thesis upgrade)
 - **Action:** None — market closed (next open 09:30 ET). Plan set: no new positions today. Slot 3 of week of June 8 expires unused (deliberate). Week of June 16: 3 fresh slots.
 - **Market status:** `is_open: false` ✓ (confirmed via clock at 08:03 ET — next open 09:30 ET June 12)
