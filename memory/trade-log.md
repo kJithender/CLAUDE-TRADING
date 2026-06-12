@@ -3,6 +3,82 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-12 12:32 ET — MIDDAY CHECK (no action; all positions within range; stop audit 4/4)
+
+- **Action:** No trades. All positions within guardrail thresholds. No cuts, no stop tightening.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 12:32 ET — next close 16:00 ET)
+- **Account:** Equity $98,808.86 | Cash $74,304.63 (75.1%) | Long market value $24,504.23
+
+### Shock check
+- Equity $98,808.86 vs last_equity $98,788.43 = **+$20.43 = +0.021%** — POSITIVE. No shock day. ✓
+
+### Position review (12:32 ET — live Alpaca data)
+
+**LLY** ($1,143.665, **+4.58% from avg entry $1,093.534**, **-1.49% intraday** vs $1,160.95 lastday) ⭐ STRONG
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** ✓
+- Stop buffer: $1,143.665 − $1,064.457 = **$79.21 (6.93%)** ✓ Well protected.
+- -7% cut threshold: $1,016.99 — CLEAR by $126. No action.
+- +15% tighten threshold: $1,257.56 — NOT triggered. No action.
+- News scan: LLY +4.58% from entry (does not meet >3% down or >10% up trigger). No scan required.
+- Mild intraday softness (-1.49%) on broad market; Medicare GLP-1 Bridge July 1 thesis intact. HOLD.
+
+**V** ($324.495, **+0.29% from avg entry $323.57**, **+1.71% intraday** vs $319.05 lastday) ✓ INTACT
+- Trailing stop 66033918: HWM **$325.93** ⬆️ (auto-ratcheted from $325.51 this morning!), stop **$293.337** ✓
+- Stop buffer: $324.495 − $293.337 = **$31.16 (9.61%)** ✓ Healthy and improving.
+- -7% cut threshold: $300.92 — CLEAR by $23.58. No action.
+- +15% tighten threshold: $372.11 — NOT triggered. No action.
+- V outperforming today (+1.71%). Stop auto-ratcheting higher — V hit $325.93 HWM intraday. HOLD.
+
+**VST** ($148.125, **-0.46% from avg entry $148.81**, **+1.19% intraday** vs $146.38 lastday) ✓ RECOVERING
+- Trailing stop c4c200a5: HWM **$150.50**, stop **$135.45** ✓
+- Stop buffer: $148.125 − $135.45 = **$12.675 (8.56%)** ✓ Solid.
+- -7% cut threshold: $138.39 — CLEAR by $9.74. No action.
+- +15% tighten threshold: $171.13 — NOT triggered. No action.
+- News scan: VST -0.46% from entry (does not meet >3% down trigger). No scan required.
+- Helix Digital Infrastructure thesis intact. Dividend ex-date June 22 in 10 days. HOLD.
+
+### Guardrail checks (12:32 ET)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| LLY above -7% cut threshold | +4.58% from entry | -7% | ✓ |
+| V above -7% cut threshold | +0.29% from entry | -7% | ✓ |
+| VST above -7% cut threshold | -0.46%, $148.13 > $138.39 | -7% | ✓ Clear by USD 9.74 |
+| LLY below +15% tighten threshold | +4.58% | +15% ($1,257.56) | ✓ |
+| V below +15% tighten threshold | +0.29% | +15% ($372.11) | ✓ |
+| VST below +15% tighten threshold | -0.46% | +15% ($171.13) | ✓ |
+| Intraday shock (vs last_equity $98,788.43) | +$20.43 = +0.021% | <-4% | ✓ Positive |
+| Drawdown circuit breaker | $98,809 vs HWM $101,384 = -2.54% | <-10% | ✓ |
+| Cash | $74,304.63 (75.1%) | ≥5% | ✓ Ample |
+| No new positions at midday | None | required | ✓ |
+
+### Stop audit (12:32 ET — confirmed via Alpaca open orders endpoint)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new |
+| 66033918 | V | 22sh | **$325.93** ⬆️ | **$293.337** ⬆️ | ✓ new — RATCHETED |
+| c4c200a5 | VST | 40sh | $150.50 | $135.45 | ✓ new |
+
+No orphaned stops. No missing stops. Stop audit: **4/4 PASS ✓**
+
+### Exit reconciliation
+No trailing stops filled since market-open. All 3 positions active. No new closed-trade entries needed.
+
+### Performance (12:32 ET)
+- **Equity:** $98,808.86 (vs last_equity $98,788.43 = +$20.43 today = +0.021%)
+- **Unrealized P/L:** LLY +$501.31, V +$20.35, VST -$27.40 = net **+$494.26**
+- **Cash:** $74,304.63 (75.1%) | Long market value: $24,504.23
+- **SPY mid June 12:** ~$740.44 (vs $739.44 inception anchor = +0.135% since inception)
+- **Since inception (2026-05-21):** Bull **-1.19%** ($100,000 → $98,808.86) vs SPY **+0.14%** (~$740.44 mid) = **Bull trails SPY by ~1.33pp**
+
+### Notes
+- A clean midday — all three positions well within guardrails. V continues to strengthen (+1.71% intraday) with its stop auto-ratcheting to $325.93 HWM, building more downside protection. LLY mild softness today (-1.49%) on broader market but +4.58% from entry with strong stop buffer. VST recovering from last week's near-threshold scare — now at $148.13, well above $138.39 cut threshold. Cash 75.1% providing continued cushion. No action warranted.
+- SPY up slightly today (~+0.37% from yesterday close), Bull equity essentially flat (+0.021%) — cash drag expected when market is modestly positive. Since-inception gap remains ~-1.33pp but has stabilized.
+- Week of June 16: 3 fresh position slots. LRCX re-evaluation as first priority (ATR must normalize to ≤3%). Also evaluating NVDA (post-Senate hearing), and one new name.
+
+---
+
 ## 2026-06-12 09:36 ET — MARKET OPEN (no trades; stop audit 4/4; VST stop ratcheted)
 - **Action:** No trades — plan_date 2026-06-12 has trades: []. No new positions this session. Week of June 8 Slot 3 expires unused today (deliberate and pre-committed).
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 09:36 ET — next close 16:00 ET June 12)
