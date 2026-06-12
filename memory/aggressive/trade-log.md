@@ -671,3 +671,58 @@ Afternoon recovery improved every position. META and MSFT both pulled back from 
 ### Result
 All 7 positions within guardrails. No trades. All 18% trailing stops active and audited. No stops recreated. META remains HIGH ALERT (2.65pp buffer, improved from 1.48pp). MSFT watch (3.09pp buffer, improved from 2.18pp). EOD close must check META and MSFT prices first.
 
+---
+
+## 2026-06-12 — EOD CLOSE (~4:07 PM ET)
+
+**No trades executed.** No exits today.
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 94,051.73 |
+| Last equity (prev close June 11) | USD 94,130.22 |
+| Today's P/L | **-USD 78.49 (-0.083%)** |
+| Cash | USD 13,885.38 (14.8%) |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -7.01% (circuit breaker 20% — NOT triggered ✓) |
+
+### Market context [search: WebSearch fallback — MiniMax M3 not used]
+SpaceX IPO (SPCX) dominated the session — closed at USD 161.11 (+19% from USD 135 offer price), absorbing institutional and retail capital. S&P 500 +0.34%; most of the index advanced but mega-cap tech was mixed (AMZN -1.3%, AVGO -0.93% on our book; NVDA, MSFT, GOOGL, VST slightly positive). Iran peace deal is near — draft agreement includes US commitment to lift oil sanctions and Iran pledge to reopen Strait of Hormuz within 30 days. If deal closes Sunday, Monday open is likely risk-on but nuclear power thesis (VST) faces slight headwind as oil drops further. SpaceX IPO liquidity absorption explains today's AI-tech underperformance vs S&P 500.
+
+### EOD position review
+
+| Symbol | Midday Price | EOD Price | Δ | P/L% from Entry | Buffer to -12% |
+|---|---|---|---|---|---|
+| NVDA | USD 204.81 | USD 205.10 | +0.14% | -3.98% | 8.02pp |
+| META | USD 571.22 | USD 567.86 | -0.59% | **-9.88%** | **🔴 2.12pp** (↓ from 2.65pp) |
+| AVGO | USD 381.165 | USD 381.97 | +0.21% | -5.97% | 6.03pp |
+| MSFT | USD 388.245 | USD 390.74 | +0.64% | **-8.32%** | **3.68pp ⚠️** (↑ from 3.09pp) |
+| AMZN | USD 236.46 | USD 238.37 | +0.81% | -3.88% | 8.12pp |
+| VST | USD 148.51 | USD 148.02 | -0.33% | -2.28% | 9.72pp |
+| GOOGL | USD 361.475 | USD 360.01 | -0.41% | -2.76% | 9.24pp |
+
+META slipped slightly from midday (-0.59%) to close at USD 567.86 — buffer narrowed from 2.65pp to 2.12pp. MSFT improved from midday. All other positions flat to marginally better.
+
+### Performance vs SPY
+| Metric | Value |
+|---|---|
+| Aggro today | -0.083% |
+| SPY today (737.76 → 741.02) | +0.442% |
+| Today vs SPY | **-0.525pp** |
+| Aggro since inception | -5.95% |
+| SPY since inception (754.18 → 741.02) | -1.745% |
+| Alpha since inception | **-4.20pp** |
+
+### Stop audit — 7/7 confirmed ✓ (no changes — all below HWMs)
+
+| Symbol | Stop Order ID | Stop Price | HWM | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 181.71 | USD 221.60 | ✓ live |
+| META | `11c3a1bf` | USD 526.75 | USD 642.38 | ✓ live |
+| AVGO | `36f5a45f` | USD 349.71 | USD 426.48 | ✓ live |
+| MSFT | `ef211767` | USD 350.56 | USD 427.51 | ✓ live |
+| AMZN | `b55bef05` | USD 205.35 | USD 250.43 | ✓ live |
+| VST | `5b347be3` | USD 124.57 | USD 151.91 | ✓ live |
+| GOOGL | `e52a43f1` | USD 304.81 | USD 371.72 | ✓ live |
+
