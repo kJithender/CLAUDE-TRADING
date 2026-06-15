@@ -1216,3 +1216,34 @@ EXECUTED: 2026-06-15T13:49:10Z (plan was no-trade but META opened at USD 590 →
 - Stop audit: 8/8 live trailing stops confirmed. No recreation needed.
 - Actions: NONE. Risk management only.
 - Positions in profit: MRVL +2.49%, VST +1.42%, GOOGL +0.16%.
+
+---
+
+## 2026-06-15 — EOD CLOSE (~4:07 PM ET)
+[search: WebSearch fallback — MiniMax M3 not used in this session]
+
+### Market context (June 15, 2026)
+Iran peace deal (Strait of Hormuz MOU + formal Hormuz-reopen commitment) drove Nasdaq +3%, S&P 500 +1.6%, Dow to record highs. US crude settled below USD 81 — lowest since before the Iran war. Treasury two-year yields fell as Fed rate-hike bets receded (inflation relief from oil drop). The risk-on rally was broad and deep: every position in the book gained 2-5%, with MRVL surging +10.1% on Day 1 (custom silicon + Iran risk-on sentiment). VST +4.6% despite the oil decline (fixed-rate PPAs insulated). The Iran resolution directly removes the macro overhang that caused the June 5–10 AI-tech selloff — thesis-supportive across all eight positions.
+
+### EOD position performance
+| Symbol | Midday | EOD | Δ | P/L from Entry |
+|---|---|---|---|---|
+| NVDA | USD 212.09 | USD 212.203 | +0.05% | -0.654% |
+| META | USD 597.54 | USD 593.21 | -0.72% | -5.858% |
+| AVGO | USD 392.53 | USD 394.79 | +0.58% | -2.816% |
+| MSFT | USD 400.56 | USD 399.54 | -0.25% | -6.258% |
+| AMZN | USD 246.12 | USD 246.25 | +0.05% | -0.702% |
+| VST | USD 153.62 | USD 154.90 | +0.83% | +2.264% ✅ |
+| GOOGL | USD 370.80 | USD 368.98 | -0.49% | -0.335% |
+| MRVL | USD 300.60 | USD 307.954 | +2.45% | +5.002% ✅ |
+
+META and MSFT slipped slightly in the afternoon (modest profit-taking after morning surge). MRVL continued to advance strongly into close. All other positions held gains.
+
+### No exits; no new positions
+- 0 trades today (MRVL was new this morning, counted in market-open routine)
+- All 8 trailing stops live (confirmed via qty_available=0 on all positions)
+
+### Key observations
+- MRVL +10.1% on Day 1 — strongest day-1 performance of any position in the book. Trailing stop ratcheting up materially (new HWM ~USD 307.95).
+- META buffer EOD: 6.14pp — well above 4pp threshold. No action needed before June 24 review_by.
+- Alpha gap: -2.90pp (improved from -3.25pp midday, -4.28pp prior week end, -5.13pp pre-market). On a clear recovery trajectory.

@@ -861,3 +861,65 @@ No stops missing. No stops needing recreation. All 8 positions protected.
 
 ### Result
 All 8 positions within guardrails. No trades. All 18% trailing stops active and audited. Iran ceasefire rally continuing to lift the book. META buffer expanded to 6.83pp (well above 4pp threshold). MSFT buffer at 5.98pp and improving. Three positions now in profit: MRVL +2.49%, VST +1.42%, GOOGL +0.16%. Aggro outperforming SPY today by 1.22pp — first midday outperformance this week.
+
+---
+
+## 2026-06-15 — EOD CLOSE (~4:07 PM ET)
+
+**No trades executed.** No exits today.
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 97,186.26 |
+| Last equity (prev close June 12) | USD 94,031.31 |
+| Today's P/L | **+USD 3,154.95 (+3.356%)** |
+| Cash | USD 6,553.25 (6.74%) |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -3.91% (circuit breaker 20% — NOT triggered ✓) |
+
+### Market context [search: WebSearch fallback — MiniMax M3 not used]
+Iran peace deal (Strait of Hormuz MOU + formal reopen commitment) drove Nasdaq +3%, S&P 500 +1.6% to record highs, Dow record. US crude below USD 81. Treasury yields fell on receding rate-hike bets. Full risk-on across AI tech — MRVL +10.1% on Day 1; VST +4.6%; all hyperscalers +2-4%. The macro overhang that drove the June 5–10 selloff is now resolved.
+
+### EOD position review vs midday
+
+| Symbol | Midday | EOD | Δ | P/L% from Entry | Buffer to -12% |
+|---|---|---|---|---|---|
+| NVDA | USD 212.09 | USD 212.203 | +0.05% | -0.654% | 11.35pp |
+| META | USD 597.54 | USD 593.21 | -0.72% | -5.858% | **6.14pp** ✅ |
+| AVGO | USD 392.53 | USD 394.79 | +0.58% | -2.816% | 9.18pp |
+| MSFT | USD 400.56 | USD 399.54 | -0.25% | -6.258% | **5.74pp** ✅ |
+| AMZN | USD 246.12 | USD 246.25 | +0.05% | -0.702% | 11.30pp |
+| VST | USD 153.62 | USD 154.90 | +0.83% | **+2.264% ✅** | 14.26pp |
+| GOOGL | USD 370.80 | USD 368.98 | -0.49% | -0.335% | 11.67pp |
+| MRVL | USD 300.60 | USD 307.954 | +2.45% | **+5.002% ✅** | 17.00pp |
+
+META and MSFT both in safe zone (>4pp and >5pp respectively). MRVL continued surging to close at +5% on Day 1 (+10.1% intraday). All theses intact.
+
+### Performance vs SPY
+| Metric | Value |
+|---|---|
+| Aggro today | +3.356% (USD 94,031 → USD 97,186) |
+| SPY today (741.02 → 754.83) | +1.864% |
+| Today vs SPY | **+1.49pp OUTPERFORMING** |
+| Aggro since inception | **-2.814%** |
+| SPY since inception (754.18 → 754.83) | **+0.086%** |
+| Alpha since inception | **-2.90pp** (best since inception; improving) |
+
+### Stop audit — 8/8 confirmed ✓ (qty_available=0 on all positions)
+
+| Symbol | Stop Order ID | EOD Price | Approx HWM | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 212.203 | USD 221.60 | ✓ live |
+| META | `11c3a1bf` | USD 593.21 | USD 642.38 | ✓ live |
+| AVGO | `36f5a45f` | USD 394.79 | USD 426.48 | ✓ live |
+| MSFT | `ef211767` | USD 399.54 | USD 427.51 | ✓ live |
+| AMZN | `b55bef05` | USD 246.25 | USD 250.43 | ✓ live |
+| VST | `5b347be3` | USD 154.90 | USD 154.90 (new ATH today ✅) | ✓ live — stop ratcheting up |
+| GOOGL | `e52a43f1` | USD 368.98 | USD 372.99 | ✓ live |
+| MRVL | `a9097c8c` | USD 307.954 | USD 307.954 (new ATH Day 1 ✅) | ✓ live — stop ratcheting up |
+
+### Intraday shock check (EOD confirmation)
+- Equity EOD: USD 97,186.26 vs last_equity: USD 94,031.31
+- Intraday change: **+3.356%** (shock threshold -6% — NOT triggered ✓)
+
