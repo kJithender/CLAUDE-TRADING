@@ -1192,3 +1192,4 @@ No trades planned. Portfolio 85.5% deployed; META buffer 3.10pp still below 4pp 
   "trades": []
 }
 ```
+EXECUTED: 2026-06-15T13:49:10Z (plan was no-trade but META opened at USD 590 → buffer 5.65pp > 4pp threshold → MRVL entry triggered; bought 25 shares MRVL @ USD 293.29 avg; 18% trailing stop `a9097c8c` placed at USD 240.31; all 8/8 stops confirmed; ETN skipped — prior-day volume 104,883 < 500K liquidity threshold)

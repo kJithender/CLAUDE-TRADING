@@ -726,3 +726,65 @@ META slipped slightly from midday (-0.59%) to close at USD 567.86 — buffer nar
 | VST | `5b347be3` | USD 124.57 | USD 151.91 | ✓ live |
 | GOOGL | `e52a43f1` | USD 304.81 | USD 371.72 | ✓ live |
 
+
+---
+
+## 2026-06-15 — WEEK 3 MARKET OPEN (~9:49 AM ET)
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Clear (written for this run) ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Plan date | June 15, 2026 — matches today ✓ |
+| Plan trades | [] — empty in pre-market plan ✓ |
+| Idempotency | No prior EXECUTED: marker ✓ |
+
+### Market & account status
+| Check | Result |
+|---|---|
+| Market open | true (next close 4:00 PM ET) ✓ |
+| Equity (at open) | USD 96,107.08 |
+| Last equity (prev close June 12) | USD 94,031.31 |
+| Intraday change | +2.21% (shock threshold -6% — NOT triggered ✓) |
+| Cash before trade | USD 13,885.38 |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -4.98% (circuit breaker 20% — NOT triggered ✓) |
+
+### Conditional MRVL entry activated
+Pre-market plan: "If META opens above ~USD 580 (buffer > 4pp), evaluate deploying into MRVL or ETN."
+META at open: USD 590.08 (+4.08%) — buffer 5.65pp — condition met.
+ETN: volume 104,883 prior day — BELOW 500K threshold — REJECTED.
+MRVL: approved. [search: WebSearch fallback — MiniMax M3 not available]
+
+### Trade 9 — BUY MRVL
+| Field | Value |
+|---|---|
+| Action | BUY |
+| Symbol | MRVL |
+| Qty | 25 shares |
+| Limit placed | USD 299.90 (ask USD 299 × 1.003) |
+| Fill price | USD 293.2852 avg |
+| Cost basis | USD 7,332.13 |
+| Portfolio % | ~7.6% |
+| Thesis | Custom AI silicon for hyperscalers; Q1 FY2027 revenue USD 2.418B (+28% YoY) record; CFO transition (Dan Durn from Adobe) neutral; diversifies from GPU sellers (NVDA/AVGO) to custom ASIC layer; triggered by META buffer >4pp on Iran ceasefire risk-on. |
+| Invalidation | MRVL loses major hyperscaler custom chip program OR revenue growth decelerates below 15% YoY OR CFO transition creates material operational disruption |
+| Review by | 2026-06-29 |
+| Trailing stop | 18%; order id `a9097c8c`; stop price USD 240.31 (HWM USD 293.06) |
+| Verified | ✓ 25 shares confirmed live; stop `a9097c8c` confirmed in open orders |
+
+### Stop audit — 8/8 positions confirmed with live 18% trailing stops ✓
+
+| Symbol | Qty | Current Price | P/L % | Stop Price | Stop Order ID | Buffer to -12% |
+|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 209.58 | -1.88% | USD 181.71 (`54d7d851`) | ✓ live | 10.12pp |
+| META | 23 | USD 590.08 | -6.35% | USD 526.75 (`11c3a1bf`) | ✓ live | 5.65pp |
+| AVGO | 34 | USD 393.52 | -3.13% | USD 349.71 (`36f5a45f`) | ✓ live | 8.87pp |
+| MSFT | 28 | USD 397.43 | -6.75% | USD 350.56 (`ef211767`) | ✓ live | 5.25pp |
+| AMZN | 36 | USD 247.33 | -0.27% | USD 205.35 (`b55bef05`) | ✓ live | 11.73pp |
+| VST | 52 | USD 150.85 | -0.41% | USD 125.63 (`5b347be3`) | ✓ live | 11.59pp |
+| GOOGL | 16 | USD 368.18 | -0.55% | USD 305.15 (`e52a43f1`) | ✓ live | 11.45pp |
+| MRVL | 25 | USD 293.77 | +0.16% | USD 240.31 (`a9097c8c`) | ✓ live — NEW | 11.84pp |
+
+No stops missing. No stops needing recreation. All 8 positions protected.
