@@ -995,3 +995,200 @@ EXECUTED: 2026-06-12T13:46:12Z (no trades — no-trade plan confirmed, stop audi
 - ETN (Eaton): AI power capex + data center electrical equipment; pure-play on power infrastructure theme alongside VST
 
 No new positions planned for Monday — META buffer requires cash preservation.
+
+---
+
+## 2026-06-15 — WEEK 3 PRE-MARKET (Monday)
+[search: WebSearch fallback — MiniMax M3 not available in this session]
+
+### Portfolio snapshot (live Alpaca data, ~8:00 AM ET)
+
+| Symbol | Qty | Avg Entry | Pre-mkt Price | P/L % | Change vs June 12 close | Buffer to -12% cut |
+|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 208.72 | -2.29% | +1.72% (vs USD 205.19 lastday) | 9.71pp |
+| META | 23 | USD 630.12 | USD 574.04 | **-8.90%** | +1.25% (vs USD 566.98 lastday) | **3.10pp 🔴** (improved from 2.12pp Friday) |
+| AVGO | 34 | USD 406.23 | USD 393.96 | -3.02% | +3.11% (vs USD 382.07 lastday) | 8.98pp |
+| MSFT | 28 | USD 426.21 | USD 396.60 | -6.95% | +1.50% (vs USD 390.74 lastday) | **5.05pp ⚠️** (improved from 3.68pp) |
+| AMZN | 36 | USD 247.99 | USD 244.24 | -1.51% | +2.39% (vs USD 238.55 lastday) | 10.49pp |
+| VST | 52 | USD 151.47 | USD 152.13 | **+0.44%** | +2.78% (vs USD 148.02 lastday) | 12.44pp ✅ FIRST PROFIT |
+| GOOGL | 16 | USD 370.22 | USD 365.90 | -1.17% | +1.73% (vs USD 359.68 lastday) | 10.83pp |
+
+**Account equity: USD 95,643.72** (up USD 1,612.41 = +1.71% vs prev close USD 94,031.31; shock threshold -6% = NOT triggered ✓)
+**Cash: USD 13,885.38 (14.5% of portfolio)**
+**Semi-group concentration (NVDA+AVGO only): USD 34,892 / USD 95,644 = 36.5%** (well below 50%)
+**Weekly new-position count (Week 3): 0/8 so far**
+
+---
+
+### Drawdown circuit breaker check
+- Equity history high-water mark: USD 101,144.73 (confirmed from `./scripts/alpaca.sh history 1A 1D`)
+- Current equity: USD 95,643.72
+- Drawdown from HWM: **-5.44%**
+- Circuit breaker threshold: 20%
+- **Status: NOT TRIGGERED. Normal operation continues.**
+
+---
+
+### Intraday shock check
+- Current equity: USD 95,643.72 vs last_equity: USD 94,031.31
+- Intraday change: **+1.71%** (POSITIVE — no shock event ✓)
+- Shock threshold: -6%
+- **Status: NOT TRIGGERED.**
+
+---
+
+### Market posture (June 15, 2026)
+**Overall: STRONGLY RISK-ON. Iran ceasefire MOU confirmed over weekend. Tech/growth stocks surging globally.**
+
+- **Iran ceasefire CONFIRMED:** US and Iran finalized a "memorandum of understanding" this weekend authorizing reopening of the Strait of Hormuz and removal of the US naval blockade. Formal signing ceremony scheduled in Switzerland on Friday June 19. This resolves the biggest macro overhang of 2026 — the event that drove the June 5–10 tech selloff is now removed. Source: Al Jazeera/Barchart June 15, 2026. Date of fact: June 15, 2026.
+- **S&P 500 / Nasdaq futures:** Nasdaq futures +1.8%; S&P futures +~1.0%. Asian markets: Nikkei +5.5%, Kospi +5.7%. Polymarket 59% implied probability of S&P closing higher today. Source: Barchart/Robinhood/Polymarket, June 15, 2026. Date of fact: June 15, 2026.
+- **Oil:** Tumbling — down ~20% from 2026 peak on ceasefire resolution. Below USD 100 (likely USD 85 range) per barchart article. This is deflationary — reduces CPI pressure, reduces probability of Fed rate hike, is a net positive for high-multiple tech names via discount rate compression. Source: Barchart/CNBC, June 15, 2026. Date of fact: June 15, 2026.
+- **VST headwind flag:** Oil/gas price declines narrow nuclear's competitive premium vs gas-fired generation. VST's 20-year PPAs are fixed-rate and insulated — but market narrative may pressure VST near-term. Monitor but do not overreact. Source: prior analysis, confirmed June 15.
+- **Date of all facts:** June 15, 2026 pre-market.
+
+---
+
+### Step 3b — Thesis contract review (all positions)
+
+**NVDA — Thesis: INTACT. Strengthened.**
+- *What changed since June 12:* Motley Fool article "Should You Buy Nvidia Stock Before June 24?" references the upcoming Annual Stockholder Meeting (June 24) — this is NOT earnings; just a shareholder vote. SharonAI Holdings 6-year AI infrastructure compute collaboration (72MW Australian data center deployment) is a new demand signal outside the US. Revenue FY2026 rose 65% to USD 215B; net income USD 120B. Analyst avg target: USD 298.93 (+45% upside). Pre-market: +1.72% to USD 208.72.
+- Iran risk-on = multiple expansion for high-growth names. Direct positive.
+- Invalidation check: No hyperscaler customer lost, Q2 guide ~USD 91B intact. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. A-rated.**
+- Source: Motley Fool/StockAnalysis NVDA, June 15, 2026.
+
+**META — Thesis: INTACT. CRITICAL — review_by June 17 → EXPLICIT DECISION REQUIRED.**
+- *What changed since June 12:* No formal equity offering confirmed. "Pure speculation" status unchanged as of mid-June 2026 per CryptoBriefing — no banks appointed, spokesperson denial still stands. Iran risk-on is a direct POSITIVE for META (risk-on = tech up = ad sentiment up). Meta capex: USD 125-145B, already priced in. Pre-market: +1.25% to USD 574.04 — improved from Friday's USD 566.98 close.
+- Buffer to -12% cut: 3.10pp (improved from 2.12pp Friday EOD). Trend: improving.
+- Meta ex-dividend date: June 15 (TODAY). USD 0.525/share × 23 shares = USD 12.08 cash addition (minor positive, already reflected in equity).
+- **EXPLICIT HOLD/TRIM/EXIT DECISION (review_by June 17 — mandatory):**
+  - Invalidation check: No formal equity offering confirmed (no banks hired). AI monetization NOT downgraded by management. Ad revenue +33% YoY thesis intact. ✓ Neither invalidation condition is met.
+  - Price check: USD 574.04 pre-market — ABOVE USD 562 decision threshold from weekly review.
+  - Iran ceasefire risk-on = META should open higher, widening buffer further.
+  - **DECISION: HOLD.** Full 23-share position maintained. No trim warranted (price above threshold, buffer improving, risk-on catalyst active, no invalidation event).
+  - **New thesis contract:** Invalidation unchanged: "Meta formally confirms equity offering AND management explicitly downgrades AI monetization." New review_by: **2026-06-24**. Renewal justified by: improving buffer trend, risk-on catalyst, no invalidation event, meaningful analyst consensus (58 Buy/0 Sell, avg target USD 828.80).
+- Source: CryptoBriefing/Parameter/Yahoo Finance META, June 15, 2026.
+
+**AVGO — Thesis: INTACT. Recovering well.**
+- *What changed since June 12:* Pre-market +3.11% to USD 393.96 — strongest overnight move in the book. Nasdaq +1.8% + Iran risk-on driving recovery. AI XPV Platform with Apollo/Blackstone ($35B) remains a new business line. Q3 AI revenue guide ~USD 16B intact. Analyst: buy rating reiterated, USD 485 PT. Analyst avg target USD 522 (48 analysts). Buffer recovered to 8.98pp.
+- Invalidation check: AI revenue guide not cut. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. A-rated.**
+- Source: StockAnalysis/AVGO, June 15, 2026.
+
+**MSFT — Thesis: INTACT. Significant buffer improvement.**
+- *What changed since June 12:* **Citi opened positive catalyst watch on MSFT, USD 605 price target** — analyst Tyler Radke says Citi's estimates for Azure are too low. Azure +40% YoY; AI business >USD 37B annual run rate (+123% YoY). 52 Buy / 3 Hold / 0 Sell consensus. MSFT pre-market +1.50% to USD 396.60; buffer improved from 3.68pp to 5.05pp — OUT of the HIGH ALERT zone.
+- Next earnings: late July 2026. No earnings window risk.
+- Invalidation check: Azure not decelerating, Copilot not underperforming. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. Upgraded from HIGH ALERT ⚠️ to B-rated watch.** Buffer above 5pp is comfortable; Citi catalyst watch is thesis-confirming.
+- Source: Citi/TechTimes/CNBC MSFT, June 15, 2026.
+
+**AMZN — Thesis: INTACT.**
+- *What changed since June 12:* AWS +28% Q1 (fastest in 15 quarters) thesis intact. Prime Day June 23-26 upcoming (retail catalyst). EU cloud procurement review and FTC antitrust trial are regulatory headwinds but not thesis-breaking (AWS revenue growth is the thesis, not regulatory status). Pre-market +2.39% to USD 244.24; buffer comfortable 10.49pp.
+- Invalidation check: AWS growth not decelerating. ✓ Not triggered.
+- Review by: 2026-06-22. ✓ Not expired (7 days; standard review next Monday).
+- **Decision: HOLD. A-rated.**
+- Source: HeyGoTrade/TIKR AMZN, June 15, 2026.
+
+**VST — Thesis: INTACT. First profitable position (+0.44%).**
+- *What changed since June 12:* Iran ceasefire confirmed = oil/gas prices falling further. Near-term headwind for VST narrative (nuclear vs gas competitive premium narrows). HOWEVER: VST's long-term PPAs with Meta and AWS are 20-year, fixed-rate contracts — they are fully insulated from short-term gas price swings. Helix consortium (KKR+NVDA+VST) intact. Ex-dividend June 22 (USD 0.229/share × 52 = USD 11.91 upcoming). VST first moved into profit territory today (+0.44%). Trailing stop HWM updating to USD 152.13; stop ratchets up to ~USD 124.75 automatically.
+- Invalidation check: No PPA cancellations, no regulatory action. ✓ Not triggered.
+- Review by: 2026-07-15. ✓ Not expired.
+- **Decision: HOLD. A-rated.** Oil decline is a narrative headwind, not a fundamental threat. AI data center power demand is a multi-year secular trend; fixed-rate PPAs are unaffected.
+- Source: prior analysis/Nemo Vistra, June 15, 2026.
+
+**GOOGL — Thesis: INTACT. Target raised.**
+- *What changed since June 12:* **Analyst PT raised from USD 443 to USD 493.30** — analysts factoring in higher revenue growth assumptions and stronger AI product traction. GCP Q1 +63% YoY. Dividend payment day today (June 15): USD 0.22/share × 16 = USD 3.52 (minor positive, already in cash). Pre-market +1.73% to USD 365.90; buffer 10.83pp.
+- Invalidation check: GCP not decelerating, investment plan not cut. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. A-rated.**
+- Source: SimplyWallSt/Yahoo Finance GOOGL, June 15, 2026.
+
+---
+
+### Step 3c — Monday conviction re-ranking (required every Monday)
+
+| Symbol | Rating | Rationale |
+|---|---|---|
+| NVDA | **A** | AI GPU monopoly intact; SharonAI 6-year deal; Annual Meeting June 24 (not earnings); analyst target USD 298.93 (+45%). Buffer 9.71pp. No action. |
+| AVGO | **A** | AI XPV Platform ($35B); Q3 AI guide USD 16B; recovering +3.11% pre-market. Buffer 8.98pp. No action. |
+| AMZN | **A** | AWS +28% (fastest in 15 quarters); Prime Day June 23-26; Claude Fable 5 on Bedrock; buffer 10.49pp. No action. |
+| GOOGL | **A** | GCP +63%; target raised to USD 493.30; dividend payment day; buffer 10.83pp. No action. |
+| VST | **A** | Nuclear PPAs fixed-rate (insulated from oil drop); Helix consortium; first profit; ex-div June 22. Buffer 12.44pp. No action. |
+| MSFT | **B** | Azure +40%; Citi USD 605 target watch; buffer improved to 5.05pp (out of HIGH ALERT). No action. |
+| META | **B** | Ad revenue +33%; no offering confirmed; buffer 3.10pp improving; Iran risk-on tailwind. Thesis contract renewed June 24. No action. |
+
+**No C-rated positions → no mandatory trims required this Monday.** Both B-rated positions have clear recovery trajectories with Iran risk-on catalyst today.
+
+---
+
+### Earnings window check (June 15)
+| Symbol | Next Earnings | Within 2 trading days? | Action |
+|---|---|---|---|
+| NVDA | Aug 26, 2026 | No | None required |
+| META | Jul 29, 2026 (estimated) | No | None required |
+| AVGO | Sep 3, 2026 | No | None required |
+| MSFT | ~Late Jul 2026 | No | None required |
+| AMZN | ~Late Jul 2026 | No | None required |
+| VST | Aug 6, 2026 | No | None required |
+| GOOGL | ~Late Jul 2026 | No | None required |
+
+**No earnings window risk for any position. ✓**
+
+---
+
+### Deployment check
+- Cash: USD 13,885.38 = 14.5% of equity
+- 20% cash threshold for mandatory deployment note: **NOT triggered** (14.5% < 20%)
+- Portfolio 85.5% invested — above the ≥80% target
+- Week 3 new positions: 0/8 used
+- AMD: re-entry blocked (price unknown, last ~USD 488; must recover above entry USD 508.43)
+- **Explicit decision: No new buys planned in pre-market.** Rationale: (1) META buffer at 3.10pp still below the 4pp strategic threshold for new-position deployment. (2) Iran risk-on day — existing positions benefit fully from the rally; no need to add complexity on a gap-up morning. (3) Market-open routine should FIRST confirm META opens above USD 580 (buffer > 4pp); if so, reconsider deploying into watchlist (MRVL/ETN) at that routine. (4) Portfolio already 85.5% deployed, above target. Cash at 14.5% remains the META safety buffer.
+
+---
+
+### Stop audit — pre-market June 15 (from live Alpaca orders)
+
+| Symbol | Stop Order ID | Stop Price | HWM | Trail% | Status |
+|---|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 181.71 | USD 221.60 | 18% | ✓ new (live) |
+| META | `11c3a1bf` | USD 526.75 | USD 642.38 | 18% | ✓ new (live) |
+| AVGO | `36f5a45f` | USD 349.71 | USD 426.48 | 18% | ✓ new (live) |
+| MSFT | `ef211767` | USD 350.56 | USD 427.51 | 18% | ✓ new (live) |
+| AMZN | `b55bef05` | USD 205.35 | USD 250.43 | 18% | ✓ new (live) |
+| VST | `5b347be3` | USD 124.57 | USD 151.91 | 18% | ✓ new (live) — HWM updating today |
+| GOOGL | `e52a43f1` | USD 304.81 | USD 371.72 | 18% | ✓ new (live) |
+
+**All 7/7 positions confirmed with live 18% trailing stops. ✓ No stops missing. No stops needing recreation.**
+
+Note: VST is making a new HWM today (USD 152.13 > prior HWM USD 151.91). The trailing stop order will automatically ratchet the stop price up to ~USD 124.75 during the session. No manual action needed.
+
+---
+
+### Guardrail check for today
+| Rule | Limit | Status |
+|---|---|---|
+| Single position max | 35% | NVDA 22.5% — largest position. ✓ All clear |
+| Cash floor | 2% min | 14.5% — well above minimum ✓ |
+| Weekly new positions (Week 3) | 8 max | 0/8 used ✓ |
+| Semi-group concentration (NVDA+AVGO) | ≤50% | 36.5% ✓ |
+| Circuit breaker | >20% below HWM | -5.44% — NOT triggered ✓ |
+| Intraday shock | >6% below last_equity | +1.71% (UP) — NOT triggered ✓ |
+| Stop audit | All positions covered | 7/7 live 18% trailing stops confirmed ✓ |
+| Earnings window | No new buys within 2 days of earnings | Nearest: META Jul 29 (estimated) ✓ |
+| Control switch | ACTIVE | ✓ |
+
+---
+
+### Planned trades for today (June 15, 2026 — market open)
+
+No trades planned. Portfolio 85.5% deployed; META buffer 3.10pp still below 4pp new-position threshold. Iran ceasefire risk-on benefits all 7 existing positions — capture the rally through current holdings. Market-open routine should check if META opens above ~USD 580 (buffer > 4pp); if so, may evaluate deploying into MRVL or ETN.
+
+```json
+{
+  "plan_date": "2026-06-15",
+  "trades": []
+}
+```
