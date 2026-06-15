@@ -5,6 +5,210 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-15 — Pre-market research (~08:03 ET)
+
+**Today is Monday June 15. Week of June 15: 0/3 new positions used. 3 fresh slots. FOMC gate: no new positions before Wednesday June 18, 2 PM ET announcement.**
+
+---
+
+### Macro (pre-market June 15, 2026 ~08:03 ET)
+
+| Indicator | Value | Threshold | Status |
+|-----------|-------|-----------|--------|
+| S&P 500 futures / SPY pre-mkt | **$751.37** (+1.31% from Jun 12 close $741.67) | — | ✓ Strong broad rally |
+| FOMC June 16–17 | Rate hold 98–99% probability; dot plot hawkish shift risk | No new buys before Wed Jun 18 2 PM | ⚠️ HARD GATE IN EFFECT |
+| Hawkish hike risk | ~70% probability of at least one rate hike by year-end 2026 (CME FedWatch) | 10yr <4.75% | ⚠️ Dot plot key — watch 10yr post-Wed |
+| Iran/US peace deal | Advancing; WTI below $100 ✓ | Oil <$100 | ✓ Constructive |
+| 10yr Treasury yield | ~4.47% (June 12 est.) | <4.75% | ✓ Below trigger — watch post-FOMC dot plot |
+| Economic calendar today | Empire State Index, Industrial Production, NAHB Housing | — | Routine — not expected to be market-moving |
+
+**Macro posture: BULLISH PRE-MARKET, BUT FOMC GATE ACTIVE.** SPY is +1.31% pre-market on continued Iran peace deal optimism and broad risk-on tone. However, FOMC June 16–17 (Kevin Warsh's first meeting as Fed Chair, with Summary of Economic Projections/dot plot) carries hawkish risk — ~70% probability of at least one rate hike by year-end. If the dot plot signals fewer cuts than market expects, 10yr could spike toward 4.75% trigger. **Hard gate: no new positions before Wednesday June 18, 2 PM ET announcement.** This gate applies regardless of how constructive the tape looks Monday/Tuesday.
+
+**SPY dividend ex-date June 18, 2026 ($1.76/sh):** This is Wednesday, same day as the FOMC announcement. After June 18, SPY total return = price return + $1.76/$739.44 = +0.238pp adjustment to SPY benchmark.
+
+---
+
+### Account (pre-market June 15, 2026 — live Alpaca data ~08:03 ET)
+
+| Metric | Value |
+|--------|-------|
+| Equity | $98,907.25 |
+| Cash | $74,304.63 (75.1%) |
+| Long market value | $24,602.62 |
+| Last equity (June 12 close) | $98,648.01 |
+
+**Intraday shock check:** $98,907.25 vs last_equity $98,648.01 = **+$259.24 = +0.263%** — POSITIVE (weekend mark-up). No shock. ✓
+
+**Drawdown circuit breaker:** HWM $101,384.21 (confirmed from equity history); current $98,907.25 = **−2.44%** — well within −10% limit. ✓ No restriction (but FOMC gate supersedes).
+
+---
+
+### Trailing stop audit (pre-market June 15 — confirmed via Alpaca open orders)
+
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new |
+| 66033918 | V | 22sh | $325.93 | $293.337 | ✓ new |
+| c4c200a5 | VST | 40sh | $150.50 | $135.45 | ✓ new |
+
+All 4 trailing stops confirmed active. ✓
+
+**VST ratchet note:** VST pre-market $152.24 is above HWM $150.50. When market opens and VST trades above $150.50, stop auto-ratchets: estimated new HWM ~$152.24, new stop ~$137.02 (10% below). Market-open routine to confirm.
+
+---
+
+### Held positions (pre-market June 15, 2026)
+
+**LLY ($1,140.47 pre-mkt, +0.66% today from $1,133 Jun 12 close, +4.29% from avg entry $1,093.534):** ⭐ STRONG
+- **What changed since last run (Jun 12 EOD):** Weekend news: some employers (~10% of those currently covering weight-loss drugs) plan to discontinue coverage in 2027 as costs surge. Cigna dropped GLP-1 coverage for its own employees effective July. 67% of large employers still maintain coverage in 2026. This is a 2027 headwind but does NOT invalidate the July 1 Medicare GLP-1 Bridge catalyst — Medicare EXPANDS access to ~20-30M new beneficiaries, moving in the opposite direction of employer retrenchment.
+- **Earnings window:** Next earnings ~August 5, 2026 — 51 days away ✓ (well outside 2-day window)
+- **Thesis contract:** invalidation = stop fires ($1,064.457) or Medicare Bridge reversed. review_by = July 1 (16 days). Current $1,140.47 >> $1,064.457. **THESIS INTACT. No invalidation.** ✓
+- **Stop buffer:** $1,140.47 − $1,064.457 = **$76.01 (6.67%)** ✓ Well protected.
+- **Monday conviction rating: A** — original thesis intact, working, conviction still high. Medicare Bridge July 1 approaching.
+- **Decision: HOLD. Employer coverage concern is a 2027 headwind, not a July 1 invalidation. Medicare Bridge expansion is the near-term driver.**
+
+**V ($323.10 pre-mkt, +0.22% today from $322.39 Jun 12 close, −0.15% from avg entry $323.57):** ✓ INTACT
+- **What changed since last run:** No new material catalysts. OpenAI partnership and stablecoin/token capabilities (announced Jun 10-12) remain the thesis drivers. Stock flat over the week. Financials sector lagging in tech-driven rallies.
+- **Earnings window:** Next earnings July 28, 2026 — 43 days away ✓
+- **Thesis contract:** invalidation = trailing stop fires ($293.337) or regulatory mandate forces open access. review_by = July 28. Current $323.10 >> $293.337. **THESIS INTACT.** ✓
+- **Stop buffer:** $323.10 − $293.337 = **$29.76 (9.21%)** ✓ Healthy.
+- **Monday conviction rating: B** — working but flat (−0.15% from entry in 5 sessions). Thesis intact but sector rotation lag continuing. No C risk.
+- **Decision: HOLD. Flat performance within normal variance for a 5-session-old position. No thesis break. July 28 earnings is the next major catalyst gate.**
+
+**VST ($152.24 pre-mkt, +2.85% today from $148.02 Jun 12 close, +2.31% from avg entry $148.81):** ⭐⭐ HELIX THESIS — STRONG
+- **What changed since last run:** VST broke significantly higher over the weekend — up 2.85% to $152.24, above the HWM of $150.50 (set June 12). No specific new news found for Monday, but Helix Digital Infrastructure (KKR+NVIDIA+Kuwait) thesis continues to strengthen in market perception. Dividend ex-date June 22 in **7 days** — $0.229/sh × 40sh = USD 9.16 credit. Current price $152.24 vs entry $148.81 = **+2.31%**.
+- **Earnings window:** Next earnings August 6, 2026 — 52 days away ✓
+- **Thesis contract (REVISED for current price):** invalidation = WTI >$100 (NO ✓ — ~$85/bbl per Iran deal), FCF guidance cut (NO ✓), PPA/Helix cancellation (NO ✓ — Helix strengthening), breaks $130 on volume (NO ✓ — $152.24). review_by = July 7 (22 days). **THESIS INTACT AND MATERIALLY STRENGTHENED.** ✓
+- **Stop buffer (estimated after ratchet):** $152.24 − $137.02 (new stop after ratchet) = **~$15.22 (10.0%)** — full 10% buffer after market-open ratchet.
+- **Monday conviction rating: A** — thesis upgraded (Helix), working, conviction very high. Dividend in 7 days.
+- **Decision: HOLD. Let trailing stop ratchet as VST trades above $150.50. Dividend credit in 7 days. Strongest thesis upgrade in portfolio.**
+
+---
+
+### Thesis contract review (June 15)
+
+- **LLY:** ✅ Intact. Stop $1,064.457. review_by July 1 (16 days). Employer coverage 2027 headwind ≠ Medicare Bridge invalidation. **CONTINUE.**
+- **V:** ✅ Intact. Stop $293.337. review_by July 28. Flat but no thesis break. **CONTINUE.**
+- **VST:** ✅ MATERIALLY STRENGTHENED. Invalidation criteria all clear. review_by July 7. Helix + dividend June 22. **CONTINUE.**
+
+---
+
+### Monday conviction-weighted holding review (3b — required every Monday)
+
+| Symbol | Rating | Rationale |
+|--------|--------|-----------|
+| LLY | **A** | Original thesis intact and working (+4.29% from entry); Medicare Bridge July 1 in 16 days; pipeline expansion positive; employer coverage concern is a 2027 issue, not a current invalidation |
+| V | **B** | Working but flat (−0.15% from entry); thesis intact; financials sector rotation lag is expected not thesis-specific; no C flag |
+| VST | **A** | Thesis materially upgraded (Helix Digital Infrastructure); +2.31% from entry; dividend June 22 in 7 days; pre-market +2.85% breakout above prior HWM |
+
+No position rated C. No mandatory trims. Both A-rated positions holding well; V (B) needs watchful eye through July 28 earnings gate.
+
+---
+
+### Risk posture check (pre-market June 15)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 0/3 | ≤3 | 3 slots available — FOMC gate holds all |
+| Cash | $74,304.63 (75.1%) | ≥5% | ✓ Ample |
+| LLY stop buffer | $76.01 (6.67%) | watch | ✓ Well protected |
+| V stop buffer | $29.76 (9.21%) | watch | ✓ Healthy |
+| VST stop buffer | ~$15.22 (10.0%) est. post-ratchet | watch | ✓ Full buffer |
+| Drawdown circuit breaker | $98,907 vs HWM $101,384 = −2.44% | <−10% | ✓ Not triggered |
+| Intraday shock (vs last_equity $98,648) | +$259.24 = +0.263% | <−4% | ✓ Positive |
+| 10yr yield | ~4.47% (Jun 12 est.) | <4.75% | ✓ Below trigger — watch post-FOMC |
+| WTI oil | ~$85/bbl (Iran peace) | <$100 | ✓ Well below trigger |
+| All trailing stops active | 4/4 confirmed | required | ✓ |
+| Sector caps | Healthcare 11.53%, Financials 7.19%, Energy 6.16%, Cash 75.1% | <60% each | ✓ |
+| FOMC gate | No new positions before Jun 18 2 PM ET | — | ⚠️ ACTIVE |
+
+---
+
+### LRCX ATR check (Slot 1 candidate — post-FOMC)
+
+**LRCX snapshot (June 12 close, from Alpaca):**
+- June 12: H $373.665 / L $355.28 / C $366.75 → range **$18.39 = 5.01%** ❌ (>3% threshold)
+- June 11: H $364.59 / L $336.285 / C $362.58 → range **$28.31 = 7.81%** ❌
+- June 10 (from log): H $347.66 / L $319.01 → range **8.91%** ❌
+- **3-day average ATR: ~7.24%** — still far above 3% threshold
+
+LRCX continues consolidating near the $360-$375 range. Entry conditions remain unmet: need 3 consecutive sessions with ATR ≤3%. If the FOMC-driven market is calm this week (rate hold + neutral dot plot), LRCX could begin to base. Re-check Thursday/Friday pre-market for ATR compliance. Next earnings August 5, 2026 (51 days away ✓).
+
+---
+
+### NVDA check (Slot 2 candidate — post-FOMC)
+
+- Pre-market June 15: ~$205-$210 range (web search confirms ~$205-$210)
+- Bull's prior stop-out: $209.042 (June 5)
+- Next earnings: **August 26, 2026** (72 days away ✓ — well outside 2-day window)
+- NVDA is basing near the $205 re-entry level flagged in the weekly review
+- Post-FOMC entry eligible if: (a) stock closes above $205 with normalizing ATR, (b) FOMC is not hawkish shock (10yr stays below 4.75%), (c) Helix consortium (KKR+NVIDIA) thesis validates demand for NVDA GPU capacity
+- Re-evaluate post-FOMC Wednesday afternoon
+
+---
+
+### Cash-drag explicit decision (June 15)
+
+Cash at 75.1% (above strategy target 25-40%). No new positions this week before FOMC (Wednesday June 18 afternoon). Explicit reasoning:
+1. **FOMC gate** — highest near-term risk event; rate hold expected but hawkish dot plot with 70% probability of year-end hike could spike 10yr above 4.75% and trigger halt-new-buys rule
+2. **LRCX ATR ~7%** — still disqualified; needs 3+ sessions at ≤3%
+3. **NVDA** — in the re-entry zone ($205-210) but FOMC gate takes precedence; better to wait for rate clarity before adding AI semi exposure
+4. **LLY, V, VST all healthy** — existing 3 positions with intact theses and ample stop buffers; no urgency to force a 4th today
+
+After FOMC Wednesday: reassess with full 3 slots available. Priority: (1) LRCX if ATR compliant; (2) NVDA if basing above $205; (3) PWR (Quanta Services) as new candidate.
+
+---
+
+### Performance estimate (pre-market June 15)
+
+- **Bull equity pre-market:** $98,907.25 (−1.09% since inception $100,000)
+- **SPY pre-mkt June 15:** $751.37 (vs anchor $739.44 = **+1.61% since inception**)
+- **Estimated gap:** Bull −1.09% vs SPY +1.61% = **Bull TRAILS SPY by ~2.70pp**
+- Note: Gap widened significantly from −1.62pp (EOD June 12) because SPY rallied +1.31% pre-market. With 75% cash, Bull captures only ~25% of that move. This is expected behavior; cash cushion will protect on down days.
+- **SPY dividend June 18 reminder:** After Jun 18 ex-date, add $1.76 to SPY total-return anchor ($741.75 + $1.76 = $743.51 adjusted for total-return benchmarking post-June 18)
+- Today P/L (unrealized, pre-mkt): LLY +$74.70 (+0.66%), V +$15.62 (+0.22%), VST +$168.92 (+2.85%) = net **+$259.24** (+0.263%) ✓
+
+---
+
+### Planned trades for today (Monday June 15, 2026)
+
+**No new positions today. FOMC gate active through Wednesday June 18, 2 PM ET.**
+
+Reasons: (1) FOMC June 16–17 (announcement June 18 2 PM ET) — Kevin Warsh's first meeting with dot plot; hawkish bias risk with 70% probability of at least one year-end hike; (2) LRCX ATR ~7.24% — disqualified per volatility rule; (3) NVDA re-entry zone but FOMC gate prevents entry before Wednesday; (4) All 3 current positions (LLY, V, VST) have intact/upgraded theses and healthy stop buffers — no urgency.
+
+**Hold LLY, V, VST. Let VST trailing stop ratchet above HWM $150.50 at market open.**
+
+**VST watch:** When market opens, VST trading above $150.50 triggers automatic stop ratchet to ~$137.02. Market-open routine to confirm.
+
+**Post-FOMC Wednesday June 18 (2 PM ET onwards):** Reassess with full 3 slots. Priority order:
+1. LRCX — only if ATR has normalized to ≤3% for 3+ sessions by Wednesday
+2. NVDA — re-entry if basing above $205 with calm ATR; thesis: AI accelerator monopoly + Helix consortium
+3. PWR (Quanta Services) — new candidate; Q1 EPS +31.4% beat, revenue +26.3% beat; AI data-center grid infrastructure
+
+```json
+{
+  "plan_date": "2026-06-15",
+  "trades": []
+}
+```
+
+No trades planned.
+
+**Upcoming catalysts (refreshed June 15):**
+- **FOMC June 16–17, announcement June 18 2 PM ET** — rate hold expected, hawkish dot plot risk (70% year-end hike probability)
+- **SPY dividend ex-date June 18** ($1.76/sh — same day as FOMC; add to benchmark total-return anchor post-June 18)
+- **VST dividend ex-date June 22** (USD 9.16 credit for 40sh — 7 days)
+- **LLY Medicare GLP-1 Bridge effective July 1** (16 days — thesis review_by date)
+- **VST thesis review_by July 7** (22 days)
+- **V Q3 FY26 earnings July 28** (43 days — thesis review_by date)
+- **LLY Q2 FY26 earnings ~August 5** (51 days)
+- **VST Q2 FY26 earnings August 6** (52 days)
+- **NVDA Q2 FY27 earnings August 26** (72 days — re-entry candidate, well outside window ✓)
+- **LRCX next earnings ~August 5** (51 days — not in window ✓)
+
+---
+
 ## 2026-06-12 — Weekly Review research (~16:30 ET)
 
 _Dated research findings for the weekly review of the week of June 8–12, 2026._

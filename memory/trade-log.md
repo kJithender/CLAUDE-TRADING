@@ -3,6 +3,86 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-15 08:03 ET — PRE-MARKET (no trades; FOMC gate; VST pre-mkt breakout; Monday conviction review)
+- **Action:** None — market closed (next open 09:30 ET). Plan set: no new positions today.
+- **Market status:** `is_open: false` ✓ (confirmed via clock at 08:03 ET — next open 09:30 ET June 15)
+- **Account:** Equity $98,907.25 | Cash $74,304.63 (75.1%) | Long market value $24,602.62
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+### Shock check
+- Equity $98,907.25 vs last_equity $98,648.01 = **+$259.24 = +0.263%** — POSITIVE. No shock. ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21; current $98,907.25 = **−2.44%** — within −10% limit. ✓ FOMC gate is the operative constraint.
+
+### Stop audit (pre-market June 15 — confirmed via Alpaca open orders endpoint)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new |
+| 66033918 | V | 22sh | $325.93 | $293.337 | ✓ new |
+| c4c200a5 | VST | 40sh | $150.50 | $135.45 | ✓ new |
+Stop audit: **4/4 PASS ✓**
+
+### Macro context (pre-market June 15)
+- SPY pre-market: ~$751.37 (+1.31% from Jun 12 close $741.67)
+- FOMC June 16–17; announcement June 18 2 PM ET (Kevin Warsh's first meeting with dot plot; hawkish bias)
+- Rate hold 98–99% probability; but 70% probability of at least one year-end hike
+- **HARD GATE: No new positions before Wednesday June 18, 2 PM ET**
+
+### Monday conviction-weighted holding review
+| Symbol | Rating | Rationale |
+|--------|--------|-----------|
+| LLY | **A** | +4.29% from entry; Medicare Bridge July 1 in 16 days; thesis strongest |
+| V | **B** | −0.15% from entry; flat but thesis intact; no C risk |
+| VST | **A** | +2.31% from entry; pre-mkt +2.85% breakout above HWM $150.50; Helix thesis; dividend June 22 |
+
+No C-rated positions. No mandatory trims.
+
+### Position review (pre-market June 15)
+
+**LLY** ($1,140.47, **+4.29% from entry**, +0.66% today) ⭐ STRONG
+- Stop buffer $76.01 (6.67%) ✓. Employer GLP-1 2027 coverage concern ≠ July 1 Medicare Bridge invalidation. HOLD.
+
+**V** ($323.10, **−0.15% from entry**, +0.22% today) ✓ INTACT
+- Stop buffer $29.76 (9.21%) ✓. No new catalysts. Financials sector lag expected. HOLD.
+
+**VST** ($152.24, **+2.31% from entry**, +2.85% today) ⭐⭐ HELIX BREAKOUT
+- Pre-market above HWM $150.50 → stop ratchets at open (~$137.02). Buffer ~$15.22 (10%) est. ✓
+- Dividend ex-date June 22 in 7 days (USD 9.16 credit). HOLD.
+
+### Thesis contract review
+- LLY: ✅ Intact. Stop $1,064.457. review_by July 1. CONTINUE.
+- V: ✅ Intact. Stop $293.337. review_by July 28. CONTINUE.
+- VST: ✅ MATERIALLY STRENGTHENED. review_by July 7. CONTINUE.
+
+### Guardrail checks
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| LLY above −7% threshold | +4.29% | −7% | ✓ |
+| V above −7% threshold | −0.15%, $323.10 > $300.92 | −7% | ✓ |
+| VST above −7% threshold | +2.31%, $152.24 > $138.39 | −7% | ✓ Clear by $13.85 |
+| Drawdown circuit breaker | −2.44% vs −10% | <−10% | ✓ |
+| Intraday shock | +0.263% | <−4% | ✓ Positive |
+| Cash | 75.1% | ≥5% | ✓ |
+| All stops active | 4/4 | required | ✓ |
+| Sector caps | HC 11.53%, Fin 7.19%, Energy 6.16% | <60% | ✓ |
+
+### LRCX ATR check
+- June 12: 5.01% ❌ | June 11: 7.81% ❌ | 3-day avg: ~7.24% — far above 3% gate.
+
+### No-trade confirmation
+FOMC gate (June 18 2 PM ET); LRCX ATR disqualified; existing positions intact. No positions this week before FOMC.
+
+### Performance (pre-market June 15)
+- Equity $98,907.25 (vs last_equity $98,648.01 = +$259.24 = +0.263%)
+- Today P/L (pre-mkt): LLY +$74.70, V +$15.62, VST +$168.92 = net +$259.24 ✓
+- SPY pre-mkt: ~$751.37 (+1.61% since inception $739.44)
+- **Since inception: Bull −1.09% vs SPY +1.61% = Bull TRAILS SPY by ~2.70pp** (SPY +1.31% pre-mkt; 75% cash limits capture)
+
+
 ## 2026-06-12 15:51 ET — CLOSE — EOD journal
 
 - **Action:** No trades. End-of-day P/L check, stop audit, exit reconciliation, journal.

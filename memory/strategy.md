@@ -136,17 +136,25 @@ _Purged from watchlist (2026-06-12):_
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-12 weekly review)
+## Active Macro Watches (updated 2026-06-15 pre-market)
 
-- **FOMC June 16–17 2026 — CRITICAL:** Rate hold expected (89% probability). But possible hawkish bias shift (inflation 4.2% YoY + strong NFP 172K). Announcement Wednesday June 18, 2 PM ET. **No new positions before Wednesday afternoon.** If Fed signals hawkish shift: 10yr could spike above 4.75% → halt new buys, tighten stops on high-multiple AI names. This is the single biggest near-term risk event.
-- **10yr Treasury yield:** ~4.47% — below 4.75% watch level ✓. Constructive. Watch trigger: if 10yr crosses 4.75% on upward trend, halt new buys and tighten stops on high-multiple names.
-- **Iran/US peace deal:** Largely agreed per Trump — US lifts oil sanctions, Iran reopens Strait of Hormuz within 30 days. WTI ~$85/bbl — well below $100 trigger ✓. Constructive for equities. Slight VST nuclear headwind (cheaper gas) but 24/7 reliability advantage intact.
-- **LLY — STRONGEST position:** 10 shares @ avg $1,093.534. EOD June 12 $1,138.355 (+4.10%). Stops HWM $1,182.73, stop $1,064.457. Review_by July 1 (Medicare GLP-1 Bridge effective date — make explicit hold/trim/exit decision at pre-market June 30).
-- **V — NEW position:** 22 shares @ $323.57 (entered June 10). EOD $322.34 (−0.42%). Stop HWM $325.93, stop $293.337 ✓. Review_by July 28 (Q3 earnings).
-- **VST — NEW position:** 40 shares @ $148.81 (entered June 9). EOD $147.98 (−0.56%). Stop HWM $150.50, stop $135.45 ✓. Helix Digital Infrastructure MAJOR thesis upgrade June 11. Dividend ex-date June 22 ($9.20 credit). Review_by July 7.
-- **META — CLOSED June 10:** Trailing stop filled $578.00 (−6.87%). Not on near-term re-entry list. Macro inflection lesson applied.
-- **NVDA — CLOSED June 5:** Trailing stop filled $209.042 (−3.36%). Senate Banking hearing passed without CEO testimony. Re-entry eligible post-FOMC (June 18+) if stock bases above $205 with normalized ATR.
-- **MSFT — CLOSED June 5:** Trailing stop filled $419.363 (−0.70%). Azure AI thesis intact. Re-evaluate post-FOMC.
-- **AMZN — CLOSED June 3:** Per −7% rule (−7.39%). Not near-term candidate.
-- **Week of June 16:** 3 fresh slots. Ordering: (1) post-FOMC clarity Wednesday; (2) LRCX if ATR normalizes; (3) NVDA or PWR.
-- **SPY dividend June 18, 2026 ex-date:** $1.76/sh. After June 18, benchmark total return +0.238pp vs Bull. Benchmarking note: add $1.76 to SPY anchor for total-return comparisons post-June 18.
+- **FOMC June 16–17 2026 — CRITICAL (GATE ACTIVE):** Rate hold 98–99% probability per CME FedWatch. Kevin Warsh's first FOMC meeting as Fed Chair; dot plot (SEP) released — hawkish shift possible. Probability of at least one year-end 2026 rate hike: ~70%. Announcement Wednesday June 18, 2 PM ET. **No new positions before Wednesday June 18, 2 PM ET — HARD GATE.** If dot plot signals fewer cuts (or hikes): 10yr could spike above 4.75% → halt all new buys. Monitor 10yr closely at 2 PM Wednesday.
+- **10yr Treasury yield:** ~4.47% (June 12 est.) — below 4.75% watch level ✓. Watch post-FOMC dot plot Wednesday.
+- **Iran/US peace deal:** Advancing — WTI ~$85/bbl, well below $100 trigger ✓. Constructive for equities; SPY pre-market June 15 +1.31%. VST nuclear 24/7 reliability advantage intact vs. cheaper gas.
+- **LLY — STRONGEST position:** Pre-mkt June 15 $1,140.47 (+4.29%). Monday rating: **A**. Employer GLP-1 coverage concern (10% of employers dropping in 2027) is a 2027 headwind — NOT a July 1 Medicare Bridge invalidation. Review_by July 1 (Medicare Bridge effective date — explicit hold/trim/exit decision required at pre-market June 30 or July 1).
+- **V — position:** Pre-mkt June 15 $323.10 (−0.15%). Monday rating: **B**. Thesis intact; financials sector lagging tech rallies. Review_by July 28 (Q3 earnings).
+- **VST — HELIX BREAKOUT:** Pre-mkt June 15 $152.24 (+2.31%). Monday rating: **A**. Above HWM $150.50 → stop ratchets to ~$137.02 at market open. Dividend ex-date June 22 (7 days, USD 9.16). Review_by July 7. THESIS MATERIALLY STRENGTHENED.
+- **META — CLOSED June 10:** Trailing stop filled $578.00 (−6.87%). Not on near-term re-entry list.
+- **NVDA — CLOSED June 5:** Re-entry eligible post-FOMC (June 18+) if stock bases above $205 with normalized ATR. Pre-market June 15 ~$205-$210. Next earnings August 26, 2026 (72 days ✓). In buy zone — waiting for FOMC clarity.
+- **MSFT — CLOSED June 5:** Azure AI thesis intact. Re-evaluate post-FOMC if LRCX and NVDA slots are filled.
+- **AMZN — CLOSED June 3:** Not near-term candidate.
+- **Week of June 15:** 3 fresh slots — ALL GATED until post-FOMC June 18, 2 PM ET. Post-gate priority: (1) LRCX if ATR normalizes to ≤3%; (2) NVDA if basing above $205; (3) PWR (Quanta Services).
+- **SPY dividend June 18, 2026 ex-date:** $1.76/sh. After June 18, add $1.76 to SPY anchor ($741.75 + $1.76 = $743.51) for accurate total-return benchmarking.
+
+## Monday Conviction Ratings (updated 2026-06-15)
+
+| Symbol | Rating | 3-consecutive-C trigger | Notes |
+|--------|--------|------------------------|-------|
+| LLY | **A** | N/A | Medicare Bridge catalyst approaching July 1 |
+| V | **B** | 0/3 weeks at C | Flat but intact; track through July 28 earnings |
+| VST | **A** | N/A | Helix thesis upgrade; dividend June 22 |
