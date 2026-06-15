@@ -193,6 +193,8 @@ Reasons: (1) FOMC June 16–17 (announcement June 18 2 PM ET) — Kevin Warsh's 
 }
 ```
 
+EXECUTED: 2026-06-15T13:36:13Z — No trades; FOMC gate active (post-Jun 18 2PM ET); stop audit 4/4 ✓ (VST HWM ratcheted $150.50→$153.21, stop $135.45→$137.889); LLY $1,116.47 (+2.10% from entry, −1.46% intraday); V $323.53 (−0.01% from entry, +0.35% intraday); VST $151.92 (+2.09% from entry, +2.64% intraday). All guardrails ✓.
+
 No trades planned.
 
 **Upcoming catalysts (refreshed June 15):**
