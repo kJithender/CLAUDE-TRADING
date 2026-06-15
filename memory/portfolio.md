@@ -3,26 +3,26 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-15 09:36 ET (market-open)
+**Last updated:** 2026-06-15 12:32 ET (midday)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
-## Account (market-open June 15, 2026 — live Alpaca data ~09:36 ET)
+## Account (midday June 15, 2026 — live Alpaca data ~12:32 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $98,656.79 |
-| Cash | $74,304.63 (75.3%) |
-| Long market value | $24,352.16 |
-| Buying power | ~$365,404 |
+| Equity | $98,908.11 |
+| Cash | $74,304.63 (75.1%) |
+| Long market value | $24,603.48 |
+| Buying power | ~$366,108 |
 | Last equity (June 12 close) | $98,648.01 |
 
-## Open positions (market-open June 15, 2026 — live Alpaca data ~09:36 ET)
+## Open positions (midday June 15, 2026 — live Alpaca data ~12:32 ET)
 
 | Symbol | Qty | Avg entry | Current price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
 |--------|-----|-----------|--------------|-----------|----------------|----------------|---------------|
-| LLY | 10 | $1,093.534 | $1,116.47 | $11,164.70 | +$229.36 (+2.10%) | 11.32% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, same) ✓ — buffer $52.01 (4.66%) ⭐ |
-| V | 22 | $323.57 | $323.53 | $7,117.66 | -$0.88 (-0.01%) | 7.21% | 66033918 (22sh, HWM **$325.93**, stop **$293.337**) ✓ — buffer $30.19 (9.33%) |
-| VST | 40 | $148.81 | $151.92 | $6,076.80 | +$124.40 (+2.09%) | 6.16% | c4c200a5 (40sh, HWM **$153.21** ⬆️ RATCHETED, stop **$137.889** ⬆️) ✓ — buffer $14.03 (9.23%) ⭐⭐ HELIX |
+| LLY | 10 | $1,093.534 | $1,127.02 | $11,270.20 | +$334.86 (+3.06%) | 11.39% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, same) ✓ — buffer $62.56 (5.55%) ⭐ |
+| V | 22 | $323.57 | $326.04 | $7,172.88 | +$54.34 (+0.76%) | 7.25% | 66033918 (22sh, HWM **$326.29** ⬆️ RATCHETED, stop **$293.661** ⬆️) ✓ — buffer $32.38 (9.93%) |
+| VST | 40 | $148.81 | $154.01 | $6,160.40 | +$208.00 (+3.49%) | 6.23% | c4c200a5 (40sh, HWM **$154.74** ⬆️ RATCHETED, stop **$139.266** ⬆️) ✓ — buffer $14.74 (9.57%) ⭐⭐ HELIX |
 | ~~META~~ | ~~15~~ | ~~$620.637~~ | — | — | **CLOSED -$639.56 (-6.87%) via trailing stop** | — | **FILLED** (4ea07e91) at $578.00 ~11:06 AM ET Jun 10 ✓ |
 | ~~NVDA~~ | ~~30~~ | ~~$216.302~~ | — | — | **CLOSED -$217.80 (-3.36%) via trailing stop** | — | **FILLED** (8c6b9680) at $209.042 ~11:20 AM ET Jun 5 ✓ |
 | ~~MSFT~~ | ~~20~~ | ~~$422.31~~ | — | — | **CLOSED -$58.94 (-0.70%) via trailing stop** | — | **FILLED** (a55a3db6) at $419.363 ~12:08 PM ET Jun 5 ✓ |
@@ -34,6 +34,7 @@ the last known state, but always re-fetches live data before trading._
 | Period | Bull | SPY | Difference |
 |--------|------|-----|------------|
 | Inception (2026-05-21) | $100,000.00 | $739.44 | — |
+| **Midday (2026-06-15)** | **$98,908.11** | **$756.33 (~12:32 ET, +2.01% from Jun 12 close)** | **Bull TRAILS SPY ~3.37pp** |
 | **Open (2026-06-15)** | **$98,656.79** | **$753.29 (~09:37 ET, +1.57% from Jun 12 close)** | **Bull TRAILS SPY ~3.21pp** |
 | **Pre-mkt (2026-06-15)** | **$98,907.25** | **~$751.37 (pre-mkt, +1.31% from Jun 12)** | **Bull TRAILS SPY ~2.70pp** |
 | Close (2026-05-29) | $101,263.22 | $756.65 | — |
@@ -78,6 +79,37 @@ the last known state, but always re-fetches live data before trading._
 | **Week 4 (Jun 8–12)** | **-0.22%** | **+0.58%** | **Bull lagged SPY 0.81pp** |
 
 ## Notes
+
+**Midday June 15, 2026 (~12:32 ET):**
+- **Market context:** SPY $756.33 mid-session (vs $741.67 Jun 12 close = +1.97% today; +2.28% since inception). Broad risk-on continues ahead of FOMC. FOMC gate remains active: no new positions before Wednesday June 18, 2 PM ET.
+- **LLY** ⭐ $1,127.02 (+3.06% from entry, −0.53% intraday from $1,133). Mild softness = broad market rotation; no LLY-specific negative catalyst. Employer GLP-1 coverage concern = 2027 headwind only. HOLD. Stop buffer $62.56 (5.55%) ✓.
+- **V** $326.04 (+0.76% from entry, +1.13% intraday). **Stop ratcheted to HWM $326.29.** OpenAI/stablecoin thesis intact. HOLD. Stop buffer $32.38 (9.93%) ✓.
+- **VST** ⭐⭐ $154.01 (+3.49% from entry, +4.05% intraday). **Stop ratcheted: HWM $153.21 → $154.74, stop $137.889 → $139.266.** Dividend ex-date June 22 (7 days, USD 9.16 credit). Helix thesis intact. HOLD. Stop buffer $14.74 (9.57%) ✓.
+- **Breaking-news gate:** All 3 positions clear — no thesis-breaking events. ✓
+- **FOMC gate:** No new positions before Wednesday June 18, 2 PM ET.
+- **Sector exposure (midday June 15):**
+  - Healthcare (LLY): $11,270.20 = 11.39%
+  - Financials (V): $7,172.88 = 7.25%
+  - Energy/Utilities (VST): $6,160.40 = 6.23%
+  - Cash: $74,304.63 = 75.1%
+  - No sector above 60% cap ✓
+- **Since inception (2026-05-21):** Bull −1.09% ($100,000 → $98,908.11) vs SPY +2.28% ($756.33) = **Bull TRAILS SPY by ~3.37pp** (SPY continued rally today; 75% cash limits capture; FOMC gate)
+- **Race scoreboard (midday June 15):**
+  - Bull: **−1.09%** (since May 21)
+  - AGGRO: **~−6.04%** (last known EOD June 12)
+  - SPY: **+2.28%** (since May 21, midday June 15)
+  - Bull leads AGGRO by ~4.95pp.
+
+**Trailing stop status (midday June 15 — confirmed via Alpaca open orders ~12:32 ET):**
+- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (buffer $62.56 = 5.55%)
+- LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+- V (66033918): 22sh — HWM **$326.29** ⬆️ RATCHETED (from $325.93), stop **$293.661** ⬆️ (from $293.337) ✓ (buffer $32.38 = 9.93%)
+- VST (c4c200a5): 40sh — HWM **$154.74** ⬆️ RATCHETED (from $153.21), stop **$139.266** ⬆️ (from $137.889) ✓ (buffer $14.74 = 9.57%)
+
+**Week of June 15 — new position slots:**
+- **Slot 1:** OPEN — FOMC gate through Wednesday June 18 2 PM ET
+- **Slot 2:** OPEN — post-FOMC: NVDA if basing above $205
+- **Slot 3:** OPEN — post-FOMC: PWR (Quanta Services) research
 
 **Market-open June 15, 2026 (~09:36 ET):**
 - **Market context:** SPY +1.57% today ($741.67 → $753.29) — continued Iran/US peace deal optimism + risk-on tone ahead of FOMC. FOMC gate remains active: no new positions before Wednesday June 18, 2 PM ET.

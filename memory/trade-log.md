@@ -3,6 +3,92 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-15 12:32 ET — MIDDAY CHECK (no action; all positions within range; stop audit 4/4; V and VST stops ratcheted ⬆️)
+
+- **Action:** No trades. All positions within guardrail thresholds. No cuts, no stop tightening (both V and VST trailing stops auto-ratcheted to new HWMs intraday). FOMC gate active.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 12:32 ET — next close 16:00 ET June 15)
+- **Account:** Equity $98,908.11 | Cash $74,304.63 (75.1%) | Long market value $24,603.48
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+### Shock check
+- Equity $98,908.11 vs last_equity $98,648.01 = **+$260.10 = +0.264%** — POSITIVE. No shock day. ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21 (from equity history); current $98,908.11 = **−2.44%** — within −10% limit. ✓ FOMC gate is operative constraint.
+
+### Position review (12:32 ET — live Alpaca data)
+
+**LLY** ($1,127.02, **+3.06% from avg entry $1,093.534**, **−0.53% intraday** vs $1,133 lastday) ⭐ STRONG
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** ✓
+- Stop buffer: $1,127.02 − $1,064.457 = **$62.56 (5.55%)** ✓ Adequate.
+- −7% cut threshold: $1,016.99 — CLEAR by $110.03 ✓. No action.
+- +15% tighten threshold: $1,257.56 — NOT triggered (+3.06%). No action.
+- News scan: LLY +3.06% from entry (no >3% down or >10% up trigger). No scan required.
+- Medicare GLP-1 Bridge July 1 in 16 days. Mild intraday softness (−0.53%) = broad market rotation; no LLY-specific negative catalyst. HOLD.
+
+**V** ($326.04, **+0.76% from avg entry $323.57**, **+1.13% intraday** vs $322.39 lastday) ✓ INTACT
+- Trailing stop 66033918: HWM **$326.29** ⬆️ (ratcheted from $325.93), stop **$293.661** ⬆️ (ratcheted from $293.337) ✓
+- Stop buffer: $326.04 − $293.661 = **$32.38 (9.93%)** ✓ Healthy and improving.
+- −7% cut threshold: $300.92 — CLEAR by $25.12 ✓. No action.
+- +15% tighten threshold: $372.11 — NOT triggered (+0.76%). No action.
+- V outperforming today (+1.13%). Stop ratcheted to new HWM $326.29 — protection improving. OpenAI/stablecoin thesis intact. HOLD.
+
+**VST** ($154.01, **+3.49% from avg entry $148.81**, **+4.05% intraday** vs $148.02 lastday) ⭐⭐ HELIX — STRONG
+- Trailing stop c4c200a5: HWM **$154.74** ⬆️ (ratcheted from $153.21), stop **$139.266** ⬆️ (ratcheted from $137.889) ✓
+- Stop buffer: $154.01 − $139.266 = **$14.74 (9.57%)** ✓ Strong — nearly full 10% trailing protection.
+- VST intraday +4.05% — stop ratcheted aggressively today. Excellent.
+- −7% cut threshold: $138.39 — CLEAR by $15.62 ✓. No action.
+- +15% tighten threshold: $171.13 — NOT triggered (+3.49%). No action.
+- News scan: VST +3.49% from entry (does not meet >3% down or >10% up trigger). No scan required.
+- Helix Digital Infrastructure thesis intact. Dividend ex-date June 22 in 7 days (USD 9.16 credit for 40sh). HOLD.
+
+### Guardrail checks (12:32 ET)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| LLY above −7% cut threshold | +3.06% from entry | −7% | ✓ |
+| V above −7% cut threshold | +0.76% from entry | −7% | ✓ |
+| VST above −7% cut threshold | +3.49%, $154.01 > $138.39 | −7% | ✓ Clear by $15.62 |
+| LLY below +15% tighten threshold | +3.06% | +15% ($1,257.56) | ✓ |
+| V below +15% tighten threshold | +0.76% | +15% ($372.11) | ✓ |
+| VST below +15% tighten threshold | +3.49% | +15% ($171.13) | ✓ |
+| Intraday shock (vs last_equity $98,648.01) | +$260.10 = +0.264% | <−4% | ✓ Positive |
+| Drawdown circuit breaker | $98,908 vs HWM $101,384 = −2.44% | <−10% | ✓ |
+| Cash | $74,304.63 (75.1%) | ≥5% | ✓ Ample |
+| No new positions at midday | None | required | ✓ |
+| FOMC gate | No new positions before Jun 18 2PM ET | — | ⚠️ ACTIVE |
+
+### Stop audit (12:32 ET — confirmed via Alpaca open orders endpoint)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new |
+| 66033918 | V | 22sh | **$326.29** ⬆️ | **$293.661** ⬆️ | ✓ new — RATCHETED |
+| c4c200a5 | VST | 40sh | **$154.74** ⬆️ | **$139.266** ⬆️ | ✓ new — RATCHETED |
+
+No orphaned stops. No missing stops. Stop audit: **4/4 PASS ✓**
+
+### Exit reconciliation
+No trailing stops filled since market-open run. All 3 positions (LLY, V, VST) active. No new closed-trade entries needed. No trades.jsonl entries needed.
+
+### Performance (12:32 ET)
+- **Equity:** $98,908.11 (vs last_equity $98,648.01 = +$260.10 today = +0.264%)
+- **Unrealized P/L:** LLY +$334.86 (+3.06%), V +$54.34 (+0.76%), VST +$208.00 (+3.49%) = net **+$597.20**
+- **Today P/L (intraday unrealized):** LLY −$59.80 (−0.53%), V +$80.30 (+1.13%), VST +$239.60 (+4.05%) = net **+$260.10** ✓
+- **Cash:** $74,304.63 (75.1%) | Long market value: $24,603.48
+- **SPY mid June 15:** $756.33 (vs $739.44 inception anchor = **+2.28%** since inception)
+- **Since inception (2026-05-21):** Bull **−1.09%** ($100,000 → $98,908.11) vs SPY **+2.28%** ($756.33) = **Bull trails SPY by ~3.37pp**
+
+### Notes
+- Clean midday — all three positions well within guardrails. VST standout today (+4.05% intraday), with trailing stop HWM ratcheting from $153.21 → $154.74 and stop improving from $137.889 → $139.266. V also performing (+1.13% intraday) with its stop ratcheting to $326.29 HWM. LLY mild softness today (−0.53%) but +3.06% from entry — broad market rotation, no LLY-specific negative catalyst.
+- Since-inception gap widened to ~3.37pp as SPY hit $756.33 mid-session — SPY's +2.28% gain since inception vs. Bull's high-cash posture (75% cash) limits capture. This is expected structural drag during the FOMC gate period. No action warranted.
+- FOMC gate: No new positions before Wednesday June 18, 2 PM ET. All 3 slots held in reserve.
+- Stop audit: perfect 4/4. Both V and VST stops ratcheted to new HWMs today — compounding protection on Bull's two strongest intraday performers.
+
+---
+
 ## 2026-06-15 09:36 ET — MARKET OPEN (no trades; FOMC gate; stop audit 4/4; VST stop ratcheted ⬆️)
 - **Action:** No trades — plan_date 2026-06-15 has trades: []. FOMC gate active through Wednesday June 18, 2 PM ET.
 - **Market status:** `is_open: true` ✓ (confirmed via clock at 09:36 ET — next close 16:00 ET June 15)
