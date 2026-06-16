@@ -923,3 +923,62 @@ META and MSFT both in safe zone (>4pp and >5pp respectively). MRVL continued sur
 - Equity EOD: USD 97,186.26 vs last_equity: USD 94,031.31
 - Intraday change: **+3.356%** (shock threshold -6% — NOT triggered ✓)
 
+---
+
+## 2026-06-16 — MARKET OPEN (~9:46 AM ET)
+
+**No trades executed.** Pre-market plan correctly called no-trade (FOMC in session, cash at 6.75%, all 8 theses intact, portfolio 93.25% deployed).
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Plan date | June 16, 2026 — matches today ✓ |
+| Plan trades | [] — empty, no trades planned ✓ |
+| Idempotency | No prior EXECUTED: marker ✓ |
+
+### Market & account status
+| Check | Result |
+|---|---|
+| Market open | true (next close 4:00 PM ET) ✓ |
+| Equity | USD 97,032.20 |
+| Last equity (prev close June 15) | USD 97,144.23 |
+| Intraday change | -0.115% (shock threshold -6% — NOT triggered ✓) |
+| Cash | USD 6,553.24 (6.75%) |
+| Cash floor (2% min) | ✓ |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -4.07% (circuit breaker 20% — NOT triggered ✓) |
+| Long market value | USD 90,478.96 |
+
+### Breaking news gate [search: WebSearch fallback — MiniMax M3 not available]
+No planned trades → formal gate N/A. Quick thesis check on most-stressed positions:
+- **MSFT (4.28pp buffer):** Shareholder lawsuit questioning "AI/Azure story authenticity" — nuisance litigation; Azure +40% YoY and AI business USD 37B run rate are confirmed facts. Xbox Compulsion Games closure: immaterial. Invalidation NOT triggered. HOLD.
+- **MRVL:** "Massive News" = S&P 500 inclusion confirmed + Dan Durn CFO effective June 15 + FY2028 revenue outlook raised to USD 16.5B. ALL THESIS-POSITIVE. HOLD.
+- **FOMC:** Hold at 3.50–3.75% expected (65% probability per markets). First meeting under new Chair Kevin Warsh. Known risk event — no action required. Cash buffer preserved.
+
+### Stop audit — 8/8 positions confirmed with live 18% trailing stops ✓
+
+| Symbol | Qty | Current Price | P/L% from Entry | -12% Trigger | Buffer | Stop Order ID | Stop Price | HWM |
+|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 209.83 | -1.77% | USD 187.97 | 10.23pp | `54d7d851` | USD 181.71 | USD 221.60 |
+| META | 23 | USD 601.50 | -4.54% | USD 554.51 | **7.46pp** ✅ | `11c3a1bf` | USD 526.75 | USD 642.38 |
+| AVGO | 34 | USD 387.97 | -4.50% | USD 357.48 | 7.50pp | `36f5a45f` | USD 349.71 | USD 426.48 |
+| MSFT | 28 | USD 393.285 | -7.73% | USD 375.06 | **4.28pp ⚠️** | `ef211767` | USD 350.56 | USD 427.51 |
+| AMZN | 36 | USD 247.07 | -0.37% | USD 218.23 | 11.63pp | `b55bef05` | USD 205.35 | USD 250.43 |
+| VST | 52 | USD 157.99 | **+4.30% ✅** | USD 133.29 | 16.31pp | `5b347be3` | USD 130.03 | USD 158.57 |
+| GOOGL | 16 | USD 367.925 | -0.62% | USD 325.79 | 11.38pp | `e52a43f1` | USD 305.85 | USD 372.99 |
+| MRVL | 25 | USD 312.13 | **+6.43% ✅** | USD 258.09 | 18.43pp | `a9097c8c` | USD 256.64 | USD 312.98 |
+
+**No stops missing. No stops needing recreation. All 8 positions protected.**
+
+### Notable observations
+- **VST +4.30%** intraday (USD 157.99 vs USD 153.52 prev close) — new HWM USD 158.57 per trailing stop tracker. Oil falling further (Iran deal signed) strengthening VST's narrative and trailing stop is auto-ratcheting.
+- **MRVL +6.43% from entry** (USD 312.13) — S&P 500 inclusion June 22 confirmed; index funds must buy by June 20 close; FY2028 USD 16.5B outlook raised. HWM USD 312.98; stop ratcheting.
+- **META +1.35% intraday** (USD 601.50) — buffer widened to 7.46pp; well above 4pp safe zone.
+- **MSFT -1.62% intraday** (USD 393.285 vs USD 399.76) — down on FOMC uncertainty; shareholder lawsuit nuisance only; Azure +40% thesis intact; buffer 4.28pp (safe but watch at midday).
+- **AVGO -1.52% intraday** (USD 387.97 vs USD 393.94) — soft session; AI guide USD 16B Q3 intact; buffer 7.50pp comfortable.
+- NVDA -1.23% intraday; GOOGL -0.39% — minor moves, FOMC-related growth multiple compression.
+
+

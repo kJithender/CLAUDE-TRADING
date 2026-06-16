@@ -17,7 +17,20 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-16 PRE-MARKET (~8:12 AM ET)
+## Last snapshot — 2026-06-16 MARKET OPEN (~9:46 AM ET)
+
+| Field | Value |
+|---|---|
+| Equity | USD 97,032.20 |
+| Cash | USD 6,553.24 (6.75%) |
+| Long market value | USD 90,478.96 |
+| Open positions | 8 |
+| last_equity (June 15 EOD) | USD 97,144.23 |
+| Intraday P/L vs last_equity | -USD 112.03 (-0.115%) — minor intraday softness; FOMC in session (hold expected) |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -4.07% (circuit breaker: 20% — NOT triggered; 15.93pp of headroom) |
+
+### Prior snapshot — 2026-06-16 PRE-MARKET (~8:12 AM ET)
 
 | Field | Value |
 |---|---|
@@ -43,41 +56,41 @@ but always re-fetches live data before trading._
 | HWM | USD 101,144.73 |
 | Drawdown from HWM | -3.91% (circuit breaker: 20% — NOT triggered; 16pp of headroom) |
 
-**Open positions (2026-06-16 pre-market ~8:12 AM ET):**
+**Open positions (2026-06-16 market-open ~9:46 AM ET):**
 
-| Symbol | Qty | Avg Entry | Pre-mkt Price | Market Value | Unrealized P/L | P/L % | -12% Cut Trigger | Buffer |
+| Symbol | Qty | Avg Entry | Open Price | Market Value | Unrealized P/L | P/L % | -12% Cut Trigger | Buffer |
 |---|---|---|---|---|---|---|---|---|
-| NVDA | 103 | USD 213.60 | USD 212.08 | USD 21,844.24 | -USD 156.56 | -0.712% | USD 187.97 | 11.29pp |
-| META | 23 | USD 630.12 | USD 594.35 | USD 13,670.05 | -USD 822.71 | -5.677% | USD 554.51 | **6.32pp** ✅ |
-| AVGO | 34 | USD 406.23 | USD 394.10 | USD 13,399.40 | -USD 412.42 | -2.986% | USD 357.48 | 9.01pp |
-| MSFT | 28 | USD 426.21 | USD 396.51 | USD 11,102.28 | -USD 831.60 | -6.968% | USD 375.06 | **5.03pp** ✅ |
-| AMZN | 36 | USD 247.99 | USD 247.65 | USD 8,915.40 | -USD 12.28 | -0.138% | USD 218.23 | 11.86pp |
-| VST | 52 | USD 151.47 | USD 154.21 | USD 8,018.92 | +USD 142.48 | **+1.809% ✅** | USD 133.29 | 15.51pp |
-| GOOGL | 16 | USD 370.22 | USD 369.12 | USD 5,905.92 | -USD 17.60 | -0.297% | USD 325.79 | 11.70pp |
-| MRVL | 25 | USD 293.29 | USD 304.82 | USD 7,620.60 | +USD 288.47 | **+3.934% ✅** | USD 258.09 | 14.93pp |
+| NVDA | 103 | USD 213.60 | USD 209.83 | USD 21,612.49 | -USD 388.31 | -1.765% | USD 187.97 | 10.23pp |
+| META | 23 | USD 630.12 | USD 601.50 | USD 13,834.50 | -USD 658.26 | -4.542% | USD 554.51 | **7.46pp** ✅ |
+| AVGO | 34 | USD 406.23 | USD 387.97 | USD 13,190.98 | -USD 620.84 | -4.495% | USD 357.48 | 7.50pp |
+| MSFT | 28 | USD 426.21 | USD 393.285 | USD 11,011.98 | -USD 921.90 | -7.725% | USD 375.06 | **4.28pp ⚠️** |
+| AMZN | 36 | USD 247.99 | USD 247.07 | USD 8,894.52 | -USD 33.16 | -0.371% | USD 218.23 | 11.63pp |
+| VST | 52 | USD 151.47 | USD 157.99 | USD 8,215.48 | +USD 339.04 | **+4.304% ✅** | USD 133.29 | 16.31pp |
+| GOOGL | 16 | USD 370.22 | USD 367.925 | USD 5,886.80 | -USD 36.72 | -0.620% | USD 325.79 | 11.38pp |
+| MRVL | 25 | USD 293.285 | USD 312.13 | USD 7,803.25 | +USD 471.12 | **+6.425% ✅** | USD 258.09 | 18.43pp |
 
-**Stop audit (2026-06-16 pre-market): ALL 8 positions confirmed with live 18% trailing stop orders. ✓**
+**Stop audit (2026-06-16 market-open): ALL 8 positions confirmed with live 18% trailing stop orders. ✓**
 _(All positions show qty_available=0, confirming trailing stop orders hold all shares.)_
 
-| Symbol | Stop Order ID | HWM (approx) | Status |
-|---|---|---|---|
-| NVDA | `54d7d851` | USD 221.60 | ✓ live |
-| META | `11c3a1bf` | USD 642.38 | ✓ live |
-| AVGO | `36f5a45f` | USD 426.48 | ✓ live |
-| MSFT | `ef211767` | USD 427.51 | ✓ live |
-| AMZN | `b55bef05` | USD 250.43 | ✓ live |
-| VST | `5b347be3` | USD 154.90+ (ratcheting; new HWM June 15) | ✓ live |
-| GOOGL | `e52a43f1` | USD 372.99+ | ✓ live |
-| MRVL | `a9097c8c` | USD 307.95+ (ratcheting; new HWM June 15) | ✓ live |
+| Symbol | Stop Order ID | Stop Price | HWM | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 181.71 | USD 221.60 | ✓ live |
+| META | `11c3a1bf` | USD 526.75 | USD 642.38 | ✓ live |
+| AVGO | `36f5a45f` | USD 349.71 | USD 426.48 | ✓ live |
+| MSFT | `ef211767` | USD 350.56 | USD 427.51 | ✓ live |
+| AMZN | `b55bef05` | USD 205.35 | USD 250.43 | ✓ live |
+| VST | `5b347be3` | USD 130.03 | USD 158.57 (new HWM today ✅) | ✓ live — stop ratcheting |
+| GOOGL | `e52a43f1` | USD 305.85 | USD 372.99 | ✓ live |
+| MRVL | `a9097c8c` | USD 256.64 | USD 312.98 (new HWM ✅) | ✓ live — stop ratcheting |
 
-**Sector exposure summary (2026-06-16 pre-market — intentional concentration):**
+**Sector exposure summary (2026-06-16 market-open — intentional concentration):**
 | Sector | Market Value | % of Portfolio |
 |---|---|---|
-| Technology — semis (NVDA, AVGO, MRVL) | USD 42,864 | 44.2% |
-| Technology — hyperscalers (META, MSFT, AMZN, GOOGL) | USD 39,594 | 40.8% |
-| Utilities/Energy (VST) | USD 8,019 | 8.3% |
+| Technology — semis (NVDA, AVGO, MRVL) | USD 42,607 | 43.9% |
+| Technology — hyperscalers (META, MSFT, AMZN, GOOGL) | USD 39,628 | 40.8% |
+| Utilities/Energy (VST) | USD 8,215 | 8.5% |
 | Cash | USD 6,553 | 6.75% |
-_Semi-group (NVDA+AVGO+MRVL) at 44.2% — within 50% cap. Two positions in profit: MRVL +3.9%, VST +1.8%. META (6.32pp buffer) and MSFT (5.03pp buffer) both above 4pp safe zone. Cash 6.75% above 2% floor. FOMC meeting in session — no new deployment today._
+_Semi-group (NVDA+AVGO+MRVL) at 43.9% — within 50% cap. Three positions in profit: MRVL +6.43%, VST +4.30%. META buffer 7.46pp (safe zone). MSFT 4.28pp (watchpoint; FOMC pressure). Cash 6.75% above 2% floor. FOMC in session — no deployment today._
 
 **Thesis contracts (updated 2026-06-16 pre-market):**
 | Symbol | Invalidation | Review By | Status |
@@ -105,15 +118,15 @@ _Semi-group (NVDA+AVGO+MRVL) at 44.2% — within 50% cap. Two positions in profi
 
 **No C-rated positions.**
 
-**Key notes for Week 3 (pre-market June 16):**
-1. MRVL: S&P 500 inclusion June 22 is a major passive buying catalyst — index funds must own it by June 20 close.
-2. FOMC meeting in session June 16–17. Expected hold at 3.50–3.75% (97% probability). Hawkish messaging likely but oil deflationary (Brent USD 83) could moderate tone.
-3. Iran deal SIGNED (not just MOU): Trump/Vance signed June 15. Full Hormuz reopening + 60-day nuclear talks. Macro overhang fully resolved.
-4. VST ex-dividend June 22 (USD 0.229/share × 52 = USD 11.91 incoming to cash).
+**Key notes for Week 3 (market-open June 16):**
+1. MRVL: S&P 500 inclusion June 22 — index funds must own by June 20 close. "Massive news" confirmed (Motley Fool June 16). FY2028 outlook raised to USD 16.5B.
+2. FOMC in session June 16–17. Expected hold at 3.50–3.75%. First meeting under new Chair Kevin Warsh. Decision tomorrow. MSFT softness (-1.62% intraday) reflects FOMC growth-multiple compression — not a thesis break.
+3. Iran deal SIGNED: Full Hormuz reopening + 60-day nuclear talks. Oil Brent USD 83. Macro overhang fully resolved.
+4. VST ex-dividend June 22 (USD 0.229/share × 52 = USD 11.91 incoming to cash). New HWM USD 158.57 today — stop ratcheting up.
 5. AMZN review_by June 22 — pre-market June 22 must include explicit hold/trim/exit decision.
-6. META buffer: 6.32pp (safe; well above 4pp threshold). MSFT: 5.03pp (comfortable).
+6. META buffer: 7.46pp (comfortable; well above 4pp threshold). MSFT: 4.28pp (watchpoint — midday must check).
 7. AMD re-entry: blocked until AMD recovers above USD 508.43.
-8. No trades planned today: FOMC uncertainty + cash at 6.75% + all 8 theses intact.
+8. No trades today: FOMC uncertainty + stop audit passed 8/8 + all 8 theses intact.
 
 ---
 
@@ -166,3 +179,4 @@ _Semi-group (NVDA+AVGO+MRVL) at 44.2% — within 50% cap. Two positions in profi
 | 2026-06-15 (midday) | **97,007.87** | **756.15** | **-2.99%** | **+0.26%** | **-3.25pp** |
 | 2026-06-15 (EOD close) | **97,186.26** | **754.83** | **-2.814%** | **+0.086%** | **-2.90pp** |
 | 2026-06-16 (pre-market) | **97,030.05** | ~**763** (est, futures +1.22%) | **-2.970%** | ~**+1.17%** (est) | **~-4.14pp** (est; SPY futures driving benchmark up) |
+| 2026-06-16 (market-open) | **97,032.20** | ~**763+** (est; Iran deal + FOMC) | **-2.968%** | ~**+1.17%** (est) | **~-4.14pp** (est) |
