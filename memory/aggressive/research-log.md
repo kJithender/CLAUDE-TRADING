@@ -1247,3 +1247,178 @@ META and MSFT slipped slightly in the afternoon (modest profit-taking after morn
 - MRVL +10.1% on Day 1 — strongest day-1 performance of any position in the book. Trailing stop ratcheting up materially (new HWM ~USD 307.95).
 - META buffer EOD: 6.14pp — well above 4pp threshold. No action needed before June 24 review_by.
 - Alpha gap: -2.90pp (improved from -3.25pp midday, -4.28pp prior week end, -5.13pp pre-market). On a clear recovery trajectory.
+
+---
+
+## 2026-06-16 — WEEK 3 PRE-MARKET (Tuesday)
+[search: WebSearch fallback — MiniMax M3 not available in this session]
+
+### Portfolio snapshot (live Alpaca data, ~8:12 AM ET)
+
+| Symbol | Qty | Avg Entry | Pre-mkt Price | P/L% | Change vs June 15 close | Buffer to -12% cut |
+|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 212.08 | -0.71% | -0.17% | 11.29pp |
+| META | 23 | USD 630.12 | USD 594.35 | -5.68% | +0.15% | **6.32pp ✅** |
+| AVGO | 34 | USD 406.23 | USD 394.10 | -2.99% | +0.04% | 9.01pp |
+| MSFT | 28 | USD 426.21 | USD 396.51 | -6.97% | -0.81% | **5.03pp ✅** |
+| AMZN | 36 | USD 247.99 | USD 247.65 | -0.14% | +0.66% | 11.86pp |
+| VST | 52 | USD 151.47 | USD 154.21 | **+1.81% ✅** | +0.45% | 15.51pp |
+| GOOGL | 16 | USD 370.22 | USD 369.12 | -0.30% | -0.06% | 11.70pp |
+| MRVL | 25 | USD 293.29 | USD 304.82 | **+3.93% ✅** | -1.31% | 14.93pp |
+
+**Account equity: USD 97,030.05** (vs last_equity USD 97,144.23; pre-market change: -0.12% — shock threshold -6% NOT triggered ✓)
+**Cash: USD 6,553.24 (6.75% of portfolio)**
+**Semi-group concentration (NVDA+AVGO+MRVL): USD 42,864 / USD 97,030 = 44.2%** (within 50% cap)
+**Weekly new-position count (Week 3): 1/8 (MRVL, June 15)**
+
+---
+
+### Drawdown circuit breaker check
+- Equity HWM: USD 101,144.73 (set June 4)
+- Current equity: USD 97,030.05
+- Drawdown from HWM: **(97,030 − 101,145) / 101,145 = -4.07%**
+- Circuit breaker threshold: 20%
+- **Status: NOT TRIGGERED. 15.93pp of headroom.**
+
+---
+
+### Intraday shock check
+- Pre-market equity: USD 97,030.05 vs last_equity: USD 97,144.23 (June 15 close)
+- Change: **-0.12%** (threshold -6% — NOT triggered ✓)
+
+---
+
+### Market posture (June 16, 2026)
+**Overall: Risk-on continuation. Iran deal signed. FOMC meeting in session (hold expected). Oil falling further.**
+
+- **S&P 500 futures:** ESM26 +1.22% pre-market. Polymarket 52% probability of higher open. Market extending the Iran ceasefire risk-on rally from Monday June 15 (+1.86% SPY, Nasdaq +3%). Source: Benzinga/Polymarket, June 16, 2026. Date of fact: June 16, 2026.
+- **Iran peace deal — SIGNED:** Trump and Vance virtually signed the US-Iran agreement June 15, ending hostilities and committing to Hormuz reopening + 60 days of nuclear negotiations. Iranian Parliament Speaker Ghalibaf co-signed. This is the formal agreement, not just an MOU — the macro overhang that drove the June 5–10 tech selloff is fully resolved. Oil prices: Brent settled at USD 83.17 (−4.76%), lowest since March 4, 2026. Source: NBC News/Bloomberg/CNN, June 15, 2026. Date of fact: June 15, 2026.
+- **FOMC meeting June 16–17:** Fed is in session today, decision announced June 17 (tomorrow). 97% probability of hold at 3.50–3.75%; 0% probability of cut; ~3% probability of hike. Fed messaging likely hawkish (May CPI 4.2%, NFP +172K) but the oil price collapse since the Iran deal is disinflationary — could moderate the dot plot. This is a known risk event: tech growth names typically pause ahead of the decision. Source: TradingKey/FXStreet/Polymarket, June 16, 2026. Date of fact: June 16, 2026.
+- **Oil deflationary:** Brent crude at USD 83.17 (was USD 100+ during Iran war). Oil falling reduces CPI, reduces rate-hike probability, is a net positive for high-multiple tech names (lower discount rate). Slight near-term VST narrative headwind (gas gets cheaper vs nuclear), but VST's PPAs are fixed-rate and insulated. Source: Bloomberg, June 15, 2026. Date of fact: June 16, 2026.
+- **Date of all facts:** June 16, 2026 pre-market.
+
+---
+
+### Thesis contract review — all positions ("what changed since yesterday")
+
+**NVDA — Thesis: INTACT.**
+- *What changed:* Strong Buy consensus (~38 analysts). Nvidia selling debt for the first time in five years (bond issuance) — signals confidence in capital allocation, minor. Annual Stockholder Meeting confirmed June 24 (virtual) — NOT earnings; routine shareholder vote. No hyperscaler relationship change. Stock ~USD 212, near recent ATHs. Source: Yahoo Finance/NVDA Newsroom, June 16, 2026. Date: June 16, 2026.
+- Invalidation check: No hyperscaler customer lost, Q2 guide ~USD 91B intact. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. A-rated.** No action.
+
+**META — Thesis: INTACT.**
+- *What changed:* Pre-market ~USD 594.35. No formal equity offering confirmed — still "pure speculation," no banks hired per all available sources. Stock "should you buy below USD 600?" narrative in analyst commentary (bullish framing). Buffer: 6.32pp (safe zone; well above 4pp threshold). Thesis contract renewed June 15: review_by June 24. Source: Yahoo Finance META/fin search, June 16, 2026. Date: June 16, 2026.
+- Invalidation check: No formal offering + no AI monetization downgrade. ✓ Not triggered.
+- Review by: 2026-06-24. ✓ Not expired (8 days).
+- **Decision: HOLD. B-rated.** Buffer comfortable.
+
+**AVGO — Thesis: INTACT.**
+- *What changed:* USD 394.10. Recovering well from the post-earnings dip. AI XPV Platform with Apollo/Blackstone; Q3 AI revenue ~USD 16B guide intact. No new material news. Source: StockAnalysis/AVGO, June 16, 2026. Date: June 16, 2026.
+- Invalidation check: AI revenue not cut, Q3 guide intact. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. A-rated.** No action.
+
+**MSFT — Thesis: INTACT.**
+- *What changed:* USD 396.51 (-0.81% pre-market). Quantum milestone with Quantinuum announced — Microsoft nearing commercial quantum computing reality. Nadella's Monday Xbox commentary. MSFT trailing SPY by 17% YTD but AI thesis (Azure +40%, AI business USD 37B+ run rate) unchanged. FOMC tomorrow is relevant — Microsoft Azure revenue is relatively rate-insensitive (enterprise contracts) but stock valuation contracts in hawkish environments. Citi USD 605 catalyst watch active. Source: Yahoo Finance/CNBC MSFT, June 16, 2026. Date: June 16, 2026.
+- Invalidation check: Azure not decelerating, Copilot not underperforming. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. B-rated.** Buffer 5.03pp — adequate, not alarming. Monitoring.
+
+**AMZN — Thesis: INTACT.**
+- *What changed:* USD 247.65 (+0.66% today — slightly firm). Amazon completed C$13.9B Canadian dollar bond offering June 12 (infrastructure financing). Prime Day June 23–26 is 7 days away. FOMC June 17 decision could influence near-term sentiment. AWS +28% thesis intact. Source: TradingKey/StockInvest AMZN, June 16, 2026. Date: June 16, 2026.
+- Invalidation check: AWS growth not decelerating. ✓ Not triggered.
+- Review by: 2026-06-22 (6 days away — pre-market June 22 must make explicit hold/trim/exit decision and renew contract). ✓ Not expired today.
+- **Decision: HOLD. A-rated.** Upcoming contract renewal June 22 flagged.
+
+**VST — Thesis: INTACT.**
+- *What changed:* USD 154.21 (+0.45% today). Oil falling to USD 83 (Brent) — narrative headwind (nuclear vs gas spread narrows), but VST's 20-year fixed-rate PPAs with Meta and AWS are fully insulated. Helix consortium (KKR+NVDA+VST) intact. Ex-dividend June 22 (USD 0.229/share × 52 = USD 11.91 incoming). Wells Fargo Buy rating maintained June 8. Source: Investing.com/Yahoo Finance VST, June 16, 2026. Date: June 16, 2026.
+- Invalidation check: No PPA cancellations, no regulatory action. ✓ Not triggered.
+- Review by: 2026-07-15. ✓ Not expired.
+- **Decision: HOLD. A-rated.** Oil narrative is noise vs fixed-rate PPA thesis.
+
+**GOOGL — Thesis: INTACT.**
+- *What changed:* USD 369.12 (-0.06%, essentially flat). Google announced USD 1.5B data center expansion in Jackson County, Alabama (2026–2027). Google rejected USD 2B US quantum computing funding offer (minor; not thesis-relevant). GCP +63% YoY thesis unchanged. Source: Google Finance/Stockanalysis GOOGL, June 16, 2026. Date: June 16, 2026.
+- Invalidation check: GCP not decelerating, investment plan not cut. ✓ Not triggered.
+- Review by: 2026-06-25. ✓ Not expired.
+- **Decision: HOLD. A-rated.** USD 1.5B Alabama data center is thesis-confirming AI infrastructure investment.
+
+**MRVL — Thesis: INTACT. Major upcoming catalyst.**
+- *What changed:* USD 304.82 (-1.31% pre-market vs yesterday's +10.1% surge — normal digestion of a large single-day move). **CRITICAL CATALYST: Marvell Technology joins the S&P 500 on June 22.** Index funds must buy MRVL by the close on June 20 (Friday). B. Riley raised target to USD 345; Stifel USD 321; CFRA USD 300 (all on June 12). Jensen Huang (Nvidia CEO) called Marvell the "next trillion-dollar company" at COMPUTEX 2026. Dan Durn (ex-Adobe CFO) confirmed in role; Q2 FY2027 guidance reaffirmed. Data center revenue +46% last year; on track for +50% this year; FY2028 forecast USD 16.5B. Source: Barchart/TimothySykes/Yahoo Finance MRVL, June 16, 2026. Date: June 16, 2026.
+- Invalidation check: No hyperscaler chip program loss; revenue growth intact (+28% Q1 FY2027). ✓ Not triggered.
+- Review by: 2026-06-29. ✓ Not expired.
+- **Decision: HOLD. A-rated.** S&P 500 inclusion June 22 creates index-fund buying pressure through June 20. This is a near-term tailwind for our existing position.
+
+---
+
+### Earnings window check (June 16)
+| Symbol | Next Earnings | Within 2 trading days? | Action |
+|---|---|---|---|
+| NVDA | Aug 26, 2026 | No (71 days) | None required |
+| META | Jul 29, 2026 | No (43 days) | None required |
+| AVGO | Sep 3, 2026 | No (79 days) | None required |
+| MSFT | ~Jul 29–31, 2026 | No (~43 days) | None required |
+| AMZN | ~Late Jul 2026 | No (~42 days) | None required |
+| VST | Aug 6, 2026 | No (51 days) | None required |
+| GOOGL | ~Late Jul 2026 | No (~42 days) | None required |
+| MRVL | ~Late Aug/Sep 2026 | No (~75+ days) | None required |
+
+**No earnings window risk for any position. ✓**
+
+---
+
+### Proactive trim heuristic check (June 16)
+
+For each position: is it (1) within 3pp of -12% cut, AND (2) review_by within 5 trading days, AND (3) no near-term catalyst?
+
+| Symbol | Buffer | Review_by | Near-term catalyst | Trim? |
+|--------|--------|-----------|-------------------|-------|
+| MSFT | 5.03pp | Jun 25 | Quantum milestone; FOMC decision | No (buffer > 3pp) |
+| META | 6.32pp | Jun 24 | Iran risk-on; FOMC | No (buffer > 3pp) |
+| All others | 9–15pp+ | Jun 22–Jul 15 | Various | No |
+
+**No proactive trims warranted. All buffers comfortable.**
+
+---
+
+### Deployment check
+- Cash: USD 6,553.24 = **6.75%** of equity
+- 20% cash threshold: NOT triggered (6.75% < 20%)
+- Portfolio 93.25% invested — well above ≥80% target
+- Week 3 new positions: 1/8 used (MRVL June 15)
+- Remaining slots this week: 7
+- AMD: re-entry blocked until AMD recovers above USD 508.43. Not yet confirmed above threshold.
+- **EXPLICIT DECISION: No new buys today.** Reasoning:
+  1. FOMC meeting in session today, announcement tomorrow June 17 — known risk event for growth multiples; hawkish dot plot could create near-term headwind for high-P/E names.
+  2. Cash at 6.75% — adequate above the 2% floor but deploying more would push closer to minimum; MSFT at 5.03pp and META at 6.32pp from -12% cut still warrant maintaining buffer.
+  3. MRVL S&P 500 inclusion June 22 creates passive buying tailwind for our existing MRVL position — no additional action needed.
+  4. All 8 existing positions thesis-intact; no compelling new entry that justifies additional risk ahead of FOMC.
+  5. Portfolio already 93.25% deployed — no deployment urgency.
+
+---
+
+### Guardrail check for today
+| Rule | Limit | Status |
+|---|---|---|
+| Single position max | 35% | NVDA 22.5% — largest position. ✓ All clear |
+| Cash floor | 2% min | 6.75% — above minimum ✓ |
+| Weekly new positions (Week 3) | 8 max | 1/8 used (MRVL June 15) ✓ |
+| Semi-group concentration (NVDA+AVGO+MRVL) | ≤50% | 44.2% ✓ |
+| Circuit breaker | >20% below HWM | -4.07% — NOT triggered ✓ |
+| Intraday shock | >6% below last_equity | -0.12% — NOT triggered ✓ |
+| Stop audit | 8/8 live trailing stops | Confirmed via qty_available=0 on all 8 positions ✓ |
+| Earnings window | No new buys within 2 days of earnings | Nearest: META Jul 29 ✓ |
+| Control switch | ACTIVE | ✓ |
+
+---
+
+### Planned trades for today (June 16, 2026 — market open)
+
+No trades warranted. FOMC meeting in progress (announcement tomorrow); cash at 6.75% serves as buffer; all 8 positions thesis-intact; portfolio 93.25% deployed. MRVL S&P 500 inclusion June 22 creates passive buying tailwind for our existing position. Do nothing and let the book breathe.
+
+```json
+{
+  "plan_date": "2026-06-16",
+  "trades": []
+}
+```

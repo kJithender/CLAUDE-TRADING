@@ -140,15 +140,18 @@ are trading at a fraction of the value they deserve.
 
 ---
 
-## Week 3 priorities (as of 2026-06-15 pre-market — UPDATED)
+## Week 3 priorities (as of 2026-06-16 pre-market — UPDATED)
 
-- **META decision MADE (2026-06-15 pre-market):** Iran ceasefire confirmed over weekend (Nasdaq +1.8%). META opened above USD 574 (well above USD 562 threshold). No equity offering confirmed — still "pure speculation," no banks hired. Ad revenue +33% YoY thesis intact. **DECISION: HOLD.** Thesis contract renewed: invalidation unchanged, new review_by date **June 24, 2026**. Buffer improved to 3.10pp (↑ from 2.12pp Friday EOD). Buffer must cross 4pp before new position deployment unlocked.
-- **MSFT:** Buffer recovered to 5.05pp (↑ from 3.68pp). Out of HIGH ALERT zone. Citi opened positive catalyst watch (USD 605 PT). Azure thesis intact. B-rated on Monday conviction ranking — no action needed.
-- **AMD re-entry remains blocked** until AMD recovers above entry USD 508.43. No averaging down. Do not chase the recovery.
-- **New positions:** Still held back while META buffer < 4pp. If META opens above ~USD 580 at 9:35 AM (buffer > 4pp), market-open routine may evaluate deploying into MRVL or ETN from watchlist.
-- **Iran ceasefire resolved:** Strait of Hormuz MOU signed; formal signing ceremony Switzerland June 19. Oil down ~20%+ from 2026 peak. Risk-on for tech/growth names. VST faces slight narrative headwind (gas gets cheaper) but fixed-rate PPAs are insulated.
-- **AMZN review_by June 22:** Standard review in 7 days. AWS +28% (fastest 15 quarters); Prime Day June 23-26; thesis intact. Likely renewal.
-- **Watchlist for deployment (when META buffer > 4pp):** MRVL (custom silicon breakout), ETN (AI power capex / electrical equipment for data centers). TSM remains on longer-term watchlist.
+- **MRVL in portfolio (June 15 entry):** 25 shares @ USD 293.29; 18% trailing stop `a9097c8c`. +3.93% after Day 1 (+10.1% at peak). **S&P 500 inclusion June 22** — index passive buying tailwind through June 20 close. Hold. A-rated.
+- **META (6.32pp buffer — safe zone):** Thesis contract renewed June 15 (review_by June 24). No equity offering confirmed. Buffer comfortably above 4pp. No action until June 24 review.
+- **MSFT (5.03pp buffer):** Azure thesis intact. Quantum milestone (Quantinuum). Citi USD 605 catalyst watch. B-rated; FOMC tomorrow is a known risk but not thesis-breaking.
+- **FOMC June 16–17:** Fed holds at 3.50–3.75% (97% probability). Hawkish dot plot likely. Oil at USD 83 (Brent) is disinflationary — may moderate hawkish tone. No trades today (FOMC risk event).
+- **AMZN review_by June 22:** Pre-market June 22 must include explicit hold/trim/exit decision. AWS +28%; Prime Day June 23-26; thesis intact. Likely renewal.
+- **VST ex-dividend June 22:** USD 0.229/share × 52 shares = USD 11.91 cash incoming.
+- **AMD re-entry remains blocked** until AMD recovers above entry USD 508.43. No averaging down.
+- **Iran deal SIGNED (June 15):** Full peace agreement (Hormuz reopening + 60-day nuclear talks). Oil Brent USD 83. Macro overhang fully resolved. Risk-on backdrop supports all 8 positions.
+- **Cash deployment:** Cash at 6.75% — above 2% floor but below 20% mandatory deployment threshold. No new positions today (FOMC). After FOMC June 17, reassess if any compelling new entry.
+- **No new positions (FOMC risk):** Wait until June 17 FOMC decision is behind us. After that, evaluate AMZN add if review_by renewal is clear, or ETN (AI power capex) if conviction builds.
 
 ### Proactive trim heuristic (added Week 3)
 
