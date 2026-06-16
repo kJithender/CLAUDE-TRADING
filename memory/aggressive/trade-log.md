@@ -1061,3 +1061,73 @@ No planned trades → formal gate N/A. Quick thesis check on most-stressed posit
 ### Result
 All 8 positions within guardrails. No trades. All 18% trailing stops active and audited. FOMC-day softness driving broad AI-tech weakness (AVGO -3.945%, MRVL -5.565% intraday). MSFT at 3.995pp from cut threshold (watchpoint; FOMC uncertainty compression, not thesis break). VST and GOOGL new all-time HWMs; VST +5.39% from entry. FOMC hold decision tomorrow June 17 — hold all positions.
 
+---
+
+## 2026-06-16 — EOD CLOSE (~3:50 PM ET)
+
+**No trades executed.** No exits today.
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 95,591.38 |
+| Last equity (prev close June 15) | USD 97,144.23 |
+| Today's P/L | **-USD 1,552.85 (-1.598%)** |
+| Cash | USD 6,553.24 (6.86%) |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -5.490% (circuit breaker 20% — NOT triggered ✓; 14.51pp headroom) |
+
+### Market context [search: WebSearch fallback — MiniMax M3 not available]
+FOMC day-1 (meeting June 16–17, decision tomorrow) drove a pronounced tech rotation — Nasdaq -0.81%, Dow Jones +0.78% (value/industrials outperformed). Growth-multiple compression ahead of the FOMC hold decision weighed on AI-tech names. SpaceX announced an AI deal and jumped +20%, again absorbing capital from AI-tech adjacents. Iran ceasefire MOU formally signed today (Strait of Hormuz reopening framework), confirming the macro geopolitical overhang is resolved — supportive of tomorrow's risk-on environment post-FOMC. Oil continued lower. This context explains VST's strong +3.02% session: nuclear power gains relative to gas as oil falls, validating the long-term AI power demand thesis while macro recovery supports sentiment.
+
+### EOD position review vs midday
+
+| Symbol | Midday Price | EOD Price | Δ | P/L% from Entry | Buffer to -12% |
+|---|---|---|---|---|---|
+| NVDA | USD 208.72 | USD 207.45 | -0.61% | -2.880% | 9.120pp |
+| META | USD 596.745 | USD 599.80 | +0.51% | -4.812% | **7.188pp** ✅ (↑ from 6.703pp) |
+| AVGO | USD 378.40 | USD 376.89 | -0.40% | **-7.223%** | **4.777pp ⚠️** (↓ from 5.149pp) |
+| MSFT | USD 392.09 | USD 393.40 | +0.33% | **-7.698%** | **4.302pp ⚠️** (↑ from 3.995pp) |
+| AMZN | USD 246.97 | USD 246.49 | -0.19% | -0.605% | 11.395pp |
+| VST | USD 159.635 | USD 158.16 | -0.92% | **+4.417% ✅** | 17.417pp |
+| GOOGL | USD 371.745 | USD 373.12 | +0.37% | +0.783% ✅ | 12.783pp |
+| MRVL | USD 291.69 | USD 279.50 | -4.18% | -4.700% | 7.300pp |
+
+Notable afternoon moves: MRVL continued its S&P inclusion reversal, dropping another -4.18% from midday to close at USD 279.50 — total -9.51% today (buy-rumor/sell-news; index funds buy by June 20). META improved slightly into the close. MSFT recovered from midday. VST pulled back from intraday highs but stop ratcheted to new HWM USD 161.48.
+
+### Performance vs SPY
+| Metric | Value |
+|---|---|
+| Aggro today | -1.598% (USD 97,144 → USD 95,591) |
+| SPY today (754.83 → 750.33) | -0.596% |
+| Today vs SPY | **-1.002pp** |
+| Aggro since inception | **-4.409%** |
+| SPY since inception (754.18 → 750.33) | **-0.511%** |
+| Alpha since inception | **-3.898pp** |
+
+### Stop audit — 8/8 confirmed ✓
+
+| Symbol | Stop Order ID | EOD Price | HWM | Stop Price | Status |
+|---|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 207.45 | USD 221.60 | USD 181.712 | ✓ live |
+| META | `11c3a1bf` | USD 599.80 | USD 642.38 | USD 526.7516 | ✓ live |
+| AVGO | `36f5a45f` | USD 376.89 | USD 426.48 | USD 349.7136 | ✓ live |
+| MSFT | `ef211767` | USD 393.40 | USD 427.51 | USD 350.5582 | ✓ live |
+| AMZN | `b55bef05` | USD 246.49 | USD 250.43 | USD 205.3526 | ✓ live |
+| VST | `5b347be3` | USD 158.16 | USD 161.48 (NEW ATH ✅) | USD 132.4136 | ✓ live — stop ratcheted |
+| GOOGL | `e52a43f1` | USD 373.12 | USD 375.77 | USD 308.1314 | ✓ live |
+| MRVL | `a9097c8c` | USD 279.50 | USD 316.99 | USD 259.9318 | ✓ live |
+
+**No stops missing. No stops needing recreation.**
+
+### Intraday shock check (EOD confirmation)
+- Equity EOD: USD 95,591.38 vs last_equity: USD 97,144.23
+- Change: -1.598% (threshold -6% — NOT triggered ✓)
+

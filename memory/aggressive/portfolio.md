@@ -17,7 +17,77 @@ but always re-fetches live data before trading._
 
 ---
 
-## Last snapshot — 2026-06-16 MIDDAY (~12:41 PM ET)
+## Last snapshot — 2026-06-16 EOD (~3:50 PM ET)
+
+| Field | Value |
+|---|---|
+| Equity | USD 95,591.38 |
+| Cash | USD 6,553.24 (6.86%) |
+| Long market value | USD 89,038.14 |
+| Open positions | 8 |
+| last_equity (June 15 EOD) | USD 97,144.23 |
+| Today's P/L | -USD 1,552.85 (-1.598%) — FOMC day-1 tech rotation; Nasdaq -0.81%; MRVL -9.51% reversal; AVGO -4.33% |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -5.490% (circuit breaker: 20% — NOT triggered; 14.51pp of headroom) |
+
+**Open positions (2026-06-16 EOD ~3:50 PM ET):**
+
+| Symbol | Qty | Avg Entry | EOD Price | Market Value | Unrealized P/L | P/L % | -12% Cut Trigger | Buffer |
+|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 207.45 | USD 21,367.16 | -USD 633.64 | -2.880% | USD 187.97 | 9.120pp |
+| META | 23 | USD 630.12 | USD 599.80 | USD 13,795.40 | -USD 697.36 | -4.812% | USD 554.51 | 7.188pp ✅ |
+| AVGO | 34 | USD 406.23 | USD 376.89 | USD 12,814.26 | -USD 997.56 | -7.223% | USD 357.48 | **4.777pp ⚠️** |
+| MSFT | 28 | USD 426.21 | USD 393.40 | USD 11,015.20 | -USD 918.68 | -7.698% | USD 375.06 | **4.302pp ⚠️** |
+| AMZN | 36 | USD 247.99 | USD 246.49 | USD 8,873.64 | -USD 54.04 | -0.605% | USD 218.23 | 11.395pp |
+| VST | 52 | USD 151.47 | USD 158.16 | USD 8,224.32 | +USD 347.88 | **+4.417% ✅** | USD 133.29 | 17.417pp |
+| GOOGL | 16 | USD 370.22 | USD 373.12 | USD 5,969.92 | +USD 46.40 | +0.783% ✅ | USD 325.79 | 12.783pp |
+| MRVL | 25 | USD 293.29 | USD 279.50 | USD 6,987.50 | -USD 344.63 | -4.700% | USD 258.09 | 7.300pp |
+
+**Stop audit (2026-06-16 EOD): ALL 8 positions confirmed with live 18% trailing stop orders. ✓**
+
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| META | `11c3a1bf` | USD 642.38 | USD 526.7516 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| MSFT | `ef211767` | USD 427.51 | USD 350.5582 | ✓ live |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| VST | `5b347be3` | USD 161.48 (NEW ATH ✅) | USD 132.4136 | ✓ live — stop ratcheted to new high |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| MRVL | `a9097c8c` | USD 316.99 | USD 259.9318 | ✓ live |
+
+**Sector exposure (EOD June 16):**
+| Sector | Market Value | % of Portfolio |
+|---|---|---|
+| Technology — semis (NVDA, AVGO, MRVL) | USD 41,168.92 | 43.1% |
+| Technology — hyperscalers (META, MSFT, AMZN, GOOGL) | USD 39,654.16 | 41.5% |
+| Utilities/Energy (VST) | USD 8,224.32 | 8.6% |
+| Cash | USD 6,553.24 | 6.86% |
+_FOMC day-1: Nasdaq -0.81%, broad tech rotation. MRVL reversed -9.51% (buy-rumor/sell-news on S&P inclusion; index funds buy June 17-20). AVGO -4.33% (4.777pp buffer ⚠️ watchpoint). MSFT improved slightly from midday (4.302pp). META recovered to 7.188pp buffer. VST new all-time HWM USD 161.48 (+3.02%). SpaceX +20% on AI deal again absorbed AI-tech capital. Iran ceasefire MOU formally signed (Hormuz framework). FOMC decision tomorrow — no positions cut, all stops confirmed._
+
+**Thesis contracts (updated 2026-06-16 EOD):**
+| Symbol | Invalidation | Review By | Status |
+|---|---|---|---|
+| NVDA | NVDA loses a major hyperscaler customer OR Q2 FY2027 guide drops below USD 80B | 2026-06-25 | ✓ INTACT — -2.880% from entry; 9.120pp buffer |
+| META | Meta formally confirms equity offering AND management explicitly downgrades AI monetization | 2026-06-24 | ✓ INTACT — -4.812%; buffer 7.188pp ✅; Arete upgraded to Buy/USD 735 |
+| AVGO | AI revenue guide cut below USD 12B for next quarter OR Q3 total revenue miss >10% | 2026-06-25 | ✓ INTACT — USD 16B Q3 guide; -7.223% from entry; 4.777pp buffer ⚠️ (watchpoint) |
+| MSFT | Azure growth decelerates below 30% YoY OR Copilot explicitly called underperforming | 2026-06-25 | ✓ INTACT — Azure +40%; -7.698%; 4.302pp buffer ⚠️ (watchpoint) |
+| AMZN | AWS growth decelerates to <20% YoY OR Trainium adoption fails hyperscaler traction | 2026-06-22 | ✓ INTACT — AWS +28%; -0.605%; 11.395pp buffer. ⚠️ Review June 22 (6 days). |
+| VST | Nuclear PPAs with Meta/AWS cancelled or renegotiated; OR material regulatory action vs nuclear fleet | 2026-07-15 | ✓ INTACT — +4.417% ✅; HWM USD 161.48 NEW ATH; ex-div June 22; Iran MOU signed |
+| GOOGL | GCP growth decelerates below 40% YoY OR AI investment plan explicitly cut | 2026-06-25 | ✓ INTACT — GCP +63%; +0.783% ✅; 12.783pp buffer |
+| MRVL | MRVL loses major hyperscaler custom chip program OR revenue growth <15% YoY OR CFO transition causes material disruption | 2026-06-29 | ✓ INTACT — S&P 500 inclusion June 22; -4.700% (buy-rumor reversal; index funds buy June 17-20); 7.300pp buffer |
+
+**Performance vs SPY (updated 2026-06-16 EOD):**
+| Metric | Value |
+|---|---|
+| Today: Aggro -1.598% vs SPY -0.596% | **-1.002pp today** |
+| Aggro since inception | **-4.409%** |
+| SPY since inception (754.18 → 750.33) | **-0.511%** |
+| Alpha since inception | **-3.898pp** |
+
+---
+
+## Prior snapshot — 2026-06-16 MIDDAY (~12:41 PM ET)
 
 | Field | Value |
 |---|---|
@@ -243,3 +313,4 @@ _Semi-group (NVDA+AVGO+MRVL) at 43.9% — within 50% cap. Three positions in pro
 | 2026-06-16 (pre-market) | **97,030.05** | ~**763** (est, futures +1.22%) | **-2.970%** | ~**+1.17%** (est) | **~-4.14pp** (est; SPY futures driving benchmark up) |
 | 2026-06-16 (market-open) | **97,032.20** | ~**763+** (est; Iran deal + FOMC) | **-2.968%** | ~**+1.17%** (est) | **~-4.14pp** (est) |
 | 2026-06-16 (midday) | **96,060.12** | **753.07** | **-3.940%** | **-0.147%** | **-3.793pp** |
+| 2026-06-16 (EOD close) | **95,591.38** | **750.33** | **-4.409%** | **-0.511%** | **-3.898pp** |
