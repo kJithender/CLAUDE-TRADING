@@ -3,6 +3,84 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-16 09:36 ET — MARKET OPEN (no trades; FOMC gate; stop audit 4/4; V and VST stops ratcheted ⬆️)
+- **Action:** No trades — plan_date 2026-06-16 has trades: []. FOMC gate active through Wednesday June 18, 2 PM ET.
+- **Market status:** `is_open: true` ✓ (confirmed via clock at 09:36 ET — next close 16:00 ET June 16)
+- **Account:** Equity $99,248.66 | Cash $74,304.63 (74.9%) | Long market value $24,944.03
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+### Shock check
+- Equity $99,248.66 vs last_equity $98,862.97 = **+$385.69 = +0.39%** — POSITIVE. No shock day. ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21 (from equity history); current $99,248.66 = **−2.10%** — within −10% limit. ✓ FOMC gate is the operative constraint.
+
+### Breaking-news gate
+- No trades planned today — FOMC gate; fast scan not required. ✓
+
+### Plan idempotency
+- plan_date 2026-06-16 found; trades: [] — no prior EXECUTED line. First run today. ✓
+
+### Position review (09:36 ET — live Alpaca data)
+
+**LLY** ($1,143.695, **+4.59% from avg entry $1,093.534**, **+1.27% intraday** vs $1,129.35 lastday) ⭐ STRONG
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** ✓
+- Stop buffer: $1,143.695 − $1,064.457 = **$79.24 (6.93%)** ✓ Well protected.
+- −7% cut threshold: $1,016.99 — CLEAR by $126.71 ✓. No action.
+- Medicare GLP-1 Bridge July 1 in 15 days. BRUIN CLL-322 positive pipeline. HOLD.
+
+**V** ($326.18, **+0.81% from avg entry $323.57**, **+0.73% intraday** vs $323.82 lastday) ✓ INTACT
+- Trailing stop 66033918: HWM **$326.905** ⬆️ (ratcheted from $326.435 EOD Jun 15), stop **$294.2145** ⬆️ ✓
+- Stop buffer: $326.18 − $294.2145 = **$31.97 (9.80%)** ✓ Healthy and improving.
+- −7% cut threshold: $300.92 — CLEAR by $25.26 ✓. No action.
+- FOMC caution weighing on financials — temporary; OpenAI/stablecoin thesis intact. HOLD.
+
+**VST** ($158.17, **+6.29% from avg entry $148.81**, **+3.03% intraday** vs $153.52 lastday) ⭐⭐ HELIX — STRONG
+- Trailing stop c4c200a5: HWM **$158.49** ⬆️ (ratcheted from $155.43 EOD Jun 15), stop **$142.641** ⬆️ (from $139.887) ✓
+- Stop buffer: $158.17 − $142.641 = **$15.53 (9.82%)** ✓ Strong — near-full 10% trailing protection.
+- VST +3.03% intraday — continued Helix Digital Infrastructure momentum. Dividend ex-date June 22 in 6 days (USD 9.16 credit for 40sh). HOLD.
+- −7% cut threshold: $138.39 — CLEAR by $19.78 ✓. No action.
+
+### Stop audit (market-open June 16 — confirmed via Alpaca open orders endpoint)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new |
+| 66033918 | V | 22sh | **$326.905** ⬆️ | **$294.2145** ⬆️ | ✓ new — RATCHETED (from $326.435/$293.7915) |
+| c4c200a5 | VST | 40sh | **$158.49** ⬆️ | **$142.641** ⬆️ | ✓ new — RATCHETED (from $155.43/$139.887) |
+
+No orphaned stops. No missing stops. Stop audit: **4/4 PASS ✓**
+
+### Exit reconciliation
+No trailing stops filled since EOD June 15. All 3 positions (LLY, V, VST) held. No new closed-trade entries needed. No trades.jsonl entries needed.
+
+### Guardrail checks (market-open June 16)
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 0/3 | ≤3/week | FOMC gate — no new positions before Jun 18 2PM ET |
+| LLY above −7% cut threshold | +4.59% from entry | −7% | ✓ Clear by $126.71 |
+| V above −7% cut threshold | +0.81% from entry | −7% | ✓ Clear by $25.26 |
+| VST above −7% cut threshold | +6.29%, $158.17 > $138.39 | −7% | ✓ Clear by $19.78 |
+| Drawdown circuit breaker | $99,248 vs HWM $101,384 = −2.10% | <−10% | ✓ |
+| Intraday shock (vs last_equity $98,862.97) | +$385.69 = +0.39% | <−4% | ✓ Positive |
+| Cash | $74,304.63 (74.9%) | ≥5% | ✓ Ample |
+| All trailing stops active | 4/4 confirmed | required | ✓ |
+| Sector caps | Healthcare 11.52%, Financials 7.23%, Energy 6.38%, Cash 74.9% | <60% each | ✓ |
+| FOMC gate | No new positions before Jun 18 2 PM ET | — | ⚠️ ACTIVE |
+
+### Performance (market-open June 16, ~09:36 ET)
+- **Equity:** $99,248.66 (vs last_equity $98,862.97 = +$385.69 = +0.39%)
+- **Today P/L (unrealized, intraday):** LLY +$143.45 (+1.27%), V +$51.92 (+0.73%), VST +$186.00 (+3.03%) = net **+$381.37**
+- **Unrealized P/L (from entry):** LLY +$501.61 (+4.59%), V +$57.42 (+0.81%), VST +$374.40 (+6.29%) = net **+$933.43**
+- **Cash:** $74,304.63 (74.9%) | Long market value: $24,944.03
+- **SPY current (~09:36 ET):** $755.20 (+2.13% since inception $739.44)
+- **Since inception (2026-05-21):** Bull **−0.75%** ($100,000 → $99,248.66) vs SPY **+2.13%** = **Bull TRAILS SPY by ~2.88pp**
+- Note: Gap narrowing from −3.07pp (EOD Jun 15). VST +3.03% intraday on Helix momentum; all 3 positions positive today.
+
+---
+
 ## 2026-06-15 15:51 ET — CLOSE — EOD journal
 
 - **Action:** No trades. End-of-day P/L check, stop audit, exit reconciliation, journal.

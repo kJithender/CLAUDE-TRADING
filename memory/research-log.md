@@ -185,6 +185,8 @@ Reasons: (1) FOMC starts TODAY — Kevin Warsh's first meeting; dot plot Wednesd
 
 No trades planned.
 
+EXECUTED: 2026-06-16T13:36:06Z — No trades; FOMC gate active (post-Jun 18 2PM ET); stop audit 4/4 ✓ (V HWM ratcheted $326.435→$326.905, stop $293.7915→$294.2145; VST HWM ratcheted $155.43→$158.49, stop $139.887→$142.641 — VST +3.03% intraday on Helix momentum); LLY $1,143.695 (+4.59% from entry, +1.27% intraday); V $326.18 (+0.81% from entry, +0.73% intraday); VST $158.17 (+6.29% from entry, +3.03% intraday). All guardrails ✓.
+
 **Upcoming catalysts:**
 - **FOMC June 16–17 (starts TODAY)** — announcement Wednesday June 18, 2 PM ET; dot plot key
 - **VST dividend ex-date June 22** (USD 9.16 credit for 40sh — 6 days)
