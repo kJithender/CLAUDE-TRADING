@@ -1423,3 +1423,199 @@ No trades warranted. FOMC meeting in progress (announcement tomorrow); cash at 6
 }
 ```
 EXECUTED: 2026-06-16T13:46:33Z (no trades — no-trade plan confirmed; stop audit passed 8/8; MSFT at -7.73% / 4.28pp buffer watchpoint; VST +4.30% / new HWM USD 158.57; MRVL +6.43% / S&P 500 inclusion June 22 confirmed; FOMC hold expected; all theses intact)
+
+---
+
+## 2026-06-17 — WEEK 3 PRE-MARKET (Wednesday, FOMC Decision Day)
+[search: WebSearch fallback — MiniMax M3 not available in this session]
+
+### Portfolio snapshot (live Alpaca data, ~8:11 AM ET)
+
+| Symbol | Qty | Avg Entry | Pre-mkt Price | P/L % | Change vs June 16 EOD |
+|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 208.08 | -2.584% | +0.32% (stable) |
+| META | 23 | USD 630.12 | USD 596.56 | -5.325% | -0.61% (Threads 500M MAU) |
+| AVGO | 34 | USD 406.23 | USD 384.00 | -5.472% | +1.94% (recovering from FOMC day-1 -4.33%) |
+| MSFT | 28 | USD 426.21 | USD 391.90 | **-8.050%** | -0.49% (Oracle deal noise) |
+| AMZN | 36 | USD 247.99 | USD 246.20 | -0.724% | +0.08% (flat) |
+| VST | 52 | USD 151.47 | USD 160.05 | +5.664% | +0.91% (new ATH potential) |
+| GOOGL | 16 | USD 370.22 | USD 371.35 | +0.305% | -0.51% (stable) |
+| MRVL | 25 | USD 293.29 | USD 287.47 | -1.983% | **+3.16% — S&P 500 index rebalancing begins TODAY** |
+
+**Account equity: USD 96,049.65** (vs last_equity USD 95,599.15; pre-market P/L: +USD 450.50 = **+0.47% ✓ — POSITIVE pre-market**)
+**Cash: USD 6,553.24 (6.82%)**
+**Long market value: USD 89,496.41**
+**Semi-group concentration (NVDA+AVGO+MRVL): USD 41,675 / USD 96,050 = 43.4%** (below 50% cap)
+**Weekly new-position count (Week 3): 1/8 (MRVL June 15)**
+
+---
+
+### Drawdown circuit breaker check
+- Equity history high-water mark: **USD 101,144.73** (set June 4, from `history 1A 1D`)
+- Current equity: USD 96,049.65
+- Drawdown from HWM: **(96,049.65 − 101,144.73) / 101,144.73 = −5.037%**
+- Circuit breaker threshold: 20%
+- **Status: NOT TRIGGERED. 14.963pp of headroom.**
+
+---
+
+### Intraday shock check
+- Current equity: USD 96,049.65 vs last_equity USD 95,599.15
+- Change: **+0.47% (positive) — ABOVE last_equity**
+- Shock threshold: −6%
+- **Status: NOT TRIGGERED.** Portfolio up pre-market on MRVL S&P 500 buying and broad recovery.
+
+---
+
+### Stop audit (June 17 pre-market — ALL 8 STOPS CONFIRMED LIVE ✓)
+
+| Symbol | Order ID | HWM | Stop Price | Trail% | Qty | Status |
+|---|---|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | 18% | 103 | ✓ live |
+| META | `11c3a1bf` | USD 642.38 | USD 526.7516 | 18% | 23 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | 18% | 34 | ✓ live |
+| MSFT | `ef211767` | USD 427.51 | USD 350.5582 | 18% | 28 | ✓ live |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | 18% | 36 | ✓ live |
+| VST | `5b347be3` | USD 161.48 | USD 132.4136 | 18% | 52 | ✓ live |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | 18% | 16 | ✓ live |
+| MRVL | `a9097c8c` | USD 316.99 | USD 259.9318 | 18% | 25 | ✓ live |
+
+All positions show qty_available=0, confirming trailing stop orders hold all shares. ✓
+
+---
+
+### Market posture (June 17, 2026)
+**Overall: PRE-FOMC CAUTIOUS OPTIMISM. S&P 500 futures positive ahead of the Fed hold. Key risk: hawkish dot plot at 2:00 PM ET.**
+
+- **FOMC decision day (2:00 PM ET):** 97% probability of hold at 3.50–3.75%. This is Warsh's first meeting as Fed Chair. The rate decision itself is priced — the risk is the dot plot. March 2026 dot plot showed one projected 2026 rate cut; May CPI +4.2% (3-year high) will likely force the Fed to remove that cut, effectively guiding higher-for-longer. BofA warns 3 of 12 voting members may project rate hikes in 2026 — a hawkish shift with direct tech valuation consequences. JPMorgan expects language removing the easing bias. Warsh may withhold his own dot (structural forward-guidance change). Decision 2:00 PM ET, Warsh press conference 2:30 PM ET. Source: Intellectia.ai, REX Shares, TechTimes, June 16–17, 2026.
+- **S&P 500 futures:** +0.78% pre-market (implied 78% Polymarket probability of higher open). Dow posted second consecutive all-time high yesterday. Cautious optimism prevailing pre-FOMC. Source: Benzinga/Polymarket, June 17, 2026.
+- **FOMC timing gap — structural risk for MSFT:** The FOMC announcement at 2:00 PM ET falls AFTER the midday routine (12:30 PM ET). If a hawkish dot plot pushes MSFT below the -12% cut threshold ($375.06) between 2:00 PM and 3:50 PM, the midday cut rule cannot fire until the next market-open routine (June 18). The 18% trailing stop (USD 350.56) provides ultimate protection, but MSFT could sit below the -12% trigger for 1 session. The close routine must explicitly check MSFT's price vs the -12% cut level. Source: structural analysis, June 17, 2026.
+- **MRVL S&P 500 rebalancing window OPEN:** Effective date June 22 — index funds must match by June 20 close. The mandatory rebalancing buying window opened TODAY (June 17). MRVL +3.16% pre-market confirms buying is beginning. The forced-buying dynamic is mechanical and runs regardless of FOMC; MRVL is somewhat insulated from macro risk by the passive-fund floor under the stock. Source: Investing.com, TechTimes, GuruFocus, June 14–16, 2026.
+- **Risk-on macro backdrop:** Iran peace deal confirmed (Hormuz reopening + 60-day nuclear talks). Oil Brent USD 83. Full macro overhang resolved as of June 15. FOMC hold will not reverse this backdrop. Source: prior research log June 15–16, 2026.
+- **Date of facts:** June 17, 2026 pre-market.
+
+---
+
+### Held positions — "what changed since yesterday" (required for each)
+
+**NVDA — Thesis: INTACT. What changed: nothing material.**
+- Pre-market USD 208.08 (+0.32% from yesterday's close of USD 207.41). Strong Buy consensus from 38 analysts, price target USD 298.87. Annual meeting June 24 (NOT an earnings report — no financial guidance expected). NVDA earnings: Aug 26, 2026 (confirmed, after close) — well outside 2-day window. Bond issuance ($25B, announced June 15) absorbed by market. No new news that changes the thesis. Buffer 9.416pp — comfortable.
+- **Source:** Public.com pre-market data; stocktitan.net NVDA annual meeting; marketchameleon.com earnings dates. Date: June 17, 2026.
+
+**META — Thesis: INTACT. What changed: Threads 500M MAU milestone (positive).**
+- Pre-market USD 596.56 (-0.61%). Meta announced Threads now has 500 million monthly active users — a record high, reinforcing the engagement moat that supports ad monetization. No equity offering confirmed. Next earnings: Jul 29, 2026 (42 days). Review_by: June 24. Buffer 6.675pp (safe zone). Analyst consensus: Strong Buy, avg target USD 827.32 (from 58 analysts, 0 sell recommendations).
+- **Source:** Yahoo Finance META news; stockanalysis.com. Date: June 17, 2026.
+
+**AVGO — Thesis: INTACT. What changed: recovering from FOMC-day-1 selloff, new customers confirmed.**
+- Pre-market USD 384.00 (+1.94% from yesterday's USD 376.71). Recent news confirms Broadcom is "best-of-breed in custom AI accelerators" with Google as largest customer and new customers in Anthropic and OpenAI — thesis expanding beyond the original 6 hyperscaler customers. Management maintained ">$100B in AI revenue FY2027" guidance in-line results. $2.5B senior notes tender offer (June 11) is balance sheet optimization, not distress. Next earnings: likely August 2026. Buffer 6.528pp — improving.
+- **Source:** Robinhood/CNN AVGO; stockinvest.us. Date: June 17, 2026.
+
+**MSFT — Thesis: INTACT. What changed: minor Oracle noise, DeepSeek cost-reduction rumor. Buffer compressed to 3.950pp. ⚠️ HIGH ALERT.**
+- Pre-market USD 391.90 (-0.49%). Two news items: (1) Oracle says details of "failed Microsoft cloud deal talks" are "inaccurate" — this is noise, a denial of a non-event. Does not affect Azure. (2) Rumor Microsoft may use DeepSeek to reduce Copilot AI costs — if true, this improves margins (Azure thesis strengthened, not broken). Azure +40% YoY intact. Next earnings: Jul 28, 2026 (41 days). Review_by: June 25. Buffer: **3.950pp — BELOW 4pp HIGH ALERT THRESHOLD.**
+- **FOMC timing gap risk:** If hawkish dot plot at 2:00 PM drives MSFT below USD 375.06 (-12% cut trigger), the midday routine (12:30 PM) will have already passed. The 18% trailing stop (USD 350.56) provides ultimate backstop but the -12% midday rule is a discretionary rule, not an automatic order. Close routine (3:50 PM) must explicitly check MSFT price. If MSFT < USD 375.06 at EOD, plan immediate close at June 18 open.
+- **Proactive trim check:** Buffer 3.950pp (just above 3pp threshold). Review_by June 25 (6 days, just outside 5-day trigger). No near-term catalyst before June 25. Trim heuristic formally NOT triggered (3.950pp > 3pp strict threshold). Decision: **Hold.** Azure thesis intact, hold is the correct Aggressive Bull posture. The rules (midday cut, trailing stop) handle the downside.
+- **Source:** Public.com MSFT pre-market; stockinvest.us news; TipRanks earnings date. Date: June 17, 2026.
+
+**AMZN — Thesis: INTACT. What changed: nothing material. Review_by June 22 approaching.**
+- Pre-market USD 246.20 (+0.08%, essentially flat). AWS cloud revenue +28% YoY confirmed (fastest in nearly 4 years). $200B 2026 capex cycle confirmed. Record 13.1% operating margin Q1 2026. Advertising +22% YoY. $18B negative FCF in Q1 is a concern for some investors but is a function of the capex cycle — the AI infrastructure buildout that justifies the thesis. **Review_by: June 22 (5 days) — pre-market June 22 MUST include explicit hold/trim/exit decision and contract renewal.** Buffer 11.276pp — safe.
+- **Source:** stockanalysis.com AMZN overview. Date: June 17, 2026.
+
+**VST — Thesis: INTACT and operationally confirmed. What changed: Cogentrix acquisition details confirmed, Helix consortium operational.**
+- Pre-market USD 160.05 (+0.91%). Q1 2026 net income USD 980M. Reaffirmed 2026 EBITDA outlook. Cogentrix acquisition ($4.7B, 5,500 MW natural gas portfolio) adds generation diversification. **Helix Digital Infrastructure** (KKR + NVDA + Kuwait Investment Authority + VST = USD 10B AI data-center power venture) is confirmed with VST as preferred power provider. 20-year PPAs with Meta and AWS for 3,800 MW nuclear. Ex-dividend June 22 (USD 0.229 × 52 = USD 11.91). HWM USD 161.48 — stop ratcheted at USD 132.41. Buffer 17.664pp.
+- **Note on "12% slide" article:** One Quiver Quant source mentioned a "roughly 12% slide over a six-day period" — this appears to refer to an earlier period (possibly late May) and is stale. Current price USD 160.05 is near HWM, stop ratcheting upward. Thesis confirmed by PPAs and Helix.
+- **Source:** QuiverQuant VST news; simplywall.st. Date: June 17, 2026.
+
+**GOOGL — Thesis: INTACT. What changed: $1.5B Alabama data center expansion, Android 17 launch.**
+- Pre-market USD 371.35 (-0.51%). Alphabet announced $1.5B Alabama data center expansion (confirms ongoing GCP buildout). Android 17 rolling out (ecosystem strengthening; minor for stock near-term). GCP +63% YoY confirmed. No earnings until late July 2026. Review_by: June 25. Buffer 12.305pp — comfortable. Cheapest large-cap AI on forward P/E. Thesis unchanged.
+- **Source:** stockanalysis.com AMZN/GOOGL news; CNN GOOGL. Date: June 17, 2026.
+
+**MRVL — Thesis: INTACT and catalyzed. What changed: S&P 500 mandatory index rebalancing BUY WINDOW OPENS TODAY (+3.16% pre-market).**
+- Pre-market USD 287.47 (+3.16% from yesterday's USD 278.67). Yesterday's -4.70% "buy rumor / sell news" reversal has fully reversed pre-market. The S&P 500 inclusion effective date is June 22 — index funds must hold MRVL proportional to its weight by June 20 close. **TODAY IS DAY 1 OF THE MANDATORY BUYING WINDOW (June 17–20, 4 days).** Passive funds managing trillions in S&P 500 tracking capital MUST buy MRVL this week. Next earnings: Aug 20, 2026 (confirmed). Review_by: June 29. Buffer 10.017pp and improving with this pre-market move.
+- Jensen Huang publicly called MRVL the "next trillion-dollar company" (per prior research). FY2028 AI revenue outlook raised to USD 16.5B.
+- **Source:** Investing.com MRVL S&P inclusion analysis; TechTimes; GuruFocus; MarketChameleon earnings. Date: June 17, 2026.
+
+---
+
+### Earnings window check (June 17, 2026)
+| Symbol | Next Earnings | Days Away | Within 2-Day Window? |
+|---|---|---|---|
+| NVDA | Aug 26, 2026 (confirmed) | 70 days | No ✓ |
+| META | Jul 29, 2026 | 42 days | No ✓ |
+| AVGO | ~Aug 2026 (est) | 45+ days | No ✓ |
+| MSFT | Jul 28, 2026 (confirmed) | 41 days | No ✓ |
+| AMZN | ~Aug 1, 2026 (est) | 45+ days | No ✓ |
+| VST | ~Aug 2026 (est) | 45+ days | No ✓ |
+| GOOGL | ~Jul 29, 2026 (est) | 42+ days | No ✓ |
+| MRVL | Aug 20, 2026 (confirmed) | 64 days | No ✓ |
+
+**No position within 2-day earnings window. ✓**
+
+NVDA Annual Meeting June 24: This is a SHAREHOLDER meeting — no earnings release, no financial guidance. Not subject to earnings-window restriction. ✓
+
+---
+
+### Thesis contract review (June 17, 2026)
+
+All 8 contracts reviewed against current price and news:
+
+| Symbol | Invalidation | Review By | Status | Action |
+|---|---|---|---|---|
+| NVDA | Loses major hyperscaler customer OR Q2 guide < USD 80B | Jun 25 | ✓ INTACT — -2.584%, 9.416pp buffer. Annual meeting Jun 24 is not earnings. | Hold. Renew Jun 25. |
+| META | Formally confirms equity offering AND downgrades AI monetization | Jun 24 | ✓ INTACT — -5.325%, 6.675pp buffer. Threads 500M MAU. No offering. | Hold. Review Jun 24. |
+| AVGO | AI revenue guide < USD 12B next quarter OR Q3 revenue miss >10% | Jun 25 | ✓ INTACT — USD 16B Q3 guide. New AI customers. -5.472%, 6.528pp buffer. | Hold. Renew Jun 25. |
+| MSFT | Azure <30% YoY OR Copilot explicitly underperforming | Jun 25 | ✓ INTACT — Azure +40%. Oracle noise not thesis. -8.050%, **3.950pp buffer ⚠️** | Hold; HIGH ALERT for FOMC reaction. |
+| AMZN | AWS <20% YoY OR Trainium fails | Jun 22 | ✓ INTACT — AWS +28%, -0.724%, 11.276pp buffer. **⚠️ Review due Jun 22 (5 days)** | Hold. Pre-market Jun 22 MUST renew. |
+| VST | PPAs cancelled/renegotiated OR material regulatory action vs nuclear | Jul 15 | ✓ INTACT — PPAs confirmed, Helix operational. +5.664%, 17.664pp buffer. Ex-div Jun 22. | Hold. |
+| GOOGL | GCP <40% YoY OR AI investment cut | Jun 25 | ✓ INTACT — GCP +63%. Alabama DC expansion. +0.305%, 12.305pp buffer. | Hold. Renew Jun 25. |
+| MRVL | Loses hyperscaler custom chip program OR revenue <15% YoY | Jun 29 | ✓ INTACT — S&P 500 inclusion Jun 22; mandatory buying begins today. -1.983%, 10.017pp buffer. | Hold. S&P buying tailwind. |
+
+**All 8 contracts INTACT. No exits required.**
+
+---
+
+### Proactive trim heuristic check (June 17)
+
+| Symbol | Buffer | Review_by | Near-term catalyst | Heuristic triggered? | Decision |
+|---|---|---|---|---|---|
+| MSFT | 3.950pp | Jun 25 | FOMC 2:00 PM today | 3.950pp > 3pp strict threshold; review_by 6 days > 5-day trigger. NOT formally triggered. | **Hold. See FOMC timing gap analysis in market posture.** |
+| All others | 6.5pp–17.7pp | Jun 22–Jul 15 | Various | Not triggered | Hold |
+
+**No proactive trims.** MSFT is held on thesis grounds (Azure +40% intact) with awareness of the FOMC timing gap.
+
+---
+
+### Deployment check (June 17)
+- Cash: USD 6,553.24 = **6.82%** of equity
+- 20% mandatory threshold: NOT triggered (6.82% well below 20%)
+- Portfolio 93.18% invested — fully deployed per strategy target (≥80%)
+- Week 3 new positions: 1/8 used
+- Remaining slots: 7
+- **EXPLICIT DECISION: No new buys today.** FOMC decision day (2:00 PM ET). Maintaining discipline established in lessons: FOMC meeting days are not deployment days. The hawkish dot plot risk (3 members may project hikes) creates asymmetric tail risk for high-P/E names. After FOMC decision is digested, June 18 pre-market will re-evaluate MRVL pyramid (S&P 500 inclusion buying window days 2–4) and AMZN/ETN entries. Cash at 6.82% is adequate above the 2% floor — no urgency.
+
+---
+
+### Guardrail check (June 17)
+| Rule | Limit | Status |
+|---|---|---|
+| Single position max | 35% | NVDA 22.3% — largest. ✓ |
+| Cash floor | 2% min | 6.82% ✓ |
+| Weekly new positions (Week 3) | 8 max | 1/8 used ✓ |
+| Semi-group concentration (NVDA+AVGO+MRVL) | ≤50% | 43.4% ✓ |
+| Circuit breaker | >20% below HWM | −5.04% NOT triggered ✓ |
+| Intraday shock | >6% below last_equity | +0.47% NOT triggered ✓ |
+| Stop audit | 8/8 live trailing stops | Confirmed ✓ |
+| Earnings window | No new buys within 2 days | No conflicts ✓ |
+| Control switch | ACTIVE | ✓ |
+
+---
+
+### Planned trades for today (June 17, 2026 — market open)
+
+No trades warranted. FOMC decision day: rate hold expected (97% probability) but dot plot risk is material. All 8 positions thesis-intact. MSFT flagged HIGH ALERT (3.95pp buffer; FOMC timing gap). Cash 6.82% — no deployment pressure. Post-FOMC June 18 will evaluate MRVL pyramid and AMZN contract renewal.
+
+```json
+{
+  "plan_date": "2026-06-17",
+  "trades": []
+}
+```
