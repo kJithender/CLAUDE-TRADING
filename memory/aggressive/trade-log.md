@@ -1276,3 +1276,93 @@ All 8 positions within guardrails. No trades. All 18% trailing stops active and 
 3. **VST new HWM USD 161.91:** Stop auto-ratcheted to USD 132.77. Winner continuing to run.
 4. **MRVL Day 2 index buying:** Position recovering well from June 16 reversal; S&P inclusion buy window continues through June 20.
 
+---
+
+## 2026-06-17 — EOD CLOSE (~4:07 PM ET)
+
+**No trades executed.** No exits today. FOMC decision confirmed (hold at 3.50–3.75%, hawkish dot plot).
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 94,645.89 |
+| Last equity (prev close June 16) | USD 95,599.15 |
+| Today's P/L | **-USD 953.26 (-0.997%)** |
+| Cash | USD 6,553.24 (6.92%) |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-6.43%** (circuit breaker 20% — NOT triggered ✓; 13.57pp headroom) |
+
+### Intraday shock check
+- Equity EOD: USD 94,645.89 vs last_equity: USD 95,599.15
+- Change: **-0.997%** (threshold -6% — NOT triggered ✓)
+
+### Market context [search: WebSearch fallback — MiniMax M3 not available]
+FOMC held rates at 3.50–3.75% as expected, but delivered a **hawkish dot plot**: 9 of 18 officials project at least one rate hike in 2026, 6 project multiple hikes; GDP outlook lowered, inflation raised. Tech whipsawed lower post-announcement. Russell 2000 +1.20%, but S&P 500 and Nasdaq declined. MSFT fell another ~1.3% post-FOMC to close at USD 379.67 (from midday USD 384.82), pushing it to 1.08pp from the -12% forced exit. AVGO +4.72% and MRVL +3.80% (S&P inclusion Day 2 forced buying) held the portfolio's relative performance — Aggro -0.997% **outperformed SPY -1.249% by 0.252pp.** First EOD outperformance in several sessions, driven by AI-hardware divergence from hyperscaler multiple compression.
+
+### EOD position review vs midday
+
+| Symbol | Midday Price | EOD Price | Δ | P/L% from Entry | Buffer to -12% |
+|---|---|---|---|---|---|
+| NVDA | USD 207.335 | USD 204.50 | -1.37% | -4.26% | 7.74pp |
+| META | USD 578.595 | USD 568.34 | -1.77% | **-9.80%** | **🚨 2.20pp CRITICAL** |
+| AVGO | USD 397.29 | USD 394.50 | -0.70% | -2.89% | 9.11pp |
+| MSFT | USD 384.82 | USD 379.67 | -1.34% | **-10.92%** | **🚨 1.08pp CRITICAL** |
+| AMZN | USD 239.96 | USD 237.68 | -0.95% | -4.16% | 7.84pp |
+| VST | USD 161.52 | USD 159.66 | -1.15% | **+5.41% ✅** | 17.41pp |
+| GOOGL | USD 364.86 | USD 363.97 | -0.24% | -1.69% | 10.31pp |
+| MRVL | USD 294.92 | USD 289.25 | -1.92% | -1.38% | 10.62pp |
+
+Post-FOMC selling was broadest in MSFT and META (rate-sensitive high-multiple tech). AVGO bucked the trend, closing well above midday on sustained AI chip demand narrative. MRVL gave back some of today's S&P inclusion gains but remains healthy. VST made a new HWM of USD 162.44 during the session (trailing stop ratcheted to USD 133.20) before fading slightly into close.
+
+### Performance vs SPY
+| Metric | Value |
+|---|---|
+| Aggro today | **-0.997%** (USD 95,599 → USD 94,646) |
+| SPY today (750.33 → 740.96) | **-1.249%** |
+| Today vs SPY | **+0.252pp OUTPERFORMING** |
+| Aggro since inception | **(94,645.89 − 100,000) / 100,000 = -5.354%** |
+| SPY since inception (754.18 → 740.96) | **(740.96 − 754.18) / 754.18 = -1.753%** |
+| Alpha since inception | **-3.601pp** |
+
+### Stop audit — 8/8 confirmed ✓ (from live API post-close)
+
+| Symbol | Stop Order ID | EOD Price | HWM | Stop Price | Status |
+|---|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 204.50 | USD 221.60 | USD 181.712 | ✓ live |
+| META | `11c3a1bf` | USD 568.34 | USD 642.38 | USD 526.7516 | ✓ live |
+| AVGO | `36f5a45f` | USD 394.50 | USD 426.48 | USD 349.7136 | ✓ live |
+| MSFT | `ef211767` | USD 379.67 | USD 427.51 | USD 350.5582 | ✓ live |
+| AMZN | `b55bef05` | USD 237.68 | USD 250.43 | USD 205.3526 | ✓ live |
+| VST | `5b347be3` | USD 159.66 | **USD 162.44 (NEW HWM ✅)** | **USD 133.2008** | ✓ live — stop ratcheted |
+| GOOGL | `e52a43f1` | USD 363.97 | USD 375.77 | USD 308.1314 | ✓ live |
+| MRVL | `a9097c8c` | USD 289.25 | USD 316.99 | USD 259.9318 | ✓ live |
+
+**No stops missing. No stops needing recreation.**
+
+### FOMC post-decision MSFT check (required per midday instruction)
+- MSFT EOD: USD 379.67 vs cut trigger USD 375.06
+- Buffer remaining: **1.08pp** (USD 4.61 price cushion)
+- **MSFT did NOT breach USD 375.06 trigger — no forced exit today.**
+- However: 1.08pp is the thinnest buffer in the book's history. FOMC hawkish dot plot (9/18 project hike) creates sustained multiple compression risk for MSFT.
+- **Pre-market June 18 mandatory action:** If MSFT pre-market quote is ≤ USD 378.00 (~2pp from trigger), plan contingent open exit. If MSFT opens at or below USD 375.06, execute exit at open — do NOT wait for the mechanical midday cut. A hawkish gap-down could take MSFT materially below trigger before midday.
+
+### META thesis contract update (per midday instruction)
+- META EOD: USD 568.34, buffer **2.20pp** (trigger USD 554.51)
+- Section 230 ruling (federal addiction trial, June 17): Court stripped Section 230 protections for platform "design choices" — new material legal risk to ad-targeting methodology. Does NOT trigger defined invalidation (requires formal equity offering + AI monetization downgrade). However, adds new risk dimension.
+- Thesis contract updated: invalidation now also includes "Federal court issues mandatory algorithmic change order that management explicitly states will reduce ad-targeting effectiveness."
+- Review_by June 24 remains in force (7 days).
+
+### Key flags for pre-market June 18
+1. **🚨 MSFT:** 1.08pp buffer. If pre-market price ≤ USD 378, plan contingent open exit. If opens ≤ USD 375.06 → exit at open.
+2. **⚠️ META:** 2.20pp buffer. Section 230 ruling adds legal risk. Watch overnight news.
+3. **MRVL:** S&P 500 inclusion buy window Day 3 of 4 (June 18). Forced passive buying continues.
+4. **AMZN:** Review_by June 22 is 3 trading days away — pre-market June 22 explicit hold/trim/exit decision required.
+5. **VST:** Ex-dividend June 22 (USD 0.229 × 52 = USD 11.91 to cash). New HWM USD 162.44.
+
