@@ -1131,3 +1131,63 @@ Notable afternoon moves: MRVL continued its S&P inclusion reversal, dropping ano
 - Equity EOD: USD 95,591.38 vs last_equity: USD 97,144.23
 - Change: -1.598% (threshold -6% — NOT triggered ✓)
 
+---
+
+## 2026-06-17 — MARKET OPEN (~9:46 AM ET)
+
+**No trades executed.** Pre-market plan correctly called no-trade (FOMC decision day, cash at 6.82%, all 8 theses intact, portfolio 93.18% deployed).
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Plan date | June 17, 2026 — matches today ✓ |
+| Plan trades | [] — empty, no trades planned ✓ |
+| Idempotency | No prior EXECUTED: marker ✓ |
+
+### Market & account status
+| Check | Result |
+|---|---|
+| Market open | true (next close 4:00 PM ET) ✓ |
+| Equity | USD 96,007.52 |
+| Last equity (prev close June 16) | USD 95,599.15 |
+| Intraday change | +0.427% (shock threshold -6% — NOT triggered ✓) |
+| Cash | USD 6,553.24 (6.82%) |
+| Cash floor (2% min) | ✓ |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -5.077% (circuit breaker 20% — NOT triggered ✓; 14.923pp headroom) |
+
+### Stop audit — 8/8 positions confirmed with live 18% trailing stops ✓
+
+| Symbol | Qty | Current Price | P/L % from Entry | -12% Trigger | Buffer | Stop Order ID | Stop Price | HWM |
+|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 208.40 | -2.434% | USD 187.97 | 9.566pp | `54d7d851` | USD 181.712 | USD 221.60 |
+| META | 23 | USD 586.59 | -6.908% | USD 554.51 | **5.092pp ⚠️** | `11c3a1bf` | USD 526.7516 | USD 642.38 |
+| AVGO | 34 | USD 391.04 | -3.739% | USD 357.48 | 8.261pp | `36f5a45f` | USD 349.7136 | USD 426.48 |
+| MSFT | 28 | USD 388.56 | **-8.834%** | USD 375.06 | **3.166pp ⚠️ HIGH ALERT** | `ef211767` | USD 350.5582 | USD 427.51 |
+| AMZN | 36 | USD 242.83 | -2.081% | USD 218.23 | 9.919pp | `b55bef05` | USD 205.3526 | USD 250.43 |
+| VST | 52 | USD 160.60 | **+6.028% ✅** | USD 133.29 | 18.028pp | `5b347be3` | USD 132.4136 | USD 161.48 |
+| GOOGL | 16 | USD 367.54 | -0.724% | USD 325.79 | 11.276pp | `e52a43f1` | USD 308.1314 | USD 375.77 |
+| MRVL | 25 | USD 293.82 | **+0.182% ✅** | USD 258.09 | 11.817pp | `a9097c8c` | USD 259.9318 | USD 316.99 |
+
+**No stops missing. No stops needing recreation. All 8 positions protected.**
+
+### Notable observations
+- **MRVL +5.44% today** (USD 293.82 vs yesterday's close USD 278.67) — S&P 500 mandatory index rebalancing buying window Day 1 (June 17–20). Passive index fund forced buying is measurable. Position back to +0.182% from entry after yesterday's -4.70%.
+- **VST +1.25% today** (USD 160.60 vs USD 158.61) — trailing stop ATH HWM USD 161.48 (from yesterday) may get challenged today. If VST prints above USD 161.48, stop ratchets upward automatically.
+- **AVGO +3.80% today** (USD 391.04 vs USD 376.71) — recovering from FOMC day-1 -4.33% hit. AI guide USD 16B Q3 intact.
+- **MSFT -1.34% today** (USD 388.56 vs USD 393.83) — at -8.834% from entry with 3.166pp buffer. **HIGH ALERT: FOMC timing gap risk.** FOMC decision 2:00 PM ET — if hawkish dot plot pushes MSFT below USD 375.06, the close routine (3:50 PM) MUST check and plan June 18 open exit if breached.
+- **META -2.27% today** (USD 586.59 vs USD 600.21) — buffer narrowed from 6.675pp (pre-market) to 5.092pp. Still above 4pp safe zone. No equity offering confirmed.
+- Sector exposure: Semis (NVDA+AVGO+MRVL) USD 42,106 = 43.9% of portfolio (under 50% cap ✓).
+
+### Performance vs SPY (at open)
+| Metric | Value |
+|---|---|
+| Aggro equity | USD 96,007.52 |
+| Aggro since inception | (96,007.52 − 100,000) / 100,000 = **−3.992%** |
+| SPY June 16 close | USD 750.33 |
+| SPY return since inception | −0.511% |
+| Alpha since inception | **−3.481pp** |
+
