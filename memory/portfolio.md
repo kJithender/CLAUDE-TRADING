@@ -3,56 +3,57 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-17 08:03 ET (pre-market)
+**Last updated:** 2026-06-17 09:36 ET (market-open)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 
-## Account (pre-market June 17, 2026 — live Alpaca data ~08:03 ET)
+## Account (market-open June 17, 2026 — live Alpaca data ~09:36 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,212.67 |
-| Cash | $74,304.63 (74.89%) |
-| Long market value | $24,908.04 |
-| Buying power | ~$366,961 |
+| Equity | $99,196.92 |
+| Cash | $74,304.63 (74.90%) |
+| Long market value | $24,892.29 |
+| Buying power | ~$366,917 |
 | Last equity (June 16 close) | $99,202.67 |
 
-## Open positions (pre-market June 17, 2026 — live Alpaca data ~08:03 ET)
+## Open positions (market-open June 17, 2026 — live Alpaca data ~09:36 ET)
 
 | Symbol | Qty | Avg entry | Current price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
 |--------|-----|-----------|--------------|-----------|----------------|----------------|---------------|
-| LLY | 10 | $1,093.534 | $1,119.06 | $11,190.60 | +$255.26 (+2.33%) | 11.28% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, same) ✓ — buffer $54.60 (4.88%) |
-| V | 22 | $323.57 | $332.52 | $7,315.44 | +$196.90 (+2.77%) | 7.37% | 66033918 (22sh, HWM **$333.08**, stop **$299.772**) ✓ — buffer $32.75 (9.85%); near HWM — watch ratchet |
-| VST | 40 | $148.81 | $160.05 | $6,402.00 | +$449.60 (+7.55%) | 6.45% | c4c200a5 (40sh, HWM **$161.48**, stop **$145.332**) ✓ — buffer $14.72 (9.19%); watch ratchet above $161.48 ⭐⭐ HELIX |
+| LLY | 10 | $1,093.534 | $1,116.33 | $11,163.30 | +$227.96 (+2.09%) | 11.25% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, same) ✓ — buffer $51.87 (4.65%) |
+| V | 22 | $323.57 | $335.645 | $7,384.19 | +$265.65 (+3.73%) | 7.44% | 66033918 (22sh, HWM **$336.07** ⬆️ RATCHETED, stop **$302.463** ⬆️) ✓ — buffer $33.18 (9.89%) ⭐ |
+| VST | 40 | $148.81 | $158.62 | $6,344.80 | +$392.40 (+6.59%) | 6.40% | c4c200a5 (40sh, HWM **$161.48**, stop **$145.332**) ✓ — buffer $13.29 (8.38%) ⭐⭐ HELIX |
 
 ## Performance vs S&P 500
 
 | Period | Bull | SPY | Difference |
 |--------|------|-----|------------|
 | Inception (2026-05-21) | $100,000.00 | $739.44 | — |
+| **Open (2026-06-17)** | **$99,196.92** | **$750.77 (open +1.531% since inception)** | **Bull TRAILS SPY ~2.33pp** |
 | **Pre-mkt (2026-06-17)** | **$99,212.67** | **$750.61 (pre-mkt +1.510% since inception)** | **Bull TRAILS SPY ~2.30pp** |
 | **Close (2026-06-16)** | **$99,209.83** | **$751.01 (close, +1.564% since inception)** | **Bull TRAILS SPY ~2.35pp** |
 
 ## Notes
 
-**Pre-market June 17, 2026 (~08:03 ET):**
-- **FOMC date correction (material):** All prior memory files incorrectly stated "announcement Wednesday June 18 2 PM ET." June 17 IS Wednesday. FOMC announcement is TODAY June 17 at 2 PM ET; Warsh press conference 2:30 PM ET. Gate lifts TODAY at 2 PM ET.
-- **LLY** $1,119.06 (−0.31% today, +2.33% from entry). Phase 3 TRIUMPH-1 retatrutide data exceptional (28.3% weight loss = bariatric-surgery equivalent). Barclays Buy June 15. Medicare Bridge July 1 in 14 days. Buffer $54.60 (4.88%) ✓. HOLD.
-- **V** $332.52 (−0.18% today, +2.77% from entry). Near HWM $333.08 — ratchet possible if V trades above $333.08 today. OpenAI integration confirmed. Q3 earnings July 28. Buffer $32.75 (9.85%) ✓. HOLD.
-- **VST** ⭐⭐ $160.05 (+0.91% today, +7.55% from entry). Watch for ratchet if VST trades above HWM $161.48. Dividend ex-date June 22 in 5 days (USD 9.16 credit for 40sh). Helix thesis strengthening. Buffer $14.72 (9.19%) ✓. HOLD.
-- **FOMC gate:** No new positions before 2 PM ET TODAY. After FOMC: if neutral (rate hold + not wildly hawkish dot plot): plan NVDA (33sh ~$208 = 6.9%) for Thursday entry; also check LRCX ATR (still ~5%, needs ≤3%) and PWR (conference dust settling).
+**Market-open June 17, 2026 (~09:36 ET):**
+- **No trades today — FOMC gate active.** FOMC announcement at 2 PM ET today (Kevin Warsh's first meeting as Fed Chair; rate hold near-certain; dot plot is the key variable). Gate lifts at 2 PM ET.
+- **LLY** $1,116.33 (−0.55% intraday, +2.09% from entry). Medicare Bridge July 1 in 14 days. Buffer $51.87 (4.65%) ✓. Thesis STRONGEST. HOLD.
+- **V** ⬆️ $335.645 (+0.76% intraday, +3.73% from entry). **Stop HWM auto-ratcheted $333.08→$336.07** (V traded above $333.08 today), stop upgraded $299.772→$302.463. Best buffer (9.89%) since entry. OpenAI/stablecoin thesis intact. HOLD.
+- **VST** ⭐⭐ $158.62 (+0.01% intraday, +6.59% from entry). Helix Digital Infrastructure thesis intact. Dividend ex-date June 22 in 5 days (USD 9.16 credit for 40sh). Buffer $13.29 (8.38%) ✓. HOLD.
+- **Stop audit:** 4/4 confirmed ✓ — V HWM ratcheted $333.08→$336.07 since EOD June 16.
+- **Post-FOMC plan (close routine to execute after 2 PM):** If neutral dot plot (rate hold, 10yr stays below 4.75%): (1) NVDA 33sh at Thursday open; (2) LRCX if ATR normalizes to ≤3%; (3) PWR after conference dust settles.
 - **SPY ex-dividend TOMORROW June 18:** $1.76/sh → SPY total-return anchor adjusts to $741.20 (narrows reported gap by ~0.238pp).
-- **Stop audit:** 4/4 confirmed ✓ (no ratchets in pre-market; all positions below respective HWMs)
 
-**Sector exposure (pre-market June 17):**
-- Healthcare (LLY): $11,190.60 = 11.28%
-- Financials (V): $7,315.44 = 7.37%
-- Energy/Utilities (VST): $6,402.00 = 6.45%
-- Cash: $74,304.63 = 74.89%
+**Sector exposure (market-open June 17):**
+- Healthcare (LLY): $11,163.30 = 11.25%
+- Financials (V): $7,384.19 = 7.44%
+- Energy/Utilities (VST): $6,344.80 = 6.40%
+- Cash: $74,304.63 = 74.90%
 - No sector above 60% cap ✓
 
 **Week of June 16 — new position slots:**
-- **Slot 1:** OPEN — FOMC gate through 2 PM ET TODAY → then: NVDA (33sh ~$208, ATR check Thursday) | LRCX if ATR ≤3%
-- **Slot 2:** OPEN — post-FOMC: LRCX (if ATR normalizes) | NVDA
+- **Slot 1:** OPEN — FOMC gate through 2 PM ET TODAY → then: NVDA (33sh ~$210, Thursday entry if above $205)
+- **Slot 2:** OPEN — post-FOMC: LRCX (if ATR normalizes to ≤3%)
 - **Slot 3:** OPEN — post-FOMC: PWR (after TD Cowen conference volatility settles)
 
 **Upcoming catalysts:**

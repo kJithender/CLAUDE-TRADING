@@ -218,6 +218,8 @@ Reasons: (1) FOMC announcement today 2 PM ET — market-open at 9:35 AM is befor
 
 No trades planned.
 
+EXECUTED: 2026-06-17T13:36:00Z — No trades; FOMC gate active (announcement 2 PM ET today, June 17); stop audit 4/4 ✓ (V HWM auto-ratcheted $333.08→$336.07, stop $299.772→$302.463 — V +0.76% intraday; LLY $1,116.33 (+2.09% from entry, −0.55% intraday); VST $158.62 (+6.59% from entry, +0.01% intraday)); shock check −$5.75 = −0.006% ✓; drawdown −2.157% vs HWM $101,384.21 ✓. All guardrails ✓.
+
 **Upcoming catalysts:**
 - **FOMC announcement TODAY June 17, 2 PM ET** — dot plot + rate hold; Warsh press conference 2:30 PM ET
 - **SPY dividend ex-date TOMORROW June 18** ($1.76/sh — SPY total-return anchor → $741.20 post-June 18)
