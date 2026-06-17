@@ -136,10 +136,10 @@ _Purged from watchlist (2026-06-12):_
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-17 pre-market)
+## Active Macro Watches (updated 2026-06-17 close)
 
-- **FOMC June 16–17 2026 — CRITICAL (GATE ACTIVE UNTIL 2 PM ET TODAY):** Rate hold 97% probability per CME FedWatch. Kevin Warsh's first FOMC meeting as Fed Chair; dot plot (SEP) released — hawkish shift possible. Probability of at least one year-end 2026 rate hike: ~70%. Announcement **Wednesday June 17, 2 PM ET** (CORRECTED: June 17 IS Wednesday; gate lifts after today's 2 PM announcement). **No new positions before 2 PM ET June 17 — HARD GATE.** If dot plot signals fewer cuts (or hikes): 10yr could spike above 4.75% → halt all new buys. Monitor 10yr closely at 2 PM today.
-- **10yr Treasury yield:** ~4.47% (June 12 est.) — below 4.75% watch level ✓. Watch post-FOMC dot plot today at 2 PM ET.
+- **FOMC June 16–17 2026 — COMPLETED. HAWKISH SURPRISE:** Rate hold (3.50–3.75%) as expected, BUT dot plot (SEP) showed 9 of 18 members projecting a rate hike by year-end. Kevin Warsh's first meeting as Fed Chair. Bond yields surged. SPY fell −1.44% on the day. FOMC gate has LIFTED, but **hawkish dot plot activates the 10yr monitoring rule** — pre-market Thursday June 18 MUST check 10yr before placing ANY new orders. If 10yr > 4.75% → halt all new buys for the week.
+- **10yr Treasury yield:** Surged on hawkish FOMC surprise (exact level TBD pre-mkt June 18). **Critical: if 10yr > 4.75% at pre-market Thursday, halt all new buys. If below 4.75%, gate lifts for NVDA/LRCX/PWR per watchlist.**
 - **Iran/US peace deal:** Advancing — WTI ~$85/bbl, well below $100 trigger ✓. Constructive for equities. VST nuclear 24/7 reliability advantage intact vs. cheaper gas.
 - **LLY — STRONGEST position:** Pre-mkt June 17 $1,119.06 (+2.33%). Monday rating: **A**. TRIUMPH-1 Phase 3 trial exceptional (weight loss 22.7% at 52 wks). Employer GLP-1 coverage concern (10% of employers dropping in 2027) is a 2027 headwind — NOT a July 1 Medicare Bridge invalidation. Review_by July 1 (Medicare Bridge effective date — explicit hold/trim/exit decision required at pre-market June 30 or July 1).
 - **V — position:** Pre-mkt June 17 $332.52 (+2.77%). Monday rating: **B**. Thesis intact; OpenAI partnership confirmed — real-time AI financial insights via Visa network. Review_by July 28 (Q3 earnings).
