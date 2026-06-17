@@ -1191,3 +1191,88 @@ Notable afternoon moves: MRVL continued its S&P inclusion reversal, dropping ano
 | SPY return since inception | −0.511% |
 | Alpha since inception | **−3.481pp** |
 
+---
+
+## 2026-06-17 — MIDDAY CHECK (~12:40 PM ET)
+
+**No trades executed.** Risk management only. All positions within guardrails.
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run (expires 2026-06-17T16:48:47Z) ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Market open | true (next close 4:00 PM ET) ✓ |
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 95,735.47 |
+| Last equity (prev close June 16) | USD 95,599.15 |
+| Intraday change vs last_equity | **+0.143%** (shock threshold −6% — NOT triggered ✓) |
+| Cash | USD 6,553.24 (6.84%) |
+| Cash floor (2% min) | ✓ |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **−5.350%** (circuit breaker 20% — NOT triggered ✓; 14.650pp headroom) |
+| Long market value | USD 89,182.23 |
+
+### Position review
+
+| Symbol | Entry | Current | P/L % | -12% Trigger | Buffer | Change today | Action |
+|---|---|---|---|---|---|---|---|
+| NVDA | USD 213.60 | USD 207.335 | -2.93% | USD 187.97 | 9.07pp | -0.04% | No action |
+| META | USD 630.12 | USD 578.595 | **-8.18%** | USD 554.51 | **3.82pp ⚠️ HIGH ALERT** | -3.60% | No action — thesis intact, invalidation NOT triggered |
+| AVGO | USD 406.23 | USD 397.29 | -2.20% | USD 357.48 | 9.80pp | **+5.46% recovery** | No action |
+| MSFT | USD 426.21 | USD 384.82 | **-9.71%** | USD 375.06 | **2.29pp ⚠️ CRITICAL** | -2.29% | No action — below -12% threshold; FOMC risk imminent |
+| AMZN | USD 247.99 | USD 239.96 | -3.24% | USD 218.23 | 8.76pp | -2.46% | No action |
+| VST | USD 151.47 | USD 161.52 | **+6.64% ✅** | USD 133.29 | 19.64pp | +1.84% | No action — stop ratcheting |
+| GOOGL | USD 370.22 | USD 364.86 | -1.45% | USD 325.79 | 10.55pp | -2.25% | No action |
+| MRVL | USD 293.29 | USD 294.92 | **+0.56% ✅** | USD 258.09 | 12.56pp | **+5.83%** | No action |
+
+**Cut rule check (>-12% from entry): NO positions triggered. MSFT most stressed at -9.71% (2.29pp buffer). All clear.**
+**Tighten-stop rule check (>+25% from entry): NO positions triggered. VST leads at +6.64%. All clear.**
+
+### Intraday shock check
+- Equity USD 95,735.47 vs last_equity USD 95,599.15
+- Intraday change: **+0.143%** (threshold −6% — NOT triggered ✓)
+
+### News scan [search: WebSearch fallback — MiniMax M3 not available]
+
+- **META (−8.18% from entry, −3.60% today):** Federal multidistrict school district addiction trial commenced June 15; California judge denied META's new trial bid; court stripped Section 230 protections for platform "design choices." This is a **NEW MATERIAL LEGAL RISK** — potential algorithmic mandate changes and financial liability could directly threaten ad-targeting efficiency. However, it does NOT trigger the defined invalidation condition (requires: formal equity offering confirmed + explicit AI monetization downgrade from management). Ad revenue +33% YoY thesis intact. Analyst avg target USD 827. Decision: **HOLD. Flag legal risk as new watchpoint in thesis contract — close routine should update invalidation language.** Buffer 3.82pp — under 4pp strategic threshold; close routine must re-evaluate.
+- **MSFT (−9.71% from entry, −2.29% today):** Failed USD 3B Oracle cloud deal over security concerns; DeepSeek exploration to reduce AI costs; GitHub reliance on Amazon. None of these break the Azure +40% YoY thesis. FOMC decision at 2:00 PM ET still pending — growth-multiple compression is the actual driver of today's weakness. Analyst avg target USD 561 (53 analysts, Strong Buy). Buffer is **2.29pp** — ONE FOMC hawkish surprise away from the -12% cut rule firing. Decision: **HOLD, but close routine MUST CHECK MSFT vs USD 375.06 trigger post-FOMC and plan June 18 open exit if breached.** Thesis intact — NOT an invalidation.
+- **VST (+6.64% from entry, +1.84% today):** HWM updated to USD 161.91 (from live order API). Stop ratcheted to USD 132.77. New position ATH.
+- **AVGO (−2.20% from entry, +5.46% intraday):** Strong recovery from June 16 FOMC-day selloff. USD 16B Q3 AI guide intact.
+- **MRVL (+0.56% from entry, +5.83% today):** S&P 500 mandatory index buying Day 2 (June 17–20 window). Passive forced buying continuing to support price.
+
+### Stop audit — 8/8 positions confirmed with live 18% trailing stops ✓
+
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| META | `11c3a1bf` | USD 642.38 | USD 526.7516 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| MSFT | `ef211767` | USD 427.51 | USD 350.5582 | ✓ live |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| VST | `5b347be3` | USD 161.91 (new HWM ✅) | USD 132.7662 | ✓ live — stop ratcheting |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| MRVL | `a9097c8c` | USD 316.99 | USD 259.9318 | ✓ live |
+
+**No stops missing. No stops needing recreation. 8/8 confirmed.**
+
+### Performance vs SPY
+| Metric | Value |
+|---|---|
+| Aggro midday | USD 95,735.47 |
+| Aggro since inception | (95,735.47 − 100,000) / 100,000 = **−4.265%** |
+| SPY June 16 close | USD 750.33 (intraday not fetched) |
+| SPY return since inception (754.18 → ~750) | approx. **−0.5%** |
+| Alpha since inception | approx. **−3.76pp** |
+
+### Result
+All 8 positions within guardrails. No trades. All 18% trailing stops active and audited. 8/8 stops confirmed live — no stops recreated. KEY RISKS:
+1. **MSFT CRITICAL (2.29pp buffer):** FOMC at 2:00 PM ET is the single biggest near-term risk. A hawkish dot plot (removing 2026 rate-cut projections) or Warsh hawkish remarks could push MSFT through USD 375.06. Close routine at 3:50 PM MUST check MSFT first and plan June 18 open exit if breached. NO action taken at midday — -12% threshold not yet triggered.
+2. **META HIGH ALERT (3.82pp buffer):** New Section 230 legal ruling is a material development. Buffer now under 4pp strategic threshold. Thesis contract invalidation condition does not formally trigger, but the legal case warrants a thesis contract update. Close routine should evaluate.
+3. **VST new HWM USD 161.91:** Stop auto-ratcheted to USD 132.77. Winner continuing to run.
+4. **MRVL Day 2 index buying:** Position recovering well from June 16 reversal; S&P inclusion buy window continues through June 20.
+
