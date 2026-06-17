@@ -3,8 +3,69 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-16 15:51 ET (close)
+**Last updated:** 2026-06-17 08:03 ET (pre-market)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
+
+## Account (pre-market June 17, 2026 — live Alpaca data ~08:03 ET)
+
+| Metric | Value |
+|--------|-------|
+| Equity | $99,212.67 |
+| Cash | $74,304.63 (74.89%) |
+| Long market value | $24,908.04 |
+| Buying power | ~$366,961 |
+| Last equity (June 16 close) | $99,202.67 |
+
+## Open positions (pre-market June 17, 2026 — live Alpaca data ~08:03 ET)
+
+| Symbol | Qty | Avg entry | Current price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
+|--------|-----|-----------|--------------|-----------|----------------|----------------|---------------|
+| LLY | 10 | $1,093.534 | $1,119.06 | $11,190.60 | +$255.26 (+2.33%) | 11.28% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, same) ✓ — buffer $54.60 (4.88%) |
+| V | 22 | $323.57 | $332.52 | $7,315.44 | +$196.90 (+2.77%) | 7.37% | 66033918 (22sh, HWM **$333.08**, stop **$299.772**) ✓ — buffer $32.75 (9.85%); near HWM — watch ratchet |
+| VST | 40 | $148.81 | $160.05 | $6,402.00 | +$449.60 (+7.55%) | 6.45% | c4c200a5 (40sh, HWM **$161.48**, stop **$145.332**) ✓ — buffer $14.72 (9.19%); watch ratchet above $161.48 ⭐⭐ HELIX |
+
+## Performance vs S&P 500
+
+| Period | Bull | SPY | Difference |
+|--------|------|-----|------------|
+| Inception (2026-05-21) | $100,000.00 | $739.44 | — |
+| **Pre-mkt (2026-06-17)** | **$99,212.67** | **$750.61 (pre-mkt +1.510% since inception)** | **Bull TRAILS SPY ~2.30pp** |
+| **Close (2026-06-16)** | **$99,209.83** | **$751.01 (close, +1.564% since inception)** | **Bull TRAILS SPY ~2.35pp** |
+
+## Notes
+
+**Pre-market June 17, 2026 (~08:03 ET):**
+- **FOMC date correction (material):** All prior memory files incorrectly stated "announcement Wednesday June 18 2 PM ET." June 17 IS Wednesday. FOMC announcement is TODAY June 17 at 2 PM ET; Warsh press conference 2:30 PM ET. Gate lifts TODAY at 2 PM ET.
+- **LLY** $1,119.06 (−0.31% today, +2.33% from entry). Phase 3 TRIUMPH-1 retatrutide data exceptional (28.3% weight loss = bariatric-surgery equivalent). Barclays Buy June 15. Medicare Bridge July 1 in 14 days. Buffer $54.60 (4.88%) ✓. HOLD.
+- **V** $332.52 (−0.18% today, +2.77% from entry). Near HWM $333.08 — ratchet possible if V trades above $333.08 today. OpenAI integration confirmed. Q3 earnings July 28. Buffer $32.75 (9.85%) ✓. HOLD.
+- **VST** ⭐⭐ $160.05 (+0.91% today, +7.55% from entry). Watch for ratchet if VST trades above HWM $161.48. Dividend ex-date June 22 in 5 days (USD 9.16 credit for 40sh). Helix thesis strengthening. Buffer $14.72 (9.19%) ✓. HOLD.
+- **FOMC gate:** No new positions before 2 PM ET TODAY. After FOMC: if neutral (rate hold + not wildly hawkish dot plot): plan NVDA (33sh ~$208 = 6.9%) for Thursday entry; also check LRCX ATR (still ~5%, needs ≤3%) and PWR (conference dust settling).
+- **SPY ex-dividend TOMORROW June 18:** $1.76/sh → SPY total-return anchor adjusts to $741.20 (narrows reported gap by ~0.238pp).
+- **Stop audit:** 4/4 confirmed ✓ (no ratchets in pre-market; all positions below respective HWMs)
+
+**Sector exposure (pre-market June 17):**
+- Healthcare (LLY): $11,190.60 = 11.28%
+- Financials (V): $7,315.44 = 7.37%
+- Energy/Utilities (VST): $6,402.00 = 6.45%
+- Cash: $74,304.63 = 74.89%
+- No sector above 60% cap ✓
+
+**Week of June 16 — new position slots:**
+- **Slot 1:** OPEN — FOMC gate through 2 PM ET TODAY → then: NVDA (33sh ~$208, ATR check Thursday) | LRCX if ATR ≤3%
+- **Slot 2:** OPEN — post-FOMC: LRCX (if ATR normalizes) | NVDA
+- **Slot 3:** OPEN — post-FOMC: PWR (after TD Cowen conference volatility settles)
+
+**Upcoming catalysts:**
+- **FOMC announcement TODAY June 17, 2 PM ET** — dot plot + rate hold; Warsh press conference 2:30 PM ET
+- **SPY dividend ex-date TOMORROW June 18** ($1.76/sh — anchor → $741.20 post-June 18)
+- **LRCX ex-dividend TODAY June 17** ($0.26/sh quarterly)
+- **PWR TD Cowen Conference TODAY June 17** — watch for post-conference volatility
+- **VST dividend ex-date June 22** (USD 9.16 credit for 40sh — 5 days)
+- **LLY Medicare GLP-1 Bridge effective July 1** (14 days — explicit hold/trim/exit decision at June 30 pre-market)
+- **VST thesis review_by July 7** (20 days)
+- **V Q3 FY26 earnings July 28** (41 days — thesis review_by date)
+
+---
 
 ## Account (close June 16, 2026 — live Alpaca data ~15:51 ET)
 

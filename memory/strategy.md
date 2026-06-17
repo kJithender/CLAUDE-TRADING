@@ -108,7 +108,7 @@ _Watchlist hygiene (updated 2026-06-12 weekly review): entries require date adde
 
 | Ticker | Sector | Date Added | One-line reason | Catalyst Expiry |
 |--------|--------|------------|-----------------|-----------------|
-| NVDA   | Tech / AI semi | 2026-05-22 | AI accelerator monopoly; Helix consortium (KKR+NVIDIA preferred AI infra); post-stop-out ($209.04) re-entry eligible post-FOMC if ATR normalizes; target entry on base above $205 | Re-evaluate June 16+ after FOMC |
+| NVDA   | Tech / AI semi | 2026-05-22 | AI accelerator monopoly; Helix consortium (KKR+NVIDIA preferred AI infra); post-stop-out ($209.04) re-entry eligible post-FOMC gate (lifts 2 PM June 17); target entry on base above $205; ATR check Thursday June 18 | Re-evaluate June 18 (Thursday) post-FOMC |
 | LLY    | Healthcare | 2026-05-22 | **HELD** 10sh @ $1,093.53 — GLP-1 dominance; Medicare Bridge July 1; Phase 2 expansions | Review by July 1 (Bridge effective) |
 | V      | Financials | 2026-06-10 | **HELD** 22sh @ $323.57 — payments infrastructure; OpenAI partnership; stablecoin capabilities | Review by July 28 (earnings) |
 | VST    | Energy / Utilities | 2026-06-09 | **HELD** 40sh @ $148.81 — nuclear operator; Helix Digital Infrastructure (KKR+NVDA preferred power partner); dividend Jun 22 | Review by July 7 |
@@ -136,19 +136,19 @@ _Purged from watchlist (2026-06-12):_
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-15 pre-market)
+## Active Macro Watches (updated 2026-06-17 pre-market)
 
-- **FOMC June 16–17 2026 — CRITICAL (GATE ACTIVE):** Rate hold 98–99% probability per CME FedWatch. Kevin Warsh's first FOMC meeting as Fed Chair; dot plot (SEP) released — hawkish shift possible. Probability of at least one year-end 2026 rate hike: ~70%. Announcement Wednesday June 18, 2 PM ET. **No new positions before Wednesday June 18, 2 PM ET — HARD GATE.** If dot plot signals fewer cuts (or hikes): 10yr could spike above 4.75% → halt all new buys. Monitor 10yr closely at 2 PM Wednesday.
-- **10yr Treasury yield:** ~4.47% (June 12 est.) — below 4.75% watch level ✓. Watch post-FOMC dot plot Wednesday.
-- **Iran/US peace deal:** Advancing — WTI ~$85/bbl, well below $100 trigger ✓. Constructive for equities; SPY pre-market June 15 +1.31%. VST nuclear 24/7 reliability advantage intact vs. cheaper gas.
-- **LLY — STRONGEST position:** Pre-mkt June 15 $1,140.47 (+4.29%). Monday rating: **A**. Employer GLP-1 coverage concern (10% of employers dropping in 2027) is a 2027 headwind — NOT a July 1 Medicare Bridge invalidation. Review_by July 1 (Medicare Bridge effective date — explicit hold/trim/exit decision required at pre-market June 30 or July 1).
-- **V — position:** Pre-mkt June 15 $323.10 (−0.15%). Monday rating: **B**. Thesis intact; financials sector lagging tech rallies. Review_by July 28 (Q3 earnings).
-- **VST — HELIX BREAKOUT:** Pre-mkt June 15 $152.24 (+2.31%). Monday rating: **A**. Above HWM $150.50 → stop ratchets to ~$137.02 at market open. Dividend ex-date June 22 (7 days, USD 9.16). Review_by July 7. THESIS MATERIALLY STRENGTHENED.
+- **FOMC June 16–17 2026 — CRITICAL (GATE ACTIVE UNTIL 2 PM ET TODAY):** Rate hold 97% probability per CME FedWatch. Kevin Warsh's first FOMC meeting as Fed Chair; dot plot (SEP) released — hawkish shift possible. Probability of at least one year-end 2026 rate hike: ~70%. Announcement **Wednesday June 17, 2 PM ET** (CORRECTED: June 17 IS Wednesday; gate lifts after today's 2 PM announcement). **No new positions before 2 PM ET June 17 — HARD GATE.** If dot plot signals fewer cuts (or hikes): 10yr could spike above 4.75% → halt all new buys. Monitor 10yr closely at 2 PM today.
+- **10yr Treasury yield:** ~4.47% (June 12 est.) — below 4.75% watch level ✓. Watch post-FOMC dot plot today at 2 PM ET.
+- **Iran/US peace deal:** Advancing — WTI ~$85/bbl, well below $100 trigger ✓. Constructive for equities. VST nuclear 24/7 reliability advantage intact vs. cheaper gas.
+- **LLY — STRONGEST position:** Pre-mkt June 17 $1,119.06 (+2.33%). Monday rating: **A**. TRIUMPH-1 Phase 3 trial exceptional (weight loss 22.7% at 52 wks). Employer GLP-1 coverage concern (10% of employers dropping in 2027) is a 2027 headwind — NOT a July 1 Medicare Bridge invalidation. Review_by July 1 (Medicare Bridge effective date — explicit hold/trim/exit decision required at pre-market June 30 or July 1).
+- **V — position:** Pre-mkt June 17 $332.52 (+2.77%). Monday rating: **B**. Thesis intact; OpenAI partnership confirmed — real-time AI financial insights via Visa network. Review_by July 28 (Q3 earnings).
+- **VST — HELIX BREAKOUT:** Pre-mkt June 17 $160.05 (+7.55%). Monday rating: **A**. Above HWM. Dividend ex-date June 22 (5 days, USD 9.16). Review_by July 7. THESIS MATERIALLY STRENGTHENED.
 - **META — CLOSED June 10:** Trailing stop filled $578.00 (−6.87%). Not on near-term re-entry list.
-- **NVDA — CLOSED June 5:** Re-entry eligible post-FOMC (June 18+) if stock bases above $205 with normalized ATR. Pre-market June 15 ~$205-$210. Next earnings August 26, 2026 (72 days ✓). In buy zone — waiting for FOMC clarity.
+- **NVDA — CLOSED June 5:** Re-entry eligible post-FOMC (June 17 after 2 PM) if stock bases above $205 with normalized ATR. Pre-market June 17 ~$205-$210. Next earnings August 26, 2026 (70 days ✓). Priority 1 post-gate candidate.
 - **MSFT — CLOSED June 5:** Azure AI thesis intact. Re-evaluate post-FOMC if LRCX and NVDA slots are filled.
 - **AMZN — CLOSED June 3:** Not near-term candidate.
-- **Week of June 15:** 3 fresh slots — ALL GATED until post-FOMC June 18, 2 PM ET. Post-gate priority: (1) LRCX if ATR normalizes to ≤3%; (2) NVDA if basing above $205; (3) PWR (Quanta Services).
+- **Post-gate priority (after 2 PM ET today):** (1) NVDA if basing above $205 with ATR ≤3% (Thursday entry); (2) LRCX if ATR normalizes to ≤3% (currently ~5%, disqualified); (3) PWR (Quanta Services, TD Cowen conference June 17).
 - **SPY dividend June 18, 2026 ex-date:** $1.76/sh. After June 18, add $1.76 to SPY anchor ($741.75 + $1.76 = $743.51) for accurate total-return benchmarking.
 
 ## Monday Conviction Ratings (updated 2026-06-15)

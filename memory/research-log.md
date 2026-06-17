@@ -5,6 +5,232 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-17 — Pre-market research (~08:03 ET)
+
+**Today is Wednesday June 17. Week of June 16: 0/3 new positions used. FOMC ANNOUNCEMENT TODAY at 2 PM ET (⚠️ MEMORY CORRECTION: prior entries said "June 18" — June 17 IS Wednesday, announcement is TODAY). Gate lifts at 2 PM ET today. No new positions before then.**
+
+---
+
+### Macro (pre-market June 17, 2026 ~08:03 ET)
+
+| Indicator | Value | Threshold | Status |
+|-----------|-------|-----------|--------|
+| S&P 500 futures / SPY pre-mkt | **+0.28%** (modestly higher ahead of FOMC decision) | — | ✓ Constructive; awaiting FOMC |
+| FOMC June 16–17 | **DAY 2 — announcement TODAY 2 PM ET** (Kevin Warsh's first meeting; rate hold 97% probability; CME FedWatch 0.6% implied hike probability) | Announcement TODAY June 17 2 PM ET | ⚠️ GATE ACTIVE until 2 PM ET today |
+| Dot plot (SEP) | Expected to eliminate single projected cut; up to 3 FOMC members may project rate hikes; Warsh may withhold his own dot (opposed to forward guidance) | 10yr <4.75% | ⚠️ Key risk at 2 PM ET — watch 10yr |
+| 10yr Treasury yield | ~4.47% (June 16 est.) | <4.75% | ✓ Below trigger — watch post-dot-plot |
+| Iran/US peace deal | Still advancing; WTI ~$80/bbl; Strait of Hormuz reopening | Oil <$100 | ✓ Constructive |
+| SPY pre-market | $750.61 (latest trade 08:01 AM ET; vs June 16 Alpaca close $750.58) | — | ~flat overnight |
+| SPY yesterday close | $750.58 (Alpaca daily bar, June 16) | — | Note: post-FOMC SPY direction key |
+
+**⚠️ MEMORY CORRECTION (material):** All prior memory files stated "FOMC announcement Wednesday June 18 2 PM ET." This is wrong — June 17 IS Wednesday (June 18 is Thursday). The announcement is TODAY June 17 at 2:00 PM ET; Warsh press conference 2:30 PM ET. Correcting this record. Gate lifts TODAY at 2 PM ET, not tomorrow.
+
+**SPY ex-dividend TOMORROW June 18 (Thursday):** $1.76/sh. After June 18, SPY total-return anchor adjusts: $739.44 + $1.76 = $741.20 (effective anchor for post-June 18 benchmarking). This will narrow the reported gap by ~0.238pp.
+
+**Macro posture: CAUTIOUS HOLD, FOMC ANNOUNCEMENT IMMINENT.** Futures modestly higher (+0.28%) as market expects a neutral rate hold but watches Warsh's dot plot and press conference closely. Warsh is known to oppose forward guidance — he may withhold his own dot entirely, reducing Fed predictability. Risk is hawkish surprise (dot plot shifts to no cuts + multiple hike signals). 10yr yield at ~4.47% below the 4.75% halt trigger for now. **Hard gate: NO new positions before 2 PM ET today (FOMC announcement).**
+
+---
+
+### Account (pre-market June 17, 2026 — live Alpaca data ~08:03 ET)
+
+| Metric | Value |
+|--------|-------|
+| Equity | $99,212.67 |
+| Cash | $74,304.63 (74.89%) |
+| Long market value | $24,908.04 |
+| Last equity (June 16 close) | $99,202.67 |
+| Buying power | ~$366,961 |
+
+**Intraday shock check:** $99,212.67 vs last_equity $99,202.67 = **+$10.00 = +0.010%** — POSITIVE (slight overnight mark-up). No shock. ✓
+
+**Drawdown circuit breaker:** HWM $101,384.21 (confirmed from equity history); current $99,212.67 = **−2.141%** — well within −10% limit. ✓ FOMC gate is the operative constraint.
+
+---
+
+### Trailing stop audit (pre-market June 17 — confirmed via Alpaca open orders)
+
+| Order ID | Symbol | Qty | HWM | Stop | vs Last | Status |
+|----------|--------|-----|-----|------|---------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | Unchanged | ✓ new |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | Unchanged | ✓ new |
+| 66033918 | V | 22sh | $333.08 | $299.772 | Unchanged (V pre-mkt $332.52 < HWM $333.08) | ✓ new |
+| c4c200a5 | VST | 40sh | $161.48 | $145.332 | Unchanged (VST pre-mkt $160.05 < HWM $161.48) | ✓ new |
+
+Stop audit: **4/4 confirmed active ✓** No ratchets in pre-market (all positions below respective HWMs).
+
+---
+
+### Held positions (pre-market June 17, 2026 — live Alpaca prices)
+
+**LLY ($1,119.06 pre-mkt, −0.31% today from $1,122.50 June 16 close, +2.33% from avg entry $1,093.534):** ⭐ STRONG
+- **What changed since yesterday:** Phase 3 TRIUMPH-1 retatrutide trial data: average weight loss 28.3% of body weight (70.3 lbs) over 80 weeks — comparable to bariatric surgery outcomes. Barclays Buy rating June 15 confirmed. AJX-101 Phase 1 data June 14 (pipeline diversification). Q1 2026 EPS $8.55 beat estimates by 24.82%. Medicare GLP-1 Bridge effective July 1 in **14 days** — thesis catalyst approaching. No negative catalysts.
+- **Earnings window:** Next earnings August 6, 2026 — 50 days away ✓ (well outside 2-day window)
+- **Thesis contract:** invalidation = stop fires ($1,064.457) or Medicare Bridge reversed. review_by = July 1 (14 days). Current $1,119.06 >> $1,064.457. **THESIS INTACT.** ✓
+- **Stop buffer:** $1,119.06 − $1,064.457 = **$54.60 (4.88%)** ✓ Adequate (LLY currently below HWM $1,182.73, so stop remains at $1,064.457).
+- **Decision: HOLD. TRIUMPH-1 data reinforces GLP-1 leadership. Medicare Bridge 14 days away. Thesis strongest in portfolio.**
+
+**V ($332.52 pre-mkt, −0.18% today from $333.12 June 16 close, +2.77% from avg entry $323.57):** ✓ INTACT
+- **What changed since yesterday:** No material new catalysts overnight. Visa-OpenAI integration announced June 10 (AI agent-driven transactions). AI/stablecoin capabilities at Payments Forum confirmed. Mild pre-market weakness consistent with FOMC-day caution on financials. Stock trading at $332.52 — analysts see 24.6% undervaluation, avg PT $398.83.
+- **Earnings window:** Next earnings July 28, 2026 — 41 days away ✓
+- **Thesis contract:** invalidation = trailing stop fires ($299.772) or regulatory mandate forces open access. review_by = July 28. Current $332.52 >> $299.772. **THESIS INTACT.** ✓
+- **Stop buffer:** $332.52 − $299.772 = **$32.75 (9.85%)** ✓ Healthy. Note: V is near HWM $333.08 — if it trades above $333.08 today, stop ratchets.
+- **Decision: HOLD. Flat performance in pre-market; FOMC-day caution on financials is temporary. OpenAI integration is direct thesis confirmation. Near HWM — watch for ratchet.**
+
+**VST ($160.05 pre-mkt, +0.91% today from $158.61 June 16 close, +7.55% from avg entry $148.81):** ⭐⭐ HELIX — STRONG
+- **What changed since yesterday:** Helix Digital Infrastructure (KKR+NVIDIA+Kuwait) thesis intact and strengthening. Vistra +12.3% in past month driven by AI power demand. Dividend ex-date **June 22 in 5 days** ($0.229/sh × 40sh = USD 9.16 credit). Quarterly dividend declared: $0.2290/sh payable June 30. Analyst avg PT $188.44. PJM capacity auction results were positive (VST announced strong results). No negative catalysts.
+- **Earnings window:** Next earnings August 6, 2026 — 50 days away ✓
+- **Thesis contract:** invalidation = WTI >$100 (NO — ~$80 ✓), FCF guidance cut (NO ✓), PPA/Helix cancellation (NO — Helix strengthening ✓), breaks $130 on volume (NO — $160.05 ✓). review_by = July 7 (20 days). **THESIS INTACT AND STRENGTHENED.** ✓
+- **Stop buffer:** $160.05 − $145.332 = **$14.72 (9.19%)** ✓ Strong — near-full 10% trailing protection. VST trading below HWM $161.48; if it trades above $161.48 today, stop ratchets.
+- **Decision: HOLD. Dividend ex-date June 22 in 5 days. Helix thesis is the strongest fundamental upgrade in portfolio. PJM auction results positive.**
+
+---
+
+### Thesis contract review (June 17)
+
+- **LLY:** ✅ Intact. Stop $1,064.457. review_by July 1 (14 days). TRIUMPH-1 data exceptional. **CONTINUE.**
+- **V:** ✅ Intact. Stop $299.772. review_by July 28. OpenAI integration confirmed. **CONTINUE.**
+- **VST:** ✅ STRENGTHENED. Helix + PJM auction positive + dividend June 22. review_by July 7. **CONTINUE.**
+
+No contracts triggered or expired. All holding. Next review trigger: LLY review_by July 1 (14 days — explicit hold/trim/exit decision required at pre-market June 30 or July 1).
+
+---
+
+### Risk posture check (pre-market June 17)
+
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| New positions this week | 0/3 | ≤3 | FOMC gate — no new positions before 2 PM ET today |
+| Cash | $74,304.63 (74.89%) | ≥5% | ✓ Ample |
+| LLY stop buffer | $54.60 (4.88%) | watch | ✓ Adequate |
+| V stop buffer | $32.75 (9.85%) | watch | ✓ Healthy — near HWM; watch ratchet |
+| VST stop buffer | $14.72 (9.19%) | watch | ✓ Near-full buffer — watch ratchet above $161.48 |
+| Drawdown circuit breaker | $99,212 vs HWM $101,384 = −2.141% | <−10% | ✓ Not triggered |
+| Intraday shock (vs last_equity $99,202.67) | +$10.00 = +0.010% | <−4% | ✓ Positive |
+| 10yr yield | ~4.47% (est.) | <4.75% | ✓ Below trigger — watch post-dot-plot 2 PM |
+| WTI oil | ~$80/bbl (Iran peace advancing) | <$100 | ✓ Well below trigger |
+| All trailing stops active | 4/4 confirmed | required | ✓ |
+| Sector caps | Healthcare 11.28%, Financials 7.37%, Energy 6.45%, Cash 74.89% | <60% each | ✓ |
+| FOMC gate | No new positions before 2 PM ET today | — | ⚠️ ACTIVE (lifts 2 PM ET today, June 17) |
+| −7% cut thresholds | LLY $1,016.99 (clear $102); V $300.92 (clear $31.60); VST $138.39 (clear $21.66) | — | ✓ All clear |
+
+---
+
+### Post-FOMC candidate research (reference for today 2 PM+ and Thursday June 18+)
+
+**Slot 1 — LRCX (Lam Research): ATR STILL ELEVATED — DEFER**
+- June 16 close: $369.34 (down ~5.03% on the day) — daily range still ~5%, above 3% threshold ❌
+- Pattern: June 11 ~7.81%, June 12 ~5.01%, June 15 ~5.90%, June 16 ~5.03% — gradually declining but still far above 3%
+- **Ex-dividend TODAY June 17:** $0.26/sh quarterly dividend — minor (~0.07% of price)
+- **Next earnings:** August 5, 2026 — 49 days away ✓
+- Analyst thesis intact: UBS PT $375, Oppenheimer $400, Cantor $425; WFE market now $140B; advanced packaging >50% growth 2026
+- Entry condition: Need ATR ≤3% for 3+ consecutive sessions. Most optimistic scenario: if session June 17 and June 18 are both calm (<3% range), entry eligible Thursday June 19+ or Friday June 20+
+- **Post-FOMC check (2 PM today):** If FOMC neutral and LRCX settles, check Thursday pre-market ATR
+
+**Slot 2 — NVDA (Nvidia): IN BUY ZONE — post-FOMC eligible**
+- June 16 close: $207.41; pre-market June 17 predicted ~$208.75 — above $205 re-entry threshold ✓
+- **Next earnings:** August 25–26, 2026 (~69 days) ✓ Well outside window
+- 62 analysts Strong Buy, avg PT $298.93 (+44% upside from current price)
+- FY2026 revenue $215.94B (+65% YoY); data center revenue +92% — AI accelerator monopoly thesis intact
+- Helix consortium (KKR+NVIDIA+VST) validates GPU demand for AI infrastructure
+- **Post-FOMC check (2 PM today):** If FOMC neutral, NVDA above $205 with ATR normalizing → plan Thursday entry
+- Sizing: 10-11 shares (~$210 × 11 = $2,310 or ~$210 × 15 = $3,150; target 7-9% of portfolio ≈ ~$7K = 33sh; risk budget 1.2% of $99K = $1,188 loss / 10% stop = $11,880 position = ~56sh but cap at 12%)
+
+Actually, let me recalculate NVDA sizing:
+- Risk budget: 1.2% of $99,212 = $1,190 loss max
+- With 10% trailing stop: position size = $1,190 / 10% = $11,900 max
+- NVDA at $208: $11,900 / $208 = ~57sh (rounds to 57sh at 12% portfolio — at the cap with full risk budget)
+- Starter position (7-9%): 7% × $99,212 = $6,945 / $208 = ~33sh
+- 20% hard cap: $19,842 / $208 = ~95sh
+- Risk budget at 33sh: 33 × $208 × 10% = $686 loss = 0.69% of equity (within 1.2% limit) ✓
+- **Target: 33 shares at ~$208 = ~$6,864 = 6.9% of portfolio** (starter conviction, within risk budget)
+
+**Slot 3 — PWR (Quanta Services): MOVING UP — post-FOMC eligible**
+- June 17 pre-market: $718.88–$737.82 range (conference day); latest $722 est.
+- **Institutional investor presentations:** TD Cowen Conference TODAY June 17 in Toronto
+- **Next earnings:** July 30, 2026 — 43 days away ✓ (well outside 2-day window)
+- Q1 2026 adj EPS $2.68 (+50.6% YoY); revenue $7.87B (+26.4% YoY); record backlog $48.5B
+- Raised 2026 guidance. Analyst avg PT $761.35 (4.47% upside from $722).
+- Post-conference volatility possible today — wait for dust to settle before planning entry
+- **Post-FOMC timing:** If TD Cowen presentation today is constructive and ATR calms, PWR eligible for Thursday/Friday entry post-gate
+
+---
+
+### Earnings window check
+| Symbol | Next earnings | Days away | In 2-day window? |
+|--------|---------------|-----------|------------------|
+| LLY | August 6, 2026 | 50 days | ✗ Clear ✓ |
+| V | July 28, 2026 | 41 days | ✗ Clear ✓ |
+| VST | August 6, 2026 | 50 days | ✗ Clear ✓ |
+| NVDA (candidate) | Aug 25–26, 2026 | ~69 days | ✗ Clear ✓ |
+| LRCX (candidate) | August 5, 2026 | 49 days | ✗ Clear ✓ |
+| PWR (candidate) | July 30, 2026 | 43 days | ✗ Clear ✓ |
+
+No held positions or candidates have earnings within 2 trading days. ✓
+
+---
+
+### Cash-drag explicit decision (June 17)
+
+Cash at 74.89% — above strategy target 25-40%. Explicit reasoning for holding:
+1. **FOMC gate active through 2 PM ET TODAY** — announcement in ~6 hours; hawkish dot plot risk remains
+2. **LRCX ATR ~5%** — still disqualified per volatility rule; entry needs 3+ consecutive ≤3% sessions
+3. **NVDA above $205** — re-entry zone reached, but FOMC gate still active at market open; wait for 2 PM announcement
+4. **PWR conference today** — TD Cowen presentation may cause intraday volatility; wait for settling
+5. **Current positions (LLY, V, VST)** — all healthy with intact/strengthened theses; no urgency to force additional deployment before rate clarity
+
+**Post-FOMC (from 2 PM ET today):**
+Close routine will assess FOMC outcome and plan Thursday June 18 deployment if neutral/in-line:
+- Priority 1: NVDA (33sh, above $205, ATR check at Thursday pre-market)
+- Priority 2: LRCX (if ATR finally reaches ≤3% by Thursday)
+- Priority 3: PWR (after conference volatility settles)
+
+---
+
+### Performance (pre-market June 17, 2026)
+
+- **Bull equity pre-market:** $99,212.67 (−0.787% since inception $100,000)
+- **SPY pre-mkt (latest trade):** $750.61 (vs anchor $739.44 = **+1.510% since inception**)
+- **Estimated gap:** Bull −0.787% vs SPY +1.510% = **Bull TRAILS SPY by ~2.30pp**
+- Note: After SPY ex-div June 18 ($1.76/sh), SPY total-return anchor becomes $741.20 — will narrow reported gap by ~0.238pp (effective gap ~2.06pp vs adjusted anchor).
+- **Pre-market P/L (unrealized, vs last_equity):** LLY −$34.40 (−0.31%), V −$13.20 (−0.18%), VST +$57.60 (+0.91%) = net **+$10.00** (+0.010%) ✓
+
+---
+
+### Planned trades for today (Wednesday June 17, 2026)
+
+**No new positions today. FOMC gate active — announcement TODAY June 17, 2 PM ET.**
+
+Reasons: (1) FOMC announcement today 2 PM ET — market-open at 9:35 AM is before the announcement; dot plot hawkish risk (up to 3 members projecting hikes); Warsh may withhold his own dot (additional uncertainty); (2) LRCX ATR ~5% still disqualified; (3) NVDA above $205 but FOMC gate prevents entry before 2 PM; (4) PWR conference today may cause intraday volatility — wait for settling; (5) All 3 current positions healthy with intact theses and strong stop buffers.
+
+**Hold LLY, V, VST.** Watch for VST ratchet if it trades above $161.48 today. Watch for V ratchet if it trades above $333.08.
+
+**Post-FOMC (2 PM ET today onward):** Close routine to assess outcome. If neutral (rate hold + dot plot not wildly hawkish + 10yr stays below 4.75%):
+1. NVDA — plan 33sh entry for Thursday June 18 open
+2. LRCX — check ATR at Thursday pre-market; if ≤3%, plan 22-23sh entry (target 7% portfolio, halved if ATR borderline)
+3. PWR — check post-conference ATR; if settled, plan 10-11sh entry Thursday
+
+```json
+{
+  "plan_date": "2026-06-17",
+  "trades": []
+}
+```
+
+No trades planned.
+
+**Upcoming catalysts:**
+- **FOMC announcement TODAY June 17, 2 PM ET** — dot plot + rate hold; Warsh press conference 2:30 PM ET
+- **SPY dividend ex-date TOMORROW June 18** ($1.76/sh — SPY total-return anchor → $741.20 post-June 18)
+- **VST dividend ex-date June 22** (USD 9.16 credit for 40sh — 5 days)
+- **LRCX ex-dividend TODAY June 17** ($0.26/sh — minor; opens ex-div today)
+- **PWR TD Cowen Conference TODAY June 17** — watch for post-conference volatility
+- **LLY Medicare GLP-1 Bridge effective July 1** (14 days — thesis review_by date; explicit decision required at June 30 pre-market)
+- **VST thesis review_by July 7** (20 days)
+- **PWR next earnings July 30** (43 days)
+- **V Q3 FY26 earnings July 28** (41 days — thesis review_by date)
+
+---
+
 ## 2026-06-16 — Pre-market research (~08:03 ET)
 
 **Today is Tuesday June 16. Week of June 16: 0/3 new positions used. FOMC starts TODAY (June 16–17); announcement Wednesday June 18, 2 PM ET. Hard gate: no new positions until post-FOMC Wednesday afternoon.**
