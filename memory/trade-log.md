@@ -3,6 +3,88 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-18 09:36 ET — MARKET-OPEN — journal
+
+- **Action:** No trades. Plan for today was empty (all candidate gates failed — documented in research-log.md).
+- **Market status:** `is_open: true` ✓ (next close 16:00 ET June 18; next open 09:30 ET June 22 — markets closed Friday June 20 per Alpaca clock)
+- **Account:** Equity $99,166.19 | Cash $74,304.63 (74.92%) | Long market value $24,861.56 | Last equity $99,151.19
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+### Shock check
+- Equity $99,166.19 vs last_equity $99,151.19 = **+$15.00 = +0.015%** — UP slightly. Well above −4% threshold. PASS ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21 (confirmed from equity history); current $99,166.19 = **−2.19%** — within −10% limit ✓ NOT triggered.
+
+### Plan check
+- Plan date: 2026-06-18 ✓ (today's pre-market plan confirmed)
+- Trades: [] — zero trades planned
+- NVDA: price gate FAILS (June 17 close $204.70, below $205 threshold; pre-market drifting below)
+- LRCX: ATR 6.19% — DISQUALIFIED (must be ≤3% for 3+ consecutive sessions)
+- PWR: TD Cowen conference ended June 17 (yesterday); price still in momentum window — re-evaluate June 19+
+- Decision: NO TRADES today. Staying in cash is the correct and explicitly documented outcome.
+
+### Position review (~09:36 ET — live Alpaca data)
+
+**LLY** ($1,109.08, **+1.423% from avg entry $1,093.534**, **−0.263% intraday** vs $1,112 lastday) ✓ HOLD
+- Both trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** — status "new" ✓
+- Stop buffer: $1,109.08 − $1,064.457 = **$44.62 (4.02%)** ✓ Adequate.
+- −7% cut threshold: $1,017.00 — CLEAR by $92.08 ✓. No action.
+- 4E Therapeutics acquisition (pipeline diversification); Medicare Bridge July 1 in 13 days. HOLD.
+
+**V** ($329.88, **+1.949% from avg entry $323.57**, **−0.151% intraday** vs $330.38 lastday) ✓ HOLD
+- Trailing stop 66033918: HWM **$336.8199**, stop **$303.138** — status "new" ✓
+- Stop buffer: $329.88 − $303.138 = **$26.74 (8.11%)** ✓ Solid.
+- −7% cut threshold: $300.92 — CLEAR by $28.96 ✓. No action.
+- Mild softness on open; OpenAI/stablecoin thesis intact. HOLD.
+
+**VST** ($162.835, **+9.425% from avg entry $148.81**, **+2.522% intraday** vs $158.83 lastday) ⭐⭐ HELIX — ⬆️ STOP RATCHETED
+- Trailing stop c4c200a5: HWM **$164.1075** ⬆️ AUTO-RATCHETED (from $162.44 pre-mkt; updated 2026-06-18T13:33 UTC), stop **$147.69675** ⬆️ (from $146.196) ✓
+- VST surged to new position high $164.1075 at market open — Cogentrix completion + Helix momentum.
+- Stop buffer: $162.835 − $147.697 = **$15.14 (9.30%)** ✓ Protected.
+- −7% cut threshold: $138.39 — CLEAR by $24.45 ✓. No action.
+- Cogentrix acquisition closed; Helix Digital Infrastructure thesis intact. Dividend ex-date June 22 in 4 days (USD 9.16 credit). HOLD.
+
+### Stop audit (market-open June 18 — confirmed via Alpaca open orders endpoint)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new |
+| 66033918 | V | 22sh | $336.8199 | $303.138 | ✓ new — unchanged |
+| c4c200a5 | VST | 40sh | **$164.1075** ⬆️ | **$147.69675** ⬆️ | ✓ new — AUTO-RATCHETED at open (from $162.44/$146.196 pre-mkt) |
+
+**Stop audit: 4/4 PASS ✓** No missing stops. VST stop ratcheted to new HWM.
+
+### Exit reconciliation
+No trailing stops filled since last run (EOD June 17). All 3 positions (LLY, V, VST) held. Ledger current. ✓
+
+### Guardrail checks (market-open June 18)
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| LLY above −7% cut threshold | +1.42% from entry | −7% | ✓ Clear by $92.08 |
+| V above −7% cut threshold | +1.95% from entry | −7% | ✓ Clear by $28.96 |
+| VST above −7% cut threshold | +9.43%, $162.84 > $138.39 | −7% | ✓ Clear by $24.45 |
+| Intraday shock (vs last_equity $99,151.19) | +$15.00 = +0.015% | <−4% | ✓ |
+| Drawdown circuit breaker | $99,166 vs HWM $101,384 = −2.19% | <−10% | ✓ |
+| Cash | $74,304.63 (74.92%) | ≥5% | ✓ Ample |
+| All trailing stops active | 4/4 confirmed | required | ✓ |
+| Sector caps | Healthcare 11.18%, Financials 7.31%, Energy 6.57%, Cash 74.92% | <60% each | ✓ |
+| 3 new positions/week | 0/3 used | ≤3 | ✓ |
+| Daily deployment cap | $0 deployed | ≤25% | ✓ |
+| 10yr yield gate | 4.49% (< 4.75%) | ✓ PASS | ✓ |
+
+### Performance (market-open June 18)
+- **Equity:** $99,166.19 (vs last_equity $99,151.19 = +$15.00 today = **+0.015%**)
+- **Unrealized P/L (from entry):** LLY +$155.46 (+1.42%), V +$138.82 (+1.95%), VST +$561.00 (+9.43%) = net **+$855.28**
+- **Cash:** $74,304.63 (74.92%) | Long market value: $24,861.56
+- **Since inception:** $100,000 → $99,166.19 = **−0.834%**
+- **SPY:** $741.02 June 17 close; pre-market $744.55 → total-return benchmark anchor $741.20 (post-June 18 ex-div)
+- **Week of June 16:** 0/3 new positions used
+
+---
+
 ## 2026-06-17 15:51 ET — CLOSE — EOD journal
 
 - **Action:** No trades. End-of-day P/L, stop audit, exit reconciliation, market context, journal.

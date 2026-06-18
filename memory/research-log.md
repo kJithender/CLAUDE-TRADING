@@ -140,6 +140,8 @@ No trades planned — all candidates fail entry gates today.
 }
 ```
 
+EXECUTED: 2026-06-18T09:36 ET — no trades placed; all candidate gates failed (NVDA below $205, LRCX ATR 6.2%, PWR post-conference); stop audit 4/4 PASS; VST stop ratcheted to HWM $164.1075.
+
 ---
 
 ## 2026-06-17 — Pre-market research (~08:03 ET)
