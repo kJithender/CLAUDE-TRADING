@@ -1366,3 +1366,87 @@ Post-FOMC selling was broadest in MSFT and META (rate-sensitive high-multiple te
 4. **AMZN:** Review_by June 22 is 3 trading days away — pre-market June 22 explicit hold/trim/exit decision required.
 5. **VST:** Ex-dividend June 22 (USD 0.229 × 52 = USD 11.91 to cash). New HWM USD 162.44.
 
+
+---
+
+## 2026-06-18 MARKET-OPEN — Proactive trims: MSFT & META
+
+**Routine:** aggro-market-open | **Time:** ~9:49–9:50 AM ET | **Status:** ACTIVE
+
+**Pre-flight checks:**
+- Lock: free → acquired `aggro-market-open` expires 2026-06-18T13:53:42Z
+- Control.md: STATUS ACTIVE — normal operation
+- Market clock: OPEN ✓
+- Live-switch guard: ALPACA_BASE_URL contains `paper` ✓
+- Shock check: equity USD 95,752.52 pre-market vs last_equity USD 94,522.91 (+1.30% intraday at open) — CLEAR (threshold: -6%)
+- Plan date: 2026-06-18 ✓ (today); no EXECUTED: marker → plan not yet run
+- Breaking-news gate: MSFT (Azure/Copilot rumors confirmed no earnings/halt); META (no Section 230 ruling enforcement order; thesis intact) — both CLEAR
+
+**Trade 1 — MSFT SELL 7 shares (25% proactive trim)**
+
+| Field | Value |
+|---|---|
+| Action | SELL (partial trim) |
+| Symbol | MSFT |
+| Qty | 7 shares |
+| Fill price | USD 375.0843 |
+| Fill time | 2026-06-18T13:49:24Z |
+| Pre-trade qty | 28 shares |
+| Post-trade qty | 21 shares |
+| Avg entry | USD 426.21 |
+| Realized P/L | (375.0843 − 426.21) × 7 = **−USD 357.89** (−11.99% on trimmed shares) |
+| -12% cut trigger | USD 375.065 |
+| Fill vs trigger | USD 375.0843 — essentially AT the cut trigger (USD 0.019 above) |
+| Prior stop | `ef211767` (28 shares, HWM USD 427.51, stop USD 350.5582) — CANCELLED |
+| New stop | `aefe6616` (21 shares, HWM USD 376.50, stop USD 308.73, 18% trailing) ✓ |
+
+**Guardrail math (MSFT trim):**
+- Max position (35%): 21 × 375.085 = USD 7,876.79 / USD 95,752.52 = 8.2% ✓
+- Remaining buffer: (375.085 − 375.065) / 426.21 = **0.005%** → effectively 0pp 🚨 CRITICAL
+- Thesis: Azure +40% YoY intact; trim is capital protection at the cut boundary
+- Decision: fill was at $375.0843, literally $0.019 above the hard exit trigger. Executed 25% trim per plan. Had price been AT or below $375.06, plan called for full 28-share exit — but was not triggered.
+
+**Trade 2 — META SELL 6 shares (25% proactive trim)**
+
+| Field | Value |
+|---|---|
+| Action | SELL (partial trim) |
+| Symbol | META |
+| Qty | 6 shares |
+| Fill price | USD 565.7767 |
+| Fill time | 2026-06-18T13:49:25Z |
+| Pre-trade qty | 23 shares |
+| Post-trade qty | 17 shares |
+| Avg entry | USD 630.12 |
+| Realized P/L | (565.7767 − 630.12) × 6 = **−USD 386.06** (−10.21% on trimmed shares) |
+| -12% cut trigger | USD 554.51 |
+| Fill vs trigger | USD 565.7767 — USD 11.27 buffer above cut trigger |
+| Prior stop | `11c3a1bf` (23 shares, HWM USD 642.38, stop USD 526.7516) — CANCELLED |
+| New stop | `5bc32805` (17 shares, HWM USD 567.38, stop USD 465.2516, 18% trailing) ✓ |
+
+**Guardrail math (META trim):**
+- Max position (35%): 17 × 565.54 = USD 9,614.18 / USD 95,864.24 = 10.0% ✓
+- Remaining buffer post-fill: (565.54 − 554.51) / 630.12 = **1.75pp** 🚨 CRITICAL
+- Section 230: California/federal court stripped protections for algorithmic "design choices" — adds legal tail risk but does not invalidate ad-revenue thesis; ad +33% YoY intact
+- Decision: trim reduces binary exit risk on both legal and market fronts while preserving 17-share core position
+
+**Post-trade stop audit (2026-06-18 market-open ~9:50 AM ET): ALL 8 confirmed ✓**
+
+| Symbol | Stop ID | Qty | HWM | Stop Price | Status |
+|---|---|---|---|---|---|
+| NVDA | `54d7d851` | 103 | USD 221.60 | USD 181.712 | ✓ live |
+| AVGO | `36f5a45f` | 34 | USD 426.48 | USD 349.7136 | ✓ live |
+| META | `5bc32805` | 17 | USD 567.38 | USD 465.2516 | ✓ live (NEW) |
+| MSFT | `aefe6616` | 21 | USD 376.50 | USD 308.73 | ✓ live (NEW) |
+| AMZN | `b55bef05` | 36 | USD 250.43 | USD 205.3526 | ✓ live |
+| VST | `5b347be3` | 52 | USD 164.1075 | USD 134.56815 | ✓ live |
+| GOOGL | `e52a43f1` | 16 | USD 375.77 | USD 308.1314 | ✓ live |
+| MRVL | `a9097c8c` | 25 | USD 316.99 | USD 259.9318 | ✓ live |
+
+No stop fills detected since last run. No exits to record in closed-trades.md.
+
+**Total realized P/L this run:** −USD 357.89 (MSFT) + −USD 386.06 (META) = **−USD 743.95**
+These are paper losses from positions entered at higher prices; both underlying theses remain intact at current values.
+
+**Cash raised:** USD 6,553.24 → USD 12,573.49 (+USD 6,020.25 from partial sells)
+
