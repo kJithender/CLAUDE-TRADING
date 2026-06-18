@@ -5,6 +5,143 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-18 — Pre-market research (~08:03 ET)
+
+**Today is Thursday June 18. Week of June 16: 0/3 new positions used. Post-FOMC gate LIFTED. SPY ex-dividend TODAY ($1.76/sh) — anchor updates to $741.20. 10yr at 4.49% — BELOW 4.75% gate — new buys permitted if individual candidate gates clear.**
+
+---
+
+### Macro (pre-market June 18, 2026 ~08:03 ET)
+
+| Indicator | Value | Threshold | Status |
+|-----------|-------|-----------|--------|
+| 10yr Treasury yield | **4.49%** (June 17 close; Alpaca/search confirmed) | <4.75% | ✓ GATE PASSES — new buys permitted |
+| S&P 500 futures | **+0.87%** (pre-market rebound after digesting hawkish FOMC) | — | Constructive |
+| FOMC | **COMPLETED June 17** — rate hold 3.50–3.75%; dot plot hawkish (median 3.8% year-end, up from 3.4%) | — | ✓ Done; 10yr gate operative |
+| SPY ex-dividend | **TODAY June 18 — $1.76/sh** — total-return anchor updates: $739.44 → **$741.20** | — | Benchmark update applied |
+| Iran/US peace deal | Continuing; WTI ~$80/bbl | Oil <$100 | ✓ |
+| Import prices May | +1.9% (fuel/lubricants +12.5%), export prices +1.3% — 6th straight monthly rise | — | Note: mild inflationary pressure; 10yr held below trigger |
+| SPY pre-market | **$744.55** (Alpaca latest trade 08:03 ET, up from $741.02 June 17 Alpaca daily close) | — | +0.48% from close |
+
+**Macro posture: MODERATELY CONSTRUCTIVE.** 10yr gate passes at 4.49%. Hawkish dot plot is a known risk for high-multiple names but has not pushed 10yr above the trigger. Continued discipline required on entries. Rebound today consistent with post-FOMC digestion.
+
+---
+
+### Account (pre-market June 18 — live Alpaca data ~08:03 ET)
+
+| Metric | Value |
+|--------|-------|
+| Equity | $99,128.29 |
+| Cash | $74,304.63 (74.96%) |
+| Long market value | $24,823.66 |
+| Last equity (June 17 close) | $99,151.19 |
+| Buying power | ~$366,725 |
+
+**Intraday shock check:** $99,128.29 vs last_equity $99,151.19 = −$22.90 = −0.023% — no shock ✓  
+**Drawdown circuit breaker:** HWM $101,384.21; current $99,128.29 = −2.22% — within −10% limit ✓ NOT triggered.
+
+---
+
+### Trailing stop audit (pre-market June 18 — confirmed via Alpaca open orders)
+
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new — unchanged |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new — unchanged |
+| 66033918 | V | 22sh | **$336.8199** ⬆️ RATCHETED | $303.138 | ✓ new — HWM hit $336.82 during June 17 session (daily high $336.75) |
+| c4c200a5 | VST | 40sh | $162.44 | $146.196 | ✓ new — unchanged |
+
+**Stop audit: 4/4 PASS ✓** V ratcheted to new HWM $336.82 yesterday.
+
+---
+
+### Held positions (pre-market June 18)
+
+**LLY ($1,112.73 pre-mkt, +0.073% vs $1,112 lastday, +1.755% from avg entry $1,093.534):**
+- **What changed since yesterday:** 4E Therapeutics acquisition announced — Austin-based neuroscience company developing non-addictive painkillers. Pipeline diversification into chronic pain beyond GLP-1. Modest positive.
+- Medicare Bridge July 1 in **13 days** — thesis catalyst approaching.
+- TRIUMPH-1 Phase 3 retatrutide data (28.3% weight loss at 80 weeks, bariatric-surgery equivalent) — unchanged, strongest pipeline data point in portfolio.
+- Earnings window: Next Q2 earnings ~Aug 6 — 49 days ✓.
+- Thesis contract: invalidation = stop fires ($1,064.457). review_by = July 1. **INTACT.**
+- Stop buffer: $1,112.73 − $1,064.457 = $48.27 (4.34%) ✓; −7% threshold $1,017.00 — clear by $95.73 ✓
+- **Decision: HOLD.**
+
+**V ($330.00 pre-mkt, −0.115% vs $330.38 lastday, +1.987% from avg entry $323.57):**
+- **What changed since yesterday:** No material new catalysts overnight. OpenAI/agentic commerce partnership active. Mintoak merchant partnership announced. Analyst note flagging slowing cross-border payments volume — worth monitoring; not thesis-breaking (core domestic payments still strong).
+- V hit HWM $336.82 intraday June 17 (stop ratcheted). Pre-market soft but within noise.
+- Earnings window: July 28 — 40 days ✓.
+- Thesis contract: invalidation = stop fires ($303.138). review_by = July 28. **INTACT.**
+- Stop buffer: $330.00 − $303.138 = $26.86 (8.14%) ✓; −7% threshold $300.92 — clear by $29.08 ✓
+- **Decision: HOLD.**
+
+**VST ($160.909 pre-mkt, +1.309% vs $158.83 lastday, +8.131% from avg entry $148.81):** ⭐⭐ HELIX — MATERIALLY STRENGTHENED
+- **What changed since yesterday:** Cogentrix acquisition CLOSED in June 2026 — Vistra added 5,500 MW of modern natural gas capacity ($4.0B net: $2.3B cash + $0.9B stock + $1.5B debt). Announced Dec 31 2025, regulatory approvals cleared, closed on schedule. This dramatically expands VST's generation portfolio for AI hyperscaler power demand. Morgan Stanley and JPMorgan reiterate Overweight, raised PTs. Avg analyst PT $225.29 (+40% upside from current $160.91).
+- Dividend ex-date June 22 in **4 days** — USD 9.16 credit ($0.229/sh × 40sh).
+- Helix Digital Infrastructure (KKR+NVIDIA+Kuwait, $10B+ AI infra platform) — VST preferred power provider.
+- Earnings window: Q2 earnings ~Aug 6 — 49 days ✓.
+- Thesis contract: invalidation = stop fires ($146.196). review_by = July 7. **INTACT and STRENGTHENED.**
+- Stop buffer: $160.909 − $146.196 = $14.71 (9.14%) ✓; −7% threshold $138.39 — clear by $22.52 ✓
+- **Decision: STRONG HOLD. Cogentrix completion is the single most positive thesis development since Helix announcement. Pre-market up +1.31% while SPY only +0.48% — relative outperformance. Conviction highest since entry.**
+
+---
+
+### Earnings window check
+
+| Symbol | Next Earnings | Days Away | Window? |
+|--------|---------------|-----------|---------|
+| LLY (held) | ~Aug 6, 2026 | 49 | NO ✓ |
+| V (held) | Jul 28, 2026 | 40 | NO ✓ |
+| VST (held) | ~Aug 6, 2026 | 49 | NO ✓ |
+| NVDA (watch) | Aug 26, 2026 | 69 | NO ✓ |
+| PWR (watch) | Jul 30, 2026 | 42 | NO ✓ |
+
+No earnings windows triggered. All clear.
+
+---
+
+### Watchlist evaluation
+
+**NVDA ($204.70 close June 17; pre-market ~$202–205):**
+- Entry gate: "basing above $205 with ATR ≤3%"
+- ATR check (2-day sample): June 17 range $203.47–$209.20 = $5.73, close $204.70 → ATR% = 2.80% ≤3% ✓
+- **Price gate: FAILS** — June 17 close $204.70 is $0.30 below $205. Pre-market reportedly as low as $202.17. Stock is NOT basing above $205; it is drifting through it.
+- Next earnings Aug 26 (69 days) ✓. No earnings window.
+- **Decision: NO BUY. Price gate fails. Need NVDA to close convincingly above $205 and hold for 1+ session before entry is valid. Re-evaluate June 19+ if stock re-establishes above $205.**
+
+**LRCX ($374.40 close June 17; pre-market reportedly ~$392):**
+- ATR check: June 17 range $373.86–$397.05 = $23.19, close $374.40 → ATR% = **6.19% — DISQUALIFIED (>3%).**
+- June 16 ATR: range $368.82–$392.825 = $24.005, close $369.37 → ATR% = **6.50%.**
+- Pre-market gap to $392 (+4.7%) suggests intraday volatility will remain elevated today.
+- **Decision: NO BUY. ATR ~6% — well above 3% gate. Must see ≤3% for 3+ consecutive sessions before entry. Not a near-term candidate.**
+
+**PWR ($714.75 close June 17; pre-market ~$728):**
+- ATR check: June 17 range $708.36–$724.69 = $16.33, close $714.75 → ATR% = 2.28% ✓
+- June 16 ATR: range $719.34–$737.88 = $18.54, close $719.34 → ATR% = 2.58% ✓
+- ATR PASSES. Next earnings July 30 (42 days) ✓.
+- TD Cowen conference: **June 17 (YESTERDAY)** — condition "post-conference volatility settled" not yet met. Pre-market up $8.71 (+1.2%) = still in conference momentum window.
+- Entry signals review: Earnings momentum ✓ (Q1 EPS +31.4%, rev +26.3%); Catalyst ✓ (AI grid/power demand, $4.7B backlog expansion); Valuation likely ✓ (PEG ~1.67 at 30%+ growth / ~50x P/E); Technical uncertain (need 50-day MA position); Macro tailwind ✓ — 3+ signals likely met.
+- **Decision: NO BUY TODAY. Conference was yesterday; price still in conference-momentum window. Re-evaluate June 19+ once 1–2 sessions of stable price action confirm the post-conference base. PWR is the priority entry if NVDA fails to reclaim $205.**
+
+---
+
+### Cash-drag check
+Cash: 74.96% — significantly above 25–40% target band. Week slots: 0/3 used. Tape is constructive (+0.87%). **Explicit reasoning for no entry today:** All three primary candidates fail specific gates: (1) NVDA below $205 price threshold; (2) LRCX ATR 6.2% — disqualified; (3) PWR conference ended yesterday — price not yet settled. Staying in cash today is the correct outcome — not a passive default. All gates are documented. NVDA and PWR are positioned for June 19+ entry once conditions normalize. Deploying into failing gates guarantees compressed stop buffers and suboptimal fills.
+
+---
+
+### Planned trades for today
+
+No trades planned — all candidates fail entry gates today.
+
+```json
+{
+  "plan_date": "2026-06-18",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-06-17 — Pre-market research (~08:03 ET)
 
 **Today is Wednesday June 17. Week of June 16: 0/3 new positions used. FOMC ANNOUNCEMENT TODAY at 2 PM ET (⚠️ MEMORY CORRECTION: prior entries said "June 18" — June 17 IS Wednesday, announcement is TODAY). Gate lifts at 2 PM ET today. No new positions before then.**

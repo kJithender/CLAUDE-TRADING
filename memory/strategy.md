@@ -136,20 +136,19 @@ _Purged from watchlist (2026-06-12):_
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-17 close)
+## Active Macro Watches (updated 2026-06-18 pre-market)
 
-- **FOMC June 16–17 2026 — COMPLETED. HAWKISH SURPRISE:** Rate hold (3.50–3.75%) as expected, BUT dot plot (SEP) showed 9 of 18 members projecting a rate hike by year-end. Kevin Warsh's first meeting as Fed Chair. Bond yields surged. SPY fell −1.44% on the day. FOMC gate has LIFTED, but **hawkish dot plot activates the 10yr monitoring rule** — pre-market Thursday June 18 MUST check 10yr before placing ANY new orders. If 10yr > 4.75% → halt all new buys for the week.
-- **10yr Treasury yield:** Surged on hawkish FOMC surprise (exact level TBD pre-mkt June 18). **Critical: if 10yr > 4.75% at pre-market Thursday, halt all new buys. If below 4.75%, gate lifts for NVDA/LRCX/PWR per watchlist.**
-- **Iran/US peace deal:** Advancing — WTI ~$85/bbl, well below $100 trigger ✓. Constructive for equities. VST nuclear 24/7 reliability advantage intact vs. cheaper gas.
-- **LLY — STRONGEST position:** Pre-mkt June 17 $1,119.06 (+2.33%). Monday rating: **A**. TRIUMPH-1 Phase 3 trial exceptional (weight loss 22.7% at 52 wks). Employer GLP-1 coverage concern (10% of employers dropping in 2027) is a 2027 headwind — NOT a July 1 Medicare Bridge invalidation. Review_by July 1 (Medicare Bridge effective date — explicit hold/trim/exit decision required at pre-market June 30 or July 1).
-- **V — position:** Pre-mkt June 17 $332.52 (+2.77%). Monday rating: **B**. Thesis intact; OpenAI partnership confirmed — real-time AI financial insights via Visa network. Review_by July 28 (Q3 earnings).
-- **VST — HELIX BREAKOUT:** Pre-mkt June 17 $160.05 (+7.55%). Monday rating: **A**. Above HWM. Dividend ex-date June 22 (5 days, USD 9.16). Review_by July 7. THESIS MATERIALLY STRENGTHENED.
-- **META — CLOSED June 10:** Trailing stop filled $578.00 (−6.87%). Not on near-term re-entry list.
-- **NVDA — CLOSED June 5:** Re-entry eligible post-FOMC (June 17 after 2 PM) if stock bases above $205 with normalized ATR. Pre-market June 17 ~$205-$210. Next earnings August 26, 2026 (70 days ✓). Priority 1 post-gate candidate.
-- **MSFT — CLOSED June 5:** Azure AI thesis intact. Re-evaluate post-FOMC if LRCX and NVDA slots are filled.
-- **AMZN — CLOSED June 3:** Not near-term candidate.
-- **Post-gate priority (after 2 PM ET today):** (1) NVDA if basing above $205 with ATR ≤3% (Thursday entry); (2) LRCX if ATR normalizes to ≤3% (currently ~5%, disqualified); (3) PWR (Quanta Services, TD Cowen conference June 17).
-- **SPY dividend June 18, 2026 ex-date:** $1.76/sh. After June 18, add $1.76 to SPY anchor ($741.75 + $1.76 = $743.51) for accurate total-return benchmarking.
+- **FOMC June 16–17 2026 — COMPLETED. HAWKISH SURPRISE (finalized):** Rate hold (3.50–3.75%); dot plot: median 3.8% year-end (up from 3.4%), 9/18 members projecting hike. Kevin Warsh's first meeting. Bond yields surged June 17. SPY fell −1.44%. **10yr CHECKED June 18 pre-market: 4.49% — BELOW 4.75% trigger. New buys permitted.**
+- **10yr Treasury yield:** **4.49% (June 18 pre-market confirmed) — GATE PASSES.** Monitor daily. If 10yr closes above 4.75% on any session, halt all new buys for the week.
+- **Iran/US peace deal:** Advancing — WTI ~$80/bbl, well below $100 trigger ✓. Import prices rising (May +1.9%), but not blocking deployment.
+- **SPY ex-dividend June 18 — EFFECTIVE TODAY:** $1.76/sh. Total-return benchmark anchor updated: $739.44 → **$741.20**.
+- **LLY — STRONGEST position:** Pre-mkt June 18 $1,112.73 (+1.755%). 4E Therapeutics acquisition (pipeline diversification). Medicare Bridge July 1 in 13 days. Review_by July 1.
+- **V — position:** Pre-mkt June 18 $330.00 (+1.987%). HWM ratcheted to $336.82 on June 17. OpenAI partnership active. Slowing cross-border (monitoring). Review_by July 28.
+- **VST — HELIX + COGENTRIX:** Pre-mkt June 18 $160.909 (+8.131%). ⭐⭐ **Cogentrix acquisition CLOSED** — 5,500 MW natural gas capacity added ($4.0B). Helix thesis intact. Dividend ex-date June 22 (4 days, USD 9.16). Review_by July 7. THESIS MOST COMPELLING.
+- **NVDA — FAILED PRICE GATE June 18:** Closed $204.70 (below $205 threshold). Pre-market ~$202-205. ATR 2.80% ≤3% ✓ but price gate fails. Re-evaluate when NVDA holds above $205 for a clean close. Next earnings Aug 26 (69 days ✓).
+- **LRCX — DISQUALIFIED:** ATR ~6.2% (>3% gate). Pre-market reportedly gapping higher. Re-evaluate when ≤3% for 3+ sessions.
+- **PWR — CONFERENCE SETTLED PENDING:** TD Cowen conference June 17 (yesterday). ATR 2.28% ✓. Next earnings July 30 (42 days ✓). Re-evaluate June 19+ for priority 2 slot. PT upgrades: TD Cowen $775, Citi $837.
+- **MSFT, META, AMZN — not near-term candidates.**
 
 ## Monday Conviction Ratings (updated 2026-06-15)
 
