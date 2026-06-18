@@ -3,6 +3,89 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-18 15:51 ET — EOD CLOSE (no trades; VST +10.21% from entry; all 4 stops confirmed; stop audit 4/4 ✓)
+
+- **Action:** No trades today. All 3 positions held. Routine EOD close — P/L journal and reconciliation only.
+- **Market status:** `is_open: false` ✓ (market closed 16:00 ET; next open June 22 — Juneteenth June 20 closed)
+- **Account (EOD):** Equity $99,074.81 | Cash $74,304.63 (74.99%) | LMV ~$24,770.18 | Last equity (June 17 close) $99,151.19 | Today P/L: −$76.38 = −0.077%
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓
+
+### Shock check
+- Equity $99,074.81 vs last_equity $99,151.19 = **−$76.38 = −0.077%** — well above −4% threshold. PASS ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21; current $99,074.81 = **−2.276%** — within −10% limit. NOT triggered ✓
+
+### Market close context
+US-Iran interim peace agreement formally signed at Versailles (Presidents Trump + Pezeshkian); SPY rebounded +0.977% to $747.47 as the post-FOMC hawkish dot-plot surprise was digested and geopolitical risk faded; financials and pharma led while VST surged on continued Cogentrix/AI-power re-rating.
+
+### Position review (EOD — closing prices)
+
+**LLY** ($1,099.55, **+0.55% from avg entry $1,093.534**, **−1.12% today** vs $1,112.13 June 17 close) ✓ HOLD
+- Trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** ✓
+- Stop buffer: $1,099.55 − $1,064.457 = **$35.09 (3.19%)** ✓
+- Medicare Bridge July 1 in 13 days. 4E Therapeutics pipeline diversification intact. HOLD.
+
+**V** ($328.025, **+1.38% from avg entry $323.57**, **−0.71% today** vs $330.695 June 17 close) ✓ HOLD
+- Trailing stop 66033918: HWM **$336.8199**, stop **$303.138** ✓
+- Stop buffer: $328.025 − $303.138 = **$24.887 (7.58%)** ✓
+- OpenAI/stablecoin thesis intact. Review_by July 28. HOLD.
+
+**VST** ($164.00, **+10.21% from avg entry $148.81**, **+3.26% today** vs $158.41 June 17 close) ⭐⭐ HELIX+COGENTRIX — STRONG HOLD
+- Trailing stop c4c200a5: HWM **$170.33** (session high set at midday; unchanged at close), stop **$153.297** ✓
+- Stop buffer: $164.00 − $153.297 = **$10.70 (6.53%)** ✓ Protected.
+- Cogentrix acquisition complete (5,500 MW). Helix Digital Infrastructure intact. Dividend ex-date June 22 (USD 9.16 for 40sh — 4 days; next open IS ex-date). STRONG HOLD.
+
+### Stop audit (EOD June 18)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ confirmed |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ confirmed |
+| 66033918 | V | 22sh | $336.8199 | $303.138 | ✓ confirmed |
+| c4c200a5 | VST | 40sh | $170.33 | $153.297 | ✓ confirmed |
+
+**Stop audit: 4/4 PASS ✓**
+
+### Exit reconciliation
+No positions closed today. closed-trades.md current ✓.
+
+### Performance vs S&P 500 (EOD June 18)
+| Period | Bull | SPY | Difference |
+|--------|------|-----|------------|
+| Since inception (May 21) | $99,074.81 = **−0.925%** | $747.47 + $1.76 div = **+1.323% total-return** | **Bull TRAILS SPY ~2.25pp** |
+| Today | −0.077% | +0.977% | Bull lagged SPY by ~1.05pp (cash drag on SPY rally) |
+
+### Race scoreboard (EOD June 18)
+- Bull: **−0.925%** (since May 21, USD 100K start)
+- AGGRO: **~−2.641% est** (since June 4; midday June 18 $97,358.67; final AGGRO close TBD)
+- SPY total return: **+1.323%** (since May 21, $739.44 anchor + $1.76 div)
+- **Gap: Bull TRAILS SPY by ~2.25pp** (widened from −1.29pp at June 17 close as SPY rallied +0.98% while Bull's 75% cash limited capture)
+- Bull leads AGGRO by ~1.7pp est.
+
+### Guardrail checks (EOD June 18)
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| Intraday shock | −$76.38 = −0.077% | <−4% | ✓ |
+| Drawdown CB | $99,074 vs HWM $101,384 = −2.276% | <−10% | ✓ |
+| Cash | $74,304.63 (74.99%) | ≥5% | ✓ Ample |
+| All stops active | 4/4 | required | ✓ |
+| Sector caps | HC 11.10%, Fin 7.28%, Enrg 6.62%, Cash 74.99% | <60% each | ✓ |
+| Friday watchdog | Thursday — N/A | | ✓ |
+| Monthly housekeeping | Not first trading day of month — N/A | | ✓ |
+| Control switch | ACTIVE (no NOTE, no QUERY) | | ✓ |
+
+### Next open: June 22, 09:30 ET (Juneteenth June 20 — markets closed)
+- VST dividend ex-date June 22 — confirm USD 9.16 credit (40sh) in account at open
+- NVDA: re-evaluate — needs clean close above $205
+- PWR: re-evaluate post-conference; TD Cowen PT $775, Citi PT $837
+- LRCX: ATR must reach ≤3% for 3+ sessions
+- LLY Medicare Bridge July 1 approaching (9 trading days)
+- 10yr yield gate: confirm < 4.75% before any new buys
+
+---
+
 ## 2026-06-18 12:31 ET — MIDDAY (no cuts; no tightenings; stop audit 4/4 ✓; VST HWM auto-ratcheted ⬆️ to $170.33)
 
 - **Action:** No trades — midday risk-management check only. All 3 positions within guardrails. No positions triggered the −7% cut rule; no positions reached +15% tighten threshold.
