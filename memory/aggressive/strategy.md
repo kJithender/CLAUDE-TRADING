@@ -140,18 +140,18 @@ are trading at a fraction of the value they deserve.
 
 ---
 
-## Week 3 priorities (as of 2026-06-16 pre-market — UPDATED)
+## Week 3 priorities (as of 2026-06-18 pre-market — UPDATED)
 
-- **MRVL in portfolio (June 15 entry):** 25 shares @ USD 293.29; 18% trailing stop `a9097c8c`. +3.93% after Day 1 (+10.1% at peak). **S&P 500 inclusion June 22** — index passive buying tailwind through June 20 close. Hold. A-rated.
-- **META (6.32pp buffer — safe zone):** Thesis contract renewed June 15 (review_by June 24). No equity offering confirmed. Buffer comfortably above 4pp. No action until June 24 review.
-- **MSFT (5.03pp buffer):** Azure thesis intact. Quantum milestone (Quantinuum). Citi USD 605 catalyst watch. B-rated; FOMC tomorrow is a known risk but not thesis-breaking.
-- **FOMC June 16–17:** Fed holds at 3.50–3.75% (97% probability). Hawkish dot plot likely. Oil at USD 83 (Brent) is disinflationary — may moderate hawkish tone. No trades today (FOMC risk event).
-- **AMZN review_by June 22:** Pre-market June 22 must include explicit hold/trim/exit decision. AWS +28%; Prime Day June 23-26; thesis intact. Likely renewal.
-- **VST ex-dividend June 22:** USD 0.229/share × 52 shares = USD 11.91 cash incoming.
+- **MSFT (0.59pp buffer — CRITICAL 🚨):** FOMC hawkish dot plot (June 17: 9/18 project rate hike) drove MSFT from USD 384.82 (midday) to USD 379.67 (close) to USD 377.59 (pre-market June 18). Azure +40% YoY thesis COMPLETELY intact. **Proactive trim heuristic triggered** (buffer 0.59pp < 3pp; review_by June 25 = 5 days; no near-term catalyst). **Plan: sell 7 of 28 shares at market open (25% trim). Hard exit all 28 shares if MSFT opens at or below USD 375.06.** B-rated. Post-trim: 21 shares remain, review_by June 25.
+- **META (2.62pp buffer — CRITICAL 🚨):** Post-FOMC selling (META -5.31% June 17) plus Section 230 legal ruling compressed buffer to 2.62pp. Ad revenue +33% YoY thesis intact. No equity offering confirmed. **Proactive trim heuristic triggered** (buffer 2.62pp < 3pp; review_by June 24 = 4 days; no near-term catalyst). **Plan: sell 6 of 23 shares at market open (25% trim).** B-rated. Post-trim: 17 shares remain, review_by June 24.
+- **MRVL (S&P 500 buy window Day 2 of 3):** USD 307.00 pre-market (+6.03% vs June 17 close USD 289.25; +4.67% from entry USD 293.29). **S&P 500 mandatory buy window: June 17 (Day 1), June 18 (Day 2 — today), June 19 (Day 3, last day) before June 22 effective date.** Index funds must hold MRVL by June 19 close. Hold. A-rated.
+- **AVGO ex-dividend June 22 (newly documented):** USD 0.65/share × 34 shares = USD 22.10 cash incoming in 2 trading days. Previously undocumented. Hold to capture. 10.34pp buffer. A-rated.
+- **AMZN review_by June 22 — 2 TRADING DAYS AWAY:** Pre-market June 22 (Monday) MUST include explicit hold/trim/exit decision. AWS +28%; Prime Day June 23-26; thesis intact. Likely renewal with new review_by July.
+- **VST ex-dividend June 22:** USD 0.229/share × 52 shares = USD 11.91 cash incoming. HWM USD 162.44; stop ratcheted to USD 133.20. +5.96% from entry. A-rated.
+- **Post-FOMC bounce (June 18):** NDX +1.32%, S&P +0.87%. The hawkish dot plot sell-the-news selloff is being bought back. AI earnings trajectory unchanged. No regime change.
 - **AMD re-entry remains blocked** until AMD recovers above entry USD 508.43. No averaging down.
-- **Iran deal SIGNED (June 15):** Full peace agreement (Hormuz reopening + 60-day nuclear talks). Oil Brent USD 83. Macro overhang fully resolved. Risk-on backdrop supports all 8 positions.
-- **Cash deployment:** Cash at 6.75% — above 2% floor but below 20% mandatory deployment threshold. No new positions today (FOMC). After FOMC June 17, reassess if any compelling new entry.
-- **No new positions (FOMC risk):** Wait until June 17 FOMC decision is behind us. After that, evaluate AMZN add if review_by renewal is clear, or ETN (AI power capex) if conviction builds.
+- **Cash after planned trims:** ~USD 12,622 (~13.2% of equity) — provides flexibility for AMZN pyramid or new entry post-June 22 AMZN review.
+- **Conviction ratings (June 18):** NVDA A, AVGO A, AMZN A, GOOGL A, VST A, MRVL A, META B (trim today), MSFT B (trim today). No C-rated positions.
 
 ### Proactive trim heuristic (added Week 3)
 
