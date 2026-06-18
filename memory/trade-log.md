@@ -3,6 +3,98 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-18 12:31 ET — MIDDAY (no cuts; no tightenings; stop audit 4/4 ✓; VST HWM auto-ratcheted ⬆️ to $170.33)
+
+- **Action:** No trades — midday risk-management check only. All 3 positions within guardrails. No positions triggered the −7% cut rule; no positions reached +15% tighten threshold.
+- **Market status:** `is_open: true` ✓ (confirmed via clock — next close 16:00 ET June 18; next open 09:30 ET June 22)
+- **Account:** Equity $99,203.28 | Cash $74,304.63 (74.90%) | Long market value $24,898.65 | Last equity (June 17 close) $99,151.19
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+### Shock check
+- Equity $99,203.28 vs last_equity $99,151.19 = **+$52.09 = +0.053%** — POSITIVE. Well above −4% threshold. PASS ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21 (from equity history); current $99,203.28 = **−2.15%** — within −10% limit. ✓ NOT triggered.
+
+### Position review (12:31 ET — live Alpaca data)
+
+**LLY** ($1,095.80, **+0.207% from avg entry $1,093.534**, **−1.457% intraday** vs $1,112 lastday) ✓ HOLD
+- Trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** — status "new" ✓
+- Stop buffer: $1,095.80 − $1,064.457 = **$31.34 (2.86%)** ✓ (narrowed; LLY pulling back intraday — still well above stop)
+- −7% cut threshold: $1,017.00 — CLEAR by $78.80 ✓. No action.
+- Not down >3% from entry (only +0.207%) — no news scan triggered.
+- 4E Therapeutics acquisition (pipeline); Medicare Bridge July 1 in 13 days. HOLD.
+
+**V** ($328.90, **+1.647% from avg entry $323.57**, **−0.448% intraday** vs $330.38 lastday) ✓ HOLD
+- Trailing stop 66033918: HWM **$336.8199**, stop **$303.138** — status "new" ✓ (no ratchet — V below HWM)
+- Stop buffer: $328.90 − $303.138 = **$25.76 (7.83%)** ✓ Solid.
+- −7% cut threshold: $300.92 — CLEAR by $27.98 ✓. No action.
+- Not down >3% from entry — no news scan triggered. OpenAI/stablecoin thesis intact. HOLD.
+
+**VST** ($167.77, **+12.741% from avg entry $148.81**, **+5.629% intraday** vs $158.83 lastday) ⭐⭐ HELIX — ⬆️ STOP AUTO-RATCHETED
+- Trailing stop c4c200a5: HWM **$170.33** ⬆️ AUTO-RATCHETED (from $164.1075 at market-open), stop **$153.297** ⬆️ ✓
+- VST surged to intraday high of $170.33 — Cogentrix closure + Helix Digital Infrastructure momentum continuing.
+- Stop buffer: $167.77 − $153.297 = **$14.47 (8.62%)** ✓ Well-protected.
+- −7% cut threshold: $138.39 — CLEAR by $29.38 ✓. No action.
+- **News scan (VST up >10% from entry):** Fundamental thesis intact and strengthening. Goldman Sachs maintains Buy (PT $209 from $212 — minor reduction; still +24.5% upside from current). Cogentrix acquisition complete (5,500 MW, $4.0B). Helix Digital Infrastructure (KKR+NVIDIA preferred power partner) intact. AI power demand continuing to drive re-rating. Move is thesis-driven, not noise. STRONG HOLD.
+- Not at +15% threshold — no mandatory tighten. Approaching (12.74%); trailing stop is already naturally protecting gains at $153.30. HOLD.
+
+### +15% winner tighten check
+| Symbol | From Entry | Threshold | Action |
+|--------|-----------|-----------|--------|
+| LLY | +0.207% | +15% | ✓ Below — no tighten |
+| V | +1.647% | +15% | ✓ Below — no tighten |
+| VST | +12.741% | +15% | ✓ Below (approaching) — no mandatory tighten; trailing stop protecting at $153.30 |
+
+No tightening actions needed.
+
+### Stop audit (midday June 18 — confirmed via Alpaca open orders endpoint)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new — unchanged |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new — unchanged |
+| 66033918 | V | 22sh | $336.8199 | $303.138 | ✓ new — unchanged (V below HWM) |
+| c4c200a5 | VST | 40sh | **$170.33** ⬆️ | **$153.297** ⬆️ | ✓ new — AUTO-RATCHETED (from $164.1075/$147.697 at market-open) |
+
+**Stop audit: 4/4 PASS ✓** No missing stops. No orphaned orders. VST auto-ratcheted to new intraday HWM.
+
+### Exit reconciliation
+No positions closed this run. No trailing stops filled since market-open. All 3 positions (LLY, V, VST) held. No closed-trades.md or trades.jsonl entries needed.
+
+### Guardrail checks (midday June 18)
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| LLY above −7% threshold | +0.207% from entry, $1,095.80 > $1,017.00 | −7% | ✓ Clear by $78.80 |
+| V above −7% threshold | +1.647% from entry, $328.90 > $300.92 | −7% | ✓ Clear by $27.98 |
+| VST above −7% threshold | +12.741% from entry, $167.77 > $138.39 | −7% | ✓ Clear by $29.38 |
+| Intraday shock (vs last_equity $99,151.19) | +$52.09 = +0.053% | <−4% | ✓ Positive |
+| Drawdown circuit breaker | $99,203 vs HWM $101,384 = −2.15% | <−10% | ✓ |
+| Cash | $74,304.63 (74.90%) | ≥5% | ✓ Ample |
+| All trailing stops active | 4/4 confirmed | required | ✓ |
+| Sector caps | Healthcare 11.05%, Financials 7.30%, Energy 6.77%, Cash 74.90% | <60% each | ✓ |
+| 3 new positions/week | 0/3 used | ≤3 | ✓ |
+| Daily deployment cap | $0 deployed | ≤25% | ✓ |
+| 10yr yield gate | 4.49% (< 4.75%) | ✓ PASS | ✓ |
+
+### Performance (midday June 18, ~12:31 ET)
+- **Equity:** $99,203.28 (vs last_equity $99,151.19 = +$52.09 = **+0.053% intraday**)
+- **Today P/L (unrealized, intraday):** LLY −$162.00 (−1.457%), V −$32.56 (−0.448%), VST +$357.60 (+5.629%) = net **+$163.04**
+- **Unrealized P/L (from entry):** LLY +$22.66 (+0.207%), V +$117.26 (+1.647%), VST +$758.40 (+12.741%) = net **+$898.32**
+- **Cash:** $74,304.63 (74.90%) | Long market value: $24,898.65
+- **Since inception (2026-05-21):** Bull **−0.797%** ($100,000 → $99,203.28) vs SPY ~+0.9% total-return est. — **Bull TRAILS SPY ~1.7pp** (estimate; SPY ex-div today $741.20 anchor)
+- **Week of June 16:** 0/3 new positions used
+
+### Notes
+- VST the standout (+5.63% intraday, +12.74% from entry) — Cogentrix completion driving continued re-rating. Trailing stop auto-ratcheted to new session HWM $170.33 / stop $153.297. The thesis is working exactly as planned.
+- LLY mild pullback (−1.46% intraday) — no specific negative catalyst; broader market rotation. Medicare Bridge July 1 in 13 days. HOLD.
+- V mild softness (−0.45% intraday) — no news. OpenAI/stablecoin thesis intact. HOLD.
+- No urgency to add new positions at midday (per playbook: midday is risk management only).
+- VST approaching 15% from entry — next run should watch this threshold carefully.
+
+---
+
 ## 2026-06-18 09:36 ET — MARKET-OPEN — journal
 
 - **Action:** No trades. Plan for today was empty (all candidate gates failed — documented in research-log.md).
