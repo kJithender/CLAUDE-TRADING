@@ -1450,3 +1450,86 @@ These are paper losses from positions entered at higher prices; both underlying 
 
 **Cash raised:** USD 6,553.24 → USD 12,573.49 (+USD 6,020.25 from partial sells)
 
+
+## 2026-06-18 — MIDDAY CHECK (~12:41 PM ET)
+
+**No trades executed.** Risk management only. All positions within guardrails.
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Market open | true (next close 4:00 PM ET) ✓ |
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 97,358.67 |
+| Last equity (prev close June 17) | USD 94,522.91 |
+| Intraday change vs last_equity | **+3.00%** (shock threshold -6% — NOT triggered ✓) |
+| Cash | USD 12,573.49 (12.91%) |
+| Cash floor (2% min) | ✓ |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-3.74%** (circuit breaker 20% — NOT triggered ✓; 16.26pp headroom) |
+| Long market value | USD 84,785.18 |
+
+### Position review
+
+| Symbol | Entry | Current | P/L % | -12% Trigger | Buffer | Change today | Action |
+|---|---|---|---|---|---|---|---|
+| NVDA | USD 213.60 | USD 210.81 | -1.308% | USD 187.97 | 10.69pp | +3.01% | No action |
+| AVGO | USD 406.23 | USD 408.45 | **+0.546% ✅** | USD 357.48 | 12.55pp | +3.96% | No action |
+| META | USD 630.12 | USD 577.44 | **-8.360%** | USD 554.51 | **3.64pp ⚠️ CRITICAL** | +1.74% | No action — thesis intact, buffer improved from 1.75pp open → 3.64pp midday |
+| MRVL | USD 293.29 | USD 323.67 | **+10.36% ✅** | USD 258.09 | 22.27pp | **+11.79% S&P inclusion final day** | No action |
+| MSFT | USD 426.21 | USD 379.17 | **-11.037%** | USD 375.065 | **0.96pp 🚨 CRITICAL** | +0.07% | No action — rule fires at -12%; current -11.037%; price USD 379.17 > trigger USD 375.065 |
+| AMZN | USD 247.99 | USD 244.08 | -1.577% | USD 218.23 | 10.42pp | +2.77% | No action |
+| GOOGL | USD 370.22 | USD 366.40 | -1.032% | USD 325.79 | 10.97pp | +0.72% | No action |
+| VST | USD 151.47 | USD 167.20 | **+10.384% ✅** | USD 133.29 | 25.50pp | **+5.27% new ATH** | No action |
+
+**Cut rule check (>-12% from entry): NO positions triggered. MSFT most stressed at -11.037% (0.96pp buffer). All clear.**
+**Tighten-stop rule check (>+25% from entry): NO positions triggered. MRVL +10.36% and VST +10.38% are approaching but not there yet. All clear.**
+
+### Intraday shock check
+- Equity USD 97,358.67 vs last_equity USD 94,522.91
+- Intraday change: **+3.00%** (threshold -6% — NOT triggered ✓)
+
+### News scan [search: WebSearch fallback — MiniMax M3 not available]
+
+- **META (-8.36% from entry, +1.74% today):** No equity offering confirmed. CTO Bosworth AI reorganization memo described rollout as "atrocious" — this is an internal communication failure about org structure, NOT a monetization or revenue downgrade. Evercore ISI reiterated Buy, PT USD 930. Reliance/India AI datacenter partnership intact. Thesis: ad revenue +33% YoY INTACT. Section 230 legal risk previously noted — no enforcement order issued. Buffer improved from 1.75pp at open to 3.64pp. Decision: HOLD. Invalidation NOT triggered.
+- **MSFT (-11.037% from entry, +0.07% today):** Stock down 19% YTD; range today USD 377.37-392.43, currently USD 379.17. "Shifts in Copilot pricing models" and "rising AI competition" cited — these are analyst concerns, NOT an explicit Azure deceleration below 30% or Copilot explicitly called underperforming. Strong Buy consensus (56 analysts), avg target USD 561.39 (+48% upside). Azure +40% YoY thesis INTACT. Price is USD 379.17, which is ABOVE the -12% trigger of USD 375.065. Cut rule NOT triggered. MSFT has recovered from market-open low of USD 375.085 (+1.09%). Decision: HOLD. **Close routine MUST check MSFT vs USD 375.065 at 3:50 PM.**
+
+### Stop audit — 8/8 positions confirmed with live 18% trailing stops ✓
+
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| META | `5bc32805` | USD 578.69 | USD 474.5258 | ✓ live — HWM ratcheted to 578.69 (+11.31 from 567.38 at open) |
+| MRVL | `a9097c8c` | **USD 328.53 (new HWM ✅)** | USD 269.3946 | ✓ live — stop ratcheted from 259.93 to 269.39 |
+| MSFT | `aefe6616` | USD 379.62 | USD 311.2884 | ✓ live — HWM ratcheted from 376.50 to 379.62 |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| VST | `5b347be3` | **USD 170.33 (NEW ATH ✅)** | USD 139.6706 | ✓ live — stop ratcheted from 134.57 to 139.67 |
+
+**No stops missing. No stops needing recreation. 8/8 confirmed.**
+
+### Performance vs SPY
+| Metric | Value |
+|---|---|
+| Aggro midday | USD 97,358.67 |
+| Aggro since inception | **(97,358.67 − 100,000) / 100,000 = -2.641%** |
+| SPY last close (June 17) | USD 740.96 |
+| SPY return since inception (754.18 → 740.96) | **-1.753%** |
+| Alpha since inception | **approx. -0.888pp** (best since inception; massively improved from -2.383pp at market-open this morning) |
+
+### Key flags for close routine (3:50 PM ET)
+1. **🚨 MSFT (0.96pp buffer):** Close routine MUST check MSFT price vs USD 375.065. If at or below trigger at 3:50 PM, plan June 22 (Monday) open exit.
+2. **⚠️ META (3.64pp buffer):** Improving today; continue monitoring; review_by June 24.
+3. **AMZN review_by June 22:** Pre-market June 22 is 1 TRADING DAY AWAY — MANDATORY hold/trim/exit decision.
+4. **VST and MRVL ex-div June 22:** VST USD 11.91 (52 × USD 0.229); AVGO ex-div June 22 USD 22.10 (34 × USD 0.65).
+5. **MRVL S&P inclusion:** Final mandatory buy day today — after close, forced buying complete. MRVL now a regular S&P 500 member from June 22.
+
+### Result
+All 8 positions within guardrails. No trades. All 18% trailing stops active and audited. No stops recreated. Strong recovery day: equity +3.0% intraday (+USD 2,836 from last_equity). MRVL and VST printing new all-time HWMs. Alpha improved dramatically to approx. -0.888pp since inception (from -2.383pp at this morning's market-open). MSFT remains critically thin at 0.96pp — the sole outstanding risk item.

@@ -1803,3 +1803,40 @@ Note: After MSFT trim, the MSFT trailing stop needs to be re-evaluated at market
 }
 ```
 EXECUTED: 2026-06-18T13:49:25Z
+
+---
+
+## 2026-06-18 — MIDDAY RESEARCH (~12:41 PM ET)
+[search: WebSearch fallback — MiniMax M3 not available]
+
+### Market context
+Strong post-FOMC recovery day. MRVL +11.79% intraday — S&P 500 mandatory index fund buying Day 3 of 3 (FINAL DAY; effective June 22). VST +5.27% to new ATH HWM USD 170.33. NVDA +3.01%, AVGO +3.96%. Hyperscalers recovering: META +1.74%, MSFT +0.07%. Equity +3.0% intraday vs last_equity USD 94,522.91.
+
+### Position news scans (down >5% from entry)
+
+**META (-8.36%):**
+- CTO Bosworth internal memo: AI reorganization rollout described as "atrocious" — internal org comms failure, NOT a revenue/monetization event
+- KOSA (Kids Online Safety Act) support — pro-regulation positioning, reduces political headwinds
+- Evercore ISI reiterated Buy, PT USD 930
+- No equity offering confirmed; invalidation NOT triggered
+- Section 230 (June 17 ruling): no enforcement order issued today; previously documented
+- Decision: HOLD. Thesis intact.
+
+**MSFT (-11.037%):**
+- Trading USD 377.37-392.43 today; currently USD 379.17 (above -12% trigger USD 375.065)
+- "Shifts in Copilot pricing models" cited as concern — analyst concern, NOT explicit underperformance admission
+- 56 analyst Strong Buy consensus, avg target USD 561.39
+- Azure +40% YoY is the defining metric; no new data suggesting deceleration
+- Decision: HOLD. Thesis intact. Close routine must verify MSFT vs trigger.
+
+### Upcoming catalysts (next 5 trading days)
+| Event | Date | Impact |
+|---|---|---|
+| AMZN review_by (MANDATORY hold/trim/exit decision) | June 22 (pre-market) | High |
+| AVGO ex-dividend USD 0.65 × 34 = USD 22.10 | June 22 | Minor positive |
+| VST ex-dividend USD 0.229 × 52 = USD 11.91 | June 22 | Minor positive |
+| MRVL S&P 500 effective inclusion date | June 22 | Complete — no further forced buying |
+| NVDA Annual Meeting (not earnings) | June 24 | Low |
+| META review_by (thesis contract renewal) | June 24 | Medium |
+
+**No planned trades for market-open June 22.** (Monday — pre-market will assess AMZN thesis contract, which is the top priority.)

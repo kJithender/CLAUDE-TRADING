@@ -17,6 +17,89 @@ but always re-fetches live data before trading._
 
 ---
 
+## Last snapshot — 2026-06-18 MIDDAY (~12:41 PM ET)
+
+| Field | Value |
+|---|---|
+| Equity | USD 97,358.67 |
+| Cash | USD 12,573.49 (12.91%) |
+| Long market value | USD 84,785.18 |
+| Open positions | 8 |
+| last_equity (June 17 EOD — Alpaca authoritative) | USD 94,522.91 |
+| Intraday P/L vs last_equity | +USD 2,835.76 (+3.00%) — post-FOMC recovery; MRVL +11.79% S&P inclusion Day 3 (final); VST +5.27%; NVDA +3.01%; AVGO +3.96% |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-3.74%** (circuit breaker: 20% — NOT triggered; 16.26pp headroom) |
+
+**Open positions (2026-06-18 midday ~12:41 PM ET):**
+
+| Symbol | Qty | Avg Entry | Market Price | Market Value | Unrealized P/L | P/L % | -12% Cut Trigger | Buffer |
+|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 210.81 | USD 21,713.09 | -USD 287.71 | -1.308% | USD 187.97 | 10.69pp |
+| AVGO | 34 | USD 406.23 | USD 408.45 | USD 13,887.30 | +USD 75.48 | **+0.546% ✅** | USD 357.48 | 12.55pp |
+| META | 17 | USD 630.12 | USD 577.44 | USD 9,816.48 | -USD 895.56 | **-8.360%** | USD 554.51 | **3.64pp ⚠️ CRITICAL** |
+| MRVL | 25 | USD 293.29 | USD 323.67 | USD 8,091.75 | +USD 759.62 | **+10.36% ✅** | USD 258.09 | 22.27pp |
+| MSFT | 21 | USD 426.21 | USD 379.17 | USD 7,962.57 | -USD 987.84 | **-11.037%** | USD 375.065 | **0.96pp 🚨 CRITICAL** |
+| AMZN | 36 | USD 247.99 | USD 244.08 | USD 8,786.88 | -USD 140.80 | -1.577% | USD 218.23 | 10.42pp |
+| GOOGL | 16 | USD 370.22 | USD 366.40 | USD 5,862.40 | -USD 61.12 | -1.032% | USD 325.79 | 10.97pp |
+| VST | 52 | USD 151.47 | USD 167.20 | USD 8,694.35 | +USD 817.91 | **+10.384% ✅** | USD 133.29 | 25.50pp |
+
+**Stop audit (2026-06-18 midday): ALL 8 confirmed live. New HWMs: VST USD 170.33 (new ATH!), MRVL USD 328.53 (new HWM). ✓**
+
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| META | `5bc32805` | USD 578.69 | USD 474.5258 | ✓ live — HWM ratcheted from 567.38 to 578.69 |
+| MRVL | `a9097c8c` | **USD 328.53 (new HWM ✅)** | USD 269.3946 | ✓ live — stop ratcheted |
+| MSFT | `aefe6616` | USD 379.62 | USD 311.2884 | ✓ live — HWM ratcheted from 376.50 to 379.62 |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| VST | `5b347be3` | **USD 170.33 (NEW ATH ✅)** | USD 139.6706 | ✓ live — stop ratcheted from 134.57 to 139.67 |
+
+**Sector exposure (midday June 18):**
+| Sector | Market Value | % of Portfolio |
+|---|---|---|
+| Technology — semis (NVDA, AVGO, MRVL) | USD 43,692.14 | 44.9% |
+| Technology — hyperscalers (META, MSFT, AMZN, GOOGL) | USD 32,428.33 | 33.3% |
+| Utilities/Energy (VST) | USD 8,694.35 | 8.9% |
+| Cash | USD 12,573.49 | 12.9% |
+_No cuts this midday run. MSFT at -11.037% / 0.96pp buffer — CRITICAL but NOT triggered (price USD 379.17 vs trigger USD 375.065). MSFT has recovered from market-open low of USD 375.085. META improved from 1.75pp (open) to 3.64pp buffer. MRVL +11.79% intraday — S&P 500 mandatory index buying Day 3 of 3 (FINAL DAY). VST new all-time HWM USD 170.33, stop ratcheted to USD 139.67. All 8 stops confirmed live — no recreation needed._
+
+**Thesis contracts (updated 2026-06-18 midday):**
+| Symbol | Invalidation | Review By | Status |
+|---|---|---|---|
+| NVDA | NVDA loses a major hyperscaler customer OR Q2 FY2027 guide drops below USD 80B | 2026-06-25 | ✓ INTACT — -1.308%; 10.69pp buffer |
+| AVGO | AI revenue guide cut below USD 12B for next quarter OR Q3 total revenue miss >10% | 2026-06-25 | ✓ INTACT — +0.546% ✅; 12.55pp buffer; ex-div June 22 USD 22.10 |
+| META | Meta formally confirms equity offering AND management explicitly downgrades AI monetization; OR Section 230 ruling explicitly restricts ad-targeting effectiveness | 2026-06-24 | ✓ INTACT — -8.36%; **3.64pp ⚠️ CRITICAL**; Bosworth AI reorg memo = internal noise, no monetization impact; no offering confirmed |
+| MRVL | MRVL loses major hyperscaler custom chip program OR revenue growth <15% YoY | 2026-06-29 | ✓ INTACT — S&P 500 final buy day (today June 18 = Day 3); **+10.36% ✅**; 22.27pp buffer |
+| MSFT | Azure growth decelerates below 30% YoY OR Copilot explicitly called underperforming | 2026-06-25 | ✓ INTACT — Azure +40%; Copilot pricing shifts are concerns, NOT explicit underperformance admission; **0.96pp buffer 🚨 CRITICAL. Close routine MUST check vs USD 375.065.** |
+| AMZN | AWS growth decelerates to <20% YoY OR Trainium adoption fails hyperscaler traction | 2026-06-22 | ✓ INTACT — AWS +28%; -1.577%; 10.42pp buffer. **⚠️ Review June 22 — 1 TRADING DAY. Pre-market June 22 MUST decide hold/trim/exit.** |
+| VST | Nuclear PPAs with Meta/AWS cancelled or renegotiated; OR material regulatory action vs nuclear fleet | 2026-07-15 | ✓ INTACT — +10.384% ✅; NEW ATH HWM USD 170.33; ex-div June 22 USD 11.91; 25.50pp buffer |
+| GOOGL | GCP growth decelerates below 40% YoY OR AI investment plan explicitly cut | 2026-06-25 | ✓ INTACT — GCP +63%; -1.032%; 10.97pp buffer |
+
+**Conviction ratings (midday June 18):**
+| Symbol | Rating | Notes |
+|---|---|---|
+| NVDA | **A** | Core AI GPU; 10.69pp buffer; recovering +3.01% today |
+| AVGO | **A** | AI XPV Platform; above entry +0.546%; ex-div June 22 USD 22.10; 12.55pp buffer |
+| MRVL | **A** | S&P 500 final inclusion day complete; +10.36% ✅; 22.27pp; new HWM USD 328.53 |
+| VST | **A** | +10.384% ✅; new ATH HWM USD 170.33; ex-div June 22; 25.50pp |
+| AMZN | **A** | AWS +28%; 10.42pp; **review_by June 22 = TOMORROW — 1 trading day** |
+| GOOGL | **A** | GCP +63%; 10.97pp buffer |
+| META | **B** | Ad +33% intact; 3.64pp buffer CRITICAL; Bosworth memo = noise; no offering confirmed |
+| MSFT | **C** | Azure +40%; **0.96pp buffer 🚨 — close routine MUST check. If ≤ USD 375.065 at 3:50 PM, plan exit.** |
+
+**Performance vs SPY (updated 2026-06-18 midday):**
+| Metric | Value |
+|---|---|
+| Equity | USD 97,358.67 |
+| Aggro return since inception | **(97,358.67 − 100,000) / 100,000 = -2.641%** |
+| SPY last close (June 17) | USD 740.96 |
+| SPY return since inception (754.18 → 740.96) | **-1.753%** |
+| Alpha since inception | **approx. -0.888pp** (best since inception; dramatically improved from -2.383pp at market-open; +3.0% intraday recovery) |
+
+---
+
 ## Last snapshot — 2026-06-18 MARKET-OPEN (~9:50 AM ET — post-trim)
 
 | Field | Value |
