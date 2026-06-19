@@ -3,7 +3,7 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-19 09:36 ET (market-open routine — Juneteenth, market closed; stop audit 4/4 PASS; next open June 22)
+**Last updated:** 2026-06-19 12:31 ET (midday routine — Juneteenth, market closed; stop audit 4/4 PASS; next open June 22)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 **SPY total-return anchor (post-June 18 ex-div $1.76):** **$741.20**
 
@@ -39,6 +39,21 @@ the last known state, but always re-fetches live data before trading._
 | **Close (2026-06-16)** | **$99,209.83** | **$751.01 (close, +1.564% since inception)** | **Bull TRAILS SPY ~2.35pp** |
 
 ## Notes
+
+**Midday June 19, 2026 (~12:31 ET — Juneteenth federal holiday, market CLOSED; stop audit 4/4 PASS; next open June 22):**
+- **Market closed:** Juneteenth — no trades. Market clock confirmed `is_open: false`. Next open June 22, 09:30 ET.
+- **Shock check:** $99,039.61 vs last_equity $99,039.61 = $0.00 (0.00%) — market closed, no change ✓.
+- **Drawdown circuit breaker:** $99,040 vs HWM $101,384 = −2.31% — NOT triggered ✓.
+- **Position review (prices = June 18 close, market closed):**
+  - LLY 10sh @ $1,098.57: +0.46% from entry; −7% threshold $1,017.00 clear by $81.57; buffer $34.11 (3.11%) ✓. HOLD.
+  - V 22sh @ $327.24: +1.14% from entry; −7% threshold $300.92 clear by $26.32; buffer $24.10 (7.37%) ✓. HOLD.
+  - VST 40sh @ $163.75: +10.04% from entry; −7% threshold $138.39 clear by $25.36; buffer $10.45 (6.39%) ✓. HOLD. (Not at +15% tighten threshold.)
+- **Stop audit: 4/4 PASS ✓** All stops unchanged (market closed; no ratchets possible):
+  - LLY: d4147484 (7sh) + 25989fb5 (3sh), HWM $1,182.73, stop $1,064.457 ✓
+  - V: 66033918 (22sh), HWM $336.8199, stop $303.138 ✓
+  - VST: c4c200a5 (40sh), HWM $170.33, stop $153.297 ✓
+- **No exits, no cuts, no tightenings.** All positions within all guardrails. No action possible or required.
+- **Monday readiness:** NVDA plan (33sh ~$210, 7.0% portfolio) ready to execute June 22 open. VST ex-div Monday June 22 — confirm USD 9.16 credit at open. LLY Medicare Bridge July 1 = 12 days.
 
 **Market-open June 19, 2026 (~09:36 ET — Juneteenth federal holiday, market CLOSED; stop audit 4/4 PASS; next open June 22):**
 - **Market closed:** Juneteenth — no trades. Market clock confirmed `is_open: false`. Next open June 22, 09:30 ET.

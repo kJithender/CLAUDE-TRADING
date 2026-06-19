@@ -3,6 +3,76 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-19 12:31 ET — MIDDAY (no action; market CLOSED — Juneteenth holiday; stop audit 4/4 ✓)
+
+- **Action:** No trades — market is CLOSED (Juneteenth federal holiday, June 19, 2026). Midday is risk-management only; with market closed there is nothing to act on. Next open: Monday June 22, 09:30 ET.
+- **Market clock:** `is_open: false` ✓ — confirmed closed. No orders placed.
+- **Account (12:31 ET):** Equity $99,039.61 | Cash $74,304.63 (74.97%) | LMV $24,734.98 | Last equity $99,039.61
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓
+
+### Shock check
+- Equity $99,039.61 vs last_equity $99,039.61 = **$0.00 (0.00%)** — market closed; no intraday movement. No shock ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21; current $99,039.61 = **−2.31%** — within −10% limit. NOT triggered ✓
+
+### Position review (prices = June 18 close — market closed)
+
+**LLY** ($1,098.57, **+0.46% from avg entry $1,093.534**) ✓ HOLD
+- Trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** ✓
+- Stop buffer: $1,098.57 − $1,064.457 = **$34.11 (3.11%)** ✓
+- −7% cut threshold: $1,017.00 — CLEAR by $81.57 ✓. No action (market closed).
+- Medicare Bridge July 1 in 12 days. HOLD.
+
+**V** ($327.24, **+1.14% from avg entry $323.57**) ✓ HOLD
+- Trailing stop 66033918: HWM **$336.8199**, stop **$303.138** ✓
+- Stop buffer: $327.24 − $303.138 = **$24.10 (7.37%)** ✓ Solid.
+- −7% cut threshold: $300.92 — CLEAR by $26.32 ✓. No action.
+- OpenAI/stablecoin thesis intact. HOLD.
+
+**VST** ($163.75, **+10.04% from avg entry $148.81**) ⭐⭐ HELIX+COGENTRIX — STRONG HOLD
+- Trailing stop c4c200a5: HWM **$170.33**, stop **$153.297** ✓
+- Stop buffer: $163.75 − $153.297 = **$10.45 (6.39%)** ✓ Protected.
+- −7% cut threshold: $138.39 — CLEAR by $25.36 ✓. No action.
+- Cogentrix acquisition complete. Helix Digital Infrastructure intact. **Dividend ex-date MONDAY JUNE 22** (USD 9.16 for 40sh). STRONG HOLD.
+
+### Stop audit (midday June 19 — confirmed via Alpaca open orders)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new — unchanged |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new — unchanged |
+| 66033918 | V | 22sh | $336.8199 | $303.138 | ✓ new — unchanged |
+| c4c200a5 | VST | 40sh | $170.33 | $153.297 | ✓ new — unchanged |
+
+**Stop audit: 4/4 PASS ✓** No changes (market closed; no trailing stop ratchets possible).
+
+### Exit reconciliation
+No positions closed since last run. No trailing stops filled. closed-trades.md current ✓.
+
+### Guardrail checks (midday June 19)
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| Intraday shock | $0.00 = 0.00% | <−4% | ✓ |
+| Drawdown CB | $99,040 vs HWM $101,384 = −2.31% | <−10% | ✓ |
+| Cash | $74,304.63 (74.97%) | ≥5% | ✓ Ample |
+| All stops active | 4/4 | required | ✓ |
+| Market status | CLOSED (Juneteenth) | — | No orders possible |
+
+### Performance vs S&P 500 (midday June 19 — unchanged from last run)
+- Bull: **−0.960%** (since May 21, USD 100K start)
+- SPY total return: **+1.323%** (since May 21, $739.44 anchor + $1.76 div)
+- **Gap: Bull TRAILS SPY ~2.28pp** (unchanged — market closed)
+- Bull leads AGGRO by ~1.68pp est.
+
+### Monday readiness confirmed
+- NVDA plan: buy 33sh at market open June 22 (~USD 6,930, 7.0% portfolio). All gates cleared. 10% trailing stop to follow immediately.
+- VST ex-div MONDAY JUNE 22 — confirm USD 9.16 credit (40sh × $0.229) at market-open.
+- LLY Medicare Bridge July 1 = 12 days away — explicit hold/trim/exit decision required at pre-market June 30.
+
+---
+
 ## 2026-06-19 09:36 ET — MARKET-OPEN (no trades; market CLOSED — Juneteenth holiday; stop audit 4/4 ✓)
 
 - **Action:** No trades — market is CLOSED (Juneteenth federal holiday, June 19, 2026). Next open: Monday June 22, 09:30 ET.
