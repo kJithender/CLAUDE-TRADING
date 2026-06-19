@@ -1533,3 +1533,63 @@ These are paper losses from positions entered at higher prices; both underlying 
 
 ### Result
 All 8 positions within guardrails. No trades. All 18% trailing stops active and audited. No stops recreated. Strong recovery day: equity +3.0% intraday (+USD 2,836 from last_equity). MRVL and VST printing new all-time HWMs. Alpha improved dramatically to approx. -0.888pp since inception (from -2.383pp at this morning's market-open). MSFT remains critically thin at 0.96pp — the sole outstanding risk item.
+
+---
+
+## 2026-06-19 — MARKET-OPEN ROUTINE (~9:46 AM ET — Juneteenth, market CLOSED)
+
+**No trades executed.** Market closed — Juneteenth federal holiday.
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Clear → acquired `aggro-market-open` expires 2026-06-19T09:43:00Z ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Plan check | No June 19 plan found in research-log — pre-market did not run (correct: Juneteenth, no market session today). Treated as stale; skip to step 5. |
+| Market clock | **is_open: false** — next open June 22, 2026 at 9:30 AM ET (Juneteenth holiday) |
+
+### Account status (live Alpaca — prices unchanged from June 18 EOD)
+| Field | Value |
+|---|---|
+| Equity | USD 97,006.60 |
+| Cash | USD 12,573.47 (12.96%) |
+| Long market value | USD 84,433.13 |
+| Open positions | 8 |
+| last_equity | USD 97,006.60 (same as equity — market closed) |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -4.09% (circuit breaker 20% — NOT triggered ✓) |
+
+### Stop audit — 8/8 positions confirmed with live 18% trailing stops ✓
+
+| Symbol | Qty | Current Price | P/L % | -12% Trigger | Buffer | Stop Order ID | Stop Price | HWM | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 210.69 | -1.36% | USD 187.97 | 10.64pp | `54d7d851` | USD 181.712 | USD 221.60 | ✓ live |
+| AVGO | 34 | USD 411.35 | **+1.26% ✅** | USD 357.48 | 13.26pp | `36f5a45f` | USD 349.7136 | USD 426.48 | ✓ live |
+| META | 17 | USD 577.22 | **-8.40% ⚠️** | USD 554.51 | **3.60pp HIGH ALERT** | `5bc32805` | USD 475.7763 | USD 580.215 | ✓ live |
+| MRVL | 25 | USD 310.58 | **+5.90% ✅** | USD 258.09 | 17.90pp | `a9097c8c` | USD 270.5016 | USD 329.88 | ✓ live |
+| MSFT | 21 | USD 379.40 | **-10.98% 🚨** | USD 375.065 | **1.02pp CRITICAL** | `aefe6616` | USD 312.7234 | USD 381.37 | ✓ live |
+| AMZN | 36 | USD 244.39 | -1.45% | USD 218.23 | 10.55pp | `b55bef05` | USD 205.3526 | USD 250.43 | ✓ live |
+| GOOGL | 16 | USD 368.03 | -0.59% | USD 325.79 | 11.41pp | `e52a43f1` | USD 308.1314 | USD 375.77 | ✓ live |
+| VST | 52 | USD 163.75 | **+8.11% ✅** | USD 133.29 | 20.11pp | `5b347be3` | USD 139.6706 | USD 170.33 | ✓ live |
+
+**No stops missing. No stops needing recreation. All 8 positions protected. No stop fills since last run.**
+
+### Key flags for pre-market June 22 (Monday)
+1. **🚨 MSFT (1.02pp buffer):** At USD 379.40 vs trigger USD 375.065 — only USD 4.335 cushion. A gap-down open on June 22 below USD 375.065 triggers immediate exit. Pre-market June 22 MUST check MSFT gap risk and plan contingent exit.
+2. **⚠️ META (3.60pp buffer):** Under 4pp strategic threshold. No offering confirmed — Section 230 legal risk watchpoint. Review_by June 24.
+3. **AMZN review_by June 22 — MANDATORY hold/trim/exit decision at pre-market June 22.**
+4. **AVGO ex-div June 22:** USD 22.10 total (34 shares × USD 0.65/share).
+5. **VST ex-div June 22:** USD 11.91 total (52 shares × USD 0.229/share).
+6. **MRVL:** S&P 500 inclusion effective June 22 — mandatory index buy window (June 17–20) complete. Sell-the-news risk has passed; MRVL now a regular S&P 500 member.
+7. **Week 3 weekly review due Friday June 19** — deferred to Monday June 22 weekly review (both occur EOD Friday; today is the holiday).
+
+### Performance vs SPY (updated June 19)
+| Metric | Value |
+|---|---|
+| Equity | USD 97,006.60 |
+| Aggro return since inception | **(97,006.60 − 100,000) / 100,000 = -2.993%** |
+| SPY close June 18 | USD 746.74 |
+| SPY return since inception (754.18 → 746.74) | **-0.987%** |
+| Alpha since inception | **-2.006pp** |
+
