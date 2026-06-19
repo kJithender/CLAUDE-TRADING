@@ -5,6 +5,52 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-19 — Weekly review research (~16:30 ET)
+
+_Web research for Week 5 (June 16–19, 2026) weekly review routine._
+
+### S&P 500 weekly performance
+- SPY Jun 12 close: $741.75. Jun 18 close: $746.75 (+0.674% price). Plus $1.76 dividend (ex-date Jun 18) = **+0.911% total return for the week.**
+- Week dominated by FOMC hawkish surprise (June 17, SPY −1.44%) offset by Iran/US peace deal recovery (June 18, SPY +0.74%). Juneteenth holiday June 19. Only 3 active trading days.
+- S&P 500 futures ~7,498 heading into June 22 — constructive. Year-to-date S&P 500 +5.7%.
+
+### Macro drivers
+- **FOMC June 16–17 confirmed hawkish:** Rate held 3.50–3.75%. Dot plot removed 2026 rate cut; 9/18 members project hike. Bond yields surged; 10yr fell back to 4.44% by June 18 close. Below 4.75% gate ✓.
+- **Iran/US peace deal signed at Versailles June 18–19:** 60-day formal agreement to reopen Strait of Hormuz and halt conflict. WTI ~$80/bbl — below $100 trigger ✓. Constructive risk-on tone into June 22.
+- **Intel/Apple chip deal (June 18):** Trump announced Intel to design/build chips stateside for Apple. INTC spiked on the news. Semiconductor sector risk-on alongside NVDA recovery to $210.38 June 18 close.
+- **Juneteenth (June 19):** NYSE + bond market closed.
+
+### LLY (held 10sh @ $1,093.53)
+- Current: ~$1,098. Stock is down ~7% from its recent $1,160–$1,183 high-water mark area but well above trailing stop $1,064.46.
+- Q1 2026 revenue $19.80B (+55.5% YoY). Mounjaro alone $8.66B. Full-year 2026 guidance raised to USD 82–85B.
+- 4E Therapeutics acquisition closed (neuroscience/CNS/non-addictive pain pipeline diversification).
+- Cathie Wood / ARK added 41,000 shares — institutional conviction signal.
+- Medicare Bridge effective July 1 (12 days). Thesis fully intact. ✓
+
+### V (held 22sh @ $323.57)
+- Current: ~$327. June 19 range $326.86–$332.33.
+- 36 analysts Strong Buy; avg PT $398.83 (+21.9% upside).
+- OpenAI agentic payments partnership active. Stablecoin/token capabilities (Payments Forum confirmed).
+- Cross-border transaction growth slowdown flagged in analyst notes (monitoring; EU regulatory risk). Not thesis-breaking.
+- July 28 FY Q3 earnings is next key date. Thesis intact. ✓
+
+### VST (held 40sh @ $148.81)
+- Current: $163.75. Cogentrix acquisition CLOSED June 17 — 5,500 MW natural gas capacity added at $4.0B.
+- Helix Digital Infrastructure: KKR + NVIDIA + Kuwait Investment Authority + VST — $10B+ AI hyperscaler power venture. VST preferred power partner confirmed.
+- Dividend record date June 22 (ex-date), payable June 30: USD 0.2290/sh × 40sh = USD 9.16.
+- Q1 2026 record adjusted EBITDA $1.5B. Investment-grade rating achieved.
+- PT upgrades: Morgan Stanley $212 (Overweight), Bernstein Outperform initiated, Seaport $230 (from $227). Avg analyst PT $188.44.
+- Thesis strongest of three positions. ✓ ⭐⭐
+
+### Watchlist candidates
+- **NVDA:** June 18 close $210.38 cleared $205 price gate. ATR 2.32% (Jun 18) / 2.80% (Jun 17) — both ≤3%. Plan: 33sh at market Monday June 22 (~$6,930 = 7.0% portfolio). Deutsche Bank PT $220. Helix thesis intact. 5/5 entry signals.
+- **LRCX:** Citi raised PT to $450 from $315 (large upgrade). ATR still elevated (3.54% Jun 18 — improving from 6.19% Jun 17). Need 3 consecutive sessions ≤3%. Earliest entry: week of June 29.
+- **PWR:** ATR 3.97% June 18 elevated. Stock pulled back −10.78% from peak after TD Cowen conference. Notable insider selling $123.2M in 3 months. P/E ~95 elevated. Valid long-term thesis but needs better setup. Re-evaluate week of June 22 for calmer conditions.
+- **INTC:** Apple chip deal announced June 18. Potential turnaround catalyst. Still a structural turnaround — validating Apple contract durability before watchlist addition. Monitor.
+- **YTD top performers (research context):** SNDK +172.8% (NAND shortage + AI), TPL +75.8% (AI infrastructure land), MRNA +68.6% (pipeline). All too extended or too speculative for current strategy.
+
+---
+
 ## 2026-06-19 — Pre-market research (~08:03 ET) — JUNETEENTH HOLIDAY (market closed)
 
 **Today is Friday June 19, 2026 — Juneteenth federal holiday. Market CLOSED. Next open: Monday June 22, 09:30 ET. Week of June 22 begins Monday with 3 fresh position slots.**

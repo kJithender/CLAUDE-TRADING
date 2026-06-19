@@ -2,6 +2,85 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-06-19 (Week 5 — 3 active trading days: Mon Jun 16, Tue Jun 17, Wed Jun 18; Jun 19 Juneteenth holiday)
+
+- **Bull return (week):** +0.397% ($98,648.01 → $99,039.61)
+- **SPY return (week):** +0.911% total return ($741.75 → $746.75 price + $1.76 dividend ex-date Jun 18)
+- **Result:** Lagged SPY by **−0.51pp**
+- **Since inception (2026-05-21):** Bull −0.960% vs SPY +1.323% TR = **−2.28pp gap** (prior gap −1.62pp; widened −0.66pp this week, primarily the $1.76 SPY dividend)
+- **HWM:** $101,384.21 | drawdown −2.31% — well within −10% circuit breaker ✓
+- **Grade:** B
+
+### Trade statistics (week 5 cumulative — closed-trades.md authoritative; trades.jsonl still incomplete)
+
+| Metric | Value |
+|--------|-------|
+| New trades this week | 0 (no entries, no exits) |
+| Total closed trades | 5 (AMZN, AVGO, NVDA, MSFT, META) |
+| Wins | 0 |
+| Losses | 5 |
+| Win rate | **0%** |
+| Average loss % | **4.08%** (META −6.87%, AMZN −7.39%, NVDA −3.36%, AVGO −2.10%, MSFT −0.70%) |
+| Total realized losses | **−$1,689.02** |
+| Profit factor | N/A (no wins yet) |
+| Avg holding days (all losses) | **11.6 days** |
+| Biggest repeated lesson | Entries into macro-inflection environments with co-located stop and −7% rule → near-maximum loss exits |
+
+⚠️ trades.jsonl defect persists (known from Week 4): 2 JSONL records vs 5 closed trades. closed-trades.md remains the authoritative source. Future fills must write to JSONL at execution time.
+
+### Process audit
+
+| Check | Result | Grade |
+|-------|--------|-------|
+| Cash drag (~75% vs 10–20% target for 3 positions) | Justified by sequential gates: FOMC gate Mon–Wed; NVDA price gate failed Jun 17 ($204.70 < $205); then NVDA cleared Jun 18 ($210.38) — plan written for Monday Jun 22 | ✓ Justified |
+| Sector caps | Healthcare 11.1%, Financials 7.3%, Energy/Utilities 6.6% — all far below 60% cap | ✓ |
+| Stop discipline | All 4 stop orders confirmed live all week: LLY (2 orders) $1,064.46, V $303.14, VST $153.30 | ✓ PERFECT |
+| Weekly new-position count | 0/3 slots used — week 5 entry deferred to week 6 (NVDA Monday) | ✓ |
+| Thesis contracts | All 3 positions have invalidation + review_by dates; all reviewed June 19 pre-market | ✓ |
+| Guardrail checks | Complete tables at every routine session (pre-market, market-open, midday, close × 3 days) | ✓ |
+
+### What worked
+
+- **Cash shield on FOMC day (Jun 17):** SPY fell −1.44% on hawkish dot-plot surprise (9/18 members project hike; 2026 cut removed). Bull fell only −0.052% ($99,202 → $99,151). Outperformed SPY by +1.39pp on the week's sharpest session. The 75% cash posture repeatedly demonstrates its shock-absorption value on volatile days.
+- **VST thesis strongest — up +10.04%:** Cogentrix acquisition CLOSED June 17 (5,500 MW natural gas, $4.0B). Helix Digital Infrastructure (KKR+NVIDIA+Kuwait) confirmed as AI hyperscaler preferred power provider. Dividend ex-date Monday June 22 (USD 9.16 for 40sh). Morgan Stanley PT raised to $212; Bernstein initiated Outperform; Seaport PT $230 vs entry $148.81. HWM $170.33, trailing stop ratcheted to $153.30. ⭐ MOST COMPELLING position.
+- **LLY thesis intact:** 4E Therapeutics acquisition closed (neuroscience/CNS pipeline diversification). Medicare Bridge July 1 in 12 days. Cathie Wood / ARK added 41,000 shares. Full-year 2026 guidance raised to USD 82–85B. Trading at $1,098 (+0.46% from entry). Stop buffer 3.11% — narrowed, monitoring.
+- **V thesis intact:** OpenAI agentic payment partnership active. 36 analysts Strong Buy; avg PT $398.83 (+21.9% upside). Trading at $327 (+1.13% from entry). Cross-border slowdown monitoring, not thesis-breaking.
+- **NVDA price gate cleared June 18 ($210.38 > $205):** ATR 2.32% (Jun 18) and 2.80% (Jun 17) — both ≤3%. Full 33-share plan written; Monday June 22 entry ready. All 5 entry signals met.
+
+### What didn't work
+
+- **Bull lagged SPY by 0.51pp this week:** Entirely explained by 75% cash in a week where SPY gained +0.91% total return (including $1.76 dividend). No positions cut, no stops triggered, no thesis breaks — the lag is pure deployment timing.
+- **NVDA gate miss on June 17:** NVDA closed $204.70 on June 17, 30 cents below the $205 threshold. Then closed $210.38 on June 18 — definitively clearing the gate. The gate correctly kept us out; the Wednesday close vindicated the threshold.
+- **SPY gap widened to −2.28pp:** The $1.76 SPY dividend (ex-date Jun 18) adds ~0.24pp to SPY total return in one day. SPY dividend payments create structural headwind when portfolio is largely uninvested. Adding NVDA Monday is the right response — not chasing, just filling the qualified slot.
+
+### Macro context (week of June 16–19, 2026)
+
+- **FOMC June 16–17 (completed — HAWKISH):** Rate held 3.50–3.75%. Dot plot: median 3.8% year-end, 9/18 members project hike, 2026 cut removed. Bond yields surged June 17; SPY −1.44%. 10yr: 4.44% June 18 close — below 4.75% gate ✓.
+- **Iran/US peace deal signed at Versailles June 18–19:** Formal 60-day agreement — Strait of Hormuz reopened, conflict halted. WTI ~$80/bbl. Risk-on recovery June 18: SPY +0.74%. Energy macro headwind resolved.
+- **Intel/Apple chip deal (June 18):** Trump announced Intel to design and build chips stateside for Apple. Semiconductor sector risk-on. INTC monitoring — turnaround candidate but not adding until contract durability confirmed.
+- **Juneteenth (June 19):** NYSE + bond market closed. Only 3 active trading days this week.
+- **SPY ex-dividend June 18:** $1.76/sh credited. Total-return benchmark anchor updated $739.44 → $741.20.
+
+### Aggressive Bull lesson (section 7b)
+
+**AGGRO performance (EOD June 18/19):**
+- AGGRO since inception (June 4): **−2.993%** ($97,006.60)
+- SPY since AGGRO inception (June 4): **−0.987%**
+- AGGRO alpha vs SPY: **−2.006pp**
+- **Cautious Bull leads AGGRO by +2.03pp** since June 4
+
+**Key observations:**
+1. **AGGRO recovered strongly (+2.96pp from Week 4):** VST +8.11%, MRVL (Marvell, added June 15) +5.90%, AVGO +1.26% drove the recovery. AGGRO's concentration in AI semis + energy worked well in the post-FOMC Iran-deal recovery week.
+2. **Proactive trim discipline:** AGGRO made two 25% proactive trims on June 18 when buffers narrowed: MSFT 28→21sh (buffer 1.02pp from forced cut) and META 23→17sh (buffer 3.60pp). This is strong behavioral discipline — reducing before a forced exit preserves capital and reduces peak-to-forced-exit loss. Cautious Bull should model this explicitly: when a position's buffer narrows to <2pp above the mandatory exit threshold, consider a 25% proactive trim.
+3. **MRVL unique AGGRO winner:** Cautious Bull was not in Marvell. MRVL's custom AI silicon thesis (hyperscaler ASICs, Q1 FY2027 revenue $2.42B +28% YoY) is valid — not in Cautious Bull's watchlist currently, but worth tracking once NVDA slot is filled and a 4th position slot opens.
+
+**Cross-Bull learning counter update:**
+- AGGRO is BEHIND Cautious Bull by −2.03pp (Cautious leads). AGGRO is NOT beating Cautious.
+- Counter = **0** (AGGRO must LEAD by >5pp for 2 consecutive weeks to trigger — condition not met).
+- `CROSS_BULL_LEARNING:` in control.md: **unchanged** (blank = not triggered; human controls this file).
+
+---
+
 ## Week ending 2026-06-12 (Week 4 — 5 trading days: Mon Jun 8 – Fri Jun 12)
 
 - **Bull return (week):** −0.22% ($98,916.92 → $98,696.00)

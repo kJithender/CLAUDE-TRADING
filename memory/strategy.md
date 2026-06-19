@@ -108,18 +108,18 @@ _Watchlist hygiene (updated 2026-06-12 weekly review): entries require date adde
 
 | Ticker | Sector | Date Added | One-line reason | Catalyst Expiry |
 |--------|--------|------------|-----------------|-----------------|
-| NVDA   | Tech / AI semi | 2026-05-22 | AI accelerator monopoly; Helix consortium (KKR+NVIDIA preferred AI infra); post-stop-out ($209.04) re-entry eligible post-FOMC gate (lifts 2 PM June 17); target entry on base above $205; ATR check Thursday June 18 | Re-evaluate June 18 (Thursday) post-FOMC |
+| NVDA   | Tech / AI semi | 2026-05-22 | AI accelerator monopoly; Helix consortium (KKR+NVIDIA+Kuwait preferred AI infra); **PRICE GATE CLEARED** June 18 close $210.38 > $205 ✓; ATR 2.32% (Jun 18) + 2.80% (Jun 17) ✓; Deutsche Bank PT $220; **PLAN BUY Monday June 22: 33sh ~$6,930 (~7.0% portfolio)** | Monday June 22 open — execute plan |
 | LLY    | Healthcare | 2026-05-22 | **HELD** 10sh @ $1,093.53 — GLP-1 dominance; Medicare Bridge July 1; Phase 2 expansions | Review by July 1 (Bridge effective) |
 | V      | Financials | 2026-06-10 | **HELD** 22sh @ $323.57 — payments infrastructure; OpenAI partnership; stablecoin capabilities | Review by July 28 (earnings) |
 | VST    | Energy / Utilities | 2026-06-09 | **HELD** 40sh @ $148.81 — nuclear operator; Helix Digital Infrastructure (KKR+NVDA preferred power partner); dividend Jun 22 | Review by July 7 |
-| LRCX   | Semi Equipment | 2026-06-08 | AI fab investment wave; Cantor PT $425 (raised June 10); consolidating post +19.5% run — entry ONLY when ATR ≤3% for 3+ sessions and stock bases cleanly | Re-evaluate June 16+; catalyst: AI equipment cycle, no hard expiry |
+| LRCX   | Semi Equipment | 2026-06-08 | AI fab investment wave; Citi PT raised to $450 (from $315, June 18 — large upgrade); ATR still elevated (3.54% Jun 18); need 3 consecutive sessions ≤3% | Earliest entry week of June 29; catalyst: AI equipment cycle, no hard expiry |
 | MSFT   | Tech / Enterprise AI | 2026-05-22 | Azure AI platform compounding; stop-out at $419.36 June 5; thesis still intact — possible re-entry post-FOMC if re-based | Ongoing; FOMC June 16–17 gate |
 | COST   | Consumer Defensive | 2026-05-29 | Membership model loyalty; consumer defensive; Q4 earnings mid-August | Re-evaluate July+ (pre-earnings) |
-| PWR    | Industrials | 2026-06-12 | NEW — Quanta Services; grid/data-center infrastructure buildout; Q1 EPS +31.4% beat; +26.3% revenue beat; benefits from AI power demand wave | Research June 16+ before FOMC |
+| PWR    | Industrials | 2026-06-12 | Quanta Services; grid/data-center infrastructure buildout; Q1 EPS +31.4% beat; PT upgrades TD Cowen $775 / Citi $837; ATR 3.97% Jun 18 ❌; stock −10.78% from peak; insider selling $123M in 3 months (flag); P/E ~95 elevated — valid thesis, needs calmer setup | Re-evaluate June 22+ when ATR normalizes and stock stabilizes |
 | JNJ    | Healthcare | 2026-05-22 | Defensive quality compounder; resilient earnings; reasonable valuation | Ongoing; no hard expiry |
 | WMT    | Consumer Defensive | 2026-05-22 | Market-share gains from cost-conscious consumer; AI supply-chain edge | Ongoing; no hard expiry |
 
-_Purged from watchlist (2026-06-12):_
+_Purged from watchlist (2026-06-19 weekly review, no new purges — 2026-06-12 list stands):_
 - **AVGO:** Trailing stop gap-fill June 4 (−2.10%). Thesis still directionally intact but recent earnings gap-down and stock now recovering. Re-evaluate in 4+ weeks when gap is digested and stock has re-based cleanly. Removed to avoid re-entering too soon.
 - **AMZN:** Closed June 3 per −7% rule (−7.39%). EU regulatory headwinds ongoing. Not a near-term candidate.
 - **META:** Closed June 10 per trailing stop (−6.87%). Macro inflection entry was the mistake. Re-evaluate for cycle entry when macro headwinds (rate uncertainty) clear and stock re-bases above $620.
@@ -136,24 +136,25 @@ _Purged from watchlist (2026-06-12):_
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-18 pre-market)
+## Active Macro Watches (updated 2026-06-19 weekly review)
 
-- **FOMC June 16–17 2026 — COMPLETED. HAWKISH SURPRISE (finalized):** Rate hold (3.50–3.75%); dot plot: median 3.8% year-end (up from 3.4%), 9/18 members projecting hike. Kevin Warsh's first meeting. Bond yields surged June 17. SPY fell −1.44%. **10yr CHECKED June 18 pre-market: 4.49% — BELOW 4.75% trigger. New buys permitted.**
-- **10yr Treasury yield:** **4.49% (June 18 pre-market confirmed) — GATE PASSES.** Monitor daily. If 10yr closes above 4.75% on any session, halt all new buys for the week.
-- **Iran/US peace deal:** Advancing — WTI ~$80/bbl, well below $100 trigger ✓. Import prices rising (May +1.9%), but not blocking deployment.
-- **SPY ex-dividend June 18 — EFFECTIVE TODAY:** $1.76/sh. Total-return benchmark anchor updated: $739.44 → **$741.20**.
-- **LLY — STRONGEST position:** Pre-mkt June 18 $1,112.73 (+1.755%). 4E Therapeutics acquisition (pipeline diversification). Medicare Bridge July 1 in 13 days. Review_by July 1.
-- **V — position:** Pre-mkt June 18 $330.00 (+1.987%). HWM ratcheted to $336.82 on June 17. OpenAI partnership active. Slowing cross-border (monitoring). Review_by July 28.
-- **VST — HELIX + COGENTRIX:** Pre-mkt June 18 $160.909 (+8.131%). ⭐⭐ **Cogentrix acquisition CLOSED** — 5,500 MW natural gas capacity added ($4.0B). Helix thesis intact. Dividend ex-date June 22 (4 days, USD 9.16). Review_by July 7. THESIS MOST COMPELLING.
-- **NVDA — FAILED PRICE GATE June 18:** Closed $204.70 (below $205 threshold). Pre-market ~$202-205. ATR 2.80% ≤3% ✓ but price gate fails. Re-evaluate when NVDA holds above $205 for a clean close. Next earnings Aug 26 (69 days ✓).
-- **LRCX — DISQUALIFIED:** ATR ~6.2% (>3% gate). Pre-market reportedly gapping higher. Re-evaluate when ≤3% for 3+ sessions.
-- **PWR — CONFERENCE SETTLED PENDING:** TD Cowen conference June 17 (yesterday). ATR 2.28% ✓. Next earnings July 30 (42 days ✓). Re-evaluate June 19+ for priority 2 slot. PT upgrades: TD Cowen $775, Citi $837.
+- **FOMC June 16–17 2026 — COMPLETED HAWKISH (finalized):** Rate hold (3.50–3.75%); dot plot: median 3.8% year-end, 9/18 members projecting hike. SPY fell −1.44% June 17, recovered June 18. **10yr: 4.44% June 18 close — BELOW 4.75% trigger. New buys permitted. ✓**
+- **10yr Treasury yield:** **4.44% (June 18 close) — GATE PASSES.** Monitor daily; if closes above 4.75%, halt all new buys for the week.
+- **Iran/US peace deal — SIGNED at Versailles June 18–19:** 60-day agreement — Strait of Hormuz reopened, conflict halted. WTI ~$80/bbl, well below $100 trigger ✓. Risk-on heading into June 22.
+- **SPY ex-dividend June 18 — APPLIED:** $1.76/sh. Total-return benchmark anchor: $739.44 → **$741.20**.
+- **LLY — position:** June 18 close $1,098.57 (+0.46% from entry). HWM $1,182.73 / stop $1,064.46. 4E Therapeutics acquisition closed. Cathie Wood/ARK added 41K shares. **Medicare Bridge July 1 in 12 days** — explicit hold/trim/exit decision required at pre-market June 30. Review_by July 1. Buffer 3.11% — monitoring (narrowed).
+- **V — position:** June 18 close $327.24 (+1.13% from entry). HWM $336.82 / stop $303.14. OpenAI partnership active. Cross-border slowdown monitoring. Review_by July 28 (earnings Q3 FY26).
+- **VST — HELIX + COGENTRIX:** June 18 close $163.75 (+10.04% from entry). ⭐⭐ Cogentrix acquisition CLOSED (5,500 MW, $4.0B). Helix (KKR+NVIDIA+Kuwait) preferred power provider. **DIVIDEND EX-DATE MONDAY JUNE 22** (USD 9.16 for 40sh; payment June 30). PT upgrades: Morgan Stanley $212, Bernstein Outperform, Seaport $230. HWM $170.33 / stop $153.30. Review_by July 7. THESIS MOST COMPELLING.
+- **NVDA — PRICE GATE CLEARED:** June 18 close $210.38 > $205 ✓. ATR 2.32% (Jun 18) / 2.80% (Jun 17) — both ≤3% ✓. **PLAN BUY Monday June 22: 33sh at market (~$6,930 = 7.0% portfolio)**. Next earnings Aug 26 (68 days ✓). Invalidation: closes below $200 on volume or trailing stop fires.
+- **LRCX — ATR GATE FAILING:** ATR 3.54% June 18 (improving from 6.19%). Citi PT raised to $450 (from $315). Need 3 consecutive sessions ≤3%. Earliest: week of June 29.
+- **PWR — PULLBACK + ATR ELEVATED:** ATR 3.97% June 18. Stock −10.78% from peak. Insider selling $123M in 3 months (flag). P/E ~95. Valid thesis but needs calmer entry setup. Re-evaluate week of June 22+.
 - **MSFT, META, AMZN — not near-term candidates.**
 
-## Monday Conviction Ratings (updated 2026-06-15)
+## Monday Conviction Ratings (updated 2026-06-19 weekly review)
 
 | Symbol | Rating | 3-consecutive-C trigger | Notes |
 |--------|--------|------------------------|-------|
-| LLY | **A** | N/A | Medicare Bridge catalyst approaching July 1 |
-| V | **B** | 0/3 weeks at C | Flat but intact; track through July 28 earnings |
-| VST | **A** | N/A | Helix thesis upgrade; dividend June 22 |
+| LLY | **A** | N/A | Medicare Bridge July 1 in 12 days; Cathie Wood buying; stop buffer 3.11% narrowed — monitoring |
+| V | **B** | 0/3 weeks at C | +1.13% from entry; thesis intact; cross-border slowdown monitoring; July 28 earnings gate |
+| VST | **A** | N/A | Cogentrix closed; Helix thesis strongest; +10.04%; dividend ex-date Monday Jun 22; PT upgrades to $212–$230 |
+| NVDA | _pending fill_ | N/A | Plan: 33sh at market Monday Jun 22; all 5 entry signals met; starts at starter B conviction post-fill |
