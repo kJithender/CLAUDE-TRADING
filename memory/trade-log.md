@@ -3,6 +3,105 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-19 15:50 ET — EOD CLOSE (no trades; market CLOSED — Juneteenth federal holiday; stop audit 4/4 ✓; all 3 positions intact)
+
+- **Action:** No trades — market was CLOSED all day (Juneteenth federal holiday, June 19, 2026). EOD close routine: P/L journal, reconciliation, performance vs SPY, race scoreboard. Next open: Monday June 22, 09:30 ET.
+- **Market status:** `is_open: false` ✓ (confirmed clock: next_open 2026-06-22T09:30:00-04:00)
+- **Account (15:50 ET — live Alpaca):** Equity $99,039.61 | Cash $74,304.63 (74.97%) | LMV $24,734.98 | Last equity $99,039.61 (balance_asof: 2026-06-18; holiday)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓
+
+### Half-day check
+- Today is a federal holiday (Juneteenth — June 19, 2026). Markets fully closed, not a half-day session. Marked in journal. ✓
+
+### Dedup check
+- `memory/performance.csv` last row: 2026-06-18,bull — no row exists for 2026-06-19,bull. Proceeding to append. ✓
+
+### Shock check
+- Equity $99,039.61 vs last_equity $99,039.61 = **$0.00 (0.00%)** — market closed; no intraday movement. PASS ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21; current $99,039.61 = **−2.31%** — within −10% limit. NOT triggered ✓
+- Headroom to trigger: −7.69pp remaining — not within 2% of circuit breaker. ✓
+
+### Market close context (June 19, 2026)
+US markets closed for Juneteenth federal holiday. No trading on NYSE or Nasdaq today. Last active session was June 18 (SPY +0.977% to $747.47 on US-Iran peace deal signed at Versailles). No new macro catalyst or thesis-threatening news confirmed over the long weekend. VST, LLY, V thesis all intact heading into Monday. **VST ex-dividend Monday June 22** (40sh × $0.229 = USD 9.16 credit). **NVDA Monday buy plan confirmed** (33sh, ~7.0% portfolio, 10% trailing stop to follow). Context is constructive for Monday open.
+
+### Position review (prices = June 18 EOD — market closed all day)
+
+**LLY** ($1,098.57, **+0.46% from avg entry $1,093.534**) ✓ HOLD
+- Trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** ✓
+- Stop buffer: $1,098.57 − $1,064.457 = **$34.11 (3.11%)** ✓ (narrowed but intact)
+- −7% cut threshold: $1,017.00 — CLEAR by $81.57 ✓. No action.
+- Medicare Bridge July 1 in **12 days** — explicit hold/trim/exit decision required at pre-market June 30.
+
+**V** ($327.24, **+1.13% from avg entry $323.57**) ✓ HOLD
+- Trailing stop 66033918: HWM **$336.8199**, stop **$303.138** ✓
+- Stop buffer: $327.24 − $303.138 = **$24.10 (7.37%)** ✓
+- −7% cut threshold: $300.92 — CLEAR by $26.32 ✓. OpenAI/stablecoin thesis intact. Review_by July 28.
+
+**VST** ($163.75, **+10.04% from avg entry $148.81**) ⭐⭐ HELIX+COGENTRIX — STRONG HOLD
+- Trailing stop c4c200a5: HWM **$170.33**, stop **$153.297** ✓
+- Stop buffer: $163.75 − $153.297 = **$10.45 (6.39%)** ✓ Protected.
+- −7% cut threshold: $138.39 — CLEAR by $25.36 ✓.
+- **DIVIDEND EX-DATE MONDAY JUNE 22** — USD 9.16 credit (40sh × $0.229). Confirm at open.
+
+### Stop audit (EOD June 19 — confirmed via Alpaca open orders; no changes since June 18)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ confirmed |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ confirmed |
+| 66033918 | V | 22sh | $336.8199 | $303.138 | ✓ confirmed |
+| c4c200a5 | VST | 40sh | $170.33 | $153.297 | ✓ confirmed |
+
+**Stop audit: 4/4 PASS ✓** No changes (market closed all day; no trailing stop ratchets possible).
+
+### Exit reconciliation
+No exits today (market closed). All 3 positions (LLY, V, VST) held. closed-trades.md current ✓ (last exit: META June 10, already recorded). No new closed-trades.md entries required. ✓
+
+### Performance vs S&P 500 (EOD June 19)
+| Period | Bull | SPY | Difference |
+|--------|------|-----|------------|
+| Since inception (May 21) | $99,039.61 = **−0.960%** | ($747.47 + $1.76 div) / $739.44 = **+1.323% total-return** | **Bull TRAILS SPY ~2.28pp** |
+| Today (June 19 — holiday) | $0.00 = +0.000% | 0.000% (market closed) | —  |
+
+### Race scoreboard (EOD June 19)
+- Bull: **−0.960%** (since May 21, USD 100K start)
+- AGGRO: **−2.993%** (since June 4; equity $97,006.60 per June 19 market-open snapshot)
+- SPY total return: **+1.323%** (since May 21, $739.44 anchor + $1.76 div)
+- **Gap: Bull TRAILS SPY by ~2.28pp** (unchanged from June 18 EOD — market closed)
+- **Bull leads AGGRO by ~2.03pp**
+
+### Friday watchdog (June 19 is Friday)
+- Last weekly review: **Week ending 2026-06-12** (exactly 7 days ago)
+- Weekly review for week ending June 19 is scheduled at 4:30 PM TODAY (after this close routine) — expected and on-schedule.
+- Condition "more than 7 days old": June 12 → June 19 = 7 days — NOT more than 7. Watchdog: NOT triggered ✓
+
+### Monthly housekeeping
+- First trading day of month check: Not applicable (June 1 was). Skip. ✓
+- Quarterly SPY dividend (June — Q2 2026): Already documented ($1.76/sh, ex-date June 18). Cumulative SPY div since inception: +$1.76/sh. Total-return anchor: $741.20. Already in portfolio.md ✓.
+
+### Guardrail checks (EOD June 19)
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| Today shock | $0.00 = 0.00% | <−4% | ✓ (holiday) |
+| Drawdown CB | $99,040 vs HWM $101,384 = −2.31% | <−10% | ✓ |
+| Cash | $74,304.63 (74.97%) | ≥5% | ✓ Ample |
+| All stops active | 4/4 | required | ✓ |
+| Sector caps | HC 11.09%, Fin 7.27%, Enrg 6.61%, Cash 74.97% | <60% | ✓ |
+| RISK_OFF / PAUSED | STATUS: ACTIVE | — | ✓ |
+| Control switch NOTE | None | — | ✓ |
+| Friday watchdog | 7 days (not >7) | >7 days | ✓ NOT triggered |
+
+### Monday readiness
+- **NVDA:** BUY 33sh at market open June 22 (~USD 6,930, 7.0% portfolio). 10% trailing stop immediately after fill. All gates confirmed: price $210.38 > $205 ✓, ATR ≤3% for 2+ sessions ✓, earnings Aug 26 (67 days, outside 2-day window) ✓, 5/5 entry signals ✓. Confirm 10yr < 4.75% at pre-market June 22 before executing.
+- **VST ex-div MONDAY JUNE 22:** Confirm $0.229/sh × 40sh = USD 9.16 cash credit to account at open. Normal; does NOT affect trailing stop levels.
+- **LLY Medicare Bridge July 1:** 12 days away — explicit hold/trim/exit decision REQUIRED at pre-market June 30.
+- **3 new position slots available** (fresh week of June 22): NVDA Slot 1 planned; LRCX Slot 2 and PWR Slot 3 pending gate clearance.
+
+---
+
 ## 2026-06-19 12:31 ET — MIDDAY (no action; market CLOSED — Juneteenth holiday; stop audit 4/4 ✓)
 
 - **Action:** No trades — market is CLOSED (Juneteenth federal holiday, June 19, 2026). Midday is risk-management only; with market closed there is nothing to act on. Next open: Monday June 22, 09:30 ET.
