@@ -1593,3 +1593,28 @@ All 8 positions within guardrails. No trades. All 18% trailing stops active and 
 | SPY return since inception (754.18 → 746.74) | **-0.987%** |
 | Alpha since inception | **-2.006pp** |
 
+
+---
+
+## 2026-06-19 — MIDDAY CHECK (~12:41 PM ET — Juneteenth, market CLOSED)
+
+**No trades executed.** Market closed (Juneteenth federal holiday).
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run (expires 2026-06-19T16:48:41Z) ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Market clock | **is_open: false** — next open June 22, 2026 at 9:30 AM ET |
+
+### Account status (unchanged from 9:46 AM run — market remains closed all day)
+| Field | Value |
+|---|---|
+| Equity | USD 97,006.60 |
+| Cash | USD 12,573.47 (12.96%) |
+| Long market value | USD 84,433.13 |
+| Open positions | 8 |
+| Drawdown from HWM | -4.09% (circuit breaker 20% — NOT triggered ✓) |
+
+**Market closed. No positions reviewed. No stops auditable intraday. All 8 confirmed live from the 9:46 AM run. Skipping to journal/notify/commit per playbook. All June 22 flags remain as documented in 9:46 AM entry above.**
