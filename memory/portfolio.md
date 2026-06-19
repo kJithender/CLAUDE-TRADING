@@ -3,11 +3,11 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-19 12:02 ET (pre-market — Juneteenth, market closed; next open June 22)
+**Last updated:** 2026-06-19 09:36 ET (market-open routine — Juneteenth, market closed; stop audit 4/4 PASS; next open June 22)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 **SPY total-return anchor (post-June 18 ex-div $1.76):** **$741.20**
 
-## Account (pre-market June 19, 2026 — live Alpaca data ~12:02 ET; prices = June 18 AH close)
+## Account (market-open June 19, 2026 — live Alpaca data ~09:36 ET; prices = June 18 close; market CLOSED Juneteenth)
 
 | Metric | Value |
 |--------|-------|
@@ -39,6 +39,18 @@ the last known state, but always re-fetches live data before trading._
 | **Close (2026-06-16)** | **$99,209.83** | **$751.01 (close, +1.564% since inception)** | **Bull TRAILS SPY ~2.35pp** |
 
 ## Notes
+
+**Market-open June 19, 2026 (~09:36 ET — Juneteenth federal holiday, market CLOSED; stop audit 4/4 PASS; next open June 22):**
+- **Market closed:** Juneteenth — no trades. Market clock confirmed `is_open: false`. Next open June 22, 09:30 ET.
+- **Plan check:** research-log.md most recent plan has `plan_date: 2026-06-22` (Monday). Plan is NOT for today — no trades to execute. Correct outcome.
+- **Shock check:** $99,039.61 vs last_equity $99,039.61 = $0.00 (0.00%) — no change ✓ (holiday, market closed).
+- **Drawdown circuit breaker:** $99,040 vs HWM $101,384 = −2.31% — NOT triggered ✓.
+- **Stop audit: 4/4 PASS ✓** All positions and stops confirmed via live Alpaca data:
+  - LLY 10sh @ $1,098.57: stops d4147484 (7sh) + 25989fb5 (3sh), HWM $1,182.73, stop $1,064.457 ✓
+  - V 22sh @ $327.24: stop 66033918, HWM $336.8199, stop $303.138 ✓
+  - VST 40sh @ $163.75: stop c4c200a5, HWM $170.33, stop $153.297 ✓
+- **No exits since last run.** closed-trades.md current ✓.
+- **Monday readiness confirmed:** NVDA plan (33sh ~$210, 7.0% portfolio) ready to execute June 22 open. VST ex-div June 22 — confirm USD 9.16 credit at open. LLY Medicare Bridge July 1 = 12 days.
 
 **Pre-market June 19, 2026 (~12:02 ET — Juneteenth federal holiday, market closed; next open June 22):**
 - **Market closed today:** Juneteenth — no trading. All prices = June 18 AH. Routine is planning for Monday June 22.

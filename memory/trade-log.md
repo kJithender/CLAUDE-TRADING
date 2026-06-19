@@ -3,6 +3,48 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-19 09:36 ET — MARKET-OPEN (no trades; market CLOSED — Juneteenth holiday; stop audit 4/4 ✓)
+
+- **Action:** No trades — market is CLOSED (Juneteenth federal holiday, June 19, 2026). Next open: Monday June 22, 09:30 ET.
+- **Plan check:** Most recent plan block in research-log.md has `plan_date: 2026-06-22` (Monday), not today (2026-06-19). Plan is for next Monday — no trades to execute.
+- **Market clock:** `is_open: false` ✓ — confirmed closed. No orders placed.
+- **Account (09:36 ET):** Equity $99,039.61 | Cash $74,304.63 (74.97%) | LMV $24,734.98 | Last equity $99,039.61
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓
+
+### Shock check
+- Equity $99,039.61 vs last_equity $99,039.61 = **$0.00 (0.00%)** — market closed; no change. No shock ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21; current $99,039.61 = **−2.31%** — within −10% limit. NOT triggered ✓
+
+### Stop audit (market-open June 19 — confirmed via Alpaca open orders)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ confirmed |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ confirmed |
+| 66033918 | V | 22sh | $336.8199 | $303.138 | ✓ confirmed |
+| c4c200a5 | VST | 40sh | $170.33 | $153.297 | ✓ confirmed |
+
+**Stop audit: 4/4 PASS ✓** No changes (market closed; no trailing stop ratchets possible).
+
+### Exit reconciliation
+No positions closed since last run. closed-trades.md current ✓.
+
+### Performance vs S&P 500 (market-open June 19 — market closed, no change)
+- Bull: **−0.960%** (since May 21, USD 100K start)
+- SPY total return: **+1.323%** (since May 21, $739.44 anchor + $1.76 div)
+- **Gap: Bull TRAILS SPY ~2.28pp** (unchanged from EOD June 18)
+- Bull leads AGGRO by ~1.68pp est.
+
+### Monday readiness
+- NVDA plan confirmed: buy 33sh at market open June 22. Plan_date 2026-06-22. All gates cleared (price $210.38 close Jun 18 > $205 ✓, ATR 2.32–2.80% ✓, earnings Aug 26 ✓, 5/5 entry signals ✓).
+- VST dividend ex-date TODAY IS June 22 (Monday) — confirm $9.16 credit (40sh × $0.229) at market-open June 22.
+- LLY Medicare Bridge July 1 = 12 days away — explicit hold/trim/exit decision required at pre-market June 30.
+
+---
+
 ## 2026-06-18 15:51 ET — EOD CLOSE (no trades; VST +10.21% from entry; all 4 stops confirmed; stop audit 4/4 ✓)
 
 - **Action:** No trades today. All 3 positions held. Routine EOD close — P/L journal and reconciliation only.
