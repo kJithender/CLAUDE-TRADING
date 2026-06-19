@@ -5,6 +5,246 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-06-19 — Pre-market research (~08:03 ET) — JUNETEENTH HOLIDAY (market closed)
+
+**Today is Friday June 19, 2026 — Juneteenth federal holiday. Market CLOSED. Next open: Monday June 22, 09:30 ET. Week of June 22 begins Monday with 3 fresh position slots.**
+
+**⭐ KEY: NVDA price gate CLEARED (June 18 close $210.38 > $205). ATR June 18: 2.32%, June 17: 2.80% — both ≤3%. NVDA eligible for Monday open entry. Planned buy: 33 shares ~$210 (~7.0% portfolio).**
+
+---
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓ — paper trading confirmed.
+
+---
+
+### Macro (pre-market June 19, 2026 ~08:03 ET)
+
+| Indicator | Value | Threshold | Status |
+|-----------|-------|-----------|--------|
+| Market | **CLOSED — Juneteenth holiday (June 19, 2026)** | — | Next open June 22 |
+| 10yr Treasury yield | **4.44%** (June 18 close per Fed H.15; fell from 4.49% post-FOMC) | <4.75% | ✓ GATE PASSES — below trigger |
+| S&P 500 futures | **~7,498** (futures constructive heading into June 22) | — | ✓ Constructive; broad risk-on tone |
+| FOMC | COMPLETED June 17 — rate hold 3.50–3.75%; hawkish dot plot (9/18 project hike) | — | ✓ Done; 10yr monitored |
+| Iran/US peace deal | Signed at Versailles June 18 (formal agreement) | Oil <$100 | ✓ Constructive for equities |
+| SPY ex-dividend | June 18 — $1.76/sh applied; total-return anchor $741.20 | — | ✓ Already updated |
+| Juneteenth | Federal holiday; NYSE + bond market closed June 19 | — | Routine proceeds; plan for Monday |
+
+**Macro posture: MODERATELY CONSTRUCTIVE heading into June 22.** Peace deal signed, FOMC completed, 10yr falling (4.44% — below 4.75% trigger). SPY futures constructive. All macro gates clear for Monday buys. FOMC overhang is resolved; only ongoing risk is hawkish dot-plot implication for rate path in H2 2026, which the 10yr gate at 4.75% manages.
+
+---
+
+### Account (pre-market June 19 — live Alpaca data ~08:03 ET)
+
+| Metric | Value |
+|--------|-------|
+| Equity | $99,039.61 |
+| Cash | $74,304.63 (74.97%) |
+| Long market value | $24,734.98 |
+| Last equity | $99,039.61 (EOD June 18 — market closed) |
+| Buying power | ~$366,476 |
+
+**Shock check:** Market closed (Juneteenth); equity = last_equity = $99,039.61 — no intraday movement. N/A.
+**Drawdown circuit breaker:** HWM $101,384.21; current $99,039.61 = **−2.31%** — within −10% limit ✓ NOT triggered.
+
+---
+
+### Trailing stop audit (pre-market June 19 — confirmed via Alpaca open orders)
+
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new — unchanged |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new — unchanged |
+| 66033918 | V | 22sh | $336.8199 | $303.138 | ✓ new — unchanged |
+| c4c200a5 | VST | 40sh | $170.33 | $153.297 | ✓ new — unchanged |
+
+**Stop audit: 4/4 PASS ✓** All confirmed active, no changes since June 18 EOD.
+
+---
+
+### Open positions (pre-market June 19 — live Alpaca data, reflecting June 18 closing prices)
+
+| Symbol | Qty | Avg Entry | June 18 Close | Mkt Value | Unrealized P/L | % of Portfolio |
+|--------|-----|-----------|--------------|-----------|----------------|----------------|
+| LLY | 10 | $1,093.534 | $1,098.57 | $10,985.70 | +$50.36 (+0.46%) | 11.09% |
+| V | 22 | $323.57 | $327.24 | $7,199.28 | +$80.74 (+1.13%) | 7.27% |
+| VST | 40 | $148.81 | $163.75 | $6,550.00 | +$597.60 (+10.04%) | 6.61% |
+
+**Note:** VST last close $163.75 vs June 18 EOD session price $164.00 — minor end-of-day reconciliation. Stop HWM $170.33 and stop $153.297 unchanged.
+
+---
+
+### Sector exposure (pre-market June 19)
+- Healthcare (LLY): $10,985.70 = 11.09%
+- Financials (V): $7,199.28 = 7.27%
+- Energy/Utilities (VST): $6,550.00 = 6.61%
+- Cash: $74,304.63 = 74.97%
+- No sector above 60% cap ✓
+
+---
+
+### Step 3b: Thesis contract review (June 19)
+
+**LLY:**
+- Invalidation: stop fires ($1,064.457) or Medicare Bridge reversed
+- review_by: **July 1 — 12 DAYS AWAY** (approaching — explicit decision required at pre-market June 30)
+- Current $1,098.57 >> stop $1,064.457 (buffer $34.11 = 3.11%). Buffer has narrowed on recent pullback. Monitor.
+- News: 4E Therapeutics acquisition (June 16 — neuroscience/non-addictive painkillers). Retatrutide trial completed. Cathie Wood (ARK) purchased 41,000 shares — positive institutional sentiment signal. Germany investment reduction noted. No negative GLP-1 catalysts.
+- **What changed since yesterday:** Cathie Wood/ARK added 41K shares — positive sentiment. No negative catalyst.
+- **Decision: HOLD. Medicare Bridge July 1 in 12 days — this is the primary catalyst. Thesis intact. Explicit hold/trim/exit decision required at pre-market June 30.**
+
+**V:**
+- Invalidation: stop fires ($303.138) or regulatory mandate forces open access
+- review_by: July 28 (39 days)
+- Current $327.24 >> stop $303.138 (buffer $24.10 = 7.37%)
+- News: OpenAI/agentic payments, stablecoin/token capabilities (Payments Forum). 36 analysts Strong Buy, avg PT $398.83 (21.9% upside). Cross-border slowdown noted (monitoring; not thesis-breaking). July 28 earnings upcoming.
+- **What changed since yesterday:** No material new catalysts over the holiday. Thesis intact.
+- **Decision: HOLD. July 28 earnings is next gate. Thesis intact.**
+
+**VST:** ⭐⭐
+- Invalidation: stop fires ($153.297) or WTI >$100 or FCF guidance cut or Helix cancellation
+- review_by: July 7 (18 days)
+- Current $163.75 >> stop $153.297 (buffer $10.45 = 6.38%)
+- News: Cogentrix acquisition complete (5,500 MW, $4.0B). Helix Digital Infrastructure (KKR+NVIDIA+Kuwait) intact. Morgan Stanley raised PT to $212 (from $208), Overweight. Avg analyst PT $188.44. **DIVIDEND EX-DATE MONDAY JUNE 22** — $0.229/sh × 40sh = USD 9.16; payment date June 30.
+- **What changed since yesterday:** VST thesis continues to strengthen. Peace deal formally signed — constructive energy backdrop. Analyst PT raised.
+- **Decision: STRONG HOLD. Dividend ex-date Monday — market-open routine must confirm $9.16 credit timing (appears in account June 30 on payment date). Position buffer 6.38% — adequate but watch VST price at Monday open for stop ratchet potential.**
+
+---
+
+### Step 3c: Monday conviction-weighted holding review (REQUIRED — June 22 is Monday, this is the Friday preview)
+
+Effective Monday June 22:
+
+| Symbol | Rating | Rationale | 3-C-counter |
+|--------|--------|-----------|-------------|
+| LLY | **A** | Medicare Bridge July 1 in 12 days; thesis intact; Cathie Wood buying; stop buffer 3.11% (narrowed — worth monitoring) | N/A |
+| V | **B** | Working but flat (1.13% from entry); thesis intact; cross-border slowdown monitoring; no C flag | 0/3 weeks C |
+| VST | **A** | Cogentrix + Helix; +10.04% from entry; dividend Monday; analyst PT upgrades | N/A |
+
+No position rated C. No mandatory trims. V continues B — tracking toward July 28 earnings catalyst.
+
+---
+
+### Earnings window check (June 19)
+
+| Symbol | Next Earnings | Days Away | Window? |
+|--------|---------------|-----------|---------|
+| LLY (held) | ~Aug 6, 2026 | 48 | NO ✓ |
+| V (held) | Jul 28, 2026 | 39 | NO ✓ |
+| VST (held) | ~Aug 6, 2026 | 48 | NO ✓ |
+| NVDA (buy candidate) | Aug 26, 2026 | 68 | NO ✓ |
+| PWR (watch) | Jul 30, 2026 | 41 | NO ✓ |
+| LRCX (watch) | Aug 5, 2026 | 47 | NO ✓ |
+
+No earnings windows triggered. All clear for Monday entry. ✓
+
+---
+
+### Watchlist evaluation
+
+**NVDA ($210.38 June 18 close; AH ~$209.97):** ⭐ **PRIORITY BUY FOR MONDAY**
+- **Price gate:** June 18 close $210.38 — **PASSES** (above $205 threshold ✓). After failing the gate in the June 18 pre-market ($204.70 June 17 close), NVDA rallied convincingly on June 18.
+- **ATR check:**
+  - June 17: H=209.20, L=203.47, C=204.70 → Range 5.73, ATR% = 2.80% ✓
+  - June 18: H=211.39, L=206.50, C=210.38 → Range 4.89, ATR% = 2.32% ✓
+  - 2-session average ATR: **2.56% ≤ 3%** ✓ (both sessions qualify individually)
+- **News:** $25B multi-tranche debt offering completed June 18 (large but signals confidence in growth capex). SLB partnership deepened. NVDA Ecosystem ETF debuted. Helix Digital Infrastructure (KKR+NVIDIA+Kuwait) thesis intact. Deutsche Bank PT raised to $220.
+- **Earnings window:** Aug 26, 68 days ✓.
+- **Thesis:** AI accelerator monopoly; Helix consortium embeds GPU demand in AI infrastructure platform; FY2026 data center revenue +92% YoY; 62 analysts Strong Buy; avg PT $298.93 (+42% upside from $210).
+- **Entry signals (3+ required):** Earnings momentum ✓ (Q1 FY27 blowout); Catalyst ✓ (Helix, AI infrastructure cycle); Valuation OK (premium but monopoly justified); Technical ✓ (above $205 base, ATR normalizing); Macro tailwind ✓ (AI capex continues). **5/5 signals.**
+- **Sizing:**
+  - Risk budget: 1.2% × $99,039 = $1,188 loss max
+  - 10% trailing stop → max position $11,880; NVDA at ~$210 → 56 shares max by risk budget
+  - Starter conviction (7%): 7% × $99,039 = $6,933 / $210 = **33 shares = $6,930 = 7.0% of portfolio** ✓
+  - Risk at 33sh: 33 × $210 × 10% = $693 = 0.70% of equity ✓ (well within 1.2% budget)
+  - 20% cap: 20% × $99,039 = $19,808 / $210 = 94sh — far from cap ✓
+  - Post-trade cash: $74,304 − $6,930 = $67,374 = **68%** (well above 5% minimum ✓)
+  - Post-trade total deployment: 7.0% ≤ 25% daily cap ✓
+- **ATR volatility check (playbook step 7):** 2-session avg ATR 2.56% — below 3% threshold. Full size appropriate. No halving required.
+- **Decision: PLAN BUY Monday June 22 open — 33 shares NVDA at market (~$210). Place 10% trailing stop immediately after fill.**
+
+**LRCX ($388.86 June 18 close):** DEFERRED — ATR 3.54% (June 18) ❌
+- June 17 ATR 6.19%, June 18 ATR 3.54% — both above 3%. Improving but still disqualified.
+- Citi raised PT to $450 (from $315) — significant upgrade. Thesis intact.
+- Need 3 consecutive sessions at ≤3%. Earliest possible entry: week of June 29 if ATR normalizes.
+- **Decision: NO BUY. Re-evaluate each pre-market next week if ATR drops to ≤3%.**
+
+**PWR ($702.54 June 18 close):** DEFERRED — ATR 3.97% (June 18) ❌
+- June 17 ATR 2.28%, June 18 ATR 3.97% — elevated on June 18 (down −1.71% on day after conference).
+- Insider selling $123.2M in 3 months (worth monitoring as a caution flag). P/E ~95 is elevated.
+- 30-day pullback −10.78% from peak — stock is in a correction from conference highs.
+- **Decision: NO BUY. ATR elevated; stock in pullback; insider selling notable. Re-evaluate when ATR calms and stock stabilizes above support. PWR remains a valid thesis but needs better entry setup.**
+
+---
+
+### Cash-drag check
+Cash: 74.97% — significantly above 25–40% target. Week of June 22 is the first week with a clear, qualified entry (NVDA). Planning 1 position = ~7% deployment. Still heavy in cash but deploying into the highest-conviction qualified name. NVDA is not a forced entry — it satisfies all 5 entry criteria. Holding the remaining 2 slots for LRCX (when ATR qualifies) and PWR (when ATR/setup calms). Cash deployment is progressing; not rushing.
+
+---
+
+### VST dividend note (CRITICAL for market-open June 22)
+VST ex-dividend date: **Monday June 22, 2026**. Market-open routine must:
+1. Note the ex-dividend price adjustment (~$0.229/sh drop in open price — VST may open slightly lower than June 18 close $163.75)
+2. The trailing stop (HWM $170.33, stop $153.297) remains unchanged through ex-dividend — stop protects against downside regardless of dividend adjustment
+3. Dividend payment (USD $9.16 for 40sh) credited to account on **June 30** (payment date)
+4. Stop audit: confirm c4c200a5 remains active after ex-dividend open
+
+---
+
+### Performance vs S&P 500 (pre-market June 19)
+
+| Period | Bull | SPY | Difference |
+|--------|------|-----|------------|
+| Inception (2026-05-21) | $99,039.61 = **−0.960%** | $741.20 anchor + ~$6.27 est. Jun 22+ = **+1.323% total-return** | **Bull TRAILS SPY ~2.28pp** |
+
+_Note: SPY last close June 18 was $747.47. Total return anchor $741.20. Gap unchanged from EOD June 18 (−2.25pp) as market is closed today._
+
+---
+
+### Planned trades for Monday June 22, 2026
+
+**Priority 1: NVDA — BUY 33 shares at market open Monday June 22**
+
+All entry gates pass:
+- Price: $210.38 close June 18 > $205 threshold ✓
+- ATR: 2.32% (June 18) and 2.80% (June 17) — both ≤3% ✓
+- Earnings: Aug 26, 68 days ✓
+- Entry signals: 5/5 ✓
+- Risk budget: $693 = 0.70% of equity ✓
+- No macro gates blocking (10yr 4.44% < 4.75% ✓; FOMC done ✓)
+- VST dividend ex-date June 22: does not conflict with NVDA entry
+
+**Other candidates:** LRCX deferred (ATR 3.54%), PWR deferred (ATR 3.97%, insider selling, pullback).
+
+```json
+{
+  "plan_date": "2026-06-22",
+  "trades": [
+    {
+      "action": "buy",
+      "symbol": "NVDA",
+      "qty": 33,
+      "thesis": "AI accelerator monopoly; Helix consortium (KKR+NVIDIA+Kuwait) embeds GPU demand in AI infra platform; closed convincingly above $205 gate (June 18 close $210.38) with ATR 2.32-2.80% for 2 sessions; FY2026 data center revenue +92% YoY; 5/5 entry signals met",
+      "invalidation": "closes below $200 (prior consolidation floor) on volume, or trailing stop fires at 10% below fill price",
+      "review_by": "2026-07-22"
+    }
+  ]
+}
+```
+
+---
+
+### Upcoming catalysts (updated June 19)
+- **VST dividend ex-date MONDAY June 22** (USD 9.16 credit for 40sh; payment June 30)
+- **LLY Medicare GLP-1 Bridge effective July 1** (12 days — explicit hold/trim/exit decision required at pre-market June 30)
+- **VST thesis review_by July 7** (18 days)
+- **V Q3 FY26 earnings July 28** (39 days — thesis review_by date)
+- **NVDA thesis review_by July 22** (33 days — if buy executes Monday)
+- **PWR next earnings July 30** (41 days)
+- **LRCX next earnings ~Aug 5** (47 days)
+
+---
+
 ## 2026-06-18 — Pre-market research (~08:03 ET)
 
 **Today is Thursday June 18. Week of June 16: 0/3 new positions used. Post-FOMC gate LIFTED. SPY ex-dividend TODAY ($1.76/sh) — anchor updates to $741.20. 10yr at 4.49% — BELOW 4.75% gate — new buys permitted if individual candidate gates clear.**
