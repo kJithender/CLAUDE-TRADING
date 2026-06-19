@@ -17,6 +17,67 @@ but always re-fetches live data before trading._
 
 ---
 
+## Last snapshot — 2026-06-19 EOD CLOSE (~3:50 PM ET — Juneteenth, market CLOSED all day)
+
+| Field | Value |
+|---|---|
+| Equity | USD 97,006.60 |
+| Cash | USD 12,573.47 (12.96%) |
+| Long market value | USD 84,433.13 |
+| Open positions | 8 |
+| last_equity (June 18 EOD — Alpaca authoritative) | USD 97,006.60 |
+| Today's P/L vs last_equity | +USD 0 — market closed all day, Juneteenth federal holiday |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-4.09%** (circuit breaker: 20% — NOT triggered; 15.91pp headroom) |
+
+**Open positions (2026-06-19 EOD — prices = June 18 EOD, unchanged):**
+
+| Symbol | Qty | Avg Entry | EOD Price | Market Value | Unrealized P/L | P/L % | -12% Cut Trigger | Buffer |
+|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 210.69 | USD 21,701.07 | -USD 299.73 | -1.36% | USD 187.97 | 10.64pp |
+| AVGO | 34 | USD 406.23 | USD 411.35 | USD 13,985.90 | +USD 174.08 | **+1.26% ✅** | USD 357.48 | 13.26pp |
+| META | 17 | USD 630.12 | USD 577.22 | USD 9,812.74 | -USD 899.30 | **-8.40%** | USD 554.51 | **3.60pp ⚠️ HIGH ALERT** |
+| MRVL | 25 | USD 293.29 | USD 310.58 | USD 7,764.50 | +USD 432.37 | **+5.90% ✅** | USD 258.09 | 17.90pp |
+| MSFT | 21 | USD 426.21 | USD 379.40 | USD 7,967.40 | -USD 983.01 | **-10.98%** | USD 375.065 | **1.02pp 🚨 CRITICAL** |
+| AMZN | 36 | USD 247.99 | USD 244.39 | USD 8,798.04 | -USD 129.64 | -1.45% | USD 218.23 | 10.55pp |
+| GOOGL | 16 | USD 370.22 | USD 368.03 | USD 5,888.48 | -USD 35.04 | -0.59% | USD 325.79 | 11.41pp |
+| VST | 52 | USD 151.47 | USD 163.75 | USD 8,515.00 | +USD 638.56 | **+8.11% ✅** | USD 133.29 | 20.11pp |
+
+**Stop audit (2026-06-19 EOD): ALL 8 confirmed live (market closed all day — no changes possible). ✓**
+
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| META | `5bc32805` | USD 580.215 | USD 475.7763 | ✓ live |
+| MRVL | `a9097c8c` | USD 329.88 | USD 270.5016 | ✓ live |
+| MSFT | `aefe6616` | USD 381.37 | USD 312.7234 | ✓ live |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| VST | `5b347be3` | USD 170.33 | USD 139.6706 | ✓ live |
+
+**Sector exposure (June 19 EOD — unchanged):**
+| Sector | Market Value | % of Portfolio |
+|---|---|---|
+| Technology — semis (NVDA, AVGO, MRVL) | USD 43,451.47 | 44.8% |
+| Technology — hyperscalers (META, MSFT, AMZN, GOOGL) | USD 32,466.66 | 33.5% |
+| Utilities/Energy (VST) | USD 8,515.00 | 8.8% |
+| Cash | USD 12,573.47 | 13.0% |
+
+_Market closed all day (Juneteenth, June 19). No price movement. No trades. EOD close routine confirmed: 8 positions unchanged from June 18 EOD. **Friday watchdog fired**: Week 3 weekly review (June 15–19) was NOT completed this week because today is a federal holiday. Review DEFERRED to Monday June 22 pre-market — the aggro pre-market routine for June 22 MUST run the weekly review before placing any other trades. Critical June 22 flags: (1) MSFT 1.02pp — gap-down risk over 3-day weekend; (2) AMZN review_by = June 22 — MANDATORY hold/trim/exit decision; (3) META 3.60pp HIGH ALERT; (4) AVGO ex-div USD 22.10 + VST ex-div USD 11.91 both ex-div June 22._
+
+**Performance vs SPY (June 19 EOD):**
+| Metric | Value |
+|---|---|
+| Equity | USD 97,006.60 |
+| Aggro return since inception | **(97,006.60 − 100,000) / 100,000 = -2.993%** |
+| SPY last close (June 18) | USD 746.74 |
+| SPY return since inception (754.18 → 746.74) | **-0.987%** |
+| Alpha since inception | **-2.006pp** |
+| Today's alpha | N/A — market closed |
+
+---
+
 ## Last snapshot — 2026-06-19 MARKET-OPEN CHECK (~9:46 AM ET — Juneteenth, market CLOSED)
 
 | Field | Value |

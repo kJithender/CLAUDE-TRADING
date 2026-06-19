@@ -1618,3 +1618,50 @@ All 8 positions within guardrails. No trades. All 18% trailing stops active and 
 | Drawdown from HWM | -4.09% (circuit breaker 20% — NOT triggered ✓) |
 
 **Market closed. No positions reviewed. No stops auditable intraday. All 8 confirmed live from the 9:46 AM run. Skipping to journal/notify/commit per playbook. All June 22 flags remain as documented in 9:46 AM entry above.**
+
+---
+
+## 2026-06-19 — EOD CLOSE (~3:50 PM ET — Juneteenth, market CLOSED all day)
+
+**No trades executed.** Market closed all day — Juneteenth National Independence Day.
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Market clock | is_open: false — next open June 22, 2026 at 9:30 AM ET |
+
+### Account status (EOD — unchanged from June 18 close)
+| Field | Value |
+|---|---|
+| Equity | USD 97,006.60 |
+| last_equity (June 18 EOD) | USD 97,006.60 |
+| Today's P/L | +USD 0.00 (market closed all day) |
+| Cash | USD 12,573.47 (12.96%) |
+| Long market value | USD 84,433.13 |
+| Open positions | 8 |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -4.09% (circuit breaker: 20% — NOT triggered ✓) |
+
+### Market context [search: WebSearch — MiniMax M3 fallback]
+No trading occurred on June 19, 2026. US equity markets (NYSE, Nasdaq, bond markets, Federal Reserve) were all closed for Juneteenth National Independence Day. The last trading session was Thursday June 18 — post-FOMC recovery day (AVGO +4.56%, MRVL +7.55% S&P inclusion final day, NVDA +2.68%, VST +2.22%). All theses intact. Next market open: Monday June 22, 2026 at 9:30 AM ET.
+
+### Exit reconciliation
+No positions exited today. All 8 positions held unchanged. `memory/aggressive/closed-trades.md` remains current (1 entry: AMD June 9). No post-mortem needed.
+
+### Friday watchdog
+Today is Friday. Newest entry in `memory/aggressive/weekly-review.md` is Week 2 (June 8–12), dated June 12. That is **exactly 7 days ago** — the Week 3 review (June 15–19) was DEFERRED because today is a federal holiday. Flagging with 🚨 in notify per playbook. Pre-market June 22 MUST run the weekly review before placing any orders.
+
+### Stop audit (EOD confirmation)
+All 8 trailing stops confirmed live at 9:46 AM market-open check. Market remained closed all day — no changes possible. Status: 8/8 ✓.
+
+### Performance vs SPY (June 19 EOD)
+| Metric | Value |
+|---|---|
+| Equity | USD 97,006.60 |
+| Aggro return since inception | -2.993% |
+| SPY close (June 18 — last available) | USD 746.74 |
+| SPY return since inception | -0.987% |
+| Alpha since inception | **-2.006pp** |
