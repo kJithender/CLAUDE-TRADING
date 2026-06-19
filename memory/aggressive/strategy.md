@@ -164,6 +164,20 @@ This is NOT a hard rule — it is a discretionary risk management tool. A trim r
 
 ---
 
+## Week 4 priorities (as of 2026-06-19 weekly review)
+
+- **MSFT (1.02pp buffer — GAP RISK 🚨):** -10.98% from entry USD 426.21. Azure +40% YoY thesis COMPLETELY intact but FOMC hawkish pressure + 3-day Juneteenth weekend gap risk is severe. **Protocol:** If MSFT opens June 22 at or below USD 375.06, execute immediate market close (do not wait for midday). 21 shares remain post-trim. Review_by June 25.
+- **AMZN review_by June 22 — MANDATORY:** Pre-market June 22 must include explicit hold/trim/exit decision before any orders. AWS +28% YoY; Prime Day June 23-26 is a near-term catalyst. Current: -1.45% from entry (11.45pp buffer). Likely renewal with new review_by ~July 4.
+- **META (3.60pp buffer — WATCH):** -8.40% from entry. Section 230 ruling June 17 adds tail legal risk; ad revenue +33% YoY intact. Any ruling extension to ad-targeting features = thesis-breaking = exit within one session. Review_by June 24 — explicit hold/trim/exit decision required.
+- **AVGO ex-dividend June 22:** USD 0.65/share × 34 shares = USD 22.10 cash incoming. Buffer 10.34pp. A-rated. Hold to capture.
+- **VST ex-dividend June 22:** USD 0.229/share × 52 shares = USD 11.91 cash incoming. HWM USD 162.44; stop ratcheted to USD 133.20. A-rated. Hold to capture.
+- **MRVL post-inclusion drift:** S&P 500 inclusion catalyst exhausted after June 19 close. +5.90% from entry; 11.82pp stop buffer. Expect post-inclusion drift lower in Week 4. Hold; set review_by ~July 4.
+- **No new positions until MSFT risk resolved.** Cash at 12.96% (USD 12,573.47) is the correct posture — risk management over deployment.
+- **Watchlist for Week 4:** ETN (Eaton — power infrastructure / electrical equipment for data centers; AI buildout beneficiary). Monitor Intel-Apple chip deal rumor for potential AVGO/MRVL competitive implications.
+- **Conviction ratings (June 19):** NVDA A, AVGO A, AMZN A, GOOGL A, VST A, MRVL A, META B (3.60pp buffer), MSFT B (1.02pp buffer 🚨).
+
+---
+
 ## Benchmark tracking
 
 Every weekly review computes:

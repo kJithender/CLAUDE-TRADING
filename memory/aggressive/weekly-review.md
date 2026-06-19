@@ -5,6 +5,90 @@ return, SPY return, result, A–F grade, what worked, what didn't, adjustments._
 
 ---
 
+## Week 3 — 2026-06-15 through 2026-06-19
+
+**Period**: June 15–19, 2026 (4 trading days; June 19 Juneteenth — market closed)
+
+| Metric | Value |
+|---|---|
+| Aggro return this week | **+4.23%** (equity: USD 94,031.31 → USD 97,006.60) |
+| SPY return this week | **+0.77%** (SPY: 741.02 → 746.74) |
+| Week vs SPY | **+3.46pp OUTPERFORMING** |
+| Aggro return since inception | **-2.99%** |
+| SPY return since inception | **-0.987%** (754.18 → 746.74) |
+| Alpha since inception | **-2.01pp** |
+| Starting equity (this week) | USD 94,031.31 |
+| Ending equity | USD 97,006.60 |
+| HWM | USD 101,144.73 (set June 4) |
+| Drawdown from HWM | **-4.09%** (circuit breaker 20% — NOT triggered; 15.91pp headroom) |
+| Positions open | 8 (NVDA, AVGO, META, MRVL, MSFT, AMZN, GOOGL, VST) |
+| Positions closed | 0 this week |
+| Process grade | **A-** |
+
+---
+
+### Trade Statistics (since inception — Week 3 update)
+
+**Source**: `memory/trades.jsonl` (aggro entries) + `memory/aggressive/closed-trades.md`
+
+| Metric | Value |
+|---|---|
+| Total closed trades | 1 (AMD, -13.28%) |
+| Win rate | **0%** (0 wins / 1 closed trade) |
+| Average win % | N/A |
+| Average loss % | **-13.28%** |
+| Profit factor | N/A |
+| Average holding days (losers) | 5 days |
+
+⚠️ **Sample too small (<5 closed trades) to over-read statistics.** The single data point is AMD, cut mechanically by the -12% midday rule. Statistics will be meaningful at 5+ closed trades.
+
+**Ledger sync**: trades.jsonl (3 aggro entries: 1 buy MRVL, 2 partial trims MSFT+META) and closed-trades.md (1 entry: AMD) are **IN SYNC**. Partial trims are not closed trades. Persistent admin gap: trades.jsonl is still missing Week 1-2 inception buys (Trades 1-8) — flagged Week 2, not yet remediated.
+
+---
+
+### Process Audit
+
+- **Earnings discipline**: No earnings events this week for held positions. AVGO ex-div June 22 documented. ✅
+- **Stop discipline**: All 8 positions confirmed live trailing stops at week close. MSFT stop replaced after trim (order `aefe6616`); META stop replaced after trim (order `5bc32805`). ✅
+- **Post-mortem completeness**: No positions closed this week — no new closed-trades.md entry required. ✅
+- **Deployment pace**: Cash at 12.96% (USD 12,573.47). Two proactive trims raised cash from 6.84% to 13.2% — deliberate risk management, not idle indecision. No new buys appropriate (FOMC risk, 8 positions open, semi concentration 43.5%). ✅
+- **Concentration**: NVDA+AVGO at 33.2% semi group (AMD gone). MSFT 1.02pp from forced exit — gap risk over 3-day Juneteenth weekend is the single biggest portfolio risk for Week 4. META 3.60pp buffer — watch. No single position exceeds 35% cap. ✅ (with active monitoring)
+- **Thesis contracts**: All 8 positions have current `invalidation` conditions and `review_by` dates. AMZN review_by = June 22 (mandatory decision at next pre-market). MSFT review_by June 25. META review_by June 24. ✅
+- **Proactive trim heuristic**: Both MSFT and META simultaneously triggered the heuristic June 18 pre-market. Both 25% trims executed, documented, stops replaced. First live test of new rule — executed cleanly. ✅
+
+---
+
+### What Worked
+
+1. **MRVL S&P 500 inclusion trade (+5.90%)**: Entry June 15 at USD 293.29 captured the mandatory passive buying window (June 17–19). Peak intraday +12.5%. High-conviction, well-timed catalyst trade.
+2. **VST new ATH (+8.11% from entry)**: HWM USD 162.44. Stop auto-ratcheted to USD 133.20, locking in gains. Nuclear power thesis delivering.
+3. **Proactive trim MSFT+META on June 18**: Trimmed MSFT 28→21sh @375.08 and META 23→17sh @565.78. Positions would have been extremely fragile over the 3-day weekend without the reduction. Cash raised to 13.2%.
+4. **Post-FOMC bounce June 18**: NDX +1.32%, S&P +0.87%. All positions participated in the recovery after disciplined holding through June 17 selloff.
+5. **+3.46pp beat SPY this week**: First week of outperforming SPY since inception. Alpha gap narrowed from -4.28pp (Week 2) to -2.01pp — significant improvement.
+
+---
+
+### What Didn't Work
+
+1. **MSFT -10.98% (1.02pp buffer from -12% cut 🚨)**: FOMC hawkish dot plot + enterprise software pressure. Gap risk over the 3-day Juneteenth weekend is the single biggest portfolio risk entering Week 4. A 1.1% gap-down open on June 22 breaches the -12% cut trigger.
+2. **META -8.40% (3.60pp buffer)**: Section 230 ruling June 17 added tail legal risk. Proactive trim helped but position remains stressed.
+3. **Alpha gap still negative (-2.01pp since inception)**: Significantly improved from -4.28pp but still below SPY since inception. Requires AI earnings catalysts (NVDA ~Aug 26, META/MSFT late July) to fully close.
+4. **trades.jsonl missing inception buys**: Admin gap from Week 1 not remediated. Structured trade statistics remain limited to 3 Week 3 entries.
+
+---
+
+### Adjustments for Week 4 (June 22–26)
+
+1. **MSFT gap-risk protocol**: If MSFT opens June 22 at or below USD 375.06, execute immediate market close — do not wait for midday. Azure +40% thesis intact; exit is rule-based, not thesis-based.
+2. **AMZN mandatory review_by June 22**: Pre-market June 22 must include explicit hold/trim/exit decision. AWS +28% + Prime Day June 23-26 → likely renewal with new review_by ~July 4.
+3. **META Section 230 monitoring**: Any ruling extension to ad-targeting features = thesis-breaking → immediate exit. Buffer 3.60pp; monitor daily.
+4. **AVGO + VST ex-dividend June 22**: Hold both to capture (USD 22.10 + USD 11.91 = USD 34.01 combined).
+5. **MRVL post-inclusion drift**: Catalyst exhausted after June 19 close. Expect drift lower in Week 4. Hold at +5.90% with 11.82pp stop buffer; next review_by ~July 4.
+6. **No new positions until MSFT risk resolved**: Cash at 12.96% is the right posture — risk management priority over deployment.
+7. **Watchlist refresh**: ETN (Eaton — power infrastructure for data centers) emerged as new candidate this week. Intel-Apple chip deal (June 18 rumor) may soften AVGO/MRVL competitive position — monitor.
+
+---
+
 ## Week 2 — 2026-06-08 through 2026-06-12
 
 **Period**: June 8–12, 2026 (5 trading days; second full week of operation)

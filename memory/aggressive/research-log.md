@@ -1840,3 +1840,61 @@ Strong post-FOMC recovery day. MRVL +11.79% intraday — S&P 500 mandatory index
 | META review_by (thesis contract renewal) | June 24 | Medium |
 
 **No planned trades for market-open June 22.** (Monday — pre-market will assess AMZN thesis contract, which is the top priority.)
+
+---
+
+## 2026-06-19 — WEEK 3 WEEKLY REVIEW (Juneteenth — markets closed)
+
+_[search: WebSearch fallback — MiniMax M3 not available in this environment]_
+
+### Week 3 market summary (June 15–19, 2026)
+
+**SPY performance**: +0.77% for the week (741.02 Monday open → 746.74 Thursday June 18 close; June 19 Juneteenth holiday, market closed).
+
+**Macro drivers:**
+- Iran ceasefire MOU confirmed over the weekend (June 13-14) — Nasdaq futures +1.8%, S&P +1.0% at Monday June 15 open. Oil ~-20% from war peak. Major macro overhang resolved.
+- FOMC June 16-17: No rate change (held at 3.5-3.75%). Hawkish dot plot — 9/18 officials projected a rate hike by year-end; GDP lowered; inflation raised. Post-2PM tech selloff June 17: NDX -1.5%, MSFT -1.34%, META -5.31%.
+- June 18 recovery: NDX +1.32%, S&P +0.87%. Sell-the-news FOMC pattern — markets absorbed the dot plot and concluded Fed holds before hiking. AI earnings trajectory unchanged.
+- Juneteenth June 19: Markets closed; 4-trading-day week.
+
+**Sector performance:**
+- Semis outperformed (MRVL +18% week on S&P inclusion; NVDA +3-5% recovery)
+- Hyperscalers mixed (AMZN -1.45%, GOOGL flat, MSFT -10.98% from entry ongoing)
+- Nuclear/power (VST +8.11% from entry, new ATH on AI power demand confirmation)
+
+**Key events this week:**
+- MRVL S&P 500 inclusion announcement (June 13) → mandatory buy window June 17-19 before June 22 effective date
+- AVGO ex-dividend June 22 (USD 0.65/share × 34 = USD 22.10)
+- VST ex-dividend June 22 (USD 0.229/share × 52 = USD 11.91)
+- FOMC hawkish dot plot June 17 (9/18 project rate hike)
+- Proactive trims MSFT 28→21sh @375.08 and META 23→17sh @565.78 on June 18
+
+### Names that outperformed this week fitting the strategy
+
+- **ETN (Eaton)**: Power infrastructure / electrical equipment for AI data centers. Multiple analyst upgrades tied to AI buildout electricity demand. Fits as a Tier 3 watchlist candidate — non-semi, non-hyperscaler AI pick.
+- **CEG (Constellation Energy)**: Nuclear operator; another PPAs play alongside VST. Positive data-center power demand comments from management.
+- **ORCL (Oracle)**: USD 638B RPO (+363% YoY), USD 70B FY2027 capex guide — continued AI infrastructure demand confirmation. Not held but thesis-supporting macro read-through.
+
+### Intel-Apple chip deal watch (June 18)
+
+Unconfirmed rumors circulating June 18 that Apple is in early discussions to use Intel-designed chips for some AI features, potentially reducing reliance on AVGO's custom silicon work. Not confirmed. If confirmed, monitor AVGO for any thesis impact on custom ASIC revenue (~50% of AI revenue). Single-source risk for Apple work could affect AVGO AI revenue guide. No action required until confirmed. [search: WebSearch fallback]
+
+### Aggro portfolio performance Week 3
+
+| Symbol | Entry | June 18 Close | P/L from Entry | Status |
+|---|---|---|---|---|
+| NVDA | USD 213.60 | ~USD 210.70 | -1.36% | A-rated |
+| AVBO | USD 400.25 | USD 406.23 | +1.50% | A-rated, ex-div June 22 |
+| META | USD 630.12 | USD 577.42 (post-trim avg) | -8.40% | B-rated, 3.60pp buffer |
+| MRVL | USD 293.29 | USD 311.40 | +6.18% | A-rated, inclusion complete |
+| MSFT | USD 426.21 | USD 379.34 (post-trim avg) | -10.98% | B-rated 🚨 1.02pp buffer |
+| AMZN | USD 247.99 | USD 244.40 | -1.45% | A-rated, review_by June 22 |
+| GOOGL | USD 370.22 | USD 367.93 | -0.62% | A-rated |
+| VST | USD 151.47 | USD 163.69 | +8.11% | A-rated, ex-div June 22 |
+
+**Week 3 equity**: USD 94,031.31 → USD 97,006.60 = **+4.23%**
+**Week 3 SPY**: 741.02 → 746.74 = **+0.77%**
+**Week vs SPY**: **+3.46pp OUTPERFORMING**
+**Since inception**: Aggro -2.99% vs SPY -0.987% = **alpha -2.01pp** (improved from -4.28pp Week 2)
+
+**No planned trades for June 22 pre-market until AMZN review_by decision and MSFT gap-risk assessment complete.**
