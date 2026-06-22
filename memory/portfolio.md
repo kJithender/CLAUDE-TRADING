@@ -3,34 +3,35 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-22 12:31 ET (midday; no cuts, no tightenings; VST news scan: thesis intact; stop audit 5/5 PASS)
+**Last updated:** 2026-06-22 15:51 ET (close; NVDA 33sh entered today; stop audit 5/5 PASS; VST HWM ratcheted to $170.50)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 **SPY total-return anchor (post-June 18 ex-div $1.76):** **$741.20**
 
-## Account (midday June 22, 2026 — live Alpaca data ~12:31 ET)
+## Account (close June 22, 2026 — live Alpaca data ~15:51 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,201.16 |
-| Cash | $67,261.74 (67.80%) |
-| Long market value | $31,935.43 |
-| Buying power | ~$358,477 |
-| Last equity (June 18/19 close) | $99,039.61 |
+| Equity | $99,078.33 |
+| Cash | $67,261.74 (67.89%) |
+| Long market value | $31,816.59 |
+| Buying power | ~$358,133 |
+| Last equity (June 19 close) | $99,039.61 |
 
-## Open positions (midday June 22, 2026 — live Alpaca data ~12:31 ET)
+## Open positions (close June 22, 2026 — live Alpaca data ~15:51 ET)
 
 | Symbol | Qty | Avg entry | Current price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
 |--------|-----|-----------|--------------|-----------|----------------|----------------|---------------|
-| LLY | 10 | $1,093.534 | $1,108.815 | $11,088.15 | +$152.81 (+1.40%) | 11.18% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, same) ✓ — buffer $44.36 (4.00%) |
-| NVDA | 33 | $213.421 | $209.685 | $6,919.61 | −$123.28 (−1.75%) | 6.97% | dcba7429 (33sh, HWM **$213.99** ⬆️, stop **$192.591** ⬆️) ✓ — buffer $17.09 (8.15%) |
-| V | 22 | $323.57 | $329.285 | $7,244.27 | +$125.73 (+1.77%) | 7.30% | 66033918 (22sh, HWM **$336.8199**, stop **$303.138**) ✓ — buffer $26.15 (7.94%) |
-| VST | 40 | $148.81 | $167.09 | $6,683.60 | +$731.20 (+12.28%) | 6.73% | c4c200a5 (40sh, HWM **$170.33**, stop **$153.297**) ✓ — buffer $13.79 (8.24%) ⭐⭐ HELIX+COGENTRIX — approaching +15% tighten trigger |
+| LLY | 10 | $1,093.534 | $1,105.84 | $11,058.40 | +$123.06 (+1.13%) | 11.16% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, same) ✓ — buffer $41.38 (3.74%) |
+| NVDA | 33 | $213.421 | $208.155 | $6,869.12 | −$173.77 (−2.47%) | 6.93% | dcba7429 (33sh, HWM **$213.99**, stop **$192.591**) ✓ — buffer $15.56 (7.48%) |
+| V | 22 | $323.57 | $326.97 | $7,193.34 | +$74.80 (+1.05%) | 7.26% | 66033918 (22sh, HWM **$336.8199**, stop **$303.138**) ✓ — buffer $23.83 (7.29%) |
+| VST | 40 | $148.81 | $167.40 | $6,696.00 | +$743.60 (+12.49%) | 6.76% | c4c200a5 (40sh, HWM **$170.50** ⬆️ AUTO-RATCHETED, stop **$153.45** ⬆️) ✓ — buffer $13.95 (8.34%) ⭐⭐ HELIX+COGENTRIX |
 
 ## Performance vs S&P 500
 
 | Period | Bull | SPY | Difference |
 |--------|------|-----|------------|
 | Inception (2026-05-21) | $100,000.00 | $739.44 | — |
+| **Close (2026-06-22)** | **$99,078.33 (−0.922%)** | **$744.69 + $1.76 div = +0.948% TR** | **Bull TRAILS SPY ~1.87pp** |
 | **Midday (2026-06-22)** | **$99,201.16 (−0.799%)** | **$744.42 + $1.76 div = +0.91% TR** | **Bull TRAILS SPY ~1.71pp** |
 | **Market-open (2026-06-22)** | **$99,204.85 (−0.795%)** | **$747.47 + $1.76 div = +1.323% TR** | **Bull TRAILS SPY ~2.12pp** |
 | **Pre-mkt (2026-06-22)** | **$99,057.63 (−0.942%)** | **$747.47 close + $1.76 div = +1.323% TR (futures flat ~−0.1%)** | **Bull TRAILS SPY ~2.26pp est** |
@@ -43,6 +44,58 @@ the last known state, but always re-fetches live data before trading._
 | **Close (2026-06-16)** | **$99,209.83** | **$751.01 (close, +1.564% since inception)** | **Bull TRAILS SPY ~2.35pp** |
 
 ## Notes
+
+**Close June 22, 2026 — EOD summary (~15:51 ET):**
+- **Market context:** S&P 500 +0.12% / Nasdaq -0.27% on Quarterly Index rebalance day; SpaceX -10.7% on bond offering dragged large-cap tech; gold crash (Alamos -14%, Gold Fields -10%) as precious metals retreat sharply; Micron +4% ahead of earnings = positive semi thesis read-through for NVDA. Mixed tape with defensives holding up. Bull's 67.9% cash + 4-sector diversification absorbed tech softness.
+- **Today P/L:** +$38.72 = +0.039% (vs SPY −0.37% today) — Bull outperformed by +0.41pp; cash cushion working.
+- **Shock check:** $99,078.33 vs last_equity $99,039.61 = **+$38.72 = +0.039%** — no shock ✓
+- **Drawdown circuit breaker:** $99,078 vs HWM $101,384.21 = **−2.27%** — NOT triggered ✓ (7.73pp headroom)
+- **LLY** $1,105.84 (+1.13% from entry, +0.66% today): Healthy close. Medicare Bridge July 1 in 9 days — explicit hold/trim/exit at pre-market June 30. Buffer $41.38 (3.74%) ✓ (narrowed slightly from midday $44.36). HOLD. Conviction **A**. review_by 2026-07-01.
+- **NVDA** $208.155 (−2.47% from entry, −1.20% today): Afternoon session weakness (Nasdaq broad tech selling). Buffer $15.56 (7.48%) ✓. AI thesis intact; Micron +4% = positive semi read-through. No catalyst concern. HOLD. Conviction **B** (starter, filled today). review_by 2026-07-22.
+- **V** $326.97 (+1.05% from entry, −0.08% today): Essentially flat on the day. Buffer $23.83 (7.29%) ✓. OpenAI/stablecoin thesis intact. HOLD. Conviction **B** (0/3 C-weeks). review_by 2026-07-28.
+- **VST** ⭐⭐ $167.40 (+12.49% from entry, +2.23% today): **HWM AUTO-RATCHETED $170.33 → $170.50** during session (VST hit new position high). Stop updated $153.297 → **$153.45** ✓. Buffer $13.95 (8.34%) ✓. +15% tighten trigger at $171.13 still not reached; $0.73 away — monitor at pre-market. STRONG HOLD. Conviction **A**. review_by 2026-07-07.
+- **Exit reconciliation:** No exits today. All 4 positions (LLY, NVDA, V, VST) held. closed-trades.md current ✓.
+- **Stop audit: 5/5 PASS ✓** (d4147484 LLY 7sh, 25989fb5 LLY 3sh, dcba7429 NVDA 33sh, 66033918 V 22sh, c4c200a5 VST 40sh HWM $170.50)
+- **Trades today:** 1 (NVDA 33sh BUY at open). Week slot 1/3 used.
+- **No new lessons required** (no losses; no errors).
+
+**Performance vs SPY (EOD June 22):**
+- Bull: $99,078.33 = **−0.922%** since inception (May 21)
+- SPY total return: ($744.69 + $1.76 div) / $739.44 = **+0.948%** since inception
+- **Bull TRAILS SPY by ~1.87pp** (improved from −2.12pp at market-open as positions recovered intraday, then slight afternoon selling)
+- Today: Bull +0.039% vs SPY −0.37% = **+0.41pp outperformance today** ✓ (cash cushion absorbing Nasdaq weakness)
+
+**Race scoreboard (EOD June 22):**
+- Bull: **−0.922%** (since May 21, USD 100K start)
+- AGGRO: **~−4.957% est** (since June 4; last known midday $95,043.13 after MSFT forced close at −13.22%)
+- SPY total return: **+0.948%** (since May 21, $739.44 anchor + $1.76 div)
+- **Gap: Bull TRAILS SPY by ~1.87pp**
+- Bull leads AGGRO by **~4.04pp est**
+
+**Sector exposure (EOD June 22 — close):**
+- Healthcare (LLY): $11,058.40 = 11.16%
+- Tech/AI Semi (NVDA): $6,869.12 = 6.93%
+- Financials (V): $7,193.34 = 7.26%
+- Energy/Utilities (VST): $6,696.00 = 6.76%
+- Cash: $67,261.74 = 67.89%
+- No sector above 60% cap ✓
+
+**Trailing stop status (EOD June 22 — confirmed via Alpaca open orders ~15:51 ET):**
+- LLY (d4147484): 7sh — HWM **$1,182.73**, stop **$1,064.457** ✓ (buffer $41.38 = 3.74%)
+- LLY (25989fb5): 3sh — HWM **$1,182.73**, stop **$1,064.457** ✓
+- NVDA (dcba7429): 33sh — HWM **$213.99**, stop **$192.591** ✓ (buffer $15.56 = 7.48%)
+- V (66033918): 22sh — HWM **$336.8199**, stop **$303.138** ✓ (buffer $23.83 = 7.29%)
+- VST (c4c200a5): 40sh — HWM **$170.50** ⬆️ AUTO-RATCHETED (from $170.33 midday), stop **$153.45** ⬆️ ✓ (buffer $13.95 = 8.34%)
+
+**Upcoming catalysts:**
+- **LLY Medicare GLP-1 Bridge effective July 1** (9 days — explicit hold/trim/exit decision REQUIRED at pre-market June 30)
+- **VST +15% tighten trigger** ($171.13) — HWM now $170.50; approaching ($0.63 from trigger) — monitor pre-market June 23
+- **NVDA review_by July 22** (30 days)
+- **VST thesis review_by July 7** (15 days)
+- **V Q3 FY26 earnings July 28** (36 days — thesis review_by date)
+- **NVDA earnings August 26** (65 days — outside 2-day window ✓)
+
+---
 
 **Midday June 22, 2026 (~12:31 ET — no cuts, no tightenings; VST news scan: thesis intact; stop audit 5/5 PASS):**
 - **Shock check:** $99,201.16 vs last_equity $99,039.61 = +$161.55 (+0.163%) — no shock ✓

@@ -3,6 +3,50 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-22 15:51 ET — CLOSE (no trades; stop audit 5/5 ✓; VST HWM ratcheted $170.50; no exits)
+
+- **Action:** End-of-day close review. No new positions placed (close is observation only). No positions cut, no trailing stops triggered.
+- **Market status:** `is_open: true` → `next_close: 16:00 ET June 22` (normal full-day session ✓)
+- **Account (~15:51 ET — live Alpaca):** Equity $99,078.33 | Cash $67,261.74 (67.89%) | LMV $31,816.59
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓
+
+### Today P/L
+- Equity $99,078.33 vs last_equity $99,039.61 = **+$38.72 = +0.039%** ✓
+- SPY today: $744.69 vs $747.47 (prior close) = **−0.37%**
+- Bull outperformed by **+0.41pp** today (67.9% cash cushion vs Nasdaq selloff)
+
+### Drawdown / circuit breaker
+- HWM $101,384.21; current $99,078.33 = **−2.27%** — NOT triggered ✓
+
+### Position review (EOD June 22 — close prices)
+**LLY** ($1,105.84, **+1.13% from entry**, +0.66% today) ✓ HOLD — buffer $41.38 (3.74%)
+**NVDA** ($208.155, **−2.47% from entry**, −1.20% today) ✓ HOLD — buffer $15.56 (7.48%); Nasdaq tech selling, thesis intact
+**V** ($326.97, **+1.05% from entry**, −0.08% today) ✓ HOLD — buffer $23.83 (7.29%)
+**VST** ($167.40, **+12.49% from entry**, +2.23% today) ⭐⭐ STRONG HOLD — HWM auto-ratcheted to **$170.50**, stop **$153.45** ✓; +15% trigger ($171.13) not yet reached
+
+### Stop audit (EOD June 22 — confirmed via Alpaca open orders)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ live — unchanged |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ live — unchanged |
+| dcba7429 | NVDA | 33sh | $213.99 | $192.591 | ✓ live — unchanged |
+| 66033918 | V | 22sh | $336.8199 | $303.138 | ✓ live — unchanged |
+| c4c200a5 | VST | 40sh | **$170.50** ⬆️ | **$153.45** ⬆️ | ✓ live — AUTO-RATCHETED (from $170.33/$153.297 at midday) |
+
+**Stop audit: 5/5 PASS ✓**
+
+### Exit reconciliation
+No exits today. All 4 positions held. No closed-trades.md entry needed. ✓
+
+### Performance (EOD June 22)
+- **Since inception:** Bull **−0.922%** vs SPY TR **+0.948%** = **Bull TRAILS SPY ~1.87pp** (improved from ~2.12pp at market-open)
+- **Week of June 22:** 1/3 new positions used (NVDA)
+- **Race:** Bull −0.922% | AGGRO −4.957% est | SPY +0.948% — Bull leads AGGRO by ~4.04pp est.
+
+---
+
 ## 2026-06-22 12:31 ET — MIDDAY (no cuts; no tightenings; stop audit 5/5 ✓; VST news scan: thesis intact)
 
 - **Action:** Midday risk-management check only. All 4 positions within guardrails. No positions triggered the −7% cut rule; no positions reached +15% tighten threshold. VST news scan completed (>10% from entry trigger).
