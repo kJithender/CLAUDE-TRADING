@@ -1665,3 +1665,94 @@ All 8 trailing stops confirmed live at 9:46 AM market-open check. Market remaine
 | SPY close (June 18 — last available) | USD 746.74 |
 | SPY return since inception | -0.987% |
 | Alpha since inception | **-2.006pp** |
+
+---
+
+## 2026-06-22 — MARKET OPEN (~9:46 AM ET)
+
+**No trades executed.** Pre-market plan confirmed no unconditional trades. MSFT contingent close evaluated — no action taken (see below).
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run (expires 13:43Z) ✓ |
+| Control switch | STATUS: ACTIVE; no NOTE or QUERY ✓ |
+| Plan date | June 22, 2026 — matches today ✓ |
+| Plan trades | `"trades": []` — no unconditional trades ✓ |
+| Idempotency | No prior EXECUTED: marker for today's plan ✓ |
+
+### Market & account status
+| Check | Result |
+|---|---|
+| Market open | true (next close 4:00 PM ET) ✓ |
+| Equity | USD 96,291.17 |
+| Last equity (June 18 EOD — June 19 Juneteenth market closed) | USD 97,006.60 |
+| Intraday P/L | -USD 715.43 (-0.738%) — shock threshold -6%: NOT triggered ✓ |
+| Cash | USD 12,573.47 (13.04%) — cash floor 2%: ✓ |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | -4.80% (circuit breaker 20% — NOT triggered ✓) |
+
+### Breaking news gate [search: WebSearch fallback — MiniMax M3 not available]
+No unconditional trades to gate. Checked MSFT and META (the two watch names with active protocols):
+- **MSFT**: Azure +40% YoY intact; Copilot 20M+ paid seats; shifting to usage-based pricing model (THESIS-POSITIVE — monetization accelerating exactly as thesis predicted); 35 Buy / 2 Hold analyst consensus. No Azure deceleration below 30%, no explicit Copilot underperformance admission. **NO thesis-breaking news. HOLD.**
+- **META**: Q1 2026 +33% YoY intact; equity offering still unconfirmed ("considering" / "exploring options") — no banks hired, invalidation NOT triggered. Next earnings July 28. **NO thesis-breaking news. HOLD.**
+
+### Position re-check (live prices)
+
+| Symbol | Qty | Entry | Current | P/L% | -12% Trigger | Buffer | Rating |
+|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 212.58 | -0.478% | USD 187.97 | 11.52pp | A |
+| AVGO | 34 | USD 406.23 | USD 400.26 | -1.470% | USD 357.48 | 10.53pp | A |
+| META | 17 | USD 630.12 | USD 575.17 | -8.721% | USD 554.51 | 3.28pp ⚠️ | B |
+| MRVL | 25 | USD 293.29 | USD 299.025 | +1.957% | USD 258.09 | 13.95pp | A |
+| MSFT | 21 | USD 426.21 | USD 381.31 | -10.534% | USD 375.065 | 1.47pp 🚨 | C |
+| AMZN | 36 | USD 247.99 | USD 240.66 | -2.956% | USD 218.23 | 9.05pp | A |
+| GOOGL | 16 | USD 370.22 | USD 354.415 | -4.269% | USD 325.79 | 7.73pp | A |
+| VST | 52 | USD 151.47 | USD 165.31 | +9.137% | USD 133.29 | 24.14pp | A |
+
+### MSFT contingent close protocol evaluation
+Pre-market plan specified three scenarios based on MSFT open price:
+1. ≤ USD 375.065 → full close 21 shares
+2. USD 375.065–377.00 → evaluate partial trim (10 of 21 shares)
+3. > USD 377.00 → no action; reassess at midday
+
+**MSFT open per daily bar: USD 375.175** — in the evaluation zone (375.065–377.00). This triggers Scenario 2 evaluation.
+
+**Evaluation outcome: NO TRIM.**
+- MSFT recovered immediately from the open to USD 381.31 (+1.62% from open) as of this check
+- Current price USD 381.31 is well above USD 377.00 — above the "no action" threshold
+- Recovery trajectory is positive (+0.50% vs prior close)
+- Thesis confirms intact: Copilot usage-based pricing with 20M+ paid seats is the exact monetization thesis activating
+- The 25% proactive trim heuristic was designed for MSFT stuck BELOW USD 377, not one that briefly touched the zone and bounced
+- Buffer remains thin at 1.47pp — **midday routine MUST check MSFT first and close all 21 shares if price ≤ USD 375.065**
+
+### Stop audit — 8/8 positions confirmed with live 18% trailing stops ✓
+
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| META | `5bc32805` | USD 580.215 | USD 475.7763 | ✓ live |
+| MRVL | `a9097c8c` | USD 329.88 | USD 270.5016 | ✓ live |
+| MSFT | `aefe6616` | USD 381.59 (HWM ratcheted from 381.37 ✅) | USD 312.9038 | ✓ live |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| VST | `5b347be3` | USD 170.33 | USD 139.6706 | ✓ live |
+
+No stops missing. No stops requiring recreation. MSFT stop HWM updated from 381.37 to 381.59 (intraday ratchet confirmed).
+
+### Exit reconciliation
+No positions exited. Comparing positions vs prior close: all 8 positions intact with no fills. No closed-trades entries needed.
+
+### Performance vs SPY
+| Metric | Value |
+|---|---|
+| Equity (market-open) | USD 96,291.17 |
+| Aggro return since inception | **(96,291.17 − 100,000) / 100,000 = -3.709%** |
+| SPY current | USD 749.30 |
+| SPY return since inception (754.18 → 749.30) | **-0.647%** |
+| Alpha since inception | **-3.062pp** |
+| Intraday P/L | -USD 715.43 (-0.738%) |
+| SPY today (prev 746.75 → 749.30) | +0.341% |
+| Today vs SPY | **-1.079pp** (underperforming; broad tech down while SPY up) |

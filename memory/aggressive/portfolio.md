@@ -17,6 +17,78 @@ but always re-fetches live data before trading._
 
 ---
 
+## Last snapshot — 2026-06-22 MARKET-OPEN (~9:46 AM ET)
+
+| Field | Value |
+|---|---|
+| Equity | USD 96,291.17 |
+| Cash | USD 12,573.47 (13.04%) |
+| Long market value | USD 83,717.70 |
+| Open positions | 8 |
+| last_equity (June 18 EOD — June 19 Juneteenth market closed) | USD 97,006.60 |
+| Intraday P/L vs last_equity | -USD 715.43 (-0.738%) — broad tech weakness; SPY +0.34% but AI-tech underperforming |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-4.80%** (circuit breaker 20% — NOT triggered; 15.20pp headroom) |
+
+**Open positions (June 22 market-open ~9:46 AM ET):**
+
+| Symbol | Qty | Avg Entry | Price | Market Value | Unrealized P/L | P/L % | -12% Cut Trigger | Buffer | Rating |
+|---|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 212.58 | USD 21,895.74 | -USD 105.06 | -0.478% | USD 187.97 | 11.52pp | A |
+| AVGO | 34 | USD 406.23 | USD 400.26 | USD 13,608.84 | -USD 202.98 | -1.470% | USD 357.48 | 10.53pp | A |
+| META | 17 | USD 630.12 | USD 575.17 | USD 9,777.89 | -USD 934.15 | -8.721% | USD 554.51 | 3.28pp ⚠️ | B |
+| MRVL | 25 | USD 293.29 | USD 299.025 | USD 7,475.63 | +USD 143.50 | +1.957% | USD 258.09 | 13.95pp | A |
+| MSFT | 21 | USD 426.21 | USD 381.31 | USD 8,007.55 | -USD 942.86 | -10.534% | USD 375.065 | 1.47pp 🚨 | C |
+| AMZN | 36 | USD 247.99 | USD 240.66 | USD 8,663.76 | -USD 263.92 | -2.956% | USD 218.23 | 9.05pp | A |
+| GOOGL | 16 | USD 370.22 | USD 354.415 | USD 5,670.64 | -USD 252.88 | -4.269% | USD 325.79 | 7.73pp | A |
+| VST | 52 | USD 151.47 | USD 165.31 | USD 8,596.12 | +USD 719.68 | +9.137% | USD 133.29 | 24.14pp | A |
+
+**Stop audit (June 22 market-open): ALL 8 CONFIRMED LIVE ✓**
+
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| META | `5bc32805` | USD 580.215 | USD 475.7763 | ✓ live |
+| MRVL | `a9097c8c` | USD 329.88 | USD 270.5016 | ✓ live |
+| MSFT | `aefe6616` | USD 381.59 (HWM ratcheted from 381.37 ✅) | USD 312.9038 | ✓ live |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| VST | `5b347be3` | USD 170.33 | USD 139.6706 | ✓ live |
+
+**Thesis contracts (June 22 market-open — current):**
+| Symbol | Review By | Invalidation |
+|---|---|---|
+| NVDA | June 25 | NVDA loses major hyperscaler OR data-center GPU share materially reverses |
+| AVGO | June 25 | AI revenue decelerates (not software) OR customer concentration risk materializes |
+| META | **June 26** | Section 230 expands to ad-targeting OR ad revenue growth <20% YoY |
+| MRVL | June 29 | Hyperscaler custom-silicon contracts not renewed OR optical wins attributed to rivals |
+| MSFT | June 25 | Azure growth decelerates below 30% YoY OR Copilot adoption fails |
+| AMZN | **July 7** | AWS growth <20% YoY OR Trainium fails hyperscaler traction |
+| GOOGL | June 25 | GCP growth decelerates meaningfully OR TPU roadmap cancelled |
+| VST | July 15 | Nuclear PPA contracts cancelled OR AI power demand forecast revised down |
+
+_No trades executed. MSFT contingent close evaluated: opened USD 375.175 (evaluation zone); recovered to USD 381.31 → NO TRIM (recovery confirmed, Copilot usage-based monetization news positive). MSFT buffer still 1.47pp 🚨 — midday MUST check vs USD 375.065. META buffer 3.28pp ⚠️; review_by June 26. AVGO + VST ex-dividend June 22 (USD 34.01 incoming June 30)._
+
+**Sector exposure (June 22 market-open):**
+| Sector | Market Value | % of Portfolio |
+|---|---|---|
+| Technology — semis (NVDA, AVGO, MRVL) | USD 42,980.21 | 44.6% |
+| Technology — hyperscalers (META, MSFT, AMZN, GOOGL) | USD 32,119.84 | 33.4% |
+| Utilities/Energy (VST) | USD 8,596.12 | 8.9% |
+| Cash | USD 12,573.47 | 13.1% |
+
+**Performance vs SPY (June 22 market-open):**
+| Metric | Value |
+|---|---|
+| Equity | USD 96,291.17 |
+| Aggro return since inception | **-3.709%** |
+| SPY current | USD 749.30 |
+| SPY return since inception (754.18 anchor) | **-0.647%** |
+| Alpha since inception | **-3.062pp** |
+
+---
+
 ## Last snapshot — 2026-06-22 PRE-MARKET (~8:12 AM ET)
 
 | Field | Value |

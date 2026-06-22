@@ -2080,6 +2080,8 @@ No unconditional trades. Market is closed — all execution deferred to market-o
 
 No unconditional trades. MSFT contingent close protocol documented above for market-open routine. All 8 positions held, thesis intact across the book. AMZN thesis renewed (review_by extended to July 7). META and MRVL review_by updated.
 
+EXECUTED: 2026-06-22T13:46:00Z (no unconditional trades — MSFT opened at USD 375.175, evaluation zone 375.065–377.00; stock recovered to USD 381.31 → NO trim, thesis intact; stop audit 8/8 confirmed; intraday shock NOT triggered at -0.738%)
+
 ### Performance vs SPY
 | Metric | Value |
 |---|---|
