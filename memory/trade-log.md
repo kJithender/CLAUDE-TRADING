@@ -3,6 +3,63 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-22 08:02 ET — PRE-MARKET (no trades yet; NVDA 33sh buy planned at open; stop audit 4/4 ✓)
+
+- **Action:** Pre-market routine — research, thesis reviews, plan drafted. No trades until market open 09:30 ET.
+- **Market status:** NYSE open today June 22, 09:30 ET (Juneteenth was June 19 — holiday; first active session since June 18).
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓
+
+### Account (~08:02 ET — live Alpaca)
+- Equity: $99,057.63 | Cash: $74,304.63 (74.97%) | LMV: ~$24,753
+- Shock check: +$18.02 (+0.018%) vs last_equity $99,039.61 — no shock ✓
+- Drawdown: −2.295% vs HWM $101,384.21 — NOT triggered ✓
+
+### Macro
+- 10yr Treasury: **4.49%** — below 4.75% trigger ✓ (new buys permitted)
+- S&P 500 futures: flat to −0.1% — no macro shock
+- Iran/US peace deal: 60-day agreement signed June 18–19 ✓ constructive
+- Micron +4% pre-mkt on AI memory demand — positive NVDA read-through
+
+### Thesis contract review
+- **LLY** ~$1,100 (+0.59%): Medicare Bridge July 1 in 9 days. HOLD. Conviction A. review_by 2026-07-01.
+- **V** ~$327.50 (+1.215%): OpenAI agentic payments integration catalyst. HOLD. Conviction B (0/3 C-weeks). review_by 2026-07-28.
+- **VST** ~$163.70 (+10.01%): **EX-DIVIDEND TODAY** USD 9.16 (40sh × $0.229, payable June 30). Cogentrix + Helix thesis strongest. STRONG HOLD. Conviction A. review_by 2026-07-07.
+
+### Monday conviction-weighted review
+| Symbol | Rating | Notes |
+|--------|--------|-------|
+| LLY | A | Medicare Bridge 9 days; ARK buying |
+| V | B (0/3 C-weeks) | AI payments catalyst; July 28 earnings |
+| VST | A | ex-div today; Cogentrix + Helix ⭐⭐ |
+| NVDA | pending fill | 33sh buy at open |
+
+### Stop audit: 4/4 PASS ✓
+- d4147484 LLY 7sh HWM $1,182.73 stop $1,064.457 ✓
+- 25989fb5 LLY 3sh HWM $1,182.73 stop $1,064.457 ✓
+- 66033918 V 22sh HWM $336.8199 stop $303.138 ✓
+- c4c200a5 VST 40sh HWM $170.33 stop $153.297 ✓
+
+### Trade plan
+**NVDA: BUY 33sh at market open (~$210, ~USD 6,930 = 7.0% portfolio)**
+- Thesis: AI accelerator monopoly; Helix consortium (KKR+NVIDIA+Kuwait) embeds GPU demand; FY26 data center +92% YoY; 5/5 entry signals met
+- All gates cleared: price >$205 ✓; ATR June17 2.80% ≤3% ✓; ATR June18 2.32% ≤3% ✓; earnings Aug 26 (65 days) ✓; 10yr 4.49% <4.75% ✓
+- Risk budget: 10% stop → ~$693 loss = 0.70% equity (< 1.2% budget ✓)
+- Post-fill: place 10% trailing stop IMMEDIATELY
+- Week of June 22: slot 1/3 used after NVDA fills
+- invalidation: closes below $200 on volume, or trailing stop fires
+- review_by: 2026-07-22
+
+**LRCX:** ATR 6.93% — DEFERRED ❌
+**PWR:** ATR elevated + insider selling $123M — DEFERRED ❌
+
+### New week position tracking (week of June 22)
+- New positions this week so far: 0/3 (fresh slots)
+- After NVDA: 1/3 used
+
+---
+
 ## 2026-06-19 15:50 ET — EOD CLOSE (no trades; market CLOSED — Juneteenth federal holiday; stop audit 4/4 ✓; all 3 positions intact)
 
 - **Action:** No trades — market was CLOSED all day (Juneteenth federal holiday, June 19, 2026). EOD close routine: P/L journal, reconciliation, performance vs SPY, race scoreboard. Next open: Monday June 22, 09:30 ET.
