@@ -17,6 +17,88 @@ but always re-fetches live data before trading._
 
 ---
 
+## Last snapshot — 2026-06-22 EOD CLOSE (~4:00 PM ET) 🚨 MSFT CLOSED EARLIER TODAY
+
+| Field | Value |
+|---|---|
+| Equity | USD 95,130.45 |
+| Cash | USD 20,304.47 (21.34%) |
+| Long market value | USD 74,825.98 |
+| Open positions | 7 (MSFT closed at midday) |
+| last_equity (June 18 EOD — Alpaca authoritative) | USD 97,006.60 |
+| Today's P/L vs last_equity | **-USD 1,876.15 (-1.933%)** — broad tech selloff; GOOGL -4.92%, AVGO -4.34%, AMZN -4.58%; MSFT realized loss -13.62% from earlier midday cut; VST +1.685% offset |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-5.946%** (circuit breaker 20% — NOT triggered; 14.054pp headroom) |
+
+**Open positions (June 22 EOD):**
+
+| Symbol | Qty | Avg Entry | EOD Price | Market Value | Unrealized P/L | P/L % | -12% Cut Trigger | Buffer | Rating |
+|---|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 208.70 | USD 21,496.10 | -USD 504.70 | -2.294% | USD 187.97 | 9.705pp | A |
+| AVGO | 34 | USD 406.23 | USD 393.50 | USD 13,379.00 | -USD 432.82 | -3.134% | USD 357.48 | 8.867pp | A |
+| META | 17 | USD 630.12 | USD 564.17 | USD 9,590.83 | -USD 1,121.21 | -10.467% | USD 554.51 | **1.534pp 🚨 CRITICAL** | B |
+| MRVL | 25 | USD 293.29 | USD 308.29 | USD 7,707.25 | +USD 375.12 | +5.116% | USD 258.09 | 17.116pp | A |
+| AMZN | 36 | USD 247.99 | USD 233.21 | USD 8,395.56 | -USD 532.12 | -5.960% | USD 218.23 | 6.040pp | A |
+| GOOGL | 16 | USD 370.22 | USD 349.92 | USD 5,598.72 | -USD 324.80 | -5.483% | USD 325.79 | 6.518pp | A |
+| VST | 52 | USD 151.47 | USD 166.51 | USD 8,658.52 | +USD 782.08 | +9.929% | USD 133.29 | **21.932pp** | A |
+
+**Stop audit (June 22 EOD): ALL 7 CONFIRMED LIVE ✓**
+
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| META | `5bc32805` | USD 580.215 | USD 475.7763 | ✓ live |
+| MRVL | `a9097c8c` | USD 329.88 | USD 270.5016 | ✓ live |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| VST | `5b347be3` | **USD 170.50 (new ATH today ✅)** | USD 139.81 | ✓ live — stop ratcheted from USD 139.67 |
+
+**Thesis contracts (June 22 EOD):**
+| Symbol | Review By | Invalidation | Status |
+|---|---|---|---|
+| NVDA | June 25 | NVDA loses major hyperscaler OR data-center GPU share reverses | ✓ Intact — 9.705pp buffer |
+| AVGO | June 25 | AI revenue decelerates OR customer concentration risk | ✓ Intact — 8.867pp buffer; ex-div USD 22.10 captured |
+| META | **June 26** | Section 230 expands to ad-targeting OR ad revenue <20% YoY | 🚨 INTACT BUT CRITICAL — 1.534pp buffer; June 23 pre-mkt MUST check price immediately |
+| MRVL | June 29 | Hyperscaler custom-silicon not renewed OR optical wins lost | ✓ Intact — 17.116pp buffer |
+| AMZN | July 7 | AWS <20% YoY OR Trainium fails hyperscaler traction | ✓ Intact — 6.040pp; Prime Day June 23-26 starts tomorrow |
+| GOOGL | June 25 | GCP decelerates meaningfully OR TPU roadmap cancelled | ✓ Intact — 6.518pp; broad tech selling, thesis intact |
+| VST | July 15 | Nuclear PPAs cancelled OR AI power demand revised down | ✓ Intact — 21.932pp; new HWM USD 170.50 today |
+
+**Conviction ratings (June 22 EOD):**
+| Symbol | Rating | Notes |
+|---|---|---|
+| NVDA | A | Core AI GPU; -2.29%; 9.71pp buffer |
+| AVGO | A | AI XPV; -3.13%; ex-div USD 22.10 captured; 8.87pp buffer |
+| MRVL | A | Post S&P inclusion; +5.12%; 17.12pp buffer |
+| VST | A | Helix confirmed; +9.93%; new HWM USD 170.50; ex-div USD 11.91 captured |
+| AMZN | A | AWS +28%; Prime Day June 23-26 starts tomorrow; 6.04pp buffer |
+| GOOGL | A | GCP +63%; -5.48%; 6.52pp buffer — broad tech selling, thesis intact |
+| META | **B** | Ad +33% intact; **1.534pp buffer CRITICAL 🚨 — June 23 pre-mkt must check immediately** |
+| MSFT | **CLOSED** | -13.62% (blended -13.22%) forced midday close June 22 |
+
+**Sector exposure (June 22 EOD):**
+| Sector | Market Value | % of Portfolio |
+|---|---|---|
+| Technology — semis (NVDA, AVGO, MRVL) | USD 42,582.35 | 44.8% |
+| Technology — hyperscalers (META, AMZN, GOOGL) | USD 23,585.11 | 24.8% |
+| Utilities/Energy (VST) | USD 8,658.52 | 9.1% |
+| Cash | USD 20,304.47 | 21.3% |
+
+_MSFT midday forced close at -13.62% (-12% midday cut rule triggered) is now fully reflected. META at 1.534pp from forced exit — CRITICAL going into June 23. Broad tech selloff today driven by Alphabet leading Nasdaq lower; quarterly Nasdaq 100/S&P shakeup created passive rebalancing flow against AI-tech names. VST new HWM USD 170.50 (+1.685% today); trailing stop ratcheted to USD 139.81. Prime Day June 23-26 is a near-term AMZN catalyst. Cash at 21.3% — no new buys until META risk resolves._
+
+**Performance vs SPY (June 22 EOD):**
+| Metric | Value |
+|---|---|
+| Equity | USD 95,130.45 |
+| Aggro return since inception | **-4.870%** |
+| SPY close June 22 | USD 744.28 |
+| SPY return since inception (754.18 anchor) | **-1.312%** |
+| Alpha since inception | **-3.558pp** |
+| Today vs SPY | Aggro -1.933% vs SPY -0.329% → **-1.604pp today** |
+
+---
+
 ## Last snapshot — 2026-06-22 MIDDAY (~12:30 PM ET) 🚨 MSFT CLOSED
 
 | Field | Value |
