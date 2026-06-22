@@ -17,6 +17,90 @@ but always re-fetches live data before trading._
 
 ---
 
+## Last snapshot — 2026-06-22 PRE-MARKET (~8:12 AM ET)
+
+| Field | Value |
+|---|---|
+| Equity | USD 96,635.13 |
+| Cash | USD 12,573.47 (13.02%) |
+| Long market value | USD 84,061.66 |
+| Open positions | 8 |
+| last_equity (June 18 EOD — June 19 Juneteenth market closed) | USD 97,006.60 |
+| Pre-market P/L vs last_equity | -USD 371.47 (-0.383%) — mild pre-market drift before open |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-4.46%** (circuit breaker 20% — NOT triggered; 15.54pp headroom) |
+
+**Open positions (June 22 pre-market ~8:12 AM ET):**
+
+| Symbol | Qty | Avg Entry | Pre-Mkt Price | Market Value | Unrealized P/L | P/L % | -12% Cut Trigger | Buffer | Rating |
+|---|---|---|---|---|---|---|---|---|---|
+| NVDA | 103 | USD 213.60 | USD 210.05 | USD 21,635.15 | -USD 367.45 | -1.66% | USD 187.97 | 10.34pp | A |
+| AVGO | 34 | USD 406.23 | USD 408.43 | USD 13,886.62 | +USD 74.80 | +0.54% | USD 357.48 | 12.74pp | A ← ex-div USD 22.10 today |
+| META | 17 | USD 630.12 | USD 573.84 | USD 9,755.28 | -USD 955.76 | -8.93% | USD 554.51 | 3.07pp ⚠️ | B |
+| MRVL | 25 | USD 293.29 | USD 310.98 | USD 7,774.50 | +USD 441.25 | +6.03% | USD 258.09 | 17.97pp | A ← S&P 500 effective today |
+| MSFT | 21 | USD 426.21 | USD 378.17 | USD 7,941.57 | -USD 1,007.64 | -11.27% | USD 375.065 | 0.73pp 🚨 | C |
+| AMZN | 36 | USD 247.99 | USD 243.33 | USD 8,759.88 | -USD 167.76 | -1.88% | USD 218.23 | 10.12pp | A ← thesis renewed; review_by July 7 |
+| GOOGL | 16 | USD 370.22 | USD 361.45 | USD 5,783.20 | -USD 139.52 | -2.37% | USD 325.79 | 9.63pp | A |
+| VST | 52 | USD 151.47 | USD 163.95 | USD 8,525.40 | +USD 648.96 | +8.24% | USD 133.29 | 22.11pp | A ← ex-div USD 11.91 today |
+
+**Stop audit (June 22 pre-market): ALL 8 CONFIRMED LIVE ✓**
+
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| META | `5bc32805` | USD 580.215 | USD 475.7763 | ✓ live |
+| MRVL | `a9097c8c` | USD 329.88 | USD 270.5016 | ✓ live |
+| MSFT | `aefe6616` | USD 381.37 | USD 312.7234 | ✓ live |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| VST | `5b347be3` | USD 170.33 | USD 139.6706 | ✓ live |
+
+**Thesis contracts (updated June 22):**
+| Symbol | Review By | Invalidation |
+|---|---|---|
+| NVDA | June 25 | NVDA loses major hyperscaler OR data-center GPU share materially reverses |
+| AVGO | June 25 | AI revenue decelerates (not software) OR customer concentration risk materializes |
+| META | **June 26** | Section 230 expands to ad-targeting OR ad revenue growth <20% YoY |
+| MRVL | June 29 | Hyperscaler custom-silicon contracts not renewed OR optical wins attributed to rivals |
+| MSFT | June 25 | Azure growth decelerates below 30% YoY OR Copilot adoption fails |
+| AMZN | **July 7** | AWS growth <20% YoY OR Trainium fails hyperscaler traction |
+| GOOGL | June 25 | GCP growth decelerates meaningfully OR TPU roadmap cancelled |
+| VST | July 15 | Nuclear PPA contracts cancelled OR AI power demand forecast revised down |
+
+**Monday conviction ratings (June 22):**
+| Symbol | Rating | Previous Monday | Notes |
+|---|---|---|---|
+| NVDA | A | A | Core AI GPU |
+| AVGO | A | A | AI XPV; ex-div captured |
+| MRVL | A | A | S&P 500 effective today |
+| VST | A | A | Helix confirmed; ex-div captured |
+| AMZN | A | A | AWS +28%; Prime Day next week |
+| GOOGL | A | A | GCP +63%; profit-taking only |
+| META | B | B | 3.07pp buffer ⚠️; AI leadership exit = noise |
+| MSFT | **C** | A | 0.73pp buffer 🚨; FIRST Monday C; 2-consecutive rule NOT triggered |
+
+**Sector exposure (June 22 pre-market):**
+| Sector | Market Value | % of Portfolio |
+|---|---|---|
+| Technology — semis (NVDA, AVGO, MRVL) | USD 43,296.27 | 44.8% |
+| Technology — hyperscalers (META, MSFT, AMZN, GOOGL) | USD 32,239.93 | 33.4% |
+| Utilities/Energy (VST) | USD 8,525.40 | 8.8% |
+| Cash | USD 12,573.47 | 13.0% |
+
+_No unconditional trades planned. MSFT contingent close: if opens ≤ USD 375.065 → full close all 21 shares immediately. AVGO + VST ex-dividend today (USD 22.10 + USD 11.91 cash incoming June 30). AMZN thesis renewed, review_by extended to July 7. META buffer 3.07pp — just above the 3pp proactive trim threshold; review_by June 26. MRVL S&P 500 inclusion effective today._
+
+**Performance vs SPY (June 22 pre-market):**
+| Metric | Value |
+|---|---|
+| Equity | USD 96,635.13 |
+| Aggro return since inception | **-3.365%** |
+| SPY pre-market | ~USD 747.41 |
+| SPY return since inception (754.18 anchor) | **-0.985%** |
+| Alpha since inception | **-2.38pp** |
+
+---
+
 ## Last snapshot — 2026-06-19 EOD CLOSE (~3:50 PM ET — Juneteenth, market CLOSED all day)
 
 | Field | Value |

@@ -1898,3 +1898,194 @@ Unconfirmed rumors circulating June 18 that Apple is in early discussions to use
 **Since inception**: Aggro -2.99% vs SPY -0.987% = **alpha -2.01pp** (improved from -4.28pp Week 2)
 
 **No planned trades for June 22 pre-market until AMZN review_by decision and MSFT gap-risk assessment complete.**
+
+---
+
+## 2026-06-22 — WEEK 4 PRE-MARKET (~8:12 AM ET)
+[search: WebSearch fallback — MiniMax M3 not available]
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run (expires 12:18:57Z) ✓ |
+| Control switch | STATUS: ACTIVE; no NOTE or QUERY ✓ |
+| Week 3 weekly review | Completed 2026-06-19 (Juneteenth — market closed) ✓ |
+
+### Market posture [search: WebSearch fallback]
+- **S&P 500 futures**: +0.98%. **Nasdaq 100 futures**: +1.64%. Strong risk-on open.
+- **Macro**: US-Iran peace deal fully digested. Fed hawkish dot plot (9/18 project rate hike) remains rate backdrop. No new macro shock overnight.
+- **SPY pre-market**: ~USD 747.41 (vs June 18 close USD 746.75; +0.09%). Tape constructive.
+- **Thesis read-through**: Nasdaq +1.64% = direct tailwind for AI-tech portfolio. MSFT buffer likely to expand at open. Risk-on favors the existing concentrated AI book.
+
+### Account posture (live data, ~8:12 AM ET)
+| Field | Value |
+|---|---|
+| Equity | USD 96,635.13 |
+| Cash | USD 12,573.47 (13.02%) |
+| Long market value | USD 84,061.66 |
+| Open positions | 8 |
+| last_equity (June 18 EOD — June 19 Juneteenth market closed) | USD 97,006.60 |
+| Pre-market P/L vs last_equity | -USD 371.47 (-0.383%) — mild pre-market drift before open |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-4.46%** (circuit breaker 20% — NOT triggered; 15.54pp headroom) |
+| Intraday shock check (-6%) | NOT triggered (-0.383%) |
+
+### Drawdown circuit breaker: NOT active ✓
+Current equity USD 96,635.13 vs HWM USD 101,144.73 = -4.46%. Well under 20% circuit breaker. New positions permitted by circuit breaker.
+
+### Stop audit (June 22 pre-market): ALL 8 CONFIRMED LIVE ✓
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| META | `5bc32805` | USD 580.215 | USD 475.7763 | ✓ live |
+| MRVL | `a9097c8c` | USD 329.88 | USD 270.5016 | ✓ live |
+| MSFT | `aefe6616` | USD 381.37 | USD 312.7234 | ✓ live |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| VST | `5b347be3` | USD 170.33 | USD 139.6706 | ✓ live |
+
+No stops missing. No recreation needed.
+
+### Thesis contract reviews (all 8 positions)
+
+**AMZN (review_by = June 22 — MANDATORY TODAY):**
+- Pre-market price: USD 243.33; P/L from entry: -1.878%; buffer: 10.12pp — comfortable
+- Q1 2026: EPS USD 2.78 vs USD 1.73 estimate (+60.69% beat); revenue +16.6% YoY
+- AWS +28% YoY — fastest pace in 15 quarters; AI revenue run-rate >USD 20B growing triple digits
+- Trainium custom chips confirmed at scale — Trainium adoption thesis INTACT
+- Prime Day June 23-26 (next week) — near-term positive catalyst
+- Analyst consensus: 45 Buys / 1 Hold; avg target USD 319 (+31% upside)
+- Next earnings: ~July 29-31; well clear of 2-day window
+- **DECISION: HOLD.** Thesis completely intact. Prime Day is a near-term positive. **Renew review_by to July 7** (post-Prime Day analytics, before Q2 earnings).
+- New invalidation: unchanged (AWS growth <20% YoY OR Trainium adoption fails hyperscaler traction)
+
+**MSFT (review_by June 25; buffer 0.73pp 🚨 CRITICAL):**
+- Pre-market price: USD 378.17; P/L: -11.271%; buffer: 0.73pp to -12% cut trigger USD 375.065
+- Azure +40% YoY thesis COMPLETELY INTACT
+- NEW (thesis-positive): Microsoft changing to pay-as-you-go billing for AI agents — Copilot monetization accelerating into a usage-based model; this is the monetization thesis activating
+- MSFT using AWS to expand GitHub infrastructure — internal cloud arbitrage, immaterial to Azure thesis
+- Next earnings July 28; annual meeting today (June 22) — no material announcements expected
+- No explicit Copilot underperformance admission; Azure deceleration not reported
+- Nasdaq futures +1.64% → expect MSFT to open materially higher than USD 378.17
+- **DECISION: HOLD** (thesis intact; market up; Copilot pay-as-you-go = monetization accelerating)
+- **Contingent close protocol: If MSFT opens AT OR BELOW USD 375.065 at market-open, execute immediate full close of all 21 shares (market order). No waiting for midday.**
+- **Proactive trim trigger: If MSFT opens between USD 375.065 and USD 377.00, evaluate selling 10 of 21 shares to create buffer. If opens above USD 377.00, no trim — rely on market-open recovery.**
+- Review_by: June 25 (unchanged)
+
+**META (review_by June 24; buffer 3.07pp ⚠️):**
+- Pre-market price: USD 573.84; P/L: -8.932%; buffer: 3.07pp — just above the 3pp strategic threshold
+- AI leadership departure: Emily Dalton Smith exits Meta AI For Work division. Internal AI organizational event, NOT ad monetization signal. Does NOT trigger invalidation condition.
+- No equity offering formally confirmed — invalidation NOT triggered
+- Section 230 ruling (June 17): no enforcement order; watchpoint unchanged
+- Ad revenue +33% YoY thesis INTACT
+- Next earnings ~July 29; well clear
+- **DECISION: HOLD.** AI leadership exit is internal noise, not thesis break. **Renew review_by to June 26** (aggressive monitoring given thin buffer).
+- Note: Proactive trim heuristic check — buffer 3.07pp is JUST ABOVE the 3pp threshold → heuristic does NOT fire today. If buffer drops below 3pp before June 26, re-evaluate.
+
+**NVDA (review_by June 25; buffer 10.34pp):**
+- Pre-market: USD 210.05; -1.662%; 10.34pp buffer
+- No negative news. Annual Meeting today June 24 (NOT earnings). Nasdaq +1.64%.
+- Next earnings ~August 26 (Q2 FY2027). Well clear of 2-day window.
+- **DECISION: HOLD.** Thesis intact. Buffer comfortable.
+
+**AVGO (review_by June 25; buffer 12.74pp):**
+- Pre-market: USD 408.43; +0.542% above entry; 12.74pp buffer
+- **EX-DIVIDEND TODAY June 22**: USD 0.65/share × 34 shares = **USD 22.10 cash incoming** (payment June 30)
+- AI demand robust; insider sale noted but does not affect thesis
+- Next earnings ~September. Well clear.
+- **DECISION: HOLD.** Thesis intact. Ex-div today captured.
+
+**MRVL (review_by June 29; buffer 17.97pp):**
+- Pre-market: USD 310.98; +6.033%; 17.97pp buffer
+- **S&P 500 INCLUSION EFFECTIVE TODAY June 22** — mandatory passive buying window COMPLETE
+- Pre-market: "Marvell Ships Over 5M Photonic Chips Ahead Of S&P 500 Entry" — optical networking momentum confirmed
+- KeyBanc raises target to USD 385 (Street-high); optical networking called "more durable growth engine"
+- Revenue trajectory: USD 8.2B FY2026 → USD 11.5B FY2027 → USD 16.7B FY2028 (+43% 2-yr CAGR)
+- Post-inclusion drift expected (passive buying complete; active traders who front-ran may rotate out)
+- Next earnings ~August 20-27. Well clear.
+- **DECISION: HOLD.** Post-inclusion drift is expected and within the 18% trailing stop. Thesis intact.
+- Note: MRVL trades at elevated P/E (~70-76x forward) — valuation risk if growth misses. Still well within guardrails.
+
+**VST (review_by July 15; buffer 22.11pp):**
+- Pre-market: USD 163.95; +8.239%; 22.11pp buffer
+- **EX-DIVIDEND TODAY June 22**: USD 0.229/share × 52 shares = **USD 11.91 cash incoming** (payment June 30)
+- Helix consortium confirmed: KKR+NVDA+VST+Kuwait Investment Authority; USD 10B AI power venture; VST preferred power provider
+- Next earnings August 6. Well clear.
+- **DECISION: HOLD.** Thesis intact. Leading performer. Ex-div captured.
+
+**GOOGL (review_by June 25; buffer 9.63pp):**
+- Pre-market: USD 361.45; -2.369% from entry; 9.63pp buffer
+- Stock dipping pre-market after "breakout week" — profit-taking, not thesis event
+- TPU v9 "Triggerfish" chip with MediaTek: thesis-positive (AI hardware roadmap advancing)
+- Alphabet raised USD 84.75B (above USD 80B target) for USD 180-190B capex 2026 — AI infrastructure commitment deepening
+- Cloud revenue +63% YoY — GCP fastest hyperscaler
+- Waymo 3,800-robotaxi recall for software glitch: immaterial to GCP thesis
+- Next earnings ~July 29. Well clear.
+- **DECISION: HOLD.** Profit-taking pullback only; thesis strengthened.
+
+### Monday conviction re-ranking (June 22)
+| Symbol | Rating | Notes |
+|---|---|---|
+| NVDA | **A** | Core AI GPU; 10.34pp buffer |
+| AVGO | **A** | AI XPV Platform; +0.54% ✅; ex-div today USD 22.10; 12.74pp buffer |
+| MRVL | **A** | S&P 500 effective today; +6.03% ✅; KeyBanc USD 385 target; 17.97pp buffer |
+| VST | **A** | Helix confirmed; +8.24% ✅; ex-div today USD 11.91; 22.11pp buffer |
+| AMZN | **A** | Thesis renewed; AWS +28%; Prime Day June 23-26 catalyst; 10.12pp buffer |
+| GOOGL | **A** | GCP +63%; TPU Triggerfish; profit-taking pullback; 9.63pp buffer |
+| META | **B** | Ad +33% intact; AI leadership exit = noise; 3.07pp buffer ⚠️; review_by June 26 |
+| MSFT | **C** | Azure intact; 0.73pp buffer 🚨 CRITICAL; contingent close ≤ USD 375.065; FIRST Monday C (was A on June 15) |
+
+_Monday rule check: MSFT is C for the FIRST time on a Monday (was A on June 15). 2-consecutive-Monday C rule does NOT trigger. No mandatory trim from Monday re-ranking alone._
+
+### Earnings calendar — all clear
+| Symbol | Next Earnings | Days Away | Window Risk |
+|---|---|---|---|
+| NVDA | ~August 26 | 47 days | None |
+| AVGO | ~September | 60+ days | None |
+| META | ~July 29 | 26 days | None |
+| MRVL | ~August 20-27 | 43+ days | None |
+| MSFT | July 28 | 25 days | None |
+| AMZN | ~July 29-31 | 26+ days | None |
+| GOOGL | ~July 29 | 26 days | None |
+| VST | August 6 | 33 days | None |
+
+No position is within 2 trading days of earnings. All clear.
+
+### Cash deployment check
+Cash: USD 12,573.47 (13.02%) — below the 20% mandatory-deployment threshold. No new buys required by deployment check. Correct posture given MSFT risk.
+
+If MSFT closes at market-open (releases ~USD 7,941), cash rises to ~21% (~USD 20,514). At that point, evaluate AMZN pyramid or new entry next session.
+
+### Watchlist for Week 4 (no new positions today)
+- **ETN (Eaton)**: Power infrastructure / electrical equipment for data centers. Monitor. Need to check volume eligibility (avg daily vol ≥ 500K shares) before any entry.
+- **AMZN pyramid**: If cash rises (post-MSFT close), AMZN is the top pyramid candidate — Prime Day catalyst + strong buffer + thesis renewed.
+
+### Planned trades for today
+
+No unconditional trades. Market is closed — all execution deferred to market-open routine.
+
+**MSFT contingent close protocol** (for market-open routine):
+- If MSFT opens AT OR BELOW USD 375.065 → execute immediate full close (market order, all 21 shares)
+- If MSFT opens between USD 375.065–USD 377.00 → evaluate partial trim (sell 10 shares, reducing from 21 to 11)
+- If MSFT opens ABOVE USD 377.00 → no action; reassess at midday
+
+```json
+{
+  "plan_date": "2026-06-22",
+  "trades": []
+}
+```
+
+No unconditional trades. MSFT contingent close protocol documented above for market-open routine. All 8 positions held, thesis intact across the book. AMZN thesis renewed (review_by extended to July 7). META and MRVL review_by updated.
+
+### Performance vs SPY
+| Metric | Value |
+|---|---|
+| Equity | USD 96,635.13 |
+| Aggro return since inception | **(96,635.13 − 100,000) / 100,000 = -3.365%** |
+| SPY pre-market June 22 | ~USD 747.41 (bid) |
+| SPY last close (June 18) | USD 746.75 |
+| SPY return since inception (754.18 → 746.75) | **-0.985%** |
+| Alpha since inception | **-2.38pp** |

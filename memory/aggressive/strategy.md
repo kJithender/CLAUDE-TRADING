@@ -178,6 +178,22 @@ This is NOT a hard rule — it is a discretionary risk management tool. A trim r
 
 ---
 
+## Week 4 priorities (as of 2026-06-22 pre-market — UPDATED)
+
+- **MSFT (0.73pp buffer 🚨 CRITICAL — First Monday C-rating):** -11.27% from entry USD 426.21. Azure +40% YoY + Copilot pay-as-you-go billing (thesis-positive) intact. Nasdaq +1.64% pre-market = expect MSFT to open materially higher. **Contingent close protocol: if opens ≤ USD 375.065 → immediate full close all 21 shares. If opens USD 375.065–377.00 → evaluate 10-share partial trim. If opens above USD 377.00 → no action, reassess at midday.** Review_by June 25. FIRST Monday C (was A on June 15) — 2-consecutive rule NOT triggered, no mandatory trim.
+- **AMZN thesis RENEWED — review_by extended to July 7:** HOLD decision executed (mandatory June 22 review). AWS +28% YoY (fastest in 15 quarters), EPS +60.69% beat, AI revenue >USD 20B run-rate. Prime Day June 23-26 near-term positive catalyst. -1.88% from entry (10.12pp buffer). A-rated.
+- **META (3.07pp buffer — monitor closely):** AI leadership exit (Emily Dalton Smith, AI For Work) assessed as internal noise — NOT ad monetization event. Buffer 3.07pp = just above 3pp proactive trim threshold. **Review_by extended to June 26** (aggressive monitoring). If buffer drops below 3pp: re-evaluate trim immediately. Section 230 invalidation condition unchanged.
+- **AVGO ex-dividend June 22 — CAPTURED:** USD 0.65/share × 34 shares = USD 22.10 cash incoming (payment June 30). 12.74pp buffer. A-rated.
+- **VST ex-dividend June 22 — CAPTURED:** USD 0.229/share × 52 shares = USD 11.91 cash incoming (payment June 30). Helix consortium (KKR+NVDA+VST+KIA, USD 10B AI power venture) confirmed. 22.11pp buffer. A-rated.
+- **MRVL S&P 500 inclusion effective June 22:** Passive buying complete. Post-inclusion drift expected but within 18% trailing stop. KeyBanc raised target to USD 385 (Street-high). Optical networking called "more durable growth engine." Review_by June 29.
+- **GOOGL**: GCP +63% YoY; TPU v9 "Triggerfish" chip with MediaTek; Alphabet raised USD 84.75B above target for capex. Pre-market dip = profit-taking only. 9.63pp buffer. A-rated.
+- **No new unconditional positions today.** Cash 13.02% (USD 12,573.47). If MSFT contingent close fires (releases ~USD 7,941), cash rises to ~21% → evaluate AMZN pyramid or new entry next session.
+- **Watchlist for Week 4:** ETN (Eaton — AI power infrastructure). AMZN pyramid (Prime Day catalyst). Both require confirmation from MSFT resolution before deploying cash.
+- **Conviction ratings (June 22):** NVDA A, AVGO A, AMZN A, GOOGL A, VST A, MRVL A, META B (3.07pp buffer), MSFT C (0.73pp buffer 🚨 — first Monday C).
+- **Alpha since inception:** -2.38pp (Aggro -3.365% vs SPY -0.985%).
+
+---
+
 ## Benchmark tracking
 
 Every weekly review computes:
