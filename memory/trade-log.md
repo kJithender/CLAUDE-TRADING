@@ -3,6 +3,104 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-22 12:31 ET — MIDDAY (no cuts; no tightenings; stop audit 5/5 ✓; VST news scan: thesis intact)
+
+- **Action:** Midday risk-management check only. All 4 positions within guardrails. No positions triggered the −7% cut rule; no positions reached +15% tighten threshold. VST news scan completed (>10% from entry trigger).
+- **Market status:** `is_open: true` ✓ (next close 16:00 ET June 22)
+- **Account (~12:31 ET — live Alpaca):** Equity $99,201.16 | Cash $67,261.74 (67.80%) | LMV $31,935.43
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓
+
+### Shock check
+- Equity $99,201.16 vs last_equity $99,039.61 = **+$161.55 = +0.163%** — POSITIVE. No shock ✓
+
+### Drawdown circuit breaker
+- HWM $101,384.21; current $99,201.16 = **−2.15%** — within −10% limit. NOT triggered ✓
+
+### Position review (12:31 ET — live Alpaca data)
+
+**LLY** ($1,108.815, **+1.40% from avg entry $1,093.534**, +0.93% today) ✓ HOLD
+- Trailing stops (d4147484 7sh, 25989fb5 3sh): HWM **$1,182.73**, stop **$1,064.457** ✓
+- Stop buffer: $1,108.815 − $1,064.457 = **$44.36 (4.00%)** ✓
+- −7% cut threshold: $1,017.00 — CLEAR by $91.82 ✓. Not down >3% from entry — no news scan.
+- Medicare Bridge July 1 in 9 days. Conviction **A**. HOLD.
+
+**NVDA** ($209.685, **−1.75% from avg entry $213.421**, −0.48% today) ✓ HOLD
+- Trailing stop dcba7429 (33sh): HWM **$213.99** ⬆️ (auto-ratcheted from $213.61 at fill this morning), stop **$192.591** ✓
+- Stop buffer: $209.685 − $192.591 = **$17.09 (8.15%)** ✓
+- −7% cut threshold: $198.48 — CLEAR by $11.22 ✓. Not down >3% from entry — no news scan.
+- Mild intraday pullback; AI infra thesis intact. Conviction **B** (just filled today). review_by 2026-07-22. HOLD.
+
+**V** ($329.285, **+1.77% from avg entry $323.57**, +0.63% today) ✓ HOLD
+- Trailing stop 66033918 (22sh): HWM **$336.8199**, stop **$303.138** ✓
+- Stop buffer: $329.285 − $303.138 = **$26.15 (7.94%)** ✓
+- −7% cut threshold: $300.92 — CLEAR by $28.37 ✓. Not down >3% or up >10% — no news scan.
+- OpenAI/stablecoin thesis intact. Conviction **B** (0/3 C-weeks). review_by 2026-07-28. HOLD.
+
+**VST** ($167.09, **+12.28% from avg entry $148.81**, +2.04% today) ⭐⭐ HELIX+COGENTRIX — STRONG HOLD
+- Trailing stop c4c200a5 (40sh): HWM **$170.33**, stop **$153.297** ✓
+- Stop buffer: $167.09 − $153.297 = **$13.79 (8.24%)** ✓
+- −7% cut threshold: $138.39 — CLEAR by $28.70 ✓.
+- **News scan triggered (+12.28% from entry > 10%):** Helix Digital Infrastructure (KKR+NVIDIA+Kuwait) continues to drive re-rating. Analyst narrative fair value ~$225 per Simply Wall St. AI data center power demand thesis intact and strengthening. Move is fundamentally driven — not noise. STRONG HOLD.
+- **+15% tighten threshold:** $148.81 × 1.15 = $171.13 — NOT YET reached (current $167.09). No mandatory tighten. Approaching — close routine should monitor.
+
+### +15% winner tighten check
+| Symbol | From Entry | Threshold | Action |
+|--------|-----------|-----------|--------|
+| LLY | +1.40% | +15% | ✓ Below — no tighten |
+| NVDA | −1.75% | +15% | ✓ Below — no tighten |
+| V | +1.77% | +15% | ✓ Below — no tighten |
+| VST | +12.28% | +15% | ✓ Approaching ($171.13) — no mandatory tighten; trailing stop protecting at $153.30 |
+
+No tightening actions needed.
+
+### Stop audit (midday June 22 — confirmed via Alpaca open orders)
+| Order ID | Symbol | Qty | HWM | Stop | Status |
+|----------|--------|-----|-----|------|--------|
+| d4147484 | LLY | 7sh | $1,182.73 | $1,064.457 | ✓ new — unchanged |
+| 25989fb5 | LLY | 3sh | $1,182.73 | $1,064.457 | ✓ new — unchanged |
+| dcba7429 | NVDA | 33sh | **$213.99** ⬆️ | **$192.591** ⬆️ | ✓ new — AUTO-RATCHETED (from $213.61/$192.249 at fill) |
+| 66033918 | V | 22sh | $336.8199 | $303.138 | ✓ new — unchanged |
+| c4c200a5 | VST | 40sh | $170.33 | $153.297 | ✓ new — unchanged (VST below HWM) |
+
+**Stop audit: 5/5 PASS ✓** No missing stops. No orphaned orders.
+
+### Exit reconciliation
+No positions closed this run. No trailing stops filled since market-open. All 4 positions (LLY, NVDA, V, VST) held. No closed-trades.md or trades.jsonl entries needed. ✓
+
+### Guardrail checks (midday June 22)
+| Check | Value | Limit | Status |
+|-------|-------|-------|--------|
+| LLY above −7% cut threshold | +1.40% from entry, $1,108.815 > $1,017.00 | −7% | ✓ Clear by $91.82 |
+| NVDA above −7% cut threshold | −1.75% from entry, $209.685 > $198.48 | −7% | ✓ Clear by $11.22 |
+| V above −7% cut threshold | +1.77% from entry, $329.285 > $300.92 | −7% | ✓ Clear by $28.37 |
+| VST above −7% cut threshold | +12.28% from entry, $167.09 > $138.39 | −7% | ✓ Clear by $28.70 |
+| Intraday shock (vs last_equity $99,039.61) | +$161.55 = +0.163% | <−4% | ✓ Positive |
+| Drawdown circuit breaker | $99,201 vs HWM $101,384 = −2.15% | <−10% | ✓ |
+| Cash | $67,261.74 (67.80%) | ≥5% | ✓ Ample |
+| All trailing stops active | 5/5 confirmed | required | ✓ |
+| Sector caps | HC 11.18%, Tech 6.97%, Fin 7.30%, Enrg 6.73%, Cash 67.80% | <60% each | ✓ |
+| New positions this week | 1/3 (NVDA) | ≤3 | ✓ |
+| Daily deployment | $7,042 = 7.10% | ≤25% | ✓ (no new buys midday) |
+| VST earnings window | Nearest catalyst: ex-div today (processed); review_by July 7 | — | ✓ |
+| LLY thesis contract | Medicare Bridge July 1 (9 days); review_by 2026-07-01 | — | ✓ hold confirmed |
+
+### Performance (midday June 22, ~12:31 ET)
+- **Equity:** $99,201.16 (vs last_equity $99,039.61 = +$161.55 = **+0.163% intraday**)
+- **Unrealized P/L (from entry):** LLY +$152.81 (+1.40%), NVDA −$123.28 (−1.75%), V +$125.73 (+1.77%), VST +$731.20 (+12.28%) = net **+$886.46**
+- **Cash:** $67,261.74 (67.80%) | Long market value: $31,935.43
+- **Since inception (2026-05-21):** Bull **−0.799%** ($100,000 → $99,201.16) vs SPY **+0.91% est** (SPY $744.42 + $1.76 div / $739.44) = **Bull TRAILS SPY ~1.71pp** (improved from ~2.12pp at market-open)
+- **Week of June 22:** 1/3 new positions used (NVDA)
+
+### Notes
+- VST is the standout again (+12.28% from entry, +2.04% today). Helix/Cogentrix thesis working. News scan confirms thesis-driven move, not noise. Approaching +15% tighten trigger ($171.13) — close routine should monitor closely and tighten if hit.
+- NVDA mild intraday pullback (−1.75% from entry, −0.48% today) — normal volatility in a new starter position. No catalyst-based concern. Stop buffer 8.15% intact.
+- LLY and V both healthy — Medicare Bridge July 1 catalyst in 9 days requires explicit hold/trim/exit decision at pre-market June 30.
+- No urgency to act. Risk is well-managed. No new positions (midday is risk management only per playbook).
+
+---
+
 ## 2026-06-22 09:41 ET — MARKET-OPEN (NVDA 33sh BUY executed; trailing stop placed; stop audit 5/5 ✓)
 
 ### Live-switch guard
