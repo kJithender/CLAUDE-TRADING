@@ -1756,3 +1756,119 @@ No positions exited. Comparing positions vs prior close: all 8 positions intact 
 | Intraday P/L | -USD 715.43 (-0.738%) |
 | SPY today (prev 746.75 → 749.30) | +0.341% |
 | Today vs SPY | **-1.079pp** (underperforming; broad tech down while SPY up) |
+
+---
+
+## 2026-06-22 — MIDDAY CHECK (~12:30 PM ET)
+
+**🚨 MSFT FORCED CLOSE — -12% midday cut rule triggered.**
+
+### Pre-run checks
+| Check | Result |
+|---|---|
+| Live-switch guard | ALPACA_BASE_URL contains "paper" ✓ |
+| Lock | Written for this run ✓ |
+| Control switch | STATUS: ACTIVE ✓ |
+| Market open | true ✓ |
+
+### Account status
+| Field | Value |
+|---|---|
+| Equity | USD 95,043.13 |
+| last_equity (June 19 EOD) | USD 97,006.60 |
+| Intraday change vs last_equity | **-2.02%** (shock threshold -6% — NOT triggered ✓) |
+| Cash (pre-close) | USD 12,573.47 |
+| Cash (post-close) | USD 20,304.47 (21.36%) — MSFT proceeds added |
+| HWM | USD 101,144.73 |
+| Drawdown from HWM | **-6.03%** (circuit breaker 20% — NOT triggered ✓) |
+
+### Position review (midday, pre-action)
+
+| Symbol | Entry | Midday Price | P/L% | -12% Trigger | Buffer | Action |
+|---|---|---|---|---|---|---|
+| NVDA | USD 213.60 | USD 209.38 | -1.976% | USD 187.97 | 10.024pp | No action |
+| AVGO | USD 406.23 | USD 395.811 | -2.565% | USD 357.48 | 9.435pp | No action |
+| **MSFT** | **USD 426.21** | **USD 368.10** | **-13.634%** | **USD 375.065** | **BREACHED 🚨** | **MANDATORY CLOSE** |
+| META | USD 630.12 | USD 561.58 | -10.877% | USD 554.51 | **1.123pp 🚨** | Hold — thesis intact; not breached |
+| MRVL | USD 293.29 | USD 301.88 | +2.931% | USD 258.09 | 14.931pp | No action |
+| AMZN | USD 247.99 | USD 233.45 | -5.864% | USD 218.23 | 6.136pp | No action |
+| GOOGL | USD 370.22 | USD 346.10 | -6.515% | USD 325.79 | 5.485pp | No action |
+| VST | USD 151.47 | USD 166.955 | +10.223% | USD 133.29 | 22.22pp | No action |
+
+**Cut rule check: MSFT -13.634% BREACHED -12% threshold. Mandatory close.**
+**Tighten-stop rule check: No position above +25% (VST leads at +10.22%). No tightening.**
+
+### MSFT forced close — execution
+
+**Correct sequence (trailing stop holds shares; close fails without this):**
+
+1. Cancel trailing stop `aefe6616-b296-4c5a-b584-bbb41eaedba8` — executed, confirmed
+2. Submit market close 21 shares MSFT — order ID `f15b00d1`, filled at avg USD 368.142857
+
+**Verified:** MSFT no longer in positions. No orphaned orders. Trailing stop `aefe6616` gone.
+
+**Trade record:**
+| Field | Value |
+|---|---|
+| Symbol | MSFT |
+| Action | close (forced -12% midday cut) |
+| Qty | 21 shares |
+| Fill price (avg) | USD 368.142857 |
+| Realized P/L (from entry USD 426.21) | -USD 1,219.41 (-13.624%) |
+| Blended P/L (incl. June 18 7-share trim) | -13.22% |
+| Holding period | June 5 – June 22 (17 days) |
+| Thesis at exit | INTACT — Azure +40% YoY; Copilot pay-as-you-go (announced June 22) thesis-positive |
+| Why closed | -12% midday cut rule — rules-based, no discretion |
+
+**trades.jsonl appended:** `{"agent":"aggro","ts":"2026-06-22T16:42:53Z","action":"close","symbol":"MSFT","qty":21,"fill_price":368.142857,"pnl_pct":-0.13624}`
+**closed-trades.md appended:** Full post-mortem row ✓
+**lessons.md appended:** Mandatory loss lesson ✓
+
+### META midday assessment — HOLD (1.123pp buffer)
+
+META at -10.877% from entry (USD 561.58 vs entry USD 630.12; trigger USD 554.51 = 1.123pp buffer).
+
+**News scan [search: WebSearch]:**
+- AI Crusoe deal announced today — thesis-positive (Meta/Microsoft infrastructure partnership)
+- No equity offering formally confirmed
+- Section 230 ruling: existing ruling only; no expansion to ad-targeting
+- Broad tech sector selling (not META-specific thesis break)
+- Ad revenue +33% YoY thesis INTACT
+
+**Decision: HOLD.** Buffer is extremely thin (1.123pp) but the -12% rule has NOT fired (USD 561.58 > trigger USD 554.51). This position is one small down-tick from a forced close. The close routine (3:50 PM) must check META first.
+
+### News scan for other stressed positions
+
+- **GOOGL (-6.515%):** DeepMind VP Jumper → Anthropic; Gemini co-lead Shazeer → OpenAI. Noted as talent retention risk but GCP +63% YoY and Triggerfish TPU roadmap intact. NOT thesis-breaking. Hold.
+- **AMZN (-5.864%):** FTC advertising complaint (targets ad business, not AWS); EU DMA AWS gatekeeper designation (new headwind but doesn't break "AWS >20% YoY" invalidation). Hold.
+- **NVDA (-1.976%), AVGO (-2.565%), MRVL (+2.931%), VST (+10.223%):** No negative thesis-relevant news.
+
+### Stop audit — 7/7 positions confirmed with live 18% trailing stops ✓
+
+(MSFT stop `aefe6616` canceled as part of close sequence — correct, position closed)
+
+| Symbol | Stop Order ID | HWM | Stop Price | Status |
+|---|---|---|---|---|
+| NVDA | `54d7d851` | USD 221.60 | USD 181.712 | ✓ live |
+| AVGO | `36f5a45f` | USD 426.48 | USD 349.7136 | ✓ live |
+| META | `5bc32805` | USD 580.215 | USD 475.7763 | ✓ live |
+| MRVL | `a9097c8c` | USD 329.88 | USD 270.5016 | ✓ live |
+| AMZN | `b55bef05` | USD 250.43 | USD 205.3526 | ✓ live |
+| GOOGL | `e52a43f1` | USD 375.77 | USD 308.1314 | ✓ live |
+| VST | `5b347be3` | USD 170.33 | USD 139.6706 | ✓ live |
+
+**All 7 remaining positions protected. No recreation needed.**
+
+### Winners above +25% — none
+
+VST +10.223% is the leader. No stop tightening warranted.
+
+### Performance vs SPY (midday June 22)
+| Metric | Value |
+|---|---|
+| Equity | USD 95,043.13 |
+| Aggro return since inception | **(95,043.13 − 100,000) / 100,000 = -4.957%** |
+| SPY ~midday | ~USD 749.30 (est.) |
+| SPY return since inception | **~-0.65%** |
+| Alpha since inception | **~-4.31pp** |
+| Intraday P/L vs last_equity (USD 97,006.60) | **-USD 1,963.47 (-2.02%)** |
