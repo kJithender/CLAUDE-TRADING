@@ -3,34 +3,35 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-06-22 08:02 ET (pre-market; stop audit 4/4 PASS; NVDA 33sh buy planned at open; VST ex-div today USD 9.16)
+**Last updated:** 2026-06-22 09:41 ET (market-open; NVDA 33sh BUY FILLED @ $213.42; trailing stop dcba7429 placed; stop audit 5/5 PASS)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 **SPY total-return anchor (post-June 18 ex-div $1.76):** **$741.20**
 
-## Account (pre-market June 22, 2026 — live Alpaca data ~08:02 ET; prices = June 22 pre-market)
+## Account (market-open June 22, 2026 — live Alpaca data ~09:41 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,057.63 |
-| Cash | $74,304.63 (74.97%) |
-| Long market value | ~$24,753 |
-| Buying power | ~$366,476 |
+| Equity | $99,204.85 |
+| Cash | $67,261.74 (67.80%) |
+| Long market value | $31,943.11 |
+| Buying power | ~$358,488 |
 | Last equity (June 18/19 close) | $99,039.61 |
 
-## Open positions (pre-market June 22, 2026 — live Alpaca data ~08:02 ET; prices = June 22 pre-mkt; ex-div: VST $0.229 today)
+## Open positions (market-open June 22, 2026 — live Alpaca data ~09:41 ET)
 
 | Symbol | Qty | Avg entry | Current price | Mkt value | Unrealized P/L | % of portfolio | Trailing Stop |
 |--------|-----|-----------|--------------|-----------|----------------|----------------|---------------|
-| LLY | 10 | $1,093.534 | ~$1,100 | ~$11,000 | ~+$64.66 (+0.59%) | ~11.10% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, same) ✓ — buffer ~$35.54 (3.23%) |
-| V | 22 | $323.57 | ~$327.50 | ~$7,205 | ~+$85.14 (+1.22%) | ~7.27% | 66033918 (22sh, HWM **$336.8199**, stop **$303.138**) ✓ — buffer ~$24.36 (7.44%) |
-| VST | 40 | $148.81 | ~$163.70 | ~$6,548 | ~+$595.60 (+10.01%) | ~6.61% | c4c200a5 (40sh, HWM **$170.33**, stop **$153.297**) ✓ — buffer ~$10.40 (6.36%) ⭐⭐ HELIX + COGENTRIX — EX-DIV TODAY |
-| NVDA | _pending_ | — | ~$210 | — | — | — | 10% trailing stop to be placed immediately after fill at open |
+| LLY | 10 | $1,093.534 | $1,103.04 | $11,030.40 | +$95.06 (+0.87%) | 11.12% | d4147484 (7sh, HWM **$1,182.73**, stop **$1,064.457**) ✓; 25989fb5 (3sh, same) ✓ — buffer ~$38.58 (3.50%) |
+| NVDA | 33 | $213.421 | $213.27 | $7,037.91 | −$5.00 (−0.07%) | 7.09% | dcba7429 (33sh, HWM **$213.61**, stop **$192.249**) ✓ — buffer ~$21.02 (9.86%) ⭐ NEW — filled June 22 open |
+| V | 22 | $323.57 | $330.605 | $7,273.31 | +$154.77 (+2.17%) | 7.33% | 66033918 (22sh, HWM **$336.8199**, stop **$303.138**) ✓ — buffer ~$27.47 (8.31%) |
+| VST | 40 | $148.81 | $165.345 | $6,613.80 | +$661.40 (+11.11%) | 6.67% | c4c200a5 (40sh, HWM **$170.33**, stop **$153.297**) ✓ — buffer ~$12.05 (7.29%) ⭐⭐ HELIX + COGENTRIX |
 
 ## Performance vs S&P 500
 
 | Period | Bull | SPY | Difference |
 |--------|------|-----|------------|
 | Inception (2026-05-21) | $100,000.00 | $739.44 | — |
+| **Market-open (2026-06-22)** | **$99,204.85 (−0.795%)** | **$747.47 + $1.76 div = +1.323% TR** | **Bull TRAILS SPY ~2.12pp** |
 | **Pre-mkt (2026-06-22)** | **$99,057.63 (−0.942%)** | **$747.47 close + $1.76 div = +1.323% TR (futures flat ~−0.1%)** | **Bull TRAILS SPY ~2.26pp est** |
 | **Pre-mkt (2026-06-19)** | **$99,039.61 (−0.960%)** | **$747.47 close + $1.76 div = +1.323% total-return** | **Bull TRAILS SPY ~2.28pp** |
 | **Close (2026-06-18)** | **$99,074.81 (−0.925%)** | **$747.47 + $1.76 div = +1.323% total-return** | **Bull TRAILS SPY ~2.25pp** |
@@ -41,6 +42,55 @@ the last known state, but always re-fetches live data before trading._
 | **Close (2026-06-16)** | **$99,209.83** | **$751.01 (close, +1.564% since inception)** | **Bull TRAILS SPY ~2.35pp** |
 
 ## Notes
+
+**Market-open June 22, 2026 (~09:41 ET — NVDA 33sh BUY EXECUTED; stop audit 5/5 PASS):**
+- **NVDA BUY CONFIRMED:** 33sh filled @ avg $213.42 (order de7decb6, filled 13:41 UTC). Cost basis $7,042.89 (7.10% portfolio). Thesis: AI accelerator monopoly; Helix consortium (KKR+NVIDIA+Kuwait) GPU-demand platform; FY26 data center +92% YoY; BofA PT $350. Starter B conviction.
+- **NVDA trailing stop placed:** dcba7429 (33sh, 10% trail, HWM $213.61, stop $192.249) ✓ — verified active.
+- **VST ex-dividend:** $0.229/sh × 40sh = USD 9.16 credit confirmed; stop ($153.297) NOT adjusted (trailing stop tracks live HWM, not dividend-adjusted price). Stock opened ~$165.34 (+1.59% today, +11.11% from entry).
+- **Shock check:** $99,204.85 vs last_equity $99,039.61 = +$165.24 (+0.167%) — no shock ✓
+- **Drawdown circuit breaker:** $99,204.85 vs HWM $101,384.21 = −2.148% — NOT triggered ✓
+- **LLY** $1,103.04 (+0.87% from entry): Medicare Bridge July 1 in 9 days. Buffer $38.58 (3.50%) ✓. HOLD. Conviction **A**. review_by 2026-07-01.
+- **V** $330.605 (+2.17% from entry): OpenAI agentic payments integration. Buffer $27.47 (8.31%) ✓. HOLD. Conviction **B** (0/3 C-weeks). review_by 2026-07-28.
+- **VST** $165.345 (+11.11% from entry): Cogentrix + Helix strongest thesis; ex-div today USD 9.16. Buffer $12.05 (7.29%) ✓. STRONG HOLD. Conviction **A**. review_by 2026-07-07.
+- **Stop audit: 5/5 PASS ✓** (d4147484 LLY 7sh, 25989fb5 LLY 3sh, dcba7429 NVDA 33sh, 66033918 V 22sh, c4c200a5 VST 40sh)
+
+**Sector exposure (market-open June 22 — post-NVDA fill):**
+- Healthcare (LLY): $11,030.40 = 11.12%
+- Tech/AI Semi (NVDA): $7,037.91 = 7.09%
+- Financials (V): $7,273.31 = 7.33%
+- Energy/Utilities (VST): $6,613.80 = 6.67%
+- Cash: $67,261.74 = 67.80%
+- No sector above 60% cap ✓
+
+**Monday conviction-weighted review (2026-06-22 — post-fill):**
+| Symbol | Rating | C-streak | Notes |
+|--------|--------|----------|-------|
+| LLY | **A** | N/A | Medicare Bridge 9 days; ARK buying; buffer 3.50% |
+| NVDA | **B** | 0/3 | Just filled 33sh @ $213.42; starter conviction; review_by July 22 |
+| V | **B** | 0/3 | AI payments integration; July 28 earnings gate |
+| VST | **A** | N/A | ex-div today USD 9.16 confirmed; Cogentrix + Helix; PT $212–$230 ⭐⭐ |
+
+**Race scoreboard (market-open June 22):**
+- Bull: **−0.795%** (since May 21, USD 100K start)
+- AGGRO: **~−2.993% est** (since June 4; last known June 19)
+- SPY total return: **+1.323%** (since May 21, $739.44 anchor + $1.76 div)
+- **Gap: Bull TRAILS SPY by ~2.12pp** (narrowed 0.14pp from pre-mkt)
+- Bull leads AGGRO by ~2.20pp est.
+
+**Week of June 22 — new position slots:**
+- **Slot 1:** NVDA — FILLED today ✓
+- **Slot 2:** LRCX — pending ATR ≤3% for 3+ sessions (ATR was 6.93% pre-mkt June 22)
+- **Slot 3:** PWR — pending ATR normalization + insider selling abates
+
+**Upcoming catalysts:**
+- **VST ex-dividend JUNE 22 (TODAY)** — USD 9.16 credit confirmed, payable June 30
+- **LLY Medicare GLP-1 Bridge effective July 1** (9 days — explicit hold/trim/exit at pre-market June 30)
+- **NVDA review_by July 22** (30 days)
+- **VST thesis review_by July 7** (15 days)
+- **V Q3 FY26 earnings July 28** (36 days)
+- **NVDA earnings August 26** (65 days — outside 2-day window ✓)
+
+---
 
 **Pre-market June 22, 2026 (~08:02 ET — first active session since June 18; VST ex-div day; NVDA 33sh buy planned at open):**
 - **Market status:** NYSE opens 09:30 ET (first active session since June 18; Juneteenth June 19 was federal holiday).

@@ -146,6 +146,8 @@ Planned trades for today:
 }
 ```
 
+EXECUTED: 2026-06-22T13:41:19Z — NVDA 33sh filled avg $213.42, trailing-stop dcba7429 (10%, HWM $213.60, stop $192.24) placed and confirmed.
+
 ---
 
 ## 2026-06-19 — Weekly review research (~16:30 ET)

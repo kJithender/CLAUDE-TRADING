@@ -3,6 +3,59 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-06-22 09:41 ET — MARKET-OPEN (NVDA 33sh BUY executed; trailing stop placed; stop audit 5/5 ✓)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓
+
+### Account (~09:41 ET — live Alpaca)
+- Equity: $99,204.85 | Cash: $67,261.74 (67.80%) | LMV: $31,943.11
+- Shock check: +$165.24 (+0.167%) vs last_equity $99,039.61 — no shock ✓
+- Drawdown: −2.148% vs HWM $101,384.21 — NOT triggered ✓
+
+### Breaking-news gate
+- NVDA: BofA top pick (PT USD 350, 26x CY2027 P/E); Fervo EGS-Twin geothermal AI partnership announced. No earnings miss, downgrade, halt, or SEC action. THESIS INTACT — gate CLEAR ✓
+
+### Trade executed
+**BUY NVDA 33sh — CONFIRMED FILL**
+- Order ID: de7decb6-3ffe-44ce-834c-5120fb581f43
+- Fill: 33sh @ avg **$213.42** (filled 13:41 UTC / 09:41 ET)
+- Limit placed at $214.17 (ask $213.53 × 1.003 at order time); filled below limit ✓
+- Cost basis: ~$7,042.89 (~7.10% of portfolio)
+- thesis: AI accelerator monopoly; Helix consortium (KKR+NVIDIA+Kuwait) embeds GPU demand; FY26 data center +92% YoY; 5/5 entry signals met
+- invalidation: closes below USD 200 on volume, or trailing stop fires
+- review_by: 2026-07-22
+
+### Trailing stop placed — VERIFIED
+- Order ID: dcba7429-88fb-4710-a6d0-8825676c417d
+- 33sh NVDA sell trailing-stop GTC, trail 10%, HWM $213.61, stop $192.25 ✓
+
+### Guardrail math
+- Position size: 33sh × $213.42 = $7,042 = 7.10% — under 20% cap ✓
+- Daily deployment: 7.10% of portfolio — under 25% cap ✓
+- Cash after buy: $67,261.74 (67.80%) — above 5% min ✓
+- Sector (Tech/AI Semi): 7.09% — under 60% cap ✓
+- New positions this week: 1/3 (NVDA = slot 1) ✓
+- Earnings window: Aug 26, 2026 (65 days) ✓
+- Drawdown circuit breaker: −2.148% — NOT triggered ✓
+- Risk budget: 10% stop → ~$704 loss = 0.71% equity (< 1.2% budget ✓)
+
+### Stop audit — 5/5 PASS ✓
+- d4147484: LLY 7sh HWM $1,182.73 stop $1,064.457 ✓
+- 25989fb5: LLY 3sh HWM $1,182.73 stop $1,064.457 ✓
+- dcba7429: NVDA 33sh HWM $213.61 stop $192.249 ✓ (NEW — placed today)
+- 66033918: V 22sh HWM $336.8199 stop $303.138 ✓
+- c4c200a5: VST 40sh HWM $170.33 stop $153.297 ✓
+
+### Exit reconciliation
+- No trailing stops filled since last run. All 4 positions (LLY, V, VST, NVDA) intact.
+
+### New week position tracking (week of June 22)
+- New positions this week: 1/3 (NVDA filled today)
+- Slots 2-3: LRCX (ATR gate) and PWR (ATR + insider selling) — both still blocked
+
+---
+
 ## 2026-06-22 08:02 ET — PRE-MARKET (no trades yet; NVDA 33sh buy planned at open; stop audit 4/4 ✓)
 
 - **Action:** Pre-market routine — research, thesis reviews, plan drafted. No trades until market open 09:30 ET.
