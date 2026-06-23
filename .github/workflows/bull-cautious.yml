@@ -1,0 +1,83 @@
+name: Bull — Cautious
+
+# Schedule uses EDT (UTC-4, summer). In winter (EST, UTC-5) add 1 hour to each cron.
+# GitHub Actions cron may run up to ~15 min late — fine for a swing trading bot.
+on:
+  schedule:
+    - cron: '0 12 * * 1-5'   # 08:00 ET  pre-market
+    - cron: '35 13 * * 1-5'  # 09:35 ET  market-open
+    - cron: '30 16 * * 1-5'  # 12:30 ET  midday
+    - cron: '50 19 * * 1-5'  # 15:50 ET  close
+    - cron: '30 20 * * 5'    # 16:30 ET  Fri weekly-review
+    - cron: '0 21 * * 5'     # 17:00 ET  Fri monthly-review (self-gates if not first Fri)
+  workflow_dispatch:
+    inputs:
+      routine:
+        description: 'Which routine to run'
+        required: true
+        type: choice
+        options:
+          - premarket
+          - market-open
+          - midday
+          - close
+          - weekly-review
+          - monthly-review
+
+permissions:
+  contents: write   # allows runner.py to push commits back to main
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # persist-credentials is true by default — runner.py can push via GITHUB_TOKEN
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-genai
+
+      - name: Make scripts executable
+        run: chmod +x scripts/alpaca.sh scripts/notify.sh
+
+      - name: Configure git identity
+        run: |
+          git config user.email "bull-bot@users.noreply.github.com"
+          git config user.name "Bull Bot"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
+      - name: Determine routine
+        id: routine
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "name=${{ inputs.routine }}" >> "$GITHUB_OUTPUT"
+          else
+            case "${{ github.event.schedule }}" in
+              "0 12 * * 1-5")  echo "name=premarket"      >> "$GITHUB_OUTPUT" ;;
+              "35 13 * * 1-5") echo "name=market-open"    >> "$GITHUB_OUTPUT" ;;
+              "30 16 * * 1-5") echo "name=midday"         >> "$GITHUB_OUTPUT" ;;
+              "50 19 * * 1-5") echo "name=close"          >> "$GITHUB_OUTPUT" ;;
+              "30 20 * * 5")   echo "name=weekly-review"  >> "$GITHUB_OUTPUT" ;;
+              "0 21 * * 5")    echo "name=monthly-review" >> "$GITHUB_OUTPUT" ;;
+            esac
+          fi
+
+      - name: Run Bull routine
+        run: python runner.py ${{ steps.routine.outputs.name }}
+        env:
+          GEMINI_API_KEY:        ${{ secrets.GEMINI_API_KEY }}
+          ALPACA_API_KEY_ID:     ${{ secrets.ALPACA_API_KEY_ID }}
+          ALPACA_API_SECRET_KEY: ${{ secrets.ALPACA_API_SECRET_KEY }}
+          ALPACA_BASE_URL:       ${{ secrets.ALPACA_BASE_URL }}
+          TELEGRAM_BOT_TOKEN:    ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:      ${{ secrets.TELEGRAM_CHAT_ID }}
