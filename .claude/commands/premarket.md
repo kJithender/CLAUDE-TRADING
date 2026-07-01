@@ -138,6 +138,13 @@ Never put a literal `$` in the message; use `USD`/plain numbers and
 single-quote the argument.
 
 ## 9. Commit
-`git add -A && git commit -m "premarket: <summary>" && git push origin HEAD:main`.
+`git add -A && git commit -m "premarket: <summary>"`, then push:
+`git push origin HEAD:main`
+
 If the push is rejected because `main` moved, run
 `git fetch origin main && git rebase origin/main`, then push again.
+
+If the push exits with a non-zero status (proxy blocked with 403), log
+`WARN: git push BLOCKED - memory files updated locally but not on remote`
+and continue. Do NOT abort the run - the trade plan was already sent via
+Telegram in step 8, so the market-open routine can still act on it.
