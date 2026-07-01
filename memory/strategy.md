@@ -1,27 +1,44 @@
 # Trading Strategy
 
-**STATUS: NOT_INITIALIZED**
+**STATUS: ACTIVE**
 **Initialized:** 2026-05-21
+**Re-initialized:** 2026-07-01 (paper account was reset to a fresh $100,000
+flat account per human `NOTE:` in `control.md` — old LLY/NVDA/V/VST positions
+discarded, portfolio rebuilt from live Alpaca data, this strategy refreshed
+against current macro conditions. Inception baseline reset — see Benchmarking.)
 
 ---
 
 ## Thesis
 
-The S&P 500 is at all-time highs on the back of 15–28% YoY earnings growth and
-a stable Fed (funds rate 3.5–3.75%, on hold). Real GDP grew 2% in Q1 2026.
-Valuation is stretched (forward P/E ~20.9x vs. 18.9 ten-year avg), so selective
-stock picking—not closet indexing—is required to beat SPY.
+As of 2026-07-01: SPY closed June at ~7,500 (−1.1% for the month) after a
+sharp mega-cap tech pullback — tech stocks shed ~9% in June and NVDA alone is
+down ~13% from its June high, closing today at $197.58 (below its old $200
+psychological level). Goldman's Risk Appetite Indicator sits in the 99th
+percentile of readings since 1991, historically associated with below-average
+forward 12-month returns — a caution flag, not a crash signal. Fed funds
+remains on hold; 10yr Treasury ~4.46% (below the 4.75% gate). Jobs report
+Thursday (2026-07-02) is this week's first real catalyst; bank earnings and
+CPI land July 14, FOMC July 29. Seasonally July is SPY's strongest month of
+the last two decades, but that tailwind is fighting a genuine AI-capex
+digestion scare (B200 GPU rental rates down ~31% since late May — a real
+demand-cooling signal, not noise).
 
-Three durable tailwinds drive our edge:
-1. **AI infrastructure spend** — hyperscaler capex is still accelerating.
-   Semiconductor equipment, networking chips, and enterprise software with deep
-   AI integration are structural winners.
-2. **Real-economy rotation** — investors are broadening beyond pure AI plays
-   into industrials, energy, and consumer defensives that benefit indirectly
-   from the AI buildout and cost-conscious spending.
-3. **Healthcare secular growth** — GLP-1 drug demand plus aging demographics
-   create durable revenue streams; several names trade at reasonable valuations
-   despite strong earnings momentum.
+Two durable tailwinds still look intact, one is now under active question:
+1. **AI infrastructure spend — INTACT BUT QUESTIONED.** Hyperscaler capex
+   guidance hasn't been cut, but falling GPU rental rates and the June
+   semiconductor selloff are the first real crack in the "capex accelerating
+   without limit" narrative. Treat AI-semi names as higher-risk than before:
+   require a clean price/ATR setup, not just a story, before entering.
+2. **Real-economy rotation** — industrials, energy, and consumer defensives
+   that benefit indirectly from the AI buildout and cost-conscious spending
+   remain a reasonable diversifier away from AI-semi concentration risk.
+3. **Healthcare secular growth — CONFIRMED.** LLY's Medicare GLP-1 Bridge
+   program went live today (2026-07-01); the stock already re-rated hard on
+   the June 25–26 announcement (+7.13% to $1,208.12 June 26, closed $1,191.74
+   today). GLP-1 demand plus aging demographics remain a durable revenue
+   stream for well-chosen names, though entries must respect that some of
+   this move is already priced in.
 
 We stay fully in US large/mid-cap equities (no options, no penny stocks, no
 margin, no crypto, no shorting). We try to beat SPY through selective, high-
@@ -104,57 +121,48 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 
 ## Watchlist
 
-_Watchlist hygiene (updated 2026-06-12 weekly review): entries require date added + catalyst with expiry. Stale entries (4+ weeks, catalyst expired) purged._
+_Watchlist hygiene (rebuilt 2026-07-01 after account reset — all "HELD" tags
+cleared since we hold zero positions now. Prices below are today's live
+close (2026-07-01) where checked; names not re-checked today need fresh
+ATR/price-gate verification before any entry — do not trade off stale June
+data._
 
 | Ticker | Sector | Date Added | One-line reason | Catalyst Expiry |
 |--------|--------|------------|-----------------|-----------------|
-| NVDA   | Tech / AI semi | 2026-05-22 | AI accelerator monopoly; Helix consortium (KKR+NVIDIA+Kuwait preferred AI infra); **PRICE GATE CLEARED** June 18 close $210.38 > $205 ✓; ATR 2.32% (Jun 18) + 2.80% (Jun 17) ✓; Deutsche Bank PT $220; **PLAN BUY Monday June 22: 33sh ~$6,930 (~7.0% portfolio)** | Monday June 22 open — execute plan |
-| LLY    | Healthcare | 2026-05-22 | **HELD** 10sh @ $1,093.53 — GLP-1 dominance; Medicare Bridge July 1; Phase 2 expansions | Review by July 1 (Bridge effective) |
-| V      | Financials | 2026-06-10 | **HELD** 22sh @ $323.57 — payments infrastructure; OpenAI partnership; stablecoin capabilities | Review by July 28 (earnings) |
-| VST    | Energy / Utilities | 2026-06-09 | **HELD** 40sh @ $148.81 — nuclear operator; Helix Digital Infrastructure (KKR+NVDA preferred power partner); dividend Jun 22 | Review by July 7 |
-| LRCX   | Semi Equipment | 2026-06-08 | AI fab investment wave; Citi PT raised to $450 (from $315, June 18 — large upgrade); ATR still elevated (3.54% Jun 18); need 3 consecutive sessions ≤3% | Earliest entry week of June 29; catalyst: AI equipment cycle, no hard expiry |
-| MSFT   | Tech / Enterprise AI | 2026-05-22 | Azure AI platform compounding; stop-out at $419.36 June 5; thesis still intact — possible re-entry post-FOMC if re-based | Ongoing; FOMC June 16–17 gate |
-| COST   | Consumer Defensive | 2026-05-29 | Membership model loyalty; consumer defensive; Q4 earnings mid-August | Re-evaluate July+ (pre-earnings) |
-| PWR    | Industrials | 2026-06-12 | Quanta Services; grid/data-center infrastructure buildout; Q1 EPS +31.4% beat; PT upgrades TD Cowen $775 / Citi $837; ATR 3.97% Jun 18 ❌; stock −10.78% from peak; insider selling $123M in 3 months (flag); P/E ~95 elevated — valid thesis, needs calmer setup | Re-evaluate June 22+ when ATR normalizes and stock stabilizes |
-| JNJ    | Healthcare | 2026-05-22 | Defensive quality compounder; resilient earnings; reasonable valuation | Ongoing; no hard expiry |
-| WMT    | Consumer Defensive | 2026-05-22 | Market-share gains from cost-conscious consumer; AI supply-chain edge | Ongoing; no hard expiry |
+| LLY    | Healthcare | 2026-05-22 | GLP-1 dominance; Medicare Bridge went LIVE 2026-07-01; stock already re-rated hard (+7.13% June 26 to $1,208.12; closed $1,191.74 today) — much of the catalyst may already be priced in. Needs a fresh entry-signal check (valuation, ATR) before buying, not a chase. | Re-evaluate entry setup at next pre-market; confirm exact earnings date before any buy |
+| VST    | Energy / Utilities | 2026-06-09 | Helix Digital Infrastructure (KKR+NVIDIA+Kuwait, $10B+, VST preferred power partner) and Cogentrix ($4B, 5,500MW) acquisition both intact. Stock pulled back with the broader tape to $153.16 today (was $163.75 June 18) — a diversifier away from AI-semi risk since it's a power/infra play, not a chip play. | Re-evaluate entry setup at next pre-market; Cogentrix close expected H2 2026 |
+| NVDA   | Tech / AI semi | 2026-05-22 | AI accelerator monopoly thesis intact per 38 analysts (Strong Buy, avg PT $298.87), but the name is now in a real AI-capex digestion scare: −13% from its June high, closed $197.58 today (through the old $200 level), GPU rental rates (B200) down ~31% since late May. Do not treat this as a dip to buy reflexively — re-run price/ATR gates fresh. Higher-risk name than in May. | Re-run price/ATR gates fresh before any entry; confirm earnings date |
+| V      | Financials | 2026-06-10 | Payments infrastructure; OpenAI partnership; stablecoin capabilities. Not re-checked today — verify current price/thesis before treating as active candidate. | Re-verify at next pre-market; confirm earnings date |
+| LRCX   | Semi Equipment | 2026-06-08 | AI fab investment wave; was ATR-gated (>3%) as of June 18. Not re-checked today — re-verify ATR before considering. | Re-verify at next pre-market |
+| PWR    | Industrials | 2026-06-12 | Grid/data-center infrastructure buildout; was ATR-gated + insider-selling flag as of June 18. Not re-checked today — re-verify before considering. | Re-verify at next pre-market |
+| MSFT   | Tech / Enterprise AI | 2026-05-22 | Azure AI platform compounding; not re-checked today. | Re-verify at next pre-market |
+| COST   | Consumer Defensive | 2026-05-29 | Membership model loyalty; consumer defensive; not re-checked today. | Re-verify ahead of ~August earnings |
+| JNJ    | Healthcare | 2026-05-22 | Defensive quality compounder; not re-checked today. | Ongoing; no hard expiry |
+| WMT    | Consumer Defensive | 2026-05-22 | Market-share gains from cost-conscious consumer; not re-checked today. | Ongoing; no hard expiry |
 
-_Purged from watchlist (2026-06-19 weekly review, no new purges — 2026-06-12 list stands):_
-- **AVGO:** Trailing stop gap-fill June 4 (−2.10%). Thesis still directionally intact but recent earnings gap-down and stock now recovering. Re-evaluate in 4+ weeks when gap is digested and stock has re-based cleanly. Removed to avoid re-entering too soon.
-- **AMZN:** Closed June 3 per −7% rule (−7.39%). EU regulatory headwinds ongoing. Not a near-term candidate.
-- **META:** Closed June 10 per trailing stop (−6.87%). Macro inflection entry was the mistake. Re-evaluate for cycle entry when macro headwinds (rate uncertainty) clear and stock re-bases above $620.
-- **XOM:** No specific catalyst in near term; energy sector rotating on Iran peace deal (oil falling). Re-evaluate if thesis sharpens.
-- **UNH:** No specific near-term catalyst; regulatory overhang normalizing slowly. Re-evaluate in monthly review.
+_Purged (carried from 2026-06-19 weekly review — still not near-term candidates unless a fresh catalyst emerges): AVGO, AMZN, META, XOM, UNH. See weekly-review.md history for original rationale._
 
 ---
 
 ## Benchmarking
 
 - Benchmark: SPY total return.
-- Inception SPY price (2026-05-21): $739.44.
+- **New inception SPY price (2026-07-01, post-reset):** $745.665 (today's close).
+- Prior inception (2026-05-21, $739.44) and the May 21 – June 23 track record
+  remain in git history / weekly-review.md for reference, but are no longer
+  the live comparison baseline — the account itself was reset to $100,000
+  flat on 2026-06-23 and the strategy was formally re-initialized 2026-07-01.
 - Measure performance weekly (Friday review) and monthly.
 - If we lag SPY by > 5% over any rolling 4-week window, review and adjust
   sector weights and position theses before adding new names.
 
-## Active Macro Watches (updated 2026-06-19 weekly review)
+## Active Macro Watches (rebuilt 2026-07-01, post-reset)
 
-- **FOMC June 16–17 2026 — COMPLETED HAWKISH (finalized):** Rate hold (3.50–3.75%); dot plot: median 3.8% year-end, 9/18 members projecting hike. SPY fell −1.44% June 17, recovered June 18. **10yr: 4.44% June 18 close — BELOW 4.75% trigger. New buys permitted. ✓**
-- **10yr Treasury yield:** **4.44% (June 18 close) — GATE PASSES.** Monitor daily; if closes above 4.75%, halt all new buys for the week.
-- **Iran/US peace deal — SIGNED at Versailles June 18–19:** 60-day agreement — Strait of Hormuz reopened, conflict halted. WTI ~$80/bbl, well below $100 trigger ✓. Risk-on heading into June 22.
-- **SPY ex-dividend June 18 — APPLIED:** $1.76/sh. Total-return benchmark anchor: $739.44 → **$741.20**.
-- **LLY — position:** June 18 close $1,098.57 (+0.46% from entry). HWM $1,182.73 / stop $1,064.46. 4E Therapeutics acquisition closed. Cathie Wood/ARK added 41K shares. **Medicare Bridge July 1 in 12 days** — explicit hold/trim/exit decision required at pre-market June 30. Review_by July 1. Buffer 3.11% — monitoring (narrowed).
-- **V — position:** June 18 close $327.24 (+1.13% from entry). HWM $336.82 / stop $303.14. OpenAI partnership active. Cross-border slowdown monitoring. Review_by July 28 (earnings Q3 FY26).
-- **VST — HELIX + COGENTRIX:** June 18 close $163.75 (+10.04% from entry). ⭐⭐ Cogentrix acquisition CLOSED (5,500 MW, $4.0B). Helix (KKR+NVIDIA+Kuwait) preferred power provider. **DIVIDEND EX-DATE MONDAY JUNE 22** (USD 9.16 for 40sh; payment June 30). PT upgrades: Morgan Stanley $212, Bernstein Outperform, Seaport $230. HWM $170.33 / stop $153.30. Review_by July 7. THESIS MOST COMPELLING.
-- **NVDA — PRICE GATE CLEARED:** June 18 close $210.38 > $205 ✓. ATR 2.32% (Jun 18) / 2.80% (Jun 17) — both ≤3% ✓. **PLAN BUY Monday June 22: 33sh at market (~$6,930 = 7.0% portfolio)**. Next earnings Aug 26 (68 days ✓). Invalidation: closes below $200 on volume or trailing stop fires.
-- **LRCX — ATR GATE FAILING:** ATR 3.54% June 18 (improving from 6.19%). Citi PT raised to $450 (from $315). Need 3 consecutive sessions ≤3%. Earliest: week of June 29.
-- **PWR — PULLBACK + ATR ELEVATED:** ATR 3.97% June 18. Stock −10.78% from peak. Insider selling $123M in 3 months (flag). P/E ~95. Valid thesis but needs calmer entry setup. Re-evaluate week of June 22+.
-- **MSFT, META, AMZN — not near-term candidates.**
-
-## Monday Conviction Ratings (updated 2026-06-19 weekly review)
-
-| Symbol | Rating | 3-consecutive-C trigger | Notes |
-|--------|--------|------------------------|-------|
-| LLY | **A** | N/A | Medicare Bridge July 1 in 12 days; Cathie Wood buying; stop buffer 3.11% narrowed — monitoring |
-| V | **B** | 0/3 weeks at C | +1.13% from entry; thesis intact; cross-border slowdown monitoring; July 28 earnings gate |
-| VST | **A** | N/A | Cogentrix closed; Helix thesis strongest; +10.04%; dividend ex-date Monday Jun 22; PT upgrades to $212–$230 |
+- **Goldman Risk Appetite Indicator:** 99th percentile of readings since 1991 as of end-June 2026 — historically associated with below-average forward 12-month S&P returns. A caution signal on sizing/pace, not a stop-trading signal.
+- **AI-capex digestion:** Mega-cap tech −9% in June; NVDA −13% from its June high; B200 GPU rental rates down ~31% since late May. Treat as an active risk to the "AI infrastructure spend" thesis pillar — require clean entry signals, don't average into AI-semi weakness on story alone.
+- **10yr Treasury yield:** ~4.46% (2026-06-30/07-01) — BELOW the 4.75% gate. New buys permitted on this gate; re-check at every pre-market.
+- **This week's catalysts:** Jobs report Thursday 2026-07-02 (options market pricing a 0.8% SPY swing); bank earnings + CPI July 14; FOMC July 29.
+- **LLY — Medicare GLP-1 Bridge:** went LIVE 2026-07-01. Stock already re-rated (+7.13% June 26). No position held — re-evaluate as a fresh entry, not an add.
+- **VST — Helix + Cogentrix:** both intact; stock pulled back to $153.16 with the broader tape (2026-07-01). No position held — re-evaluate as a fresh entry.
+- **No open positions** as of 2026-07-01 — all Monday conviction ratings, thesis contracts, and sector-exposure tracking reset to zero. Will be populated as new positions are opened.
 | NVDA | _pending fill_ | N/A | Plan: 33sh at market Monday Jun 22; all 5 entry signals met; starts at starter B conviction post-fill |

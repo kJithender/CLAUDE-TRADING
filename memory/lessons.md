@@ -5,6 +5,20 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons (recent)
 
+### 2026-07-01 (pre-market, third run) — Halt-and-notify resolved correctly; re-baseline executed on human confirmation, not before
+The two-run halt on the account mismatch (documented in the two entries
+directly below) worked exactly as intended: it kept the system from drafting
+trades against ambiguous state, and it stopped only once a human `NOTE:`
+in `control.md` explicitly confirmed the reset was intentional. On this
+third run, re-baselined `portfolio.md`, `strategy.md` (ran the deferred
+first-run init), and `trade-log.md` against the live $100,000 flat account,
+and reset the since-inception comparison to 2026-07-01. **Lesson:** the
+right response to "the human confirmed it" is to act on the confirmation
+immediately and fully (rebuild state, don't half-migrate it) — but not to
+also rush a trade decision in the same run just because the blocker is gone.
+Re-verifying stale watchlist gates (ATR, price levels) is a separate task
+from resolving the account-state ambiguity, and deserves its own pass.
+
 ### 2026-07-01 (pre-market, re-run ~16:40 ET) — 🚨 Second consecutive halt; account mismatch still unresolved, no human NOTE yet
 Re-ran the same diagnostic (`account`/`positions`/`orders all`/`history`) ~23
 minutes after the prior halted run. Every figure was byte-for-byte identical:

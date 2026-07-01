@@ -5,6 +5,89 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-01 — Pre-market research (~16:46 ET, third run today) — ACCOUNT RE-BASELINED, plan drafted for 2026-07-02
+
+### Live-switch guard
+- `ALPACA_BASE_URL` = `https://paper-api.alpaca.markets` — contains "paper" ✓.
+
+### Control switch
+- `memory/control.md`: `STATUS: ACTIVE`. `NOTE:` from the human (dated 2026-07-01) confirms the account reset to a flat $100,000 is **intentional and authorized**, and instructs a re-baseline: discard the stale LLY/NVDA/V/VST positions, rebuild `portfolio.md` from live data, and run the first-run strategy init since `strategy.md` was `STATUS: NOT_INITIALIZED`. Acknowledged and executed below. `CROSS_BULL_LEARNING:` line still blank — no action needed.
+
+### Timing note
+This is the **third** pre-market invocation today. The first two (~16:17 ET
+and ~16:40 ET) correctly halted on the account mismatch and notified the
+human. This run arrives after the human's `NOTE:` resolving the mismatch.
+Market is closed (`clock` → `is_open: false`, `next_open:
+2026-07-02T09:30:00-04:00`) — no same-day execution is possible regardless,
+so this run's plan targets tomorrow, **2026-07-02**.
+
+### Account re-baseline (resolves the mismatch)
+
+Re-ran `account`, `positions`, `orders all 20`, `history 1M 1D`:
+
+| Check | Result |
+|---|---|
+| Equity / Cash | $100,000.00 / $100,000.00 (100%) |
+| Positions | `[]` |
+| Orders (all-time) | `[]` |
+| Equity history | flat $0 through 2026-06-17, flat $100,000.00 from 2026-06-18 onward — confirms a genuinely fresh, never-traded account |
+| HWM | $100,000.00 (= current equity; account just reset) |
+
+This matches the human's description exactly. **Action taken:** rebuilt
+`memory/portfolio.md` from this live data (old LLY/NVDA/V/VST references
+removed), prepended a re-baseline bookkeeping entry to `memory/trade-log.md`,
+and re-initialized `memory/strategy.md` (was `STATUS: NOT_INITIALIZED`) with
+fresh macro research below. `STATUS` set to `ACTIVE`. New inception date:
+**2026-07-01**, SPY anchor **$745.665** (today's close).
+
+### Macro research (2026-06-30 / 2026-07-01)
+
+- **S&P 500:** closed June at ~7,500, −1.1% for the month, after mega-cap tech shed ~9% in June. SPY closed 2026-06-30 at $746.65 and 2026-07-01 at $745.665 (Alpaca daily bars). Slightly above its 50-day EMA; forming a bullish flag per one technical read (invezz.com), initial target ~7,621, but that's chart-only — no fundamental confirmation used here.
+- **Risk sentiment — CAUTION FLAG:** Goldman Sachs' Risk Appetite Indicator is at the **99th percentile** of readings since 1991 as of late June 2026 — historically associated with below-average forward 12-month returns. Not a sell signal, but a reason to size new entries conservatively and demand clean setups.
+- **Rates:** 10yr Treasury ~4.46% (2026-06-30/07-01) — **below the 4.75% gate** ✓. Fed funds on hold; no new FOMC decision until July 29.
+- **This week's calendar:** Jobs report Thursday 2026-07-02 (options market pricing an ~0.8% SPY swing — could move any Thursday entries). Bank earnings + CPI July 14. FOMC July 29.
+- **AI-capex digestion — active risk to the "AI infrastructure" thesis pillar:** NVDA down ~13% from its June high; B200 GPU rental rates down ~31% since late May (a real demand-cooling data point, not just sentiment). Sector-wide AI-semi softness this is the most important change since the June 19 weekly review.
+- Sources: Advisor Perspectives ("S&P Winning Streak for July at Risk", 2026-07-01), invezz.com S&P 500 outlook (2026-07-01), Motley Fool NVDA piece (2026-06-30), CNBC/stockanalysis.com NVDA quote (2026-07-01).
+
+### Watchlist re-check (today's live prices, where checked)
+
+| Ticker | Last close checked | Note |
+|---|---|---|
+| NVDA | $197.58 (2026-07-01, Alpaca daily bar) | Through the old $200 gate; −13% from June high; GPU-rental-rate decline is a genuine new risk. Thesis (AI accelerator monopoly, 38 analysts Strong Buy, avg PT $298.87) not broken, but do NOT treat this pullback as an automatic buy signal — re-run price/ATR gates fresh before any entry. |
+| LLY | $1,191.74 (2026-07-01, Alpaca daily bar) | Medicare GLP-1 Bridge went LIVE today. Stock already jumped +7.13% to $1,208.12 on the June 26 announcement, so much of the catalyst is priced in already. Needs a fresh entry-signal check, not a chase into strength. |
+| VST | $153.16 (2026-07-01, Alpaca daily bar) | Helix Digital Infrastructure (KKR+NVIDIA+Kuwait) and the $4B Cogentrix acquisition both remain intact per fresh search — pulled back with the broader tape from $163.75 (June 18) to $153.16 today. A power/infra diversifier away from AI-semi-specific risk. |
+| V, LRCX, PWR, MSFT, COST, JNJ, WMT | not re-checked today | Carried on the watchlist from the June 19 review; need fresh price/ATR/earnings-date verification before being treated as active candidates — do not size off stale June data. |
+
+### Cash-drag check
+- Cash: 100% — this is day 1 of a re-baselined account. Per `strategy.md` cash policy, holding cash while doing full re-verification of watchlist entries is correct and expected — not a passive default. No qualifying candidate has been re-verified against current price/ATR gates yet.
+
+### Risk posture
+- **Drawdown circuit breaker:** HWM $100,000.00 = current equity → 0.00% drawdown — NOT triggered ✓.
+- **Sector cap:** N/A, no positions.
+- **Thesis contract review:** N/A, no open positions.
+- **Monday conviction review:** N/A, today is Wednesday.
+- **Earnings-window rule:** N/A, no positions held and no buys planned.
+
+### Decision: no trades planned for 2026-07-02
+
+None of the watchlist names have been re-run through fresh price/ATR entry
+gates since the account reset (the most recent gate data is 8+ days stale
+from before the 8-day gap in routine runs). Rushing a buy on the first
+research pass of a re-baselined account — especially into a week with an
+elevated Goldman risk-appetite reading and a live AI-capex digestion scare —
+is exactly the kind of forced trade the strategy warns against. The correct,
+disciplined move is to do the full gate re-verification (ATR, price levels,
+confirmed earnings dates) at the next pre-market run, then decide.
+
+```json
+{
+  "plan_date": "2026-07-02",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-07-01 — Pre-market research (~16:40 ET, re-run) — 🚨 STILL HALTED: account mismatch unresolved, no plan drafted
 
 ### Live-switch guard

@@ -3,6 +3,14 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-01 — ACCOUNT RE-BASELINE (no trades; account reset to $100,000 flat, confirmed authorized by human)
+
+- **Action:** No trades. This is a bookkeeping entry, not an order.
+- **Context:** Live Alpaca account (`PA3C1LBQZ0U3`) was found flat — $100,000 equity/cash, zero positions, zero order history ever — on two earlier pre-market runs today (2026-07-01), inconsistent with the May 21 – June 23 track record below (LLY/NVDA/V/VST). Both runs correctly halted without trading and notified the human.
+- **Resolution:** Human added a `NOTE:` in `memory/control.md` confirming the reset is intentional and authorized. All prior open positions (LLY, NVDA, V, VST) are treated as discarded/no longer held. `memory/portfolio.md` and `memory/strategy.md` rebuilt/re-initialized against this fresh $100,000 baseline (new inception 2026-07-01, SPY anchor $745.665).
+- **Weekly new-position count reset:** 0/3 used this week, effective today.
+- **Everything below this line reflects the prior (now-discarded) account state** — kept for historical reference only.
+
 ## 2026-06-23 09:37 ET — MARKET-OPEN (no trades; plan empty — risk-off; stop audit 5/5 ✓; NVDA ⚠️ monitoring $200)
 
 - **Action:** Market-open review. No trades executed — today's plan is empty (risk-off: KOSPI −9.99% chip selloff, S&P futures −1.43% pre-market; no qualified candidates). 4 positions held.
