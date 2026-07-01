@@ -25,6 +25,15 @@ banner as still active — do not draft or execute new trades until
 `memory/control.md` carries a human `NOTE:` explaining the reset. Escalate via
 notify.sh again if a human response hasn't arrived.
 
+**RE-CONFIRMED 2026-07-01 (~16:40 ET, second pre-market run same day):** Re-ran
+`account` / `positions` / `orders all 20` / `history 1M 1D`. Identical result:
+account `PA3C1LBQZ0U3`, equity $100,000.00, cash $100,000.00, `positions: []`,
+`orders all: []`, equity history flat $0 through 2026-06-17 then flat
+$100,000.00 from 2026-06-18 onward. No change since the first flag. `control.md`
+`STATUS: ACTIVE`, no `NOTE:` line, `CROSS_BULL_LEARNING:` still blank — the
+human has not yet responded. Halting again, no plan drafted, re-notified via
+Telegram (urgent).
+
 ---
 
 **Last updated:** 2026-06-23 15:50 ET (close; KOSPI chip selloff day 2; NVDA ⚠️ USD 201.97 ABOVE USD 200 invalidation (barely); 0 trades today; stop audit 5/5 PASS)

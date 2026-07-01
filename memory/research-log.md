@@ -5,6 +5,55 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-01 — Pre-market research (~16:40 ET, re-run) — 🚨 STILL HALTED: account mismatch unresolved, no plan drafted
+
+### Live-switch guard
+- `ALPACA_BASE_URL` = `https://paper-api.alpaca.markets` — contains "paper" ✓.
+
+### Timing note
+This is a second pre-market invocation on the same calendar day, ~23 minutes
+after the prior run (~16:17 ET, logged above/below). Market is closed
+(`clock` → `is_open: false`, `next_open: 2026-07-02T09:30:00-04:00`) — no
+same-day execution is possible regardless of any plan.
+
+### Re-confirmed: account mismatch is unchanged
+
+Re-ran the full diagnostic set per the prior run's explicit instruction
+("re-run account/positions/orders first; if still flat/empty... treat this
+banner as still active"):
+
+| Check | Result (~16:40 ET) | Same as prior run (~16:17 ET)? |
+|---|---|---|
+| `account` | equity $100,000.00, cash $100,000.00, account `PA3C1LBQZ0U3`, `created_at 2026-06-23T03:28:42Z` | Identical |
+| `positions` | `[]` | Identical |
+| `orders all 20` | `[]` | Identical |
+| `history 1M 1D` | flat $0 through 2026-06-17, flat $100,000.00 from 2026-06-18 onward | Identical |
+| `control.md` | `STATUS: ACTIVE`, no `NOTE:` line, `CROSS_BULL_LEARNING:` blank | No human response yet |
+
+Nothing has changed. Per CLAUDE.md ("if something is ambiguous or risky and
+you are not confident, do nothing... notify the human") and the prior run's
+own instruction, this run **halts again**. No trade plan is drafted, no
+research into buy candidates was performed (would be moot against
+possibly-wrong account state). Re-notified the human via Telegram (urgent)
+per the prior run's escalation instruction.
+
+**Still required before any routine trades:** a human `NOTE:` in
+`memory/control.md` confirming what happened to the account and whether the
+$100,000/no-positions state is the correct one to build from.
+
+### Planned trades for today
+
+No trades planned — account state must be confirmed by a human first.
+
+```json
+{
+  "plan_date": "2026-07-01",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-07-01 — Pre-market research (~16:17 ET) — 🚨 HALTED: account mismatch, no plan drafted
 
 ### Live-switch guard

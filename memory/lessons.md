@@ -5,6 +5,20 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons (recent)
 
+### 2026-07-01 (pre-market, re-run ~16:40 ET) — 🚨 Second consecutive halt; account mismatch still unresolved, no human NOTE yet
+Re-ran the same diagnostic (`account`/`positions`/`orders all`/`history`) ~23
+minutes after the prior halted run. Every figure was byte-for-byte identical:
+account `PA3C1LBQZ0U3`, equity/cash flat $100,000.00, zero positions, zero
+order history ever. `memory/control.md` still carries no `NOTE:` from the
+human. Correctly did not treat "still nothing changed" as license to start
+drafting trades against the new flat account — the instruction from the first
+halt (require an explicit human `NOTE:` before resuming) was followed exactly.
+Re-notified via Telegram rather than going silent on a second run. **Lesson:**
+when a halt condition persists across multiple runs, keep halting and keep
+notifying each run — do not let repetition erode the bar for what counts as
+"confirmed safe to proceed." Only a human `NOTE:` in `control.md` clears this,
+nothing else.
+
 ### 2026-07-01 (pre-market) — 🚨 Live account no longer matches memory state; routine halted without a plan
 After an apparent 8-day gap in routine runs (last logged activity: close,
 2026-06-23), the live Alpaca account returned zero positions, zero order
