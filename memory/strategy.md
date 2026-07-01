@@ -1,6 +1,6 @@
 # Trading Strategy
 
-**STATUS: ACTIVE**
+**STATUS: NOT_INITIALIZED**
 **Initialized:** 2026-05-21
 
 ---
