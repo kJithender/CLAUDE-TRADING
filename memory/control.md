@@ -6,8 +6,6 @@ but **never** edit it.
 
 STATUS: ACTIVE
 
-NOTE: [2026-07-01, from the human] The paper trading account was INTENTIONALLY reset to a fresh $100,000 flat account (zero positions, zero order history). This is authorized and expected — NOT an unexpected liquidation. If your live account matches this ($100k flat, no positions) while memory shows old positions, RE-BASELINE now: treat $100k as the new inception (today's date), rebuild portfolio.md from live account data, discard the stale LLY/NVDA/V/VST positions, and run the first-run strategy init (strategy.md is set to NOT_INITIALIZED). Then resume normal operation.
-
 ## Valid STATUS values
 
 - `ACTIVE` — normal operation.
