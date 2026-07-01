@@ -5,6 +5,79 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-01 — Pre-market research (~16:17 ET) — 🚨 HALTED: account mismatch, no plan drafted
+
+### Live-switch guard
+- `ALPACA_BASE_URL` = `https://paper-api.alpaca.markets` — contains "paper" ✓.
+
+### Timing note
+This run executed at **~16:17 ET**, not 8:00 AM ET — after today's regular
+session close (`clock` shows `is_open: false`, `next_open: 2026-07-02T09:30:00-04:00`).
+Per the 2026-05-22 lesson, a late run cannot execute same-day trades regardless
+of the plan; today's plan (had one been drafted) would only be actionable
+tomorrow, 2026-07-02. This is also an **8-day gap** since the last logged run
+(close, 2026-06-23) — no routines appear to have run 2026-06-24 through
+2026-06-30.
+
+### 🚨 CRITICAL: live Alpaca account does not match memory state
+
+Ran the standard step-2 sync (`alpaca.sh account`, `positions`, `orders all`,
+`history 1M 1D`) and found:
+
+| Check | Expected (per `portfolio.md`, June 23 close) | Actual (live, July 1 ~16:17 ET) |
+|---|---|---|
+| Equity | $98,711.58 | **$100,000.00** |
+| Cash | $67,261.73 (68.13%) | **$100,000.00 (100%)** |
+| Open positions | LLY 10sh, NVDA 33sh, V 22sh, VST 40sh | **none — `positions` returns `[]`** |
+| Order history | 4+ trailing stops live, multiple fills since 2026-05-21 | **`orders all 50` returns `[]` — zero orders ever** |
+| Account `created_at` | — (should predate 2026-05-21 inception) | **`2026-06-23T03:28:42Z`** |
+| Portfolio history (1M/1D) | equity ramping from 100000→~98711 with daily variation | **flat $0 through 2026-06-17, then flat exactly $100,000 from 2026-06-18 onward — no trading activity whatsoever** |
+| Account number | (not previously recorded in memory) | `PA3C1LBQZ0U3` |
+
+This is not consistent with the same paper account that traded May 21 –
+June 23. The `created_at` timestamp lines up almost exactly with the last
+date memory has real activity (June 23), strongly suggesting the
+`ALPACA_API_KEY_ID` / `ALPACA_API_SECRET_KEY` credentials were rotated to a
+**brand-new, never-traded paper account** sometime around June 23, without
+any corresponding note in `memory/control.md` (`CROSS_BULL_LEARNING:` blank,
+no `NOTE:` line, `STATUS: ACTIVE`).
+
+Two possible explanations, indistinguishable from inside this sandbox:
+1. **Intentional** — the human rotated/reset the paper account (e.g. new API
+   keys) and simply hasn't left a `NOTE:` in `control.md` yet.
+2. **Unintentional** — a credential misconfiguration is pointing this routine
+   at the wrong (empty) paper account, while the real, actively-traded
+   account (with LLY/NVDA/V/VST and live stops) sits elsewhere, now
+   unmonitored and unmanaged for 8+ days.
+
+Either way, per CLAUDE.md guardrails ("If something is ambiguous or risky and
+you are not confident, do nothing... and notify the human"), this run **halts
+here**. No trade plan is drafted. Continuing to research/size candidates
+against a $100,000 flat-cash account that may or may not be the real account
+would produce a plan the next routine could execute blindly against
+possibly-wrong state.
+
+**Action taken:** flagged prominently at the top of `memory/portfolio.md`;
+notified the human via Telegram (urgent); left this entry for the next
+routine to find. No further research, sizing, or plan performed this run.
+
+**Required before the next routine trades:** a human `NOTE:` in
+`memory/control.md` confirming what happened to the account and whether this
+$100,000/no-positions state is the correct one to build from.
+
+### Planned trades for today
+
+No trades planned — account state must be confirmed by a human first.
+
+```json
+{
+  "plan_date": "2026-07-01",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-06-23 — Pre-market research (~08:03 ET)
 
 ### Live-switch guard

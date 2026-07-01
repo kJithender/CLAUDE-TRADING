@@ -3,6 +3,30 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
+## 🚨 UNRESOLVED — ACCOUNT MISMATCH FLAGGED 2026-07-01 (pre-market, ~16:17 ET)
+
+**Live Alpaca account no longer matches this file.** Account `PA3C1LBQZ0U3`,
+`created_at: 2026-06-23T03:28:42Z`, has **zero order history** (`orders all`
+returns `[]`), **zero open positions**, and is flat at exactly
+**equity $100,000.00 / cash $100,000.00** (portfolio history shows $0 through
+2026-06-17, then a flat $100,000 line starting 2026-06-18 — consistent with a
+brand-new account, not the account that traded May 21–June 23).
+
+Everything below this banner (LLY/NVDA/V/VST positions, trailing stops,
+$98,711.58 equity as of June 23 close) reflects the **old account state as
+last observed** — it is **NOT the current live state** and must not be relied
+on for trading decisions until a human confirms what happened. Do not assume
+the old positions are still protected by their stops; do not assume they were
+liquidated cleanly; do not assume this is an intentional fresh start.
+
+**Next agent:** re-run `./scripts/alpaca.sh account` / `orders all` / `positions`
+first. If the account is still flat/empty with no order history, treat this
+banner as still active — do not draft or execute new trades until
+`memory/control.md` carries a human `NOTE:` explaining the reset. Escalate via
+notify.sh again if a human response hasn't arrived.
+
+---
+
 **Last updated:** 2026-06-23 15:50 ET (close; KOSPI chip selloff day 2; NVDA ⚠️ USD 201.97 ABOVE USD 200 invalidation (barely); 0 trades today; stop audit 5/5 PASS)
 **Inception:** 2026-05-21 — starting equity $100,000.00 | SPY anchor price $739.44
 **SPY total-return anchor (post-June 18 ex-div $1.76):** **$741.20**

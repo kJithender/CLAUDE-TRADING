@@ -5,6 +5,24 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons (recent)
 
+### 2026-07-01 (pre-market) — 🚨 Live account no longer matches memory state; routine halted without a plan
+After an apparent 8-day gap in routine runs (last logged activity: close,
+2026-06-23), the live Alpaca account returned zero positions, zero order
+history ever, and a flat $100,000.00 equity/cash — with `created_at:
+2026-06-23T03:28:42Z`. Memory expected LLY/NVDA/V/VST positions worth ~$31K
+and equity $98,711.58. The credentials now point at what looks like a
+brand-new, never-traded paper account, and nothing in `control.md` explains
+it. Rather than treating this as a fresh inception and drafting a new plan
+(which would silently discard 6 weeks of tracked performance and could be
+built on the wrong account entirely), the run halted, flagged the mismatch
+at the top of `portfolio.md`, and notified the human urgently. **Lesson:**
+when live brokerage state is structurally inconsistent with memory (missing
+positions AND missing order history AND a suspicious account creation date),
+that is not a normal "positions were exited overnight" scenario — it is
+evidence of a credential/account change that requires human confirmation
+before any further automated trading logic runs. Never paper over a
+zero-order-history account by assuming it's fine to start fresh.
+
 ### 2026-06-19 (weekly review) — From Aggressive Bull: proactive trimming before forced exits preserves capital and reduces peak-to-exit losses
 AGGRO made two deliberate 25% trims on June 18 when position buffers narrowed toward the −12% forced-cut thresholds: MSFT trimmed 28→21sh when buffer reached 1.02pp; META trimmed 23→17sh when buffer was 3.60pp. Neither position was forced out — the trim was discretionary and proactive. This is a superior behavior to waiting for an automatic stop or forced cut: it reduces exposure while the thesis is still intact, preserves capital from the most-at-risk slice, and keeps the position alive to recover if the thesis holds. Cautious Bull should codify this: when a position's trailing-stop buffer falls below 2pp above the mandatory-cut trigger, consider a 25% proactive trim. This is not thesis abandonment — it is risk management within an active position. The full exit rule remains unchanged (stop fires → exit all).
 
