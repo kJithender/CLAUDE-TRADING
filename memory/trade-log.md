@@ -3,6 +3,19 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-02 09:37 ET — BUY VST (slot 1/3 this week)
+
+- **Action:** BUY 29 shares (whole shares, to allow trailing stop)
+- **Fill:** 29 shares @ USD 154.70 avg (order id: 82f32659-0c0b-4270-9027-2647d7c6ae2a, marketable limit USD 155.99 = ask USD 155.52 × 1.003)
+- **Why:** Power/AI-infrastructure diversifier away from the AI-semi capex-digestion risk pressuring NVDA/chips. Helix Digital Infrastructure consortium (KKR+NVIDIA+Kuwait) and a new 2.1 GW nuclear supply agreement with Meta anchor multi-year demand; June 24 revolver expansion to USD 5.5B and a Fitch investment-grade upgrade strengthen the balance sheet; JPMorgan reiterated Overweight with a raised PT. Pulled back from USD 163.75 (Jun 18) to ~USD 153 landing at its 50-day — pullback-to-support entry. 4/5 entry signals met. Sized at half the normal 9% starter (4.52% of equity) because 20-day ATR (3.80%) exceeds the 3% volatility-check threshold.
+- **Breaking-news gate:** WebSearch for "VST stock news this morning 2026-07-02" — only routine items (fossil-plant divestiture to Winslow Power JV, prior credit-agreement amendment); no earnings miss, downgrade, halt, or SEC action. Cleared.
+- **Invalidation:** closes below USD 148 on volume, or the 10% trailing stop fires, or the Helix/Cogentrix consortium is disrupted. **Review by:** 2026-08-06 (earnings).
+- **Stop:** 10% trailing stop placed (order id: bdfb5f67-aaee-4cb2-a2c2-db11e47a6635) — HWM USD 154.4625, stop USD 139.01625
+- **Verified:** confirmed via positions re-fetch (29sh @ USD 154.70 avg, market value ~USD 4,468) and trailing stop confirmed live in open orders
+- **Guardrail math:** 4.52% of equity (≤20% cap) | slot 1/3 new positions this week (≤3) | 4.52% daily deployment (≤25% cap) | post-trade cash ≈95.5% (≥5% min) | Energy/Utilities sector 4.52% (≤60% cap) | risk-budget loss at stop ≈0.45% of equity (≤1.2% budget) | drawdown 0.00% vs HWM USD 100,000 (breaker not triggered at −10%) | earnings 2026-08-06, 35 trading days out (outside 2-day window) | 10yr yield 4.47% (<4.75% gate, per pre-market)
+- **Shock check:** equity = last_equity = USD 100,000.00 at run start — no shock ✓
+- Logged to `memory/trades.jsonl`.
+
 ## 2026-07-01 — ACCOUNT RE-BASELINE (no trades; account reset to $100,000 flat, confirmed authorized by human)
 
 - **Action:** No trades. This is a bookkeeping entry, not an order.

@@ -88,6 +88,8 @@ Thesis: Vistra is a power/AI-infrastructure diversifier away from the AI-semi ca
 }
 ```
 
+EXECUTED: 2026-07-02T13:37:45Z — BUY VST 29sh filled avg USD 154.70 (marketable limit USD 155.99 = ask USD 155.52 × 1.003; breaking-news gate checked, no thesis-breaking news); trailing-stop bdfb5f67 (10%, HWM USD 154.4625, stop USD 139.01625) placed and confirmed live. Guardrails: 4.52% of equity (≤20% cap), slot 1/3 this week, 4.52% daily deployment (≤25% cap), post-trade cash ≈95.5% (≥5% min), Energy/Utilities sector 4.52% (≤60% cap), risk-budget loss at stop ≈0.45% of equity (≤1.2% budget), drawdown 0.00% (breaker not triggered), earnings 2026-08-06 outside 2-day window.
+
 ---
 
 ## 2026-07-01 — Pre-market research (~16:46 ET, third run today) — ACCOUNT RE-BASELINED, plan drafted for 2026-07-02

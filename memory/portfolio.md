@@ -21,45 +21,50 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-02 ~08:11 ET (pre-market) — account unchanged from re-baseline, VST buy planned for today's open
+**Last updated:** 2026-07-02 ~09:37 ET (market-open) — VST bought, 29sh @ $154.70 avg, 10% trailing stop live
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-01 ~16:46 ET)
+## Account (live Alpaca data, 2026-07-02 ~09:37 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,000.00 |
-| Cash | $100,000.00 (100%) |
-| Long market value | $0.00 |
-| Buying power | $400,000.00 |
+| Equity | $99,981.30 |
+| Cash | $95,513.70 (95.53%) |
+| Long market value | $4,467.60 (4.47%) |
+| Buying power | $394,564.07 |
 | Last equity | $100,000.00 |
 
 ## Open positions
 
-None. Zero positions, zero order history. Fresh start.
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop |
+|--------|-----|-----------|---------|-----------------|--------|----------------|
+| VST | 29 | $154.70 | $154.085 | −$17.84 (−0.40%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $154.4625, stop $139.01625 — live ✓ |
 
-**Sector exposure:** Cash: $100,000.00 = 100%. No sector above 60% cap ✓ (trivially, nothing is held).
+**Sector exposure:** Energy/Utilities (VST): $4,467.60 = 4.47%. Cash: $95,513.70 = 95.53%. No sector above 60% cap ✓.
 
-**Trailing stop status:** N/A — no positions to protect.
-**Stop audit: N/A (0/0) ✓** — nothing to audit; will apply once positions open.
+**Trailing stop status:** 1/1 positions protected.
+**Stop audit: 1/1 ✓ PASS** (2026-07-02 market-open).
 
-## Risk posture (2026-07-01)
+## Risk posture (2026-07-02)
 
-- **Drawdown circuit breaker:** High-water mark = current equity = $100,000.00 (account was just reset). Drawdown 0.00% — NOT triggered ✓.
-- **Intraday shock check:** Equity $100,000.00 vs `last_equity` $100,000.00 = $0.00 (0.00%) — no shock ✓.
-- **Sector cap:** N/A, no positions.
-- **Weekly new-position count:** 0/3 used this week (fresh count — see `trade-log.md`).
+- **Drawdown circuit breaker:** High-water mark = $100,000.00. Current equity $99,981.30. Drawdown 0.02% — NOT triggered ✓.
+- **Intraday shock check:** Equity $99,981.30 vs `last_equity` $100,000.00 = −$18.70 (−0.02%) — no shock ✓.
+- **Sector cap:** Energy/Utilities 4.47% — well below 60% ✓.
+- **Weekly new-position count:** 1/3 used this week (VST, 2026-07-02) — see `trade-log.md`.
 
 ## Performance vs S&P 500
 
 | Period | Bull | SPY | Difference |
 |--------|------|-----|------------|
 | New inception (2026-07-01) | $100,000.00 | $745.665 | — (baseline) |
+| 2026-07-02 market-open | $99,981.30 (−0.02%) | — (not re-checked this run) | — |
 
 _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): Bull ended at $98,711.58 (−1.289%) vs SPY total-return +... — full detail in git history and `weekly-review.md`. Not comparable going forward; new inception above is the live baseline._
 
 ## Notes
+
+**2026-07-02 market-open (~09:37 ET):** Executed the pre-market plan: BUY VST 29sh, marketable limit USD 155.99 (ask USD 155.52 × 1.003), filled avg USD 154.70. Breaking-news gate cleared (routine items only — fossil-plant divestiture, prior revolver amendment). 10% trailing stop placed and verified live (HWM USD 154.4625, stop USD 139.01625). Stop audit 1/1 PASS. All guardrails within limits (4.52% position, slot 1/3 weekly, 95.5% cash, 4.47% sector, 0.02% drawdown, no shock). This is week 1's first of 3 available new-position slots — 2 slots and ~95% cash remain for LRCX/PWR/V once their gates clear.
 
 **2026-07-02 pre-market (~08:11 ET):** Re-synced live Alpaca data — account unchanged from the 2026-07-01 re-baseline: equity/cash $100,000.00 (100%), zero positions, zero orders. No mismatch this run (confirms the reset state is stable, not a data glitch). Drawdown 0.00% (HWM = current equity), not triggered. Ran the deferred full ATR/price-gate re-verification across the watchlist (NVDA, LLY, VST, V, LRCX, PWR, MSFT, COST, JNJ, WMT) — see `research-log.md` for the full table. NVDA and LLY both fail technical confirmation (NVDA −5.88% below 50-day; LLY +13.65% above, extended and largely priced in). LRCX still ATR-gated (5.58% avg). **VST cleared 4/5 entry signals** (analyst upgrades + Fitch IG upgrade, Helix/Meta-nuclear catalyst intact, favorable valuation on EPS growth, power/AI-infra diversifier tailwind) with a pullback to its 50-day and no earnings until 2026-08-06. Planned: **BUY VST 29sh (~USD 4,441, 4.44% of equity)** at market open — halved from the normal 9% starter because 20-day ATR (3.80%) exceeds the 3% volatility-check threshold. This would be week 1's first of 3 available new-position slots. Cash after (if filled): ~95.56%, still far above the 5% minimum — deliberate, gradual first deployment, not a rush.
 
