@@ -5,6 +5,91 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-02 — Pre-market research (~08:11 ET) — first live gate re-verification since account reset; VST slot 1 planned
+
+### Live-switch guard
+- `ALPACA_BASE_URL` = `https://paper-api.alpaca.markets` — contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was empty (`{}`) — no other routine active. Lock written for this run.
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:` line, no `QUERY:` line. `CROSS_BULL_LEARNING:` blank — no action needed.
+
+### Account sync (live Alpaca, ~08:11 ET)
+- `clock`: `is_open: false`, `next_open: 2026-07-02T09:30:00-04:00` — normal pre-market timing (run is on schedule, ~11 min after the 8:00 AM ET target).
+- `account`: equity $100,000.00, cash $100,000.00 (100%), positions `[]`, orders `[]` — **confirms account state is unchanged and consistent with `portfolio.md`** (no repeat of the 2026-07-01 mismatch). Account `PA3C1LBQZ0U3`, `last_equity` $100,000.00.
+
+### Risk posture check
+- **Drawdown circuit breaker:** `history 1A 1D` — HWM = current equity = $100,000.00 (flat since reset). Drawdown 0.00% — NOT triggered ✓.
+- **Intraday shock check:** equity = last_equity = $100,000.00 — no shock ✓ (market not yet open).
+- **Sector cap:** N/A, no positions.
+- **Thesis contract review (3b):** N/A, no open positions.
+- **Monday conviction review (3c):** N/A — today is Thursday.
+
+### Macro research (2026-07-02, pre-jobs-report)
+- **Jobs report today 8:30 AM ET:** consensus +115K nonfarm payrolls. ADP private payrolls (released 2026-07-01) came in soft at +98K, modestly below consensus — a mild downside signal ahead of the official print. This is the week's primary catalyst per strategy.md.
+- **S&P 500 futures:** slightly negative pre-market (~-0.08% S&P, Nasdaq-100 futures ~-0.3%) heading into the jobs number — cautious positioning, not a risk-off signal.
+- **10yr Treasury:** 4.47% (eased from 4.50% intraday) after Fed Chair Warsh remarks that inflation risks are softening — dovish tone. **Below the 4.75% gate ✓.**
+- **Macro posture: NEUTRAL-TO-CAUTIOUS, awaiting the jobs print.** Since the market-open routine executes after both the 8:30 jobs report AND the open, any trade this run plans will already reflect the market's verdict on the number by the time of execution — reduces (does not eliminate) event risk relative to a pre-report entry.
+- Goldman Risk Appetite Indicator (99th percentile, noted 2026-07-01) remains an active caution flag on sizing — unchanged since yesterday, no new reading today.
+
+### Full watchlist gate re-verification (live Alpaca data + 26-session ATR, 2026-05-25 to 2026-07-01)
+
+| Ticker | Last close | 26-sess avg ATR% | Last 3 ATR% | vs ~50-day SMA (proxy) | Entry signals (of 5) |
+|---|---|---|---|---|---|
+| NVDA | $197.54 | 3.15% | 3.25/2.76/3.23 | **-5.88%** (below) | Catalyst ✓, Macro tailwind (weak, capex-digestion risk) ~, Technical ✗ — through the old $200 gate and below 50-day. **Skip — no clean technical confirmation, name still digesting the June AI-capex scare.** |
+| LLY | $1,192.14 | 3.01% | 2.78/3.24/3.28 | **+13.65%** (extended) | Catalyst ✓ (Bridge live), but Leerink PT $1,232 implies only ~3% upside from here — **most of the catalyst is priced in**, and price is >10% above the 50-day (extended, fails signal 4's own extension clause). **Skip — chasing strength into a name that already re-rated.** |
+| **VST** | **$153.15** | **3.80%** | **2.72/5.44/3.97** | **-0.87%** (essentially at) | Earnings-momentum via upgrades ✓ (JPMorgan PT raise + Overweight, Fitch investment-grade upgrade June), Catalyst ✓ (Helix Digital Infrastructure KKR+NVIDIA+Kuwait; new 2.1 GW nuclear supply agreement with Meta; $5.5B revolver expansion June 24), Valuation ✓ (next-quarter EPS growth guided +140% YoY — cheap on PEG basis), Macro tailwind ✓ (power/AI-infra demand is a diversifier from the AI-semi capex-digestion risk hitting NVDA), Technical ~ (essentially at the 50-day, not cleanly above but not extended either — a pullback-to-support read, not a breakdown). **4/5 signals met — highest-conviction name on the watchlist, confirmed by fresh data.** |
+| V | $351.28 | 2.03% | 2.03/1.5/3.44 | not computed | Up sharply from $328 (mid-June) to $351 — extended short-term; not re-verified in depth this run given VST is the clear priority. Carry to next pre-market. |
+| LRCX | $391.36 | **5.58%** | 8.55/5.47/8.4 | not computed | ATR still well above gate, worse than mid-June (was 3.54-6.19%). **Still deferred — too volatile.** |
+| PWR | $690.95 | 3.51% | 4.65/2.27/2.6 | -2.75% | ATR improving (last 2 sessions ≤2.6%) but insider-selling flag needs a fresh check; carry to next pre-market rather than rush a second name today. |
+| MSFT | $384.38 | 2.92% | 3.7/1.76/3.62 | -5.84% | Below 50-day; carry, not re-verified in depth. |
+| COST, JNJ, WMT | — | 1.9-2.1% (low vol) | — | not computed | Low-ATR defensive names; no fresh catalyst pulling them forward today. Carry.
+
+### VST — earnings window and insider-selling check
+- **Next earnings: 2026-08-06** (confirmed via multiple sources) — 35 trading days out, **well outside the 2-trading-day window ✓.**
+- **Insider selling:** Several Form 4s in June (director/EVP/SVP sales, $160-170/sh range) — **confirmed under Rule 10b5-1 pre-arranged plans** (per stocktitan filings), consistent with the 2026-06-10 lesson that plan-based sales are not a bearish signal. No open-market discretionary red flag.
+- **Dividend:** last ex-date 2026-06-22, paid 2026-06-30 ($0.23/sh) — already reflected in price; not a factor for a fresh entry today.
+
+### VST — volatility check (playbook step 7)
+- 20-session avg ATR = 3.80%, exceeds the 3% threshold (recent sessions ran as high as 5.44%). **Per playbook: halve the planned position size.**
+- Un-halved starter (9% conviction tier per strategy.md sizing table): 9% × $100,000 = $9,000 → 58 shares ($8,882.70).
+- **Halved for ATR: 29 shares.**
+
+### VST — sizing and guardrail check
+- 29 shares × $153.15 = **$4,441.35 = 4.44% of equity.**
+- Risk-budget sizing: 10% trailing stop → max loss $444.14 = **0.44% of equity** — well within the 1.2% risk budget ✓.
+- 20% single-position cap: far clear ✓.
+- Sector cap: Energy/Utilities 4.44% — far below 60% ✓.
+- Daily deployment: 4.44% ≤ 25% daily cap ✓.
+- Post-trade cash: $95,558.65 = 95.56% — far above the 5% minimum ✓ (intentionally still very cash-heavy; this is position 1 of a gradual build).
+- Weekly new-position count: 0/3 used this week (count reset with the 2026-07-01 account re-baseline) → VST = slot 1/3 ✓.
+- 10yr yield gate: 4.47% < 4.75% ✓.
+
+### Cash-drag check
+- Cash 100% for 1 trading day since the re-baseline (2026-07-01 close). Not yet a full week, so no mandatory-entry pressure — but a qualified candidate (VST) cleared fresh gates today, the tape is neutral-to-constructive, and 3/3 weekly slots are open. Per strategy.md's gradual-build policy, deploying one well-vetted starter position today is the correct, disciplined move — not a forced trade. The remaining 2 slots and ~95% cash stay open for LRCX/PWR/V once their gates clear.
+
+### Decision: plan 1 trade for 2026-07-02 — BUY VST 29sh at market open
+
+Thesis: Vistra is a power/AI-infrastructure diversifier away from the AI-semi capex-digestion risk currently pressuring NVDA and the broader chip complex. The Helix Digital Infrastructure consortium (KKR+NVIDIA+Kuwait) and a new 2.1 GW nuclear supply agreement with Meta anchor multi-year demand; a June 24 revolver expansion to USD 5.5B and a Fitch investment-grade upgrade strengthen the balance sheet; JPMorgan reiterated Overweight with a raised price target. The stock has pulled back from USD 163.75 (June 18) to USD 153.15 with the broader tape, landing almost exactly at its 50-day average — a pullback-to-support entry, not a breakdown. Sized at half the normal starter (29sh, 4.44% of equity) because 20-day ATR (3.80%) exceeds the 3% volatility-check threshold.
+
+```json
+{
+  "plan_date": "2026-07-02",
+  "trades": [
+    {
+      "action": "buy",
+      "symbol": "VST",
+      "qty": 29,
+      "thesis": "Power/AI-infrastructure diversifier away from AI-semi capex-digestion risk; Helix Digital Infrastructure (KKR+NVIDIA+Kuwait) + new 2.1 GW Meta nuclear supply deal intact; Fitch investment-grade upgrade and USD 5.5B revolver expansion (Jun 24) strengthen balance sheet; JPMorgan Overweight with raised PT; pulled back to ~50-day support at USD 153.15 from USD 163.75; 4/5 entry signals met; sized at half the normal 9% starter because 20-day ATR (3.80%) exceeds the 3% volatility-check threshold",
+      "invalidation": "closes below USD 148 (loses the recent higher-low support structure) on volume, or the 10% trailing stop fires, or the Helix/Cogentrix consortium is disrupted",
+      "review_by": "2026-08-06"
+    }
+  ]
+}
+```
+
+---
+
 ## 2026-07-01 — Pre-market research (~16:46 ET, third run today) — ACCOUNT RE-BASELINED, plan drafted for 2026-07-02
 
 ### Live-switch guard
