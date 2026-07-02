@@ -21,36 +21,36 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-02 ~09:37 ET (market-open) — VST bought, 29sh @ $154.70 avg, 10% trailing stop live
+**Last updated:** 2026-07-02 ~12:36 ET (midday) — no trades; VST holding within thresholds
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-02 ~09:37 ET)
+## Account (live Alpaca data, 2026-07-02 ~12:36 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,981.30 |
-| Cash | $95,513.70 (95.53%) |
-| Long market value | $4,467.60 (4.47%) |
-| Buying power | $394,564.07 |
+| Equity | $99,846.88 |
+| Cash | $95,513.70 (95.68%) |
+| Long market value | $4,333.18 (4.34%) |
+| Buying power | $394,187.70 |
 | Last equity | $100,000.00 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop |
 |--------|-----|-----------|---------|-----------------|--------|----------------|
-| VST | 29 | $154.70 | $154.085 | −$17.84 (−0.40%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $154.4625, stop $139.01625 — live ✓ |
+| VST | 29 | $154.70 | $149.42 | −$153.12 (−3.41%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $156.24, stop $140.616 — live ✓ |
 
-**Sector exposure:** Energy/Utilities (VST): $4,467.60 = 4.47%. Cash: $95,513.70 = 95.53%. No sector above 60% cap ✓.
+**Sector exposure:** Energy/Utilities (VST): $4,333.18 = 4.34%. Cash: $95,513.70 = 95.68%. No sector above 60% cap ✓.
 
 **Trailing stop status:** 1/1 positions protected.
-**Stop audit: 1/1 ✓ PASS** (2026-07-02 market-open).
+**Stop audit: 1/1 ✓ PASS** (2026-07-02 midday).
 
 ## Risk posture (2026-07-02)
 
-- **Drawdown circuit breaker:** High-water mark = $100,000.00. Current equity $99,981.30. Drawdown 0.02% — NOT triggered ✓.
-- **Intraday shock check:** Equity $99,981.30 vs `last_equity` $100,000.00 = −$18.70 (−0.02%) — no shock ✓.
-- **Sector cap:** Energy/Utilities 4.47% — well below 60% ✓.
+- **Drawdown circuit breaker:** High-water mark = $100,000.00. Current equity $99,846.88. Drawdown 0.153% — NOT triggered ✓.
+- **Intraday shock check:** Equity $99,846.88 vs `last_equity` $100,000.00 = −$153.12 (−0.153%) — no shock ✓.
+- **Sector cap:** Energy/Utilities 4.34% — well below 60% ✓.
 - **Weekly new-position count:** 1/3 used this week (VST, 2026-07-02) — see `trade-log.md`.
 
 ## Performance vs S&P 500
@@ -63,6 +63,8 @@ reference but is **not** the live comparison baseline going forward.
 _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): Bull ended at $98,711.58 (−1.289%) vs SPY total-return +... — full detail in git history and `weekly-review.md`. Not comparable going forward; new inception above is the live baseline._
 
 ## Notes
+
+**2026-07-02 midday (~12:36 ET):** No trades — midday only manages existing risk. VST at −3.41% from entry (USD 149.42 vs USD 154.70), well above the −7% cut threshold. News scan triggered by the >3% move: no thesis-breaking catalyst found — Bernstein/Wells Fargo both reaffirmed Buy 2026-07-01, June 24 revolver expansion (USD 5.5B) and Fitch IG upgrade stand, Cogentrix/Helix/Meta-AWS PPA catalysts intact. Move reads as broad-tape softness, not a thesis break — holding. Stop audit 1/1 PASS (trailing stop order bdfb5f67 live, HWM USD 156.24, stop USD 140.616). No shock (−0.153% intraday vs last_equity). Drawdown 0.153% vs HWM, not triggered.
 
 **2026-07-02 market-open (~09:37 ET):** Executed the pre-market plan: BUY VST 29sh, marketable limit USD 155.99 (ask USD 155.52 × 1.003), filled avg USD 154.70. Breaking-news gate cleared (routine items only — fossil-plant divestiture, prior revolver amendment). 10% trailing stop placed and verified live (HWM USD 154.4625, stop USD 139.01625). Stop audit 1/1 PASS. All guardrails within limits (4.52% position, slot 1/3 weekly, 95.5% cash, 4.47% sector, 0.02% drawdown, no shock). This is week 1's first of 3 available new-position slots — 2 slots and ~95% cash remain for LRCX/PWR/V once their gates clear.
 

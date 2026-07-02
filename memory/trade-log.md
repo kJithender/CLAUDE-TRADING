@@ -3,6 +3,17 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-02 12:36 ET — MIDDAY CHECK (no trades)
+
+- **Action:** None — VST within guardrail thresholds; no cuts, no tightening.
+- **Market status:** `is_open: true` ✓ (next_close 16:00 ET today)
+- **VST:** 29sh, entry USD 154.70, current USD 149.42 → −3.41% (cut threshold: −7%, not triggered)
+- **News scan (VST >3% move):** WebSearch "VST Vistra stock news today 2026-07-02" — no thesis-breaking news. Bernstein and Wells Fargo both reaffirmed Buy yesterday (2026-07-01); VST amended its credit agreement June 24 (revolver up to USD 5.5B, favorable terms); Cogentrix acquisition, Perry nuclear restart, and Meta/AWS PPAs (3,800 MW) all intact. The −3.41% move reads as broad tape softness, not a catalyst — hold.
+- **Stop audit:** 1/1 positions protected — VST trailing stop (order bdfb5f67) live, HWM USD 156.24, stop USD 140.616, trail 10%. PASS.
+- **Shock check:** equity USD 99,846.88 vs last_equity USD 100,000.00 = −0.153% intraday — no shock (threshold 4%).
+- **Drawdown circuit breaker:** HWM USD 100,000.00, current equity USD 99,846.88, drawdown −0.153% — well within −10% breaker. Not triggered (informational only; midday never opens new positions regardless).
+- **No positions up >15%** — no tightening warranted.
+
 ## 2026-07-02 09:37 ET — BUY VST (slot 1/3 this week)
 
 - **Action:** BUY 29 shares (whole shares, to allow trailing stop)
