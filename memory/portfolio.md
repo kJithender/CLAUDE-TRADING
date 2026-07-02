@@ -21,48 +21,53 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-02 ~12:36 ET (midday) — no trades; VST holding within thresholds
+**Last updated:** 2026-07-02 ~15:52 ET (close) — no trades; VST holding within thresholds
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-02 ~12:36 ET)
+## Account (live Alpaca data, 2026-07-02 ~15:52 ET close)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,846.88 |
-| Cash | $95,513.70 (95.68%) |
-| Long market value | $4,333.18 (4.34%) |
-| Buying power | $394,187.70 |
+| Equity | $99,887.48 |
+| Cash | $95,513.70 (95.63%) |
+| Long market value | $4,373.78 (4.38%) |
+| Buying power | $394,301.38 |
 | Last equity | $100,000.00 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop |
 |--------|-----|-----------|---------|-----------------|--------|----------------|
-| VST | 29 | $154.70 | $149.42 | −$153.12 (−3.41%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $156.24, stop $140.616 — live ✓ |
+| VST | 29 | $154.70 | $150.82 | −$112.52 (−2.51%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $156.24, stop $140.616 — live ✓ |
 
-**Sector exposure:** Energy/Utilities (VST): $4,333.18 = 4.34%. Cash: $95,513.70 = 95.68%. No sector above 60% cap ✓.
+**Sector exposure:** Energy/Utilities (VST): $4,373.78 = 4.38%. Cash: $95,513.70 = 95.63%. No sector above 60% cap ✓.
 
 **Trailing stop status:** 1/1 positions protected.
-**Stop audit: 1/1 ✓ PASS** (2026-07-02 midday).
+**Stop audit: 1/1 ✓ PASS** (2026-07-02 close).
 
-## Risk posture (2026-07-02)
+## Risk posture (2026-07-02 close)
 
-- **Drawdown circuit breaker:** High-water mark = $100,000.00. Current equity $99,846.88. Drawdown 0.153% — NOT triggered ✓.
-- **Intraday shock check:** Equity $99,846.88 vs `last_equity` $100,000.00 = −$153.12 (−0.153%) — no shock ✓.
-- **Sector cap:** Energy/Utilities 4.34% — well below 60% ✓.
+- **Drawdown circuit breaker:** High-water mark = $100,000.00. Current equity $99,887.48. Drawdown 0.113% — NOT triggered ✓ (9.89pp headroom to the −10% breaker).
+- **Intraday shock check:** Equity $99,887.48 vs `last_equity` $100,000.00 = −$112.52 (−0.113%) — no shock ✓.
+- **Sector cap:** Energy/Utilities 4.38% — well below 60% ✓.
 - **Weekly new-position count:** 1/3 used this week (VST, 2026-07-02) — see `trade-log.md`.
 
 ## Performance vs S&P 500
 
 | Period | Bull | SPY | Difference |
 |--------|------|-----|------------|
-| New inception (2026-07-01) | $100,000.00 | $745.665 | — (baseline) |
-| 2026-07-02 market-open | $99,981.30 (−0.02%) | — (not re-checked this run) | — |
+| New inception (2026-07-01 close) | $100,000.00 | $745.665 | — (baseline) |
+| 2026-07-02 market-open | $99,981.30 (−0.02%) | — | — |
+| 2026-07-02 close | $99,887.48 (−0.113%) | $743.95 (−0.230%) | **+0.117pp** (Bull ahead of SPY) |
 
 _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): Bull ended at $98,711.58 (−1.289%) vs SPY total-return +... — full detail in git history and `weekly-review.md`. Not comparable going forward; new inception above is the live baseline._
 
 ## Notes
+
+**2026-07-02 close (~15:52 ET):** No trades — close routine only reconciles/journals. Equity $99,887.48 vs last_equity $100,000.00 = −$112.52 (−0.113%) today. SPY closed at $743.95 vs yesterday's $745.665 anchor = −0.230% — Bull outperformed SPY by +0.117pp on day one since re-inception. VST at −2.51% from entry ($150.82 vs $154.70), well above the −7% cut threshold; stop audit 1/1 PASS (order bdfb5f67, HWM $156.24, stop $140.616, live). Drawdown 0.113% vs HWM $100,000 — not triggered (9.89pp headroom). No shock. Market context: June nonfarm payrolls badly missed consensus (+57K vs 115K expected, prior month revised down to 129K) but jobless claims came in slightly better than forecast; Fed Chair Warsh said inflation risks have eased substantially, which capped downside. Tech continued to soften on AI-capex digestion worries (AMAT −10%, SNDK −10.6%) while the broader S&P/Dow were mixed-to-positive on the day per late-session reports — SPY's own close was down slightly from Wednesday. VST (power/utilities infrastructure, not a chip name) is uncorrelated with the tech softness — no thesis break, holding. Market closed tomorrow 2026-07-03 for Independence Day; next session Monday 2026-07-06. **Anomaly noted:** `memory/aggressive/portfolio.md` has not been updated since 2026-06-23 EOD (9 days stale as of today) — Aggressive Bull's routines appear to have stopped running or pushing to main; race-scoreboard number below is last-known, not live. Flagged to the human via Telegram.
+
+**Race scoreboard (2026-07-02 close):** Bull −0.113% (since 2026-07-01 re-inception) | AGGRO −7.123% (stale, last updated 2026-06-23, since its 2026-06-04 inception — NOT a live comparison) | SPY −0.230% (since 2026-07-01 anchor $745.665). Bull and AGGRO are on different inception dates post-reset so this is not apples-to-apples; flagging AGGRO staleness is the actionable item this run.
 
 **2026-07-02 midday (~12:36 ET):** No trades — midday only manages existing risk. VST at −3.41% from entry (USD 149.42 vs USD 154.70), well above the −7% cut threshold. News scan triggered by the >3% move: no thesis-breaking catalyst found — Bernstein/Wells Fargo both reaffirmed Buy 2026-07-01, June 24 revolver expansion (USD 5.5B) and Fitch IG upgrade stand, Cogentrix/Helix/Meta-AWS PPA catalysts intact. Move reads as broad-tape softness, not a thesis break — holding. Stop audit 1/1 PASS (trailing stop order bdfb5f67 live, HWM USD 156.24, stop USD 140.616). No shock (−0.153% intraday vs last_equity). Drawdown 0.153% vs HWM, not triggered.
 

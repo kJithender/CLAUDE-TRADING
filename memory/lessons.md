@@ -5,6 +5,16 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons (recent)
 
+### 2026-07-02 (close) — Aggressive Bull's memory has not updated since 2026-06-23
+`memory/aggressive/portfolio.md` (and its sibling files, all last-modified
+2026-06-30 with no content past the 2026-06-23 EOD entry) show no activity
+for 9 days despite today being 2026-07-02 — AGGRO's scheduled routines
+appear to have stopped running or stopped pushing to `main`. Cautious
+Bull's close routine only has read access to AGGRO's files, so this run
+can't diagnose or fix it — flagged to the human via Telegram instead. Any
+"vs AGGRO" race-scoreboard number reported while this persists is stale
+and should be labeled as such, not treated as live.
+
 ### 2026-07-01 (pre-market, third run) — Halt-and-notify resolved correctly; re-baseline executed on human confirmation, not before
 The two-run halt on the account mismatch (documented in the two entries
 directly below) worked exactly as intended: it kept the system from drafting
