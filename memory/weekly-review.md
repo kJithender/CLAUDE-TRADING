@@ -2,6 +2,99 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-07-03 (Week 1 of the new track record — account reset; 2 active trading days: Wed Jul 1, Thu Jul 2; Jul 3 Independence Day observed, market closed)
+
+**⚠️ Administrative note — week-ending-2026-06-26 review never ran.** Between
+this entry and the 2026-06-19 entry below, the paper account was reset to a
+fresh $100,000 flat balance (discovered 2026-07-01; confirmed intentional via
+human `NOTE:` in `control.md`) and `strategy.md`/`portfolio.md` were
+re-initialized with a new 2026-07-01 inception. The week-ending-06-26 review
+was never generated — most likely the routine's schedule/trigger lapsed
+during the same window the account was reset (both flagged as anomalies by
+the close routine on 2026-07-02/07-03). That week's data is moot regardless:
+the account it would have described no longer exists. This entry is the
+**first review of the new track record**, covering the two trading days
+since re-inception (2026-07-01 close $100,000.00 / SPY anchor $745.665)
+through today. All comparisons below use the new baseline; the full
+May 21 – June 23 history remains in git log and the entries further down
+this file for reference only.
+
+- **Bull return (since re-inception, 2026-07-01 → 2026-07-03):** −0.106% ($100,000.00 → $99,894.14)
+- **SPY return (same period, $745.665 → $744.86, last settled close 2026-07-02; market closed 2026-07-03):** −0.108%
+- **Result:** Bull essentially flat vs SPY, ahead by **+0.002pp** (immaterial — 2 trading days of data)
+- **Since inception:** same as week return above (this is the first week of the new baseline)
+- **HWM:** $100,000.00 (set at re-inception) | drawdown −0.106% — far within the −10% circuit breaker ✓
+- **Grade:** A−
+
+### Trade statistics (new baseline — sample far too small to draw conclusions)
+
+| Metric | Value |
+|--------|-------|
+| New trades this week | 1 (BUY VST, 29sh @ USD 154.70, 2026-07-02) |
+| Total closed trades (new baseline) | 0 |
+| Win rate | N/A — 0 closed trades since reset |
+| Profit factor | N/A |
+| Avg holding days | N/A — VST still open, held 1 trading day as of Jul 3 |
+| Biggest standing lesson (carried from pre-reset ledger) | Entries into macro-inflection environments with a co-located stop and −7% rule → near-maximum loss exits (still a valid standing principle even though the specific closed trades that produced it predate the reset) |
+
+⚠️ **Ledger note:** `trades.jsonl` and `closed-trades.md` still carry pre-reset
+entries (V, META, and the aggro-tagged trims/closes from May–June). Those
+describe the discarded account and are not part of the new baseline's
+statistics — only the 2026-07-02 VST buy onward counts going forward. No
+reconciliation action needed; the pre-reset entries are historical record,
+not live data.
+
+### Process audit
+
+| Check | Result | Grade |
+|-------|--------|-------|
+| Cash drag (95.62% vs 25–40% target band for the build phase) | Justified: this is trading-day 2 of a freshly reset account. A full watchlist re-verification (9 names, fresh 50-day SMA + 20-day ATR from live Alpaca bars) found every single name failing the technical-confirmation entry signal this week — either extended >10% above its 50-day or in a confirmed downtrend. High cash is the correct, expected posture per `strategy.md`'s "Starting from all cash" section, not a passive default. | ✓ Justified |
+| Sector caps | Energy/Utilities (VST) 4.39%, cash 95.62% — nowhere near the 60% cap | ✓ |
+| Stop discipline | VST's 10% trailing stop (order `bdfb5f67`) confirmed live at every routine session this week (market-open, midday, close, and today's holiday pre-market/midday/close) | ✓ PERFECT |
+| Weekly new-position count | 1/3 slots used (VST, 2026-07-02) | ✓ |
+| Thesis contracts | VST has invalidation ($148 close on volume) and review_by (2026-08-06); reviewed and unchanged at every session this week | ✓ |
+| Loss post-mortems | None required — no exits this week | ✓ N/A |
+| Guardrail checks | Complete tables at every routine session (pre-market, market-open, midday, close ×3 including a full holiday-closed day) | ✓ |
+
+### What worked
+
+- **Disciplined re-baseline after the account reset.** The two prior halt-and-notify runs (2026-07-01) correctly refused to draft trades against an ambiguous account state and waited for explicit human confirmation before rebuilding `portfolio.md`/`strategy.md` from live data. No trades were rushed once the blocker cleared — the VST entry a day later was independently researched and gated, not a knee-jerk "let's trade now" reaction.
+- **VST entry passed 4-of-5 entry signals and was sized correctly for its elevated volatility** — half the normal 9% starter (4.44% of equity) because 20-day ATR (3.80%) exceeded the 3% volatility-check threshold. Thesis (Helix Digital Infrastructure, Cogentrix, Fitch IG upgrade, USD 5.5B revolver) has stayed intact all week with no new negative information.
+- **Every other watchlist name was correctly rejected, not force-fit.** A full fresh SMA/ATR re-verification (documented with sourcing in `research-log.md`) found LLY/V/JNJ extended >10% above their 50-day and NVDA/PWR/MSFT/COST/WMT below theirs — real numbers, not a vibe check. LRCX was additionally held back by a fresh multi-executive insider-selling cluster pending 10b5-1 verification. This is exactly the discipline the "don't rush deployment" lesson (2026-05-29, 2026-06-05) calls for.
+- **Macro reads landed correctly.** The June jobs miss (+57K vs ~113K expected) was read as dovish rather than recessionary, consistent with the Dow's July 2 record close; the ongoing chipmaker weakness (down for a second session on AI-valuation-stretch concerns) directly validates keeping NVDA/LRCX gated rather than buying the "AI dip" on story alone.
+- **Corrected a data-quality bug mid-week:** the close routine caught that it had used a pre-settlement live quote instead of the official `dailyBar.c` close for SPY on 2026-07-02, and fixed the comparison — a small but real improvement to measurement discipline.
+
+### What didn't work
+
+- **The week-ending-2026-06-26 review gap** (see administrative note above) means there is a real hole in the audit trail, even though the underlying data is moot. Worth a permanent fix: verify the weekly-review routine's trigger/schedule is robust to account changes and doesn't silently skip a Friday.
+- **Aggressive Bull's memory has been stale since 2026-06-23** (10 days as of today) — its routines appear to have stopped running or stopped pushing to `main`. This blocks any meaningful cross-Bull comparison this week (see section 7b) and has now persisted long enough to warrant a direct check from the human, not just another flag.
+- Only 2 trading days of new-baseline data exist. Nothing here should be treated as a trend — flagging explicitly per the playbook's instruction not to over-read small samples.
+
+### Macro context (week of June 29 – July 3, 2026)
+
+- **Dow record high July 2** (+1.14% to 52,900.07), led by Apple (+4.80%), McDonald's (+4.07%), Disney (+3.84%). S&P 500 "little changed" for the week — tech-sector declines offset gains in 8 of 11 sectors.
+- **Chipmakers fell for a second consecutive session** on questions of whether AI-capex optimism has pushed semiconductor valuations too far — corroborates the active AI-capex-digestion caution flag in `strategy.md` and this week's NVDA/LRCX gate failures.
+- **June jobs report:** +57K vs ~113K expected (miss), unemployment ticked down to 4.2%. Read as dovish (pushes back Fed hike odds), not recessionary.
+- **Market closed Friday July 3** for Independence Day (observed); reopens Monday July 6, 09:30 ET.
+- **10yr Treasury** remains below the 4.75% new-buy gate (last read ~4.46%, unchanged this week per available data).
+
+### Aggressive Bull lesson (section 7b)
+
+**AGGRO data is STALE — last updated 2026-06-23 EOD (10 days as of this review).** `memory/aggressive/portfolio.md`, `trade-log.md`, `closed-trades.md`, and `weekly-review.md` all stop at the June 23 close / Week 3 (ending June 19) review; there is no evidence AGGRO's routines have run since. This has now been flagged by Cautious Bull's close routine on 2026-07-02 and 2026-07-03, and is flagged again here. **Recommendation to the human:** this has passed the point of "worth a note" — please check whether Aggressive Bull's scheduled routines are still configured/firing.
+
+**Last-known AGGRO figures (2026-06-23 EOD, stale):** equity $92,876.82, since-inception (2026-06-04) return −7.123%, alpha vs SPY −4.392pp. Compared against Cautious Bull's own new-baseline return of −0.106% since 2026-07-01, **AGGRO is not ahead of Cautious Bull** — it is well behind on its own (different, older) inception timeline. The two inception dates are not apples-to-apples (AGGRO June 4 vs Cautious July 1, following the account reset), so no numeric alpha-gap comparison is meaningful this week beyond the qualitative point: AGGRO is trailing, not leading.
+
+**One lesson worth carrying forward regardless of the staleness:** AGGRO's Week 3 review (2026-06-19, see entry below) documented a "proactive trim heuristic" — trimming 25% of a position once its buffer to a forced-exit threshold narrows below a set margin, rather than waiting for the mechanical rule to fire at a worse price. Cautious Bull doesn't have an equivalent mechanical -X% midday cut rule (we use the −7% rule and a 10% trailing stop), but the underlying idea — don't let a position's cushion above a hard exit threshold silently erode without a proactive decision — is worth keeping in mind if VST's buffer above its $148 invalidation level ever compresses meaningfully. No rule change is being made this week; there isn't yet a live case where it would apply.
+
+**Cross-Bull learning counter update:** AGGRO is NOT beating Cautious Bull by any measure available (stale or otherwise) — it trails. Counter = **0** (unchanged; the >5pp-for-2-weeks AGGRO-leads condition has never been close to met). `CROSS_BULL_LEARNING:` in `control.md`: confirmed blank, no change needed.
+
+### Strategy adjustments
+
+- **Watchlist hygiene applied:** purged JNJ and WMT (4+ weeks on the list with no dated catalyst — see `research-log.md` and `strategy.md` for the reasoning). Added AAPL as an unvetted candidate (led the July 2 record session; needs a full price/ATR/valuation gate before any consideration).
+- No changes to entry/exit signals, sizing, or guardrails this week — the system performed exactly as designed in its first week under the new baseline. Continue the same disciplined re-verification cadence at every pre-market.
+
+---
+
 ## Week ending 2026-06-19 (Week 5 — 3 active trading days: Mon Jun 16, Tue Jun 17, Wed Jun 18; Jun 19 Juneteenth holiday)
 
 - **Bull return (week):** +0.397% ($98,648.01 → $99,039.61)

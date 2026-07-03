@@ -5,6 +5,66 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-03 — Weekly review research (~16:35 ET, market closed all day — Independence Day observed)
+
+**Macro / week in review (week of June 29 – July 3, 2026):** US equities mixed
+into the holiday. Dow closed at a record high July 2 (+1.14% to 52,900.07),
+led by Apple (+4.80%), McDonald's (+4.07%), Walt Disney (+3.84%). S&P 500
+finished "little changed" for the week — tech-sector declines offset gains in
+eight of eleven sectors. Nasdaq underperformed (down as much as −2% intraday
+July 2) as chipmakers fell for a **second consecutive session** on questions
+of whether AI-capex optimism has pushed semiconductor valuations beyond
+reasonable levels — this directly corroborates the AI-capex digestion caution
+flag already active in `strategy.md` and the technical-gate failures on
+NVDA/LRCX this week. June nonfarm payrolls badly missed (+57K vs ~113K
+expected) but unemployment ticked down to 4.2%; market read the miss as
+dovish (pushes back Fed hike odds) rather than recessionary — Dow's record
+close confirms a benign read. Market closed Friday July 3 for Independence
+Day (observed); reopens Monday July 6 09:30 ET.
+
+**VST (held position) week check:** No new company-specific catalyst this
+week beyond what's already tracked (Helix Digital Infrastructure, Cogentrix,
+Fitch IG upgrade, USD 5.5B revolver — all still intact per pre-market
+2026-07-03 entry below). Analyst consensus remains Buy (13 analysts), average
+price target USD 231.85 vs current ~USD 151 — wide implied upside if the
+thesis plays out. 2026 revenue forecast raised from ~USD 18.8B to USD 23.3B
+per recent estimates revisions; Q1 2026 adjusted EBITDA +20% YoY. No
+earnings until 2026-08-06 (review_by date unchanged). Thesis intact, HOLD.
+_Note: a general web search returned a stray VST closing print (~USD 162,
+dated June 29) that does not reconcile with Alpaca's own daily bars for the
+position (VST traded in the USD 148–155 range June 29–July 3 per the
+account's own fills and mark-to-market) — treated as an unreliable
+web-search artifact and disregarded in favor of the broker's live price feed,
+per standing practice of trusting Alpaca data over general search results for
+price levels._
+
+**Best performers this week / new watchlist scan:** Broad "best of Q2" lists
+skew toward speculative small/mid-caps not eligible under the $5B market-cap
+floor. The one large-cap, on-strategy name surfacing repeatedly in this
+week's session commentary is **Apple (AAPL)** — led the Dow's July 2 record
+session (+4.80%) on no single new catalyst identified in this pass (broad
+mega-cap strength, possibly some rotation out of pressured AI-semi names into
+safer mega-cap tech). Adding AAPL to the watchlist as a fresh candidate
+(date added 2026-07-03) pending a full price/ATR/valuation gate at a future
+pre-market — not yet vetted, not a trade signal today.
+
+**Watchlist hygiene decision (this review):** Applying the "purge if 4+ weeks
+without a trigger" rule literally would flag six names (LLY, NVDA, MSFT,
+COST, JNJ, WMT — all added 2026-05-22 to 05-29, none has cleared its entry
+gate since). Distinguishing signal from decoration: LLY, NVDA, MSFT, and COST
+each carry a specific, still-evolving catalyst that is being actively
+re-gated with fresh numbers every single pre-market (Medicare GLP-1 Bridge
+now live, AI-capex digestion watch, Azure Copilot monetization, COST's August
+earnings) — that is the opposite of decoration, it is a disciplined pipeline
+waiting on a technical setup. **JNJ and WMT, by contrast, carry no specific
+forward catalyst** ("defensive quality compounder" / "market-share gains
+from cost-conscious consumer," both marked "ongoing; no hard expiry") — pure
+decoration under the hygiene definition. **Purging JNJ and WMT this review**;
+they may return to the watchlist if a specific, dated catalyst emerges. See
+`strategy.md` for the updated table.
+
+---
+
 ## 2026-07-03 — Pre-market research (~08:15 ET, market closed — Independence Day observed) — full watchlist re-gate, no trades
 
 ### Live-switch guard

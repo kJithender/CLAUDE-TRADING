@@ -139,8 +139,9 @@ trade off this data past a few sessions old._
 | PWR    | Industrials | 2026-06-12 | Grid/data-center infrastructure buildout; record backlog (USD 48.5B) but expensive with no fresh catalyst. 2026-07-03: $667.89, **-6.16% below 50d SMA**, ATR 3.87% still gated — technical signal FAILS. | Re-verify at next pre-market |
 | MSFT   | Tech / Enterprise AI | 2026-05-22 | Azure AI platform compounding. 2026-07-03: $389.79, **-4.35% below 50d SMA** — technical signal FAILS, part of the broader mega-cap tech pullback. | Re-verify at next pre-market |
 | COST   | Consumer Defensive | 2026-05-29 | Membership model loyalty. 2026-07-03: $952.02, **-4.06% below 50d SMA** — technical signal FAILS; no fresh catalyst. | Re-verify ahead of ~August earnings |
-| JNJ    | Healthcare | 2026-05-22 | Defensive quality compounder. 2026-07-03: $263.04, **+13.02% above 50d SMA** — extended, technical signal FAILS. | Ongoing; no hard expiry |
-| WMT    | Consumer Defensive | 2026-05-22 | Market-share gains from cost-conscious consumer. 2026-07-03: $111.72, **-9.17% below 50d SMA** — technical signal FAILS, in a downtrend. | Ongoing; no hard expiry |
+| AAPL   | Tech / Consumer | 2026-07-03 | New candidate (weekly review scan): led the Dow's July 2 record session (+4.80%), no single confirmed catalyst yet identified — possible rotation out of pressured AI-semi names into mega-cap tech. Not yet vetted on price/ATR/valuation gates. | Full gate check within 2 weeks or drop |
+
+_Purged 2026-07-03 (weekly review hygiene — 4+ weeks on the list with no specific forward catalyst, "ongoing/no hard expiry" is decoration, not a pipeline): **JNJ** (defensive compounder, no dated catalyst, added 2026-05-22), **WMT** (market-share thesis, no dated catalyst, added 2026-05-22). May return if a specific, dated catalyst emerges._
 
 _Purged (carried from 2026-06-19 weekly review — still not near-term candidates unless a fresh catalyst emerges): AVGO, AMZN, META, XOM, UNH. See weekly-review.md history for original rationale._
 
