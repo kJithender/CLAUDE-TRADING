@@ -21,7 +21,7 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-03 ~08:15 ET (pre-market, market closed — Independence Day observed) — no trades; VST holding within thresholds
+**Last updated:** 2026-07-03 ~09:36 ET (market-open, market closed — Independence Day observed) — no trades; VST holding within thresholds
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
@@ -64,6 +64,8 @@ reference but is **not** the live comparison baseline going forward.
 _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): Bull ended at $98,711.58 (−1.289%) vs SPY total-return +... — full detail in git history and `weekly-review.md`. Not comparable going forward; new inception above is the live baseline._
 
 ## Notes
+
+**2026-07-03 market-open (~09:36 ET, market closed — Independence Day observed):** `clock` confirmed `is_open: false`, next open 2026-07-06 09:30 ET. Live account re-sync matches memory exactly: equity USD 99,894.14, cash USD 95,513.69 (95.62%), VST 29sh @ avg USD 154.70 unchanged, trailing stop `bdfb5f67` live (HWM USD 156.24, stop USD 140.616). Today's pre-market plan (`plan_date: 2026-07-03`) had zero planned trades since the market is closed today — no action was possible or required. Per the market-open playbook, a closed market means no trades and journal-only; stop audit and any exit reconciliation carry to the next routine when the market is open (Monday 2026-07-06).
 
 **2026-07-03 pre-market (~08:15 ET, market closed — Independence Day observed):** Holiday research run (next open Monday 2026-07-06); no trading possible or planned. Live-synced account: equity $99,894.14, cash 95.62%, VST 29sh unchanged, unrealized −2.36%. Drawdown 0.106% (not triggered), no shock, sector cap 4.39% (fine), stop audit 1/1 PASS (order bdfb5f67, HWM $156.24, stop $140.616). VST thesis contract reviewed: invalidation ($148 close on volume) not triggered, review_by 2026-08-06 (earnings) not yet reached — HOLD, contract unchanged. Ran a full watchlist re-verification (NVDA, LLY, V, LRCX, PWR, MSFT, COST, JNJ, WMT) against fresh 50-day SMA and 20-day ATR data — every single name fails the technical-confirmation entry signal today: LLY/V/JNJ are extended >10% above their 50-day, NVDA/PWR/MSFT/COST/WMT trade below theirs, and LRCX (borderline on SMA) carries a fresh multi-executive insider-selling cluster (CEO Form 144 + Director + SVP sales, Jul 2) on top of a 6.38% ATR — deferred pending 10b5-1 verification. See `research-log.md` for the full table and sourcing. No trades planned for Monday's open under current data; cash-drag justified explicitly (see research log) rather than left as a default. Macro backdrop unchanged and still constructive: June jobs report badly missed (+57K vs ~110K expected) but market read it as dovish (Dow record close Jul 2); 10yr still below the 4.75% gate.
 

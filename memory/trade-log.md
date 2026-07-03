@@ -3,6 +3,15 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-03 09:36 ET — MARKET-OPEN (no trades; market closed — Independence Day observed)
+
+- **Action:** None — `clock` confirms `is_open: false`, `next_open: 2026-07-06T09:30:00-04:00`. Today's plan (2026-07-03 pre-market, `plan_date: 2026-07-03`) had zero planned trades since the market is closed for the observed Independence Day holiday — no stale-plan or double-run risk.
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Account re-sync:** equity USD 99,894.14, cash USD 95,513.69 (95.6%), matches `portfolio.md` exactly — no drift.
+- **VST:** 29sh @ avg USD 154.70, current USD 151.05 (−2.36%), well above the −7% cut threshold. Trailing stop `bdfb5f67` confirmed live (HWM USD 156.24, stop USD 140.616).
+- **Per playbook:** market closed → no trades, journal only, skip to step 6/7/8 (stop audit deferred to next routine with the market open).
+
 ## 2026-07-03 08:15 ET — PRE-MARKET (no trades; market closed — Independence Day observed)
 
 - **Action:** None — market closed, `is_open: false`, next open 2026-07-06 09:30 ET. Full research pass done anyway per the holiday-premarket precedent (2026-05-25) so Monday's open has a ready plan.
