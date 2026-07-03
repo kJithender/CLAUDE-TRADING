@@ -5,6 +5,12 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons (recent)
 
+### 2026-07-03 (close) — 🚨 Weekly review gap: week-ending-2026-06-26 review never ran
+Today (Friday 2026-07-03) the close routine's Friday watchdog check found the newest entry in `memory/weekly-review.md` dated 2026-06-19 — 14 days old, past the 7-day staleness threshold. A weekly review should have been written for the week ending 2026-06-26, and it is missing entirely. This mirrors the Aggressive Bull outage pattern (routines silently stopping) flagged on 2026-07-02 — worth checking whether the weekly-review routine's schedule/trigger is still active. Flagged to the human via Telegram. Today's own weekly review (week ending 2026-07-03) is scheduled for 4:30 PM ET and should still run separately from this close routine.
+
+### 2026-07-03 (close) — Use `snapshot.dailyBar.c`, not a live quote, for the official SPY close
+The 2026-07-02 close routine recorded SPY's close as $743.95 for the vs-SPY comparison. Re-verifying via `./scripts/alpaca.sh snapshot SPY` on 2026-07-03 shows the actual settled `dailyBar.c` for 2026-07-02 was $744.86 — a ~0.12% difference. The close routine runs at 3:50 PM ET, 10 minutes before the 4:00 PM settle, so a live quote or `latestTrade` price captured then can differ from the official close. **Lesson:** when recording "today's SPY close" for the performance table, always pull the previous trading day's `dailyBar.c` from the `snapshot` endpoint (or an explicit-date-range `bars` call), never a `latestQuote`/`latestTrade` field — those are intraday, not the settled close, and can drift enough to distort the vs-SPY comparison.
+
 ### 2026-07-03 (pre-market) — `scripts/alpaca.sh bars` returns null without explicit start/end dates
 Calling `./scripts/alpaca.sh bars <SYM> 1Day <limit>` (which only sets `timeframe` and
 `limit`, no `start`/`end`) returned `{"bars":null,...}` for every symbol tried, even

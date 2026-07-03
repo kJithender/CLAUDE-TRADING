@@ -21,7 +21,7 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-03 ~09:36 ET (market-open, market closed — Independence Day observed) — no trades; VST holding within thresholds
+**Last updated:** 2026-07-03 ~15:52 ET (close, market closed all day — Independence Day observed) — no trades; VST holding within thresholds; Friday watchdog flagged (week-ending-6/26 review missing)
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
@@ -59,11 +59,18 @@ reference but is **not** the live comparison baseline going forward.
 |--------|------|-----|------------|
 | New inception (2026-07-01 close) | $100,000.00 | $745.665 | — (baseline) |
 | 2026-07-02 market-open | $99,981.30 (−0.02%) | — | — |
-| 2026-07-02 close | $99,887.48 (−0.113%) | $743.95 (−0.230%) | **+0.117pp** (Bull ahead of SPY) |
+| 2026-07-02 close (corrected, see note below) | $99,887.48 (−0.113%) | $744.86 (−0.108%) | **−0.005pp** (essentially flat) |
+| 2026-07-03 close (market closed all day — Independence Day observed; no change) | $99,894.14 (−0.106%) | $744.86 (−0.108%, last trading day) | **+0.002pp** (essentially flat) |
+
+**Correction (2026-07-03 close):** the 2026-07-02 close entry originally used SPY $743.95 for that day's "close," giving a +0.117pp gap. Re-verifying via the Alpaca `snapshot` endpoint's `dailyBar` field shows the actual settled close was **$744.86** — the $743.95 figure was very likely a live quote grabbed a few minutes before the 4:00 PM ET settle (the close routine runs at 3:50 PM). Corrected above. Difference is immaterial to any guardrail decision, but the vs-SPY gap for 07-02 is properly ~flat, not +0.117pp. **Lesson going forward:** always read the `dailyBar.c` field from `snapshot`, not a bare quote, when recording an official daily close.
 
 _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): Bull ended at $98,711.58 (−1.289%) vs SPY total-return +... — full detail in git history and `weekly-review.md`. Not comparable going forward; new inception above is the live baseline._
 
 ## Notes
+
+**2026-07-03 close (~15:52 ET, market closed all day — Independence Day observed, NOT a half-day):** Control switch STATUS: ACTIVE, no NOTE/QUERY pending. No trading session occurred today at all (confirmed via `clock`: `is_open: false` all day, `next_open: 2026-07-06T09:30:00-04:00`) — this is a full closure, not a half-day (next_close would show 13:00 ET on a half-day; it shows the normal 16:00 ET for Monday). Equity unchanged from this morning's pre-market snapshot: $99,894.14, cash $95,513.69 (95.62%), VST 29sh @ avg $154.70 unchanged, trailing stop `bdfb5f67` live (HWM $156.24, stop $140.616) — stop audit 1/1 PASS. Drawdown 0.106% vs HWM $100,000 — not triggered (9.89pp headroom). No shock (equity = last_equity, market closed). Sector exposure: Energy/Utilities 4.39%, cash 95.62% — within all caps. No exits today, so no new `closed-trades.md` entry needed. **Corrected the 07-02 SPY close figure** (see Performance table above) — official settled close was $744.86, not $743.95; the vs-SPY gap for that day is properly ~flat rather than +0.117pp. Market context: Dow closed at a record high 2026-07-02 ahead of the holiday; S&P 500 finished little changed; Nasdaq lower on semiconductor/AI-stock weakness — VST (utilities/power infrastructure, not an AI-semi name) is uncorrelated with that weakness, no thesis impact. **🚨 Friday watchdog:** today is Friday 2026-07-03 and the newest entry in `weekly-review.md` is dated 2026-06-19 — 14 days old, over the 7-day threshold. The week-ending-2026-06-26 review appears to have never run. Flagged to the human via Telegram; today's own weekly review (week ending 2026-07-03) is a separate routine scheduled 4:30 PM ET today and should still fire.
+
+**Race scoreboard (2026-07-03 close):** Bull −0.106% (since 2026-07-01 re-inception) | AGGRO −7.123% (STALE — last updated 2026-06-23 EOD, since its 2026-06-04 inception; `memory/aggressive/portfolio.md` has shown no new activity for 10 days as of today) | SPY −0.108% (since 2026-07-01 anchor $745.665, corrected close). Different inception dates make Bull-vs-AGGRO not apples-to-apples; AGGRO staleness remains the actionable item.
 
 **2026-07-03 midday (~12:36 ET, market closed — Independence Day observed):** `clock` confirmed `is_open: false`, next open 2026-07-06 09:30 ET, next close 2026-07-06 16:00 ET. No action possible or required — midday only manages existing risk on an open market. VST position and its trailing stop (order bdfb5f67) carry forward unchanged from the pre-market snapshot above. No stop audit, cut, or trim performed this run since there is no live session to act on. Next opportunity to manage risk is the market-open routine Monday 2026-07-06.
 

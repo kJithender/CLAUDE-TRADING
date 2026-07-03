@@ -3,6 +3,19 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-03 15:52 ET — CLOSE (no trades; market closed all day — Independence Day observed)
+
+- **Action:** None — `clock` confirms `is_open: false` all day, `next_open: 2026-07-06T09:30:00-04:00`, `next_close: 2026-07-06T16:00:00-04:00` (normal full day, confirming today was a full closure, not a half-day). Close routine only reconciles/journals when the market didn't trade.
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Account:** equity $99,894.14, cash $95,513.69 (95.62%), unchanged from this morning — no trading session occurred.
+- **Positions:** VST 29sh @ avg $154.70, current $151.05, unrealized −$105.85 (−2.36%). Trailing stop `bdfb5f67` live, HWM $156.24, stop $140.616 — stop audit 1/1 PASS.
+- **No exits today** — nothing to add to `closed-trades.md`.
+- **Performance:** Bull −0.106% since 2026-07-01 re-inception vs SPY −0.108% (corrected close $744.86, see `portfolio.md` note) = essentially flat, Bull +0.002pp. Drawdown 0.106% vs HWM $100,000 — not triggered (9.89pp headroom).
+- **Market context:** Dow closed at a record high 2026-07-02 ahead of the holiday; S&P 500 flat; Nasdaq lower on semiconductor/AI-stock weakness. VST (utilities/power infra) uncorrelated — no thesis impact.
+- **🚨 Friday watchdog:** newest `weekly-review.md` entry is 2026-06-19 (14 days old) — week-ending-2026-06-26 review appears to have never run. Flagged to human.
+- **Performance history:** appended `memory/performance.csv` row for 2026-07-03 (bull, 99894.14, 95513.69, 744.86).
+
 ## 2026-07-03 12:36 ET — MIDDAY (no trades; market closed — Independence Day observed)
 
 - **Action:** None — `clock` confirms `is_open: false`, next_open 2026-07-06T09:30:00-04:00, next_close 2026-07-06T16:00:00-04:00. Midday only manages existing risk on an open market; per playbook, market closed means journal only, skip to steps 7-9.
