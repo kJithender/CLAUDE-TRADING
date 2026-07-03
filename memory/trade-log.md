@@ -3,6 +3,14 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-03 08:15 ET — PRE-MARKET (no trades; market closed — Independence Day observed)
+
+- **Action:** None — market closed, `is_open: false`, next open 2026-07-06 09:30 ET. Full research pass done anyway per the holiday-premarket precedent (2026-05-25) so Monday's open has a ready plan.
+- **VST:** 29sh held, thesis contract reviewed (invalidation not triggered, review_by 2026-08-06 not reached) — HOLD. Stop audit 1/1 PASS (bdfb5f67, HWM $156.24, stop $140.616).
+- **Watchlist re-gate (NVDA, LLY, V, LRCX, PWR, MSFT, COST, JNJ, WMT):** every name fails the technical-confirmation signal (extended >10% above 50-day, or trading below it) — see `research-log.md` 2026-07-03 entry for the full SMA/ATR table. LRCX additionally flagged for a fresh multi-executive insider-selling cluster (Jul 2 Form 144s).
+- **Weekly new-position count:** 1/3 used (VST, 2026-07-02).
+- **Plan for Monday 2026-07-06:** No trades planned; clean "no qualifying setups" outcome, not a passive default.
+
 ## 2026-07-02 12:36 ET — MIDDAY CHECK (no trades)
 
 - **Action:** None — VST within guardrail thresholds; no cuts, no tightening.

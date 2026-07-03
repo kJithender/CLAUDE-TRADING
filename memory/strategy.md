@@ -121,24 +121,26 @@ Do NOT sell on day-to-day noise. Sell on thesis changes.
 
 ## Watchlist
 
-_Watchlist hygiene (rebuilt 2026-07-01 after account reset — all "HELD" tags
-cleared since we hold zero positions now. Prices below are today's live
-close (2026-07-01) where checked; names not re-checked today need fresh
-ATR/price-gate verification before any entry — do not trade off stale June
-data._
+_Watchlist hygiene (fully re-verified 2026-07-03 pre-market — 50-day SMA and
+20-day ATR% pulled fresh for every name via Alpaca IEX daily bars, 2026-04-15
+to 2026-07-02. Full sourcing and table in `research-log.md` 2026-07-03 entry.
+**Every name failed the technical-confirmation entry signal this pass** —
+either extended >10% above its 50-day (chasing) or trading below it
+(downtrend). Re-verify again at the next pre-market before any entry; do not
+trade off this data past a few sessions old._
 
 | Ticker | Sector | Date Added | One-line reason | Catalyst Expiry |
 |--------|--------|------------|-----------------|-----------------|
-| LLY    | Healthcare | 2026-05-22 | GLP-1 dominance; Medicare Bridge went LIVE 2026-07-01; stock already re-rated hard (+7.13% June 26 to $1,208.12; closed $1,191.74 today) — much of the catalyst may already be priced in. Needs a fresh entry-signal check (valuation, ATR) before buying, not a chase. | Re-evaluate entry setup at next pre-market; confirm exact earnings date before any buy |
-| VST    | Energy / Utilities | 2026-06-09 | Helix Digital Infrastructure (KKR+NVIDIA+Kuwait, $10B+, VST preferred power partner) and Cogentrix ($4B, 5,500MW) acquisition both intact. Stock pulled back with the broader tape to $153.16 today (was $163.75 June 18) — a diversifier away from AI-semi risk since it's a power/infra play, not a chip play. | Re-evaluate entry setup at next pre-market; Cogentrix close expected H2 2026 |
-| NVDA   | Tech / AI semi | 2026-05-22 | AI accelerator monopoly thesis intact per 38 analysts (Strong Buy, avg PT $298.87), but the name is now in a real AI-capex digestion scare: −13% from its June high, closed $197.58 today (through the old $200 level), GPU rental rates (B200) down ~31% since late May. Do not treat this as a dip to buy reflexively — re-run price/ATR gates fresh. Higher-risk name than in May. | Re-run price/ATR gates fresh before any entry; confirm earnings date |
-| V      | Financials | 2026-06-10 | Payments infrastructure; OpenAI partnership; stablecoin capabilities. Not re-checked today — verify current price/thesis before treating as active candidate. | Re-verify at next pre-market; confirm earnings date |
-| LRCX   | Semi Equipment | 2026-06-08 | AI fab investment wave; was ATR-gated (>3%) as of June 18. Not re-checked today — re-verify ATR before considering. | Re-verify at next pre-market |
-| PWR    | Industrials | 2026-06-12 | Grid/data-center infrastructure buildout; was ATR-gated + insider-selling flag as of June 18. Not re-checked today — re-verify before considering. | Re-verify at next pre-market |
-| MSFT   | Tech / Enterprise AI | 2026-05-22 | Azure AI platform compounding; not re-checked today. | Re-verify at next pre-market |
-| COST   | Consumer Defensive | 2026-05-29 | Membership model loyalty; consumer defensive; not re-checked today. | Re-verify ahead of ~August earnings |
-| JNJ    | Healthcare | 2026-05-22 | Defensive quality compounder; not re-checked today. | Ongoing; no hard expiry |
-| WMT    | Consumer Defensive | 2026-05-22 | Market-share gains from cost-conscious consumer; not re-checked today. | Ongoing; no hard expiry |
+| LLY    | Healthcare | 2026-05-22 | GLP-1 dominance; Medicare Bridge live since 2026-07-01. 2026-07-03: $1,210.79, **+14.76% above 50d SMA** — extended, technical signal FAILS; much of the catalyst is priced in. Earnings confirmed 2026-08-05. | Re-evaluate entry setup at next pre-market; needs a pullback toward the 50-day |
+| VST    | Energy / Utilities | 2026-06-09 | HELD (29sh). Helix Digital Infrastructure (KKR+NVIDIA+Kuwait) and Cogentrix (5,500MW, targeting H2 2026 close) both intact; Fitch IG upgrade stands. 2026-07-03: $151.07, thesis contract not triggered (invalidation $148, review_by 2026-08-06). | review_by 2026-08-06 (earnings) |
+| NVDA   | Tech / AI semi | 2026-05-22 | AI accelerator monopoly thesis intact (Strong Buy, avg PT ~$300), but still in the AI-capex digestion scare. 2026-07-03: $194.51, **-7.28% below 50d SMA** — technical signal FAILS, confirmed downtrend, not a dip to buy. Earnings confirmed 2026-08-26. | Re-run price/ATR gates fresh before any entry |
+| V      | Financials | 2026-06-10 | Payments infrastructure; OpenAI/agentic-payments partnership; Visa Threat Intelligence Platform. 2026-07-03: $361.65, **+10.93% above 50d SMA** — extended, technical signal FAILS (just over the 10% chase threshold); no pullback since discarded $323.57 entry. Earnings ~2026-07-28 (est., unconfirmed). | Re-verify at next pre-market; wait for a retest of the 50-day |
+| LRCX   | Semi Equipment | 2026-06-08 | AI fab investment wave; record fiscal Q3 (rev +24% YoY) but >70x trailing P/E after a >150% H1 run. 2026-07-03: $351.50, +9.48% vs 50d (borderline) but **ATR 6.38% still gated (>3%)**, PLUS a fresh multi-executive insider-selling cluster (CEO Form 144 30,000sh + Director $19.1M + SVP $4.6M, all 2026-07-02) — verify 10b5-1 status before any future consideration (V-CFO lesson, 2026-06-10). | Re-verify at next pre-market; confirm insider-sale plan type first |
+| PWR    | Industrials | 2026-06-12 | Grid/data-center infrastructure buildout; record backlog (USD 48.5B) but expensive with no fresh catalyst. 2026-07-03: $667.89, **-6.16% below 50d SMA**, ATR 3.87% still gated — technical signal FAILS. | Re-verify at next pre-market |
+| MSFT   | Tech / Enterprise AI | 2026-05-22 | Azure AI platform compounding. 2026-07-03: $389.79, **-4.35% below 50d SMA** — technical signal FAILS, part of the broader mega-cap tech pullback. | Re-verify at next pre-market |
+| COST   | Consumer Defensive | 2026-05-29 | Membership model loyalty. 2026-07-03: $952.02, **-4.06% below 50d SMA** — technical signal FAILS; no fresh catalyst. | Re-verify ahead of ~August earnings |
+| JNJ    | Healthcare | 2026-05-22 | Defensive quality compounder. 2026-07-03: $263.04, **+13.02% above 50d SMA** — extended, technical signal FAILS. | Ongoing; no hard expiry |
+| WMT    | Consumer Defensive | 2026-05-22 | Market-share gains from cost-conscious consumer. 2026-07-03: $111.72, **-9.17% below 50d SMA** — technical signal FAILS, in a downtrend. | Ongoing; no hard expiry |
 
 _Purged (carried from 2026-06-19 weekly review — still not near-term candidates unless a fresh catalyst emerges): AVGO, AMZN, META, XOM, UNH. See weekly-review.md history for original rationale._
 
@@ -161,8 +163,7 @@ _Purged (carried from 2026-06-19 weekly review — still not near-term candidate
 - **Goldman Risk Appetite Indicator:** 99th percentile of readings since 1991 as of end-June 2026 — historically associated with below-average forward 12-month S&P returns. A caution signal on sizing/pace, not a stop-trading signal.
 - **AI-capex digestion:** Mega-cap tech −9% in June; NVDA −13% from its June high; B200 GPU rental rates down ~31% since late May. Treat as an active risk to the "AI infrastructure spend" thesis pillar — require clean entry signals, don't average into AI-semi weakness on story alone.
 - **10yr Treasury yield:** ~4.46% (2026-06-30/07-01) — BELOW the 4.75% gate. New buys permitted on this gate; re-check at every pre-market.
-- **This week's catalysts:** Jobs report Thursday 2026-07-02 (options market pricing a 0.8% SPY swing); bank earnings + CPI July 14; FOMC July 29.
-- **LLY — Medicare GLP-1 Bridge:** went LIVE 2026-07-01. Stock already re-rated (+7.13% June 26). No position held — re-evaluate as a fresh entry, not an add.
-- **VST — Helix + Cogentrix:** both intact; stock pulled back to $153.16 with the broader tape (2026-07-01). No position held — re-evaluate as a fresh entry.
-- **No open positions** as of 2026-07-01 — all Monday conviction ratings, thesis contracts, and sector-exposure tracking reset to zero. Will be populated as new positions are opened.
-| NVDA | _pending fill_ | N/A | Plan: 33sh at market Monday Jun 22; all 5 entry signals met; starts at starter B conviction post-fill |
+- **This week's catalysts:** Jobs report Thursday 2026-07-02 — badly missed (+57K vs ~110K expected), read as dovish, Dow record close same day; bank earnings + CPI July 14; FOMC July 29.
+- **LLY — Medicare GLP-1 Bridge:** went LIVE 2026-07-01. Stock already re-rated hard, now +14.76% above its 50-day (2026-07-03) — no position held, extended, wait for a pullback.
+- **VST — Helix + Cogentrix:** both intact; HELD (29sh since 2026-07-02); thesis contract not triggered, review_by 2026-08-06.
+- **Open positions:** VST only (since 2026-07-02). See `portfolio.md` for live conviction rating, thesis contract, and sector exposure.

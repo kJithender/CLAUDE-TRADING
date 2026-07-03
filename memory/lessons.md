@@ -5,6 +5,18 @@ well, fails, or surprises you. Keep the highest-value lessons near the top._
 
 ## Trading lessons (recent)
 
+### 2026-07-03 (pre-market) — `scripts/alpaca.sh bars` returns null without explicit start/end dates
+Calling `./scripts/alpaca.sh bars <SYM> 1Day <limit>` (which only sets `timeframe` and
+`limit`, no `start`/`end`) returned `{"bars":null,...}` for every symbol tried, even
+with `feed=iex` or `feed=sip` added manually. Passing explicit `start=`/`end=` query
+params to the same `data.alpaca.markets/v2/stocks/<SYM>/bars` endpoint directly via
+curl worked correctly and returned full daily bar history. **Lesson:** until the script
+is fixed, do not trust a bare `alpaca.sh bars` call — if it returns null bars, retry with
+an explicit date range (`curl` with `start=YYYY-MM-DD&end=YYYY-MM-DD&feed=iex` against
+`https://data.alpaca.markets/v2/stocks/<SYM>/bars`) rather than concluding the symbol
+has no data. Worth patching `scripts/alpaca.sh` to default `start` to `limit` trading
+days before `end` (today) in a future maintenance pass.
+
 ### 2026-07-02 (close) — Aggressive Bull's memory has not updated since 2026-06-23
 `memory/aggressive/portfolio.md` (and its sibling files, all last-modified
 2026-06-30 with no content past the 2026-06-23 EOD entry) show no activity

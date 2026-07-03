@@ -5,6 +5,68 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-03 — Pre-market research (~08:15 ET, market closed — Independence Day observed) — full watchlist re-gate, no trades
+
+### Live-switch guard
+- `ALPACA_BASE_URL` = `https://paper-api.alpaca.markets` — contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was empty (`{}`) — no other routine active. Lock written for this run.
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:` line, no `QUERY:` line. `CROSS_BULL_LEARNING:` blank — no action needed.
+
+### Market status
+- `clock`: `is_open: false`, `next_open: 2026-07-06T09:30:00-04:00`. Today (Fri Jul 3) is the observed Independence Day holiday (Jul 4 falls on a Saturday). Next session is Monday 2026-07-06. Per the 2026-05-25 precedent, a holiday pre-market run still adds value: full research done today so Monday's market-open has a ready plan.
+
+### Market posture (as of 2026-07-02 close / early Jul 3)
+- S&P 500 futures roughly flat overnight (~-0.01%), 10yr Treasury drifting toward 4.5%, ISM Manufacturing PMI 53.3 (still expansionary). June jobs report (released Thu Jul 2): nonfarm payrolls +57K vs. ~110K expected, April/May both revised down (-31K, -43K) — weakest print in 4 months. Unemployment rate ticked down to 4.2%, but driven by a 0.3pp drop in labor-force participation (61.5%, lowest since March 2021), not real strength. Market read this as dovish: Dow closed at a record 52,900.07 (+1.14%, +594.83pts) Thursday on reduced near-term rate-hike odds. 10yr yield remains below the 4.75% new-buy gate. Net: soft-landing-with-a-Fed-pause narrative intact; no risk-off trigger. [Sources: cnbc.com/2026/07/02/jobs-report-june-2026, tradingkey.com June jobs shock, bls.gov empsit]
+- Nothing here changes the strategy.md macro thesis (AI-capex digestion still the active risk to watch; real-economy/infra rotation and healthcare secular growth still intact).
+
+### Held position — VST (what changed since yesterday)
+- **VST:** Jul 2 close $151.07 (Alpaca IEX), down from Jul 1 close $153.15 (-1.36% on the day) — in line with broad tape softness, not VST-specific. **Nothing material since yesterday — thesis unchanged.** Vistra remains rated Strong Buy on AI/data-center electricity demand and nuclear scarcity; Q1 2026 beat; Cogentrix (5,500 MW) targeted to close H2 2026; Meta nuclear PPA and Helix consortium intact; Fitch IG upgrade stands. [Sources: tickernerd.com/stock/vst-forecast, sec.gov 8-K vistra-20260331]
+- **Earnings confirmed:** next report **2026-08-06** (Q2) — 22 calendar days / ~23 trading days out. No earnings-window conflict for Monday. [Source: coincodex.com/stock/VST/earnings]
+- **Thesis contract review:** invalidation ("closes below USD 148 on volume, or the 10% trailing stop fires, or the Helix/Cogentrix consortium is disrupted") — NOT triggered ($151.07 > $148). `review_by` 2026-08-06 not yet reached. **Decision: HOLD, contract unchanged**, next explicit review at/before the Aug 6 earnings date.
+- **Stop audit:** order `bdfb5f67` live, HWM $156.24, stop $140.616, trail 10%, GTC exp 2026-09-30. **1/1 PASS.**
+
+### Risk posture
+- **Drawdown circuit breaker:** HWM (from `history 1A 1D`) = $100,000.00. Current equity $99,894.14. Drawdown **-0.106%** — not triggered (9.9pp of headroom to the -10% breaker).
+- **Intraday shock check:** market closed; equity flat vs `last_equity` ($99,894.14) — no shock.
+- **Sector cap:** Energy/Utilities (VST) = $4,380.45 / $99,894.14 = **4.39%** — far below the 60% cap.
+- **Weekly new-position count:** 1/3 used in the week containing the Jul 2 VST buy (see `trade-log.md` 2026-07-02 entry, count reset to 0/3 on 2026-07-01 re-baseline). Whether Monday Jul 6 starts a fresh weekly window is not yet load-bearing since no buy is planned regardless.
+
+### Watchlist — full ATR/50-day SMA re-verification (Alpaca IEX daily bars, 2026-04-15 to 2026-07-02, `bars` CLI wrapper returned null with no explicit date range — worked around with direct `data.alpaca.markets` calls; CLI likely needs a start/end param added, flagging as an operating lesson below)
+
+| Ticker | Last close (Jul 2) | 50d SMA | vs. 50d | 20d avg daily range (ATR%) | Entry-signal-4 (technical) | Notes |
+|--------|--------------------:|--------:|--------:|---------------------------:|:---------------------------|-------|
+| NVDA | $194.51 | $209.77 | **-7.28%** | 3.16% | **FAIL** (below 50d) | AI-capex digestion continues; down from $197.58 Jul 1. Strong Buy consensus intact (avg PT ~$300) but stock still in a confirmed downtrend below its 50-day — not a "buy the dip," per strategy.md's post-reset caution. Earnings 2026-08-26. |
+| LLY | $1,210.79 | $1,055.08 | **+14.76%** | 3.05% | **FAIL** (extended >10%) | Medicare GLP-1 Bridge went live Jul 1; thesis confirmed but the re-rate already priced in most of the good news — chasing here violates the "don't buy blow-off extensions" rule. Earnings 2026-08-05. |
+| V | $361.65 | $326.01 | **+10.93%** | 2.05% | **FAIL** (extended, just over 10%) | OpenAI/agentic-payments + Visa Threat Intelligence Platform catalysts intact, Buy-consensus intact, but the stock has run straight up from the discarded $323.57 average entry with no pullback — treat as extended, wait for a retest of the 50-day. Earnings ~2026-07-28 (est.) — no near-term conflict but also not a fresh setup today. |
+| LRCX | $351.50 | $321.06 | +9.48% | **6.38%** | Borderline pass on SMA, but **FAIL overall** | Record fiscal Q3 (revenue +24% YoY, EPS beat) but trading >70x trailing P/E after a >150% H1 run; -15% cumulative over consecutive sessions this week on the broader semi selloff; **fresh insider-selling cluster (Jul 2): CEO Timothy Archer filed Form 144 for 30,000 sh, following a Director's $19.1M sale and an SVP's $4.6M sale** — per knowledge-base.md 1.4, multi-executive selling clusters at a name that just ran hard are a flag worth digging into (10b5-1 status unconfirmed) before any future entry, exactly the V-CFO lesson from 2026-06-10. Also still ATR-gated (6.38% > 3%). Defer. |
+| PWR | $667.89 | $711.72 | **-6.16%** | 3.87% | **FAIL** (below 50d) | -3.8% pullback described as valuation-driven profit-taking, no fresh catalyst; still ATR-gated. |
+| MSFT | $389.79 | $407.53 | **-4.35%** | 2.97% | **FAIL** (below 50d) | No new catalyst since last check; still in the broader mega-cap tech pullback. |
+| COST | $952.02 | $992.26 | **-4.06%** | 1.81% | **FAIL** (below 50d) | Not near earnings (~August). No fresh catalyst. |
+| JNJ | $263.04 | $232.73 | **+13.02%** | 1.99% | **FAIL** (extended >10%) | Already extended; no new information to justify chasing. |
+| WMT | $111.72 | $123.00 | **-9.17%** | 2.20% | **FAIL** (below 50d, in a downtrend) | No catalyst found; stay out. |
+
+**Result: every watchlist name fails the technical-confirmation entry signal today** — either extended more than 10% above its 50-day (LLY, V, JNJ) or trading below a declining/flat 50-day (NVDA, PWR, MSFT, COST, WMT), with LRCX additionally carrying a fresh insider-selling flag on top of its ATR gate. This is a clean, discipline-driven "no trades" outcome, not indecision.
+
+### Earnings calendar (confirmed for all held + candidate names)
+- VST: 2026-08-06 | LLY: 2026-08-05 | NVDA: 2026-08-26 | V: ~2026-07-28 (est., unconfirmed exact date) — none within 2 trading days of Monday 2026-07-06. No earnings-window restriction applies to any candidate this cycle.
+
+### Cash-drag check
+- Cash is 95.6% of equity, well above the 25-40% build-phase target band, and has been since the Jul 1 re-inception (this is only the second trading week post-reset). **Explicit decision: stay in cash today** — not a passive default. Every watchlist name fails the technical-confirmation gate (see table above), so forcing a second entry this week would violate the "written thesis, no chasing" discipline purely to reduce cash drag. Two of three weekly slots remain unused and ~95% cash provides ample dry powder the moment a name pulls back to a clean setup (NVDA/PWR/MSFT/COST/WMT retracing to reclaim their 50-day, or LLY/V/JNJ pulling back toward theirs).
+
+### Planned trades for today
+No trades planned. Market is closed today (holiday); this plan carries forward as the baseline going into Monday 2026-07-06's market-open, pending any overnight news that changes a gate.
+
+```json
+{
+  "plan_date": "2026-07-03",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-07-02 — Pre-market research (~08:11 ET) — first live gate re-verification since account reset; VST slot 1 planned
 
 ### Live-switch guard
