@@ -5,6 +5,128 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-06 — Pre-market (~08:12 ET, Monday, first trading day of week 2 post-reset)
+
+**Market posture:** S&P 500 futures lean toward a higher open (~62% implied
+probability per prediction-market pricing) after the July 4 weekend. Fed held
+4.25–4.50% at the June meeting and signaled two possible cuts later this
+year; June jobs report (released Fri Jul 3, market closed) badly missed
+(+57K vs ~117K expected, unemployment ticked down to 4.2%) — read as dovish,
+consistent with the Dow's July 2 record close (52,900.07, +1.14%). Nasdaq
+underperformed the same session (−0.8%) on continued AI-semiconductor
+valuation-stretch concerns (second consecutive down session). 10yr Treasury
+still below the 4.75% new-buy gate. Risk-on tone into the open, tech
+still soft — no change to the active AI-capex-digestion caution flag.
+
+**VST (held, 29sh) — what changed since yesterday:** Nothing material, thesis
+unchanged. Price ~$152.95 pre-market vs Friday's $151.05 (little moved over
+the long weekend). Analyst consensus remains Buy (13 analysts per Jul 4
+data), avg PT $231.85. Next earnings confirmed **2026-08-06/07** (sources
+split by a day; both are >2 trading days out — no earnings-window action
+needed). No news found that touches Helix Digital Infrastructure, Cogentrix,
+the Fitch IG upgrade, or the USD 5.5B revolver — all still intact. Trailing
+stop `bdfb5f67` confirmed live (HWM $156.24, stop $140.616).
+
+**Thesis contract review:** VST invalidation ("closes below USD 148 on
+volume, or the trailing stop fires, or the Helix/Cogentrix consortium is
+disrupted") — NOT triggered, current price $152.95 comfortably above $148.
+`review_by` 2026-08-06 not yet reached. **Decision: HOLD, contract
+unchanged, no new review_by needed** (original date still valid).
+
+**Monday conviction-weighted review (VST):** Rated **B** — working but
+flat. Thesis pillars (Helix, Cogentrix, Fitch upgrade) all still intact and
+no new negative information, but the position is essentially flat since
+entry (−1.13%, $154.70 → $152.95) with the next real catalyst (earnings)
+still a month out. Not A (no fresh confirming catalyst this week to justify
+"high conviction, working"); not C (no wobble, no drag, nothing quiet enough
+to be a concern — this is week 1 of tracking, so the 3-consecutive-Monday
+trim rule doesn't apply yet regardless).
+
+**AAPL — full gate check (watchlist item added 2026-07-03, "full gate check
+within 2 weeks or drop"):**
+- Price (pre-market) ~$307.31 vs Friday's settled close $308.235.
+- 50-day SMA (fresh Alpaca IEX daily bars, 2026-04-15 to 2026-07-02): $293.46.
+  Current price is **+5.04% above the 50-day** — not extended past the 10%
+  chase threshold. **Technical signal PASSES.**
+- 20-day ATR: **2.98%** of price — just under the 3% volatility-check
+  threshold, so no size-halving would be required if entered.
+- Valuation: TTM P/E **37.32×**, which is **+39% above its own 10-year median
+  (26.77×)**; forward P/E ~30.9×. PEG readings conflict across sources (2.70
+  vs a stale-input 1.23) but the higher figure is the more defensible read
+  given TTM growth. GuruFocus flags the stock as **15.6% above its GF fair
+  value estimate**. **Valuation signal FAILS** — this is a genuinely
+  expensive print, not a cheap or fairly-valued one.
+- Catalyst (1–6mo): WWDC26 "Siri AI"/Apple Intelligence refresh (iOS 27,
+  eligible back to iPhone 11) plus reports of 5 new iPhones including a
+  ~USD 2,500 foldable model (Morgan Stanley: foldables could add USD 40–60B
+  revenue over the next ~18 months). **Signal PASSES** — real, dated
+  product catalysts, not just a story.
+- Earnings momentum: last reported quarter (Q2 FY26, ~March quarter) showed
+  iPhone revenue +22% YoY; however that print is now ~3 months old and the
+  next earnings (confirmed **2026-07-30 after close**) is still 3.5 weeks
+  away — no fresh confirming data point this week. **Signal is stale/weak,
+  not a clean pass.**
+- Macro tailwind: AAPL led the Dow's July 2 record session (+4.80%);
+  mega-cap tech rotation intact. **Signal PASSES.**
+- **Net: 3-of-5 clean passes (technical, catalyst, macro), 1 clear fail
+  (valuation), 1 weak/stale (earnings momentum).** The stock already showed a
+  textbook "sell the rumor, buy... sell the news" pattern after WWDC — it
+  spiked to an intraday record ~$317.40 during the keynote, then gave back
+  ground over the following sessions to today's ~$307. Entering now, a few
+  points off that same post-keynote high, on a name that is +39% above its
+  own 10-year P/E median, is the exact profile of "chasing a story at a
+  stretched valuation" that `lessons.md` and `strategy.md` warn against
+  (see the AI-capex-digestion caution and the Goldman Risk Appetite
+  Indicator sitting at its 99th percentile — a sizing/pace caution flag).
+  **Decision: do NOT buy AAPL today.** It clears the literal 3-of-5 entry
+  bar, but the fail is on valuation specifically, and the pass on earnings
+  momentum is weak — not a confluence I want to size real conviction behind
+  right after a "sell the news" pullback. Keep on the watchlist; re-check
+  before the 2026-07-17 drop-dead date for either (a) a pullback toward the
+  50-day (~$293, which would also improve the valuation read) or (b) a
+  clearer post-earnings valuation reset on 2026-07-30. Not dropping it yet —
+  11 days remain on the gate-check clock.
+
+**Other watchlist names:** No fresh gate-clearing news since the 2026-07-03
+full re-verification (NVDA still consolidating ~$197, still confirmed
+downtrend vs 50-day per that pass; LLY/V/PWR/MSFT/COST unchanged over the
+long weekend; LRCX still ATR-gated pending 10b5-1 confirmation). Not
+re-running the full SMA/ATR table today since only one trading session
+(today) has elapsed since the last full pass — will re-verify fresh before
+any of these are seriously considered.
+
+**Cash-drag check:** Cash is 95.55% vs the 25–40% build-phase target band —
+still justified. This is only the 4th trading day since the 2026-07-01
+re-baseline (2 sessions traded, 1 holiday closure, today making the 3rd
+trading session); the "above target for more than a week" trigger has not
+been reached, and the one live candidate (AAPL) was reviewed in full today
+and explicitly deferred on a valuation fail, not skipped by default. Weekly
+new-position count resets to 0/3 this week (VST was last week's only entry).
+
+**Guardrail / risk posture (live Alpaca data, 2026-07-06 ~08:12 ET):**
+- Equity $99,949.24 | Cash $95,513.69 (95.55%) | Long MV $4,435.55 (4.44%).
+- Drawdown circuit breaker: HWM $100,000.00 (set 2026-07-01), current equity
+  $99,949.24 → drawdown **0.051%** — NOT triggered (9.95pp headroom).
+- Intraday shock: equity $99,949.24 vs last_equity $99,894.14 — no shock
+  (market not yet open; pre-market quote movement only).
+- Sector cap: Energy/Utilities (VST) 4.44% — far below the 60% cap.
+- Stop audit: VST trailing stop `bdfb5f67` confirmed live (HWM $156.24, stop
+  $140.616) — 1/1 PASS.
+- Weekly new-position count: 0/3 used this week.
+
+### Planned trades for today
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-07-06",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-07-03 — Weekly review research (~16:35 ET, market closed all day — Independence Day observed)
 
 **Macro / week in review (week of June 29 – July 3, 2026):** US equities mixed

@@ -21,37 +21,37 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-03 ~15:52 ET (close, market closed all day — Independence Day observed) — no trades; VST holding within thresholds; Friday watchdog flagged (week-ending-6/26 review missing)
+**Last updated:** 2026-07-06 ~08:12 ET (pre-market, Monday) — no trades; VST holding within thresholds; AAPL gate-checked and deferred on valuation
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-03 ~08:15 ET pre-market)
+## Account (live Alpaca data, 2026-07-06 ~08:12 ET pre-market)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,894.14 |
-| Cash | $95,513.69 (95.62%) |
-| Long market value | $4,380.45 (4.39%) |
-| Buying power | $394,320.02 |
+| Equity | $99,949.24 |
+| Cash | $95,513.69 (95.55%) |
+| Long market value | $4,435.55 (4.44%) |
+| Buying power | $394,474.30 |
 | Last equity | $99,894.14 |
 
 ## Open positions
 
-| Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop |
-|--------|-----|-----------|---------|-----------------|--------|----------------|
-| VST | 29 | $154.70 | $151.05 | −$105.85 (−2.36%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $156.24, stop $140.616 — live ✓ |
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
+|--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
+| VST | 29 | $154.70 | $152.95 | −$50.75 (−1.13%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $156.24, stop $140.616 — live ✓ | B (2026-07-06, 1st review) |
 
-**Sector exposure:** Energy/Utilities (VST): $4,380.45 = 4.39%. Cash: $95,513.69 = 95.62%. No sector above 60% cap ✓.
+**Sector exposure:** Energy/Utilities (VST): $4,435.55 = 4.44%. Cash: $95,513.69 = 95.55%. No sector above 60% cap ✓.
 
 **Trailing stop status:** 1/1 positions protected.
-**Stop audit: 1/1 ✓ PASS** (2026-07-03 pre-market).
+**Stop audit: 1/1 ✓ PASS** (2026-07-06 pre-market).
 
-## Risk posture (2026-07-03 pre-market)
+## Risk posture (2026-07-06 pre-market)
 
-- **Drawdown circuit breaker:** High-water mark = $100,000.00. Current equity $99,894.14. Drawdown 0.106% — NOT triggered ✓ (9.89pp headroom to the −10% breaker).
-- **Intraday shock check:** Market closed; equity = last_equity ($99,894.14) — no shock ✓.
-- **Sector cap:** Energy/Utilities 4.39% — well below 60% ✓.
-- **Weekly new-position count:** 1/3 used this week (VST, 2026-07-02) — see `trade-log.md`.
+- **Drawdown circuit breaker:** High-water mark = $100,000.00. Current equity $99,949.24. Drawdown 0.051% — NOT triggered ✓ (9.95pp headroom to the −10% breaker).
+- **Intraday shock check:** Pre-market; equity $99,949.24 vs last_equity $99,894.14 — no shock ✓.
+- **Sector cap:** Energy/Utilities 4.44% — well below 60% ✓.
+- **Weekly new-position count:** 0/3 used this week (new week starting 2026-07-06) — see `trade-log.md`.
 
 ## Performance vs S&P 500
 
@@ -61,12 +61,15 @@ reference but is **not** the live comparison baseline going forward.
 | 2026-07-02 market-open | $99,981.30 (−0.02%) | — | — |
 | 2026-07-02 close (corrected, see note below) | $99,887.48 (−0.113%) | $744.86 (−0.108%) | **−0.005pp** (essentially flat) |
 | 2026-07-03 close (market closed all day — Independence Day observed; no change) | $99,894.14 (−0.106%) | $744.86 (−0.108%, last trading day) | **+0.002pp** (essentially flat) |
+| 2026-07-06 pre-market (before today's open; SPY last settled close still 07-02) | $99,949.24 (−0.051%) | $744.86 (−0.108%, last trading day) | **+0.057pp** (essentially flat, pre-open) |
 
 **Correction (2026-07-03 close):** the 2026-07-02 close entry originally used SPY $743.95 for that day's "close," giving a +0.117pp gap. Re-verifying via the Alpaca `snapshot` endpoint's `dailyBar` field shows the actual settled close was **$744.86** — the $743.95 figure was very likely a live quote grabbed a few minutes before the 4:00 PM ET settle (the close routine runs at 3:50 PM). Corrected above. Difference is immaterial to any guardrail decision, but the vs-SPY gap for 07-02 is properly ~flat, not +0.117pp. **Lesson going forward:** always read the `dailyBar.c` field from `snapshot`, not a bare quote, when recording an official daily close.
 
 _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): Bull ended at $98,711.58 (−1.289%) vs SPY total-return +... — full detail in git history and `weekly-review.md`. Not comparable going forward; new inception above is the live baseline._
 
 ## Notes
+
+**2026-07-06 pre-market (~08:12 ET, Monday, market opens 09:30 ET today):** Live-synced account: equity $99,949.24, cash $95,513.69 (95.55%), VST 29sh @ avg $154.70, current $152.95 (−1.13%, −$50.75 unrealized). Trailing stop `bdfb5f67` confirmed live (HWM $156.24, stop $140.616) — stop audit 1/1 PASS. Drawdown 0.051% vs HWM $100,000 — not triggered (9.95pp headroom). No intraday shock (equity above last_equity $99,894.14). Sector exposure: Energy/Utilities (VST) 4.44%, cash 95.55% — within all caps. VST thesis contract reviewed: invalidation ($148 close on volume) not triggered, review_by 2026-08-06 not reached — HOLD, contract unchanged. **Monday conviction rating: VST = B** (working but flat, thesis pillars intact, no fresh catalyst this week — first Monday review since the 2026-07-02 entry, so the 3-consecutive-C trim rule doesn't apply). Ran a full price/SMA/ATR/valuation gate check on AAPL (watchlist candidate added 2026-07-03): passed technical (+5.04% vs 50-day), catalyst (WWDC AI refresh + foldable iPhone), and macro-tailwind signals, but **failed the valuation signal** (P/E 37.3x, +39% above its own 10-year median; GuruFocus 15.6% overvalued) with earnings momentum stale (next print not until 2026-07-30). Decision: no buy — stock already showed a "sell the news" pattern post-WWDC; deferred, not dropped (11 days left on the 2-week gate-check clock). No trades planned for today's open. Weekly new-position count resets to 0/3 this week.
 
 **2026-07-03 weekly review (~16:40 ET):** Ran successfully — this closes the Friday watchdog item flagged by the close routine earlier today. First weekly review of the new post-reset track record; covers 2026-07-01 → 2026-07-03 (2 trading days). Bull −0.106% vs SPY −0.108% (essentially flat), Grade A−. Full detail in `weekly-review.md`. Watchlist hygiene applied: purged JNJ/WMT (no dated catalyst), added AAPL as an unvetted candidate. Aggressive Bull staleness (10 days, since 2026-06-23) re-flagged and escalated — see `lessons.md`. Cross-Bull learning trigger: not met (AGGRO trails, does not lead); counter remains 0.
 

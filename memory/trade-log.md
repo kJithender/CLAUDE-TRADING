@@ -3,6 +3,19 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-06 08:12 ET — PRE-MARKET (no trades; new week, market opens 09:30 ET today)
+
+- **Action:** None — no trades planned for today's open.
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free; `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Account:** equity $99,949.24, cash $95,513.69 (95.55%), long MV $4,435.55 (4.44%).
+- **Positions:** VST 29sh @ avg $154.70, current $152.95, unrealized −$50.75 (−1.13%). Trailing stop `bdfb5f67` live, HWM $156.24, stop $140.616 — stop audit 1/1 PASS.
+- **Thesis contract (VST):** invalidation ($148 close on volume) not triggered, review_by 2026-08-06 not reached — HOLD, unchanged.
+- **Monday conviction rating:** VST = B (working but flat; first review since 2026-07-02 entry).
+- **AAPL full gate check:** technical (+5.04% vs 50-day), catalyst (WWDC AI + foldable iPhone), and macro-tailwind signals PASS; valuation FAILS (P/E 37.3x, +39% vs 10-yr median; GuruFocus 15.6% overvalued); earnings momentum stale (next print 2026-07-30). 3-of-5 clean but the miss is on valuation right after a post-WWDC pullback — deferred, no buy. See `research-log.md` for full detail.
+- **Weekly new-position count:** 0/3 this week (new week; VST was last week's entry).
+- **Drawdown:** 0.051% vs HWM $100,000 — not triggered (9.95pp headroom). No intraday shock.
+
 ## 2026-07-03 15:52 ET — CLOSE (no trades; market closed all day — Independence Day observed)
 
 - **Action:** None — `clock` confirms `is_open: false` all day, `next_open: 2026-07-06T09:30:00-04:00`, `next_close: 2026-07-06T16:00:00-04:00` (normal full day, confirming today was a full closure, not a half-day). Close routine only reconciles/journals when the market didn't trade.
