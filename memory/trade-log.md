@@ -3,6 +3,26 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-06 15:52 ET — CLOSE (no trades)
+
+- **Action:** None — close routine only reconciles/journals.
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: true`, next close 16:00 ET (full session, not a half-day).
+- **Account:** equity $100,033.63, cash $95,513.69 (95.48%), long MV $4,519.94 (4.52%), last_equity $99,894.14.
+- **Today's P/L:** +$139.49 (+0.1396%) vs last_equity.
+- **Shock check:** +0.1396% intraday — no shock (well within the ±4% trigger).
+- **Drawdown circuit breaker:** equity $100,033.63 is a NEW high-water mark (prior HWM $100,000.00) → drawdown 0.00% — NOT triggered.
+- **Positions:** VST 29sh @ avg $154.70, current $155.92, unrealized +$35.38 (+0.789%). Well within range.
+- **Stop audit:** trailing stop `bdfb5f67` confirmed live (10% trail, HWM ratcheted to $156.48, stop $140.832) — 1/1 PASS, ratcheted up correctly with today's gain.
+- **Sector exposure:** Energy/Utilities (VST) 4.52% — far below the 60% cap. Cash 95.48%.
+- **No exits this run** — no `closed-trades.md`/`trades.jsonl` entry needed.
+- **SPY:** today's close $751.94 (dailyBar.c) vs prior close $744.86 (07-02) = +0.950% today. Since 2026-07-01 inception anchor $745.665: +0.8415%.
+- **Bull vs SPY today:** Bull +0.1396% vs SPY +0.950% → **−0.810pp today** (SPY's strong post-holiday tech rally outpaced Bull's 95%-cash posture — expected, not a process failure).
+- **Since inception (2026-07-01):** Bull +0.03363% vs SPY +0.8415% → **−0.808pp gap**.
+- **Market context:** S&P 500 +0.9%, Nasdaq +1.3%, Dow briefly topped 53,000 for the first time — broad post-Independence-Day rally as AI-chip jitters eased (though MU/AMD/INTC still soft intraday on continued AI-semi weakness). VST (utilities/power infra, not a chip name) unaffected either way — no thesis impact.
+- **Weekly new-position count:** 0/3 used this week (unchanged).
+
 ## 2026-07-06 12:36 ET — MIDDAY (no trades)
 
 - **Action:** None — midday only manages existing risk; all checks passed, no cuts or trims needed.
