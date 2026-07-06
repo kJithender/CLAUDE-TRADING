@@ -3,6 +3,20 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-06 12:36 ET — MIDDAY (no trades)
+
+- **Action:** None — midday only manages existing risk; all checks passed, no cuts or trims needed.
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: true`, next close 16:00 ET today.
+- **Account:** equity $99,984.91, cash $95,513.69 (95.53%), long MV $4,471.22 (4.47%), last_equity $99,894.14.
+- **Shock check:** equity $99,984.91 vs last_equity $99,894.14 = +0.091% — no shock (well within the −4% trigger).
+- **Drawdown circuit breaker:** HWM $100,000.00, current equity $99,984.91 → drawdown 0.015% — NOT triggered.
+- **Positions:** VST 29sh @ avg $154.70, current $154.18, unrealized −$15.08 (−0.336%). Well within range — no news scan triggered (move is under both the −3%/+10% thresholds), no cut (not below −7%), no tighten (not above +15%).
+- **Stop audit:** trailing stop `bdfb5f67` confirmed live in `orders open` (10% trail, HWM $156.24, stop $140.616) — 1/1 PASS, no action needed.
+- **Sector exposure:** Energy/Utilities (VST) 4.47% — far below the 60% cap.
+- **No exits this run** — no `closed-trades.md` or `trades.jsonl` entry needed.
+
 ## 2026-07-06 09:36 ET — MARKET-OPEN (no trades)
 
 - **Action:** None — today's plan (`research-log.md`, `plan_date: 2026-07-06`) had zero planned trades (all watchlist names still gated; AAPL deferred on valuation). Nothing to execute, so the breaking-news gate and execution steps were skipped.
