@@ -3,6 +3,21 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-07 12:36 ET — MIDDAY CHECK (no trades)
+
+- **Action:** None — both positions within guardrail thresholds.
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: true`, next close 16:00 ET.
+- **V:** $349.90 vs entry $355.058182 → −1.453% (cut threshold: −7%; news-scan threshold: −3%, not triggered).
+- **VST:** $155.34 vs entry $154.70 → +0.414% (tighten threshold: +15%; news-scan threshold: +10%, not triggered).
+- **Stops verified:** V `2b0a93ba` 10% trailing active (HWM $356.075, stop $320.4675); VST `bdfb5f67` 10% trailing active (HWM $159.41, stop $143.469) — 2/2 PASS.
+- **Account:** equity $99,905.95, cash $87,702.41 (87.78%), long MV $12,203.54 (12.22%), last_equity $99,894.14.
+- **Shock check:** +0.012% intraday — no shock.
+- **Drawdown circuit breaker:** equity $99,905.95 vs HWM $100,086.89 (today's market-open) — drawdown 0.18%, NOT triggered.
+- **Sector exposure:** Financials (V) 7.71%, Energy/Utilities (VST) 4.51% — both far below the 60% cap.
+- **No exits this run** — no `closed-trades.md`/`trades.jsonl` entry needed.
+
 ## 2026-07-07 09:39 ET — BUY V
 
 - **Action:** BUY 22 shares (limit order, whole shares for trailing-stop eligibility) per today's pre-market plan (`research-log.md`, `plan_date: 2026-07-07`).
