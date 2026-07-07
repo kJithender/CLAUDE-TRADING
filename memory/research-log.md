@@ -5,6 +5,89 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-07 — Pre-market research (~08:35 ET, Tuesday) — PLAN: BUY V 22sh
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was empty (`{}`) at start of this run. Lock acquired.
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Note on this run's process
+An earlier pass this morning drew conclusions from a **stale local git checkout** that had not fetched `origin/main` — it wrongly believed the account was newly reset with an unexplained trade, sent an erroneous 🚨 alert, and made a bad commit. That commit was discarded (`git reset --hard origin/main`, never pushed) once `git fetch origin main` revealed the real history: the account reset was already detected, human-authorized, and re-baselined by prior routines (2026-07-01), and the VST position is a properly planned, documented entry (2026-07-02). A correction was sent to the human via Telegram. This run proceeds against the correct, current `origin/main` state. **Lesson recorded in `lessons.md`.**
+
+### Market status
+- `clock`: confirmed market open today, 09:30–16:00 ET.
+
+### Market posture (pre-market 2026-07-07)
+- S&P 500 closed Monday July 6 **+0.72% at 7,537.43**. Tuesday pre-market: S&P futures soft (~−0.2/−0.25%), Nasdaq-100 futures weaker on continued chip selloff, Dow futures +0.3% (diverging).
+- **Macro shift to flag:** under new Fed Chair Kevin Warsh, commentary has turned hawkish — markets now price ~50bp of hikes by December, roughly double what was priced two weeks ago. **10yr yield ~4.48–4.49% — still below the 4.75% new-buy gate ✓**, but the sentiment shift is a fresh caution flag worth tracking at every future pre-market.
+- **AI/semi selloff continues (day 4–5):** Micron −13% in one session (~USD 138B market cap wiped), Intel −9%, AMD −7%, SMH −5% over July 1–6, contagion from Asia (KOSPI −10% intraday, circuit breakers; Samsung/SK Hynix −12%). Drivers: SK Hynix slowing HBM expansion, AI-capex ROI skepticism, financing-cost pressure from the hawkish Fed pivot. This reinforces the active AI-capex-digestion caution in `strategy.md` — NVDA/LRCX remain non-candidates. Not a chip-name trade being considered today (V is financials/payments, uncorrelated to this selloff).
+- **Net posture:** mixed/cautious, not a clean risk-on or risk-off day. No circuit-breaker-level event.
+
+### Held position — VST (what changed since yesterday)
+- Alpaca live data: 29sh @ avg $154.70, current $156.29 (+1.03% from entry), stop `bdfb5f67` HWM $157.24 / stop $141.516 — live, 1/1 PASS.
+- **What changed:** Thesis pillars all intact — Helix Digital Infrastructure (KKR/Kuwait/NVIDIA JV) still names VST preferred power provider; Cogentrix (USD 4B, 5.5GW gas) still pending regulatory close, expected mid-to-late 2026, no change; Fitch IG (BBB-, March 17) and S&P IG (Dec 2025) upgrades both stand. Morgan Stanley **trimmed** PT to $210 (June 24, still Overweight — a trim, not a downgrade); Bernstein Outperform $187 PT (June 17) stands; no negative analyst revisions found.
+- **Earnings date correction:** authoritative source (StockTitan/Vistra IR) confirms **Friday 2026-08-07** (not Aug 6 as previously carried) — updating `strategy.md`/`portfolio.md`. Still >2 trading days out, no window conflict.
+- **Note on a stray external price print:** one web source (GuruFocus) cited VST "+4.1% to $153.43" on July 6, which does not reconcile with Alpaca's own daily bar (close $157.20) or the account's own mark-to-market. Per standing practice (see 2026-07-03 entry), trusting the broker's live feed over general search results for price levels — disregarding the stray figure.
+- **Thesis contract:** invalidation ("closes below USD 148 on volume, or trailing stop fires, or Helix/Cogentrix disrupted") — NOT triggered. `review_by` 2026-08-07 (corrected) not yet reached. **Decision: HOLD, contract unchanged.**
+
+### Watchlist — V (Visa) full re-verification → ENTRY SIGNAL CONFIRMED
+
+- **Technical (fresh 50-day SMA computed from Alpaca IEX daily bars, 2026-04-15 to 2026-07-06):** 50d SMA **$326.93**; last close (Jul 6) **$357.30** → **+9.29% above the 50-day — under the 10% chase threshold. PASSES** (was +10.93%/FAIL on 2026-07-03; the pullback from a brief post-Payments-Forum spike to $362.13 on 7/2 down to $357.30 on 7/6, combined with the SMA drifting up, moved this from a fail to a pass).
+- **Volatility (20-day ATR%, same bar set):** **2.12%** — below the 3% threshold, no size-halving needed.
+- **Catalyst (1–6mo):** Visa Payments Forum (~July 1–2) unveiled new AI/stablecoin/tokenization tools for "agentic commerce," including a strategic **OpenAI** collaboration (Visa Intelligent Commerce / Agentic Directory) enabling AI-agent-initiated Visa payments, plus a "Large Transaction Model" AI fraud-detection tool. Stablecoin settlement pilot hit a **USD 7B annualized run rate** (April 2026 data), up 50% QoQ, spanning 9 blockchains. **PASSES** — real, dated product/partnership catalysts, not a story.
+- **Valuation:** Trailing P/E ~29.0x; forward P/E ~21.5–22.0x; **PEG ~1.57–1.76**, well under the 2.5 threshold and below Visa's own 10-yr PEG median (2.30). Cheaper than Mastercard on forward P/E (~24.6x). **PASSES.**
+- **Earnings momentum:** No fresh print since the pullback (next earnings confirmed **2026-07-28**, 21 days out — outside the 2-day window, no conflict). Signal is neutral/not applicable rather than a clean pass — no fresh beat/raise to point to.
+- **Macro tailwind:** Financials/payments is not a name in the active AI-semi selloff; sector-specific tailwind (agentic commerce, stablecoin adoption) intact. Broader macro is mixed/cautious (hawkish Fed pivot), a genuine caution flag but not V-specific and not a hard gate violation (10yr still below 4.75%). Treating as a soft pass.
+- **Red flags checked:** DOJ antitrust suit (debit-network practices) remains active — longstanding since 2024, not new information, already reflected in the stock's multiple. CEO McInerney sold ~USD 7.1M (20,970 sh) on 6/29 **under a 10b5-1 plan** — per the 2026-06-10 lesson, a scheduled 10b5-1 sale is not a bearish discretionary signal. General Counsel sold ~USD 730K on 7/2 (smaller, plan type unconfirmed) — not treated as a red flag at this size. No downgrades found; consensus remains Strong Buy (29 buy / 8 outperform / 3 hold / 0 sell of 42), avg PT ~USD 398 (~10% upside from $357).
+- **Net: 3 of 5 entry signals clearly PASS (technical, valuation, catalyst)**, meeting `strategy.md`'s "at least three" bar; macro is a soft pass, earnings momentum is neutral (no fresh print to cite). This is a re-verified, disciplined entry — not a chase (pulled back from its 52-week-high spike; SMA distance is now under the threshold) and not a rationalization (the failing signal from 2026-07-03 is what changed, not the bar being lowered).
+
+### Sizing
+
+- Live equity: **$100,046.10** (fresh Alpaca pull, 2026-07-07 ~08:30 ET). Cash $95,513.69 (95.47%).
+- Starter conviction (7–9% band per `strategy.md`): target ~8% = USD 8,003.69.
+- Reference price: Jul 6 official close (`dailyBar.c`) **$357.30** (per the dailyBar-not-live-quote lesson, since pre-market spreads are wide/illiquid).
+- Shares: USD 8,003.69 / $357.30 ≈ 22.4 → **22 whole shares = USD 7,860.60 = 7.86% of portfolio.**
+- Risk budget check: 22sh × $357.30 × 10% stop = USD 786.05 = **0.786% of equity** — well within the 1.2% Cautious Bull risk-budget cap (CLAUDE.md).
+- 20% hard cap: far clear. Daily deployment cap (25%): 7.86% ≤ 25% ✓. Weekly new-position count: 0/3 used this week → becomes 1/3 ✓. Cash after buy: ~USD 87,653 (~87.6%) — far above the 5% minimum.
+- ATR volatility check: 2.12% < 3% — no halving required, full starter size stands.
+- Sector exposure after buy: Financials (V, new sector) ~7.86%, Energy/Utilities (VST) ~4.53%, Cash ~87.6% — no sector remotely near the 60% cap.
+
+### Risk posture (live Alpaca data, 2026-07-07 ~08:30 ET)
+
+- Equity $100,046.10 | Cash $95,513.69 (95.47%) | Long MV $4,532.41 (4.53%) | last_equity (API-reported) $99,894.14.
+- **Drawdown circuit breaker:** best-known HWM $100,033.63 (2026-07-06 close, live-history endpoint is lagging/stale — known quirk, same as prior runs). Current equity $100,046.10 is a **new HWM**. Drawdown 0.00% — NOT triggered.
+- **Intraday shock check:** $100,046.10 vs last_equity $99,894.14 = +0.152% — no shock (threshold 4%).
+- **Sector cap:** pre-buy Energy/Utilities (VST) 4.53% — far below 60%.
+- **Stop audit:** VST `bdfb5f67` confirmed live (HWM $157.24, stop $141.516) — 1/1 PASS.
+- **Weekly new-position count:** 0/3 used this week (week starting 2026-07-06).
+
+### Cash-drag check
+
+Cash 95.47% is far above the 25–40% build-phase target band and has been since the 2026-07-01 re-baseline. Today's V entry is a deliberate, gate-cleared deployment (3-of-5 signals, first clean technical pass since the reset) — not a forced trade to reduce drag. Two of three weekly slots remain after this.
+
+### Planned trades for today
+
+```json
+{
+  "plan_date": "2026-07-07",
+  "trades": [
+    {
+      "action": "buy",
+      "symbol": "V",
+      "qty": 22,
+      "thesis": "Visa's July 2026 Payments Forum unveiled fresh AI/stablecoin agentic-commerce tools (OpenAI Intelligent Commerce integration, Large Transaction Model AI fraud detection); stablecoin settlement run-rate USD 7B, +50% QoQ; PEG 1.57-1.76 well under 2.5 and cheaper than Mastercard on forward P/E; technical setup now confirms re-entry at +9.29% above the 50-day SMA (under the 10% chase threshold, was +10.93%/failing on 2026-07-03), ATR 2.12% (no halving needed); DOJ antitrust suit is longstanding/priced-in, CEO's 6/29 insider sale was a scheduled 10b5-1 plan (not bearish per the 2026-06-10 lesson)",
+      "invalidation": "closes below the 50-day SMA (~USD 327) on volume, reversing the technical confirmation, or the 10% trailing stop fires, or the DOJ antitrust suit produces an adverse ruling that structurally impairs Visa's network-fee economics",
+      "review_by": "2026-07-28"
+    }
+  ]
+}
+```
+
+---
+
 ## 2026-07-06 — Pre-market (~08:12 ET, Monday, first trading day of week 2 post-reset)
 
 **Market posture:** S&P 500 futures lean toward a higher open (~62% implied

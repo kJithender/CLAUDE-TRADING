@@ -3,6 +3,11 @@
 _Carried forward across every run. Add a dated line whenever something works
 well, fails, or surprises you. Keep the highest-value lessons near the top._
 
+## Operating lessons (recent, highest priority)
+
+### 2026-07-07 (pre-market) — Always `git fetch origin main` before trusting local git history for anything account-critical
+An early pass this morning analyzed `git log`/`git log --all` on the local checkout without first running `git fetch origin main`, concluded (wrongly) that no routine had run in ~2 weeks and that the live Alpaca account had an unexplained reset and an undocumented trade, and sent an urgent 🚨 Telegram alert on that basis. In reality `origin/main` had a full, correct history: the reset had already been detected, human-authorized via a `control.md` NOTE, and re-baselined on 2026-07-01, and the VST position was a properly planned entry from 2026-07-02. The local branch was simply stale relative to origin. Caught by running `git fetch origin main` and `git log origin/main`, which surfaced 15+ commits the local branch didn't have. Recovered by `git reset --hard origin/main` (the bad commit was never pushed, so this was safe) and sending a correction to the human. **Lesson: before drawing any conclusion from git history — especially one that triggers an urgent notification or blocks trading — always `git fetch origin <branch>` first and read `origin/<branch>`, not just the local `HEAD`. A routine's local checkout can silently lag the real state of `main` by any number of commits from prior runs.**
+
 ## Trading lessons (recent)
 
 ### 2026-07-03 (weekly review) — Watchlist hygiene rule needs judgment, not literal application
