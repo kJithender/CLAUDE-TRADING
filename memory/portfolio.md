@@ -21,39 +21,40 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-07 ~08:35 ET (pre-market, Tuesday) — PLAN: buy V 22sh at open (first re-verified entry signal since the reset); VST held, thesis intact
+**Last updated:** 2026-07-07 ~09:39 ET (market-open, Tuesday) — EXECUTED: BUY V 22sh @ avg $355.058182; VST held, thesis intact
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-07 ~08:30 ET pre-market)
+## Account (live Alpaca data, 2026-07-07 ~09:39 ET market-open)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,046.10 |
-| Cash | $95,513.69 (95.47%) |
-| Long market value | $4,532.41 (4.53%) |
-| Buying power | $394,745.51 |
+| Equity | $100,086.89 |
+| Cash | $87,702.41 (87.63%) |
+| Long market value | $12,384.48 (12.37%) |
+| Buying power | $385,486.18 |
 | Last equity | $99,894.14 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| VST | 29 | $154.70 | $156.29 | +$46.11 (+1.028%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $157.24, stop $141.516 — live ✓ | B (2026-07-06, 1st review; not re-rated — today is Tuesday) |
+| VST | 29 | $154.70 | $157.68 | +$86.42 (+1.926%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $158.13, stop $142.317 — live ✓ | B (2026-07-06, 1st review; not re-rated — today is Tuesday) |
+| V | 22 | $355.058182 | $355.08 | +$0.48 (+0.006%) | Financials | Order 2b0a93ba, 10%, HWM $354.71, stop $319.239 — live ✓ | New entry today — not yet rated |
 
-**Sector exposure:** Energy/Utilities (VST): $4,532.41 = 4.53%. Cash: $95,513.69 = 95.47%. No sector above 60% cap ✓.
+**Sector exposure:** Energy/Utilities (VST): $4,572.72 = 4.57%. Financials (V): $7,811.76 = 7.80%. Cash: $87,702.41 = 87.63%. No sector above 60% cap ✓.
 
-**Trailing stop status:** 1/1 positions protected.
-**Stop audit: 1/1 ✓ PASS** (2026-07-07 pre-market).
+**Trailing stop status:** 2/2 positions protected.
+**Stop audit: 2/2 ✓ PASS** (2026-07-07 market-open).
 
-**Plan for today's open:** BUY V, 22sh (starter, ~7.86% of portfolio) — see `research-log.md` 2026-07-07 entry for full entry-signal writeup (technical, valuation, catalyst all pass) and sizing math. Not yet executed as of this pre-market snapshot; market-open routine executes and verifies.
+**Today's plan executed:** BUY V, 22sh (starter, 7.80% of portfolio) — filled @ avg $355.058182. See `research-log.md` 2026-07-07 entry for the full entry-signal writeup and the `EXECUTED:` note (IEX quote-ask was stale/anomalous; used latest-trade price for the marketable-limit calc instead).
 
-## Risk posture (2026-07-07 pre-market)
+## Risk posture (2026-07-07 market-open)
 
-- **Drawdown circuit breaker:** Equity $100,046.10 vs best-known HWM $100,033.63 (2026-07-06 close) — a NEW high-water mark. Drawdown 0.00% — NOT triggered ✓ (full 10pp headroom).
-- **Intraday shock check:** Equity $100,046.10 vs last_equity $99,894.14 = +0.152% — no shock ✓.
-- **Sector cap:** Energy/Utilities 4.53% — well below 60% ✓ (Financials will add ~7.86% after V fills, still far below cap).
-- **Weekly new-position count:** 0/3 used this week going into today; becomes 1/3 once V fills.
+- **Drawdown circuit breaker:** Equity $100,086.89 vs prior HWM $100,033.63 (2026-07-06 close) — a NEW high-water mark. Drawdown 0.00% — NOT triggered ✓ (full 10pp headroom).
+- **Intraday shock check:** Equity $100,086.89 vs last_equity $99,894.14 = +0.193% — no shock ✓.
+- **Sector cap:** Energy/Utilities 4.57%, Financials 7.80% — both well below 60% ✓.
+- **Weekly new-position count:** 1/3 used this week (V, 2026-07-07).
 
 ## Performance vs S&P 500
 
@@ -71,6 +72,8 @@ reference but is **not** the live comparison baseline going forward.
 _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): Bull ended at $98,711.58 (−1.289%) vs SPY total-return +... — full detail in git history and `weekly-review.md`. Not comparable going forward; new inception above is the live baseline._
 
 ## Notes
+
+**2026-07-07 market-open (~09:39 ET, Tuesday):** `clock` confirmed `is_open: true`, next close 16:00 ET. Control switch STATUS: ACTIVE, no NOTE/QUERY pending. Breaking-news gate (WebSearch) cleared for V — no earnings miss, downgrade, halt, or SEC action since yesterday's close; yesterday's ~3.4% dip read as macro rotation, not company news. **Data-quality anomaly:** the IEX `quote`/`snapshot` ask for V was stuck at USD 365.67 across 3 consecutive polls (~15s apart) while `trades/latest` printed consistently ~USD 354.5–354.6 — a stale/anomalous ask, not the real market (using it would have set a marketable limit ~3.5% above where the stock was actually trading). Used the latest-trade price (USD 354.58) × 1.003 = USD 355.64 as the limit instead; filled promptly at USD 355.058182, confirming the quote was the bad data point. Placed and verified a 10% trailing stop (`2b0a93ba`, HWM USD 354.71, stop USD 319.239). Stop audit 2/2 PASS (V + VST). Guardrails: 7.80% position (≤20%), slot 1/3 this week, 7.80% daily deployment (≤25%), cash 87.63% post-buy (≥5% min), Financials 7.80%/Energy-Utilities 4.57% (≤60% cap each), risk-budget loss ≈0.78% of equity (≤1.2% cap), drawdown 0.00% (new HWM), earnings 21 days out. Live re-sync: equity $100,086.89 (new HWM), VST 29sh @ avg $154.70 current $157.68 (+1.926%), V 22sh @ avg $355.058182 current $355.08 (+0.006%). Shock check +0.193% — no shock. **Lesson worth flagging:** this is the second data-quality quirk found in two consecutive runs (2026-07-07 pre-market's stray GuruFocus VST price, now this run's stuck IEX ask) — worth a permanent note in `lessons.md` about cross-checking quote-derived prices against `trades/latest` before using them for order sizing, not just for closes.
 
 **2026-07-07 pre-market (~08:35 ET, Tuesday):** `clock` confirmed market opens 09:30 ET today. Control switch STATUS: ACTIVE, no NOTE/QUERY pending. **Process note:** an earlier pass this morning worked from a stale local git checkout (never fetched `origin/main`) and wrongly concluded the account had an unexplained reset/trade, sending an erroneous 🚨 Telegram alert; corrected via a follow-up Telegram message once `git fetch origin main` surfaced the real history (reset was already human-authorized and re-baselined 2026-07-01; the VST trade is a properly documented 2026-07-02 entry). Bad commit discarded, never pushed. Lesson logged in `lessons.md`. Live re-sync: equity $100,046.10 (new HWM), cash $95,513.69 (95.47%), VST 29sh @ avg $154.70, current $156.29 (+1.028%, +$46.11 unrealized). Shock check +0.152% — no shock. Drawdown 0.00% (new HWM) — full headroom. Stop audit: `bdfb5f67` confirmed live, HWM $157.24/stop $141.516 — 1/1 PASS. VST thesis contract reviewed: not triggered, HOLD; **earnings date corrected to 2026-08-07** (was carried as 08-06) per an authoritative source found today — `review_by` updated to match. Market posture mixed: SPY +0.72% Monday but Tuesday futures soft on a continuing AI-semi selloff (Micron −13%, Intel −9%, AMD −7% over the past week) and a fresh hawkish shift under new Fed Chair Kevin Warsh (market now pricing ~50bp of hikes by December); 10yr still 4.48–4.49%, below the 4.75% gate. **Full re-verification of V (Visa) found the technical-confirmation signal now passes** (+9.29% vs 50-day SMA, was +10.93%/failing on 2026-07-03) alongside valuation (PEG 1.57–1.76) and a fresh catalyst (OpenAI agentic-commerce partnership, stablecoin tools) — 3-of-5 entry signals clear. **Plan: BUY V 22sh (~7.86% starter) at today's open**; full writeup and sizing in `research-log.md`. Sector exposure pre-buy: Energy/Utilities (VST) 4.53%, cash 95.47%. Weekly new-position count 0/3 going into today.
 

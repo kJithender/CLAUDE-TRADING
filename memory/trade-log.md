@@ -3,6 +3,24 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-07 09:39 ET — BUY V
+
+- **Action:** BUY 22 shares (limit order, whole shares for trailing-stop eligibility) per today's pre-market plan (`research-log.md`, `plan_date: 2026-07-07`).
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: true`, next close 16:00 ET.
+- **Breaking-news gate:** WebSearch found no thesis-breaking news for V since yesterday's close (2026-07-06) — no earnings miss (next print 07-28), no downgrade, no halt, no SEC action. Yesterday's ~3.4% dip read as macro rotation/profit-taking, not company-specific. Gate cleared.
+- **Data-quality note:** IEX `quote`/`snapshot` ask (USD 365.67) was stuck across 3 polls (~15s apart) while `trades/latest` printed consistently ~USD 354.5–354.6 — a stale/anomalous ask, not the real market. Used latest-trade price (USD 354.58) × 1.003 = USD 355.64 as the marketable limit instead of the stale quote-derived one (would have been USD 366.77 — nearly 3.5% above where the stock was actually trading).
+- **Fill:** 22 shares @ USD 355.058182 avg (order id `86f4ed0c-19d3-47d8-be51-aacfb3473d7a`) — filled promptly at a price in line with the trade-based reference, confirming the ask was the bad data point, not the limit.
+- **Why:** Visa Payments Forum AI/stablecoin agentic-commerce tools (OpenAI Intelligent Commerce integration, Large Transaction Model AI fraud detection); stablecoin settlement run-rate USD 7B (+50% QoQ); PEG 1.57–1.76 (well under 2.5, cheaper than Mastercard on forward P/E); technical re-entry confirmed (~+8.5% above 50-day SMA at fill price, under the 10% chase threshold — was +10.93%/failing on 2026-07-03); ATR 2.12% (no size-halving needed); DOJ antitrust suit longstanding/priced-in; CEO's 6/29 sale was a scheduled 10b5-1 plan (not bearish, per 2026-06-10 lesson). 3-of-5 entry signals clearly pass (technical, valuation, catalyst).
+- **Invalidation:** closes below the 50-day SMA (~USD 327) on volume, or the 10% trailing stop fires, or an adverse DOJ antitrust ruling structurally impairs Visa's network-fee economics. **Review by:** 2026-07-28 (earnings).
+- **Stop:** 10% trailing stop placed (order id `2b0a93ba-d45f-4af9-a981-fbbf530255bd`) — HWM USD 354.71, initial stop USD 319.239, GTC exp 2026-10-05.
+- **Verified:** confirmed 22sh @ USD 355.058182 avg in positions; trailing stop confirmed live in open orders.
+- **Guardrails:** 7.80% of equity (≤20% cap) | slot 1/3 new positions this week (week of 2026-07-06) | 7.80% daily deployment (≤25% cap) | post-trade cash 87.63% (≥5% min) | Financials sector 7.80%, Energy/Utilities (VST) 4.57% — both far below the 60% cap | risk-budget loss at stop ≈0.78% of equity (≤1.2% Cautious Bull cap) | drawdown 0.00% (new HWM $100,086.89, not triggered) | earnings 2026-07-28, 21 days out — outside the 2-day window.
+- **Stop audit (both positions):** V `2b0a93ba` live (HWM $354.71, stop $319.239); VST `bdfb5f67` live (HWM $158.13, stop $142.317) — 2/2 PASS.
+- **Account:** equity $100,086.89, cash $87,702.41 (87.63%), long MV $12,384.48 (12.37%), last_equity $99,894.14. Shock check: +0.193% — no shock.
+- **trades.jsonl:** appended.
+
 ## 2026-07-06 15:52 ET — CLOSE (no trades)
 
 - **Action:** None — close routine only reconciles/journals.

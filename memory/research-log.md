@@ -86,6 +86,8 @@ Cash 95.47% is far above the 25–40% build-phase target band and has been since
 }
 ```
 
+EXECUTED: 2026-07-07T13:39:07Z — BUY V 22sh filled avg USD 355.058182. Note: the `quote`/`snapshot` IEX ask (USD 365.67) was stuck/stale across 3 consecutive polls (~15s apart) while `trades/latest` printed consistently around USD 354.5–354.6 — used the latest-trade price (USD 354.58) x 1.003 = USD 355.64 as the marketable limit instead of the stale ask, per the "trust the broker's live feed over an unreliable/anomalous print" precedent (2026-07-07 pre-market VST note). Filled promptly at USD 355.058182, in line with the trade-based reference, confirming the ask was the bad data point. 10% trailing stop `2b0a93ba` (HWM USD 354.71, stop USD 319.239) placed and confirmed live. Guardrails: 7.81% of equity (≤20% cap), slot 1/3 this week, 7.81% daily deployment (≤25% cap), post-trade cash ≈87.66% (≥5% min), Financials sector 7.81% / Energy-Utilities 4.57% (≤60% cap each), risk-budget loss at stop ≈0.781% of equity (≤1.2% budget), drawdown 0.00% (new HWM, not triggered), earnings 2026-07-28 outside the 2-day window.
+
 ---
 
 ## 2026-07-06 — Pre-market (~08:12 ET, Monday, first trading day of week 2 post-reset)
