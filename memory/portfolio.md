@@ -21,39 +21,39 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-08 ~12:36 ET (midday, Wednesday) — no action; both positions within range, stops verified
+**Last updated:** 2026-07-08 ~15:52 ET (close, Wednesday) — no exits; both positions held through the Iran-shock selloff, stops verified
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-08 midday ~12:36 ET)
+## Account (live Alpaca data, 2026-07-08 close ~15:52 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,760.82 |
-| Cash | $87,702.40 (87.91%) |
-| Long market value | $12,058.42 (12.09%) |
-| Buying power | $384,573.16 |
+| Equity | $99,852.49 |
+| Cash | $87,702.40 (87.83%) |
+| Long market value | $12,150.09 (12.17%) |
+| Buying power | $384,829.85 |
 | Last equity (2026-07-07 close, Alpaca) | $99,966.97 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| VST | 29 | $154.70 | $152.42 | −$66.12 (−1.474%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $159.41, stop $143.469 — live ✓ | B (2026-07-06, last review; next Monday review 2026-07-13) |
-| V | 22 | $355.058182 | $347.1925 | −$173.05 (−2.215%) | Financials | Order 2b0a93ba, 10%, HWM $356.075, stop $320.4675 — live ✓ | New entry 2026-07-07 — not yet rated (first Monday review 2026-07-13) |
+| VST | 29 | $154.70 | $154.43 | −$7.83 (−0.175%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $159.41, stop $143.469 — live ✓ | B (2026-07-06, last review; next Monday review 2026-07-13) |
+| V | 22 | $355.058182 | $348.705 | −$139.77 (−1.789%) | Financials | Order 2b0a93ba, 10%, HWM $356.075, stop $320.4675 — live ✓ | New entry 2026-07-07 — not yet rated (first Monday review 2026-07-13) |
 
-**Sector exposure:** Energy/Utilities (VST): $4,420.18 = 4.431%. Financials (V): $7,638.235 = 7.657%. Cash: $87,702.40 = 87.913%. No sector above 60% cap ✓.
+**Sector exposure:** Energy/Utilities (VST): $4,478.47 = 4.484%. Financials (V): $7,671.51 = 7.681%. Cash: $87,702.40 = 87.830%. No sector above 60% cap ✓.
 
 **Trailing stop status:** 2/2 positions protected.
-**Stop audit: 2/2 ✓ PASS** (2026-07-08 midday).
+**Stop audit: 2/2 ✓ PASS** (2026-07-08 close).
 
 **Today's plan:** No trades placed — plan (`research-log.md`, `plan_date: 2026-07-08`) had zero planned trades due to the 🚨 overnight geopolitical shock (Trump declared the US-Iran ceasefire "over" after strikes tied to Strait of Hormuz ship attacks; oil +5.6-6.5% to ~$78-79 Brent). No watchlist name was near a clean entry gate regardless. See `research-log.md` 2026-07-08 entry for full detail.
 
-## Risk posture (2026-07-08 midday)
+## Risk posture (2026-07-08 close)
 
-- **Drawdown circuit breaker:** Equity $99,760.82 vs running HWM $100,086.89 (set 2026-07-07 market-open). Drawdown 0.3258% — NOT triggered ✓ (9.674pp headroom).
-- **Intraday shock check:** Equity $99,760.82 vs last_equity $99,966.97 (Alpaca, 2026-07-07 close) = −0.2062% — no shock ✓.
-- **Sector cap:** Energy/Utilities 4.431%, Financials 7.657% — both well below 60% ✓.
+- **Drawdown circuit breaker:** Equity $99,852.49 vs running HWM $100,086.89 (set 2026-07-07 market-open). Drawdown 0.2342% — NOT triggered ✓ (9.766pp headroom).
+- **Intraday shock check:** Equity $99,852.49 vs last_equity $99,966.97 (Alpaca, 2026-07-07 close) = −0.1145% — no shock ✓.
+- **Sector cap:** Energy/Utilities 4.484%, Financials 7.681% — both well below 60% ✓.
 - **Weekly new-position count:** 1/3 used this week (V, 2026-07-07).
 
 ## Performance vs S&P 500
@@ -67,12 +67,17 @@ reference but is **not** the live comparison baseline going forward.
 | 2026-07-06 pre-market (before today's open; SPY last settled close still 07-02) | $99,949.24 (−0.051%) | $744.86 (−0.108%, last trading day) | **+0.057pp** (essentially flat, pre-open) |
 | 2026-07-06 close | $100,033.63 (+0.034%) | $751.94 (+0.842%) | **−0.808pp** (SPY's post-holiday tech rally outpaced 95%-cash Bull) |
 | 2026-07-07 close | $99,974.36 (−0.026% since inception) | $747.77 (+0.282% since inception, dailyBar.c) | **−0.308pp** (since inception; but Bull beat SPY intraday today by +0.367pp — cash + non-semi holdings cushioned the AI-chip selloff) |
+| 2026-07-08 close | $99,852.49 (−0.148% since inception) | $745.26 (−0.054% since inception, dailyBar.c pulled ~15:52 ET, ~8min pre-settle) | **−0.093pp** (since inception; Bull beat SPY today by +0.221pp — Bull −0.115% vs SPY −0.336% on the Iran-ceasefire-collapse selloff) |
 
 **Correction (2026-07-03 close):** the 2026-07-02 close entry originally used SPY $743.95 for that day's "close," giving a +0.117pp gap. Re-verifying via the Alpaca `snapshot` endpoint's `dailyBar` field shows the actual settled close was **$744.86** — the $743.95 figure was very likely a live quote grabbed a few minutes before the 4:00 PM ET settle (the close routine runs at 3:50 PM). Corrected above. Difference is immaterial to any guardrail decision, but the vs-SPY gap for 07-02 is properly ~flat, not +0.117pp. **Lesson going forward:** always read the `dailyBar.c` field from `snapshot`, not a bare quote, when recording an official daily close.
 
 _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): Bull ended at $98,711.58 (−1.289%) vs SPY total-return +... — full detail in git history and `weekly-review.md`. Not comparable going forward; new inception above is the live baseline._
 
+**Race scoreboard (2026-07-08 close):** Bull −0.148% (since 2026-07-01 re-inception) | AGGRO −7.123% (STALE — last updated 2026-06-23 EOD, since its own 2026-06-04 inception; `memory/aggressive/portfolio.md` has shown no new activity for 15 days as of today, confirmed via `git log` on that path) | SPY −0.054% (since 2026-07-01 anchor $745.665, dailyBar.c). Different inception dates make Bull-vs-AGGRO not apples-to-apples; AGGRO staleness remains the actionable item, now 15 days and counting.
+
 ## Notes
+
+**2026-07-08 close (~15:52 ET, Wednesday):** `clock` confirmed `is_open: true`, full session (next close today 16:00 ET, not a half-day). Control switch STATUS: ACTIVE, no NOTE/QUERY pending. Live re-sync: equity $99,852.49, cash $87,702.40 (87.83%), V 22sh @ avg $355.058182 current $348.705 (−1.789%, −$139.77 unrealized), VST 29sh @ avg $154.70 current $154.43 (−0.175%, −$7.83 unrealized). No exits today — both positions held through a broad risk-off session driven by the collapsed Iran ceasefire (see market context below); neither name breached the −7% cut threshold, no `closed-trades.md`/`trades.jsonl` entry needed. Stop audit: order `2b0a93ba` (V, HWM $356.075, stop $320.4675) and `bdfb5f67` (VST, HWM $159.41, stop $143.469) both confirmed live via `orders open` — 2/2 PASS, HWM unchanged on both (neither made a new high today). Shock check: equity $99,852.49 vs Alpaca `last_equity` $99,966.97 (2026-07-07 close) = −0.1145% — no shock. Drawdown 0.2342% vs HWM $100,086.89 (2026-07-07 market-open) — not triggered (9.766pp headroom, nowhere near the −10% breaker). Sector exposure Financials (V) 7.681%, Energy/Utilities (VST) 4.484%, cash 87.830% — within all caps. **SPY today (dailyBar.c, pulled ~15:52 ET, ~8min pre-4pm-settle) $745.26** vs prevDailyBar.c $747.77 (2026-07-07) → today's SPY return −0.336%; since 2026-07-01 inception anchor $745.665, SPY is −0.054%. Bull is −0.148% since inception — a **−0.093pp** cumulative gap — but Bull beat SPY today (−0.115% vs −0.336%, +0.221pp) as the cash-heavy, non-AI-semi book was insulated from the broader risk-off tape. **Market context (WebSearch, "stock market summary today July 8 2026"):** all three major indexes closed lower — S&P 500 −0.65%, Dow −1.14%, Nasdaq −0.50%, Russell 2000 −0.90% — driven by Trump's statement that the US-Iran ceasefire is over (Brent crude settled ~$78.02, +5.2% on the day) plus continued unease over stretched AI-valuation multiples; only 2 of the S&P's top 10 holdings advanced (Caterpillar, Amgen). This directly supports the pre-market/market-open decision to add no new positions today — the risk-off catalyst was real, not noise — and does not threaten either held thesis: V (financials, not oil/AI-exposed) and VST (energy/utilities, arguably a modest beneficiary of firmer oil/power demand) are both uncorrelated with the AI-valuation-stress angle, and V's OpenAI/stablecoin catalyst and VST's Helix/Cogentrix catalysts are both intact with no new contrary information today. Weekly new-position count remains 1/3 (close never opens new positions). Thesis contracts: V (review_by 2026-07-28) and VST (review_by 2026-08-07) both not yet due, not triggered. Race scoreboard and performance.csv row appended below. Notified via Telegram.
 
 **2026-07-08 midday (~12:36 ET, Wednesday):** `clock` confirmed `is_open: true`, next close 16:00 ET today. Control switch STATUS: ACTIVE, no NOTE/QUERY pending. Live re-sync: equity $99,760.82, cash $87,702.40 (87.91%), V 22sh @ avg $355.058182 current $347.1925 (−2.215%, −$173.05 unrealized), VST 29sh @ avg $154.70 current $152.42 (−1.474%, −$66.12 unrealized). Neither position breaches the ±3%/+10% news-scan thresholds, so no WebSearch triggered; nowhere near the −7% cut or +15% tighten thresholds — no action taken on either position. Shock check: equity vs last_equity $99,966.97 = −0.2062% — no shock. Drawdown 0.3258% vs HWM $100,086.89 (2026-07-07 market-open) — not triggered (9.674pp headroom). Stop audit: order `2b0a93ba` (V, HWM $356.075, stop $320.4675) and `bdfb5f67` (VST, HWM $159.41, stop $143.469) both confirmed live in `orders open` — 2/2 PASS, no action needed. Sector exposure Financials (V) 7.657%, Energy/Utilities (VST) 4.431%, cash 87.913% — within all caps. No exits this run, no `closed-trades.md`/`trades.jsonl` entry needed. Weekly new-position count remains 1/3 (midday never opens new positions). Continued softness in both names likely reflects the ongoing Iran/oil-shock risk-off tape flagged pre-market and market-open today, not a name-specific catalyst — both moves are well under the 3% news-scan threshold regardless.
 
