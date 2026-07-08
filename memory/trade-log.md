@@ -3,6 +3,24 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-08 08:12 ET — PRE-MARKET (no trades; 🚨 overnight Iran ceasefire ended)
+
+- **Action:** None — no trades planned for today's open.
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: false` (pre-market), next open 09:30 ET today.
+- **🚨 Macro shock:** Trump declared the US–Iran ceasefire "over" after overnight US strikes on Iran (response to Strait of Hormuz ship attacks); oil surged +5.6–6.5% (Brent ~USD 78–79, WTI ~USD 74.55–75); S&P/Dow/Nasdaq futures fell broadly (Nasdaq −1%+, AI-semi names Intel/AMD extending losses). Genuine risk-off catalyst, not noise — full detail in `research-log.md`.
+- **Account:** equity USD 99,882.07, cash USD 87,702.40 (87.80%), long MV USD 12,179.67 (12.19%), last_equity USD 99,966.97.
+- **Positions:** V 22sh @ avg USD 355.058182, current USD 351.61 (−0.971%, −USD 75.86 unrealized); VST 29sh @ avg USD 154.70, current USD 153.25 (−0.937%, −USD 42.05 unrealized). Both well above their −7% cut thresholds.
+- **Stop audit:** V `2b0a93ba` (HWM USD 356.075, stop USD 320.4675) and VST `bdfb5f67` (HWM USD 159.41, stop USD 143.469) both confirmed live — 2/2 PASS.
+- **Shock check:** −0.0849% vs last_equity — no shock yet (market hasn't opened; today's real test is at market-open/midday given the overnight news).
+- **Drawdown circuit breaker:** equity USD 99,882.07 vs running HWM USD 100,086.89 → 0.2047% — NOT triggered (9.795pp headroom).
+- **Sector exposure:** Financials (V) 7.74%, Energy/Utilities (VST) 4.45%, cash 87.80% — within all caps.
+- **Thesis contracts:** V and VST both reviewed — neither invalidation triggered, neither `review_by` reached — HOLD both, contracts unchanged.
+- **Earnings window:** no held name reports within 2 trading days (V 2026-07-28, VST 2026-08-06/07) — no action needed.
+- **Cash-drag:** justified explicitly in `research-log.md` — no qualifying setup existed regardless, and today's fresh geopolitical shock is an added reason to stay defensive.
+- **Weekly new-position count:** 1/3 used this week (V, 2026-07-07).
+
 ## 2026-07-07 12:36 ET — MIDDAY CHECK (no trades)
 
 - **Action:** None — both positions within guardrail thresholds.

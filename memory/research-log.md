@@ -5,6 +5,66 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-08 — Pre-market research (~08:12 ET, Wednesday) — PLAN: no trades (geopolitical risk-off)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was empty (`{}`) at start of this run. Lock acquired (`premarket`, expires 08:18 ET).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-07-08T09:30:00-04:00`, `next_close: 2026-07-08T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-07-08) — 🚨 fresh geopolitical shock overnight
+- **President Trump declared the US–Iran ceasefire "over"** following overnight US strikes on Iran in response to attacks on three ships in the Strait of Hormuz. Treasury also revoked a license that had allowed Iran to export oil globally. Talks reportedly continue, but the interim agreement itself is void as of this morning.
+- **Oil surged ~5.6–6.5%**: Brent crude jumped to ~USD 78–79/bbl, WTI to ~USD 74.55–75/bbl — the largest one-day oil move since early June.
+- **Equity futures fell broadly**: S&P 500 and Dow futures down, Nasdaq futures down >1%, led by continued semiconductor weakness (Intel, AMD extending recent losses). Investors rotating into the US dollar and safe-haven sectors (healthcare, utilities) per the CNBC/Yahoo premarket coverage.
+- **Net posture: genuine risk-off, not noise.** This is a new, dated macro shock (not the ongoing AI-capex-digestion story) — a real geopolitical escalation with an immediate commodity/equity market reaction. No VIX print was available in the sources pulled, but the oil move and broad equity-futures decline are consistent with a volatility spike. Warrants a defensive posture today: no new buys regardless of any watchlist gate status, and heightened attention to the intraday shock check at market open/midday.
+
+### Held position — V (Visa) — what changed since yesterday
+- Alpaca live data: 22sh @ avg USD 355.058182, current USD 351.61 (−0.971% from entry), unrealized −USD 75.86. Trailing stop `2b0a93ba` HWM USD 356.075 / stop USD 320.4675 — live, confirmed in `orders open`.
+- **What changed:** Visa initiated Overweight at Barclays (2026-07-08) and price target raised to USD 412 (from USD 370) at Baird; Wells Fargo reiterated Buy. Visa also joined 140+ partners to launch "Open USD," a consortium stablecoin aimed at USDC/USDT — a fresh extension of the agentic-commerce/stablecoin catalyst already driving the thesis. No negative company-specific news. The stock is a payments/financials name, not directly exposed to the Iran/oil shock, though a broad risk-off tape could still pull it down mechanically with the market.
+- **Thesis contract:** invalidation ("closes below the 50-day SMA ~USD 327 on volume, or the 10% trailing stop fires, or an adverse DOJ antitrust ruling") — NOT triggered, price USD 351.61 well above USD 327. `review_by` 2026-07-28 (earnings) not yet reached. **Decision: HOLD, contract unchanged.**
+- **Earnings:** confirmed 2026-07-28 — 14 trading days out, no window conflict.
+
+### Held position — VST (Vistra) — what changed since yesterday
+- Alpaca live data: 29sh @ avg USD 154.70, current USD 153.25 (−0.937% from entry), unrealized −USD 42.05. Trailing stop `bdfb5f67` HWM USD 159.41 / stop USD 143.469 — live, confirmed in `orders open`.
+- **What changed:** Thesis pillars unchanged — Helix Digital Infrastructure and Cogentrix still intact, Bernstein (Jul 3) and Wells Fargo (Jul 1) both reiterated Buy. GuruFocus flags VST 8.2% below its own GF Value estimate (USD 167.20), i.e. still reads as undervalued on that metric. As a power/utilities name, VST could see some relative support today if the market rotates into defensives/safe-havens per the premarket coverage — but it is not a "flight to safety" name in the classic sense (equity beta remains real). No negative news found.
+- **Earnings-date ambiguity persists:** one source today says **Aug 6, 2026**; the source used on 2026-07-07 (StockTitan/Vistra IR) said **Aug 7, 2026**. Both remain far outside the 2-trading-day earnings window regardless of which is correct — no action needed today, but flagging the recurring 1-day discrepancy again (third time this has come up) since it will matter once we're closer to the date. Carrying `review_by` as **2026-08-07** (the more recently sourced IR figure) until a single authoritative date is confirmed closer to the event.
+- **Thesis contract:** invalidation ("closes below USD 148 on volume, or the trailing stop fires, or the Helix/Cogentrix consortium is disrupted") — NOT triggered, price USD 153.25 above USD 148. `review_by` 2026-08-07 not yet reached. **Decision: HOLD, contract unchanged.**
+
+### Watchlist
+No full SMA/ATR re-verification run today — given the fresh geopolitical shock, no new position would be opened regardless of gate status, so a full re-gate of NVDA/LLY/LRCX/PWR/MSFT/COST/AAPL is deferred to the next routine once the tape stabilizes. Directionally: LLY hit a fresh 52-week high (USD 1,234, +14.4% YTD) on continued GLP-1 momentum (JPMorgan PT raised to USD 1,400) — even more extended above its 50-day than the last check, technical gate still fails. The broader AI-semiconductor selloff (Intel, AMD extending losses per premarket coverage) reinforces the existing NVDA/LRCX caution — no change to their gated status.
+
+### Risk posture (live Alpaca data, 2026-07-08 ~08:10 ET)
+- Equity **USD 99,882.07** | Cash USD 87,702.40 (87.80%) | Long MV USD 12,179.67 (12.19%) | last_equity (Alpaca-reported, 2026-07-07 close) USD 99,966.97.
+- **Drawdown circuit breaker:** running HWM USD 100,086.89 (set 2026-07-07 market-open; the `history` endpoint's own daily-close series tops out at USD 100,073.07 for the same window — a known small lag between the intraday-recorded HWM and the endpoint's close series, flagged in prior runs). Current equity USD 99,882.07 → drawdown **0.2047%** — NOT triggered (9.795pp headroom).
+- **Intraday shock check:** USD 99,882.07 vs last_equity USD 99,966.97 = **−0.0849%** — no shock (threshold −4%). Note: this pre-dates the overnight Iran news reaching the cash-equity tape (market not yet open); the real test of today's shock is the market-open/midday check once trading begins.
+- **Sector cap:** Financials (V) 7.74%, Energy/Utilities (VST) 4.45%, Cash 87.80% — both sectors far below the 60% cap.
+- **Stop audit:** V `2b0a93ba` (HWM USD 356.075, stop USD 320.4675) and VST `bdfb5f67` (HWM USD 159.41, stop USD 143.469) both confirmed live in `orders open` — **2/2 PASS**.
+- **Weekly new-position count:** 1/3 used this week (V, 2026-07-07; week of 2026-07-06).
+
+### Cash-drag check
+Cash 87.80% remains far above the 25–40% build-phase target band and has been for well over a week. Ordinarily this would call for either a qualifying entry or an explicit justification for staying in cash — today it's an easy call: **a fresh, dated geopolitical shock (Iran ceasefire declared over, oil +5.6–6.5%, equity futures broadly lower, semiconductor sector extending losses) is not a backdrop for opening any new position, regardless of any individual name's technical/valuation gate status.** No watchlist name was even close to clearing all gates as of the last full re-verification (2026-07-06/07), so this is not cash sitting idle by default — it is a deliberate no-trade decision given both (a) no cleared setups and (b) a same-day macro reason to be more conservative, not less.
+
+### Earnings-window rule
+No held name reports within the next 2 trading days (V: 2026-07-28; VST: 2026-08-06/07) — no action required.
+
+### Planned trades for today
+
+No trades planned — 🚨 fresh overnight geopolitical shock (Iran ceasefire declared over, oil +5.6–6.5%, equity futures down, Nasdaq futures −1%+) argues for a defensive, wait-and-see posture; no watchlist name was near a clean entry signal regardless. Both held positions (V, VST) reviewed, theses intact, contracts unchanged, stops live. Market-open and midday routines should pay close attention to the intraday shock check and news-scan thresholds given the overnight catalyst.
+
+```json
+{
+  "plan_date": "2026-07-08",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-07-07 — Pre-market research (~08:35 ET, Tuesday) — PLAN: BUY V 22sh
 
 ### Live-switch guard
