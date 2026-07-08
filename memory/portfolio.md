@@ -21,39 +21,39 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-08 ~09:36 ET (market-open, Wednesday) — no trades; Iran risk-off held, both positions above cut thresholds, stops verified
+**Last updated:** 2026-07-08 ~12:36 ET (midday, Wednesday) — no action; both positions within range, stops verified
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-08 market-open ~09:36 ET)
+## Account (live Alpaca data, 2026-07-08 midday ~12:36 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,883.05 |
-| Cash | $87,702.40 (87.81%) |
-| Long market value | $12,180.65 (12.19%) |
-| Buying power | $384,915.42 |
+| Equity | $99,760.82 |
+| Cash | $87,702.40 (87.91%) |
+| Long market value | $12,058.42 (12.09%) |
+| Buying power | $384,573.16 |
 | Last equity (2026-07-07 close, Alpaca) | $99,966.97 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| VST | 29 | $154.70 | $156.03 | +$38.57 (+0.86%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $159.41, stop $143.469 — live ✓ | B (2026-07-06, last review; next Monday review 2026-07-13) |
-| V | 22 | $355.058182 | $347.95 | −$156.38 (−2.002%) | Financials | Order 2b0a93ba, 10%, HWM $356.075, stop $320.4675 — live ✓ | New entry 2026-07-07 — not yet rated (first Monday review 2026-07-13) |
+| VST | 29 | $154.70 | $152.42 | −$66.12 (−1.474%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $159.41, stop $143.469 — live ✓ | B (2026-07-06, last review; next Monday review 2026-07-13) |
+| V | 22 | $355.058182 | $347.1925 | −$173.05 (−2.215%) | Financials | Order 2b0a93ba, 10%, HWM $356.075, stop $320.4675 — live ✓ | New entry 2026-07-07 — not yet rated (first Monday review 2026-07-13) |
 
-**Sector exposure:** Energy/Utilities (VST): $4,524.87 = 4.531%. Financials (V): $7,654.90 = 7.665%. Cash: $87,702.40 = 87.807%. No sector above 60% cap ✓.
+**Sector exposure:** Energy/Utilities (VST): $4,420.18 = 4.431%. Financials (V): $7,638.235 = 7.657%. Cash: $87,702.40 = 87.913%. No sector above 60% cap ✓.
 
 **Trailing stop status:** 2/2 positions protected.
-**Stop audit: 2/2 ✓ PASS** (2026-07-08 market-open).
+**Stop audit: 2/2 ✓ PASS** (2026-07-08 midday).
 
 **Today's plan:** No trades placed — plan (`research-log.md`, `plan_date: 2026-07-08`) had zero planned trades due to the 🚨 overnight geopolitical shock (Trump declared the US-Iran ceasefire "over" after strikes tied to Strait of Hormuz ship attacks; oil +5.6-6.5% to ~$78-79 Brent). No watchlist name was near a clean entry gate regardless. See `research-log.md` 2026-07-08 entry for full detail.
 
-## Risk posture (2026-07-08 market-open)
+## Risk posture (2026-07-08 midday)
 
-- **Drawdown circuit breaker:** Equity $99,883.05 vs running HWM $100,086.89 (set 2026-07-07 market-open). Drawdown 0.2037% — NOT triggered ✓ (9.796pp headroom).
-- **Intraday shock check:** Equity $99,883.05 vs last_equity $99,966.97 (Alpaca, 2026-07-07 close) = −0.0839% — no shock ✓.
-- **Sector cap:** Energy/Utilities 4.531%, Financials 7.665% — both well below 60% ✓.
+- **Drawdown circuit breaker:** Equity $99,760.82 vs running HWM $100,086.89 (set 2026-07-07 market-open). Drawdown 0.3258% — NOT triggered ✓ (9.674pp headroom).
+- **Intraday shock check:** Equity $99,760.82 vs last_equity $99,966.97 (Alpaca, 2026-07-07 close) = −0.2062% — no shock ✓.
+- **Sector cap:** Energy/Utilities 4.431%, Financials 7.657% — both well below 60% ✓.
 - **Weekly new-position count:** 1/3 used this week (V, 2026-07-07).
 
 ## Performance vs S&P 500
@@ -73,6 +73,8 @@ reference but is **not** the live comparison baseline going forward.
 _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): Bull ended at $98,711.58 (−1.289%) vs SPY total-return +... — full detail in git history and `weekly-review.md`. Not comparable going forward; new inception above is the live baseline._
 
 ## Notes
+
+**2026-07-08 midday (~12:36 ET, Wednesday):** `clock` confirmed `is_open: true`, next close 16:00 ET today. Control switch STATUS: ACTIVE, no NOTE/QUERY pending. Live re-sync: equity $99,760.82, cash $87,702.40 (87.91%), V 22sh @ avg $355.058182 current $347.1925 (−2.215%, −$173.05 unrealized), VST 29sh @ avg $154.70 current $152.42 (−1.474%, −$66.12 unrealized). Neither position breaches the ±3%/+10% news-scan thresholds, so no WebSearch triggered; nowhere near the −7% cut or +15% tighten thresholds — no action taken on either position. Shock check: equity vs last_equity $99,966.97 = −0.2062% — no shock. Drawdown 0.3258% vs HWM $100,086.89 (2026-07-07 market-open) — not triggered (9.674pp headroom). Stop audit: order `2b0a93ba` (V, HWM $356.075, stop $320.4675) and `bdfb5f67` (VST, HWM $159.41, stop $143.469) both confirmed live in `orders open` — 2/2 PASS, no action needed. Sector exposure Financials (V) 7.657%, Energy/Utilities (VST) 4.431%, cash 87.913% — within all caps. No exits this run, no `closed-trades.md`/`trades.jsonl` entry needed. Weekly new-position count remains 1/3 (midday never opens new positions). Continued softness in both names likely reflects the ongoing Iran/oil-shock risk-off tape flagged pre-market and market-open today, not a name-specific catalyst — both moves are well under the 3% news-scan threshold regardless.
 
 **2026-07-08 market-open (~09:36 ET, Wednesday):** `clock` confirmed `is_open: true`, next close 16:00 ET today. Control switch STATUS: ACTIVE, no NOTE/QUERY pending. Today's plan (`research-log.md`, `plan_date: 2026-07-08`) had zero planned trades — pre-market flagged the overnight Iran ceasefire collapse / oil shock (+5.6-6.5%) as a genuine risk-off catalyst warranting no new positions regardless of watchlist gate status — so the breaking-news gate and execution steps were skipped per playbook. Live re-sync: equity $99,883.05, cash $87,702.40 (87.81%), V 22sh @ avg $355.058182 current $347.95 (−2.002%, −$156.38 unrealized, −1.207% intraday), VST 29sh @ avg $154.70 current $156.03 (+0.86%, +$38.57 unrealized, +0.193% intraday). Both well above the −7% cut threshold — no action. Shock check: equity vs last_equity $99,966.97 = −0.0839% — no shock. Drawdown 0.2037% vs HWM $100,086.89 (2026-07-07 market-open) — not triggered (9.796pp headroom). Stop audit: order `2b0a93ba` (V, HWM $356.075, stop $320.4675) and `bdfb5f67` (VST, HWM $159.41, stop $143.469) both confirmed live in `orders open` — 2/2 PASS, no recreate needed. Sector exposure Financials (V) 7.665%, Energy/Utilities (VST) 4.531%, cash 87.807% — within all caps. No exits this run, no `closed-trades.md`/`trades.jsonl` entry needed. Weekly new-position count remains 1/3 (market-open never opens positions beyond the pre-written plan). Earnings window: no held name reports within 2 trading days. Notified via Telegram: no trades, risk-off held.
 

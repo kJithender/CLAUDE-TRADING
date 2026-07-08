@@ -3,6 +3,20 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-08 12:36 ET — MIDDAY CHECK (no trades)
+
+- **Action:** None — both positions within range, no cuts, no tightens.
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: true`, next close 16:00 ET today.
+- **Account:** equity USD 99,760.82, cash USD 87,702.40 (87.91%), long MV USD 12,058.42 (12.09%), last_equity USD 99,966.97.
+- **Shock check:** equity vs last_equity = −0.2062% — no shock (threshold −4%).
+- **Drawdown:** 0.3258% vs running HWM USD 100,086.89 (2026-07-07 market-open) — not triggered (9.674pp headroom).
+- **Positions:** V 22sh @ avg USD 355.058182, current USD 347.1925 (−2.215%, −USD 173.05 unrealized); VST 29sh @ avg USD 154.70, current USD 152.42 (−1.474%, −USD 66.12 unrealized). Neither breaches the ±3%/+10% news-scan thresholds — no WebSearch triggered. Nowhere near the −7% cut or +15% tighten thresholds — no action.
+- **Stop audit:** V `2b0a93ba` (HWM USD 356.075, stop USD 320.4675) and VST `bdfb5f67` (HWM USD 159.41, stop USD 143.469) both confirmed live in `orders open` — 2/2 PASS, no recreate needed.
+- **Sector exposure:** Financials (V) 7.657%, Energy/Utilities (VST) 4.431%, cash 87.913% — all within the 60% cap.
+- **Weekly new-position count:** unchanged, 1/3 used this week (V, 2026-07-07).
+
 ## 2026-07-08 09:36 ET — MARKET-OPEN (no trades; risk-off held)
 
 - **Action:** None — today's plan (`research-log.md`, `plan_date: 2026-07-08`) had zero planned trades due to the overnight Iran ceasefire collapse / oil shock; no breaking-news gate or execution needed.
