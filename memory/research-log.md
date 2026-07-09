@@ -5,6 +5,61 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-09 — Pre-market research (~08:12 ET, Thursday) — PLAN: no trades (geopolitical risk-off, escalating)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was empty (`{}`) at start of this run. Lock acquired (`premarket`, expires 12:08 UTC).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-07-09T09:30:00-04:00`, `next_close: 2026-07-09T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-07-09) — 🚨 Iran conflict escalates further, second consecutive risk-off morning
+- **The US launched new airstrikes on Iran overnight**, and Tehran responded by targeting Gulf countries — a direct escalation beyond yesterday's ceasefire collapse. Oil is climbing again this morning (WTI ~USD 74.49, +1.32%; Brent ~USD 79.10, +1.38%) on top of yesterday's +4.4%/+5.2% surge (WTI settled USD 73.52, Brent USD 78.02).
+- **Yesterday's close (2026-07-08):** Dow −1.1% (−576.76 pts to 52,348.39), S&P 500 −0.3% to 7,482.71, Nasdaq +0.2% to 25,870.65 (AI-mega-cap names clawed back some losses even as the broad tape fell — 24 of 30 Dow components negative, but 6-of-11 S&P sectors positive).
+- **Rates:** 10yr Treasury yield 4.58%, a 4-week high (rising, still below the 4.75% new-buy gate but the trend bears watching); 1-year inflation expectations 3.7%. A falling US oil-inventory print is adding to fuel-price concern.
+- **Futures signal is genuinely mixed** this morning — one read has S&P futures down ~0.8% on higher yields/inflation jitters, another has them up ~0.2%, and prediction markets imply an 85% chance of a higher open — reflecting real uncertainty about whether the AI-mega-cap bid (NVDA, AAPL) offsets the oil/yield headwind.
+- **Net posture: risk-off catalyst has escalated, not faded.** Yesterday's shock did not resolve overnight — it got worse (new strikes + retaliation against Gulf countries). Combined with a 4-week-high 10yr yield and elevated inflation expectations, today calls for continued defense: no new buys regardless of watchlist gate status, and full attention to the intraday shock check once the market opens.
+
+### Held position — V (Visa) — what changed since yesterday
+- Alpaca live data: 22sh @ avg USD 355.058182, current USD 346.75 (−2.34% from entry), unrealized −USD 182.78. Trailing stop `2b0a93ba` HWM USD 356.075 / stop USD 320.4675 — live, confirmed in `orders open`.
+- **What changed:** No fresh negative company news. Visa's General Counsel Julie Rottenberg sold 2,027 shares (~USD 729,720) on 2026-07-02 via a Form 144 filing — a routine-sized executive sale, not a cluster, and consistent with the CFO's confirmed 10b5-1 pattern already vetted for this name (2026-06-10 lesson); no new insider-selling flag. Analyst tone remains constructive (Barclays Overweight, Wells Fargo Buy, Baird PT USD 412 — all already reflected in yesterday's log). The stock's drift lower this week reads as broad risk-off tape, not a thesis break — Visa (financials) has no direct Iran/oil exposure.
+- **Thesis contract:** invalidation ("closes below the 50-day SMA ~USD 327 on volume, or the 10% trailing stop fires, or an adverse DOJ antitrust ruling") — NOT triggered, price USD 346.75 well above USD 327. `review_by` 2026-07-28 (earnings) not yet reached. **Decision: HOLD, contract unchanged.**
+- **Earnings:** confirmed 2026-07-28 — 13 trading days out, no window conflict.
+
+### Held position — VST (Vistra) — what changed since yesterday
+- Alpaca live data: 29sh @ avg USD 154.70, current USD 156.00 (+0.84% from entry), unrealized +USD 37.70. Trailing stop `bdfb5f67` HWM USD 159.41 / stop USD 143.469 — live, confirmed in `orders open`.
+- **What changed:** A once-in-a-decade "heat dome" pushed PJM Interconnection's electricity demand to a record over the July 4th weekend — a fresh, concrete demand data point directly reinforcing the power-infrastructure/AI-datacenter thesis. Bernstein (Buy, 7/6) and Wells Fargo (Buy, 7/3) ratings stand; no negative news. VST is uncorrelated with the Iran/oil shock (its input is natural gas/nuclear/grid capacity, not crude) and arguably benefits at the margin from firmer energy demand.
+- **Thesis contract:** invalidation ("closes below USD 148 on volume, or the 10% trailing stop fires, or the Helix/Cogentrix consortium is disrupted") — NOT triggered, price USD 156.00 well above USD 148. `review_by` 2026-08-07 (earnings, confirmed Q2 report date) not yet reached. **Decision: HOLD, contract unchanged.**
+- **Earnings:** confirmed 2026-08-07 — 21 trading days out, no window conflict.
+
+### Watchlist — brief catalyst check (full gate re-verification deferred; no buy will be made today regardless)
+- **NVDA:** forward P/E has compressed to ~22.2x (lowest since 2019) despite record trailing revenue (USD 215.9B) — the multiple is cheapening even as the AI-accelerator monopoly thesis holds; conditional China approval for H200 chip sales is a new, real catalyst. Still needs a fresh 50-day SMA/ATR gate check before any entry — deferred to the next pre-market when today's macro shock isn't forcing a no-trade day regardless.
+- **AAPL:** reported up sharply today (Thursday) in some sources, still inside its 2-week valuation-recheck window (deadline 2026-07-17 per 2026-07-06 gate-check). No action — needs its own fresh gate check on a day when a buy is actually in play.
+- **LLY:** no material news found this search pass; remains extended per the 2026-07-03 hygiene note, still awaiting a pullback toward its 50-day.
+- Full ATR/SMA re-verification across the remaining watchlist (MSFT, COST, LRCX, PWR) is deferred again today — moot given the no-buy decision below, and repeating the 2026-07-06 full-table pull on a day with zero chance of a trade would not change today's action.
+
+### Earnings-window rule
+- No held name reports within 2 trading days (V 2026-07-28, VST 2026-08-07). No forced hold/trim/exit decision required beyond the thesis-contract reviews above.
+
+### Cash-drag check
+- Cash is 87.83% of equity — far above the 25–40% target band, and has been for over a week. **Explicit justification:** (1) the last full watchlist gate re-verification (2026-07-06) found every name technically gated or valuation-gated; (2) today is the second consecutive morning with a genuine, escalating geopolitical shock (new Iran strikes + Gulf retaliation, oil higher, 10yr yield at a 4-week high) — a real reason to stay defensive, not a passive default; (3) one weekly new-position slot remains (1/3 used) and there is no urgency to force it. Staying heavy in cash today is the correct, deliberate decision.
+
+### Today's plan
+No trades warranted. The escalating Iran conflict is a fresh, dated, and worsening macro shock — no new position should be opened today regardless of any watchlist name's technical status. Existing positions (V, VST) are both within their thesis contracts and well above the −7% cut threshold; both keep their live 10% trailing stops. Re-run full ATR/SMA gates on NVDA/AAPL/LLY/MSFT/COST/LRCX/PWR at the next pre-market once the macro picture stabilizes.
+
+```json
+{
+  "plan_date": "2026-07-09",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-07-08 — Pre-market research (~08:12 ET, Wednesday) — PLAN: no trades (geopolitical risk-off)
 
 ### Live-switch guard

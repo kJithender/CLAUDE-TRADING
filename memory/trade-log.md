@@ -3,6 +3,24 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-09 08:12 ET — PRE-MARKET (no trades; 🚨 Iran conflict escalates further)
+
+- **Action:** None — no trades planned for today's open.
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: false` (pre-market), next open 09:30 ET today.
+- **🚨 Macro shock (escalated):** overnight the US launched new airstrikes on Iran and Tehran retaliated by targeting Gulf countries — a further escalation beyond yesterday's ceasefire collapse. Oil climbing again (WTI ~USD 74.49, Brent ~USD 79.10) on top of yesterday's +4.4%/+5.2% surge. 10yr Treasury yield 4.58%, a 4-week high (still below the 4.75% gate). Yesterday's close: Dow −1.1%, S&P −0.3%, Nasdaq +0.2% (AI mega-caps resilient). Full detail in `research-log.md`.
+- **Account:** equity USD 99,854.90, cash USD 87,702.40 (87.83%), long MV USD 12,152.50 (12.17%), last_equity USD 99,837.84.
+- **Positions:** V 22sh @ avg USD 355.058182, current USD 346.75 (−2.34%, −USD 182.78 unrealized); VST 29sh @ avg USD 154.70, current USD 156.00 (+0.84%, +USD 37.70 unrealized). Both well above their −7% cut thresholds.
+- **Stop audit:** V `2b0a93ba` (HWM USD 356.075, stop USD 320.4675) and VST `bdfb5f67` (HWM USD 159.41, stop USD 143.469) both confirmed live — 2/2 PASS.
+- **Shock check:** +0.0171% vs last_equity — no shock (market hasn't opened; today's real test is at market-open/midday given the overnight escalation).
+- **Drawdown circuit breaker:** equity USD 99,854.90 vs running HWM USD 100,086.89 → 0.2318% — NOT triggered (9.768pp headroom).
+- **Sector exposure:** Financials (V) 7.64%, Energy/Utilities (VST) 4.53%, cash 87.83% — within all caps.
+- **Thesis contracts:** V and VST both reviewed — neither invalidation triggered, neither `review_by` reached — HOLD both, contracts unchanged.
+- **Earnings window:** no held name reports within 2 trading days (V 2026-07-28, VST 2026-08-07) — no action needed.
+- **Cash-drag:** justified explicitly in `research-log.md` — last full gate re-verification (2026-07-06) found every watchlist name gated, and today's further-escalating geopolitical shock is an added reason to stay defensive.
+- **Weekly new-position count:** 1/3 used this week (V, 2026-07-07).
+
 ## 2026-07-08 12:36 ET — MIDDAY CHECK (no trades)
 
 - **Action:** None — both positions within range, no cuts, no tightens.
