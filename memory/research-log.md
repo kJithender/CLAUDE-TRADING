@@ -5,6 +5,22 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-10 weekly review research (~16:40 ET, Friday)
+
+**Week in review (Jul 6-10):** S&P 500 gained ~1.4% on the week (744.86 → 755.36), led narrowly by tech — Nvidia +~4%, Meta +~6% on the week, Nasdaq +1.3% Friday alone. Sector breadth was actually poor: 9 of 11 S&P sectors were negative for stretches of the week (Materials -2.6%, Financials -1.9%, Consumer Discretionary -1.8%) while only Information Technology (+1.2%) and Energy (+1.8%) led — consistent with V (Financials) drifting lower most of the week on tape rotation, not company news. [CNBC](https://www.cnbc.com/2026/07/09/stock-market-today-live-updates.html), [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-10-075400187.html)
+
+**Fed:** June FOMC minutes (released 07-08) showed 9 of 18 officials expect at least one hike before year-end 2026 — a hawkish split — though consensus still expects the Fed to hold through the rest of 2026. [CNBC](https://www.cnbc.com/2026/07/08/fed-minutes-june-2026-.html)
+
+**Held names — V (Visa):** court dismissed a securities-fraud suit against Visa and 7 officers this week (positive, overhang removed); UBS and Barclays both carry/initiated Buy/Overweight. Notable watch item: long-term cross-border payment volume growth has been decelerating since its post-pandemic peak — a slow-moving risk to Visa's international transaction-fee segment, not thesis-breaking today but worth tracking at the next thesis-contract review (2026-07-28). [Source noted in 2026-07-10 pre-market entry above]
+
+**Held names — VST (Vistra):** no new negative developments; Morgan Stanley trimmed PT to $210 (from $212) while maintaining Overweight — a minor, non-thesis-breaking adjustment. Earnings confirmed 2026-08-07, consensus EPS $2.43 (+140.59% YoY), revenue $6.42B (+50.98% YoY) — a high bar the stock will need to clear.
+
+**This week's broader leaders (best-performing-stocks scan):** Nvidia and Meta led the tape (AI/tech), Energy (XLE +1.8%) also outperformed. No new individual-name idea emerged beyond what's already on the watchlist, except **META** — added to the watchlist below as an unvetted candidate given its leadership this week and Cautious Bull's prior (closed) position in the name.
+
+**Watchlist hygiene applied this week:** added META (2026-07-10, unvetted); flagged PWR for likely purge next week (4+ weeks on the list, no dated forward catalyst, technical gate still failing). No purge yet — see `strategy.md` and `weekly-review.md` for full reasoning.
+
+---
+
 ## 2026-07-09 — Pre-market research (~08:12 ET, Thursday) — PLAN: no trades (geopolitical risk-off, escalating)
 
 ### Live-switch guard

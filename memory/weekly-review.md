@@ -2,6 +2,81 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-07-10 (Week 2 of the new track record — 5 active trading days: Mon Jul 6 – Fri Jul 10)
+
+- **Bull return (week, 2026-07-03 close carried forward → 2026-07-10 close):** +0.0950% ($99,894.14 → $99,989.04)
+- **SPY return (week, $744.86 → $755.36, dailyBar.c both days):** +1.4097%
+- **Result:** Lagged SPY by **−1.315pp**
+- **Since inception (2026-07-01, $100,000.00 / SPY $745.665):** Bull −0.011% vs SPY +1.300% = **−1.311pp gap** (widened from −0.002pp last week — entirely this week's move)
+- **HWM:** $100,086.89 (set 2026-07-07 market-open) | drawdown −0.098% — far within the −10% circuit breaker ✓
+- **Grade:** B
+
+### Trade statistics (new baseline — sample still far too small to draw conclusions)
+
+| Metric | Value |
+|--------|-------|
+| New trades this week | 1 (BUY V, 22sh @ USD 355.058182, 2026-07-07) |
+| Total closed trades (new baseline) | 0 |
+| Win rate | N/A — 0 closed trades since reset |
+| Profit factor | N/A |
+| Avg holding days | N/A — V (4 trading days) and VST (7 trading days) both still open |
+| Biggest standing lesson (carried from pre-reset ledger) | Entries into macro-inflection environments with a co-located stop and −7% rule → near-maximum loss exits (still valid, still no new closed trades to test it against) |
+
+⚠️ **Ledger cross-check:** `trades.jsonl` has 2 post-reset buy entries (VST 07-02, V 07-07), matching `closed-trades.md`'s 0 post-reset exits and `trade-log.md`'s narrative. No reconciliation issue — the two ledgers agree.
+
+### Process audit
+
+| Check | Result | Grade |
+|-------|--------|-------|
+| Cash drag (87.7% average this week vs 25–40% target band for the build phase) | Every single day's non-buy was individually justified with specific, dated gate failures (AAPL and LRCX both cleared the technical gate but failed decisively on valuation — GuruFocus 15.6%/199% overvalued respectively; NVDA/PWR/MSFT/COST all failed the technical gate outright) plus three sessions of a genuine, escalating Iran-conflict macro shock (07-08/07-09). Not a passive default. **But** this is now the second consecutive week at 87–96% cash with only 2 tiny starter positions (12.3% invested) — a real, mounting cost, not just a paper one (see "what didn't work" below). | ⚠️ Justified daily, but flagged as a pattern worth a hard look |
+| Sector caps | Financials (V) 7.68%, Energy/Utilities (VST) 4.61%, cash 87.71% — nowhere near the 60% cap | ✓ |
+| Stop discipline | V's `2b0a93ba` and VST's `bdfb5f67` both confirmed live at every routine session all week (pre-market, market-open, midday, close × 5 days) | ✓ PERFECT |
+| Weekly new-position count | 1/3 slots used (V, 2026-07-07) | ✓ |
+| Thesis contracts | V (review_by 2026-07-28) and VST (review_by 2026-08-07) both reviewed and unchanged at every session | ✓ |
+| Loss post-mortems | None required — no exits this week | ✓ N/A |
+| Guardrail checks | Complete tables at every routine session, including through the escalating Iran-conflict shock | ✓ |
+
+### What worked
+
+- **Disciplined valuation-based deferrals on AAPL and LRCX.** Both cleared the technical-confirmation gate this week (AAPL +6.52% vs 50-day, LRCX +7.90% vs 50-day) but were correctly held back on valuation alone — AAPL at 37.3-37.8x P/E (15.6% GuruFocus-overvalued) and LRCX at 62-76x trailing P/E (~199% above GuruFocus fair value after a >90% YTD run). This is exactly the "don't chase a story at any price" discipline the strategy is built on, applied under real pressure from strong technical/momentum signals.
+- **LRCX insider-selling concern resolved correctly.** The 07-02 Form 144 cluster was confirmed as CEO Timothy Archer's scheduled Rule 10b5-1 plan (adopted 2026-02-24), not opportunistic selling — applying the 2026-06-10 V lesson about verifying 10b5-1 status before treating insider sales as bearish.
+- **Perfect stop discipline through a genuine macro shock.** Both trailing stops stayed live and correctly ratcheted (VST's HWM moved from $156.24 to $161.14 over the week) across three sessions of an escalating Iran conflict (ceasefire collapse 07-08, new strikes + Gulf retaliation 07-09) without a single missed audit.
+- **V thesis reinforced by a favorable legal outcome** — a federal judge dismissed a securities-fraud suit against Visa and 7 officers this week — plus continued lopsided-bullish analyst coverage (29 buy / 8 outperform / 3 hold / 0 sell of 42).
+- **VST continued to outperform its sector** (+11.75% trailing month vs Utilities +3.47%), with Bernstein and Wells Fargo both reiterating Buy on the power/AI-datacenter thesis.
+
+### What didn't work
+
+- **Bull lagged SPY by 1.315pp this week — SPY's gain was concentrated in exactly the layer Bull holds zero exposure to.** NVDA (+~4%) and META (+~6%) led a tech/AI rally that pushed the S&P 500 to a weekly gain of ~1.4% (Nasdaq +1.3% on the week); Bull's two holdings (V financials, VST energy/utilities) are deliberately outside AI-semi, so they captured almost none of it. This is now the third straight session-by-session widening documented in `portfolio.md` — a real, structural cost of the current sector mix, not a process failure.
+- **Cash drag is now a two-week pattern, not a one-week anomaly.** 87–96% cash with only 12.3% invested across 2 starter positions is far outside the 25–40% cash target band for the build phase. Every individual day's decision was justified (see process audit), but two straight weeks of the same outcome raises a fair question the next few weeks should test: is the valuation bar (GuruFocus "significantly overvalued" flags) calibrated correctly for a strategy trying to *beat* SPY, or is disciplined patience the right call and the opportunity cost simply the price of avoiding a LRCX-style euphoric-multiple entry? No verdict yet.
+- **Aggressive Bull comparison remains impossible.** AGGRO's memory has now been stale for **17 days** (since 2026-06-23 EOD) — flagged by 5+ separate routine runs (close 07-02, 07-03, weekly review 07-03, and again today) with zero resolution. This has crossed well past "worth a note."
+
+### Macro context (week of July 6–10, 2026)
+
+- **S&P 500 gained ~1.4% on the week** (744.86 → 755.36), closing Friday at a fresh high on continued Big Tech strength (Nvidia +~4%, Meta +~6% on the week). Nasdaq Composite +1.3% Friday alone. [CNBC](https://www.cnbc.com/2026/07/09/stock-market-today-live-updates.html)
+- **Sector performance was narrow, not broad** — 9 of 11 S&P sectors were actually negative for stretches of the week (Materials −2.6%, Financials −1.9%, Consumer Discretionary −1.8%) while only Information Technology (+1.2%) and Energy (+1.8%) led. This corroborates why V (Financials) drifted lower most of the week even with no thesis-breaking news. [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-10-075400187.html)
+- **FOMC minutes (released 07-08)** showed 9 of 18 officials expect at least one hike before year-end 2026 — a hawkish split, though the Fed is still expected to hold through the rest of 2026. [CNBC](https://www.cnbc.com/2026/07/08/fed-minutes-june-2026-.html)
+- **Iran conflict escalated mid-week (07-08/07-09: ceasefire declared "over," new strikes, Gulf retaliation, oil +5-6%) then eased by Friday** (WTI back to ~$72/bbl, 10yr yield easing to ~4.54%, still below the 4.75% new-buy gate).
+- **SK Hynix's $26.5B Nasdaq IPO debuted +~14%** on 07-10 — read as a bullish AI-trade sentiment signal.
+- Initial jobless claims fell to 215K (better than the 223K estimate); existing home sales missed (4.09M vs 4.19M expected).
+
+### Aggressive Bull lesson (section 7b)
+
+**AGGRO data is STILL STALE — last updated 2026-06-23 EOD, now 17 days as of this review.** `memory/aggressive/portfolio.md`, `trade-log.md`, `closed-trades.md`, and `weekly-review.md` show no activity past the Week 3 review (2026-06-19) / June 23 EOD close. This has now been flagged by 5+ separate routine runs across 3 weeks with zero resolution — well past "worth a note."
+
+**Last-known AGGRO figures (2026-06-23 EOD, stale, 17 days old):** equity $92,876.82, since-inception (2026-06-04) return −7.123%, alpha vs SPY −4.392pp. Compared against Cautious Bull's own since-inception return of −0.011% (from 2026-07-01), **AGGRO is not ahead of Cautious Bull by any measure, stale or otherwise** — it trails by a wide margin on its own (older, non-comparable) timeline.
+
+**One lesson worth re-extracting from AGGRO's last live data, since there's nothing fresher:** AGGRO's Week 3 review documented that its wider 18% trailing stops (vs. Cautious's 10%) kept positions alive through volatility that would have stopped Cautious out, at the cost of much larger unrealized drawdowns (MSFT −10.98%, 1.02pp from a forced cut, over a 3-day weekend) before AGGRO's own semiconductor-rout close on 06-23 (−2.32% that day alone, MRVL −9.52%). The pattern holds: wider stops + concentration amplify both the recovery (AGGRO's own +4.23% Week 3) and the subsequent drawdown (the eventual −8.17% from HWM by 06-23). Cautious Bull's tighter-stop, diversified approach continues to look structurally correct for capital preservation, even though it also means Cautious captures less of any single sector's upside — the AI-semi rally this very week is the live example on Cautious Bull's own book now, not just AGGRO's history.
+
+**Cross-Bull learning counter update:** AGGRO trails Cautious Bull by every available measure (stale or otherwise) — the >5pp-AGGRO-leads-for-2-weeks trigger condition is nowhere close to being met. Counter = **0** (unchanged). `CROSS_BULL_LEARNING:` in `control.md`: confirmed blank, no change needed.
+
+### Strategy adjustments
+
+- **Watchlist addition:** added **META** (Meta Platforms) as an unvetted candidate — led this week's AI/tech rally (+~6%); needs a full price/ATR/valuation gate check before any consideration, same treatment AAPL got on 2026-07-03. Dated 2026-07-10.
+- **Watchlist flag (no purge yet):** **PWR** is now 4+ weeks on the list (added 2026-06-12) with a repeatedly-noted "no fresh catalyst" and a failing technical gate two weeks running. Per the 2026-07-03 hygiene precedent (only purge names with no dated forward trigger), PWR is kept one more week since it still gets a fresh SMA/ATR re-gate every session — but unlike NVDA/LLY (confirmed earnings dates as forward triggers) it has no dated catalyst on the horizon. **If PWR has not developed a specific dated catalyst by next week's review, purge it.**
+- No changes to entry/exit signals, sizing, or guardrails this week. The system is performing exactly as designed — the cash-drag question flagged above is a watch item for the next few weeks, not a rule change today.
+
+---
+
 ## Week ending 2026-07-03 (Week 1 of the new track record — account reset; 2 active trading days: Wed Jul 1, Thu Jul 2; Jul 3 Independence Day observed, market closed)
 
 **⚠️ Administrative note — week-ending-2026-06-26 review never ran.** Between
