@@ -4544,3 +4544,49 @@ AI infrastructure names at starter sizing. Build gradually per strategy cash pol
 All three will receive 10% trailing-stop orders immediately after fills.
 Cash remaining after buys: ~$75,400 (75.4%) — well above 5% minimum.
 This week's new-position count after today: 3 (weekly cap reached; no new names until next week).
+
+---
+
+## 2026-07-10 pre-market (~08:24 ET, Friday)
+
+**Market posture:** SPY futures roughly flat to +0.2%, Dow futures +0.2% — mixed reads across sources (some show Nasdaq/S&P futures dipping pre-bell on big-tech wobble). Key focus: SK Hynix's $26.5B Nasdaq US listing (largest-ever US listing by a foreign company, Nvidia HBM supplier) is being read as a sentiment test for the AI trade; traders also watching Strait of Hormuz shipping traffic. WTI ~$72/bbl, easing off this week's Iran-driven spike. 10yr Treasury yield eased to ~4.54% (second straight down session, still below the 4.75% new-buy gate) as lower oil cooled inflation fears — but markets are pricing ~64% odds of a Fed hike by the September meeting per June FOMC minutes, a fresh hawkish-tail risk to track alongside the AI-capex-digestion watch already active. Next scheduled macro catalysts: bank earnings + CPI July 14, FOMC July 29 (unchanged from prior weeks). [Sources: [Yahoo Finance](https://finance.yahoo.com/news/live/stock-market-today-friday-july-10-dow-sp-nasdaq-113921604.html), [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/07/60376965/sp500-july-10-open-up-or-down-polymarket-sk-hynix-oil-prices-chip-stocks)]
+
+**Held positions — what changed since yesterday:**
+- **V (Visa), 22sh @ avg $355.058182, current $349.30 (−1.622%):** A federal judge in the Northern District of California dismissed a securities-fraud lawsuit against Visa and 7 current/former officers — a legal overhang removed, mildly positive. No other material news; 42-analyst coverage remains lopsided bullish (29 buy, 8 outperform, 3 hold, 0 sell). Thesis unchanged, contract not triggered (invalidation ~$327 50-day SMA, review_by 2026-07-28). [Source: [MarketBeat](https://www.marketbeat.com/stocks/NYSE/V/)]
+- **VST (Vistra), 29sh @ avg $154.70, current $158.25 (+2.295%):** Closed 07-09 +2.04% (outpacing SPY's +0.81%), +11.75% over the past month vs the Utilities sector's +3.47% — momentum continuing on power/AI-datacenter demand. Bernstein (07-06) and Wells Fargo (07-03) both reaffirmed Buy; FY2026 EPS growth estimate +81%. Nothing thesis-breaking; contract not triggered (invalidation $148, review_by 2026-08-07). [Source: [Yahoo Finance](https://finance.yahoo.com/quote/VST/)]
+
+**Earnings calendar (held + candidates):**
+- V: confirmed Tuesday 2026-07-28 (after close / per fiscal Q3 report) — 18 calendar days out, outside the 2-day blackout.
+- VST: confirmed ~2026-08-06/07 (Q2 2026 report) — ~27 calendar days out, outside the 2-day blackout.
+- AAPL: confirmed Thursday 2026-07-30 after market — outside the 2-day blackout for any new entry consideration.
+- LRCX: June-quarter call confirmed 2026-07-29 — outside the 2-day blackout.
+No held or candidate name is within the earnings blackout window today; no hold/trim/exit decision required on that basis.
+
+**Watchlist re-verification (fresh 50-day SMA / 20-day ATR, Alpaca daily bars 2026-04-15 → 2026-07-09 close):**
+
+| Ticker | Last close | vs 50-day SMA | 20-day ATR% | Technical gate | Notes |
+|--------|-----------|----------------|-------------|-----------------|-------|
+| NVDA | $202.78 | −3.09% | 2.92% | FAIL (below SMA) | Still in the downtrend flagged prior weeks. |
+| LLY | $1,216.95 | +12.63% | 3.16% | FAIL (extended) | Still priced-in / overextended; earnings 2026-08-05. |
+| LRCX | $353.17 | +7.90% | 6.21% (>3% gate) | PASS (borderline), ATR-gated | See valuation note below — deferred regardless. |
+| PWR | $668.17 | −6.52% | 3.89% | FAIL (below SMA) | No fresh catalyst. |
+| MSFT | $384.36 | −4.98% | 2.88% | FAIL (below SMA) | Part of the broader mega-cap tech pullback, unchanged. |
+| COST | $912.97 | −7.51% | 1.97% | FAIL (below SMA) | No fresh catalyst. |
+| AAPL | $316.22 | +6.52% | 2.77% | PASS | See valuation note below — deferred regardless. |
+
+**AAPL deep-dive:** Technical (PASS, +6.52% vs 50d, under the 10% chase threshold) and catalyst (JPMorgan raised PT $325→$345 on 07-07 citing ~20% average price increases on iPads/Macs; Apple-Broadcom renewed a >$30B chip supply agreement through 2031 covering wireless + custom AI silicon) both clear. But valuation still fails decisively: P/E 37.3–37.8x (39% above its own 10-year median of 26.77–26.8x), GuruFocus flags the stock 15.6% above fair value. The price has also moved the wrong way since the 07-06 gate check — then it was near a "sell the news" pullback toward the ~$293 50-day; now at $316.22 it is *more* extended (+6.52% vs the 50-day, up from prior levels), not pulled back. Deferred again. 7 days remain on the 2026-07-17 drop-dead clock set 07-03 ("drop if no clean gate clears").
+
+**LRCX deep-dive:** Technical passes borderline (+7.90% vs 50d, under 10%), and the insider-selling cluster flagged 2026-07-02 is now resolved as non-signal — CEO Timothy Archer's 30,000sh sale ($11.7M, 07-02) was executed under a Rule 10b5-1 plan adopted 2026-02-24 (scheduled, not opportunistic); Director Eric Brandt's earlier 54,500sh sale (06-12) reads as vesting-related. However, valuation is now a decisive fail: GuruFocus puts LRCX ~199% above its estimated fair value ($129.98), trailing P/E 62–76x depending on source (202% above its own 10-year average of 19.73x), and PEG readings are inconsistent across sources (1.5–1.92 on some, 4.87/606%-above-median on GuruFocus) — the spread itself signals an unreliable, euphoric valuation regime, not a clean read. ATR remains gated at 6.21% (>3%), consistent with a stock that swung −7.4% (07-02) then +6.35% (07-09) in the same week on heavy analyst-upgrade momentum (Morgan Stanley PT to $404, Susquehanna to $475, Cantor Fitzgerald to $500 — all raised in the past week). This is a name with genuinely strong company-specific momentum, but entering a >90%-YTD-run stock at 60-70x+ trailing earnings, deep into "GuruFocus significantly overvalued" territory, is exactly the kind of story-over-setup entry the strategy's AI-semi caution note warns against. Deferred, watching for a valuation reset (pullback or a multi-quarter earnings catch-up) before reconsidering.
+
+**Cash-drag check:** Cash has been above the 25–40% target band (currently 87.72%) for 9+ consecutive trading days since the 07-01 re-inception build began. 2 of 3 weekly new-position slots remain this week (V used 1/3 on 07-07), and the broad tape is not obviously hostile (10yr below the buy gate, oil easing, no active circuit-breaker or shock). But no watchlist candidate clears all five entry signals today — the two names that pass the technical gate (AAPL, LRCX) both fail decisively on valuation, and the five names that fail the technical gate have no fresh catalyst to justify chasing. Per the strategy's own discipline (conviction earns size, not the reverse; do not trade to look active), staying in cash today is the correct, deliberate decision — not a default. Will re-run the full gate check again at next pre-market; AAPL's drop-dead clock (2026-07-17) and the ongoing search for a cleaner LRCX entry point remain open threads.
+
+**Sector/risk posture:** Financials (V) 7.687%, Energy/Utilities (VST) 4.591%, cash 87.723% — all within the 60% sector cap and 5% cash floor. Drawdown 0.1106% vs running HWM $100,086.89 — nowhere near the 10% circuit breaker. No intraday shock (market not yet open). Weekly new-position count 1/3, resets Monday 2026-07-13.
+
+**No trades planned today.**
+
+```json
+{
+  "plan_date": "2026-07-10",
+  "trades": []
+}
+```
