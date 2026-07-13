@@ -4606,3 +4606,71 @@ No held or candidate name is within the earnings blackout window today; no hold/
   "trades": []
 }
 ```
+
+---
+
+## 2026-07-13 pre-market (~08:15 ET, Monday)
+
+**Market posture:** S&P 500 futures up ~0.4% pre-bell as investors digest cooling global inflation data alongside uneven growth signals abroad; 10yr Treasury eased to ~4.54-4.56% (second straight down session, still below the 4.75% new-buy gate) on softer oil-driven inflation fears. Last week (Jul 6-10) the S&P 500 gained +1.23%, Nasdaq +1.74%, led by NVDA (+~4%) and META (+~6%) on continued AI-trade momentum; SK Hynix's Nasdaq debut popped ~13% Friday. This week's key catalyst: JPMorgan, BofA, Citigroup, and Wells Fargo all report Q2 earnings **tomorrow, July 14, before the open** — a read on credit quality and loan demand relevant to the broader tape (V is payments, not a bank, but the sector print matters for market mood). FOMC not until July 29. [Sources: [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/07/60406404/stock-market-will-sp-500-open-up-or-down-today-8), [Yahoo Finance](https://finance.yahoo.com/news/live/stock-market-today-friday-july-10-dow-sp-nasdaq-113921604.html), [IG International](https://www.ig.com/en/news-and-trade-ideas/us-bank-earnings--what-to-expect-from-q2-2026-260710)]
+
+**Held positions — what changed since Friday:**
+- **V (Visa), 22sh @ avg $355.058182, current $349.00 (−1.706%):** No new negative news. Barclays initiated Overweight ($420 PT) and Baird raised PT to $412 (from $370) in the past week — both already known/reinforcing. Visa expanding in Vietnam via a new 9Pay partnership (incremental, not thesis-moving). Stablecoin settlement pilot confirmed at a $7B annualized run rate with 160+ card programs live/in development. Earnings confirmed Tuesday 2026-07-28 (consensus EPS $3.22, revenue $11.35B +11.62% YoY) — 11 trading days out, outside the 2-day blackout. Thesis unchanged, contract not triggered (invalidation ~$327 50-day SMA, review_by 2026-07-28). [Source: [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/visa-v-declines-more-market-214503703.html)]
+- **VST (Vistra), 29sh @ avg $154.70, current $157.58 (+1.859%):** Nothing new since Friday's momentum note. 20 analysts average "Strong Buy," 12-month PT $222.89 (+40.65% upside from last price). GuruFocus still flags VST 8.2% below its GF Value estimate ($167.20) — undervalued by that measure even after the recent run. Earnings confirmed ~2026-08-07 (consensus EPS $2.43, +140.59% YoY) — outside the 2-day blackout. Thesis unchanged, contract not triggered (invalidation $148, review_by 2026-08-07).
+
+**Earnings calendar confirmed:** V 2026-07-28, VST ~2026-08-07, AAPL 2026-07-30, LRCX 2026-07-29, LLY 2026-08-05, NVDA 2026-08-26, META 2026-07-29 (est., unconfirmed by company). None within the 2-trading-day blackout for any held or candidate name today.
+
+**Conviction-weighted holding review (Monday, section 3c):**
+- **VST — upgraded B → A.** Original thesis (Helix Digital Infrastructure, Cogentrix, power/AI-datacenter demand) fully intact and working: +1.86% unrealized, +11.75% trailing-month vs the Utilities sector's +3.47%, Bernstein and Wells Fargo both reiterating Buy, GuruFocus still flags it undervalued 8.2% below GF Value even after the run. Conviction is high and the catalyst (Helix/Cogentrix buildout) continues to develop, not stall — upgrading from B (2026-07-06) to A.
+- **V — first review, rated B.** Thesis intact (stablecoin/agentic-commerce catalyst, legal overhang resolved via the dismissed securities-fraud suit, lopsided-bullish analyst coverage) but the position is essentially flat-to-slightly-down since the 2026-07-07 entry (−1.71% unrealized) while the market has been driven by an AI-semi rally V has no exposure to — working but flat, catalyst (07-28 earnings) hasn't arrived yet. Rated B, not C: no red flags, no thesis erosion, just awaiting its catalyst.
+
+**Watchlist re-verification (fresh 50-day SMA / 20-day ATR, Alpaca IEX daily bars 2026-04-15 → 2026-07-10 close):**
+
+| Ticker | Last close | vs 50-day SMA | 20-day ATR% | Technical gate | Notes |
+|--------|-----------|----------------|-------------|-----------------|-------|
+| LLY | $1,188.57 | +9.35% | 2.86% | **PASS** (first time since 2026-05-22) | Pulled back from +14.76%/+12.63% two weeks ago; see deep-dive below. |
+| NVDA | $210.99 | +0.87% | 2.92% | PASS (marginal — barely above) | See deep-dive below; technical signal too thin to act on alone. |
+| AAPL | $315.32 | +5.92% | 2.70% | PASS | Valuation still fails — see below. Drop-dead clock 2026-07-17 (this Friday). |
+| LRCX | $350.21 | +6.37% | 5.78% (>3% gate) | PASS (ATR-gated) | Valuation still decisively fails — see below. |
+| META | $669.25 | +11.46% | 3.44% | FAIL (extended) | Unvetted candidate added 2026-07-10; fails technical gate outright — up ~20% in a few weeks on the new "Meta Compute" AI-cloud/Iris-chip buildout announcement. Not chasing a >10%-above-50-day parabolic move regardless of the compelling narrative. Drop-dead 2026-07-24 unchanged. |
+| PWR | $658.46 | −7.95% | 3.38% | FAIL | Still below 50-day, no fresh catalyst. Weekly review flagged for purge 2026-07-17 if nothing changes by then — not a pre-market decision. |
+| MSFT | $385.09 | −4.57% | 2.80% | FAIL | Still in the broader mega-cap tech pullback. |
+| COST | $916.05 | −7.04% | 1.78% | FAIL | No fresh catalyst. |
+
+**LLY deep-dive — clears all 5 entry signals for the first time since inception:**
+1. *Earnings momentum / analyst upgrades:* Morgan Stanley raised PT to $1,347 (07-08), RBC issued $1,500 (07-08), BofA set $1,334 (07-10, +12.28% implied upside) — three fresh target raises in the past week, all after the stock's own pullback.
+2. *Catalyst:* Medicare GLP-1 Bridge program live since 2026-07-01 and still rolling out; Q3 earnings 2026-08-05.
+3. *Valuation:* current P/E (TTM) 43.19x vs its own 5-year median of 53.38x — LLY is now trading **below its own historical median**, a genuine valuation reset following the pullback from $1,234 (52-wk high, late June) to $1,188.57, not a chase. This reverses the "priced in / extended" valuation-fail finding from the past three pre-markets.
+4. *Technical:* +9.35% above the 50-day SMA, under the 10% chase threshold — clears for the first time since 2026-05-22 (was +14.76% on 07-03, +12.63% on 07-10).
+5. *Macro tailwind:* GLP-1 secular demand intact; healthcare adds sector diversification away from the AI-semi-heavy tape (currently 0% healthcare exposure).
+ATR 2.86% is under the 3% volatility-check threshold — no size-halving required. **5-of-5 entry signals met; this is today's planned buy** (see below).
+
+**NVDA deep-dive — technical gate clears but only by a hair; deferring, not buying:**
+Forward P/E has compressed to ~20.4-21.7x (Goldman: "compelling," near the S&P 500 average, versus NVDA's own 5-year average of ~72x) — a real valuation improvement. But the stock is only +0.87% above its 50-day SMA — essentially sitting right on top of the average, not a confirmed breakout with any margin. The knowledge base's own confluence principle (`knowledge-base.md` §4.5) warns that single, marginal technical signals are weak; a stock a hair's-breadth above its 50-day is not the same confirmation as a clean multi-percent breakout. Combined with the still-active AI-capex-digestion macro watch (`strategy.md`), the prudent read is to let NVDA hold clearly above its 50-day for another session or two before treating the technical signal as real, rather than force a second buy today alongside LLY. Not a rejection — a "wait for confirmation" deferral. Re-check next pre-market.
+
+**AAPL deep-dive:** GuruFocus GF Value $267.40 vs price $310.52 — 16.1% overvalued (modestly overvalued verdict), forward P/E 31.98 (37.3% above the hardware industry median), trailing P/E 38.1x vs its own 5-year median 30.4x. Valuation still fails decisively despite the technical pass. Insiders sold $87.6M in the last 3 months with no buying. Deferred again — **4 days remain on the 2026-07-17 drop-dead clock** set 2026-07-03; if no clean valuation gate clears by Friday's pre-market, drop AAPL from the watchlist per that standing instruction.
+
+**LRCX deep-dive:** GuruFocus GF Value $131.78 vs price $326.13 — 147.5% overvalued, P/E 61.5-66.6x vs 5-year median 23.2x (165%+ above), forward P/E 44.4x. Valuation score 1/10 on GuruFocus despite a 10/10 profitability/growth score. Insiders sold $59.4M in the past 3 months, no buying. ATR still gated at 5.78% (>3%). Deferred — no change from prior weeks' finding.
+
+**Cash-drag check:** Cash was 87.7% entering today, above the 25-40% target band for 10+ consecutive trading days. This week's new-position count resets to 0/3. LLY clearing all 5 entry signals today is exactly the qualifying entry the last two weekly reviews have been waiting for — not a forced trade, a genuine gate-clear. See planned trade below.
+
+**Sector/risk posture:** Financials (V) 7.68%, Energy/Utilities (VST) 4.57%, cash 87.75% — all within the 60% sector cap and 5% cash floor. After today's planned LLY buy (~9.5%), Healthcare would sit at ~9.5%, still nowhere near the cap; cash would fall to ~78%, still comfortably above the 5% floor. Drawdown: equity $99,950.11 vs running HWM $100,086.89 (set 2026-07-07 market-open) = 0.137% — not triggered, 9.86pp of headroom. Weekly new-position count resets to 0/3 today (last new position was V, 2026-07-07, in the prior week).
+
+**Volatility check (LLY):** 20-day ATR% = 2.86%, under the 3% threshold — no size-halving required. Sizing at 8 shares (~$9,509 at Friday's $1,188.57 close, ~9.51% of equity) keeps the risk-budget stop-out loss at ≈0.95% of equity with a 10% trailing stop — under the 1.2% cap, and within the strategy's "High conviction" 10-12% band's lower edge given the 5-of-5 signal strength. Whole-share sizing preserves trailing-stop eligibility.
+
+### Planned trades for today
+
+**One planned buy — LLY, first Healthcare-sector position since the 2026-07-01 reset.**
+
+1. **BUY LLY 8 shares** (~$9,509 at Friday's $1,188.57 close, ~9.51% of equity)
+   *Thesis:* Long LLY starter position. Catalyst: Medicare GLP-1 Bridge program live since 2026-07-01, actively rolling out; Q3 earnings 2026-08-05. Edge: three analyst price-target raises this past week (Morgan Stanley $1,347, RBC $1,500, BofA $1,334) following LLY's pullback from its late-June 52-week high, while the stock's P/E (43.19x TTM) is now actually below its own 5-year median (53.38x) — a genuine valuation reset, not a chase. Technical confirmation: +9.35% above the 50-day SMA, clearing the <10%-extension gate for the first time since 2026-05-22 (down from +14.76% two weeks ago). Invalidation: closes below the 50-day SMA (~$1,087, will drift with the moving average) on volume, the Medicare GLP-1 Bridge program is rolled back or loses funding, or the 10% trailing stop fires. Target: consensus PT range $1,208-1,347 over the next 1-2 quarters. Size: ~9.5% starter (8 whole shares, preserves trailing-stop eligibility); risk at the 10% stop ≈0.95% of equity, under the 1.2% risk-budget cap.
+
+This week's new-position count after this fill: 1/3. Daily deployment: ~9.5% of the 25% cap. Cash after fill: ~78.2%, still well above the 5% floor. Sector exposure after fill: Healthcare ~9.5%, Financials 7.68%, Energy/Utilities 4.57% — all within the 60% cap.
+
+```json
+{
+  "plan_date": "2026-07-13",
+  "trades": [
+    {"action": "buy", "symbol": "LLY", "qty": 8, "thesis": "Medicare GLP-1 Bridge live since 2026-07-01 plus Q3 earnings 2026-08-05 catalyst; three analyst PT raises this week (Morgan Stanley 1347, RBC 1500, BofA 1334); P/E 43.19x now below its own 5-year median 53.38x -- genuine valuation reset after the June pullback, not a chase; technical gate clears for the first time since 2026-05-22 at +9.35% vs 50-day SMA, ATR 2.86% (no size-halving needed)", "invalidation": "closes below the 50-day SMA (~1087, drifts with the average) on volume, or the Medicare GLP-1 Bridge program is rolled back or loses funding, or the 10% trailing stop fires", "review_by": "2026-08-05"}
+  ]
+}
+```

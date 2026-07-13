@@ -3696,3 +3696,16 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Stop audit:** order `2b0a93ba` (V, HWM $356.075, stop $320.4675) and `bdfb5f67` (VST, HWM $161.1399, stop $145.02591) both confirmed live, unchanged — 2/2 PASS.
 - **Sector exposure:** Financials (V) 7.610%, Energy/Utilities (VST) 4.594%, cash 87.799% — within all caps.
 - **Exits:** none — no `closed-trades.md`/`trades.jsonl` entry needed.
+
+## 2026-07-13 08:15 ET — PRE-MARKET (plan drafted, no trades yet)
+- **Action:** Plan drafted — BUY LLY 8 shares at today's open (market not yet open). No trades executed this run.
+- **Market status:** `is_open: false`, next open 09:30 ET today (normal trading day).
+- **Live re-sync:** equity $99,950.11, cash $87,702.40 (87.746%). V 22sh @ avg $355.058182, current $349.00 (−1.706%, −$133.28 unrealized). VST 29sh @ avg $154.70, current $157.5761 (+1.859%, +$83.41 unrealized).
+- **Stop audit:** order `2b0a93ba` (V, HWM $356.075, stop $320.4675) and `bdfb5f67` (VST, HWM $161.1399, stop $145.02591) both confirmed live — 2/2 PASS.
+- **Shock check:** equity vs last_equity $99,986.68 = −0.0366% — no shock.
+- **Drawdown:** 0.1367% vs HWM $100,086.89 — not triggered (9.86pp headroom).
+- **Sector exposure:** Financials (V) 7.681%, Energy/Utilities (VST) 4.572%, cash 87.746% — within all caps.
+- **Conviction-weighted Monday review:** VST upgraded B→A; V rated B (first review).
+- **Thesis contracts:** V (review_by 2026-07-28) and VST (review_by 2026-08-07) both reviewed, not triggered — HOLD both.
+- **Earnings window:** no held or candidate name reports within 2 trading days.
+- **Plan for today's open:** BUY LLY 8 shares (~$9,509, ~9.5% of equity) — first Healthcare position since the reset; all 5 entry signals met (analyst PT raises, valuation reset below own 5-yr median P/E, technical gate clears at +9.35% vs 50-day, Medicare Bridge catalyst, ATR 2.86% no halving needed). Full thesis in `research-log.md` 2026-07-13 entry. Weekly new-position count resets to 0/3 today.
