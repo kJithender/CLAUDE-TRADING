@@ -21,40 +21,41 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-13 ~08:15 ET (pre-market, Monday) — no trades executed yet, one buy planned (LLY), stop audit 2/2 PASS, no shock, drawdown not triggered
+**Last updated:** 2026-07-13 ~09:37 ET (market-open, Monday) — BUY LLY 8sh executed @ $1,174.35625 avg, 10% trailing stop placed, stop audit 3/3 PASS, no shock, drawdown not triggered
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-13 pre-market ~08:15 ET)
+## Account (live Alpaca data, 2026-07-13 market-open ~09:37 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,950.11 |
-| Cash | $87,702.40 (87.746%) |
-| Long market value | $12,247.71 (12.253%) |
-| Buying power | $385,103.18 |
+| Equity | $100,066.84 |
+| Cash | $78,307.55 (78.257%) |
+| Long market value | $21,759.29 (21.743%) |
+| Buying power | $374,156.20 |
 | Last equity (2026-07-10 close, Alpaca) | $99,986.68 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| VST | 29 | $154.70 | $157.5761 | +$83.41 (+1.859%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $161.1399, stop $145.02591 — live ✓ | **A** (upgraded from B 2026-07-06 — thesis intact and working, +11.75% trailing-month vs sector +3.47%, GuruFocus still 8.2% undervalued; next review 2026-07-20) |
-| V | 22 | $355.058182 | $349.00 | −$133.28 (−1.706%) | Financials | Order 2b0a93ba, 10%, HWM $356.075, stop $320.4675 — live ✓ | **B** (first Monday review — thesis intact, no red flags, flat awaiting 07-28 earnings catalyst; next review 2026-07-20) |
+| VST | 29 | $154.70 | $159.06 | +$126.44 (+2.818%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $161.1399, stop $145.02591 — live ✓ | **A** (upgraded from B 2026-07-06 — thesis intact and working, +11.75% trailing-month vs sector +3.47%, GuruFocus still 8.2% undervalued; next review 2026-07-20) |
+| V | 22 | $355.058182 | $353.90 | −$25.48 (−0.326%) | Financials | Order 2b0a93ba, 10%, HWM $356.075, stop $320.4675 — live ✓ | **B** (first Monday review — thesis intact, no red flags, flat awaiting 07-28 earnings catalyst; next review 2026-07-20) |
+| LLY | 8 | $1,174.35625 | $1,171.50 | −$22.85 (−0.243%) | Healthcare | Order e3547b9e, 10%, HWM $1,171.7499, stop $1,054.57491 — live ✓ | **New (Monday, market-open)** — first Healthcare position since the reset; 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
 
-**Sector exposure:** Energy/Utilities (VST): $4,569.71 = 4.572%. Financials (V): $7,678.00 = 7.681%. Cash: $87,702.40 = 87.746%. No sector above 60% cap ✓.
+**Sector exposure:** Energy/Utilities (VST): $4,612.74 = 4.610%. Financials (V): $7,785.80 = 7.782%. Healthcare (LLY): $9,372.00 = 9.366%. Cash: $78,307.55 = 78.257%. No sector above 60% cap ✓.
 
-**Trailing stop status:** 2/2 positions protected.
-**Stop audit: 2/2 ✓ PASS** (2026-07-13 pre-market — orders `2b0a93ba` (V, HWM $356.075, stop $320.4675) and `bdfb5f67` (VST, HWM $161.1399, stop $145.02591) both confirmed live via `orders open`, unchanged since Friday close).
+**Trailing stop status:** 3/3 positions protected.
+**Stop audit: 3/3 ✓ PASS** (2026-07-13 market-open — orders `2b0a93ba` (V, HWM $356.075, stop $320.4675), `bdfb5f67` (VST, HWM $161.1399, stop $145.02591), and new `e3547b9e` (LLY, HWM $1,171.7499, stop $1,054.57491) all confirmed live via `orders open`).
 
-**Today's plan:** **BUY LLY 8 shares** (~$9,509 at Friday's $1,188.57 close, ~9.5% of equity) — LLY cleared all 5 entry signals for the first time since 2026-05-22: technical gate passes (+9.35% vs 50-day, under the 10% chase threshold, down from +14.76% two weeks ago), valuation genuinely reset (P/E 43.19x now below its own 5-year median 53.38x), three analyst PT raises this week (Morgan Stanley $1,347, RBC $1,500, BofA $1,334), and the Medicare GLP-1 Bridge catalyst continues rolling out with earnings 2026-08-05. First Healthcare-sector position since the reset. See `research-log.md` 2026-07-13 entry for full detail and thesis contract.
+**Today's plan — EXECUTED:** **BUY LLY 8 shares** filled @ $1,174.35625 avg (~$9,395 cost basis, ~9.4% of equity) — LLY cleared all 5 entry signals for the first time since 2026-05-22: technical gate passes (+9.35% vs 50-day, under the 10% chase threshold, down from +14.76% two weeks ago), valuation genuinely reset (P/E 43.19x now below its own 5-year median 53.38x), three analyst PT raises this week (Morgan Stanley $1,347, RBC $1,500, BofA $1,334), and the Medicare GLP-1 Bridge catalyst continues rolling out with earnings 2026-08-05. First Healthcare-sector position since the reset. Breaking-news gate (WebSearch, market-open): no thesis-breaking news, JPMorgan raised PT to $1,400 this morning. See `research-log.md` 2026-07-13 entry and `trade-log.md` for full detail and guardrail math.
 
-## Risk posture (2026-07-13 pre-market)
+## Risk posture (2026-07-13 market-open)
 
-- **Drawdown circuit breaker:** Equity $99,950.11 vs running HWM $100,086.89 (set 2026-07-07 market-open). Drawdown 0.1367% — NOT triggered ✓ (9.86pp headroom).
-- **Intraday shock check:** Equity $99,950.11 vs last_equity $99,986.68 (Alpaca, 2026-07-10 close) = −0.0366% — no shock ✓ (market not open yet; real test is at market-open/midday).
-- **Sector cap:** Energy/Utilities 4.572%, Financials 7.681% — both well below 60%. Healthcare would be ~9.5% after today's planned LLY buy — still well below 60% ✓.
-- **Weekly new-position count:** Resets to 0/3 today (Monday 2026-07-13). Will be 1/3 after today's planned LLY buy.
+- **Drawdown circuit breaker:** Equity $100,066.84 vs running HWM $100,086.89 (2026-07-07 market-open; pre-trade equity briefly touched $100,109.99 intraday but that reading is not carried as the official HWM update here). Drawdown 0.0201% — NOT triggered ✓ (9.98pp headroom).
+- **Intraday shock check:** Equity $100,066.84 vs last_equity $99,986.68 (Alpaca, 2026-07-10 close) = +0.0802% — no shock ✓.
+- **Sector cap:** Energy/Utilities 4.610%, Financials 7.782%, Healthcare 9.366% — all well below 60% ✓.
+- **Weekly new-position count:** 1/3 this week (LLY, filled today, Monday 2026-07-13).
 
 ## Performance vs S&P 500
 
@@ -84,6 +85,8 @@ _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): 
 **Race scoreboard (2026-07-10 close):** Bull −0.011% (since 2026-07-01 re-inception) | AGGRO −7.123% (STALE — last updated 2026-06-23 EOD, since its own 2026-06-04 inception; `memory/aggressive/portfolio.md` still shows no new activity, now **17 days** as of today) | SPY +1.300% (since 2026-07-01 anchor $745.665, dailyBar.c). Different inception dates make Bull-vs-AGGRO not apples-to-apples; AGGRO staleness is now 17 days and counting — this is a full trading week past last week's weekly-review escalation with still no resolution; today's weekly review (scheduled 4:30 PM ET) should re-escalate this directly to the human rather than repeat the same flag a fourth time.
 
 ## Notes
+
+**2026-07-13 market-open (~09:37 ET, Monday):** `clock` confirmed `is_open: true`, next close 16:00 ET today, next open Tuesday 2026-07-14. Control switch STATUS: ACTIVE, no NOTE/QUERY pending. Today's plan (`research-log.md`, `plan_date: 2026-07-13`) had one planned buy — LLY 8 shares. Breaking-news gate: WebSearch "LLY Eli Lilly stock news this morning July 13 2026" found no thesis-breaking event — JPMorgan raised its PT to $1,400 (from $1,300) this morning, reiterating strong Q1 growth (EPS +170% YoY); Kisunla Alzheimer's data due at AAIC is a fresh, non-negative catalyst. Pre-trade re-check: equity $100,109.99 vs last_equity $99,986.68 = +0.123% — no shock. LLY quote ask $1,174.36 (vs Friday's $1,188.57 close, −1.4% intraday), well within the invalidation band (~$1,087 50-day SMA) — price move was in Bull's favor, not against the thesis. Marketable limit computed at ask × 1.003 = $1,177.88; order placed for 8 shares, filled in two partial batches (6sh then 2sh) within 17 seconds at avg $1,174.35625 — no re-quote needed. 10% trailing stop placed immediately (order `e3547b9e`, HWM $1,171.7499, stop $1,054.57491) and confirmed live. Stop audit re-run post-trade: all 3 positions (V, VST, LLY) confirmed with live trailing stops — 3/3 PASS, no recreates needed. Guardrail math: position ~9.4% of equity (well under 20% cap and the ~12% risk-budget ceiling for a 10% stop ≈0.94% equity risk, under the 1.2% cap); new-position count 1/3 this week; daily deployment 9.4% (under 25% cap); cash after fill 78.257% (well above 5% floor); sector Healthcare 9.366% (well under 60% cap); earnings 2026-08-05 outside the 2-day blackout; drawdown circuit breaker 0.0201% vs HWM $100,086.89 — not triggered. `EXECUTED: 2026-07-13T13:37:19Z` appended under today's plan block in `research-log.md`; trade recorded in `trades.jsonl` and `trade-log.md`. Notified via Telegram.
 
 **2026-07-13 pre-market (~08:15 ET, Monday):** `clock` confirmed `is_open: false`, next open 09:30 ET today (normal trading day, no NOTE/QUERY pending in `control.md`, STATUS: ACTIVE). Live re-sync: equity $99,950.11, cash $87,702.40 (87.746%), V 22sh @ avg $355.058182 current $349.00 (−1.706%, −$133.28 unrealized), VST 29sh @ avg $154.70 current $157.5761 (+1.859%, +$83.41 unrealized). Both well above the −7% cut threshold. Stop audit: `2b0a93ba` (V, HWM $356.075, stop $320.4675) and `bdfb5f67` (VST, HWM $161.1399, stop $145.02591) both confirmed live — 2/2 PASS. Shock check: equity vs last_equity $99,986.68 = −0.0366% — no shock (market not open yet). Drawdown circuit breaker: 0.1367% vs HWM $100,086.89 (2026-07-07 market-open) — not triggered (9.86pp headroom). Sector exposure Financials (V) 7.681%, Energy/Utilities (VST) 4.572%, cash 87.746% — within all caps. **Conviction-weighted Monday review:** VST upgraded B→A (thesis intact and working, +11.75% trailing-month vs sector, GuruFocus still 8.2% undervalued); V rated B on its first review (thesis intact, flat, awaiting 07-28 earnings). Thesis contracts reviewed: V (invalidation ~$327 50-day SMA, not triggered, review_by 2026-07-28) and VST (invalidation $148, not triggered, review_by 2026-08-07) — HOLD both. Earnings window: no held or candidate name reports within 2 trading days (bank earnings JPM/BAC/C/WFC tomorrow 07-14 are unrelated to any held name). **Watchlist full re-verification** (fresh 50-day SMA/20-day ATR via Alpaca IEX bars, 2026-04-15 to 07-10 close): LLY and NVDA both newly cleared the technical gate for the first time in weeks (LLY +9.35% vs 50d, NVDA +0.87% vs 50d); AAPL (+5.92%) and LRCX (+6.37%) remain technically eligible but both still fail decisively on valuation (AAPL 16.1% GuruFocus-overvalued; LRCX 147.5% overvalued); META (unvetted candidate added 07-10) fails the technical gate outright at +11.46% above its 50-day after its "Meta Compute" AI-cloud rally; PWR/MSFT/COST all remain below their 50-day. **LLY deep-dive:** all 5 entry signals now met — three analyst PT raises this week (Morgan Stanley $1,347, RBC $1,500, BofA $1,334), P/E 43.19x now below its own 5-year median (53.38x, a genuine valuation reset after the June pullback), technical gate clears at +9.35% (first time since 2026-05-22), Medicare GLP-1 Bridge catalyst still rolling out with earnings 2026-08-05, ATR 2.86% (no halving needed). **NVDA deep-dive:** valuation has also improved (forward P/E ~20.4-21.7x per Goldman, well below its own 5-year average ~72x), but the technical signal is only +0.87% above the 50-day — too marginal to act on per the confluence principle in `knowledge-base.md` §4.5; deferring for a cleaner confirmation, not rejecting. **Plan for today's open: BUY LLY 8 shares** (~$9,509 at Friday's close, ~9.5% of equity, first Healthcare position since the reset) — full thesis and thesis contract in `research-log.md` 2026-07-13 entry. This satisfies the two-week cash-drag watch item from the 2026-07-10 weekly review with a genuine, disciplined gate-clear rather than a forced trade. Weekly new-position count resets to 0/3 today, will be 1/3 after the planned fill. Notified via Telegram.
 
