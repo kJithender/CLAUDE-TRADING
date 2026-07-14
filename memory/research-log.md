@@ -4676,3 +4676,56 @@ This week's new-position count after this fill: 1/3. Daily deployment: ~9.5% of 
 ```
 
 EXECUTED: 2026-07-13T13:37:19Z
+
+---
+
+## 2026-07-14 pre-market (~08:10 ET, Tuesday)
+
+**Market posture:** Genuinely volatile risk-off morning. S&P 500 futures −0.2%, Dow futures −0.3%, Nasdaq 100 futures +0.2% (mixed) as the market awaits the June CPI print (8:30 AM ET) and Fed Chair Kevin Warsh's first Congressional testimony today. The bigger story: the US military completed a **third consecutive night of strikes on Iran**, and Trump unveiled plans to reinstate a blockade on Iranian vessels transiting the Strait of Hormuz. Oil has surged accordingly — WTI +3.40% to USD 80.80/bbl, Brent +4.72% to USD 87.23/bbl, after a +9%+ two-day move, back above pre-ceasefire levels. 10yr Treasury yield ~4.62% (rising, still under the 4.75% new-buy gate but the closest it has been to it since inception — a real hawkish-tail risk, not just a watch item). Separately, all five megabank Q2 earnings hit today: JPMorgan and Wells Fargo already reported well ahead of estimates (JPM EPS 6.14 vs 5.85 consensus, revenue USD 58.02B vs USD 50.19B expected); BofA/Goldman/Citi due before the open. [Sources: [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-14-dow-sp-500-nasdaq-070833816.html), [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-14-2026), [Boston Globe](https://www.bostonglobe.com/2026/07/14/business/consumer-prices-report/), [Motley Fool](https://www.fool.com/investing/2026/07/13/the-latest-inflation-data-will-drop-on-july-14-here-s-why-it-s-a-big-deal-for-the-stock-market/)]
+
+**Live re-sync:** equity USD 100,144.85, cash USD 78,307.54 (78.19%). LLY 8sh @ avg USD 1,174.35625, current USD 1,179.01 (+0.40%, +USD 37.23 unrealized). V 22sh @ avg USD 355.058182, current USD 355.43 (+0.11%, +USD 8.18 unrealized). VST 29sh @ avg USD 154.70, current USD 158.13 (+2.22%, +USD 99.47 unrealized). All well above the −7% cut threshold.
+
+**Held positions — what changed since yesterday:**
+- **LLY (8sh, +0.40%):** Nothing thesis-breaking. UBS raised its PT to USD 1,425 (from USD 1,250), reiterating Buy — "1 new reason LLY could be headed higher" per 24/7 Wall St, driven by the incretin franchise and the Foundayo launch. LLY is presenting 16 abstracts (incl. new Kisunla Alzheimer's trial data) at AAIC, running through 07-15 in London — an incremental positive catalyst, not a thesis change. Medicare GLP-1 Bridge program unaffected. Thesis unchanged, contract not triggered (invalidation ~50-day SMA ~USD 1,087, current price far above; review_by 2026-08-05).
+- **V (22sh, +0.11%):** Nothing negative. Shares rose ~2.4% Monday on a new ACE Money Transfer collaboration to enhance international transactions — incremental, reinforces the payments-innovation thesis, not a new pillar. Consensus PT USD 410 (+18% upside). Earnings confirmed 2026-07-28 (14 trading days out, outside blackout). Thesis unchanged, contract not triggered (invalidation ~50-day SMA ~USD 327, current well above; review_by 2026-07-28).
+- **VST (29sh, +2.22%):** Nothing new. Strong Buy consensus (19 buy / 1 sell), PT USD 222.89. Earnings confirmed 2026-08-07 (outside blackout). Thesis unchanged, contract not triggered (invalidation USD 148, current well above; review_by 2026-08-07).
+
+**Thesis contract review (step 3b):** All three positions reviewed against current price and today's news — none triggered, none due (V 07-28, VST 08-07, LLY 08-05, all future). HOLD all three, contracts unchanged.
+
+**Earnings window (step 5):** No held or watchlist-candidate name reports within 2 trading days. Today's bank earnings (JPM/WFC/BAC/GS/C) are unrelated to any held name (V is payments, not a bank) — relevant only as broad market-mood context.
+
+**Watchlist re-verification (fresh 50-day SMA / 20-day ATR, Alpaca IEX daily bars 2026-04-15 → 2026-07-13 close):**
+
+| Ticker | Last close | vs 50-day SMA | 20-day ATR% | Technical gate | Notes |
+|--------|-----------|----------------|-------------|-----------------|-------|
+| META | $656.87 | +9.45% | 3.48% | **PASS** (marginal, down from +11.46%) | See deep-dive below. |
+| AAPL | $317.47 | +6.30% | 2.70% | PASS | Valuation still fails — see below. Drop-dead 2026-07-17 (this Friday). |
+| LRCX | $329.94 | −0.28% | 5.55% (>3% gate) | FAIL (pulled back onto the 50-day) | Valuation still decisively fails regardless — see below. |
+| NVDA | $203.49 | −2.67% | 2.95% | FAIL | Backslid below the 50-day from +0.87% last week — the marginal pass never confirmed, consistent with last week's "wait for confirmation" deferral being the right call. |
+| PWR | $646.48 | −9.67% | 3.27% | FAIL | No fresh catalyst. Purge decision carried to Friday's weekly review per standing instruction. |
+| MSFT | $390.99 | −2.95% | 2.75% | FAIL | Still in the broader mega-cap tech pullback. |
+| COST | $926.04 | −5.89% | 1.78% | FAIL | No fresh catalyst. |
+
+**META deep-dive — technical gate now passes, but deferring given today's event risk, not chasing:**
+1. *Technical:* +9.45% above the 50-day, under the 10% chase threshold for the first time — but only by 0.55pp of buffer, a marginal pass, not a clean breakout.
+2. *Valuation:* Forward P/E 20.33x (46% above the Interactive Media industry median), but GuruFocus flags META **modestly undervalued** — GF Value ~USD 817 vs a recent price in the ~$660-670s (varies by source/date), a genuine pass unlike AAPL/LRCX's "significantly overvalued" reads.
+3. *Catalyst:* "Meta Compute" AI-cloud infrastructure business + in-house Iris AI chip (Sept 2026 production target, 14GW capacity target by 2027) — real and dated, not stale.
+4. *Earnings momentum:* Recent GuruFocus coverage cites repeated single-day surges (+4.7%, +8%, cost-efficiency breakthrough) — positive momentum, though no confirmed beat-and-raise print this cycle; next earnings ~2026-07-29 (unconfirmed by company, outside the 2-day blackout regardless).
+5. *Macro tailwind:* This is where the case breaks down for entering **today specifically** — the confluence principle (`knowledge-base.md` §4.5) treats a single marginal technical signal as weak, and today is a live macro-inflection day: a third consecutive night of Iran strikes, oil up ~9% in two sessions, 10yr yield at 4.62% (highest since inception), CPI due at 8:30 AM, and a first-ever Fed Chair Congressional testimony this afternoon. This is structurally the same setup flagged in the 2026-06-10 lesson (META stop-out): entering a high-beta name right as a macro inflection is unfolding co-locates the trailing stop with elevated gap/volatility risk. **Deferring, not rejecting** — META's drop-dead clock (2026-07-24) is not in danger; will re-check once today's CPI/Fed-testimony/Iran-news dust settles, ideally on a session where the technical pass has more than 0.55pp of buffer.
+
+**AAPL deep-dive:** GF Value USD 267.40-267.91 vs price USD 315.32-319.64 (16.1-19.3% overvalued depending on source/date), P/E TTM 38.1x vs its own 5-year median 30.4x. Valuation still fails decisively. **3 days remain on the 2026-07-17 drop-dead clock** — Friday's weekly review will need to make the drop/keep call if no clean valuation gate clears by then.
+
+**LRCX deep-dive:** Pulled back onto the 50-day (−0.28%, technical gate now FAILS, down from +7.90% PASS last week) on a fresh negative signal — "AI-driven memory demand cools" (Yahoo Finance, 07-13), a −5.83%/−6.9% single-day decline reported across sources despite continued analyst PT raises (Susquehanna to USD 475, Cantor Fitzgerald to USD 500, Mizuho to USD 400). GF Value still USD 131.78 vs price ~USD 326 — 147.5% overvalued, P/E 61.5x vs 5-year median 23.2x. Valuation fails decisively regardless of the technical flip; the memory-demand-cooling headline is itself a fresh, mildly negative data point worth tracking against the broader AI-capex-digestion watch in `strategy.md`. Earnings 2026-07-29.
+
+**Cash-drag check (step 6):** Cash is 78.19% — above the 25-40% target band for a 3-position portfolio, though meaningfully lower than the 87%+ levels of two weeks ago now that LLY, V, and VST are all deployed. 2 of 3 weekly new-position slots remain this week. The tape is not constructive today — a live geopolitical/macro-event day (Iran escalation, oil spike, CPI, Fed testimony) is exactly the kind of session the strategy's existing pattern (07-08, 07-09 pre-markets) treats as a reason to stay defensive regardless of watchlist gate status, and no candidate clears all five entry signals cleanly today regardless (META's technical pass is marginal; AAPL/LRCX fail on valuation). Staying in cash today is an explicit, reasoned decision, not a passive default.
+
+**Sector/risk posture:** Healthcare (LLY) 9.421%, Financials (V) 7.810%, Energy/Utilities (VST) 4.580%, cash 78.19% — all within the 60% sector cap and 5% cash floor. Drawdown: equity USD 100,144.85 vs running HWM USD 100,218.48 (2026-07-13 close, Alpaca `last_equity`) = 0.0735% — not triggered, effectively full headroom. Intraday shock check (pre-open, real test at market-open/midday): equity vs `last_equity` USD 100,218.48 = −0.0734% — no shock. Weekly new-position count: 1/3 (LLY, filled Monday 2026-07-13).
+
+**No trades planned today.**
+
+```json
+{
+  "plan_date": "2026-07-14",
+  "trades": []
+}
+```
