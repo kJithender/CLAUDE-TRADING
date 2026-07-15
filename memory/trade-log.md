@@ -3776,3 +3776,22 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Watchlist:** META's technical buffer shrank to just +0.04pp (worse than yesterday's 0.55pp) while the macro-event risk that justified yesterday's deferral has escalated, not cleared — deferred again. NVDA newly cleared its 50-day (+1.19%) on a broad post-CPI semis bounce but this is the second unconfirmed marginal pass in 3 weeks with no fresh catalyst and ATR still over the volatility gate — deferred again pending real confirmation. AAPL (+5.14% PASS) and LRCX (+3.99% PASS) both still fail decisively on valuation (18.4-20.0% and 161.0% GuruFocus-overvalued respectively). AAPL's drop-dead clock (2026-07-17) is 2 days away with no reset in sight. PWR gained a genuine dated catalyst this week (earnings confirmed 07-30, transformer-capacity expansion) — resolves the standing purge flag; recommend keeping it on the list at Friday's review.
 - **Decision:** No trades planned today — no candidate clears all entry signals cleanly, and today's macro event risk (Iran escalation) is worse than yesterday's, not better. Cash-drag (78.33%) explicitly justified, not a default. Full detail in `research-log.md` 2026-07-15 entry.
 - **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13).
+
+## 2026-07-15 09:36 ET — MARKET OPEN (no trades; plan was empty)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Plan check:** today's pre-market plan (`plan_date: 2026-07-15`) has `trades: []` — no candidates cleared entry signals. No `EXECUTED:` line was present yet, so this is the first run. Breaking-news gate (step 2) is a no-op — no symbols to check.
+- **Market:** `clock` confirmed `is_open: true`, next close 16:00 ET.
+- **Account re-sync:** equity USD 99,996.80, cash USD 78,307.54 (78.31%), long MV USD 21,689.26, last_equity (07-14 close) USD 99,954.77.
+- **Shock check:** equity vs last_equity = +0.042% — no shock (threshold −4%).
+- **Drawdown circuit breaker:** equity USD 99,996.80 vs running HWM USD 100,218.48 (07-14 close, from `history 1A 1D`) = 0.2212% drawdown — not triggered (9.7788pp headroom).
+- **No trades executed** — plan was empty, consistent with pre-market's reasoning (no candidate cleared all gates; Iran-escalation risk day).
+- **Stop audit:** all 3 positions have live trailing-stop orders, correctly calculated at 10% below each order's HWM:
+  - LLY `e3547b9e`: HWM USD 1,196.29, stop USD 1,076.661 (8sh @ avg USD 1,174.35625, current USD 1,141.18, −2.825%).
+  - V `2b0a93ba`: HWM USD 359.94, stop USD 323.946 (22sh @ avg USD 355.058182, current USD 352.03, −0.853%).
+  - VST `bdfb5f67`: HWM USD 168.21, stop USD 151.389 (29sh @ avg USD 154.70, current USD 166.27, +7.479%).
+  - No stops missing, none filled since last run — no recreation needed, no `closed-trades.md`/`lessons.md` entries required.
+- **Sector exposure:** Healthcare (LLY) 9.130%, Financials (V) 7.745%, Energy/Utilities (VST) 4.822%, cash 78.31% — all within the 60% sector cap and 5% cash floor.
+- **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13) — unaffected, no new position opened.
+- **Decision:** No action needed beyond the stop audit (which found everything intact). Full detail in `research-log.md` 2026-07-15 pre-market entry.
