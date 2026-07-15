@@ -21,31 +21,31 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-15 ~09:36 ET (market-open, Wednesday) — no trades (plan was empty); 3/3 positions held, stop audit 3/3 PASS (unchanged, no new highs), no shock, drawdown not triggered
+**Last updated:** 2026-07-15 ~12:37 ET (midday, Wednesday) — no action; 3/3 positions held, stop audit 3/3 PASS (unchanged), no shock, drawdown not triggered
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-15 market-open ~09:36 ET)
+## Account (live Alpaca data, 2026-07-15 midday ~12:37 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,996.80 |
-| Cash | $78,307.54 (78.31%) |
-| Long market value | $21,689.26 (21.69%) |
-| Buying power | $373,960.09 |
+| Equity | $99,919.53 |
+| Cash | $78,307.54 (78.37%) |
+| Long market value | $21,611.99 (21.63%) |
+| Buying power | $373,743.73 |
 | Last equity (2026-07-14 close, Alpaca) | $99,954.77 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| VST | 29 | $154.70 | $166.27 | +$335.53 (+7.479%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $168.21, stop $151.389 — live, unchanged | **A** (upgraded from B 2026-07-06 — thesis intact and working, +11.75% trailing-month vs sector +3.47%, GuruFocus still 8.2% undervalued; next review 2026-07-20) |
-| V | 22 | $355.058182 | $352.03 | -$66.62 (-0.853%) | Financials | Order 2b0a93ba, 10%, HWM $359.94, stop $323.946 — live, unchanged | **B** (first Monday review — thesis intact, no red flags, flat awaiting 07-28 earnings catalyst; next review 2026-07-20) |
-| LLY | 8 | $1,174.35625 | $1,141.18 | -$265.41 (-2.825%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review next Monday 2026-07-20) — first Healthcare position since the reset; 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
+| VST | 29 | $154.70 | $158.29 | +$104.11 (+2.321%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $168.21, stop $151.389 — live, unchanged | **A** (upgraded from B 2026-07-06 — thesis intact and working, +11.75% trailing-month vs sector +3.47%, GuruFocus still 8.2% undervalued; next review 2026-07-20) |
+| V | 22 | $355.058182 | $358.41 | +$73.74 (+0.944%) | Financials | Order 2b0a93ba, 10%, HWM $359.94, stop $323.946 — live, unchanged | **B** (first Monday review — thesis intact, no red flags, flat awaiting 07-28 earnings catalyst; next review 2026-07-20) |
+| LLY | 8 | $1,174.35625 | $1,142.07 | -$258.29 (-2.749%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review next Monday 2026-07-20) — first Healthcare position since the reset; 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
 
-**Sector exposure:** Energy/Utilities (VST): $4,821.83 = 4.822%. Financials (V): $7,744.66 = 7.745%. Healthcare (LLY): $9,129.44 = 9.130%. Cash: $78,307.54 = 78.31%. No sector above 60% cap ✓.
+**Sector exposure:** Energy/Utilities (VST): $4,590.41 = 4.594%. Financials (V): $7,885.02 = 7.891%. Healthcare (LLY): $9,136.56 = 9.144%. Cash: $78,307.54 = 78.37%. No sector above 60% cap ✓.
 
-**Trailing stop status:** 3/3 positions protected (confirmed live via `orders open`, 2026-07-15 market-open audit — unchanged, no new highs since 07-14 close).
+**Trailing stop status:** 3/3 positions protected (confirmed live via `orders open`, 2026-07-15 midday audit — unchanged since market-open).
 **Stop audit:** 3/3 PASS this run.
 
 **Today's plan:** **No trades planned.** Full watchlist re-verification (fresh Alpaca bars, 2026-04-16 to 2026-07-14 close) found no candidate clearing all gates cleanly — META's technical buffer above its 50-day has now shrunk to +9.96% (essentially at the 10% chase-threshold edge, worse than yesterday's already-marginal 0.55pp buffer) and the Iran conflict has escalated further overnight (new strikes, naval blockade reinstated, oil +14% to ~$85/bbl) rather than de-escalated, so entering today would be chasing into worse risk, not better; NVDA newly cleared its 50-day (+1.19%) on a broad post-CPI semis bounce but the pass is barely-there and its 20-day ATR (3.07%) still exceeds the 3% volatility gate, and this is the second unconfirmed marginal bounce in three weeks — deferring again for genuine confirmation rather than chasing a one-day rebound; AAPL (+5.14% technical PASS) and LRCX (+3.99% technical PASS, but ATR 5.52% still gated) both continue to fail decisively on valuation (AAPL 18.4-20% GuruFocus-overvalued with a DCF margin of safety of −68% to −90%; LRCX 161% overvalued per GuruFocus). AAPL's 2026-07-17 valuation drop-dead clock is now 2 days away with no sign of clearing — Friday's weekly review will need to make the drop/keep call. PWR gained a genuine dated catalyst this week (Q2 earnings confirmed 2026-07-30, plus a new $500-700M transformer-capacity-expansion announcement) even though its technical gate still fails (−7.46% vs 50-day) — this resolves the "purge if no catalyst by 07-17" flag from strategy.md; Friday's review should keep PWR on the list rather than purge it. Cash (78.33%) remains above the 25-40% target band but this is an explicit, reasoned decision, not a default — see `research-log.md` 2026-07-15 entry for full detail.
