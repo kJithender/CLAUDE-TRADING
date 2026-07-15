@@ -3761,3 +3761,18 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Sector exposure:** Healthcare (LLY) 9.206%, Financials (V) 7.888%, Energy/Utilities (VST) 4.649%, cash 78.257% — within all caps.
 - **Exits:** none — no `closed-trades.md`/`trades.jsonl` entry needed.
 - **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13) — midday never opens new positions.
+
+## 2026-07-15 08:12 ET — PRE-MARKET (no trades planned)
+- **Market:** `clock` confirmed `is_open: false`, next open 09:30 ET today (normal trading day).
+- **Control switch:** ACTIVE, no NOTE/QUERY pending.
+- **Live re-sync:** equity $99,976.76, cash $78,307.54 (78.328%). LLY 8sh @ avg $1,174.35625, current $1,151.00 (-1.989%, -$186.85 unrealized). V 22sh @ avg $355.058182, current $355.51 (+0.127%, +$9.94 unrealized). VST 29sh @ avg $154.70, current $160.00 (+3.426%, +$153.70 unrealized).
+- **Shock check:** equity vs last_equity $99,954.77 (2026-07-14 close) = +0.022% — no shock.
+- **Drawdown:** 0.2413% vs HWM $100,218.48 (2026-07-14 close) — not triggered, 9.7587pp headroom.
+- **Stop audit:** deferred to market-open re-check (market not open); per 07-14 close audit, all 3 orders (`2b0a93ba` V, `bdfb5f67` VST, `e3547b9e` LLY) were live, unchanged.
+- **Sector exposure:** Healthcare (LLY) 9.210%, Financials (V) 7.823%, Energy/Utilities (VST) 4.641%, cash 78.328% — within all caps.
+- **Thesis contracts:** V (review_by 07-28), VST (review_by 08-07), LLY (review_by 08-05) — all reviewed, none triggered, none due — HOLD all three.
+- **Earnings window:** no held or candidate name reports within 2 trading days.
+- **Market context:** S&P 500 futures modestly higher pre-market (+0.18-0.25%) after Tuesday's cooler June CPI cut July-hike odds to 17%. Fed Chair Warsh's first testimony read as a non-hawkish surprise (S&P +0.5% Tuesday). Iran conflict escalated further overnight (new strikes, naval blockade reinstated, oil +14% to ~$85/bbl Brent) — worse, not better, than yesterday. 10yr yield ~4.62-4.64%, still under the 4.75% gate.
+- **Watchlist:** META's technical buffer shrank to just +0.04pp (worse than yesterday's 0.55pp) while the macro-event risk that justified yesterday's deferral has escalated, not cleared — deferred again. NVDA newly cleared its 50-day (+1.19%) on a broad post-CPI semis bounce but this is the second unconfirmed marginal pass in 3 weeks with no fresh catalyst and ATR still over the volatility gate — deferred again pending real confirmation. AAPL (+5.14% PASS) and LRCX (+3.99% PASS) both still fail decisively on valuation (18.4-20.0% and 161.0% GuruFocus-overvalued respectively). AAPL's drop-dead clock (2026-07-17) is 2 days away with no reset in sight. PWR gained a genuine dated catalyst this week (earnings confirmed 07-30, transformer-capacity expansion) — resolves the standing purge flag; recommend keeping it on the list at Friday's review.
+- **Decision:** No trades planned today — no candidate clears all entry signals cleanly, and today's macro event risk (Iran escalation) is worse than yesterday's, not better. Cash-drag (78.33%) explicitly justified, not a default. Full detail in `research-log.md` 2026-07-15 entry.
+- **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13).

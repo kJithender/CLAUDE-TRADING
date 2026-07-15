@@ -4730,3 +4730,67 @@ EXECUTED: 2026-07-13T13:37:19Z
 }
 ```
 EXECUTED: 2026-07-14T13:36:00Z — No trades (plan empty: Iran war escalation risk-off day, META marginal-only technical pass deferred on event risk, AAPL/LRCX valuation-gated, NVDA below 50-day); stop audit 3/3 PASS (LLY e3547b9e HWM 1196.29/stop 1076.661 unchanged, V 2b0a93ba HWM 359.49/stop 323.541 unchanged, VST bdfb5f67 HWM ratcheted 161.1399→164.19/stop ratcheted 145.02591→147.771 on today's new high); LLY USD 1,151.35 (-1.959% from entry, -2.582% intraday), V USD 356.80 (+0.491% from entry, -0.266% intraday), VST USD 164.21 (+6.147% from entry, +3.852% intraday); shock check equity USD 100,130.03 vs last_equity USD 100,218.48 = -0.0883% (no shock, threshold -4%); drawdown 0.0883% vs HWM USD 100,218.48 (not triggered, breaker at -10%); sector exposure Healthcare (LLY) 9.201%, Financials (V) 7.841%, Energy/Utilities (VST) 4.757%, cash 78.207% (all within 60% cap); weekly new-position count remains 1/3. All guardrails ✓.
+
+---
+
+## 2026-07-15 08:12 ET — PRE-MARKET (Wednesday)
+
+**Control switch:** ACTIVE, no NOTE/QUERY pending, `CROSS_BULL_LEARNING:` still blank (counter remains 0 — AGGRO has never led Cautious Bull).
+
+**Live re-sync (Alpaca):** equity USD 99,976.76, cash USD 78,307.54 (78.328%), long market value USD 21,669.22 (21.674%), buying power USD 373,903.98, last_equity (2026-07-14 close) USD 99,954.77. LLY 8sh @ avg 1,174.35625, current 1,151.00 (-1.989%, -USD 186.85 unrealized). V 22sh @ avg 355.058182, current 355.51 (+0.127%, +USD 9.94 unrealized). VST 29sh @ avg 154.70, current 160.00 (+3.426%, +USD 153.70 unrealized).
+
+**Drawdown circuit breaker:** equity USD 99,976.76 vs running HWM USD 100,218.48 (2026-07-14 close, from `history 1A 1D`) = 0.2413% drawdown — NOT triggered (9.7587pp headroom).
+**Intraday shock check:** equity USD 99,976.76 vs last_equity USD 99,954.77 = +0.022% — no shock (market not yet open; real test at market-open/midday).
+**Sector cap:** Healthcare (LLY) 9.210%, Financials (V) 7.823%, Energy/Utilities (VST) 4.641%, cash 78.328% — all well below the 60% cap.
+
+**Thesis contract review (step 3b):** All three positions reviewed against current price and today's news — none triggered, none due (V review_by 2026-07-28, VST 2026-08-07, LLY 2026-08-05, all future). HOLD all three, contracts unchanged.
+
+**Market posture (WebSearch, "S&P 500 futures pre-market July 15 2026"):** S&P 500 E-minis up ~13.5pts / +0.18% as of ~06:09 ET; SPY +0.25%, QQQ +0.50% pre-market. Polymarket/CME FedWatch: July-hike probability fell to 17% from 42% after Tuesday's cooler June CPI (3.5% YoY vs ~3.8% expected). [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/07/60461322/sp500-july-15-open-up-or-down-polymarket-cpi-fed-rate-hike-inflation)
+
+**Fed testimony (WebSearch):** Fed Chair Kevin Warsh's first Congressional testimony (07-14, House Financial Services Committee) delivered the semiannual Monetary Policy Report — Warsh said one month of cooler CPI is not "mission accomplished," reaffirmed Fed independence when pressed. Market read it as a non-hawkish surprise: S&P 500 +0.5%, Nasdaq +1.1%, Russell 2000 +0.4%, Dow -0.1% Tuesday. Testimony continues into a second day. [CNN](https://www.cnn.com/2026/07/14/economy/takeaways-kevin-warsh-congressional-testimony)
+
+**Iran conflict (WebSearch, "Iran US conflict oil prices July 15 2026") — ESCALATING, not de-escalating:** overnight into 07-15 the US carried out another round of strikes on Iran and reinstated the naval blockade of Iranian ports near the Strait of Hormuz; Iran has signaled possible Houthi action against the Bab el-Mandeb strait as a further escalation risk. Oil surged ~14% to ~USD 85/bbl (Brent), WTI ~USD 80.77 — a one-month high. [CNBC](https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html), [Vanguard News](https://www.vanguardngr.com/2026/07/oil-price-jumps-14-to-84-per-barrel-as-us-iran-ceasefire-collapses/)
+
+**10yr Treasury:** ~4.62-4.64% (07-15), essentially flat vs yesterday — still below the 4.75% new-buy gate.
+
+**Held-position research (what changed since yesterday):**
+- **LLY (8sh, -1.989%):** Stock fell -3.10% on 07-14 (-2.48% intraday reported separately) on sector-wide profit-taking and competitive-concern chatter in the metabolic-health space — not a company-specific negative. Bernstein raised PT to USD 1,385 (from 1,300), UBS to USD 1,425 (from 1,250), Guggenheim to USD 1,273 (from 1,235) — all bullish, all this week. New USD 1.73 dividend declared, ex-date 08-14. Analysts expect USD 8.22 EPS / USD 20.26B revenue next quarter (+30% YoY). Thesis unchanged, contract not triggered (invalidation ~50-day SMA ~USD 1,087, review_by 2026-08-05).
+- **V (22sh, +0.127%):** Shares hit a fresh 52-week-high area (~357-359 intraday this week). Visa launched an AI Financial Assistant; Baird lifted PT to USD 412 (07-06) citing expected Q3 beat-and-raise. Federal judge dismissed the securities-fraud suit without leave to amend (confirms 07-13 finding). Nothing new/negative. Thesis unchanged, contract not triggered (invalidation ~50-day SMA ~USD 327, review_by 2026-07-28).
+- **VST (29sh, +3.426%):** Board declared an 8.875% Series C preferred dividend (not applicable to our common shares). Vistra is positioned to benefit from an upcoming PJM capacity auction; Q2 earnings confirmed for 2026-08-07 (matches existing review_by/thesis-contract date — no change needed). Zacks Rank #3 (Hold) is a lagging/quant signal, not a fundamental red flag; consensus PT ~USD 213, still well above current price. Thesis unchanged, contract not triggered (invalidation USD 148, review_by 2026-08-07).
+
+**Earnings window (step 5):** No held or watchlist-candidate name reports within 2 trading days (nearest is V 07-28, 9 trading days out).
+
+**Watchlist re-verification (fresh 50-day SMA / 20-day ATR%, Alpaca `data.alpaca.markets/v2/stocks/<SYM>/bars` with explicit `start=2026-04-16&end=2026-07-15&feed=iex`, bars through 2026-07-14 close — the bare `alpaca.sh bars` call returns null without explicit dates per the standing 2026-07-03 lesson):**
+
+| Ticker | Last close (07-14) | vs 50-day SMA | 20-day ATR% | Technical gate | Notes |
+|--------|-----------|----------------|-------------|-----------------|-------|
+| META | $661.04 | +9.96% | 3.48% | **PASS (barely — 0.04pp buffer)** | Worse than yesterday's already-marginal 0.55pp. See deep-dive below. |
+| AAPL | $314.93 | +5.14% | 2.64% | PASS | Valuation still fails — see below. Drop-dead 2026-07-17 (2 days left). |
+| LRCX | $345.92 | +3.99% | 5.52% (>3% gate) | PASS technical / FAIL volatility gate | Valuation still decisively fails regardless — see below. |
+| NVDA | $211.79 | +1.19% | 3.07% (>3% gate) | PASS technical (barely) / FAIL volatility gate | Second unconfirmed marginal bounce — see below. |
+| PWR | $661.08 | −7.46% | 3.21% | FAIL | **Gained a dated catalyst this week** — see below. |
+| MSFT | $384.94 | −4.34% | 2.76% | FAIL | Worse than yesterday (−2.95%). |
+| COST | $921.65 | −6.16% | 1.77% | FAIL | Worse than yesterday (−5.89%). |
+
+**META deep-dive — buffer now worse, not better; deferring again:** Technical buffer above the 10%-chase gate has shrunk from +0.55pp (07-14) to +0.04pp (07-15) — effectively at the edge of what the entry-signal discipline treats as "not extended." The macro-event risk cited yesterday as the reason to defer (live Iran/CPI/Fed-testimony day) has not cleared — the Iran conflict has specifically escalated overnight (new strikes, blockade reinstated, oil +14%), the exact opposite of "dust settling." Entering today would mean chasing into both a worse technical buffer and worse geopolitical risk than yesterday's already-cautious deferral. GuruFocus valuation (modestly undervalued) and the Meta Compute/Iris-chip catalyst remain intact and unchanged — this is a timing deferral, not a thesis rejection. **Deferred again**, re-check next pre-market, drop-dead 2026-07-24 unchanged.
+
+**NVDA deep-dive — second unconfirmed marginal bounce, still deferring:** Cleared the 50-day for the first time in three weeks (+1.19%), on a broad post-CPI semiconductor relief rally — Morgan Stanley reiterated its overweight/top-pick rating citing "accelerating growth rates" near USD 100B/quarter revenue, and H200 chip shipments to China have resumed (though "very few" so far, per a US commerce official, and Nvidia simultaneously halved its approved Asian-buyer whitelist — a mixed, not unambiguously bullish, signal). ATR 3.07% still (barely) exceeds the 3% volatility gate, which would require halving any planned size regardless. Critically, this is the **second** unconfirmed marginal technical pass in three weeks: +0.87% (07-07) → backslid to −2.67% (07-14) → +1.19% (07-15). The entry-signal count does not clear 3-of-5 cleanly: valuation is a pass (forward P/E ~20-22x, "compelling"), the technical signal is a marginal, historically-unreliable pass, and there is no fresh earnings/guidance catalyst behind today's move — it is a rate-relief/short-covering bounce, not a fundamental re-rating. Consistent with the standing "wait for confirmation" discipline that correctly kept us out of the 07-07 false signal, **deferring again** — would need a second consecutive session holding above the 50-day with a real catalyst before this clears the bar.
+
+**AAPL deep-dive:** GF Value USD 267.63-268.00 vs price USD 314.93-321.44 (18.4-20.0% overvalued), DCF earnings-based intrinsic value USD 187.29 (margin of safety −68.4%), DCF FCF-based intrinsic value USD 165.81 (margin of safety −90.2%). Insiders sold USD 87.6M in the last 3 months with zero buying — an additional caution flag layered on top of the valuation gate. Valuation still fails decisively. **2 days remain on the 2026-07-17 drop-dead clock** with no sign of a reset — Friday's weekly review will need to make the drop/keep call.
+
+**LRCX deep-dive:** Technical gate flips back to PASS (+3.99%, was −0.28% FAIL yesterday) on continued AI-infrastructure-driven chip-equipment demand, but ATR 5.52% still exceeds the 3% volatility gate regardless (would require halving any planned size). GF Value USD 132.62 vs price USD 346.10 — 161.0% overvalued, P/E 62.47x — despite continued analyst PT raises (Susquehanna USD 475, Cantor Fitzgerald USD 500). Valuation fails decisively regardless of the technical flip-flop.
+
+**PWR deep-dive — no longer catalyst-less, resolves the standing purge flag:** Technical gate still fails (−7.46% vs 50-day, ATR 3.21%), but Quanta Services confirmed Q2 2026 earnings for 2026-07-30 (before market open) and separately announced a USD 500-700M investment to roughly double its power-transformer manufacturing capacity — both dated, specific developments. This resolves the 2026-07-10 weekly review's "purge 2026-07-17 if no dated catalyst emerges" flag. Jefferies trimmed its PT to USD 784 (from 857) on 07-10 while keeping Buy; Truist's PT (USD 940) predates that. **Recommend Friday's weekly review keep PWR on the watchlist rather than purge it** — the technical gate remains the blocker, not a lack of a pipeline.
+
+**Cash-drag check (step 6):** Cash is 78.33% — above the 25-40% target band for a 3-position portfolio. 2 of 3 weekly new-position slots remain this week. No candidate clears all gates cleanly: META's setup is worse today than yesterday's deferral (shrinking buffer, escalating not de-escalating macro risk); NVDA's technical pass is a second unconfirmed marginal bounce with no fresh catalyst; AAPL and LRCX both fail decisively on valuation. Staying in cash today is an explicit, reasoned decision, not a passive default — consistent with every prior session's reasoning this week.
+
+**Sector/risk posture:** Healthcare (LLY) 9.210%, Financials (V) 7.823%, Energy/Utilities (VST) 4.641%, cash 78.328% — all within the 60% sector cap and 5% cash floor. Drawdown: equity USD 99,976.76 vs running HWM USD 100,218.48 (2026-07-14 close) = 0.2413% — not triggered, 9.7587pp headroom. Intraday shock check (pre-open, real test at market-open/midday): equity vs last_equity USD 99,954.77 = +0.022% — no shock. Weekly new-position count: 1/3 (LLY, filled Monday 2026-07-13).
+
+**No trades planned today.**
+
+```json
+{
+  "plan_date": "2026-07-15",
+  "trades": []
+}
+```
