@@ -17,6 +17,17 @@ top. The weekly review computes win rate and average win/loss from this file._
 
 -->
 
+## 2026-07-16 — VST — LOSS
+- **Entry:** 29 shares @ USD 154.70 on 2026-07-02
+- **Exit:** USD 151.33069 via trailing stop (auto-executed 09:55:47 AM ET, order bdfb5f67, HWM USD 168.21, stop USD 151.389)
+- **P/L:** −USD 97.71 (−2.178%)
+- **Held:** 14 days
+- **Original thesis:** Power/AI-infrastructure diversifier away from AI-semi capex-digestion risk — Helix Digital Infrastructure (KKR+NVIDIA+Kuwait), Cogentrix, Fitch IG upgrade; upgraded to Conviction A on 2026-07-06 (thesis intact and working, +11.75% trailing-month vs sector +3.47%).
+- **Why it ended:** The 10% trailing stop triggered as VST gave back its run from the HWM. WebSearch found no VST-specific negative news (no earnings, no downgrade — BofA reiterated Buy, Scotiabank raised PT the day before); this was a broad chip-sector selloff (TSM, AMD, MU, AVGO all down ~3-4% on AI-capex-sustainability skepticism) plus a multi-week sector-wide "AI-power valuation reset" affecting VST and CEG alike, not a company-specific thesis break.
+- **Lesson:** A Conviction-A, thesis-intact position can still get fully stopped out by a sector-wide valuation rotation — the trailing stop worked exactly as designed, protecting capital from a macro/sector move even though nothing about VST's own fundamentals changed. A stop-out should not automatically be read as "the thesis was wrong"; check for company-specific news before drawing that conclusion, and don't hesitate to re-add VST to the watchlist if the AI-power sector stabilizes and the Helix/Cogentrix thesis is still intact.
+
+---
+
 ## 2026-06-10 — META — LOSS
 - **Entry:** 15 shares @ USD 620.637 on 2026-06-01
 - **Exit:** USD 578.00 via trailing stop (auto-executed 11:06 AM ET Jun 10, order 4ea07e91)

@@ -21,44 +21,46 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-16 ~09:40 ET (market-open, Thursday) — no trades (plan was empty); stop audit 3/3 PASS, no shock, drawdown not triggered
+**Last updated:** 2026-07-16 ~12:36 ET (midday, Thursday) — 🚨 VST trailing stop filled (09:55 ET, −2.178%); stop audit 2/2 PASS on remaining positions, no shock, drawdown not triggered
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-16 market-open ~09:37 ET)
+## Account (live Alpaca data, 2026-07-16 midday ~12:36 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,840.99 |
-| Cash | $78,307.54 (78.43%) |
-| Long market value | $21,533.45 (21.57%) |
-| Buying power | $373,523.82 |
+| Equity | $100,050.65 |
+| Cash | $82,696.13 (82.657%) |
+| Long market value | $17,354.52 (17.351%) |
+| Buying power | $379,377.18 |
 | Last equity (2026-07-15 close, Alpaca) | $100,020.33 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| VST | 29 | $154.70 | $153.41 | -$37.41 (-0.834%) | Energy/Utilities | Order bdfb5f67, 10%, HWM $168.21, stop $151.389 — live, unchanged | **A** (upgraded from B 2026-07-06 — thesis intact and working, +11.75% trailing-month vs sector +3.47%, GuruFocus still 8.2% undervalued; next review 2026-07-20) |
-| V | 22 | $355.058182 | $359.48 | +$97.28 (+1.245%) | Financials | Order 2b0a93ba, 10%, HWM $360.43, stop $324.387 — live, unchanged since 07-15 close | **B** (first Monday review — thesis intact, no red flags, flat awaiting 07-28 earnings catalyst; next review 2026-07-20) |
-| LLY | 8 | $1,174.35625 | $1,146.505 | -$222.81 (-2.372%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review next Monday 2026-07-20) — first Healthcare position since the reset; 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
+| V | 22 | $355.058182 | $361.02 | +$131.16 (+1.679%) | Financials | Order 2b0a93ba, 10%, HWM $362.05, stop $325.845 — live, ratcheted intraday | **B** (first Monday review — thesis intact, no red flags, flat awaiting 07-28 earnings catalyst; next review 2026-07-20) |
+| LLY | 8 | $1,174.35625 | $1,176.51 | +$17.23 (+0.183%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review next Monday 2026-07-20) — first Healthcare position since the reset; 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
 
-**Sector exposure:** Energy/Utilities (VST): $4,448.89 = 4.455%. Financials (V): $7,908.56 = 7.921%. Healthcare (LLY): $9,172.04 = 9.186%. Cash: $78,307.54 = 78.43%. No sector above 60% cap ✓.
+**🚨 VST exited via trailing stop, 09:55:47 ET today:** 29sh @ avg $154.70 (entered 2026-07-02) stopped out at $151.33069 (order `bdfb5f67`, HWM $168.21, stop $151.389) — realized P/L −$97.71 (−2.178%), held 14 days. WebSearch found no VST-specific bad news (no earnings, no downgrade — BofA reiterated Buy, Scotiabank raised its PT the day before); this was a broad chip-sector selloff (TSM/AMD/MU/AVGO all −3-4% on AI-capex-sustainability skepticism) plus a multi-week sector-wide AI-power valuation reset also hitting CEG, not a company-specific thesis break. Full post-mortem in `closed-trades.md`; lesson in `lessons.md`.
 
-**Trailing stop status:** 3/3 positions protected (confirmed live via `orders open`, 2026-07-16 market-open audit — all three unchanged since the 2026-07-15 close).
-**Stop audit:** 3/3 PASS this run.
+**Sector exposure:** Financials (V): $7,942.44 = 7.939%. Healthcare (LLY): $9,412.08 = 9.408%. Energy/Utilities: 0% (VST closed). Cash: $82,696.13 = 82.657%. No sector above 60% cap ✓.
+
+**Trailing stop status:** 2/2 remaining positions protected (confirmed live via `orders open`, 2026-07-16 midday audit).
+**Stop audit:** 2/2 PASS this run (VST's stop was correctly consumed by its own fill — nothing to recreate).
 
 **Today's plan:** **No trades planned.** Full watchlist re-verification (fresh Alpaca bars, 2026-04-17 to 2026-07-15 close) found no candidate clearing all gates cleanly — **META disqualified itself overnight via extension**, not valuation: a +3.07% rally on USD 50B+ Louisiana data-center news pushed it to +13.05% above its 50-day, well past the 10% chase gate (was a marginal +0.04pp pass yesterday). **AAPL rallied +4.2%** on a genuine catalyst (China regulatory approval for Apple Intelligence via a compressed Alibaba Qwen model) but this is a textbook chase — the rally pushed valuation to 22.2% GuruFocus-overvalued (worse than yesterday's 17.4-20.0%), and buying the morning after a +4% single-day pop is exactly the pattern the strategy avoids regardless of catalyst quality. AAPL's 2026-07-17 valuation drop-dead clock expires tomorrow with the gate having widened, not cleared — flagged for tomorrow's weekly review to make the drop/keep call. NVDA (+1.39% vs 50-day, third consecutive marginal pass) and LRCX (+0.34% vs 50-day) both remain ATR-gated (3.15%/5.92%, over the 3% threshold) with no fresh catalyst. PWR (-8.92%), MSFT (-1.60%), COST (-6.51%) all remain below their 50-day. Cash (78.28%) remains above the 25-40% target band but this is an explicit, reasoned decision, not a default — see `research-log.md` 2026-07-16 entry for full detail.
 
 **Market-open execution (~09:37 ET):** No trades placed (plan was empty). Stop audit 3/3 PASS, no shock, no rule triggers. Full detail in `trade-log.md` 2026-07-16 market-open entry.
 
-## Risk posture (2026-07-16 market-open)
+## Risk posture (2026-07-16 midday)
 
-- **Drawdown circuit breaker:** Equity $99,840.99 vs running HWM $100,218.48 (2026-07-13) — drawdown 0.3767%. NOT triggered (9.6233pp headroom) ✓.
-- **Intraday shock check:** Equity $99,840.99 vs last_equity $100,020.33 (Alpaca, 2026-07-15 close) = −0.1793% — no shock ✓ (threshold −4%).
-- **Sector cap:** Energy/Utilities 4.455%, Financials 7.921%, Healthcare 9.186% — all well below 60% ✓.
-- **Weekly new-position count:** 1/3 this week (LLY, filled Monday 2026-07-13) — unchanged, no new position opened today.
-- **-7% rule check:** LLY -2.372%, V +1.245%, VST -0.834% — none within range of the −7% midday-cut threshold.
+- **Drawdown circuit breaker:** Equity $100,050.65 vs running HWM $100,218.48 (2026-07-13) — drawdown 0.1675%. NOT triggered (9.8325pp headroom) ✓.
+- **Intraday shock check:** Equity $100,050.65 vs last_equity $100,020.33 (Alpaca, 2026-07-15 close) = +0.0303% — no shock ✓ (threshold −4%).
+- **Sector cap:** Financials 7.939%, Healthcare 9.408% — all well below 60% ✓. Energy/Utilities now 0% (VST exited via trailing stop).
+- **Weekly new-position count:** 1/3 this week (LLY, filled Monday 2026-07-13) — unchanged, no new position opened today; a close doesn't affect this count.
+- **-7% rule check:** LLY +0.183%, V +1.679% — neither within range of the −7% midday-cut threshold.
+- **🚨 VST trailing stop filled** 09:55:47 ET (−2.178%, order `bdfb5f67`) — see "Open positions" section above for full detail.
 
 ## Performance vs S&P 500
 

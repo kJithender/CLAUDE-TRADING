@@ -3847,3 +3847,23 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Sector exposure:** Healthcare (LLY) 9.186%, Financials (V) 7.921%, Energy/Utilities (VST) 4.455%, cash 78.434% — all within the 60% sector cap and 5% cash floor.
 - **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13) — unaffected, no new position opened.
 - **Decision:** No trades placed (plan was empty). No action needed beyond the stop audit (which found everything intact). Full detail in `research-log.md` 2026-07-16 EXECUTED line.
+
+## 2026-07-16 16:36 ET — MIDDAY (🚨 VST trailing stop filled)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, next close 16:00 ET today.
+- **🚨 Exit discovered:** VST's 10% trailing stop (order `bdfb5f67`, HWM USD 168.21, stop USD 151.389) filled at 09:55:47 AM ET — 29 shares @ USD 151.33069, sometime between the 09:36 ET market-open snapshot (VST still held, −0.834% from entry) and this run. Realized P/L: −USD 97.71 (−2.178%), held 14 days since 2026-07-02 entry.
+- **Account re-sync:** equity USD 100,050.65, cash USD 82,696.13 (82.657%), long MV USD 17,354.52, last_equity (07-15 close) USD 100,020.33.
+- **Shock check:** equity vs last_equity = +0.0303% — no shock (threshold −4%).
+- **Drawdown circuit breaker:** equity USD 100,050.65 vs running HWM USD 100,218.48 (`history 1M 1D`, 2026-07-13 close) = **0.1675%** drawdown — not triggered (9.8325pp headroom).
+- **VST news check (WebSearch):** no VST-specific negative event today — no earnings (next report 08-07), no downgrade; BofA reiterated Buy and Scotiabank raised its PT the day before. The drop was a broad chip-sector selloff (TSM, AMD, MU, AVGO all −3-4% on AI-capex-sustainability skepticism) plus a multi-week sector-wide "AI-power valuation reset" also hitting CEG — a sector/macro move, not a company-specific thesis break. Full detail and post-mortem in `closed-trades.md` and `lessons.md`.
+- **Remaining position review (vs avg entry):**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,176.51, **+0.183%** (+USD 17.23 unrealized). Within normal range — no news-scan gate triggered (not >3% down or >10% up).
+  - V: 22sh @ avg USD 355.058182, current USD 361.02, **+1.679%** (+USD 131.16 unrealized). Within normal range — no news-scan gate triggered.
+- **Action taken:** none on LLY or V — neither breaches the −7% cut threshold or the +15% tighten threshold. No new positions opened (midday never opens positions).
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,196.29, stop USD 1,076.661) and V `2b0a93ba` (HWM USD 360.43→362.05 ratcheted intraday, stop USD 324.387→325.845) both confirmed live via `orders open` — 2/2 PASS, no recreate needed. VST's stop order shows `status: filled`, correctly consumed by the exit — nothing to recreate.
+- **Post-mortem:** VST entry added to `closed-trades.md` (loss, lesson included) and a dated lesson appended to `lessons.md`. Exit recorded in `trades.jsonl` (`stop_fill`, pnl_pct −0.02178).
+- **Sector exposure:** Healthcare (LLY) 9.408%, Financials (V) 7.939%, Energy/Utilities (VST) 0% (position closed), cash 82.657% — all within caps.
+- **Weekly new-position count:** unchanged at 1/3 (LLY, Monday 2026-07-13) — a close doesn't affect the new-position count.
+- **Notify:** 🚨 Telegram sent — trailing stop filled on VST, capital preserved, LLY/V both within range, no other action.
