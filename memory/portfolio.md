@@ -21,46 +21,49 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-16 ~12:36 ET (midday, Thursday) — 🚨 VST trailing stop filled (09:55 ET, −2.178%); stop audit 2/2 PASS on remaining positions, no shock, drawdown not triggered
+**Last updated:** 2026-07-16 ~15:50 ET (close, Thursday) — EOD close routine; VST trailing stop filled earlier today (09:55 ET, −2.178%, already reconciled); 2/2 stop audit PASS, no shock, drawdown not triggered, no new trades this run
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-16 midday ~12:36 ET)
+## Account (live Alpaca data, 2026-07-16 close ~15:50 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,050.65 |
-| Cash | $82,696.13 (82.657%) |
-| Long market value | $17,354.52 (17.351%) |
-| Buying power | $379,377.18 |
+| Equity | $100,098.01 |
+| Cash | $82,696.13 (82.615%) |
+| Long market value | $17,401.88 (17.385%) |
+| Buying power | $379,509.78 |
 | Last equity (2026-07-15 close, Alpaca) | $100,020.33 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| V | 22 | $355.058182 | $361.02 | +$131.16 (+1.679%) | Financials | Order 2b0a93ba, 10%, HWM $362.05, stop $325.845 — live, ratcheted intraday | **B** (first Monday review — thesis intact, no red flags, flat awaiting 07-28 earnings catalyst; next review 2026-07-20) |
-| LLY | 8 | $1,174.35625 | $1,176.51 | +$17.23 (+0.183%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review next Monday 2026-07-20) — first Healthcare position since the reset; 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
+| V | 22 | $355.058182 | $364.06 | +$198.04 (+2.535%) | Financials | Order 2b0a93ba, 10%, HWM $364.08, stop $327.672 — live, ratcheted intraday to a fresh high | **B** (first Monday review — thesis intact, no red flags, flat awaiting 07-28 earnings catalyst; next review 2026-07-20) |
+| LLY | 8 | $1,174.35625 | $1,174.07 | −$2.29 (−0.024%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review next Monday 2026-07-20) — first Healthcare position since the reset; 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
 
 **🚨 VST exited via trailing stop, 09:55:47 ET today:** 29sh @ avg $154.70 (entered 2026-07-02) stopped out at $151.33069 (order `bdfb5f67`, HWM $168.21, stop $151.389) — realized P/L −$97.71 (−2.178%), held 14 days. WebSearch found no VST-specific bad news (no earnings, no downgrade — BofA reiterated Buy, Scotiabank raised its PT the day before); this was a broad chip-sector selloff (TSM/AMD/MU/AVGO all −3-4% on AI-capex-sustainability skepticism) plus a multi-week sector-wide AI-power valuation reset also hitting CEG, not a company-specific thesis break. Full post-mortem in `closed-trades.md`; lesson in `lessons.md`.
 
-**Sector exposure:** Financials (V): $7,942.44 = 7.939%. Healthcare (LLY): $9,412.08 = 9.408%. Energy/Utilities: 0% (VST closed). Cash: $82,696.13 = 82.657%. No sector above 60% cap ✓.
+**Sector exposure:** Financials (V): $8,009.32 = 8.001%. Healthcare (LLY): $9,392.56 = 9.383%. Energy/Utilities: 0% (VST closed). Cash: $82,696.13 = 82.615%. No sector above 60% cap ✓.
 
-**Trailing stop status:** 2/2 remaining positions protected (confirmed live via `orders open`, 2026-07-16 midday audit).
-**Stop audit:** 2/2 PASS this run (VST's stop was correctly consumed by its own fill — nothing to recreate).
+**Trailing stop status:** 2/2 remaining positions protected (confirmed live via `orders open`, 2026-07-16 close audit).
+**Stop audit:** 2/2 PASS this run (V `2b0a93ba` HWM ratcheted to $364.08/stop $327.672; LLY `e3547b9e` unchanged HWM $1,196.29/stop $1,076.661).
+
+**Close routine (~15:50 ET):** No trades today (pre-market plan was empty; market-open confirmed no candidates; midday only action was the VST stop fill, already reconciled). Market context: chip-sector selloff extended into a second day (TSM's strong earnings failed to lift sentiment on AI-capex-valuation skepticism), Nasdaq −1.3%, S&P 500 −0.5%, Dow −0.3%; June retail sales +0.2% MoM missed the +0.3% consensus; Iran war escalation continues to lift oil/bond yields. This corroborates the sector rotation that stopped VST out this morning — not company-specific, a broad AI-semi/chip risk-off day. LLY and V (outside the chip-selloff layer) were roughly flat-to-up, consistent with the diversification thesis.
 
 **Today's plan:** **No trades planned.** Full watchlist re-verification (fresh Alpaca bars, 2026-04-17 to 2026-07-15 close) found no candidate clearing all gates cleanly — **META disqualified itself overnight via extension**, not valuation: a +3.07% rally on USD 50B+ Louisiana data-center news pushed it to +13.05% above its 50-day, well past the 10% chase gate (was a marginal +0.04pp pass yesterday). **AAPL rallied +4.2%** on a genuine catalyst (China regulatory approval for Apple Intelligence via a compressed Alibaba Qwen model) but this is a textbook chase — the rally pushed valuation to 22.2% GuruFocus-overvalued (worse than yesterday's 17.4-20.0%), and buying the morning after a +4% single-day pop is exactly the pattern the strategy avoids regardless of catalyst quality. AAPL's 2026-07-17 valuation drop-dead clock expires tomorrow with the gate having widened, not cleared — flagged for tomorrow's weekly review to make the drop/keep call. NVDA (+1.39% vs 50-day, third consecutive marginal pass) and LRCX (+0.34% vs 50-day) both remain ATR-gated (3.15%/5.92%, over the 3% threshold) with no fresh catalyst. PWR (-8.92%), MSFT (-1.60%), COST (-6.51%) all remain below their 50-day. Cash (78.28%) remains above the 25-40% target band but this is an explicit, reasoned decision, not a default — see `research-log.md` 2026-07-16 entry for full detail.
 
 **Market-open execution (~09:37 ET):** No trades placed (plan was empty). Stop audit 3/3 PASS, no shock, no rule triggers. Full detail in `trade-log.md` 2026-07-16 market-open entry.
 
-## Risk posture (2026-07-16 midday)
+## Risk posture (2026-07-16 close)
 
-- **Drawdown circuit breaker:** Equity $100,050.65 vs running HWM $100,218.48 (2026-07-13) — drawdown 0.1675%. NOT triggered (9.8325pp headroom) ✓.
-- **Intraday shock check:** Equity $100,050.65 vs last_equity $100,020.33 (Alpaca, 2026-07-15 close) = +0.0303% — no shock ✓ (threshold −4%).
-- **Sector cap:** Financials 7.939%, Healthcare 9.408% — all well below 60% ✓. Energy/Utilities now 0% (VST exited via trailing stop).
+- **Drawdown circuit breaker:** Equity $100,098.01 vs running HWM $100,218.48 (2026-07-13) — drawdown 0.1202%. NOT triggered (9.8798pp headroom) ✓.
+- **Intraday shock check:** Equity $100,098.01 vs last_equity $100,020.33 (Alpaca, 2026-07-15 close) = +0.0777% — no shock ✓ (threshold −4%).
+- **Sector cap:** Financials 8.001%, Healthcare 9.383% — all well below 60% ✓. Energy/Utilities now 0% (VST exited via trailing stop).
 - **Weekly new-position count:** 1/3 this week (LLY, filled Monday 2026-07-13) — unchanged, no new position opened today; a close doesn't affect this count.
-- **-7% rule check:** LLY +0.183%, V +1.679% — neither within range of the −7% midday-cut threshold.
-- **🚨 VST trailing stop filled** 09:55:47 ET (−2.178%, order `bdfb5f67`) — see "Open positions" section above for full detail.
+- **-7% rule check:** LLY −0.024%, V +2.535% — neither within range of the −7% midday-cut threshold.
+- **VST trailing stop filled** 09:55:47 ET (−2.178%, order `bdfb5f67`) — fully reconciled in `closed-trades.md` and `lessons.md`; see midday entry in `trade-log.md` for full detail.
+- **Trades today:** 0.
 
 ## Performance vs S&P 500
 
@@ -79,6 +82,7 @@ reference but is **not** the live comparison baseline going forward.
 | 2026-07-13 close | $100,216.19 (+0.216% since inception) | $749.19 (+0.473% since inception, dailyBar.c) | **−0.257pp** (since inception; gap narrowed sharply from −1.311pp Friday — SPY fell −0.762% today as US-Iran tensions re-escalated (ceasefire/MOU collapsed, Trump resumed the Iran blockade, oil +5%) and tech/semis sold off broadly (SK Hynix −15% in South Korea, Nasdaq underperformed), while Bull gained +0.230% today; V (financials, +2.38% intraday) was the standout, LLY roughly flat, VST −1.24% — Bull's non-AI-semi book was largely insulated from today's specific tech/geopolitical selloff) |
 | 2026-07-14 close | $99,950.67 (−0.049% since inception) | $752.16 (+0.871% since inception, dailyBar.c pulled ~15:51 ET) | **−0.920pp** (since inception; gap widened from −0.257pp yesterday — SPY rose +0.404% today on a cooler-than-expected June CPI print (3.5% YoY vs ~3.8% expected) that fueled a growth/tech rally (Nasdaq +1%, semis/memory names SK Hynix and Micron jumped), while Bull fell −0.267% today because its non-AI-semi book (LLY healthcare, V financials, VST energy/utilities) captured little of the CPI-driven tech rally; all 3 positions remain within normal range, no stop or −7% rule concerns) |
 | 2026-07-15 close | $100,016.52 (+0.017% since inception) | $753.875 (+1.101% since inception, dailyBar.c pulled ~15:51 ET, ~9min pre-settle) | **−1.084pp** (since inception; gap widened further from −0.920pp yesterday — SPY rose +0.257% today on a softer-than-expected June PPI print (echoing the cooler CPI) plus ASML's bullish AI-capex outlook, which lifted Big Tech broadly (AAPL, GOOGL both +3%+), while Bull gained only +0.062% today because its non-AI-semi, non-mega-cap-tech book (LLY healthcare, V financials, VST energy/utilities) captured almost none of the rally; all 3 positions remain well within normal range — LLY −1.816%, V +0.403%, VST +3.529% — no stop or −7% rule concerns; V's trailing stop ratcheted up intraday as it made a new high) |
+| 2026-07-16 close | $100,098.01 (+0.098% since inception) | $748.21 (+0.341% since inception, dailyBar.c pulled ~15:50 ET, ~10min pre-settle) | **−0.243pp** (since inception; gap narrowed from −1.084pp yesterday — SPY fell −0.751% today on a second straight day of chip-sector selling (AI-capex-valuation skepticism outweighed a strong TSM print) plus rising oil/bond yields from the ongoing Iran escalation, while Bull gained +0.081% today because its non-AI-semi book (LLY healthcare, V financials) sat outside today's selloff layer; VST's 10% trailing stop fired at 09:55 ET (−2.178%, order `bdfb5f67`) on the same chip-sector rotation — a sector move, not a VST-specific thesis break, per the WebSearch check in `closed-trades.md`; LLY −0.024%, V +2.535% (fresh trailing-stop high), no stop or −7% rule concerns on the remaining book) |
 
 **Data-quality note (2026-07-10):** today's `snapshot` for SPY returned `prevDailyBar.c` = $751.55 for 2026-07-09, vs. the $751.25 recorded in this table on 2026-07-09's own close — a ~$0.30 (~0.04%) drift, consistent with the standing 2026-07-07 lesson that a same-date `dailyBar.c` can drift slightly on a later re-pull. Immaterial to any guardrail decision; the $751.25 figure already recorded for 2026-07-09 is left unchanged per that lesson's guidance (use the value recorded on the day itself, not a later re-pull).
 
@@ -93,6 +97,8 @@ _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): 
 **Race scoreboard (2026-07-10 close):** Bull −0.011% (since 2026-07-01 re-inception) | AGGRO −7.123% (STALE — last updated 2026-06-23 EOD, since its own 2026-06-04 inception; `memory/aggressive/portfolio.md` still shows no new activity, now **17 days** as of today) | SPY +1.300% (since 2026-07-01 anchor $745.665, dailyBar.c). Different inception dates make Bull-vs-AGGRO not apples-to-apples; AGGRO staleness is now 17 days and counting — this is a full trading week past last week's weekly-review escalation with still no resolution; today's weekly review (scheduled 4:30 PM ET) should re-escalate this directly to the human rather than repeat the same flag a fourth time.
 
 **Race scoreboard (2026-07-13 close):** Bull +0.216% (since 2026-07-01 re-inception) | AGGRO −7.123% (STALE — last updated 2026-06-23 EOD, since its own 2026-06-04 inception; `memory/aggressive/portfolio.md` still shows no new activity, now **20 days** as of today) | SPY +0.473% (since 2026-07-01 anchor $745.665, dailyBar.c). Different inception dates make Bull-vs-AGGRO not apples-to-apples; AGGRO staleness has now passed the 2.5-week mark with zero resolution across 7+ flagged runs — continuing to name the likely root cause (AGGRO's scheduled trigger/cron has probably stopped firing) in tonight's notify per the 2026-07-10 lesson, but not adding a new lessons.md entry since this is a repeat of an already-escalated, already-diagnosed issue.
+
+**Race scoreboard (2026-07-16 close):** Bull +0.098% (since 2026-07-01 re-inception) | AGGRO −7.123% (STALE — last updated 2026-06-23 EOD, since its own 2026-06-04 inception; `memory/aggressive/portfolio.md` still shows no new activity, now **23 days** as of today) | SPY +0.341% (since 2026-07-01 anchor $745.665, dailyBar.c). Still not apples-to-apples on inception date, but AGGRO trails Cautious Bull by every available measure regardless. Staleness is now over 3 weeks with zero resolution across 8+ flagged runs — repeating the same diagnosis (likely a stopped scheduled trigger/cron) in tonight's notify rather than adding another lessons.md entry, consistent with the 2026-07-10 escalation-threshold lesson.
 
 **Race scoreboard (2026-07-14 close):** Bull −0.049% (since 2026-07-01 re-inception) | AGGRO −7.123% (STALE — last updated 2026-06-23 EOD, since its own 2026-06-04 inception; `memory/aggressive/portfolio.md` still shows no new activity, now **21 days** as of today) | SPY +0.871% (since 2026-07-01 anchor $745.665, dailyBar.c). Same staleness, same already-diagnosed root cause (AGGRO's scheduled routine likely stopped firing) — noted in tonight's notify, no new lessons.md entry (repeat of prior escalation).
 

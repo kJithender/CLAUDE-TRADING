@@ -3867,3 +3867,24 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Sector exposure:** Healthcare (LLY) 9.408%, Financials (V) 7.939%, Energy/Utilities (VST) 0% (position closed), cash 82.657% — all within caps.
 - **Weekly new-position count:** unchanged at 1/3 (LLY, Monday 2026-07-13) — a close doesn't affect the new-position count.
 - **Notify:** 🚨 Telegram sent — trailing stop filled on VST, capital preserved, LLY/V both within range, no other action.
+
+## 2026-07-16 15:51 ET — CLOSE (EOD summary, no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Half-day/dedup guard:** `clock.next_close` = 16:00 ET today — not a half-day. `performance.csv` had no 2026-07-16 row yet — proceeding to append, not update.
+- **Final numbers:** equity $100,098.01, cash $82,696.13 (82.615%), long MV $17,401.88 (17.385%), last_equity (07-15 close) $100,020.33.
+- **Positions:** LLY 8sh @ avg $1,174.35625, current $1,174.07 (−0.024%, −$2.29). V 22sh @ avg $355.058182, current $364.06 (+2.535%, +$198.04, fresh trailing-stop high).
+- **Reconciliation:** VST's stop-out (09:55 ET) was already fully reconciled at midday — `closed-trades.md` entry and `lessons.md` lesson both present. No other exits today. No new positions opened (plan was empty all day).
+- **Performance vs SPY:** Bull +0.098% since 2026-07-01 inception ($100,000.00 → $100,098.01); SPY +0.341% since inception ($745.665 → $748.21, dailyBar.c pulled ~15:50 ET). Gap: **−0.243pp**, narrowed from −1.084pp yesterday — SPY fell −0.751% today on a second day of chip-sector selling (AI-capex valuation skepticism despite a strong TSM print) plus Iran-driven oil/yield pressure; Bull's non-AI-semi book sat outside that selloff.
+- **Drawdown circuit breaker:** equity $100,098.01 vs running HWM $100,218.48 (2026-07-13) = −0.1202% drawdown — NOT triggered (9.8798pp headroom) ✓.
+- **Intraday shock check:** equity vs last_equity (07-15 close, $100,020.33) = +0.0777% — no shock ✓ (threshold −4%).
+- **Sector exposure:** Healthcare (LLY) 9.383%, Financials (V) 8.001%, Energy/Utilities 0% (VST closed), cash 82.615% — all within caps.
+- **Stop audit:** 2/2 PASS — V `2b0a93ba` (HWM $364.08, stop $327.672, ratcheted to a fresh high today) and LLY `e3547b9e` (HWM $1,196.29, stop $1,076.661, unchanged) both confirmed live via `orders open`.
+- **Market context (WebSearch):** Dow −0.3%, S&P 500 −0.5%, Nasdaq −1.3% — second straight day of chip-sector selling on AI-capex-valuation skepticism (TSM's strong earnings didn't help sentiment); June retail sales +0.2% MoM missed the +0.3% consensus; Iran war escalation continues to lift oil and bond yields. Corroborates the VST stop-out as sector rotation, not a company-specific break.
+- **Friday watchdog:** N/A — today is Thursday, not Friday.
+- **Monthly housekeeping:** N/A — not the first trading day of the month, not a quarterly mid-month dividend-note window.
+- **Race scoreboard:** Bull +0.098% | AGGRO −7.123% (STALE, 23 days since last update 2026-06-23 EOD, its own 2026-06-04 inception) | SPY +0.341% (since 2026-07-01 anchor). Not apples-to-apples on inception date; AGGRO trails regardless. Staleness now past 3 weeks with zero resolution across 8+ flagged runs — repeating the standing diagnosis (likely stopped scheduled trigger/cron) in tonight's notify rather than adding a new lessons.md entry.
+- **Performance history:** appended 2026-07-16 row to `performance.csv` (equity $100,098.01, cash $82,696.13, SPY close $748.21).
+- **Trades today:** 0.
+- **Notify:** Telegram sent — EOD summary, gap narrowed vs SPY, no new trades, AGGRO staleness flagged.
