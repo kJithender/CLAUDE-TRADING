@@ -3828,3 +3828,22 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13). 2 slots remain this week (through Friday).
 - **Cash-drag:** 78.279%, above the 25-40% target band for the ninth consecutive session — explicitly justified above, not a default.
 - **AAPL note for tomorrow's weekly review:** the 2026-07-03 "drop by 2026-07-17 if no clean valuation gate clears" clock expires tomorrow. The gate has not cleared — it widened today. Flagging for the weekly review to make the drop/keep call.
+
+## 2026-07-16 13:40 ET — MARKET-OPEN (no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, next close 16:00 ET today.
+- **Plan check:** today's `research-log.md` plan (`plan_date: 2026-07-16`) has `"trades": []` — no candidate cleared entry gates at pre-market (META disqualified via extension, AAPL chase-day valuation gap widened, NVDA/LRCX ATR-gated, PWR/MSFT/COST below 50-day). No breaking-news gate needed since there are no planned trades to screen.
+- **Account re-sync:** equity USD 99,840.99, cash USD 78,307.54 (78.434%), long MV USD 21,533.45, last_equity (07-15 close) USD 100,020.33.
+- **Shock check:** equity vs last_equity = **−0.1793%** — no shock (threshold −4%).
+- **Drawdown circuit breaker:** equity USD 99,840.99 vs running HWM USD 100,218.48 (`history 1M 1D`, 2026-07-13 close) = **0.3767%** drawdown — not triggered (9.6233pp headroom).
+- **Position review (vs avg entry):**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,146.505, **−2.372%** (−USD 222.81 unrealized, −0.875% intraday).
+  - V: 22sh @ avg USD 355.058182, current USD 359.48, **+1.245%** (+USD 97.28 unrealized, +1.222% intraday).
+  - VST: 29sh @ avg USD 154.70, current USD 153.41, **−0.834%** (−USD 37.41 unrealized, −4.256% intraday — largest single-session move but nowhere near the −7% midday-cut threshold).
+- **Stop audit:** 3/3 positions have live trailing-stop orders, unchanged since pre-market — LLY `e3547b9e` (HWM USD 1,196.29, stop USD 1,076.661), V `2b0a93ba` (HWM USD 360.43, stop USD 324.387), VST `bdfb5f67` (HWM USD 168.21, stop USD 151.389). No recreation needed.
+- **Exits:** none — no `closed-trades.md`/`lessons.md`/`trades.jsonl` entry needed.
+- **Sector exposure:** Healthcare (LLY) 9.186%, Financials (V) 7.921%, Energy/Utilities (VST) 4.455%, cash 78.434% — all within the 60% sector cap and 5% cash floor.
+- **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13) — unaffected, no new position opened.
+- **Decision:** No trades placed (plan was empty). No action needed beyond the stop audit (which found everything intact). Full detail in `research-log.md` 2026-07-16 EXECUTED line.
