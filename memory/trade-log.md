@@ -3813,3 +3813,18 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Exits:** none — no `closed-trades.md`/`trades.jsonl` entry needed.
 - **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13) — midday never opens new positions.
 - **Decision:** No action. All positions within normal range; notify sent as "all positions within range, no action."
+
+## 2026-07-16 08:15 ET — PRE-MARKET (plan drafted, no trades yet)
+- **Action:** No trades planned today (market not yet open). Full watchlist re-verification found no candidate clearing all gates.
+- **Market status:** `is_open: false`, next open 09:30 ET today (normal trading day).
+- **Live re-sync:** equity $100,046.98, cash $78,307.54 (78.279%). LLY 8sh @ avg $1,174.35625, current $1,163.00 (−0.967%, −$90.85 unrealized). V 22sh @ avg $355.058182, current $357.25 (+0.617%, +$48.22 unrealized). VST 29sh @ avg $154.70, current $157.7912 (+1.998%, +$89.64 unrealized).
+- **Stop audit:** order `e3547b9e` (LLY, HWM $1,196.29, stop $1,076.661), `2b0a93ba` (V, HWM $360.43, stop $324.387), `bdfb5f67` (VST, HWM $168.21, stop $151.389) — all confirmed live via `orders open`, unchanged since 07-15 close — 3/3 PASS.
+- **Shock check:** equity vs last_equity $100,020.33 = +0.0266% — no shock.
+- **Drawdown:** 0.1711% vs HWM $100,218.48 (2026-07-13 close) — not triggered (9.8289pp headroom).
+- **Sector exposure:** Healthcare (LLY) 9.301%, Financials (V) 7.856%, Energy/Utilities (VST) 4.574%, cash 78.279% — within all caps.
+- **Thesis contracts:** LLY (review_by 2026-08-05), V (review_by 2026-07-28), VST (review_by 2026-08-07) — all reviewed, none triggered, none due — HOLD all three.
+- **Earnings window:** no held or candidate name reports within 2 trading days.
+- **Why no trades:** META disqualified itself overnight via extension (+13.05% vs 50-day after a +3.07% rally on Louisiana data-center news — was a marginal pass yesterday, now a clean fail). AAPL rallied +4.2% on China Apple-Intelligence regulatory approval (a real catalyst) but this pushed valuation to 22.2% GuruFocus-overvalued (worse than yesterday's 17.4-20.0%) and constitutes a textbook chase — deferred despite the technical gate passing. NVDA/LRCX remain ATR-gated (3.15%/5.92%) on marginal technical passes with no fresh catalyst. PWR/MSFT/COST remain below their 50-day. Full detail in `research-log.md` 2026-07-16 entry.
+- **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13). 2 slots remain this week (through Friday).
+- **Cash-drag:** 78.279%, above the 25-40% target band for the ninth consecutive session — explicitly justified above, not a default.
+- **AAPL note for tomorrow's weekly review:** the 2026-07-03 "drop by 2026-07-17 if no clean valuation gate clears" clock expires tomorrow. The gate has not cleared — it widened today. Flagging for the weekly review to make the drop/keep call.
