@@ -3888,3 +3888,18 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Performance history:** appended 2026-07-16 row to `performance.csv` (equity $100,098.01, cash $82,696.13, SPY close $748.21).
 - **Trades today:** 0.
 - **Notify:** Telegram sent — EOD summary, gap narrowed vs SPY, no new trades, AGGRO staleness flagged.
+
+## 2026-07-17 08:12 ET — PRE-MARKET (plan drafted, no trades yet)
+- **Action:** No trades planned today (market not yet open). Full watchlist re-verification found no candidate clearing the technical entry gate — first session this cycle where even the previously-marginal names (META, AAPL) fail outright.
+- **Market status:** `is_open: false`, next open 09:30 ET today.
+- **Live re-sync:** equity USD 100,094.37, cash USD 82,696.11 (82.618%). LLY 8sh @ avg USD 1,174.35625, current USD 1,171.06 (-0.281%, -USD 26.37 unrealized). V 22sh @ avg USD 355.058182, current USD 364.99 (+2.797%, +USD 218.50 unrealized, fresh multi-year high).
+- **Stop audit:** order `e3547b9e` (LLY, HWM USD 1,196.29, stop USD 1,076.661, unchanged) and `2b0a93ba` (V, HWM USD 364.91, stop USD 328.419, ratcheted further overnight) — both confirmed live via `orders open` — 2/2 PASS.
+- **Shock check:** equity vs last_equity USD 100,082.55 = +0.0118% — no shock.
+- **Drawdown:** 0.1239% vs HWM USD 100,218.48 (2026-07-13 close) — not triggered (9.8761pp headroom).
+- **Sector exposure:** Healthcare (LLY) 9.360%, Financials (V) 8.022%, cash 82.618% — within all caps.
+- **Thesis contracts:** LLY (review_by 2026-08-05), V (review_by 2026-07-28) — both reviewed, neither triggered, neither due — HOLD both.
+- **Earnings window:** no held or candidate name reports within 2 trading days.
+- **Watchlist hygiene:** **AAPL purged** — applying the pre-stated 2026-07-03 drop-dead rule; the valuation gate never cleared in 2 weeks (39.67x TTM P/E, ~22% GuruFocus-overvalued) and the stock is now also technically extended (+10.49% vs 50-day). Full rationale in `strategy.md` and `research-log.md`.
+- **Why no trades:** every watchlist name fails its technical entry gate today (META +10.02% still extended; NVDA -1.10% reversed again, 4th failed-confirmation data point in 3 weeks; LRCX -4.33% reversed; PWR -11.12%, MSFT -0.17%, COST -3.41% all below 50-day). No candidate to deploy into regardless of cash levels. Broader tape (chip-sector futures weak, Iran conflict 6th straight night of strikes, oil +12% on the week) independently supports staying defensive today. Full detail in `research-log.md` 2026-07-17 entry.
+- **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13). 2 slots remain this week (through today, Friday).
+- **Cash-drag:** 82.618%, above the 25-40% target band for the tenth consecutive session — explicitly justified above, not a default.

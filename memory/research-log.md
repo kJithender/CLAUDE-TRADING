@@ -4855,3 +4855,71 @@ EXECUTED: 2026-07-15T13:36:34Z — No trades (plan empty); stop audit 3/3 PASS (
 }
 ```
 EXECUTED: 2026-07-16T13:40:00Z — No trades (plan empty: META disqualified overnight via extension +13.05% vs 50-day, AAPL chase-day valuation gap widened to 22.2% overvalued, NVDA/LRCX ATR-gated, PWR/MSFT/COST below 50-day); stop audit 3/3 PASS (LLY e3547b9e HWM USD 1,196.29/stop USD 1,076.661, V 2b0a93ba HWM USD 360.43/stop USD 324.387, VST bdfb5f67 HWM USD 168.21/stop USD 151.389, all live, unchanged since pre-market — market open ~5 min at check time); LLY USD 1,146.505 (-2.372% from entry, -0.875% intraday), V USD 359.48 (+1.245% from entry, +1.222% intraday), VST USD 153.41 (-0.834% from entry, -4.256% intraday); shock check equity USD 99,840.99 vs last_equity USD 100,020.33 = -0.1793% (no shock, threshold -4%); drawdown 0.3767% vs HWM USD 100,218.48 (2026-07-13 close, not triggered, breaker at -10%); sector exposure Healthcare (LLY) 9.186%, Financials (V) 7.921%, Energy/Utilities (VST) 4.455%, cash 78.434% (all within 60% cap); weekly new-position count remains 1/3. All guardrails ✓.
+
+---
+
+## 2026-07-17 08:12 ET — PRE-MARKET (Friday)
+
+**Control switch:** ACTIVE, no NOTE/QUERY pending, `CROSS_BULL_LEARNING:` still blank.
+
+**Live re-sync (Alpaca):** equity USD 100,094.37, cash USD 82,696.11 (82.618%), long market value USD 17,398.26 (17.382%), buying power USD 379,499.57, last_equity (2026-07-16 close) USD 100,082.55. LLY 8sh @ avg USD 1,174.35625, current USD 1,171.06 (-0.281%, -USD 26.37 unrealized). V 22sh @ avg USD 355.058182, current USD 364.99 (+2.797%, +USD 218.50 unrealized). VST: no longer held (stopped out 2026-07-16).
+
+**Drawdown circuit breaker:** equity USD 100,094.37 vs running HWM USD 100,218.48 (2026-07-13 close, from `history 1A 1D`) = **0.1239%** drawdown — NOT triggered (9.8761pp headroom).
+**Intraday shock check:** equity USD 100,094.37 vs last_equity USD 100,082.55 = **+0.0118%** — no shock (market not yet open; real test at market-open/midday).
+**Sector cap:** Healthcare (LLY) 9.360%, Financials (V) 8.022%, cash 82.618% — all well below the 60% cap. Energy/Utilities 0% (VST closed).
+
+**Thesis contract review (step 3b):** LLY (review_by 2026-08-05, invalidation ~50-day SMA ~USD 1,087-1,102 or Medicare Bridge rollback) — not triggered, not due, HOLD. V (review_by 2026-07-28, invalidation ~50-day SMA ~USD 327-332 or adverse DOJ ruling) — not triggered, not due, HOLD. Neither contract needs renewal today.
+
+**Stop audit:** LLY `e3547b9e` (HWM USD 1,196.29, stop USD 1,076.661) unchanged — no new high since current price (USD 1,171.06) remains below the HWM. V `2b0a93ba` — HWM ratcheted further to USD 364.91 (stop USD 328.419), up from USD 364.08/USD 327.672 at Thursday's close, confirming the fresh 52-week-high move. Both confirmed live via `orders open` — **2/2 PASS**, no recreation needed. VST's stop order is gone from the open-orders list, correctly consumed by Thursday's fill — nothing to recreate.
+
+**Market posture (WebSearch, "S&P 500 futures pre-market July 17 2026"):** Negative/cautious. September S&P 500 E-mini futures -0.17% this morning as chipmakers remain under pressure — continuing Thursday's chip-sector selloff (AI-capex-valuation skepticism). 10yr Treasury 4.53%, 2yr 4.12%. [Benzinga](https://www.benzinga.com/markets/equities/26/07/60517314/stock-market-today-dow-futures-sp-500-futures-slump-even-as-trump-says-us-is-doing-great-netflix-coca-cola-nebius-in-focus)
+
+**Iran conflict (WebSearch) — still escalating, 6th straight night of strikes:** US forces have struck Iranian coastal, military, and maritime targets for a sixth consecutive night; five bridges hit, seven killed. Confirmed crude transit through the Strait of Hormuz has fallen 62% to 4.1M bbl/day as both sides maintain blockades. Oil up ~12% on the week — Brent ~USD 85.10, WTI ~USD 79.93. The 60-day ceasefire MOU (signed last month) expires 2026-08-16; Rystad Energy expects only a "narrow, face-saving" extension, not a durable resolution. [The National](https://www.thenationalnews.com/business/energy/2026/07/17/oil-set-for-steep-weekly-rise-as-us-and-iran-intensify-attacks/), [CNBC](https://www.cnbc.com/2026/07/17/oil-price-today-brent-wti.html)
+
+**Fed (WebSearch):** Chair Warsh's semiannual Monetary Policy Report testimony (completed 07-14/07-15) gave no forward rate signal — "mission accomplished" pushback on the cooler CPI print, committee visibly divided on whether AI-datacenter capex is starting to raise generalized prices. Next FOMC meeting in ~2 weeks (07-29). No new information changing the standing 4.75%-yield gate assessment. [Federal Reserve](https://www.federalreserve.gov/newsevents/testimony/warsh20260714a.htm)
+
+**10yr Treasury:** ~4.53% (07-17), easing further from 4.57% yesterday — still comfortably below the 4.75% new-buy gate.
+
+**Held-position research (what changed since yesterday):**
+- **LLY (8sh, -0.281%):** **Material update** — the AtaiBeckley acquisition talks reported yesterday advanced to a **definitive agreement**, up to USD 3.8B, confirming large-drugmaker interest in psychedelic medicine as a pipeline diversifier (not a distraction from the core GLP-1 franchise). Full FDA approval for Retevmo (oncology) also confirmed. USD 1.73 dividend, ex-date 08-14 (already known). Analyst consensus "Buy," 12-month PT USD 1,255.86 (+7.42% from Thursday's close). Thesis unchanged, contract not triggered.
+- **V (22sh, +2.797%):** Stock hit a fresh multi-year high (USD 365.14, highest since June 2025) on continued momentum from the AI Financial Assistant launch and ACE Money Transfer collaboration (both already known); Q2 EPS/revenue beat details reconfirmed (EPS USD 3.31 vs USD 3.10 est., +6.77%; revenue USD 11.2B vs est., +4.19%). 38 of 38 analysts covering rate Buy/Strong Buy, 0 Sell. Nothing new/negative — thesis unchanged, contract not triggered.
+
+**Earnings window (step 5):** No held or watchlist-candidate name reports within 2 trading days (nearest is V 07-28, 7 trading days out).
+
+**Watchlist re-verification (fresh 50-day SMA / 20-day ATR%, Alpaca `data.alpaca.markets/v2/stocks/<SYM>/bars` with explicit `start=2026-04-18&end=2026-07-16&feed=iex`, bars through 2026-07-16 close):**
+
+| Ticker | Last close (07-16) | vs 50-day SMA | 20-day ATR% | Technical gate | Notes |
+|--------|-----------|----------------|-------------|-----------------|-------|
+| META | $664.16 | +10.02% | 3.55% | **FAIL** | Still over the 10%-chase gate, though eased from Thursday's +13.05% blowout. |
+| AAPL | $333.23 | +10.49% | 2.71% | **FAIL (new)** | Rallied further overnight; now extended AND valuation-gated. **Purged today** — see below. |
+| NVDA | $207.46 | -1.10% | 3.17% | **FAIL** | Reversed again — 4th data point in the "unconfirmed marginal bounce" pattern. |
+| LRCX | $320.95 | -4.33% | 5.92% | **FAIL** | Reversed from Thursday's marginal +0.34% pass. |
+| PWR | $631.02 | -11.12% | 3.28% | FAIL | Worse than yesterday (-8.92%); earnings 07-30 catalyst still stands. |
+| MSFT | $401.12 | -0.17% | 2.90% | FAIL (barely) | Improved from -1.60% yesterday — essentially flat to its 50-day. |
+| COST | $945.46 | -3.41% | 1.79% | FAIL | Improved from -6.51% yesterday; no fresh catalyst. |
+| VST (re-entry watch) | $152.54 | -0.98% | 3.78% | FAIL (barely) | Not yet a clean re-entry; ATR still over the 3% gate too. |
+
+**No watchlist candidate clears the technical entry gate today — a first in this cycle where even the two previously-marginal names (META, AAPL) both fail outright, not just barely.**
+
+**AAPL deep-dive — drop-dead clock has arrived, applying the pre-stated rule:** The 2026-07-03 weekly review set an explicit rule: "drop AAPL 2026-07-17 if no clean valuation gate clears." Two full weeks of daily re-verification never cleared it — GuruFocus overvaluation went from 15.6% (07-03) → 18.4-20.0% (07-15) → 22.2% (07-16) → and today's TTM P/E sits at 39.67x (up from 38.1x this week), a premium to Apple's own 5-year median (30.4x). The stock also crossed into a technical extension fail today (+10.49% vs 50-day, worse than yesterday's already-marginal +9.02%), removing the one gate that had been passing. Real, dated catalysts exist (China's regulatory approval of Apple Intelligence via a compressed Qwen model, the renewed >USD 30B Broadcom chip-supply agreement through 2031) — this is not a rejection of the business, it is the discipline of honoring a pre-committed rule rather than re-litigating it because the news flow is good. **AAPL purged from the watchlist this run** (mechanical application of the 07-03 rule; not deferred to this afternoon's weekly review since the rule's date has been reached regardless of which routine hits it first). Full detail in `strategy.md`.
+
+**META deep-dive:** Still extended (+10.02% vs 50-day), though the buffer eased from Thursday's +13.05% blowout on the Louisiana data-center news. GuruFocus continues to read META as modestly undervalued — extension, not price, remains the sole blocker. Not a live candidate today; re-check next pre-market, drop-dead 2026-07-24 unchanged.
+
+**NVDA deep-dive:** Fourth consecutive data point in the "fails to hold a confirmed breakout" pattern: +0.87% (07-07) → -2.67% (07-14) → +1.19% (07-15) → +1.39% (07-16) → **-1.10% (07-17)**. Chip-sector-wide weakness (per this morning's futures commentary) is the proximate driver. No genuine multi-session confirmation has emerged in over 3 weeks of tracking; continuing to require a real, non-marginal breakout before treating this as an entry signal. Earnings confirmed 2026-08-26 — no blackout concern.
+
+**LRCX / PWR / MSFT / COST:** No material change in rationale from yesterday; see table above for updated numbers. PWR retains its earnings (07-30) + transformer-capacity catalyst, keeping it off the stale-decoration purge list despite a worsening technical gate.
+
+**VST re-entry watch (new section):** Now that VST is closed (stopped out 07-16 on a sector-wide, not company-specific, chip/AI-power selloff per the closed-trades post-mortem), it graduates from "held position" to "re-entry watchlist candidate." Today's numbers (-0.98% vs 50-day, ATR 3.78%) are close to but not yet a clean pass on either gate. The Helix Digital Infrastructure / Cogentrix thesis is still considered intact — continuing to monitor for a stabilization signal before any re-entry.
+
+**Cash-drag check (step 6):** Cash is 82.618% — well above the 25-40% target band for a 2-position portfolio, now for the tenth consecutive session since the LLY entry (2026-07-13) and the first session with only 2 positions since VST's stop-out. Today is explicitly the *worst* session yet for candidate quality: every single watchlist name — including the two that had been marginal technical passes as recently as Wednesday (META, AAPL) — now fails its entry gate outright, and the broader tape (chip-sector futures down, escalating Iran conflict, oil +12% on the week) is not constructive for initiating new risk today regardless. Staying in cash today is an explicit, reasoned decision, not a passive default: there is no candidate to deploy into, and the macro backdrop independently argues for patience. 2 of 3 weekly new-position slots remain unused this week (through today).
+
+**Sector/risk posture:** Healthcare (LLY) 9.360%, Financials (V) 8.022%, cash 82.618% — all within the 60% sector cap and 5% cash floor; Energy/Utilities 0% (VST closed). Drawdown: 0.1239% vs running HWM USD 100,218.48 (2026-07-13 close) — not triggered, 9.8761pp headroom. Intraday shock check (pre-open, real test at market-open/midday): equity vs last_equity USD 100,082.55 = +0.0118% — no shock. Weekly new-position count: 1/3 (LLY, filled Monday 2026-07-13).
+
+**No trades planned today.**
+
+```json
+{
+  "plan_date": "2026-07-17",
+  "trades": []
+}
+```

@@ -21,39 +21,35 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-16 ~15:50 ET (close, Thursday) — EOD close routine; VST trailing stop filled earlier today (09:55 ET, −2.178%, already reconciled); 2/2 stop audit PASS, no shock, drawdown not triggered, no new trades this run
+**Last updated:** 2026-07-17 ~08:12 ET (pre-market, Friday) — plan drafted, no trades yet; 2/2 stop audit PASS, no shock, drawdown not triggered, AAPL purged from watchlist (drop-dead rule)
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-16 close ~15:50 ET)
+## Account (live Alpaca data, 2026-07-17 pre-market ~08:12 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,098.01 |
-| Cash | $82,696.13 (82.615%) |
-| Long market value | $17,401.88 (17.385%) |
-| Buying power | $379,509.78 |
-| Last equity (2026-07-15 close, Alpaca) | $100,020.33 |
+| Equity | $100,094.37 |
+| Cash | $82,696.11 (82.618%) |
+| Long market value | $17,398.26 (17.382%) |
+| Buying power | $379,499.57 |
+| Last equity (2026-07-16 close, Alpaca) | $100,082.55 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| V | 22 | $355.058182 | $364.06 | +$198.04 (+2.535%) | Financials | Order 2b0a93ba, 10%, HWM $364.08, stop $327.672 — live, ratcheted intraday to a fresh high | **B** (first Monday review — thesis intact, no red flags, flat awaiting 07-28 earnings catalyst; next review 2026-07-20) |
-| LLY | 8 | $1,174.35625 | $1,174.07 | −$2.29 (−0.024%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review next Monday 2026-07-20) — first Healthcare position since the reset; 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
+| V | 22 | $355.058182 | $364.99 | +$218.50 (+2.797%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, ratcheted further to a fresh high overnight | **B** (first Monday review 07-13; next review 2026-07-20) |
+| LLY | 8 | $1,174.35625 | $1,171.06 | −$26.37 (−0.281%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review Monday 2026-07-20) — 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
 
-**🚨 VST exited via trailing stop, 09:55:47 ET today:** 29sh @ avg $154.70 (entered 2026-07-02) stopped out at $151.33069 (order `bdfb5f67`, HWM $168.21, stop $151.389) — realized P/L −$97.71 (−2.178%), held 14 days. WebSearch found no VST-specific bad news (no earnings, no downgrade — BofA reiterated Buy, Scotiabank raised its PT the day before); this was a broad chip-sector selloff (TSM/AMD/MU/AVGO all −3-4% on AI-capex-sustainability skepticism) plus a multi-week sector-wide AI-power valuation reset also hitting CEG, not a company-specific thesis break. Full post-mortem in `closed-trades.md`; lesson in `lessons.md`.
+**VST closed 2026-07-16** via trailing stop (sector-wide chip/AI-power selloff, not company-specific — see `closed-trades.md`). Now tracked as a re-entry watchlist candidate in `strategy.md` (not yet a clean setup: -0.98% vs 50-day, ATR 3.78%).
 
-**Sector exposure:** Financials (V): $8,009.32 = 8.001%. Healthcare (LLY): $9,392.56 = 9.383%. Energy/Utilities: 0% (VST closed). Cash: $82,696.13 = 82.615%. No sector above 60% cap ✓.
+**Sector exposure:** Financials (V): $8,029.78 = 8.022%. Healthcare (LLY): $9,368.48 = 9.360%. Energy/Utilities: 0% (VST closed). Cash: $82,696.11 = 82.618%. No sector above 60% cap ✓.
 
-**Trailing stop status:** 2/2 remaining positions protected (confirmed live via `orders open`, 2026-07-16 close audit).
-**Stop audit:** 2/2 PASS this run (V `2b0a93ba` HWM ratcheted to $364.08/stop $327.672; LLY `e3547b9e` unchanged HWM $1,196.29/stop $1,076.661).
+**Trailing stop status:** 2/2 positions protected (confirmed live via `orders open`, 2026-07-17 pre-market audit).
+**Stop audit:** 2/2 PASS this run (V `2b0a93ba` HWM ratcheted further to $364.91/stop $328.419 overnight on the fresh 52-week high; LLY `e3547b9e` unchanged HWM $1,196.29/stop $1,076.661).
 
-**Close routine (~15:50 ET):** No trades today (pre-market plan was empty; market-open confirmed no candidates; midday only action was the VST stop fill, already reconciled). Market context: chip-sector selloff extended into a second day (TSM's strong earnings failed to lift sentiment on AI-capex-valuation skepticism), Nasdaq −1.3%, S&P 500 −0.5%, Dow −0.3%; June retail sales +0.2% MoM missed the +0.3% consensus; Iran war escalation continues to lift oil/bond yields. This corroborates the sector rotation that stopped VST out this morning — not company-specific, a broad AI-semi/chip risk-off day. LLY and V (outside the chip-selloff layer) were roughly flat-to-up, consistent with the diversification thesis.
-
-**Today's plan:** **No trades planned.** Full watchlist re-verification (fresh Alpaca bars, 2026-04-17 to 2026-07-15 close) found no candidate clearing all gates cleanly — **META disqualified itself overnight via extension**, not valuation: a +3.07% rally on USD 50B+ Louisiana data-center news pushed it to +13.05% above its 50-day, well past the 10% chase gate (was a marginal +0.04pp pass yesterday). **AAPL rallied +4.2%** on a genuine catalyst (China regulatory approval for Apple Intelligence via a compressed Alibaba Qwen model) but this is a textbook chase — the rally pushed valuation to 22.2% GuruFocus-overvalued (worse than yesterday's 17.4-20.0%), and buying the morning after a +4% single-day pop is exactly the pattern the strategy avoids regardless of catalyst quality. AAPL's 2026-07-17 valuation drop-dead clock expires tomorrow with the gate having widened, not cleared — flagged for tomorrow's weekly review to make the drop/keep call. NVDA (+1.39% vs 50-day, third consecutive marginal pass) and LRCX (+0.34% vs 50-day) both remain ATR-gated (3.15%/5.92%, over the 3% threshold) with no fresh catalyst. PWR (-8.92%), MSFT (-1.60%), COST (-6.51%) all remain below their 50-day. Cash (78.28%) remains above the 25-40% target band but this is an explicit, reasoned decision, not a default — see `research-log.md` 2026-07-16 entry for full detail.
-
-**Market-open execution (~09:37 ET):** No trades placed (plan was empty). Stop audit 3/3 PASS, no shock, no rule triggers. Full detail in `trade-log.md` 2026-07-16 market-open entry.
+**Today's plan:** **No trades planned.** Full watchlist re-verification (fresh Alpaca bars, 2026-04-18 to 2026-07-16 close) found every single candidate failing its technical entry gate today — the first session this cycle where even the previously-marginal names (META, AAPL) fail outright rather than barely passing. **AAPL purged from the watchlist this run**, applying the pre-stated 2026-07-03 weekly-review rule ("drop 2026-07-17 if no clean valuation gate clears") — two weeks of daily re-verification never cleared the valuation gate (18.4%→22.2% GuruFocus-overvalued, P/E now 39.67x TTM) and the stock crossed into a technical extension fail today too (+10.49% vs 50-day). META remains extended (+10.02%, still over the chase gate). NVDA reversed again (-1.10% vs 50-day, 4th data point in a 3-week pattern of failed confirmation). LRCX reversed (-4.33%). PWR (-11.12%), MSFT (-0.17%), COST (-3.41%) all remain below their 50-day. Cash (82.62%) remains well above the 25-40% target band but is an explicit decision — no candidate clears any gate today, and the broader tape (chip-sector futures weak, Iran conflict escalating for a 6th straight night, oil +12% on the week) independently argues for patience. Full detail in `research-log.md` 2026-07-17 entry.
 
 ## Risk posture (2026-07-16 close)
 
