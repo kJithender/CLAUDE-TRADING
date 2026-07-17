@@ -3902,4 +3902,20 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Watchlist hygiene:** **AAPL purged** — applying the pre-stated 2026-07-03 drop-dead rule; the valuation gate never cleared in 2 weeks (39.67x TTM P/E, ~22% GuruFocus-overvalued) and the stock is now also technically extended (+10.49% vs 50-day). Full rationale in `strategy.md` and `research-log.md`.
 - **Why no trades:** every watchlist name fails its technical entry gate today (META +10.02% still extended; NVDA -1.10% reversed again, 4th failed-confirmation data point in 3 weeks; LRCX -4.33% reversed; PWR -11.12%, MSFT -0.17%, COST -3.41% all below 50-day). No candidate to deploy into regardless of cash levels. Broader tape (chip-sector futures weak, Iran conflict 6th straight night of strikes, oil +12% on the week) independently supports staying defensive today. Full detail in `research-log.md` 2026-07-17 entry.
 - **Weekly new-position count:** remains 1/3 (LLY, Monday 2026-07-13). 2 slots remain this week (through today, Friday).
+
+## 2026-07-17 09:36 ET — MARKET OPEN (no trades — plan was empty)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Plan check:** today's plan block in `research-log.md` (`plan_date: 2026-07-17`) has `"trades": []` — pre-market found no candidate clearing its technical entry gate. No breaking-news gate or execution needed; nothing to place.
+- **Market status:** `is_open: true`, next close 16:00 ET today.
+- **Live re-sync:** equity USD 100,039.71, cash USD 82,696.11 (82.665%), long MV USD 17,343.60 (17.336%).
+- **Positions:** LLY 8sh @ avg USD 1,174.35625, current USD 1,173.99 (−0.031%, −USD 2.93). V 22sh @ avg USD 355.058182, current USD 361.455 (+1.802%, +USD 140.73) — pulled back USD 3.685 intraday from Thursday's close (−1.009%), still well above entry and the trailing stop.
+- **Shock check:** equity USD 100,039.71 vs last_equity USD 100,082.55 = **−0.0428%** — no shock (threshold −4%) ✓.
+- **Drawdown:** USD 100,039.71 vs running HWM USD 100,218.48 (2026-07-13 close) = **−0.1784%** — NOT triggered (9.8216pp headroom) ✓.
+- **Stop audit:** `orders open` shows both trailing stops live and unconsumed — LLY `e3547b9e` (HWM USD 1,196.29, stop USD 1,076.661, unchanged) and V `2b0a93ba` (HWM USD 364.91, stop USD 328.419, unchanged — no fresh high yet today). 2/2 PASS, nothing to recreate.
+- **Sector exposure:** Healthcare (LLY) 9.388%, Financials (V) 7.949%, cash 82.665% — all within the 60% sector cap and 5% cash floor.
+- **Weekly new-position count:** unchanged at 1/3 (LLY, Monday 2026-07-13).
+- **Action taken:** none — no trades planned, no stop issues found.
+- **Notify:** Telegram sent — no trades, reason given (empty plan, no candidate cleared its gate at pre-market).
 - **Cash-drag:** 82.618%, above the 25-40% target band for the tenth consecutive session — explicitly justified above, not a default.
