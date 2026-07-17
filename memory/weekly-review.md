@@ -2,6 +2,83 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-07-17 (Week 3 of the new track record — 5 active trading days: Mon Jul 13 – Fri Jul 17)
+
+- **Bull return (week, 2026-07-10 close → 2026-07-17 close):** −0.0044% ($99,989.04 → $99,984.66)
+- **SPY return (week, $755.36 → $744.16, dailyBar.c both days):** −1.4831%
+- **Result:** Bull **beat** SPY by **+1.479pp** this week
+- **Since inception (2026-07-01, $100,000.00 / SPY $745.665):** Bull −0.015% vs SPY −0.202% = **+0.187pp gap — Bull is now AHEAD of SPY since inception for the first time in this track record** (flipped from −0.243pp last Thursday, −1.311pp two Fridays ago)
+- **HWM:** $100,218.48 (set 2026-07-13 close) | drawdown −0.233% — far within the −10% circuit breaker ✓
+- **Grade:** A−
+
+### Trade statistics (sample still very small — 1 closed trade since reset; read directionally, not conclusively)
+
+| Metric | Value |
+|--------|-------|
+| New trades this week | 1 (BUY LLY, 8sh @ USD 1,174.35625, 2026-07-13) |
+| Closed trades this week | 1 (VST, trailing-stop fill, 2026-07-16, LOSS) |
+| Total closed trades (new baseline, since 2026-07-01) | 1 |
+| Win rate | 0% (0 wins / 1 closed trade) |
+| Average win % | N/A — no wins yet |
+| Average loss % | −2.178% (VST) |
+| Profit factor | N/A — no gross wins to divide by |
+| Avg holding days (winners / losers) | N/A winners / 14 days (VST, the one loser) |
+| Biggest standing lesson | A trailing-stop exit is not automatically a thesis break — verify company-specific news before concluding either way (VST's stop-out was sector rotation, not a broken thesis; see `closed-trades.md` 07-16). Sample of 1 closed trade is too small to draw a trend from; treat as a single confirmed data point, not a pattern yet. |
+
+⚠️ **Ledger cross-check:** `trades.jsonl` has 3 post-reset buy entries (VST 07-02, V 07-07, LLY 07-13) and 1 stop_fill (VST 07-16, −2.178%), matching `closed-trades.md`'s single post-reset exit (VST) and `trade-log.md`'s narrative. No reconciliation issue — all three ledgers agree.
+
+### Process audit
+
+| Check | Result | Grade |
+|-------|--------|-------|
+| Cash drag (avg ~80.1% this week — 78.307% Mon–Wed, 82.696% Thu–Fri — vs 25–40% target band) | Every non-buy day cited specific, dated gate failures (technical SMA fails on NVDA/PWR/MSFT/COST/META, valuation veto on AAPL culminating in its purge, escalating Iran-conflict macro risk). Now a **third consecutive week** materially above the target band — a real pattern, not noise. This week the same posture happened to pay off (see "what worked"), but that is a fortunate correlation with which sector led the selloff, not evidence the calibration question from the 07-10 review is resolved. | ⚠️ justified daily, still a standing pattern worth a decision, not just a note |
+| Sector caps | Financials (V) 7.884–8.022%, Healthcare (LLY) 9.360–9.422%, cash 82.6–82.7% — nowhere near the 60% cap. Energy/Utilities 0% (VST closed 07-16). | ✓ |
+| Stop discipline | LLY `e3547b9e` and V `2b0a93ba` confirmed live at every routine session all week (pre-market, market-open, midday, close × 5 days). VST's `bdfb5f67` fired correctly Tuesday — a closed position's stop being consumed is the stop working as designed, not a lapse; no position was ever left unprotected. | ✓ PERFECT |
+| Weekly new-position count | 1/3 slots used (LLY, 2026-07-13); 2 slots went unused | ✓ within cap, though still slow deployment |
+| Thesis contracts | LLY (review_by 2026-08-05) and V (review_by 2026-07-28) both reviewed and unchanged at every session; neither triggered, neither due | ✓ |
+| Loss post-mortems | VST loss got a same-day post-mortem in `closed-trades.md` (07-16) plus a dated lesson in `lessons.md` (07-16 midday) — no silent losses | ✓ |
+| Guardrail checks | Complete tables at every routine session all week, including a full drawdown/shock/sector check every single run | ✓ |
+
+### What worked
+
+- **Sector diversification away from AI-semi paid off directly this week.** The Philly Semiconductor Index fell ~17% in July alone (~20% off its late-June high), dragging the S&P 500 down 1.5% and the Nasdaq down 2.9% on the week — Bull's book (LLY healthcare, V financials) sits entirely outside that layer and was barely dented (−0.004% for the week), flipping the since-inception gap positive for the first time. This is the mirror image of the 07-10 review's complaint (missing the AI-semi rally) — the same structural choice that cost ~1.3pp two weeks ago earned back all of it and more this week.
+- **VST stop-out handled with full discipline.** Same-day post-mortem correctly distinguished sector rotation from a thesis break (WebSearch found no VST-specific bad news — BofA reiterated Buy the same day), and the lesson was filed immediately rather than after the fact.
+- **AAPL watchlist purge executed exactly on schedule despite the stock continuing to run.** The pre-stated 2026-07-03 drop-dead rule ("purge 07-17 if the valuation gate never clears") was applied mechanically at Friday pre-market even as AAPL hit new highs on the week (46 S&P names hit 52-week highs Thursday, AAPL among them, +12.4% trailing month). This is discipline working under real pressure to reverse course — the P/E-driven rationale (39.67x TTM, ~22% GuruFocus-overvalued) hasn't changed just because the price kept climbing.
+- **Perfect stop-audit and thesis-contract compliance** across all 5 sessions — zero missed audits, zero unprotected positions.
+
+### What didn't work / open questions
+
+- **Cash sat at 78–83% for a third straight week**, well outside the 25–40% target band. Every daily decision was individually justified, and this week's outcome was good, but three consecutive weeks of the same posture is a trend the strategy should have an explicit answer for, not just a running list of justified exceptions. The calibration question raised 07-10 (is the GuruFocus valuation veto too strict for a strategy that must *beat* SPY, not just avoid mistakes) remains open — this week's result is evidence *for* patience, not proof the calibration is right, since it depended on chips leading the selloff rather than healthcare or financials.
+- **Aggressive Bull comparison remains impossible and the outage has gotten materially worse.** AGGRO's memory has now been stale for **24 days** (since 2026-06-23 EOD) — the 7th+ separate flag across close/weekly-review routines since 2026-07-02, spanning over 3 full weeks with zero resolution. See "Aggressive Bull lesson" below.
+- **Only 1 of 3 weekly new-position slots used** — deployment pace remains slow; not wrong given the gate failures, but worth tracking against the mandate to beat SPY through selective picking, not through sitting in cash and hoping the sector mix stays lucky.
+
+### Macro context (week of July 13–17, 2026)
+
+- **S&P 500 fell ~1.5% on the week** ($755.36 → $744.16), Nasdaq −2.9%, on a broadening semiconductor selloff — the Philadelphia SE Semiconductor Index is down ~17% in July alone, ~20% off its late-June record high, on AI-capex-sustainability skepticism among hyperscalers. [CNBC](https://www.cnbc.com/2026/07/16/stock-market-today-live-updates.html)
+- **Additional catalysts:** a new Chinese open-weight AI model (Moonshot's Kimi K3) stoked competitive-moat concerns for US AI leaders; Netflix fell >10% Friday on a narrow revenue miss despite an EPS beat; oil rose ~12% on the week (Brent ~USD 85, WTI ~USD 80) as the Iran conflict escalated for a sixth consecutive night, cutting confirmed Strait of Hormuz crude transit 62%. [The National](https://www.thenationalnews.com/business/energy/2026/07/17/oil-set-for-steep-weekly-rise-as-us-and-iran-intensify-attacks/)
+- **Breadth was better than the headline number suggests:** 8 of 11 S&P sectors actually rose this week, and 90% of the 49 S&P 500 companies that had reported Q2 earnings by Friday beat estimates — this was a narrow semiconductor/mega-cap-tech story, not a broad risk-off move. Energy and defensive/healthcare names led (Travelers +6.43%, UnitedHealth +2.62%, Walmart +2.10%, energy majors +~2%). [Trefis](https://www.trefis.com/stock/spy/articles-v3/607705/46-sp-500-stocks-hit-52-week-highs-on-thursday/2026-07-17)
+- **LLY (held):** Definitive agreement to acquire AtaiBeckley (psychedelics/mental health) for up to USD 3.8B; full FDA approval for Retevmo; Citi raised PT to USD 1,600. Thesis unchanged.
+- **V (held):** Fresh multi-year high on the new Stablecoin Platform launch (drew a fresh Bernstein Buy reaction) and a Weiss Ratings upgrade to Buy. Two small routine insider sales in early July, no 10b5-1 red flags found. Thesis unchanged.
+- **10yr Treasury** eased to ~4.53%, still comfortably below the 4.75% new-buy gate.
+
+### Aggressive Bull lesson (section 7b)
+
+**AGGRO data is STILL STALE — last updated 2026-06-23 EOD, now 24 days as of this review** (up from 17 days at last week's review). `memory/aggressive/portfolio.md`, `trade-log.md`, `closed-trades.md`, and `weekly-review.md` show zero activity past the Week 3 review (2026-06-19) / June 23 EOD close. This is now the **7th+ separate flag** across close and weekly-review routines since 2026-07-02, spanning over three full calendar weeks with no resolution — the standing lesson (2026-07-10) said an anomaly flagged 3+ times with zero resolution should be escalated directly, not just re-flagged; this review does that again via the urgent Telegram notify below, with the same likely-root-cause hypothesis (AGGRO's scheduled routine trigger has stopped firing).
+
+**Last-known AGGRO figures (2026-06-23 EOD, stale, 24 days old):** equity USD 92,876.82, since-inception (2026-06-04) return −7.123%, alpha vs SPY −4.392pp. Cautious Bull's own since-inception return is now **+0.187pp positive vs SPY** (2026-07-01 baseline) — even on this old, non-comparable timeline, AGGRO is not remotely close to beating Cautious Bull by any measure.
+
+**One lesson worth re-extracting, since there's still nothing fresher:** AGGRO's last live data point (18% trailing stops vs Cautious's 10%) showed wider stops trading recovery upside for larger drawdowns. This week gave Cautious Bull its own clean illustration of the opposite trade-off working in its favor: a **narrower, diversified book with a tight 10% stop avoided ~all of a 17-20% sector-specific drawdown** that a concentrated, wide-stop AI-semi book (AGGRO's actual historical allocation: NVDA, AVGO, META, MRVL) would have been directly exposed to. No rule change — this is a live data point reinforcing, not contradicting, the standing conclusion that Cautious Bull's tighter-stop, diversified posture is the deliberate, structurally correct choice for this mandate.
+
+**Cross-Bull learning counter update:** AGGRO trails Cautious Bull by every available measure (stale or otherwise) — the >5pp-AGGRO-leads-for-2-weeks trigger condition is nowhere close to being met. Counter = **0** (unchanged, now 4 consecutive weeks at 0). `CROSS_BULL_LEARNING:` in `control.md`: confirmed blank, no change needed.
+
+### Strategy adjustments
+
+- **Watchlist hygiene:** already applied this week — AAPL purged at 2026-07-17 pre-market per the pre-stated 2026-07-03 drop-dead rule (see `strategy.md` for full detail). No further purges needed today: every remaining watchlist name (NVDA, PWR, MSFT, COST, LRCX, META, VST re-entry watch) still carries either a dated forward catalyst (earnings, or a stated drop-dead date) or a daily re-gated technical setup, consistent with the 07-03 hygiene precedent that actively-monitored names are not "decoration" even without a hard expiry.
+- **Watchlist addition (unvetted):** adding **UNH** (UnitedHealth, Healthcare/Managed Care) as an unvetted candidate — one of this week's top S&P gainers (+2.62%) amid a defensive/healthcare-led tape. Needs a full price/ATR/valuation gate check before any consideration (same treatment META got 2026-07-10), and a correlation check against the existing LLY healthcare position before sizing, since both would sit in the same sector bucket. Dated 2026-07-17.
+- No changes to entry/exit signals, sizing, or guardrails this week. The system performed exactly as designed, including under real pressure (the AAPL purge). The cash-drag/valuation-calibration question remains open and should get an explicit answer — not just another "justified but flagged" note — within the next 2-3 weeks if the pattern continues into a fourth week.
+
+---
+
 ## Week ending 2026-07-10 (Week 2 of the new track record — 5 active trading days: Mon Jul 6 – Fri Jul 10)
 
 - **Bull return (week, 2026-07-03 close carried forward → 2026-07-10 close):** +0.0950% ($99,894.14 → $99,989.04)
