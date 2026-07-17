@@ -3919,3 +3919,19 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Action taken:** none — no trades planned, no stop issues found.
 - **Notify:** Telegram sent — no trades, reason given (empty plan, no candidate cleared its gate at pre-market).
 - **Cash-drag:** 82.618%, above the 25-40% target band for the tenth consecutive session — explicitly justified above, not a default.
+
+## 2026-07-17 12:36 ET — MIDDAY (risk check, no action)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market status:** `is_open: true`, next close 16:00 ET today.
+- **Live re-sync:** equity USD 100,001.50, cash USD 82,696.11 (82.694%), long MV USD 17,305.39 (17.305%), last_equity (07-16 close) USD 100,082.55.
+- **Positions:**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,177.725, **+0.287%** (+USD 26.95 unrealized). Within normal range — no news-scan gate triggered (not >3% down or >10% up).
+  - V: 22sh @ avg USD 355.058182, current USD 358.345, **+0.926%** (+USD 72.31 unrealized). Within normal range — no news-scan gate triggered.
+- **Action taken:** none on LLY or V — neither breaches the −7% cut threshold or the +15% tighten threshold. No new positions opened (midday never opens positions).
+- **Shock check:** equity USD 100,001.50 vs last_equity USD 100,082.55 = **−0.081%** — no shock (threshold −4%) ✓.
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,196.29, stop USD 1,076.661, unchanged) and V `2b0a93ba` (HWM USD 364.91, stop USD 328.419, unchanged, no fresh high yet today) both confirmed live via `orders open` — 2/2 PASS, nothing to recreate.
+- **Sector exposure:** Healthcare (LLY) 9.422%, Financials (V) 7.884%, cash 82.694% — all within caps.
+- **Weekly new-position count:** unchanged at 1/3 (LLY, Monday 2026-07-13).
+- **Notify:** Telegram sent — all positions within range, no action.

@@ -21,33 +21,35 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-17 ~09:36 ET (market-open, Friday) — no trades (plan was empty, no candidate cleared its gate); 2/2 stop audit PASS, no shock, drawdown not triggered
+**Last updated:** 2026-07-17 ~12:36 ET (midday, Friday) — risk check only, no action; 2/2 stop audit PASS, no shock, no cut/tighten triggers
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-17 market-open ~09:36 ET)
+## Account (live Alpaca data, 2026-07-17 midday ~12:36 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,039.71 |
-| Cash | $82,696.11 (82.665%) |
-| Long market value | $17,343.60 (17.336%) |
-| Buying power | $379,346.52 |
+| Equity | $100,001.50 |
+| Cash | $82,696.11 (82.694%) |
+| Long market value | $17,305.39 (17.305%) |
+| Buying power | $379,239.53 |
 | Last equity (2026-07-16 close, Alpaca) | $100,082.55 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| V | 22 | $355.058182 | $361.455 | +$140.73 (+1.802%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged (pulled back −1.009% intraday from Thursday's close, no fresh high yet) | **B** (first Monday review 07-13; next review 2026-07-20) |
-| LLY | 8 | $1,174.35625 | $1,173.99 | −$2.93 (−0.031%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review Monday 2026-07-20) — 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
+| V | 22 | $355.058182 | $358.345 | +$72.31 (+0.926%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged (no fresh high yet today) | **B** (first Monday review 07-13; next review 2026-07-20) |
+| LLY | 8 | $1,174.35625 | $1,177.725 | +$26.95 (+0.287%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review Monday 2026-07-20) — 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
 
 **VST closed 2026-07-16** via trailing stop (sector-wide chip/AI-power selloff, not company-specific — see `closed-trades.md`). Now tracked as a re-entry watchlist candidate in `strategy.md` (not yet a clean setup: -0.98% vs 50-day, ATR 3.78%).
 
-**Sector exposure:** Financials (V): $7,952.01 = 7.949%. Healthcare (LLY): $9,391.92 = 9.388%. Energy/Utilities: 0% (VST closed). Cash: $82,696.11 = 82.665%. No sector above 60% cap ✓.
+**Sector exposure:** Financials (V): $7,883.59 = 7.884%. Healthcare (LLY): $9,421.80 = 9.422%. Energy/Utilities: 0% (VST closed). Cash: $82,696.11 = 82.694%. No sector above 60% cap ✓.
 
-**Trailing stop status:** 2/2 positions protected (confirmed live via `orders open`, 2026-07-17 market-open audit).
+**Trailing stop status:** 2/2 positions protected (confirmed live via `orders open`, 2026-07-17 midday audit).
 **Stop audit:** 2/2 PASS this run (V `2b0a93ba` HWM $364.91/stop $328.419 unchanged; LLY `e3547b9e` unchanged HWM $1,196.29/stop $1,076.661).
+
+**Midday risk check (2026-07-17 ~12:36 ET):** LLY +0.287%, V +0.926% — neither breaches the −7% cut threshold or the +15% tighten threshold. No news-scan gate triggered (neither >3% down nor >10% up). No action taken. Intraday shock check: equity $100,001.50 vs last_equity $100,082.55 = −0.081% — no shock ✓.
 
 **Today's plan:** **No trades placed.** Pre-market's watchlist re-verification found every single candidate failing its technical entry gate today — the first session this cycle where even the previously-marginal names (META, AAPL) fail outright rather than barely passing. **AAPL purged from the watchlist this run**, applying the pre-stated 2026-07-03 weekly-review rule ("drop 2026-07-17 if no clean valuation gate clears") — two weeks of daily re-verification never cleared the valuation gate (18.4%→22.2% GuruFocus-overvalued, P/E now 39.67x TTM) and the stock crossed into a technical extension fail today too (+10.49% vs 50-day). META remains extended (+10.02%, still over the chase gate). NVDA reversed again (-1.10% vs 50-day, 4th data point in a 3-week pattern of failed confirmation). LRCX reversed (-4.33%). PWR (-11.12%), MSFT (-0.17%), COST (-3.41%) all remain below their 50-day. Cash (82.67%) remains well above the 25-40% target band but is an explicit decision — no candidate clears any gate today, and the broader tape (chip-sector futures weak, Iran conflict escalating for a 6th straight night, oil +12% on the week) independently argues for patience. Market-open confirmed the empty plan and placed no orders. Full detail in `research-log.md` 2026-07-17 entry.
 
