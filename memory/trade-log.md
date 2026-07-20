@@ -3983,3 +3983,27 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Sector exposure:** Healthcare (LLY+UNH) 19.84%, Financials (V) 7.953%, Communication Services (META) 3.910%, cash 68.30% — all within caps.
 - **Weekly new-position count:** unchanged at 2/3 (UNH, META, both 2026-07-20).
 - **Notify:** Telegram sent — all positions within range, no action.
+
+## 2026-07-20 ~15:51 ET — CLOSE (EOD journal, no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Half-day/dedup check:** `next_close` 16:00 ET (not a half-day). No existing 2026-07-20 row in `performance.csv` — appended fresh, no dedup needed.
+- **Account:** Equity USD 99,880.82, cash USD 68,291.17 (68.375%), long market value USD 31,589.65 (31.626%). last_equity (prior session) USD 100,017.31.
+- **Positions (close, ~15:51 ET):**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,149.66, **−2.103%** (−USD 197.57 unrealized).
+  - V: 22sh @ avg USD 355.058182, current USD 361.56, **+1.831%** (+USD 143.04 unrealized).
+  - UNH: 25sh @ avg USD 422.28, current USD 421.93, **−0.083%** (−USD 8.75 unrealized).
+  - META: 6sh @ avg USD 641.323333, current USD 648.30, **+1.088%** (+USD 41.86 unrealized).
+  - None near the −7% threshold; no exits today. No reconciliation needed vs `closed-trades.md` (still just VST, 07-16).
+- **Stop audit:** LLY `e3547b9e` (HWM 1,196.29 / stop 1,076.661), V `2b0a93ba` (HWM 364.91 / stop 328.419), UNH `225cb079` (HWM 425.9499 / stop 383.35491), META `14301809` (HWM 653.30 / stop 587.97) — all 4 confirmed live via `orders open`, unchanged from midday. 4/4 PASS.
+- **Drawdown circuit breaker:** HWM USD 100,218.48 (2026-07-13 close, from `history 1A 1D`). Current equity USD 99,880.82 → drawdown **−0.337%**, far from the −10% breaker; not near the 2%-of-threshold flag.
+- **Intraday shock check:** equity USD 99,880.82 vs last_equity USD 100,017.31 = **−0.1365%** — no shock (threshold −4%) ✓.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.795%, Financials (V) 7.964%, Communication Services (META) 3.895%, cash 68.375% — all within the 60% cap.
+- **Performance vs SPY:** SPY dailyBar.c today (pulled ~15:51 ET) USD 742.51 vs 07-17 recorded close USD 744.16 → SPY today **−0.2217%**. Bull today (vs last_equity) **−0.1365%** → Bull beat SPY today by **+0.085pp**. Since inception (2026-07-01, USD 100,000.00 / SPY 745.665): Bull **−0.119%** vs SPY (742.51 vs 745.665) **−0.423%** → gap **+0.304pp, Bull ahead of SPY**.
+- **Market context:** Iran-conflict airstrikes continued (fresh US strikes, Houthi "maritime embargo" threat vs Saudi Arabia) keeping oil elevated (~USD 81/bbl) and pressuring the broad tape (Dow −0.5%, S&P roughly flat) even as chip stocks staged a modest comeback ahead of this week's Big Tech earnings (Tesla, Alphabet, Intel). Nothing here threatens LLY/V/UNH/META theses; the Iran macro watch in `strategy.md` remains active and unchanged.
+- **Race scoreboard:** Bull +0.304pp vs SPY (since 2026-07-01) | AGGRO last known −7.123% since its own 2026-06-04 inception (STALE — `memory/aggressive/portfolio.md` unchanged since 2026-06-23 EOD, now **27 days** stale, up from 24 days at last Friday's review; already escalated repeatedly, no new action this run beyond noting the increment).
+- **Performance history:** appended `2026-07-20,bull,99880.82,68291.17,742.51` to `performance.csv`.
+- **Friday watchdog:** N/A — today is Monday.
+- **Monthly/quarterly housekeeping:** N/A — not the first trading day of the month, not a dividend-quarter mid-month check.
+- **Notify:** Telegram sent — EOD summary, no trades today, Bull ahead of SPY since inception.
