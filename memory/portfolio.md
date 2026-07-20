@@ -21,28 +21,31 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-20 ~08:20 ET (pre-market, Monday) — plan drafted: BUY UNH 25sh + BUY META 6sh at market-open pending execution; Monday conviction review: LLY→A, V upgraded B→A
+**Last updated:** 2026-07-20 ~09:39 ET (market-open, Monday) — BUY UNH 25sh + BUY META 6sh both filled, 10% trailing stops placed and verified; Monday conviction review: LLY→A, V upgraded B→A
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-20 pre-market ~08:15 ET)
+## Account (live Alpaca data, 2026-07-20 market-open ~09:39 ET, post-fill)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,972.11 |
-| Cash | $82,696.11 (82.717%) |
-| Long market value | $17,276.00 (17.283%) |
-| Buying power | $379,157.24 |
+| Equity | $99,941.19 (pre-fill snapshot; fills were cost-neutral market orders at limit) |
+| Cash | ~$68,536.25 (~68.6%, post-buys) |
+| Long market value | ~$31,404.99 (~31.4%, post-buys: LLY+V+UNH+META) |
+| Buying power | $379,070.66 (pre-fill) |
 | Last equity (2026-07-18 close, Alpaca) | $100,017.31 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| V | 22 | $355.058182 | $358.00 | +$64.72 (+0.829%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (upgraded from B — fresh multi-year high on Stablecoin Platform launch, Weiss upgrade, +7.62% vs 50-day cleanly, earnings 07-28 approaching with strong analyst sentiment; next review 2026-07-27) |
-| LLY | 8 | $1,174.35625 | $1,175.00 | +$5.15 (+0.055%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged) | **A** (first Monday review since entry 07-13 — thesis intact and working: Medicare Bridge live, AtaiBeckley deal, Retevmo FDA approval, 3 analyst PT raises this month; invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05) |
+| V | 22 | $355.058182 | $356.97 | +$42.06 (+0.538%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (upgraded from B — fresh multi-year high on Stablecoin Platform launch, Weiss upgrade, +7.62% vs 50-day cleanly, earnings 07-28 approaching with strong analyst sentiment; next review 2026-07-27) |
+| LLY | 8 | $1,174.35625 | $1,174.63 | +$2.19 (+0.023%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged) | **A** (first Monday review since entry 07-13 — thesis intact and working: Medicare Bridge live, AtaiBeckley deal, Retevmo FDA approval, 3 analyst PT raises this month; invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05) |
+| UNH | 25 | $422.28 | $421.455 | -$20.63 (-0.195%) | Healthcare | Order 225cb079, 10%, HWM $421.455, stop $379.3095 — live, new today | **NEW** (Q2 beat-and-raise 07-16, PEG 1.73-2.07, GF Value ~30% undervalued, +5.76% vs 50-day, ATR 2.51%; 5-of-5 entry signals; review_by 2026-08-17) |
+| META | 6 | $641.323333 | $641.22 | -$0.62 (-0.016%) | Communication Services | Order 14301809, 10%, HWM $641.5267, stop $577.37403 — live, new today | **NEW** (extension gate cleared +6.87% vs 50-day, PEG 0.82, GF Value ~$810 vs $646, Meta Compute + Iris chip catalysts; halved for ATR 3.52% and earnings 07-29 gap-risk; review_by 2026-07-27, forces pre-earnings hold/trim/exit call) |
 
-**Planned buys (pending market-open execution, see `research-log.md` 2026-07-20 plan):** UNH 25sh (~10.7% of equity) and META 6sh (~3.9% of equity, halved for ATR + earnings proximity). Both cleared their technical/valuation gates today for the first time this cycle.
+**Sector exposure (post-buy):** Healthcare (LLY+UNH) ≈19.94% of equity, Financials (V) ≈7.86%, Communication Services (META) ≈3.85%, cash ≈68.6% — all well within the 60% sector cap.
+**Weekly new-position count:** 2/3 used this week (UNH, META — both 2026-07-20). 1 slot remains through Friday.
 
 **VST closed 2026-07-16** via trailing stop (sector-wide chip/AI-power selloff, not company-specific — see `closed-trades.md`). Re-verified 2026-07-20: +0.84% vs 50-day (first session crossing back above, marginal), ATR 3.92% (still >3% gate) — a single-session cross is not yet a confirmed re-entry per the standing NVDA-pattern lesson (multi-session confirmation required); not a buy today, continue monitoring.
 
@@ -215,3 +218,5 @@ _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): 
 **Cash-drag check:** 82.717% cash, above the 25-40% target band for a fourth consecutive week — but today resolves the standing pattern with an explicit, gate-cleared decision to deploy: planning 2 new buys (UNH + META) totaling ~14.5% of equity, using 2 of 3 weekly slots.
 
 **Today's plan: BUY UNH 25sh (~$10,651, 10.66% of equity) and BUY META 6sh (~$3,876, 3.88% of equity) at market-open, pending final execution price and breaking-news gate check.** Full detail and JSON block in `research-log.md` 2026-07-20 entry. Notified via Telegram.
+
+**2026-07-20 market-open (~09:38-09:39 ET, Monday):** `clock` confirmed `is_open: true`. Breaking-news gate (WebSearch) cleared for both UNH and META — no thesis-breaking developments beyond what pre-market already knew. Pre-execution shock check: equity $99,941.19 vs last_equity $100,017.31 = -0.0761% — no shock. **BUY UNH:** ask/bid tight ($421.51/$421.14) — marketable limit $422.77, filled 25sh @ avg $422.28 (order `2f0a6ce1`). **BUY META:** ask stuck at $675 across repeated polls while bid (~$639.5) and `trades/latest` (~$639.8-639.9) moved together — treated as unreliable per the 2026-07-07 lesson, used latest-trade $639.82 × 1.003 = $641.74 marketable limit, filled 6sh @ avg $641.323333 (order `b99c60a5`). Both fills verified via `positions`. 10% trailing stops placed and verified live for both: UNH `225cb079` (HWM $421.455, stop $379.3095), META `14301809` (HWM $641.5267, stop $577.37403). **Stop audit: 4/4 positions protected** (LLY, V, UNH, META). Guardrails: UNH 10.56% + META 3.85% = 14.41% daily deployment (cap 25%); weekly count 2/3; cash ~68.6% (min 5%); risk budget both under 1.2%; sector caps Healthcare ~19.94%, Comm Services ~3.85% (cap 60% each); drawdown ~0.28% vs HWM $100,218.48 (breaker -10%, not triggered). All ✓. Fills logged to `trades.jsonl`; `EXECUTED:` appended in `research-log.md`; narrative in `trade-log.md`. Notified via Telegram.

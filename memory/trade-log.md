@@ -3950,3 +3950,19 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Watchlist:** UNH clears 5-of-5 entry signals (Q2 beat-and-raise 07-16, PEG <2.5, GF Value ~30% undervalued, technical +5.76% vs 50-day, ATR 2.51%). META's extension gate newly clears (+6.87% vs 50-day, from +13.05% blowout). NVDA (-3.38%, 5th failed-confirmation data point), PWR (-11.16%), MSFT (-1.85%), COST (-3.74%), LRCX (-6.87% + valuation veto) all remain non-candidates. VST re-entry watch: +0.84% vs 50-day (first positive session) but only one data point, not yet confirmed.
 - **Why trades planned:** Both UNH and META independently cleared their full entry-signal checklists for the first time this cycle — genuine, gate-cleared setups, not forced. This also resolves the fourth-consecutive-week cash-drag pattern flagged in recent weekly reviews with an explicit, disciplined deployment rather than further passive deferral.
 - **Weekly new-position count:** 0/3 used this week (fresh week); this plan uses 2/3.
+
+## 2026-07-20 09:38 ET — MARKET OPEN (BUY UNH 25sh, BUY META 6sh — both filled)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Plan check:** today's plan block in `research-log.md` (`plan_date: 2026-07-20`) had 2 trades (UNH, META), no prior `EXECUTED:` line — proceeding.
+- **Market status:** `is_open: true`, next close 16:00 ET today.
+- **Breaking-news gate (WebSearch):** UNH — nothing beyond the already-known 07-16 beat-and-raise; META — nothing beyond the already-known July AI-catalyst run (Meta Compute, Iris chip). No thesis-breaking news for either. Gate cleared for both.
+- **Pre-execution re-check:** equity USD 99,941.19, cash USD 82,696.11, last_equity USD 100,017.31 → shock check **−0.0761%** (no shock, threshold −4%). LLY and V both confirmed live via `positions`, unchanged from pre-market.
+- **BUY UNH:** quote ask USD 421.51 / bid USD 421.14 — tight, reliable spread. Marketable limit = 421.51 × 1.003 = USD 422.77. Order `2f0a6ce1` placed for 25sh @ limit 422.77 → **filled 25sh @ avg USD 422.28** (cost USD 10,557.00, 10.56% of equity). Verified via `positions`.
+- **BUY META:** quote ask stuck at USD 675 across 2 polls ~20s apart while bid (~USD 639.45→639.5) and `trades/latest` (~USD 639.82–639.93) moved together and tracked each other — same stale-ask pattern as the 2026-07-07 V lesson. Treated the ask as unreliable; used latest-trade USD 639.82 × 1.003 = USD 641.74 marketable limit instead. Order `b99c60a5` placed for 6sh @ limit 641.74 → **filled 6sh @ avg USD 641.323333** (cost USD 3,847.94, 3.85% of equity). Verified via `positions`.
+- **Trailing stops placed and verified:** UNH 10% stop `225cb079` (HWM USD 421.455, stop USD 379.3095, live in `orders open`). META 10% stop `14301809` (HWM USD 641.5267, stop USD 577.37403, live in `orders open`).
+- **Stop audit:** 4/4 positions protected — LLY `e3547b9e`, V `2b0a93ba`, UNH `225cb079`, META `14301809`, all confirmed live in `orders open`. No exits observed since last run (no positions consumed).
+- **Guardrail math:** UNH 10.56% of equity (≤20% cap, ≤15% single-order rule), META 3.85% of equity; combined daily deployment 14.41% (≤25% cap); weekly new-position count 0/3 → **2/3**; cash after buys ≈ USD 68,536.25 (≈68.6%, ≥5% min); risk budget UNH ≈1.056% / META ≈0.385% of equity (≤1.2% cap each); sector exposure Healthcare (LLY+UNH) ≈19.94%, Communication Services (META) ≈3.85% (≤60% cap each); drawdown ≈0.277% vs HWM USD 100,218.48 (breaker at −10%, not triggered). All guardrails ✓.
+- **Ledger:** both fills appended to `trades.jsonl`; `EXECUTED:` line appended under today's plan block in `research-log.md`.
+- **Notify:** Telegram sent — trades placed, fills and stops listed.
