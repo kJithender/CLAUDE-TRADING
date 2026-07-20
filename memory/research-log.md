@@ -4936,3 +4936,66 @@ EXECUTED: 2026-07-17T13:36 ET — no trades (plan empty: no watchlist candidate 
 **V (held):** Hit a fresh multi-year high (USD 366.88 intraday Friday) on continued momentum from the Stablecoin Platform launch this week, which drew a fresh Bernstein Buy reaction; Weiss Ratings upgraded V to Buy July 6. Two routine insider sales (CEO McInerney, General Counsel Rottenberg, both small % of holdings, early July) — no 10b5-1 red flags raised in any source found, consistent with the standing lesson to check filing type before treating insider sales as bearish. Thesis unchanged. [MarketBeat](https://www.marketbeat.com/instant-alerts/visa-nysev-stock-price-up-23-still-a-buy-2026-07-13/), [Daily Political](https://www.dailypolitical.com/2026/07/13/visa-nysev-trading-up-2-3-heres-why.html)
 
 **Read for the weekly review:** the chip selloff that dragged SPY down this week is exactly the layer Bull holds zero exposure to (LLY healthcare, V financials) — the same structural gap that cost Bull ~1.3pp in early July's AI-semi rally now works in Bull's favor on the way down. See `weekly-review.md` for the full since-inception reversal this produces.
+
+## 2026-07-20 08:15 ET — PRE-MARKET
+
+**Market posture (WebSearch, "S&P 500 futures pre-market July 20 2026"):** S&P 500 futures +0.13-0.5%, Nasdaq-100 futures +1% Monday morning. US stock futures higher despite an escalating Iran military campaign and renewed oil-supply concerns — Polymarket showed 68% odds of an "up" open. [CNBC](https://www.cnbc.com/2026/07/19/stock-market-today-live-updates.html), [Benzinga](https://www.benzinga.com/news/26/07/60543800/stock-market-will-sp-500-open-up-or-down-today-10)
+
+**Week-ahead outlook (WebSearch):** Sector rotation continues — semiconductor index remains in a technical bear market on AI-monetization skepticism; energy has outperformed as a geopolitical hedge. 10yr yield elevated (~4.57%) with the market pricing the Fed on hold through the July 29 FOMC (a small hike probability priced in but not the base case). Fed blackout period begins this week. Heavy Q2 earnings docket: Tesla, Alphabet, Intel, MSFT, META and others report this week/next. [CNBC](https://www.cnbc.com/2026/07/17/stock-market-next-week-outlook-for-july-20-24-2026.html), [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-20-2026)
+
+**Iran / oil (WebSearch):** Ceasefire remains collapsed since 2026-07-08 (Iran struck commercial ships in the Strait of Hormuz). US has struck Iran again and reinstated a naval blockade of Iranian ports (CENTCOM, 07-15). WTI ~USD 75-80, Brent ~USD 79-85. Volatile, unresolved — treat as an ongoing risk-off catalyst, not escalating further today but not de-escalating either. [The Hill](https://thehill.com/policy/energy-environment/5960020-iran-ceasefire-gas-prices-strait-of-hormuz/)
+
+**10yr Treasury:** 4.57% (2026-07-20) — still comfortably below the 4.75% new-buy gate.
+
+**LLY (held, WebSearch):** No new negative developments. AtaiBeckley acquisition (up to USD 3.8B) and Retevmo FDA approval remain the active catalysts; Q1 2026 revenue USD 19.80B (+55.5% YoY), FY26 guidance USD 82-85B. Mounjaro USD 8.66B (+125% YoY), Zepbound USD 4.16B (US +80%). Ex-dividend USD 1.73 set for 2026-08-14. Nothing changed since yesterday — thesis unchanged.
+
+**V (held, WebSearch):** Trading USD 358.56, day range USD 357.00-364.63, 52-week range USD 293.89-365.14. Stablecoin Platform launch and AI Financial Assistant remain the active catalysts. Consensus Buy, median PT USD 410 (+18% upside). Earnings confirmed 2026-07-28. Nothing new since yesterday — thesis unchanged.
+
+**Watchlist re-verification** (fresh 50-day SMA / 20-day ATR% via Alpaca `data.alpaca.markets` bars, explicit start/end 2026-04-20 to 2026-07-17 close):
+
+| Ticker | Close (07-17) | vs 50-day SMA | 20-day ATR% | Gate |
+|--------|---------------|---------------|-------------|------|
+| LLY | 1178.57 | +6.21% | 2.85% | HELD |
+| V | 358.51 | +7.62% | 2.15% | HELD |
+| UNH | 426.06 | **+5.76%** | **2.51%** | **PASS — 5-of-5 entry signals** |
+| META | 646.03 | **+6.87%** | 3.52% | **PASS (extension resolved), ATR gate triggers half-size** |
+| VST | 155.23 | +0.84% | 3.92% | Marginal, single session, not confirmed |
+| NVDA | 202.80 | -3.38% | 3.25% | FAIL (5th failed-confirmation data point) |
+| PWR | 628.24 | -11.16% | 3.39% | FAIL |
+| MSFT | 394.02 | -1.85% | 2.85% | FAIL |
+| COST | 940.84 | -3.74% | 1.84% | FAIL |
+| LRCX | 313.12 | -6.87% | 5.98% | FAIL (valuation also disqualifies, P/E >60x) |
+
+**UNH deep-dive:** Reported Q2 2026 earnings 2026-07-16 — adjusted EPS USD 6.38 vs ~USD 4.85-4.52 consensus (beat by 30%+), revenue USD 112.0B, GAAP EPS USD 6.04. Raised FY2026 adjusted EPS guidance to USD 19.50-20.00. Next earnings not until 2026-10-27 (Yahoo Finance/Hudson Labs) — no blackout concern. GuruFocus: PEG ratio 1.73-2.07 (under the 2.5 threshold; industry median 1.38, so still a relative premium but within our rule), GF Value USD 603.55-603.71 vs price ~USD 424-426 (~30% undervalued on DCF), P/E 31.61x (premium to the 25.5x healthcare-industry average but below peer average 38.9x and the 40.6x fair ratio). Analyst sentiment: 23 of 26 brokerages Buy/Strong Buy, average PT USD 438.83 (~5% premium to spot), multiple PT raises post-earnings (KeyBanc, Truist, TD Cowen). Entry signals: (1) earnings momentum — beat+raise, PASS; (2) catalyst — Medicare Advantage utilization/MLR trends improving, ongoing; (3) valuation — PEG <2.5, PASS; (4) technical — +5.76% vs 50-day, not extended, PASS; (5) macro tailwind — defensive/healthcare sector led this week's chip-sector rotation, PASS. **5-of-5, cleanest signal of any candidate this cycle.** Sector-correlation check vs LLY: UNH is managed care/insurance (utilization, MLR, Medicare Advantage), LLY is GLP-1/pharma — different revenue drivers within the same GICS sector, reasonable sub-sector diversification, not a doubled bet. [GuruFocus](https://www.gurufocus.com/news/8961945/is-unitedhealth-group-unh-undervalued-after-q2-earnings-beat-eps-of-604-vs-452-estimate-gf-score-86100), [Schaeffer's](https://www.schaeffersresearch.com/content/news/2026/07/16/unitedhealth-stock-surges-after-blowout-q2-beat-and-raise)
+
+**META deep-dive:** Extension resolved from +13.05% (07-16 blowout) to +6.87% today — a genuine pullback inside the "not >10% above 50-day" gate, not a broad-market move (META is +21% for the month per Motley Fool, so this pullback is relative to its own recent run, not a crash). Catalysts: "Meta Compute" AI-cloud unit to sell excess AI compute/models (pushed shares +8-10% on the news), in-house "Iris" AI chips entering production September (targeting 14GW capacity, reducing third-party accelerator dependence), reported talks for a USD 10B AI-infrastructure deal with Anthropic. GuruFocus: PEG 0.82 (11% above its own 10-year median of 0.74, but 20% below the Interactive Media industry median of 1.03 — genuinely cheap on a growth-adjusted basis), GF Value USD 809.70-812.66 vs a referenced price of USD 550-583 in the GuruFocus pieces (dated slightly earlier than today's USD 646 close — even adjusting for META's run since then, this still implies real undervaluation, ~25%+ upside to fair value at today's price). Entry signals: (1) earnings momentum — no fresh beat/raise yet (earnings 07-29), partial; (2) catalyst — Meta Compute + Iris chip + Anthropic talks, strong PASS; (3) valuation — PEG 0.82 well under threshold, PASS; (4) technical — +6.87%, not extended, PASS; (5) macro tailwind — mixed: META's own catalyst is diverging positively from the broader AI-semi digestion (a name-specific story, not sector-wide), acceptable but not a clean sector tailwind. Roughly 3.5-4 of 5. **Earnings risk:** 2026-07-29 is 7 trading days from today — outside the 2-trading-day blackout rule, so not blocked, but a position opened today will very likely still be held into the print unless trimmed first. Per the standing AVGO (2026-06-04) and META's own (2026-06-10) gap-risk lessons, this is real risk that the rule doesn't forbid but prudence should size for: halving for the 3.52% ATR (already required) plus treating this as a small starter rather than a standard 7-9% starter, with `review_by` set to 2026-07-27 (2 trading days before earnings) to force an explicit hold/trim/exit journal entry ahead of the print — not a silent hold-through-earnings by default. [Motley Fool](https://www.fool.com/investing/2026/07/18/meta-platforms-stock-up-21-july-driving-surge/), [GuruFocus](https://www.gurufocus.com/stock/META/valuation)
+
+**NVDA/PWR/MSFT/COST/LRCX:** All remain gated — see table. NVDA's -3.38% is a 5th consecutive failed-confirmation data point (no 2-session-confirmed breakout in over 3 weeks). LRCX's -6.87% technical fail is moot regardless given its P/E >60x valuation veto. MSFT and PWR both now have confirmed earnings dates in the next 7-10 days (07-29 and 07-30 respectively) as forward catalysts, keeping them off the stale-decoration purge list even while failing their technical gates.
+
+**VST re-entry watch:** First session crossing back above its 50-day (+0.84%, from -0.98% last week) — a meaningful swing but only one data point, and ATR (3.92%) actually worsened slightly from last week (3.78%). Per the standing lesson that no AI-adjacent name has held a confirmed breakout for even 2 consecutive sessions this cycle, treating a single-session cross as noise until it repeats. Not a buy today.
+
+**Monday conviction-weighted review:** LLY → **A** (first review since 07-13 entry: thesis intact and working — Medicare Bridge live, AtaiBeckley deal, Retevmo approval, 3 PT raises this month). V → **A** (upgraded from B: fresh multi-year high, Stablecoin Platform + Weiss upgrade, price now confirming cleanly at +7.62% vs 50-day). No C-rated positions — no forced-trim trigger this week.
+
+**Thesis contract review:** LLY (review_by 2026-08-05, earnings) — not due, not triggered, HOLD. V (review_by 2026-07-28, earnings) — not due, not triggered, HOLD.
+
+**Earnings window check:** LLY (08-05) and V (07-28) both >2 trading days out — no forced decision today. UNH's next earnings (10-27) is far outside any window. META's earnings (07-29) is outside the 2-day blackout (7 trading days out) — entry permitted, gap-risk addressed via reduced size and an early review_by (see above).
+
+**Cash-drag check (step 6):** Cash is 82.717% — above the 25-40% target band for a fourth consecutive week. Today resolves this with an explicit, gate-cleared decision: both UNH and META independently cleared their full entry-signal checklists for the first time this cycle (not forced or rationalized) — proceeding with both rather than deferring further, since deferring a genuinely-qualified setup just to "wait" would be the passive-default behavior the cash-drag lesson warns against.
+
+**Sizing:** UNH — high-conviction (5-of-5 signals, no ATR halving needed): 25 shares @ ~USD 426.055 reference close = USD 10,651.375 (10.66% of equity). Risk at 10% stop: ~1.066% of equity, within the 1.2% risk-budget cap. META — small starter (halved for ATR 3.52% >3%, further conservative given 7-trading-day earnings proximity): 6 shares @ ~USD 646.03 reference close = USD 3,876.18 (3.88% of equity). Risk at 10% stop: ~0.388% of equity, comfortably within budget. Combined new-buy deployment ~14.54% of equity — within the 25% daily cap. Weekly new-position count: 0/3 used this week; this plan uses 2/3. Sector caps: Healthcare (LLY 9.4% + UNH 10.66%) ≈ 20.1%, Communication Services (META) 3.88% — both far below the 60% cap.
+
+**Today's plan:**
+
+```json
+{
+  "plan_date": "2026-07-20",
+  "trades": [
+    {"action": "buy", "symbol": "UNH", "qty": 25, "thesis": "Q2 2026 beat-and-raise (07-16, adj EPS USD 6.38 vs ~USD 4.85 est, FY26 guidance raised to USD 19.50-20.00); PEG 1.73-2.07 (<2.5); GF Value ~30% undervalued; technical +5.76% vs 50-day (not extended), ATR 2.51% (<3%); 5-of-5 entry signals; managed-care diversifier vs LLY's GLP-1/pharma exposure",
+     "invalidation": "closes below the 50-day SMA (~USD 403, drifts) on volume, or Medicare Advantage MLR trends reverse the utilization-easing thesis, or the 10% trailing stop fires",
+     "review_by": "2026-08-17"},
+    {"action": "buy", "symbol": "META", "qty": 6, "thesis": "Extension gate newly clears (+6.87% vs 50-day, down from +13.05% blowout); PEG 0.82, GF Value ~USD 810 vs USD 646; Meta Compute AI-cloud unit + Iris in-house chip (production Sept) are genuine catalysts; sized small and halved for ATR 3.52% (>3%) plus earnings 07-29 gap-risk proximity",
+     "invalidation": "closes back below the 50-day SMA (~USD 605, drifts) on volume, or Q2 earnings (07-29) misses/guides down, or the 10% trailing stop fires",
+     "review_by": "2026-07-27"}
+  ]
+}
+```

@@ -21,32 +21,34 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-17 ~15:52 ET (close, Friday) — 0 trades today; 2/2 stop audit PASS, no shock, no cut/tighten triggers, Bull beat SPY today by +0.796pp on the semiconductor rout
+**Last updated:** 2026-07-20 ~08:20 ET (pre-market, Monday) — plan drafted: BUY UNH 25sh + BUY META 6sh at market-open pending execution; Monday conviction review: LLY→A, V upgraded B→A
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-17 close ~15:52 ET)
+## Account (live Alpaca data, 2026-07-20 pre-market ~08:15 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,984.66 |
-| Cash | $82,696.11 (82.709%) |
-| Long market value | $17,288.55 (17.291%) |
-| Buying power | $379,192.38 |
-| Last equity (2026-07-16 close, Alpaca) | $100,082.55 |
+| Equity | $99,972.11 |
+| Cash | $82,696.11 (82.717%) |
+| Long market value | $17,276.00 (17.283%) |
+| Buying power | $379,157.24 |
+| Last equity (2026-07-18 close, Alpaca) | $100,017.31 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| V | 22 | $355.058182 | $358.585 | +$77.59 (+0.993%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged (no fresh high today) | **B** (first Monday review 07-13; next review 2026-07-20) |
-| LLY | 8 | $1,174.35625 | $1,174.96 | +$4.83 (+0.051%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged, no new high) | **New** (entered Monday 2026-07-13, first conviction review Monday 2026-07-20) — 5-of-5 entry signals met (see `research-log.md` 2026-07-13); invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05 |
+| V | 22 | $355.058182 | $358.00 | +$64.72 (+0.829%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (upgraded from B — fresh multi-year high on Stablecoin Platform launch, Weiss upgrade, +7.62% vs 50-day cleanly, earnings 07-28 approaching with strong analyst sentiment; next review 2026-07-27) |
+| LLY | 8 | $1,174.35625 | $1,175.00 | +$5.15 (+0.055%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged) | **A** (first Monday review since entry 07-13 — thesis intact and working: Medicare Bridge live, AtaiBeckley deal, Retevmo FDA approval, 3 analyst PT raises this month; invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05) |
 
-**VST closed 2026-07-16** via trailing stop (sector-wide chip/AI-power selloff, not company-specific — see `closed-trades.md`). Now tracked as a re-entry watchlist candidate in `strategy.md` (not yet a clean setup: -0.98% vs 50-day, ATR 3.78%).
+**Planned buys (pending market-open execution, see `research-log.md` 2026-07-20 plan):** UNH 25sh (~10.7% of equity) and META 6sh (~3.9% of equity, halved for ATR + earnings proximity). Both cleared their technical/valuation gates today for the first time this cycle.
 
-**Sector exposure:** Financials (V): $7,888.87 = 7.890%. Healthcare (LLY): $9,399.68 = 9.401%. Energy/Utilities: 0% (VST closed). Cash: $82,696.11 = 82.709%. No sector above 60% cap ✓.
+**VST closed 2026-07-16** via trailing stop (sector-wide chip/AI-power selloff, not company-specific — see `closed-trades.md`). Re-verified 2026-07-20: +0.84% vs 50-day (first session crossing back above, marginal), ATR 3.92% (still >3% gate) — a single-session cross is not yet a confirmed re-entry per the standing NVDA-pattern lesson (multi-session confirmation required); not a buy today, continue monitoring.
 
-**Trailing stop status:** 2/2 positions protected (confirmed live via `orders open`, 2026-07-17 close audit).
+**Sector exposure (pre-buy):** Financials (V): $7,876.00 = 7.879%. Healthcare (LLY): $9,400.00 = 9.403%. Energy/Utilities: 0% (VST closed). Cash: $82,696.11 = 82.717%. No sector above 60% cap ✓. **Post-planned-buys estimate:** Healthcare ~20.1% (LLY + UNH), Financials 7.9% (V), Comm. Services ~3.9% (META), cash ~68.2% — still all within caps.
+
+**Trailing stop status:** 2/2 positions protected (confirmed live via `orders open`, 2026-07-20 pre-market audit).
 **Stop audit:** 2/2 PASS this run (V `2b0a93ba` HWM $364.91/stop $328.419 unchanged; LLY `e3547b9e` unchanged HWM $1,196.29/stop $1,076.661).
 
 **Midday risk check (2026-07-17 ~12:36 ET):** LLY +0.287%, V +0.926% — neither breaches the −7% cut threshold or the +15% tighten threshold. No news-scan gate triggered (neither >3% down nor >10% up). No action taken. Intraday shock check: equity $100,001.50 vs last_equity $100,082.55 = −0.081% — no shock ✓.
@@ -55,14 +57,14 @@ reference but is **not** the live comparison baseline going forward.
 
 **Today's plan:** **No trades placed.** Pre-market's watchlist re-verification found every single candidate failing its technical entry gate today — the first session this cycle where even the previously-marginal names (META, AAPL) fail outright rather than barely passing. **AAPL purged from the watchlist this run**, applying the pre-stated 2026-07-03 weekly-review rule ("drop 2026-07-17 if no clean valuation gate clears") — two weeks of daily re-verification never cleared the valuation gate (18.4%→22.2% GuruFocus-overvalued, P/E now 39.67x TTM) and the stock crossed into a technical extension fail today too (+10.49% vs 50-day). META remains extended (+10.02%, still over the chase gate). NVDA reversed again (-1.10% vs 50-day, 4th data point in a 3-week pattern of failed confirmation). LRCX reversed (-4.33%). PWR (-11.12%), MSFT (-0.17%), COST (-3.41%) all remain below their 50-day. Cash (82.67%) remains well above the 25-40% target band but is an explicit decision — no candidate clears any gate today, and the broader tape (chip-sector futures weak, Iran conflict escalating for a 6th straight night, oil +12% on the week) independently argues for patience. Market-open confirmed the empty plan and placed no orders. Full detail in `research-log.md` 2026-07-17 entry.
 
-## Risk posture (2026-07-17 market-open)
+## Risk posture (2026-07-20 pre-market)
 
-- **Drawdown circuit breaker:** Equity $100,039.71 vs running HWM $100,218.48 (2026-07-13) — drawdown 0.1784%. NOT triggered (9.8216pp headroom) ✓.
-- **Intraday shock check:** Equity $100,039.71 vs last_equity $100,082.55 (Alpaca, 2026-07-16 close) = −0.0428% — no shock ✓ (threshold −4%).
-- **Sector cap:** Financials 7.949%, Healthcare 9.388% — all well below 60% ✓. Energy/Utilities 0% (VST exited via trailing stop).
-- **Weekly new-position count:** 1/3 this week (LLY, filled Monday 2026-07-13) — unchanged, no new position opened today.
-- **-7% rule check:** LLY −0.031%, V +1.802% — neither within range of the −7% midday-cut threshold (checked again at midday).
-- **Trades today:** 0.
+- **Drawdown circuit breaker:** Equity $99,972.11 vs running HWM $100,218.48 (2026-07-14) — drawdown 0.2459%. NOT triggered (9.7541pp headroom) ✓.
+- **Intraday shock check:** Equity $99,972.11 vs last_equity $100,017.31 (Alpaca, 2026-07-18 close) = −0.0452% — no shock ✓ (threshold −4%; real test at market-open/midday).
+- **Sector cap:** Financials 7.879%, Healthcare 9.403% — all well below 60% ✓. Energy/Utilities 0% (VST exited via trailing stop, re-entry not yet confirmed).
+- **Weekly new-position count:** 0/3 this week (fresh week) — plan is to open 2 (UNH, META) at market-open.
+- **-7% rule check:** LLY +0.055%, V +0.829% — neither within range of the −7% midday-cut threshold.
+- **Trades planned today:** 2 (BUY UNH 25sh, BUY META 6sh) — see `research-log.md` plan JSON.
 
 ## Performance vs S&P 500
 
@@ -199,3 +201,17 @@ _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): 
 **2026-07-02 pre-market (~08:11 ET):** Re-synced live Alpaca data — account unchanged from the 2026-07-01 re-baseline: equity/cash $100,000.00 (100%), zero positions, zero orders. No mismatch this run (confirms the reset state is stable, not a data glitch). Drawdown 0.00% (HWM = current equity), not triggered. Ran the deferred full ATR/price-gate re-verification across the watchlist (NVDA, LLY, VST, V, LRCX, PWR, MSFT, COST, JNJ, WMT) — see `research-log.md` for the full table. NVDA and LLY both fail technical confirmation (NVDA −5.88% below 50-day; LLY +13.65% above, extended and largely priced in). LRCX still ATR-gated (5.58% avg). **VST cleared 4/5 entry signals** (analyst upgrades + Fitch IG upgrade, Helix/Meta-nuclear catalyst intact, favorable valuation on EPS growth, power/AI-infra diversifier tailwind) with a pullback to its 50-day and no earnings until 2026-08-06. Planned: **BUY VST 29sh (~USD 4,441, 4.44% of equity)** at market open — halved from the normal 9% starter because 20-day ATR (3.80%) exceeds the 3% volatility-check threshold. This would be week 1's first of 3 available new-position slots. Cash after (if filled): ~95.56%, still far above the 5% minimum — deliberate, gradual first deployment, not a rush.
 
 **2026-07-01 pre-market (re-baseline, ~16:46 ET):** Confirmed live account is genuinely flat ($100,000 equity/cash, zero positions, zero orders ever, HWM = current equity) — matches the human's `control.md` NOTE describing an intentional reset. Rebuilt this file from scratch from live data; discarded stale LLY/NVDA/V/VST references. Re-initialized `strategy.md` with current macro research (SPY ~7,500 after a −1.1% June; Goldman Risk Appetite Indicator at 99th percentile — caution flag; NVDA −13% from its June high amid a GPU-rental-rate decline; LLY's Medicare GLP-1 Bridge went live today after a big pre-rally). Market was already closed for today's session by the time this run executed (this is the third pre-market invocation today, after two halts) — no same-day trades were possible regardless. No trades planned for the next session (2026-07-02); watchlist candidates need fresh ATR/price-gate verification before any entry — see `research-log.md` for detail. Starting fully in cash is the correct, expected posture for a freshly re-baselined account per strategy.md cash policy.
+
+**2026-07-20 pre-market (~08:15 ET, Monday):** `clock` confirmed `is_open: false`, next open 09:30 ET today. Control switch STATUS: ACTIVE, no NOTE/QUERY pending, `CROSS_BULL_LEARNING:` blank. Live re-sync: equity $99,972.11, cash $82,696.11 (82.717%), LLY 8sh @ avg $1,174.35625 current $1,175.00 (+0.055%), V 22sh @ avg $355.058182 current $358.00 (+0.829%). Stop audit: `e3547b9e` (LLY) and `2b0a93ba` (V) both confirmed live via `orders open`, unchanged — 2/2 PASS. Shock check: −0.0452% vs last_equity — no shock. Drawdown: 0.2459% vs HWM $100,218.48 (2026-07-14) — not triggered, 9.75pp headroom. Sector exposure: Healthcare 9.403%, Financials 7.879%, cash 82.717% — within all caps.
+
+**Monday conviction-weighted review:** LLY rated **A** (first review since 07-13 entry — thesis intact and working: Medicare Bridge live, AtaiBeckley acquisition, Retevmo FDA approval, 3 PT raises this month). V upgraded **B→A** (fresh multi-year high on Stablecoin Platform launch + Weiss upgrade, price confirming the thesis cleanly at +7.62% vs 50-day). No C-rated positions, no forced-trim trigger.
+
+**Thesis contract review:** LLY (review_by 08-05, earnings) and V (review_by 07-28, earnings) — neither triggered, neither due; both HOLD, no new negative information found.
+
+**Watchlist re-verification** (fresh 50-day SMA / 20-day ATR via Alpaca bars, explicit start/end 2026-04-20 to 2026-07-17 close): **UNH clears 5-of-5 entry signals for the first time** — Q2 beat-and-raise reported 07-16 (adj EPS $6.38 vs ~$4.85-4.52 est, revenue $112B, FY26 guidance raised to $19.50-20.00), PEG 1.73-2.07 (<2.5 threshold), GF Value ~30% undervalued, technical +5.76% vs 50-day (not extended), ATR 2.51% (under 3% vol-check), defensive/healthcare sector rotation tailwind intact. Next earnings not until 10/27 — no blackout concern. **META's extension gate also newly clears** — pulled back from +13.05% (07-16) to +6.87% today, now inside the "not >10% above 50-day" threshold; PEG 0.82, GF Value ~$810 vs $646 suggests real undervaluation; Meta Compute AI-cloud unit + Iris in-house chip (production Sept) are genuine forward catalysts. ATR 3.52% (>3%, halve size per vol-check) and earnings 07-29 is 7 trading days out — outside the 2-day blackout but real gap-risk given the standing AVGO/META lessons, so sized as a small starter with review_by set to 07-27 (2 trading days pre-earnings) to force an explicit hold/trim/exit call before the print. NVDA (-3.38% vs 50-day, still fails, 5th failed-confirmation data point), PWR (-11.16%, still fails, earnings 07-30 catalyst intact), MSFT (-1.85%, still fails; earnings also confirmed 07-29 per FY26 Q4), COST (-3.74%, still fails), LRCX (-6.87% technical fail plus valuation still decisively disqualifying, P/E >60x) all remain non-candidates. VST re-entry watch: +0.84% vs 50-day (first session crossing positive) but ATR still 3.92% and only one session of data — not yet a confirmed re-entry signal, continue monitoring.
+
+**Macro:** S&P futures +0.13-0.5%, Nasdaq futures +1% Monday morning despite the Iran conflict remaining active (US struck Iran again, naval blockade of Iranian ports reinstated, WTI ~$75-80, Brent ~$79-85). 10yr Treasury 4.57% — still below the 4.75% new-buy gate. This week's calendar is light on data but heavy on Q2 earnings (Tesla, Alphabet, Intel, MSFT, META all reporting) ahead of the July 29 FOMC. Semiconductor index remains in a technical bear market on AI-capex-sustainability skepticism; energy and defensive/healthcare names continue to lead the rotation — the same structural pattern that has been paying off for Bull's non-AI-semi book.
+
+**Cash-drag check:** 82.717% cash, above the 25-40% target band for a fourth consecutive week — but today resolves the standing pattern with an explicit, gate-cleared decision to deploy: planning 2 new buys (UNH + META) totaling ~14.5% of equity, using 2 of 3 weekly slots.
+
+**Today's plan: BUY UNH 25sh (~$10,651, 10.66% of equity) and BUY META 6sh (~$3,876, 3.88% of equity) at market-open, pending final execution price and breaking-news gate check.** Full detail and JSON block in `research-log.md` 2026-07-20 entry. Notified via Telegram.

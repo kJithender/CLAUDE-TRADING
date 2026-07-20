@@ -3935,3 +3935,18 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Sector exposure:** Healthcare (LLY) 9.422%, Financials (V) 7.884%, cash 82.694% — all within caps.
 - **Weekly new-position count:** unchanged at 1/3 (LLY, Monday 2026-07-13).
 - **Notify:** Telegram sent — all positions within range, no action.
+
+## 2026-07-20 08:15 ET — PRE-MARKET (plan drafted, no trades yet)
+- **Action:** Plan drafted for market-open execution — BUY UNH 25sh (~10.66% of equity) and BUY META 6sh (~3.88% of equity, halved for ATR + earnings proximity). Market not yet open.
+- **Market status:** `is_open: false`, next open 09:30 ET today.
+- **Live re-sync:** equity USD 99,972.11, cash USD 82,696.11 (82.717%). LLY 8sh @ avg USD 1,174.35625, current USD 1,175.00 (+0.055%). V 22sh @ avg USD 355.058182, current USD 358.00 (+0.829%).
+- **Stop audit:** order `e3547b9e` (LLY, HWM USD 1,196.29, stop USD 1,076.661, unchanged) and `2b0a93ba` (V, HWM USD 364.91, stop USD 328.419, unchanged) both confirmed live via `orders open` — 2/2 PASS.
+- **Shock check:** equity vs last_equity USD 100,017.31 = -0.0452% — no shock.
+- **Drawdown:** 0.2459% vs HWM USD 100,218.48 (2026-07-14) — not triggered (9.7541pp headroom).
+- **Sector exposure:** Healthcare (LLY) 9.403%, Financials (V) 7.879%, cash 82.717% — within all caps.
+- **Monday conviction review:** LLY → A (first review, thesis intact and working). V → A (upgraded from B — fresh multi-year high, price confirming cleanly).
+- **Thesis contracts:** LLY (review_by 2026-08-05), V (review_by 2026-07-28) — both reviewed, neither triggered, neither due — HOLD both.
+- **Earnings window:** LLY and V both >2 trading days from their earnings; UNH's next earnings (10-27) is far out; META's earnings (07-29) is 7 trading days out — outside the 2-day blackout, entry permitted, gap-risk addressed via reduced size and an early review_by (07-27).
+- **Watchlist:** UNH clears 5-of-5 entry signals (Q2 beat-and-raise 07-16, PEG <2.5, GF Value ~30% undervalued, technical +5.76% vs 50-day, ATR 2.51%). META's extension gate newly clears (+6.87% vs 50-day, from +13.05% blowout). NVDA (-3.38%, 5th failed-confirmation data point), PWR (-11.16%), MSFT (-1.85%), COST (-3.74%), LRCX (-6.87% + valuation veto) all remain non-candidates. VST re-entry watch: +0.84% vs 50-day (first positive session) but only one data point, not yet confirmed.
+- **Why trades planned:** Both UNH and META independently cleared their full entry-signal checklists for the first time this cycle — genuine, gate-cleared setups, not forced. This also resolves the fourth-consecutive-week cash-drag pattern flagged in recent weekly reviews with an explicit, disciplined deployment rather than further passive deferral.
+- **Weekly new-position count:** 0/3 used this week (fresh week); this plan uses 2/3.
