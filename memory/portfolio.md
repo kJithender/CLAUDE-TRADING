@@ -21,28 +21,32 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-20 ~09:39 ET (market-open, Monday) — BUY UNH 25sh + BUY META 6sh both filled, 10% trailing stops placed and verified; Monday conviction review: LLY→A, V upgraded B→A
+**Last updated:** 2026-07-20 ~12:37 ET (midday) — risk check only, no action; all 4 positions within normal range, 4/4 stops confirmed live
+
+**Prior update:** 2026-07-20 ~09:39 ET (market-open, Monday) — BUY UNH 25sh + BUY META 6sh both filled, 10% trailing stops placed and verified; Monday conviction review: LLY→A, V upgraded B→A
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-20 market-open ~09:39 ET, post-fill)
+## Account (live Alpaca data, 2026-07-20 midday ~12:37 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,941.19 (pre-fill snapshot; fills were cost-neutral market orders at limit) |
-| Cash | ~$68,536.25 (~68.6%, post-buys) |
-| Long market value | ~$31,404.99 (~31.4%, post-buys: LLY+V+UNH+META) |
-| Buying power | $379,070.66 (pre-fill) |
+| Equity | $99,993.08 |
+| Cash | $68,291.17 (68.30%) |
+| Long market value | $31,701.91 (31.70%: LLY+V+UNH+META) |
+| Buying power | $361,930.03 |
 | Last equity (2026-07-18 close, Alpaca) | $100,017.31 |
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| V | 22 | $355.058182 | $356.97 | +$42.06 (+0.538%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (upgraded from B — fresh multi-year high on Stablecoin Platform launch, Weiss upgrade, +7.62% vs 50-day cleanly, earnings 07-28 approaching with strong analyst sentiment; next review 2026-07-27) |
-| LLY | 8 | $1,174.35625 | $1,174.63 | +$2.19 (+0.023%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged) | **A** (first Monday review since entry 07-13 — thesis intact and working: Medicare Bridge live, AtaiBeckley deal, Retevmo FDA approval, 3 analyst PT raises this month; invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05) |
-| UNH | 25 | $422.28 | $421.455 | -$20.63 (-0.195%) | Healthcare | Order 225cb079, 10%, HWM $421.455, stop $379.3095 — live, new today | **NEW** (Q2 beat-and-raise 07-16, PEG 1.73-2.07, GF Value ~30% undervalued, +5.76% vs 50-day, ATR 2.51%; 5-of-5 entry signals; review_by 2026-08-17) |
-| META | 6 | $641.323333 | $641.22 | -$0.62 (-0.016%) | Communication Services | Order 14301809, 10%, HWM $641.5267, stop $577.37403 — live, new today | **NEW** (extension gate cleared +6.87% vs 50-day, PEG 0.82, GF Value ~$810 vs $646, Meta Compute + Iris chip catalysts; halved for ATR 3.52% and earnings 07-29 gap-risk; review_by 2026-07-27, forces pre-earnings hold/trim/exit call) |
+| V | 22 | $355.058182 | $361.51 | +$141.94 (+1.817%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (upgraded from B — fresh multi-year high on Stablecoin Platform launch, Weiss upgrade, +7.62% vs 50-day cleanly, earnings 07-28 approaching with strong analyst sentiment; next review 2026-07-27) |
+| LLY | 8 | $1,174.35625 | $1,165.745 | -$68.89 (-0.733%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged) | **A** (first Monday review since entry 07-13 — thesis intact and working: Medicare Bridge live, AtaiBeckley deal, Retevmo FDA approval, 3 analyst PT raises this month; invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05) |
+| UNH | 25 | $422.28 | $420.50 | -$44.50 (-0.422%) | Healthcare | Order 225cb079, 10%, HWM $425.9499, stop $383.35491 — live, ratcheted up from entry | **NEW** (Q2 beat-and-raise 07-16, PEG 1.73-2.07, GF Value ~30% undervalued, +5.76% vs 50-day, ATR 2.51%; 5-of-5 entry signals; review_by 2026-08-17) |
+| META | 6 | $641.323333 | $651.705 | +$62.29 (+1.619%) | Communication Services | Order 14301809, 10%, HWM $653.30, stop $587.97 — live, ratcheted up from entry | **NEW** (extension gate cleared +6.87% vs 50-day, PEG 0.82, GF Value ~$810 vs $646, Meta Compute + Iris chip catalysts; halved for ATR 3.52% and earnings 07-29 gap-risk; review_by 2026-07-27, forces pre-earnings hold/trim/exit call) |
+
+**Midday risk check (2026-07-20 ~12:37 ET):** LLY −0.733%, V +1.817%, UNH −0.422%, META +1.619% — none breach the −7% cut threshold or the +15% tighten threshold; no news-scan gate triggered (none >3% down or >10% up). No action taken. Intraday shock check: equity $99,993.08 vs last_equity $100,017.31 = −0.0242% — no shock ✓. Stop audit: 4/4 PASS (LLY, V, UNH, META all confirmed live via `orders open`; UNH and META stops have ratcheted up from their initial post-entry levels).
 
 **Sector exposure (post-buy):** Healthcare (LLY+UNH) ≈19.94% of equity, Financials (V) ≈7.86%, Communication Services (META) ≈3.85%, cash ≈68.6% — all well within the 60% sector cap.
 **Weekly new-position count:** 2/3 used this week (UNH, META — both 2026-07-20). 1 slot remains through Friday.

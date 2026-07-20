@@ -3966,3 +3966,20 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Guardrail math:** UNH 10.56% of equity (≤20% cap, ≤15% single-order rule), META 3.85% of equity; combined daily deployment 14.41% (≤25% cap); weekly new-position count 0/3 → **2/3**; cash after buys ≈ USD 68,536.25 (≈68.6%, ≥5% min); risk budget UNH ≈1.056% / META ≈0.385% of equity (≤1.2% cap each); sector exposure Healthcare (LLY+UNH) ≈19.94%, Communication Services (META) ≈3.85% (≤60% cap each); drawdown ≈0.277% vs HWM USD 100,218.48 (breaker at −10%, not triggered). All guardrails ✓.
 - **Ledger:** both fills appended to `trades.jsonl`; `EXECUTED:` line appended under today's plan block in `research-log.md`.
 - **Notify:** Telegram sent — trades placed, fills and stops listed.
+
+## 2026-07-20 ~12:37 ET — MIDDAY (risk check, no action)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market status:** `is_open: true`, next close 16:00 ET today.
+- **Positions:**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,165.745, **−0.733%** (−USD 68.89 unrealized). Within normal range — no news-scan gate triggered (not >3% down or >10% up).
+  - V: 22sh @ avg USD 355.058182, current USD 361.51, **+1.817%** (+USD 141.94 unrealized). Within normal range — no news-scan gate triggered.
+  - UNH: 25sh @ avg USD 422.28, current USD 420.50, **−0.422%** (−USD 44.50 unrealized). Within normal range — no news-scan gate triggered.
+  - META: 6sh @ avg USD 641.323333, current USD 651.705, **+1.619%** (+USD 62.29 unrealized). Within normal range — no news-scan gate triggered.
+- **Action taken:** none on any position — nothing breaches the −7% cut threshold or the +15% tighten threshold. No new positions opened (midday never opens positions).
+- **Shock check:** equity USD 99,993.08 vs last_equity USD 100,017.31 = **−0.0242%** — no shock (threshold −4%) ✓.
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,196.29, stop USD 1,076.661, unchanged), V `2b0a93ba` (HWM USD 364.91, stop USD 328.419, unchanged), UNH `225cb079` (HWM USD 425.9499, stop USD 383.35491, ratcheted up from entry), META `14301809` (HWM USD 653.30, stop USD 587.97, ratcheted up from entry) — all 4 confirmed live via `orders open`, 4/4 PASS, nothing to recreate.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.84%, Financials (V) 7.953%, Communication Services (META) 3.910%, cash 68.30% — all within caps.
+- **Weekly new-position count:** unchanged at 2/3 (UNH, META, both 2026-07-20).
+- **Notify:** Telegram sent — all positions within range, no action.
