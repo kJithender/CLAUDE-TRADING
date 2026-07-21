@@ -4022,3 +4022,15 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Watchlist:** VST clears the re-entry gate for the first time — 2 consecutive sessions above 50-day SMA (+0.97% 07-17, +2.63% 07-20), PEG ~0.4-0.6, Buy-rated by 13 analysts, Cogentrix acquisition + Helix consortium catalysts intact, ATR 4.06% (>3%, size halved). MSFT flipped positive (+0.25%) but unconfirmed — pre-market already reversing lower, treated as noise pending a 2nd confirming session. NVDA (-3.12%, 6th failed-confirmation data point), PWR (-10.15%), COST (-4.14%), LRCX (-8.82% + valuation veto) all remain non-candidates.
 - **Why trade planned:** VST independently cleared its full entry-signal checklist (5-of-5) for the first time since its 07-16 stop-out, on genuine multi-session technical confirmation plus intact fundamental catalysts — not a forced trade. This also addresses the persistent cash-drag pattern (68.45% cash, well above the 25-40% target band) with disciplined deployment.
 - **Weekly new-position count:** 2/3 used this week (UNH, META, both 2026-07-20). This plan uses the 3rd and final slot.
+
+## 2026-07-21 09:38 ET — MARKET-OPEN (BUY VST executed)
+- **Action:** BUY VST 25sh, re-entry (2nd consecutive session above 50-day SMA confirmed, PEG ~0.4-0.6, Cogentrix + Helix consortium catalysts intact, halved for ATR 4.06%).
+- **Breaking-news gate:** WebSearch found no thesis-breaking news for VST — earnings still confirmed 08-07, Scotiabank PT USD 298, analysts remain bullish; only broader Iran-ceasefire risk-off tape noted, not VST-specific. Gate cleared.
+- **Pre-execution shock check:** equity USD 99,770.37 vs last_equity USD 99,812.75 = −0.0425% — no shock.
+- **Data-quality note:** VST quote was noisy in the first minutes after open (bid/ask swinging USD 154.52–166.55 across polls) — per the standing 2026-07-07 lesson, polled 4x over ~40s until it settled to bid USD 160.72 / ask USD 161.10 (0.24% spread, consistent with the latest trade tape). Used the settled ask for the marketable limit rather than the noisy opening reads.
+- **Fill:** buy-limit 25sh @ USD 161.58 (ask USD 161.10 × 1.003) → filled avg **USD 161.21** (order `c235bb22`).
+- **Stop order:** 10% trailing stop placed and verified — order `87f49386`, HWM USD 161.53, stop USD 145.377.
+- **Guardrail math:** position USD 4,031.50 = 4.041% of equity (cap 20%); risk budget ≈0.404% of equity (cap 1.2%); daily deployment 4.041% (cap 25%); weekly new-position count 3/3 (UNH, META, VST — at cap); cash after buy ≈64.4% (min 5%); sector exposure Energy/Utilities 0%→~4.04% (cap 60%); drawdown 0.446% vs HWM USD 100,218.48 (breaker −10%, not triggered); earnings 08-07 is 12 trading days out — no blackout.
+- **Stop audit (post-trade):** 5/5 PASS — LLY `e3547b9e`, V `2b0a93ba`, UNH `225cb079`, META `14301809`, VST `87f49386`, all confirmed live via `orders open`.
+- **trades.jsonl:** appended buy row for VST (ts 2026-07-21T13:38:04Z, fill USD 161.21).
+- **research-log.md:** EXECUTED line appended under today's plan block.
