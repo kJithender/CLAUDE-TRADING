@@ -5000,3 +5000,59 @@ EXECUTED: 2026-07-17T13:36 ET — no trades (plan empty: no watchlist candidate 
 }
 ```
 EXECUTED: 2026-07-20T13:39:02Z — Both trades filled. Breaking-news gate (WebSearch): no thesis-breaking news for UNH or META this morning (nothing beyond the already-known 07-16 UNH earnings beat and META's July AI-catalyst run) — cleared. Pre-execution re-check: equity USD 99,941.19 vs last_equity USD 100,017.31 = -0.0761% (no shock, threshold -4%); UNH quote ask USD 421.51/bid USD 421.14 (tight spread, reliable) — marketable limit USD 422.77; META quote ask stuck at USD 675 across 2 polls 20s apart while bid (~USD 639.5) and latest trade (~USD 639.8-639.9) moved together — treated ask as unreliable per the 2026-07-07 lesson and used latest-trade USD 639.82 x 1.003 = USD 641.74 marketable limit instead. UNH buy-limit 25sh @ 422.77 filled avg USD 422.28 (order 2f0a6ce1). META buy-limit 6sh @ 641.74 filled avg USD 641.323333 (order b99c60a5). Trailing stops placed and verified live: UNH 10% stop 225cb079 (HWM USD 421.455, stop USD 379.3095); META 10% stop 14301809 (HWM USD 641.5267, stop USD 577.37403). Stop audit 4/4 PASS (LLY e3547b9e, V 2b0a93ba, UNH 225cb079, META 14301809, all confirmed live in `orders open`). Guardrail math: UNH 10.58% of equity, META 3.85% of equity, combined daily deployment 14.43% (cap 25%); weekly new-position count 0/3 -> 2/3; cash after buys ~68.3% (min 5%); risk budget UNH ~1.057% / META ~0.385% (cap 1.2% each); sector exposure Healthcare (LLY+UNH) ~19.96%, Communication Services (META) ~3.85% (cap 60% each); drawdown ~0.28% vs HWM USD 100,218.48 (breaker at -10%, not triggered). All guardrails ✓.
+
+## 2026-07-21 08:12 ET — PRE-MARKET (plan drafted, no trades yet)
+
+**Step 0 — guards:** Live-switch guard: `ALPACA_BASE_URL` contains "paper" ✓. Lock: `_lock` was free (`{}`); wrote lock for this run (expires 08:19:30 ET). Control switch: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank. Strategy already `STATUS: ACTIVE` — no first-run init needed.
+
+**Step 2 — portfolio sync (live Alpaca, ~08:12 ET):** Equity USD 99,757.50, cash USD 68,291.16 (68.454%), long MV USD 31,466.34 (31.545%), buying power USD 361,270.39, last_equity (07-20 close) USD 99,812.75. Positions: LLY 8sh @ avg USD 1,174.35625, current USD 1,140.02 (−2.924%, −USD 274.69). V 22sh @ avg USD 355.058182, current USD 358.75 (+1.040%, +USD 81.22). UNH 25sh @ avg USD 422.28, current USD 422.50 (+0.052%, +USD 5.50). META 6sh @ avg USD 641.323333, current USD 649.37 (+1.255%, +USD 48.28).
+
+**Step 3 — risk posture:** Drawdown circuit breaker: HWM USD 100,218.48 (2026-07-13 close, from `history 1A 1D`) vs current equity USD 99,757.50 = **0.460% drawdown**, NOT triggered (9.540pp headroom). Sector cap: Healthcare (LLY+UNH) 19.734%, Financials (V) 7.913%, Communication Services (META) 3.907%, cash 68.454% — all well within the 60% cap. Intraday shock check: equity USD 99,757.50 vs last_equity USD 99,812.75 = **−0.0553%** — no shock (threshold −4%).
+
+**Step 3b — thesis contract review:** LLY (review_by 2026-08-05), V (review_by 2026-07-28), UNH (review_by 2026-08-17), META (review_by 2026-07-27) — none due today, none triggered (all prices well above their stated invalidation levels). HOLD all four, no contract renewal needed.
+
+**Step 3c — Monday conviction review:** N/A — today is Tuesday, not Monday.
+
+**Step 4 — research (WebSearch, all dated 2026-07-21 unless noted):**
+- **Market posture:** S&P 500 futures +0.2%, Nasdaq 100 futures +0.4% pre-market — modest risk-on tone. 10yr Treasury 4.59% (still below the 4.75% new-buy gate). Iran conflict: mediators proposing a fresh 10-day ceasefire to revive the June 17 MOU; oil eased ~1-1.4% on the news (Brent ~USD 88.01, WTI ~USD 82.29) even as fresh strikes and a Houthi "maritime embargo" threat against Saudi Arabia continue. Treat as active/unresolved until an actual deal is signed. [Benzinga, CNBC, Schwab]
+- **LLY (what changed since yesterday):** Novo Nordisk filed suit against Eli Lilly 2026-07-21 alleging misleading GLP-1 advertising (comparing Lilly's highest doses to Novo's lower doses in ads). This is a litigation/PR headline, not a product or regulatory setback — Novo is separately pushing its own oral pill + price cuts + high-dose Wegovy to compete. No change to the AtaiBeckley acquisition, Medicare Bridge, or Retevmo approval, all still intact. Today's −2.924% pullback (stock at USD 1,140.02, down from USD 1,146.90 07-20 close) tracks this headline plus general profit-taking, not a thesis break. Next dividend ex-date 08-14 (USD 1.73). Earnings still confirmed 2026-08-05. [CNBC, Stocktwits, Motley Fool]
+- **V (what changed since yesterday):** Nothing thesis-breaking — stock continues near multi-year highs (session range USD 356.01-363.00), stablecoin platform + Samsung co-branded card rollout continuing. Q3 2026 earnings confirmed for after-close Tuesday 2026-07-28 (matches existing review_by). [MarketBeat, FinancialContent]
+- **UNH (what changed since yesterday):** Nothing new/negative — analyst price-target raises continuing on the 07-16 beat-and-raise (Morgan Stanley to USD 529, Wells Fargo to USD 526, Truist/Oppenheimer/KeyBanc to USD 500), Medicare Advantage cost trends the key driver; commercial-plan medical-cost trend (>11%) remains the one soft spot but is not new. Thesis unchanged. [Stocktwits/Yahoo]
+- **META (what changed since yesterday):** July AI-momentum rally continues (+21% MTD, +USD 270B market cap), driven by the Meta Compute cloud-capacity-sale story and Iris in-house chip (production Sept). One session (reported as of 07-18/07-20 coverage) saw a 3.1% intraday pullback tied to broad AI-spending-concern selling, but current live quote (USD 649.37) is up +0.545% today vs 07-20 close — no confirmed reversal. Thesis unchanged. Earnings 2026-07-29 (6 trading days out) — review_by 2026-07-27 will force the pre-earnings call. [Motley Fool, Yahoo, Cryptonomist]
+- **Earnings calendar confirmed:** LLY 2026-08-05 (unchanged), V 2026-07-28 after close (unchanged, 5 trading days out), UNH 2026-10-27 (unchanged, far out), META 2026-07-29 (unchanged, 6 trading days out), VST 2026-08-07 (confirmed via Vistra IR, 10am ET call).
+- **Watchlist re-verification (fresh Alpaca `bars` pull, explicit `start=2026-04-20&end=2026-07-20` — a bare `limit`-only query returned `bars: null` this run; noting for future agents that `start`/`end` params are required):**
+
+| Ticker | Close (07-20) | vs 50-day SMA | ATR20 | Verdict |
+|--------|---------------|----------------|-------|---------|
+| VST | 157.99 | **+2.63%** (2nd consecutive positive session; +0.97% 07-17) | 4.06% | **CLEARS — planned buy** |
+| MSFT | 402.29 | +0.25% (1st positive session, unconfirmed; pre-market already -1.19% back below) | 2.98% | Not yet — needs 2nd confirming session |
+| NVDA | 203.28 | -3.12% | 3.25% | FAILS (6th straight failed-confirmation data point) |
+| PWR | 632.56 | -10.15% | 3.59% | FAILS |
+| COST | 935.80 | -4.14% | 1.94% | FAILS |
+| LRCX | 306.76 | -8.82% | 6.22% | FAILS (valuation also disqualifying, GF Value ~USD 132 vs price >USD 300) |
+
+- **VST deep dive:** PEG ratio ~0.4-0.6 across GuruFocus/Macroaxis/StockAnalysis (well below the 2.5 cap; industry median PEG 1.97, VST ~70% below). Analyst consensus Buy (13 analysts); Scotiabank raised PT to USD 298 (07-16), Bernstein initiated Buy (07-03), Wells Fargo/BofA/KeyBanc all Buy. Catalysts: USD 4.7B Cogentrix Energy acquisition (expands generation footprint), Helix Digital Infrastructure consortium (KKR+NVIDIA+Kuwait), hyperscaler AI capex raised to USD 750B for 2026 (structural power-demand tailwind per DOE data-center-demand projections). One caution note: a one-year moratorium on large data-center permits in New York is a regional headwind, not sector-wide — doesn't change the thesis. Next earnings 2026-08-07 (16 trading days out — well outside the 2-day blackout).
+
+**Step 5 — earnings-window rule:** No held name or VST reports within 2 trading days (nearest is V, 07-28, 5 trading days out). No blackout applies to today's planned VST buy or to any held position.
+
+**Step 6 — cash-drag check:** Cash 68.454%, well above the 25-40% target band (4 positions held, band applies). Above-band for many consecutive sessions. Tape is modestly constructive (S&P futures +0.2%) and 1 weekly slot remains — VST's 5-of-5 gate clearing today is a qualifying entry, not a forced one; this addresses the cash-drag pattern with genuine confirmation rather than further deferral.
+
+**Step 7 — plan:** BUY VST 25 shares. Sizing: starter conviction (re-entry, not "high" — thesis intact but this is a fresh 2-session technical confirmation, not a fresh catalyst), halved for ATR 4.06% (>3% threshold) per the volatility check. Reference price USD 158.05 (07-20 close) → 25sh × USD 158.05 = USD 3,951.25 ≈ **3.96% of equity** (well inside the 20% position cap and 15% single-order cap). Risk budget: 25sh stop-out at 10% below entry ≈ USD 395.13 ≈ **0.396% of equity** (well inside the 1.2% cap). Daily deployment 3.96% (cap 25%). Weekly new-position count 2/3 → **3/3** (uses the last slot this week). Sector exposure post-buy: Energy/Utilities ~3.96% (0% today), all sectors still far below the 60% cap. Whole-share quantity chosen so a trailing stop is possible.
+
+**Volatility check:** VST 20-day ATR 4.06% > 3% threshold → position size halved (per above), and journaled here as required.
+
+**Planned trades for today:**
+
+```json
+{
+  "plan_date": "2026-07-21",
+  "trades": [
+    {"action": "buy", "symbol": "VST", "qty": 25, "thesis": "Re-entry after the 07-16 sector-wide stop-out; now confirmed via 2 consecutive sessions above the 50-day SMA (+0.97% 07-17, +2.63% 07-20), clearing the standing multi-session-confirmation bar; PEG ~0.4-0.6 (well below 2.5 cap); Buy consensus among 13 analysts (Scotiabank PT raised to USD 298, Bernstein initiated Buy); USD 4.7B Cogentrix acquisition + Helix Digital Infrastructure consortium + hyperscaler AI capex raised to USD 750B for 2026 are intact catalysts; sized as a halved starter for ATR 4.06% (>3%)",
+     "invalidation": "closes below the 50-day SMA (~USD 154, drifts) on volume, or the 10% trailing stop fires, or the Cogentrix acquisition / Helix consortium thesis is disrupted",
+     "review_by": "2026-08-05"}
+  ]
+}
+```
+
+**Step 8 — notify:** Telegram to be sent per playbook — market posture + planned trade.
+**Step 9 — commit:** pending.

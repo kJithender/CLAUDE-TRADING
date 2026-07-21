@@ -4007,3 +4007,18 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Friday watchdog:** N/A — today is Monday.
 - **Monthly/quarterly housekeeping:** N/A — not the first trading day of the month, not a dividend-quarter mid-month check.
 - **Notify:** Telegram sent — EOD summary, no trades today, Bull ahead of SPY since inception.
+
+## 2026-07-21 08:12 ET — PRE-MARKET (plan drafted, no trades yet)
+- **Action:** Plan drafted for market-open execution — BUY VST 25sh (~3.96% of equity, re-entry, halved for ATR). Market not yet open.
+- **Market status:** `is_open: false`, next open 09:30 ET today.
+- **Live re-sync:** equity USD 99,757.50, cash USD 68,291.16 (68.454%). LLY 8sh @ avg USD 1,174.35625, current USD 1,140.02 (−2.924%). V 22sh @ avg USD 355.058182, current USD 358.75 (+1.040%). UNH 25sh @ avg USD 422.28, current USD 422.50 (+0.052%). META 6sh @ avg USD 641.323333, current USD 649.37 (+1.255%).
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,196.29, stop USD 1,076.661, unchanged), V `2b0a93ba` (HWM USD 364.91, stop USD 328.419, unchanged), UNH `225cb079` (HWM USD 425.9499, stop USD 383.35491, unchanged), META `14301809` (HWM USD 653.30, stop USD 587.97, unchanged) — all 4 confirmed live via `orders open`, 4/4 PASS.
+- **Shock check:** equity vs last_equity USD 99,812.75 = −0.0553% — no shock.
+- **Drawdown:** 0.460% vs HWM USD 100,218.48 (2026-07-13) — not triggered (9.540pp headroom).
+- **Sector exposure:** Healthcare (LLY+UNH) 19.734%, Financials (V) 7.913%, Communication Services (META) 3.907%, cash 68.454% — within all caps.
+- **Thesis contracts:** LLY (review_by 2026-08-05), V (review_by 2026-07-28), UNH (review_by 2026-08-17), META (review_by 2026-07-27) — all reviewed, none triggered, none due — HOLD all four.
+- **Earnings window:** V earnings 07-28 (5 trading days out), META earnings 07-29 (6 trading days out) — both outside the 2-day blackout; no held/candidate name reports within 2 trading days.
+- **LLY note:** Novo Nordisk filed suit 07-21 alleging misleading GLP-1 ad claims — litigation/PR headline, not a thesis break; explains part of today's pullback alongside general profit-taking.
+- **Watchlist:** VST clears the re-entry gate for the first time — 2 consecutive sessions above 50-day SMA (+0.97% 07-17, +2.63% 07-20), PEG ~0.4-0.6, Buy-rated by 13 analysts, Cogentrix acquisition + Helix consortium catalysts intact, ATR 4.06% (>3%, size halved). MSFT flipped positive (+0.25%) but unconfirmed — pre-market already reversing lower, treated as noise pending a 2nd confirming session. NVDA (-3.12%, 6th failed-confirmation data point), PWR (-10.15%), COST (-4.14%), LRCX (-8.82% + valuation veto) all remain non-candidates.
+- **Why trade planned:** VST independently cleared its full entry-signal checklist (5-of-5) for the first time since its 07-16 stop-out, on genuine multi-session technical confirmation plus intact fundamental catalysts — not a forced trade. This also addresses the persistent cash-drag pattern (68.45% cash, well above the 25-40% target band) with disciplined deployment.
+- **Weekly new-position count:** 2/3 used this week (UNH, META, both 2026-07-20). This plan uses the 3rd and final slot.
