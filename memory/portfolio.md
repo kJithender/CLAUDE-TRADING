@@ -21,7 +21,9 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-21 ~12:36 ET (midday) — risk check only, no action; all 5 positions within range, 5/5 stops confirmed live, fresh equity high-water mark
+**Last updated:** 2026-07-21 ~15:51 ET (close) — EOD: equity USD 100,320.54, fresh HWM (new high, surpassing 07-13's USD 100,218.48); Bull +0.321% since inception vs SPY +0.360% = −0.040pp (essentially flat); 1 trade today (BUY VST); 5/5 stops confirmed live; no exits, no reconciliation needed
+
+**Prior update:** 2026-07-21 ~12:36 ET (midday) — risk check only, no action; all 5 positions within range, 5/5 stops confirmed live, fresh equity high-water mark
 
 **Prior update:** 2026-07-21 ~09:38 ET (market-open) — BUY VST 25sh @ avg $161.21 filled, 10% trailing stop placed; 5/5 stops confirmed live
 
@@ -29,27 +31,30 @@ reference but is **not** the live comparison baseline going forward.
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-21 midday ~12:36 ET)
+## Account (live Alpaca data, 2026-07-21 close ~15:51 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,253.41 |
-| Cash | $64,260.91 (64.093%) |
-| Long market value | $35,992.50 (35.907%: LLY+V+UNH+META+VST) |
-| Buying power | $357,822.64 |
+| Equity | $100,320.54 |
+| Cash | $64,260.91 (64.056%) |
+| Long market value | $36,059.63 (35.944%: LLY+V+UNH+META+VST) |
+| Buying power | $358,010.60 |
 | Last equity (prior session close, Alpaca) | $99,812.75 |
 
+**Prior (midday ~12:36 ET):** Equity $100,253.41 | Cash $64,260.91 (64.093%) | Long MV $35,992.50 (35.907%) | Buying power $357,822.64
 **Prior (market-open ~09:38 ET):** Equity $99,810.93 | Cash $64,260.91 (64.386%) | Long MV $35,550.02 (35.614%) | Buying power $356,583.70
 
 ## Open positions
 
+_As of close ~15:51 ET:_
+
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| V | 22 | $355.058182 | $357.33 | +$50.00 (+0.640%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (upgraded from B — fresh multi-year high on Stablecoin Platform launch, Weiss upgrade, +7.62% vs 50-day cleanly, earnings confirmed 07-28 after close; next review 2026-07-27) |
-| LLY | 8 | $1,174.35625 | $1,147.6046 | -$214.01 (-2.278%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged) | **A** (thesis intact: Medicare Bridge live, AtaiBeckley deal, Retevmo FDA approval; today's pullback tracks the fresh Novo Nordisk lawsuit over GLP-1 advertising claims — a litigation/PR headline, not a product or guidance break; invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05) |
-| UNH | 25 | $422.28 | $424.465 | +$54.63 (+0.517%) | Healthcare | Order 225cb079, 10%, HWM $425.9499, stop $383.35491 — live, unchanged | **A** (Q2 beat-and-raise 07-16, PEG 1.73-2.07, GF Value ~30% undervalued, Wall Street PT raises continuing (Morgan Stanley $529, Wells Fargo $526); review_by 2026-08-17) |
-| META | 6 | $641.323333 | $644.97 | +$21.88 (+0.569%) | Communication Services | Order 14301809, 10%, HWM $655.84, stop $590.256 — live, unchanged | **A** (July AI-momentum rally +21% MTD, Iris in-house chip production Sept, cloud-capacity-sale catalyst intact; earnings 07-29 approaching, 6 trading days out; review_by 2026-07-27 forces pre-earnings hold/trim/exit call) |
-| VST | 25 | $161.21 | $161.01 | -$5.00 (-0.124%) | Energy/Utilities | Order 87f49386, 10%, HWM $161.53, stop $145.377 — live, new | **A** (re-entry after 07-16 sector-wide stop-out; confirmed via 2 consecutive sessions above 50-day SMA, PEG ~0.4-0.6, Buy consensus among 13 analysts, USD 4.7B Cogentrix acquisition + Helix Digital Infrastructure consortium intact; review_by 2026-08-05 forces pre-earnings (08-07) hold/trim/exit call) |
+| V | 22 | $355.058182 | $356.865 | +$39.75 (+0.509%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (upgraded from B — fresh multi-year high on Stablecoin Platform launch, Weiss upgrade, +7.62% vs 50-day cleanly, earnings confirmed 07-28 after close; next review 2026-07-27) |
+| LLY | 8 | $1,174.35625 | $1,171.77 | -$20.69 (-0.220%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged) | **A** (thesis intact: Medicare Bridge live, AtaiBeckley deal, Retevmo FDA approval; today's pullback tracks the fresh Novo Nordisk lawsuit over GLP-1 advertising claims — a litigation/PR headline, not a product or guidance break; invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05) |
+| UNH | 25 | $422.28 | $435.95 | +$341.75 (+3.237%) | Healthcare | Order 225cb079, 10%, HWM $436.25, stop $392.625 — live, ratcheted up | **A** (Q2 beat-and-raise 07-16, PEG 1.73-2.07, GF Value ~30% undervalued, Wall Street PT raises continuing (Morgan Stanley $529, Wells Fargo $526); review_by 2026-08-17) |
+| META | 6 | $641.323333 | $646.43 | +$30.64 (+0.796%) | Communication Services | Order 14301809, 10%, HWM $655.84, stop $590.256 — live, unchanged | **A** (July AI-momentum rally +21% MTD, Iris in-house chip production Sept, cloud-capacity-sale catalyst intact; earnings 07-29 approaching, 6 trading days out; review_by 2026-07-27 forces pre-earnings hold/trim/exit call) |
+| VST | 25 | $161.21 | $162.35 | +$28.50 (+0.707%) | Energy/Utilities | Order 87f49386, 10%, HWM $164.44, stop $147.996 — live, ratcheted up | **A** (re-entry after 07-16 sector-wide stop-out; confirmed via 2 consecutive sessions above 50-day SMA, PEG ~0.4-0.6, Buy consensus among 13 analysts, USD 4.7B Cogentrix acquisition + Helix Digital Infrastructure consortium intact; review_by 2026-08-05 forces pre-earnings (08-07) hold/trim/exit call) |
 
 ## Risk posture (2026-07-21 market-open)
 
@@ -61,6 +66,8 @@ reference but is **not** the live comparison baseline going forward.
 - **Thesis contracts:** LLY (review_by 2026-08-05), V (review_by 2026-07-28), UNH (review_by 2026-08-17), META (review_by 2026-07-27), VST (review_by 2026-08-05) — all reviewed, none triggered, none due today — HOLD all five.
 - **Earnings window:** V reports 2026-07-28 (5 trading days out — outside 2-day blackout). META reports 2026-07-29 (6 trading days out). VST reports 2026-08-07 (12 trading days out). No held name reports within 2 trading days — no blackout applies today.
 - **Trades today:** 1 executed (BUY VST 25sh @ avg $161.21, re-entry, halved for ATR 4.06%) — see `research-log.md` EXECUTED line and `trade-log.md`.
+
+**Close risk check (2026-07-21 ~15:51 ET):** LLY −0.220%, V +0.509%, UNH +3.237%, META +0.796%, VST +0.707% — none breach the −7% cut threshold (close doesn't cut positions; that's midday's job). Intraday shock check: equity $100,320.54 vs last_equity $99,812.75 = +0.509% — no shock ✓ (threshold −4%; today is up, not down). Drawdown circuit breaker: equity $100,320.54 is a fresh HWM (surpassing 07-13's $100,218.48 and today's own midday high $100,253.41) — drawdown 0% ✓, nowhere near the −10% circuit breaker. Sector exposure: Healthcare (LLY+UNH) 20.207% ($20,272.91), Financials (V) 7.825% ($7,851.03), Communication Services (META) 3.866% ($3,878.58), Energy/Utilities (VST) 4.046% ($4,058.75), cash 64.056% ($64,260.91) — all well within the 60% sector cap. Thesis contracts: LLY (review_by 08-05), V (review_by 07-28), UNH (review_by 08-17), META (review_by 07-27), VST (review_by 08-05) — none due today, none triggered — HOLD all five. Stop audit: 5/5 PASS (LLY `e3547b9e` stop $1,076.661, V `2b0a93ba` stop $328.419, UNH `225cb079` stop $392.625 ratcheted up from $383.35491, META `14301809` stop $590.256, VST `87f49386` stop $147.996 ratcheted up from $145.377 — all confirmed live via `orders open`). Trades today: 1 (BUY VST 25sh @ avg $161.21, market-open). Market context: S&P 500 +0.9%, Nasdaq +1.3% today on chip-stock revival and megacap-earnings anticipation ahead of this week's Big Tech reports, plus cooling US inflation data (10yr eased to ~4.52%) and reports of a proposed 10-day Iran ceasefire easing oil; no thesis-threatening news for any held name — UNH's +3.24% today tracks the broader risk-on tape, not a new catalyst.
 
 **Midday risk check (2026-07-21 ~12:36 ET):** LLY −1.167%, V +1.017%, UNH +2.781%, META +1.004%, VST +1.219% — none breach the −7% cut threshold or the +15% tighten threshold; no news-scan gate triggered (none >3% down or >10% up). No action taken — all 5 positions within normal range, no new positions (midday never opens new ones). Intraday shock check: equity $100,253.41 vs last_equity $99,812.75 = +0.441% — no shock ✓ (threshold −4%; today is actually up, not down). Drawdown circuit breaker: equity $100,253.41 vs prior HWM $100,218.48 (2026-07-13 close) — equity is now ABOVE the prior HWM, a fresh high-water mark; drawdown 0% ✓, not triggered. Stop audit: 5/5 PASS (LLY `e3547b9e`, V `2b0a93ba`, UNH `225cb079`, META `14301809`, VST `87f49386` all confirmed live via `orders open`, unchanged from market-open).
 
@@ -113,12 +120,15 @@ reference but is **not** the live comparison baseline going forward.
 | 2026-07-16 close | $100,098.01 (+0.098% since inception) | $748.21 (+0.341% since inception, dailyBar.c pulled ~15:50 ET, ~10min pre-settle) | **−0.243pp** (since inception; gap narrowed from −1.084pp yesterday — SPY fell −0.751% today on a second straight day of chip-sector selling (AI-capex-valuation skepticism outweighed a strong TSM print) plus rising oil/bond yields from the ongoing Iran escalation, while Bull gained +0.081% today because its non-AI-semi book (LLY healthcare, V financials) sat outside today's selloff layer; VST's 10% trailing stop fired at 09:55 ET (−2.178%, order `bdfb5f67`) on the same chip-sector rotation — a sector move, not a VST-specific thesis break, per the WebSearch check in `closed-trades.md`; LLY −0.024%, V +2.535% (fresh trailing-stop high), no stop or −7% rule concerns on the remaining book) |
 | 2026-07-17 close | $99,984.66 (−0.015% since inception) | $744.16 (−0.202% since inception, dailyBar.c pulled ~15:52 ET, ~8min pre-settle) | **+0.187pp** (since inception; gap flipped positive from −0.243pp yesterday — a sharp chipmaker selloff (industry gauge down ~20% from its record, worst week since April 2025) plus Middle East oil-price spike and a 10% post-earnings Netflix decline dragged SPY down −0.894% today, while Bull fell only −0.098% because its non-AI-semi book (LLY healthcare, V financials) sits entirely outside the selloff layer — Bull beat SPY today by +0.796pp; LLY +0.051%, V +0.993%, no stop or −7% rule concerns; 0 trades today, no watchlist candidate cleared its entry gate) |
 | 2026-07-20 close | $99,880.82 (−0.119% since inception) | $742.51 (−0.423% since inception, dailyBar.c pulled ~15:51 ET, ~9min pre-settle) | **+0.304pp** (since inception; gap widened slightly from +0.187pp Friday — fresh US airstrikes on Iran plus a Houthi "maritime embargo" threat against Saudi Arabia kept oil elevated (~USD 81/bbl) and pressured the broad tape (Dow −0.5%) ahead of this week's Big Tech earnings (Tesla, Alphabet, Intel), while chip stocks staged a modest comeback; Bull fell −0.137% today (LLY −2.103% was the drag, V/UNH/META flat-to-up) vs SPY −0.222% — Bull beat SPY today by +0.085pp; 0 trades today, no exits, 4/4 stops confirmed live) |
+| 2026-07-21 close | $100,320.54 (+0.321% since inception) | $748.35 (+0.360% since inception, dailyBar.c pulled ~15:51 ET, ~9min pre-settle) | **−0.040pp** (since inception; essentially flat, gap narrowed from +0.304pp yesterday as SPY caught up — S&P 500 +0.9%, Nasdaq +1.3% today on chip-stock revival and megacap-earnings anticipation, cooling inflation data, and Iran-ceasefire-proposal headlines easing oil; Bull gained +0.440% today (UNH +3.237% led, tracking the broad risk-on tape; LLY −0.220% lagged on the Novo Nordisk GLP-1-ad-claims lawsuit headline) vs SPY +0.787% — Bull's non-AI-semi book captured less of today's chip-led rally, a −0.346pp underperformance today; fresh equity HWM $100,320.54; 1 trade today (BUY VST re-entry at market-open), no exits, 5/5 stops confirmed live, all within normal range) |
 
 **Data-quality note (2026-07-10):** today's `snapshot` for SPY returned `prevDailyBar.c` = $751.55 for 2026-07-09, vs. the $751.25 recorded in this table on 2026-07-09's own close — a ~$0.30 (~0.04%) drift, consistent with the standing 2026-07-07 lesson that a same-date `dailyBar.c` can drift slightly on a later re-pull. Immaterial to any guardrail decision; the $751.25 figure already recorded for 2026-07-09 is left unchanged per that lesson's guidance (use the value recorded on the day itself, not a later re-pull).
 
 **Correction (2026-07-03 close):** the 2026-07-02 close entry originally used SPY $743.95 for that day's "close," giving a +0.117pp gap. Re-verifying via the Alpaca `snapshot` endpoint's `dailyBar` field shows the actual settled close was **$744.86** — the $743.95 figure was very likely a live quote grabbed a few minutes before the 4:00 PM ET settle (the close routine runs at 3:50 PM). Corrected above. Difference is immaterial to any guardrail decision, but the vs-SPY gap for 07-02 is properly ~flat, not +0.117pp. **Lesson going forward:** always read the `dailyBar.c` field from `snapshot`, not a bare quote, when recording an official daily close.
 
 _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): Bull ended at $98,711.58 (−1.289%) vs SPY total-return +... — full detail in git history and `weekly-review.md`. Not comparable going forward; new inception above is the live baseline._
+
+**Race scoreboard (2026-07-21 close):** Bull +0.321% (since 2026-07-01 re-inception) vs SPY +0.360% (since 2026-07-01 anchor $745.665, dailyBar.c) = Bull **−0.040pp, essentially flat** | AGGRO −7.123% (STALE — last updated 2026-06-23 EOD, since its own 2026-06-04 inception; `memory/aggressive/portfolio.md` has shown no new activity for **28 days** as of today, confirmed via `git log` on that path). Different inception dates make Bull-vs-AGGRO not apples-to-apples; AGGRO staleness remains the actionable item, already escalated repeatedly (7+ flags across close/weekly-review routines) — noting the continued increment, not re-escalating further this run (weekly review is the primary escalation vehicle).
 
 **Race scoreboard (2026-07-20 close):** Bull −0.119% (since 2026-07-01 re-inception) vs SPY −0.423% (since 2026-07-01 anchor $745.665, dailyBar.c) = Bull **+0.304pp ahead** | AGGRO −7.123% (STALE — last updated 2026-06-23 EOD, since its own 2026-06-04 inception; `memory/aggressive/portfolio.md` has shown no new activity for **27 days** as of today, confirmed via `git log` on that path — up from 24 days at the 2026-07-17 weekly review). Different inception dates make Bull-vs-AGGRO not apples-to-apples; AGGRO staleness remains the actionable item, already escalated repeatedly (7+ flags) — noting the continued increment, not re-escalating further this run.
 

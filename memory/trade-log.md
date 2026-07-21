@@ -4044,3 +4044,28 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Drawdown circuit breaker:** equity USD 100,253.41 vs prior HWM USD 100,218.48 (2026-07-13 close) — equity now exceeds the prior HWM, a fresh high-water mark; drawdown 0%, not triggered.
 - **Stop audit:** 5/5 PASS — LLY `e3547b9e` (HWM 1196.29/stop 1076.661), V `2b0a93ba` (HWM 364.91/stop 328.419), UNH `225cb079` (HWM 434.48/stop 391.032), META `14301809` (HWM 655.84/stop 590.256), VST `87f49386` (HWM 163.63/stop 147.267) — all confirmed live via `orders open`, unchanged from market-open.
 - **Action:** none. No trades placed (midday never opens new positions).
+
+## 2026-07-21 ~15:51 ET — CLOSE (EOD journal, no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Half-day/dedup check:** `next_close` 16:00 ET (not a half-day). No existing 2026-07-21 row in `performance.csv` — appended fresh, no dedup needed.
+- **Account:** Equity USD 100,320.54, cash USD 64,260.91 (64.056%), long market value USD 36,059.63 (35.944%). last_equity (prior session) USD 99,812.75.
+- **Positions (close, ~15:51 ET):**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,171.77, **−0.220%** (−USD 20.69 unrealized).
+  - V: 22sh @ avg USD 355.058182, current USD 356.865, **+0.509%** (+USD 39.75 unrealized).
+  - UNH: 25sh @ avg USD 422.28, current USD 435.95, **+3.237%** (+USD 341.75 unrealized).
+  - META: 6sh @ avg USD 641.323333, current USD 646.43, **+0.796%** (+USD 30.64 unrealized).
+  - VST: 25sh @ avg USD 161.21, current USD 162.35, **+0.707%** (+USD 28.50 unrealized).
+  - None near the −7% threshold; no exits today. No reconciliation needed vs `closed-trades.md` (still just VST 07-16 — today's VST is a fresh re-entry, still open).
+- **Stop audit:** LLY `e3547b9e` (HWM 1,196.29 / stop 1,076.661), V `2b0a93ba` (HWM 364.91 / stop 328.419), UNH `225cb079` (HWM 436.25 / stop 392.625, ratcheted from 391.032), META `14301809` (HWM 655.84 / stop 590.256), VST `87f49386` (HWM 164.44 / stop 147.996, ratcheted from 147.267) — all 5 confirmed live via `orders open`. 5/5 PASS.
+- **Drawdown circuit breaker:** equity USD 100,320.54 is a fresh HWM (surpasses 07-13's USD 100,218.48 and today's own midday high USD 100,253.41) — drawdown 0%, far from the −10% breaker.
+- **Intraday shock check:** equity USD 100,320.54 vs last_equity USD 99,812.75 = **+0.509%** — no shock (threshold −4%; today is up).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.207%, Financials (V) 7.825%, Communication Services (META) 3.866%, Energy/Utilities (VST) 4.046%, cash 64.056% — all within the 60% cap.
+- **Performance vs SPY:** SPY dailyBar.c today (pulled ~15:51 ET) USD 748.35 vs 07-20 recorded close USD 742.51 → SPY today **+0.7865%**. Bull today (vs 07-20 recorded close USD 99,880.82) **+0.4402%** → Bull lagged SPY today by **−0.3463pp**. Since inception (2026-07-01, USD 100,000.00 / SPY 745.665): Bull **+0.321%** vs SPY (748.35 vs 745.665) **+0.360%** → gap **−0.040pp, essentially flat**.
+- **Market context:** S&P 500 +0.9%, Nasdaq +1.3% today on a chip-stock revival and megacap-earnings anticipation (Big Tech reports this week), plus cooling US inflation data (10yr eased to ~4.52%) and reports mediators are pushing a 10-day Iran ceasefire, easing oil. Nothing here threatens LLY/V/UNH/META/VST theses — UNH's strong +3.24% today tracks the broad risk-on tape, not a new company catalyst; LLY's mild −0.220% continues to reflect the Novo Nordisk GLP-1-ad-claims lawsuit headline, still a litigation/PR item, not a thesis break.
+- **Race scoreboard:** Bull −0.040pp vs SPY (since 2026-07-01, essentially flat) | AGGRO last known −7.123% since its own 2026-06-04 inception (STALE — `memory/aggressive/portfolio.md` unchanged since 2026-06-23 EOD, now **28 days** stale, up from 27 days yesterday; already escalated repeatedly, no new action this run beyond noting the increment — weekly review is the primary escalation vehicle).
+- **Performance history:** appended `2026-07-21,bull,100320.54,64260.91,748.35` to `performance.csv`.
+- **Friday watchdog:** N/A — today is Tuesday.
+- **Monthly/quarterly housekeeping:** N/A — not the first trading day of the month, not a dividend-quarter mid-month check.
+- **Notify:** Telegram sent — EOD summary, 1 trade today (VST re-entry), fresh equity HWM, Bull essentially flat vs SPY since inception.
