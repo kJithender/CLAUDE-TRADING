@@ -21,21 +21,25 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-21 ~09:38 ET (market-open) — BUY VST 25sh @ avg $161.21 filled, 10% trailing stop placed; 5/5 stops confirmed live
+**Last updated:** 2026-07-21 ~12:36 ET (midday) — risk check only, no action; all 5 positions within range, 5/5 stops confirmed live, fresh equity high-water mark
+
+**Prior update:** 2026-07-21 ~09:38 ET (market-open) — BUY VST 25sh @ avg $161.21 filled, 10% trailing stop placed; 5/5 stops confirmed live
 
 **Prior update:** 2026-07-21 ~08:15 ET (pre-market) — plan drafted: BUY VST 25sh (re-entry, halved for ATR 4.06%); 4/4 stops confirmed live
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-21 market-open ~09:38 ET)
+## Account (live Alpaca data, 2026-07-21 midday ~12:36 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,810.93 |
-| Cash | $64,260.91 (64.386%) |
-| Long market value | $35,550.02 (35.614%: LLY+V+UNH+META+VST) |
-| Buying power | $356,583.70 |
+| Equity | $100,253.41 |
+| Cash | $64,260.91 (64.093%) |
+| Long market value | $35,992.50 (35.907%: LLY+V+UNH+META+VST) |
+| Buying power | $357,822.64 |
 | Last equity (prior session close, Alpaca) | $99,812.75 |
+
+**Prior (market-open ~09:38 ET):** Equity $99,810.93 | Cash $64,260.91 (64.386%) | Long MV $35,550.02 (35.614%) | Buying power $356,583.70
 
 ## Open positions
 
@@ -57,6 +61,8 @@ reference but is **not** the live comparison baseline going forward.
 - **Thesis contracts:** LLY (review_by 2026-08-05), V (review_by 2026-07-28), UNH (review_by 2026-08-17), META (review_by 2026-07-27), VST (review_by 2026-08-05) — all reviewed, none triggered, none due today — HOLD all five.
 - **Earnings window:** V reports 2026-07-28 (5 trading days out — outside 2-day blackout). META reports 2026-07-29 (6 trading days out). VST reports 2026-08-07 (12 trading days out). No held name reports within 2 trading days — no blackout applies today.
 - **Trades today:** 1 executed (BUY VST 25sh @ avg $161.21, re-entry, halved for ATR 4.06%) — see `research-log.md` EXECUTED line and `trade-log.md`.
+
+**Midday risk check (2026-07-21 ~12:36 ET):** LLY −1.167%, V +1.017%, UNH +2.781%, META +1.004%, VST +1.219% — none breach the −7% cut threshold or the +15% tighten threshold; no news-scan gate triggered (none >3% down or >10% up). No action taken — all 5 positions within normal range, no new positions (midday never opens new ones). Intraday shock check: equity $100,253.41 vs last_equity $99,812.75 = +0.441% — no shock ✓ (threshold −4%; today is actually up, not down). Drawdown circuit breaker: equity $100,253.41 vs prior HWM $100,218.48 (2026-07-13 close) — equity is now ABOVE the prior HWM, a fresh high-water mark; drawdown 0% ✓, not triggered. Stop audit: 5/5 PASS (LLY `e3547b9e`, V `2b0a93ba`, UNH `225cb079`, META `14301809`, VST `87f49386` all confirmed live via `orders open`, unchanged from market-open).
 
 **Close risk check (2026-07-20 ~15:51 ET):** LLY −2.103%, V +1.831%, UNH −0.083%, META +1.088% — none breach the −7% cut threshold. No action taken (close doesn't cut positions; that's midday's job). Intraday shock check: equity $99,880.82 vs last_equity $100,017.31 = −0.1365% — no shock ✓ (threshold −4%). HWM $100,218.48 (2026-07-13 close) — drawdown −0.337%, far from the −10% circuit breaker. Stop audit: 4/4 PASS (LLY, V, UNH, META all confirmed live via `orders open`, unchanged from midday).
 
