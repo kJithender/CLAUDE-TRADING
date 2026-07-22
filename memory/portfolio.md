@@ -21,7 +21,9 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-22 ~09:36 ET (market-open) — no trades placed (pre-market plan was empty, weekly new-position cap 3/3 already reached this week). Equity USD 100,225.31, drawdown 0.097% off HWM USD 100,322.08 (not triggered), no intraday shock (−0.0964%); 5/5 stops confirmed live, unchanged; all 5 positions HOLD, none near −7% threshold (LLY −0.712%, META −0.326%, UNH +3.109%, V +0.146%, VST +1.582%).
+**Last updated:** 2026-07-22 ~12:36 ET (midday) — risk check only, no action. Equity USD 100,185.42, drawdown 0.136% off HWM USD 100,322.08 (not triggered), no intraday shock (−0.1362%); 5/5 stops confirmed live (VST ratcheted up to stop 150.92586); all 5 positions HOLD, none near −7% threshold (LLY −1.031%, META −1.926%, UNH +2.704%, V +0.330%, VST +3.579%).
+
+**Prior update:** 2026-07-22 ~09:36 ET (market-open) — no trades placed (pre-market plan was empty, weekly new-position cap 3/3 already reached this week). Equity USD 100,225.31, drawdown 0.097% off HWM USD 100,322.08 (not triggered), no intraday shock (−0.0964%); 5/5 stops confirmed live, unchanged; all 5 positions HOLD, none near −7% threshold (LLY −0.712%, META −0.326%, UNH +3.109%, V +0.146%, VST +1.582%).
 
 **Prior update:** 2026-07-22 ~08:15 ET (pre-market) — no trades planned: weekly new-position cap (3/3: UNH, META 07-20; VST 07-21) already reached this week, next slot Monday 2026-07-27. Equity USD 100,272.61, drawdown 0.049% off HWM USD 100,322.08 (not triggered), no intraday shock; 5/5 stops confirmed live; all 5 positions HOLD, no thesis contracts due/triggered; Iran/oil risk-off tape re-intensifying (Brent back above USD 92) but no held-name thesis break.
 

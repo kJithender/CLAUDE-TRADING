@@ -4090,3 +4090,23 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Exit reconciliation:** no stop filled since last run — all 5 positions intact at their prior quantities. No new `closed-trades.md` entry needed.
 - **Trades executed today:** none (no plan to execute).
 - **Notify:** Telegram sent — "no trades, weekly new-position cap already used this week" plus quick risk snapshot.
+
+## 2026-07-22 ~12:36 ET — MIDDAY (risk check, no action)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market clock:** `is_open: true`, next_close 16:00 ET.
+- **Account (live, ~12:36 ET):** Equity USD 100,185.42, cash USD 64,260.90 (64.142%), long market value USD 35,924.52 (35.858%). last_equity (07-21 close) USD 100,322.08.
+- **Shock check:** equity USD 100,185.42 vs last_equity USD 100,322.08 = **−0.1362%** — no shock ✓ (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (07-21 close, from `history 1A 1D`) vs equity USD 100,185.42 — drawdown **0.1362%**. NOT triggered (9.8638pp headroom) ✓.
+- **Positions / −7% rule check (live, ~12:36 ET):**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,162.245, **−1.031%**.
+  - META: 6sh @ avg USD 641.323333, current USD 628.97, **−1.926%**.
+  - UNH: 25sh @ avg USD 422.28, current USD 433.70, **+2.704%**.
+  - V: 22sh @ avg USD 355.058182, current USD 356.23, **+0.330%**.
+  - VST: 25sh @ avg USD 161.21, current USD 166.98, **+3.579%**.
+  - None within range of the −7% cut threshold. None near the +15% tighten threshold.
+- **News-scan gate:** not triggered — no position is down >3% or up >10% from entry, so no WebSearch was needed this run.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,196.29/stop 1,076.661), V `2b0a93ba` (HWM 364.91/stop 328.419), UNH `225cb079` (HWM 436.945/stop 393.2505), META `14301809` (HWM 655.84/stop 590.256), VST `87f49386` (HWM 167.6954/stop 150.92586, ratcheted up from 164.44/147.996) — all 5 status `new` (live), quantities match positions. **5/5 PASS** — no recreation needed.
+- **Exit reconciliation:** no stop filled since last run — all 5 positions intact at their prior quantities. No new `closed-trades.md` entry needed.
+- **Action:** none — no positions cut, no stops tightened, no new positions (midday never opens new ones).
+- **Notify:** Telegram sent — all positions within range, 5/5 stops confirmed live, no action.
