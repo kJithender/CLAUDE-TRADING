@@ -21,7 +21,9 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-21 ~15:51 ET (close) — EOD: equity USD 100,320.54, fresh HWM (new high, surpassing 07-13's USD 100,218.48); Bull +0.321% since inception vs SPY +0.360% = −0.040pp (essentially flat); 1 trade today (BUY VST); 5/5 stops confirmed live; no exits, no reconciliation needed
+**Last updated:** 2026-07-22 ~08:15 ET (pre-market) — no trades planned: weekly new-position cap (3/3: UNH, META 07-20; VST 07-21) already reached this week, next slot Monday 2026-07-27. Equity USD 100,272.61, drawdown 0.049% off HWM USD 100,322.08 (not triggered), no intraday shock; 5/5 stops confirmed live; all 5 positions HOLD, no thesis contracts due/triggered; Iran/oil risk-off tape re-intensifying (Brent back above USD 92) but no held-name thesis break.
+
+**Prior update:** 2026-07-21 ~15:51 ET (close) — EOD: equity USD 100,320.54, fresh HWM (new high, surpassing 07-13's USD 100,218.48); Bull +0.321% since inception vs SPY +0.360% = −0.040pp (essentially flat); 1 trade today (BUY VST); 5/5 stops confirmed live; no exits, no reconciliation needed
 
 **Prior update:** 2026-07-21 ~12:36 ET (midday) — risk check only, no action; all 5 positions within range, 5/5 stops confirmed live, fresh equity high-water mark
 
@@ -31,32 +33,44 @@ reference but is **not** the live comparison baseline going forward.
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-21 close ~15:51 ET)
+## Account (live Alpaca data, 2026-07-22 pre-market ~08:13 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,320.54 |
-| Cash | $64,260.91 (64.056%) |
-| Long market value | $36,059.63 (35.944%: LLY+V+UNH+META+VST) |
-| Buying power | $358,010.60 |
-| Last equity (prior session close, Alpaca) | $99,812.75 |
+| Equity | $100,272.61 |
+| Cash | $64,260.90 (64.083%) |
+| Long market value | $36,011.71 (35.917%: LLY+V+UNH+META+VST) |
+| Buying power | $357,876.37 |
+| Last equity (prior session close, Alpaca) | $100,322.08 |
 
-**Prior (midday ~12:36 ET):** Equity $100,253.41 | Cash $64,260.91 (64.093%) | Long MV $35,992.50 (35.907%) | Buying power $357,822.64
-**Prior (market-open ~09:38 ET):** Equity $99,810.93 | Cash $64,260.91 (64.386%) | Long MV $35,550.02 (35.614%) | Buying power $356,583.70
+**Prior (close 07-21 ~15:51 ET):** Equity $100,320.54 | Cash $64,260.91 (64.056%) | Long MV $36,059.63 (35.944%) | Buying power $358,010.60
+**Prior (midday 07-21 ~12:36 ET):** Equity $100,253.41 | Cash $64,260.91 (64.093%) | Long MV $35,992.50 (35.907%) | Buying power $357,822.64
+**Prior (market-open 07-21 ~09:38 ET):** Equity $99,810.93 | Cash $64,260.91 (64.386%) | Long MV $35,550.02 (35.614%) | Buying power $356,583.70
 
 ## Open positions
 
-_As of close ~15:51 ET:_
+_As of pre-market ~08:13 ET:_
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| V | 22 | $355.058182 | $356.865 | +$39.75 (+0.509%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (upgraded from B — fresh multi-year high on Stablecoin Platform launch, Weiss upgrade, +7.62% vs 50-day cleanly, earnings confirmed 07-28 after close; next review 2026-07-27) |
-| LLY | 8 | $1,174.35625 | $1,171.77 | -$20.69 (-0.220%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged) | **A** (thesis intact: Medicare Bridge live, AtaiBeckley deal, Retevmo FDA approval; today's pullback tracks the fresh Novo Nordisk lawsuit over GLP-1 advertising claims — a litigation/PR headline, not a product or guidance break; invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05) |
-| UNH | 25 | $422.28 | $435.95 | +$341.75 (+3.237%) | Healthcare | Order 225cb079, 10%, HWM $436.25, stop $392.625 — live, ratcheted up | **A** (Q2 beat-and-raise 07-16, PEG 1.73-2.07, GF Value ~30% undervalued, Wall Street PT raises continuing (Morgan Stanley $529, Wells Fargo $526); review_by 2026-08-17) |
-| META | 6 | $641.323333 | $646.43 | +$30.64 (+0.796%) | Communication Services | Order 14301809, 10%, HWM $655.84, stop $590.256 — live, unchanged | **A** (July AI-momentum rally +21% MTD, Iris in-house chip production Sept, cloud-capacity-sale catalyst intact; earnings 07-29 approaching, 6 trading days out; review_by 2026-07-27 forces pre-earnings hold/trim/exit call) |
-| VST | 25 | $161.21 | $162.35 | +$28.50 (+0.707%) | Energy/Utilities | Order 87f49386, 10%, HWM $164.44, stop $147.996 — live, ratcheted up | **A** (re-entry after 07-16 sector-wide stop-out; confirmed via 2 consecutive sessions above 50-day SMA, PEG ~0.4-0.6, Buy consensus among 13 analysts, USD 4.7B Cogentrix acquisition + Helix Digital Infrastructure consortium intact; review_by 2026-08-05 forces pre-earnings (08-07) hold/trim/exit call) |
+| V | 22 | $355.058182 | $355.01 | -$1.06 (-0.014%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (upgraded from B — fresh multi-year high on Stablecoin Platform launch, Weiss upgrade, +7.62% vs 50-day cleanly, earnings confirmed 07-28 after close; next review 2026-07-27) |
+| LLY | 8 | $1,174.35625 | $1,173.00 | -$10.85 (-0.115%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live (unchanged) | **A** (thesis intact: Medicare Bridge live, AtaiBeckley deal ~USD 2.8B initial, Retevmo FDA approval; Novo Nordisk GLP-1-ad-claims lawsuit remains a litigation/PR headline, not a product or guidance break; invalidation ~$1,087-1,102 (50-day SMA) or Medicare GLP-1 Bridge rollback; review_by 2026-08-05) |
+| UNH | 25 | $422.28 | $437.40 | +$378.00 (+3.581%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, ratcheted up | **A** (Q2 beat-and-raise 07-16, PEG 1.73-2.07, GF Value ~30% undervalued, BofA reiterated Buy PT raised to USD 512 from USD 475; review_by 2026-08-17) |
+| META | 6 | $641.323333 | $645.54 | +$25.30 (+0.657%) | Communication Services | Order 14301809, 10%, HWM $655.84, stop $590.256 — live, unchanged | **A** (July AI-momentum rally +21% MTD, "abandon USD174B investment" headline verified as misleading — refers to buyback spend, not AI capex, which is unchanged/rising; earnings 07-29, 5 trading days out; review_by 2026-07-27 forces pre-earnings hold/trim/exit call) |
+| VST | 25 | $161.21 | $160.3698 | -$21.01 (-0.521%) | Energy/Utilities | Order 87f49386, 10%, HWM $164.44, stop $147.996 — live, unchanged | **A** (re-entry after 07-16 sector-wide stop-out; PEG ~0.4-0.6, Scotiabank PT raised to USD 298 (Outperform), nuclear/hyperscaler PPA thesis intact; today's dip tracks broader Iran/oil risk-off tape, not company news; review_by 2026-08-05 forces pre-earnings (08-07) hold/trim/exit call) |
 
-## Risk posture (2026-07-21 market-open)
+## Risk posture (2026-07-22 pre-market)
+
+- **Drawdown circuit breaker:** Equity $100,272.61 vs running HWM $100,322.08 (2026-07-21 close, from `history 1A 1D`) — drawdown **0.0493%**. NOT triggered (9.9507pp headroom) ✓.
+- **Intraday shock check:** Equity $100,272.61 vs last_equity $100,322.08 (Alpaca, 2026-07-21 close) = **−0.0493%** — no shock ✓ (threshold −4%; real test at market-open/midday).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.264% ($20,319.00), Financials (V) 7.790% ($7,810.22), Communication Services (META) 3.863% ($3,873.24), Energy/Utilities (VST) 3.999% ($4,009.245), cash 64.083% ($64,260.90) — all well within the 60% sector cap.
+- **Weekly new-position count:** 3/3 used this week (UNH, META — 2026-07-20; VST — 2026-07-21). Cap reached — no further new positions until next week (from 2026-07-27).
+- **-7% rule check:** LLY −0.115%, V −0.014%, UNH +3.581%, META +0.657%, VST −0.521% — none within range of the −7% midday-cut threshold.
+- **Thesis contracts:** LLY (review_by 2026-08-05), V (review_by 2026-07-28), UNH (review_by 2026-08-17), META (review_by 2026-07-27), VST (review_by 2026-08-05) — all reviewed, none triggered, none due today — HOLD all five.
+- **Earnings window:** V reports 2026-07-28 (4 trading days out — outside 2-day blackout). META reports 2026-07-29 (5 trading days out). VST reports 2026-08-07 (12 trading days out). No held name reports within 2 trading days — no blackout applies today.
+- **Trades planned today:** none — weekly new-position cap (3/3) already reached this week; next slot Monday 2026-07-27.
+
+## Risk posture (2026-07-21 market-open, historical)
 
 - **Drawdown circuit breaker:** Equity $99,810.93 vs running HWM $100,218.48 (2026-07-13 close, from `history 1A 1D`) — drawdown **0.407%**. NOT triggered (9.593pp headroom) ✓.
 - **Intraday shock check:** Equity $99,810.93 vs last_equity $99,812.75 (Alpaca, 2026-07-20 close) = **−0.0018%** — no shock ✓ (threshold −4%).

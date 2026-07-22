@@ -5058,3 +5058,63 @@ EXECUTED: 2026-07-20T13:39:02Z — Both trades filled. Breaking-news gate (WebSe
 **Step 9 — commit:** pending.
 
 EXECUTED: 2026-07-21T13:38:27Z — BUY VST filled. Breaking-news gate (WebSearch): no thesis-breaking news for VST this morning — earnings still confirmed 08-07, analysts remain bullish (Scotiabank PT USD 298), only a broader risk-off tape (Iran ceasefire "over" headline) noted, gate cleared. Pre-execution re-check: equity USD 99,770.37 vs last_equity USD 99,812.75 = -0.0425% (no shock, threshold -4%); VST quote initially noisy in the opening minutes (bid/ask swinging 154.52-166.55, consistent with the standing opening-rush data-quality lesson) — polled 4x over ~40s until it settled to bid USD 160.72/ask USD 161.10 (0.24% spread, consistent with latest trade ~USD 160.9-161.7); used settled ask for the marketable limit. VST buy-limit 25sh @ USD 161.58 (ask USD 161.10 x 1.003) filled avg USD 161.21 (order c235bb22). 10% trailing stop placed and verified live: order 87f49386, HWM USD 161.53 (ratcheted from fill), stop USD 145.377. Stop audit 5/5 PASS (LLY e3547b9e, V 2b0a93ba, UNH 225cb079, META 14301809, VST 87f49386 all confirmed live in `orders open`). Guardrail math: VST position USD 4,031.50 = 4.041% of equity (cap 20%, single-order cap 15%); risk budget 10% stop-out ≈ USD 403.15 = 0.404% of equity (cap 1.2%); daily deployment 4.041% (cap 25%); weekly new-position count 2/3 -> 3/3 (UNH, META, VST this week — at cap, not exceeding); cash after buy ≈ USD 64,259.66 ≈ 64.4% (min 5%); sector exposure Energy/Utilities 0% -> ~4.04% (cap 60%); drawdown 0.446% vs HWM USD 100,218.48 (breaker at -10%, not triggered); earnings window clear (VST reports 08-07, 12 trading days out). All guardrails ✓.
+
+## 2026-07-22 ~08:15 ET — PRE-MARKET
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock:** `_lock` was free (`{}`); wrote lock for this run (expires ~08:23 ET).
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:` or `QUERY:` pending in `control.md`.
+- **Account (live, ~08:13 ET):** Equity USD 100,272.61, cash USD 64,260.90 (64.083%), long market value USD 36,011.71 (35.917%: LLY+V+UNH+META+VST). Buying power USD 357,876.37. last_equity (prior session close) USD 100,322.08.
+
+**Step 2 — portfolio sync (positions, live Alpaca data):**
+
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | % of equity |
+|--------|-----|-----------|---------|-----------------|--------------|
+| LLY | 8 | 1174.35625 | 1173.00 | −USD 10.85 (−0.115%) | 9.359% |
+| V | 22 | 355.058182 | 355.01 | −USD 1.06 (−0.014%) | 7.790% |
+| UNH | 25 | 422.28 | 437.40 | +USD 378.00 (+3.581%) | 10.906% |
+| META | 6 | 641.323333 | 645.54 | +USD 25.30 (+0.657%) | 3.863% |
+| VST | 25 | 161.21 | 160.3698 | −USD 21.01 (−0.521%) | 3.999% |
+
+Sector exposure: Healthcare (LLY+UNH) 20.264%, Financials (V) 7.790%, Communication Services (META) 3.863%, Energy/Utilities (VST) 3.999%, Cash 64.083%. All well within the 60% sector cap.
+
+**Step 3 — risk posture check:**
+- **Drawdown circuit breaker:** `history 1A 1D` high-water mark is USD 100,322.08 (07-21 close — the API's last daily bar reflects the prior close pre-open, consistent with the standing off-by-one labeling noted in past runs). Current live equity USD 100,272.61 is USD 49.47 below that HWM = **0.0493% drawdown**. NOT triggered (9.95pp headroom) ✓.
+- **Intraday shock check:** equity USD 100,272.61 vs last_equity USD 100,322.08 = **−0.0493%** — no shock (threshold −4%; the real test is at market-open/midday once the session is live).
+- **Sector cap:** no position group above 60% (see table above) ✓.
+
+**Step 3b — thesis contract review:** LLY (review_by 2026-08-05), V (review_by 2026-07-28), UNH (review_by 2026-08-17), META (review_by 2026-07-27), VST (review_by 2026-08-05) — none due today, none triggered by price or news (see Step 4 below). HOLD all five, contracts renewed implicitly (no new review_by needed since none expired).
+
+**Step 3c — Monday-only conviction review:** N/A — today is Wednesday.
+
+**Step 4 — research (WebSearch, all facts dated 2026-07-21/07-22):**
+- **Market posture:** S&P 500 futures −0.2 to −0.33% pre-market, Nasdaq-100 futures −0.6%, ahead of Alphabet/Tesla earnings today. Brent crude has climbed above USD 92/bbl (up from ~USD 88.01 at 07-21's pre-market pull), reviving inflation concerns and driving broad risk-off tone despite otherwise-strong corporate earnings. 10yr Treasury flat at 4.626% (07-22) — still comfortably below the 4.75% new-buy gate.
+- **Iran/oil (Active Macro Watch, still unresolved):** as of 07-21, regional mediators proposed a 10-day ceasefire; the US conducted a 10th straight day of strikes, Iran retaliated with missile/drone attacks on Kuwait. Brent pulled back to ~USD 88 on ceasefire hopes 07-21 morning but has since pushed back above USD 92 by 07-22 pre-market — the de-escalation has NOT held, oil is trending higher again. Continue treating this as an active, unresolved risk-off catalyst; no signed deal yet.
+- **LLY — what changed since yesterday:** essentially nothing material. Same Novo Nordisk GLP-1-ad-claims lawsuit headline as 07-21 (no new developments); AtaiBeckley acquisition still described as an "initial USD 2.8B" deal (structure consistent with the "up to USD 3.8B" earn-out figure already on file). Price −0.115% pre-market vs yesterday's close. Thesis unchanged.
+- **V — what changed since yesterday:** nothing material — price flat (−0.014%). Consensus remains Strong Buy (31 of 39 analysts Strong Buy). Q3 earnings reconfirmed for Tuesday 2026-07-28 after market close (analysts expect diluted EPS USD 3.22, +8.1% YoY). Stablecoin Platform / AI Financial Assistant catalysts intact. Thesis unchanged.
+- **UNH — what changed since yesterday:** continued post-earnings momentum, +3.5% cited today, GF Score 86/100, still viewed as undervalued; BofA reiterated Buy at PT USD 512 (up from USD 475). No new negative news. Next earnings not until 2026-10-27 (unchanged, far out). Thesis strengthening, not breaking.
+- **META — what changed since yesterday:** price essentially flat (−0.14%). One clickbait-style headline ("Meta looks set to abandon a USD 174B investment") verified via a second source and found to be misleading — the USD 174B figure refers to Meta's *share buyback* spend, not AI capex; Meta's 2026 capex guidance (USD 115–135B, roughly double 2025) is unchanged and rising, i.e. Meta is prioritizing AI infrastructure spend over buybacks, not retrenching. Not a thesis break — if anything mildly reinforces the AI-investment thesis. Earnings reconfirmed 2026-07-29 (5 trading days out, outside the 2-day blackout). Thesis unchanged.
+- **VST — what changed since yesterday:** price down modestly pre-market (−0.52%), tracking the broader Iran/oil risk-off tape rather than any company-specific news — 07-21's close was also "modestly lower" on the same Iran ceasefire-collapse headline per the search results. Scotiabank PT USD 298 (Outperform) and the nuclear-fleet/hyperscaler PPA thesis (Meta, AWS) remain intact. Earnings 2026-08-07 (12 trading days out). Thesis unchanged.
+- **Earnings calendar (confirmed today):** LLY 2026-08-05 (unchanged), V 2026-07-28 (reconfirmed, after close), UNH 2026-10-27 (unchanged, already reported this cycle), META 2026-07-29 (reconfirmed), VST 2026-08-07 (unchanged). No held name reports within 2 trading days — no earnings blackout applies today.
+
+**Step 5 — earnings-window rule:** No held name reports within 2 trading days (nearest is V at 4 trading days out). No blackout; no forced hold/trim/exit decision required today beyond the standing thesis-contract holds above.
+
+**Step 6 — cash-drag check:** Cash 64.083%, above the 10–20% target band for a 5-position portfolio (per `strategy.md` cash policy, band tightens once 6–8 positions are held; we're at 5). However, **this week's 3-new-position cap is already used (UNH, META 07-20; VST 07-21) — 3/3.** No new position is permitted today regardless of setup quality; the cap, not conviction, is the binding constraint. Staying in cash today is a forced, not a discretionary, decision — correctly documented rather than worked around.
+
+**Step 7 — plan:** **No trades today — weekly new-position cap (3/3) already reached this week (Mon 2026-07-20 – Fri 2026-07-24); next slot opens Monday 2026-07-27.** No held position triggers a thesis-contract review, earnings blackout, or −7%/circuit-breaker action. All 5 positions HOLD, all 5 trailing stops confirmed live (see stop audit below).
+
+**Stop audit (`orders open`, live Alpaca data):** LLY `e3547b9e` (HWM 1196.29 / stop 1076.661), V `2b0a93ba` (HWM 364.91 / stop 328.419), UNH `225cb079` (HWM 436.945 / stop 393.2505, ratcheted up from 392.625), META `14301809` (HWM 655.84 / stop 590.256), VST `87f49386` (HWM 164.44 / stop 147.996) — all 5 status `new` (live). **5/5 PASS.**
+
+**Planned trades for today:**
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-07-22",
+  "trades": []
+}
+```
+
+**Step 8 — notify:** Telegram sent per playbook — market posture + no trades planned (weekly cap reached).
+**Step 9 — commit:** pending.
