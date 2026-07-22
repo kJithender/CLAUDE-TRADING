@@ -4069,3 +4069,24 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Friday watchdog:** N/A — today is Tuesday.
 - **Monthly/quarterly housekeeping:** N/A — not the first trading day of the month, not a dividend-quarter mid-month check.
 - **Notify:** Telegram sent — EOD summary, 1 trade today (VST re-entry), fresh equity HWM, Bull essentially flat vs SPY since inception.
+
+## 2026-07-22 ~09:36 ET — market-open
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock acquired (was empty), control switch STATUS: ACTIVE, no NOTE/QUERY pending.
+- **Plan check:** Latest `research-log.md` plan block is dated `plan_date: 2026-07-22` (today) — pre-market ran today. Plan: **empty (`trades: []`)** — weekly new-position cap (3/3: UNH, META 07-20; VST 07-21) already reached this week; next slot Monday 2026-07-27. No `EXECUTED:` line present, but nothing to execute.
+- **Market clock:** `is_open: true`, next_close 16:00 ET.
+- **Breaking-news gate:** N/A — no planned trades today.
+- **Account (live, ~09:36 ET):** Equity USD 100,225.31, cash USD 64,260.90 (64.128%), long market value USD 35,964.41 (35.887%). last_equity (07-21 close) USD 100,322.08.
+- **Shock check:** Equity USD 100,225.31 vs last_equity USD 100,322.08 = **−0.0964%** — no shock ✓ (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (07-21 close, from `history 1A 1D`) vs equity USD 100,225.31 — drawdown **0.0965%**. NOT triggered (9.9035pp headroom) ✓.
+- **Positions / −7% rule check (live, ~09:36 ET):**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,166.00, **−0.712%**.
+  - META: 6sh @ avg USD 641.323333, current USD 639.235, **−0.326%**.
+  - UNH: 25sh @ avg USD 422.28, current USD 435.41, **+3.109%**.
+  - V: 22sh @ avg USD 355.058182, current USD 355.575, **+0.146%**.
+  - VST: 25sh @ avg USD 161.21, current USD 163.76, **+1.582%**.
+  - None within range of the −7% cut threshold (that check is midday's job regardless).
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (stop 1,076.661), V `2b0a93ba` (stop 328.419), UNH `225cb079` (stop 393.2505), META `14301809` (stop 590.256), VST `87f49386` (stop 147.996) — all 5 status `new` (live), unchanged since 07-21. **5/5 PASS** — no recreation needed.
+- **Exit reconciliation:** no stop filled since last run — all 5 positions intact at their prior quantities. No new `closed-trades.md` entry needed.
+- **Trades executed today:** none (no plan to execute).
+- **Notify:** Telegram sent — "no trades, weekly new-position cap already used this week" plus quick risk snapshot.

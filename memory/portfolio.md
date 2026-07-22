@@ -21,7 +21,9 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-22 ~08:15 ET (pre-market) — no trades planned: weekly new-position cap (3/3: UNH, META 07-20; VST 07-21) already reached this week, next slot Monday 2026-07-27. Equity USD 100,272.61, drawdown 0.049% off HWM USD 100,322.08 (not triggered), no intraday shock; 5/5 stops confirmed live; all 5 positions HOLD, no thesis contracts due/triggered; Iran/oil risk-off tape re-intensifying (Brent back above USD 92) but no held-name thesis break.
+**Last updated:** 2026-07-22 ~09:36 ET (market-open) — no trades placed (pre-market plan was empty, weekly new-position cap 3/3 already reached this week). Equity USD 100,225.31, drawdown 0.097% off HWM USD 100,322.08 (not triggered), no intraday shock (−0.0964%); 5/5 stops confirmed live, unchanged; all 5 positions HOLD, none near −7% threshold (LLY −0.712%, META −0.326%, UNH +3.109%, V +0.146%, VST +1.582%).
+
+**Prior update:** 2026-07-22 ~08:15 ET (pre-market) — no trades planned: weekly new-position cap (3/3: UNH, META 07-20; VST 07-21) already reached this week, next slot Monday 2026-07-27. Equity USD 100,272.61, drawdown 0.049% off HWM USD 100,322.08 (not triggered), no intraday shock; 5/5 stops confirmed live; all 5 positions HOLD, no thesis contracts due/triggered; Iran/oil risk-off tape re-intensifying (Brent back above USD 92) but no held-name thesis break.
 
 **Prior update:** 2026-07-21 ~15:51 ET (close) — EOD: equity USD 100,320.54, fresh HWM (new high, surpassing 07-13's USD 100,218.48); Bull +0.321% since inception vs SPY +0.360% = −0.040pp (essentially flat); 1 trade today (BUY VST); 5/5 stops confirmed live; no exits, no reconciliation needed
 
