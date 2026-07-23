@@ -4132,3 +4132,23 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Sector exposure:** Healthcare (LLY+UNH) 20.088%, Financials (V) 7.699%, Communication Services (META) 3.642%, Energy/Utilities (VST) 4.179%, cash 64.390% — all well within the 60% sector cap.
 - **Trades executed today:** none (plan was empty — weekly new-position cap already used this week).
 - **Notify:** Telegram sent — no trades (cap already used), META flagged as today's weak spot on the JPMorgan downgrade, 5/5 stops confirmed live.
+
+## 2026-07-23 ~12:36 ET — midday
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market clock:** `is_open: true`, next_close 16:00 ET.
+- **Account (live, ~12:36 ET):** Equity USD 99,737.40, cash USD 64,260.90 (64.427%), long market value USD 35,476.50 (35.567%). Account endpoint's `last_equity` field again returned an anomalous "0" this pull (same recurring data quirk) — used `portfolio.md`'s recorded 07-22 close (USD 99,947.32) as the shock-check reference instead.
+- **Shock check:** equity USD 99,737.40 vs last known close USD 99,947.32 (07-22) = **−0.2100%** — no shock ✓ (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (07-21 close, from `history 1A 1D`) vs equity USD 99,737.40 — drawdown **0.5828%**. NOT triggered (9.4172pp headroom) ✓.
+- **Positions / −7% rule check (live, ~12:36 ET):**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,181.29, **+0.590%**.
+  - META: 6sh @ avg USD 641.323333, current USD 601.815, **−6.162%** (intraday −4.043%) — closest to the −7% cut threshold of any position, but still inside it; no action per rule (cut only if >7% below entry).
+  - UNH: 25sh @ avg USD 422.28, current USD 422.14, **−0.033%**.
+  - V: 22sh @ avg USD 355.058182, current USD 350.32, **−1.334%**.
+  - VST: 25sh @ avg USD 161.21, current USD 166.19, **+3.089%**.
+  - None within range of the −7% cut threshold. None near the +15% tighten threshold.
+- **News-scan gate:** triggered for META (down >3% from entry). WebSearch "META stock news today July 23 2026" found: shares down (Benzinga/TradingKey report −2.76% to −3.87% intraday reads) on renewed AI-capex-ROI anxiety ahead of Q2 earnings (2026-07-29, EPS est. USD 7.18, revenue est. USD 60.22B) — specifically scrutiny of the raised FY26 capex guide (USD 125–145B) with no near-term monetization clarity. This is the same capex-skepticism narrative as yesterday's JPMorgan downgrade, not a new company-specific break. Notably, analyst price targets were *raised* this week (Raymond James to USD 850, Wells Fargo to USD 835, Rothschild & Co to USD 1,000, all 07-21) — sentiment/valuation compression ahead of earnings, not deteriorating fundamentals. **Read as temporary pre-earnings noise, not a thesis break — hold.**
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,196.29/stop 1,076.661), V `2b0a93ba` (HWM 364.91/stop 328.419), UNH `225cb079` (HWM 436.945/stop 393.2505), META `14301809` (HWM 655.84/stop 590.256), VST `87f49386` (HWM 167.87/stop 151.083, ratcheted up from 167.6954/150.92586) — all 5 status `new` (live), quantities match positions. **5/5 PASS** — no recreation needed.
+- **Exit reconciliation:** no stop filled since last run — all 5 positions intact at their prior quantities. No new `closed-trades.md` entry needed.
+- **Action:** none — no positions cut, no stops tightened, no new positions (midday never opens new ones). META is the name to watch: at −6.162% it is within ~0.84pp of the −7% cut threshold, and its 07-27 thesis-contract review_by (2 trading days before the 07-29 earnings) is now only 2 trading days away — pre-market on 07-27 must make an explicit hold/trim/exit call, factoring in today's compression.
+- **Notify:** Telegram sent — all positions within range (META closest to −7% at −6.16%, thesis-contract review_by still on track for 07-27), 5/5 stops confirmed live, no action.
