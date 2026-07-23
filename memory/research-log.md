@@ -5117,4 +5117,64 @@ No trades planned.
 ```
 
 **Step 8 — notify:** Telegram sent per playbook — market posture + no trades planned (weekly cap reached).
+
+## 2026-07-23 ~08:15 ET — PRE-MARKET
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock:** `_lock` was free (`{}`); wrote lock for this run (expires ~08:23 ET).
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:` or `QUERY:` pending in `control.md`. `CROSS_BULL_LEARNING:` blank.
+- **Account (live, ~08:13 ET):** Equity USD 99,849.96, cash USD 64,260.90 (64.354%), long market value USD 35,589.06 (35.646%). last_equity field on the account endpoint returned an anomalous "0" this pull (a data quirk, not a real balance) — used `portfolio.md`'s recorded 07-22 close (USD 99,947.32) as the reference for the intraday shock check instead.
+
+**Step 2 — portfolio sync (positions, live Alpaca data ~08:13 ET):**
+
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | % of equity |
+|--------|-----|-----------|---------|-----------------|--------------|
+| LLY | 8 | 1174.35625 | 1156.00 | −USD 146.85 (−1.563%) | 9.263% |
+| V | 22 | 355.058182 | 353.21 | −USD 40.66 (−0.521%) | 7.782% |
+| UNH | 25 | 422.28 | 429.03 | +USD 168.75 (+1.598%) | 10.741% |
+| META | 6 | 641.323333 | 615.99 | −USD 152.00 (−3.950%) | 3.701% |
+| VST | 25 | 161.21 | 165.95 | +USD 118.50 (+2.940%) | 4.155% |
+
+Sector exposure: Healthcare (LLY+UNH) 20.004%, Financials (V) 7.782%, Communication Services (META) 3.701%, Energy/Utilities (VST) 4.155%, Cash 64.354%. All well within the 60% sector cap.
+
+**Step 3 — risk posture check:**
+- **Drawdown circuit breaker:** `history 1A 1D` high-water mark USD 100,322.08 (2026-07-21 close — the API's last daily bar still reflects 07-21; no 07-22 bar has posted yet, consistent with the standing pre-open lag noted in past runs). Current live equity USD 99,849.96 → drawdown **0.4706%**. NOT triggered (9.5294pp headroom) ✓.
+- **Intraday shock check:** equity USD 99,849.96 vs last known close USD 99,947.32 (07-22, per `portfolio.md`, since the account endpoint's `last_equity` field returned a bad "0" this pull) = **−0.0974%** — no shock ✓ (threshold −4%).
+- **Sector cap:** no group above 60% (see table above) ✓.
+
+**Step 3b — thesis contract review:** LLY (review_by 2026-08-05), V (review_by 2026-07-28), UNH (review_by 2026-08-17), META (review_by 2026-07-27), VST (review_by 2026-08-05) — none due today, none triggered. Verified META's invalidation level specifically given today's price weakness: fresh Alpaca bars (`start=2026-04-20&end=2026-07-23`, feed=iex) put the 50-day SMA at **USD 606.06** (through 07-22 close USD 627.15, +3.48% above); today's live price USD 615.99 is still **+1.64% above** the 50-day SMA — invalidation ("closes back below the 50-day SMA") has **not** triggered, but the buffer has compressed hard from +6.87% at entry (07-20) to roughly +1.6-3.5% now. HOLD all five, no contract renewal needed (none expired).
+
+**Step 3c — Monday-only conviction review:** N/A — today is Thursday.
+
+**Step 4 — research (WebSearch, all facts dated 2026-07-23 unless noted):**
+- **Market posture:** S&P 500 futures edging slightly lower pre-market on rising bond yields and firm energy prices. 10yr Treasury **~4.66-4.68%**, near a 19-month high and **trending toward (not yet past) the 4.75% new-buy gate** — worth watching closely at every future pre-market; today it remains below the gate. Initial jobless claims fell to 208K (10-week low), a strong print reducing near-term rate-cut odds, landing inside the Fed's blackout period ahead of the July 28-29 FOMC. Crude inventories showed a surprise 2.6M-barrel build; US SPR at a 43-year low. Overall mood: cautious/mildly risk-off on higher-for-longer yields plus energy jitters. [Yahoo Finance, CNBC, TradingEconomics, US News]
+- **Iran conflict/oil (Active Macro Watch — escalated further, not stabilized):** Brent crude up ~4.6% to USD 98.44/bbl (highest since late May), WTI up ~3.8% to USD 90.14/bbl — both materially above the USD 92 (Brent) reference from 07-22. US carried out a 12th consecutive day of strikes on Iranian targets; Houthis (Iran-backed) claimed attacks on two Saudi oil tankers in the Red Sea after threatening a blockade, opening a second shipping-risk front alongside the Strait of Hormuz. Both Washington and Tehran are downplaying peace-talk prospects. **Ceasefire hopes confirmed not holding — this remains an active, worsening, unresolved risk-off catalyst.** [CNBC, DNYUZ]
+- **LLY (what changed since yesterday):** nothing material. Novo Nordisk ad-claims lawsuit (filed 07-21) has no new developments. AtaiBeckley acquisition still pending close (Q3 2026), no update since the 07-16 announcement. Routine USD 1.73 dividend declared (ex-date 08-14) — not thesis-relevant. Earnings still confirmed 2026-08-05. Thesis unchanged.
+- **V (what changed since yesterday):** nothing negative found ahead of the 2026-07-28 (after close) print — confirmed unchanged. Analyst sentiment remains bullish into earnings: 31 Strong Buy / 4 Moderate Buy / 4 Hold of 39 analysts, average PT USD 401.87 (~15% upside). Q3 FY26 consensus EPS ~USD 3.22 (+8.05% YoY); Visa has beaten EPS estimates for 4 straight quarters. No new negative pre-earnings chatter. Thesis unchanged; earnings is now **3 trading days out** (Fri 24, Mon 27, Tue 28) — still outside the 2-trading-day blackout window, but close; the 07-27 pre-market/midday routines should watch for the window closing.
+- **UNH (what changed since yesterday):** nothing material — one Trefis commentary piece (07-20) flagged UNH's P/E (~32.1x) near the top of its own historical range with limited room for disappointment, a valuation-caution note rather than new fundamental news. Next earnings still far out (2026-10-27). Thesis unchanged.
+- **META (what changed since yesterday — real, negative, and worth flagging):** JPMorgan analyst Doug Anmuth downgraded META from Overweight to Neutral, cutting the price target from USD 825 to USD 725, citing intensifying full-stack AI competition and a harder-than-modeled path to AI-capex ROI beyond advertising. Today's ~2.5% pre-earnings decline is being attributed to pre-earnings jitters over the raised FY26 capex guidance (USD 125-145B, up from USD 115-135B, blamed on higher component pricing) plus doubts about AI monetization outside advertising — Wedbush has also been publicly favoring AMZN over META as the "superior AI hyperscaler" pick. This is a continuation of an existing AI-capex-ROI-skepticism narrative, not a brand-new adverse event, but the JPMorgan downgrade itself is new information not previously logged. **No thesis-contract action is due today** (review_by is 2026-07-27, 2 trading days before earnings, and neither the invalidation price level nor the review date has triggered — see Step 3b), but this downgrade and the compressing 50-day-SMA buffer should weigh directly on that 07-27 hold/trim/exit decision. Earnings 2026-07-29 confirmed unchanged, now 4 trading days out.
+- **VST (what changed since yesterday):** nothing material. Morgan Stanley trimmed its PT slightly to USD 210 from USD 212 (kept Overweight); Seaport raised its PT to USD 230 from USD 227 (kept Buy) — small, offsetting analyst tweaks, net sentiment still constructive. No Cogentrix/Helix-specific news today. Earnings confirmed 2026-08-07 (unchanged). Thesis unchanged.
+- **Earnings calendar reconfirmed:** V 2026-07-28 (after close, unchanged), META 2026-07-29 (after close, unchanged) — both independently reconfirmed via search today.
+
+**Step 5 — earnings-window rule:** No held name reports within 2 trading days today (V is 3 trading days out, META is 4). No blackout applies; no forced hold/trim/exit decision required beyond the standing thesis-contract holds in Step 3b. (Flagging for the record: V's window will close as of Monday 07-27's pre-market — that run must make the explicit call.)
+
+**Step 6 — cash-drag check:** Cash 64.354%, well above the 10-20% target band for a 5-position portfolio. However, **this week's 3-new-position cap is already used (UNH, META 07-20; VST 07-21) — 3/3.** No new position is permitted today regardless of setup quality; the cap, not conviction or the elevated cash level, is the binding constraint today. This is a forced, not a discretionary, decision.
+
+**Step 7 — plan:** **No trades today — weekly new-position cap (3/3) already reached this week (Mon 2026-07-20 – Fri 2026-07-24); next slot opens Monday 2026-07-27.** No held position triggers a thesis-contract review, earnings blackout, or −7%/circuit-breaker action today. All 5 positions HOLD. Flag for Monday 07-27 pre-market: (1) V's earnings window closes that day (1 trading day out from the 07-28 print) — force the hold/trim/exit call then if not already handled; (2) META's review_by (2026-07-27) lands that same day and must weigh the JPMorgan downgrade, the compressed 50-day-SMA buffer, and the 07-29 earnings proximity explicitly.
+
+**Stop audit (`orders open`, live Alpaca data):** LLY `e3547b9e` (HWM 1196.29 / stop 1076.661), V `2b0a93ba` (HWM 364.91 / stop 328.419), UNH `225cb079` (HWM 436.945 / stop 393.2505), META `14301809` (HWM 655.84 / stop 590.256), VST `87f49386` (HWM 167.81 / stop 151.029, ratcheted up from 167.6954/150.92586) — all 5 status `new` (live). **5/5 PASS.**
+
+**Planned trades for today:**
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-07-23",
+  "trades": []
+}
+```
+
+**Step 8 — notify:** Telegram sent per playbook — market posture (Iran/oil escalation, 10yr approaching the 4.75% gate) + no trades planned (weekly cap reached) + META downgrade flag.
+**Step 9 — commit:** pending.
 **Step 9 — commit:** pending.
