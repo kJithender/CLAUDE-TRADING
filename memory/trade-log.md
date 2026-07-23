@@ -4110,3 +4110,25 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Exit reconciliation:** no stop filled since last run — all 5 positions intact at their prior quantities. No new `closed-trades.md` entry needed.
 - **Action:** none — no positions cut, no stops tightened, no new positions (midday never opens new ones).
 - **Notify:** Telegram sent — all positions within range, 5/5 stops confirmed live, no action.
+
+## 2026-07-23 ~09:37 ET — market-open
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock acquired (was empty), control switch STATUS: ACTIVE, no NOTE/QUERY pending.
+- **Plan check:** Latest `research-log.md` plan block is dated `plan_date: 2026-07-23` (today) — pre-market ran today. Plan: **empty (`trades: []`)** — weekly new-position cap (3/3: UNH, META 07-20; VST 07-21) already reached this week; next slot Monday 2026-07-27. No `EXECUTED:` line present, but nothing to execute.
+- **Market clock:** `is_open: true`, next_close 16:00 ET.
+- **Breaking-news gate:** N/A — no planned trades today.
+- **Account (live, ~09:37 ET):** Equity USD 99,799.47, cash USD 64,260.90 (64.390%), long market value USD 35,538.57 (35.610%). Note: account endpoint's `last_equity` field returned an anomalous "0" this pull (same data quirk noted in this morning's pre-market) — used `portfolio.md`'s recorded 07-22 close (USD 99,947.32) as the shock-check reference instead.
+- **Shock check:** Equity USD 99,799.47 vs last known close USD 99,947.32 (07-22) = **−0.1479%** — no shock ✓ (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (07-21 close, from `history 1A 1D`) vs equity USD 99,799.47 — drawdown **0.5209%**. NOT triggered (9.4791pp headroom) ✓.
+- **Positions / −7% rule check (live, ~09:37 ET):**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,165.88, **−0.722%**.
+  - V: 22sh @ avg USD 355.058182, current USD 349.2701, **−1.630%**.
+  - UNH: 25sh @ avg USD 422.28, current USD 428.82, **+1.549%**.
+  - META: 6sh @ avg USD 641.323333, current USD 605.7807, **−5.542%** — worst position today, tracking the JPMorgan downgrade (Overweight→Neutral, PT USD 825→725) flagged in this morning's pre-market plus broad pre-earnings AI-capex-ROI jitters; not within the −7% cut range yet (that check is midday's job regardless), but the 07-27 review_by decision (2 trading days before META's 07-29 earnings) needs to weigh this directly.
+  - VST: 25sh @ avg USD 161.21, current USD 166.84, **+3.492%**.
+  - None within range of the −7% cut threshold.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,196.29/stop 1,076.661), V `2b0a93ba` (HWM 364.91/stop 328.419), UNH `225cb079` (HWM 436.945/stop 393.2505), META `14301809` (HWM 655.84/stop 590.256), VST `87f49386` (HWM 167.81/stop 151.029) — all 5 status `new` (live), quantities match positions (8/22/25/6/25). **5/5 PASS** — no recreation needed.
+- **Exit reconciliation:** no stop filled since last run — all 5 positions intact at their prior quantities. No new `closed-trades.md` entry needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 20.088%, Financials (V) 7.699%, Communication Services (META) 3.642%, Energy/Utilities (VST) 4.179%, cash 64.390% — all well within the 60% sector cap.
+- **Trades executed today:** none (plan was empty — weekly new-position cap already used this week).
+- **Notify:** Telegram sent — no trades (cap already used), META flagged as today's weak spot on the JPMorgan downgrade, 5/5 stops confirmed live.

@@ -5176,5 +5176,6 @@ No trades planned.
 ```
 
 **Step 8 — notify:** Telegram sent per playbook — market posture (Iran/oil escalation, 10yr approaching the 4.75% gate) + no trades planned (weekly cap reached) + META downgrade flag.
-**Step 9 — commit:** pending.
-**Step 9 — commit:** pending.
+**Step 9 — commit:** done.
+
+EXECUTED: 2026-07-23T13:39:00Z — No trades (plan empty: weekly new-position cap 3/3 already reached this week, next slot Monday 07-27). Market-open re-check: equity USD 99,799.47 vs 07-22 close USD 99,947.32 (account's own `last_equity` field returned an anomalous "0" this pull, used `portfolio.md`'s recorded prior close instead) = -0.1479% (no shock, threshold -4%); drawdown 0.5209% vs HWM USD 100,322.08 (not triggered, breaker at -10%); LLY -0.722%, V -1.630%, UNH +1.549%, META -5.542% (weakest, JPMorgan downgrade to Neutral/PT 725), VST +3.492% — none within -7% cut range (midday's job regardless); sector exposure Healthcare 20.088%, Financials 7.699%, Communication Services 3.642%, Energy/Utilities 4.179%, cash 64.390% (all within 60% cap); stop audit 5/5 PASS (LLY e3547b9e, V 2b0a93ba, UNH 225cb079, META 14301809, VST 87f49386, all confirmed live in `orders open`, quantities match positions). All guardrails ✓.
