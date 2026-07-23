@@ -4152,3 +4152,28 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Exit reconciliation:** no stop filled since last run — all 5 positions intact at their prior quantities. No new `closed-trades.md` entry needed.
 - **Action:** none — no positions cut, no stops tightened, no new positions (midday never opens new ones). META is the name to watch: at −6.162% it is within ~0.84pp of the −7% cut threshold, and its 07-27 thesis-contract review_by (2 trading days before the 07-29 earnings) is now only 2 trading days away — pre-market on 07-27 must make an explicit hold/trim/exit call, factoring in today's compression.
 - **Notify:** Telegram sent — all positions within range (META closest to −7% at −6.16%, thesis-contract review_by still on track for 07-27), 5/5 stops confirmed live, no action.
+
+## 2026-07-23 ~15:50 ET — CLOSE
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock acquired (`_lock` was `{}`), `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Half-day/dedup check:** `next_close` 16:00 ET (not a half-day). No existing 2026-07-23 row in `performance.csv` — appending fresh, no dedup needed.
+- **Account (live, ~15:50 ET):** Equity USD 99,885.20, cash USD 64,260.90 (64.336%), long market value USD 35,624.30 (35.664%). Account endpoint's `last_equity` field again returned an anomalous "0" this pull (same recurring data quirk) — used `portfolio.md`'s recorded 07-22 close (USD 99,947.32) as the shock-check reference instead.
+- **Positions (close, ~15:50 ET):**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,183.15, **+0.749%** (+USD 70.35 unrealized).
+  - META: 6sh @ avg USD 641.323333, current USD 604.83, **−5.690%** (−USD 218.96 unrealized).
+  - UNH: 25sh @ avg USD 422.28, current USD 423.755, **+0.349%** (+USD 36.88 unrealized).
+  - V: 22sh @ avg USD 355.058182, current USD 350.85, **−1.185%** (−USD 92.58 unrealized).
+  - VST: 25sh @ avg USD 161.21, current USD 168.70, **+4.646%** (+USD 187.25 unrealized).
+  - None near the −7% threshold; no exits today. No reconciliation needed vs `closed-trades.md` (quantities unchanged from midday: 8/6/25/22/25).
+- **Stop audit:** LLY `e3547b9e` (HWM 1,196.29 / stop 1,076.661), V `2b0a93ba` (HWM 364.91 / stop 328.419), UNH `225cb079` (HWM 436.945 / stop 393.2505), META `14301809` (HWM 655.84 / stop 590.256), VST `87f49386` (HWM 169.06 / stop 152.154, ratcheted up from 167.87/151.083) — all 5 confirmed live via `orders open`. 5/5 PASS.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) vs equity USD 99,885.20 — drawdown **0.4355%**. NOT triggered (9.5645pp headroom).
+- **Intraday shock check:** equity USD 99,885.20 vs last known close USD 99,947.32 (07-22) = **−0.0622%** — no shock (threshold −4%).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.083%, Financials (V) 7.728%, Communication Services (META) 3.633%, Energy/Utilities (VST) 4.222%, cash 64.336% — all within the 60% cap.
+- **Performance vs SPY:** SPY `dailyBar.c` pulled ~15:50 ET (10 min pre-close, consistent with standing practice) USD 735.91 vs 07-22 recorded close USD 747.85 → SPY today **−1.5966%**. Bull today (vs 07-22 recorded close USD 99,947.32) **−0.0622%** → Bull **beat** SPY today by **+1.5344pp**. Since inception (2026-07-01, USD 100,000.00 / SPY 745.665): Bull **−0.1148%** vs SPY (735.91 vs 745.665) **−1.3082%** → gap **+1.1934pp — Bull's since-inception lead over SPY widens further** (from +0.187pp at last Friday's close).
+- **Market context:** Sharp broad selloff — S&P 500 −1.4%, Nasdaq −2.3% (briefly below 25,000), Dow −541pts. Brent crude topped USD 100/bbl on the escalating Iran war, pushing Treasury yields to 2026 highs; Alphabet −6.5% (raised capex forecast) and Tesla −14% (profit miss) reignited AI-capex-ROI anxiety, dragging the Magnificent-Seven ETF down 4.4%, its worst day of the year. No thesis-threatening news for any held name — Bull's ~64% cash + non-mega-cap-tech book (LLY, V, UNH, META small starter, VST) absorbed almost none of the drop. See dated lesson in `lessons.md`.
+- **Race scoreboard:** Bull −0.115% since inception (2026-07-01) vs SPY −1.308% (same baseline) | AGGRO last known −7.123% since its own 2026-06-04 inception (**STALE — `memory/aggressive/portfolio.md` unchanged since 2026-06-23 EOD, now 30 days stale / a full calendar month**, up from 29 days yesterday; already escalated repeatedly per standing lessons — tomorrow's (07-24) weekly review is the primary escalation vehicle, no new action this run beyond noting the milestone).
+- **Performance history:** appended `2026-07-23,bull,99885.20,64260.90,735.91` to `performance.csv`.
+- **Friday watchdog:** N/A — today is Thursday.
+- **Monthly/quarterly housekeeping:** N/A — not the first trading day of the month, not a dividend-quarter mid-month check.
+- **Notify:** Telegram sent — EOD summary, 0 trades today, Bull beat SPY by +1.53pp today on a sharp broad selloff, since-inception lead vs SPY now +1.19pp, race scoreboard, AGGRO staleness milestone noted.
+- **Commit:** done.
