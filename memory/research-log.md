@@ -5179,3 +5179,63 @@ No trades planned.
 **Step 9 — commit:** done.
 
 EXECUTED: 2026-07-23T13:39:00Z — No trades (plan empty: weekly new-position cap 3/3 already reached this week, next slot Monday 07-27). Market-open re-check: equity USD 99,799.47 vs 07-22 close USD 99,947.32 (account's own `last_equity` field returned an anomalous "0" this pull, used `portfolio.md`'s recorded prior close instead) = -0.1479% (no shock, threshold -4%); drawdown 0.5209% vs HWM USD 100,322.08 (not triggered, breaker at -10%); LLY -0.722%, V -1.630%, UNH +1.549%, META -5.542% (weakest, JPMorgan downgrade to Neutral/PT 725), VST +3.492% — none within -7% cut range (midday's job regardless); sector exposure Healthcare 20.088%, Financials 7.699%, Communication Services 3.642%, Energy/Utilities 4.179%, cash 64.390% (all within 60% cap); stop audit 5/5 PASS (LLY e3547b9e, V 2b0a93ba, UNH 225cb079, META 14301809, VST 87f49386, all confirmed live in `orders open`, quantities match positions). All guardrails ✓.
+
+## 2026-07-24 ~08:14 ET — PRE-MARKET
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock:** `_lock` was free (`{}`); wrote lock for this run (expires ~08:22 ET).
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:` or `QUERY:` pending in `control.md`. `CROSS_BULL_LEARNING:` blank.
+- **Account (live, ~08:13 ET):** Equity USD 99,957.68, cash USD 64,260.90 (64.288%), long market value USD 35,696.78 (35.712%), last_equity USD 99,933.16 (07-23 close, this pull looked sane — no anomalous "0" this time).
+
+**Step 2 — portfolio sync (positions, live Alpaca data ~08:13 ET):**
+
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | % of equity |
+|--------|-----|-----------|---------|-----------------|--------------|
+| LLY | 8 | 1174.35625 | 1180.3896 | +USD 48.27 (+0.514%) | 9.448% |
+| META | 6 | 641.323333 | 605.40 | −USD 215.54 (−5.601%) | 3.634% |
+| UNH | 25 | 422.28 | 425.00 | +USD 68.00 (+0.644%) | 10.630% |
+| V | 22 | 355.058182 | 353.33 | −USD 38.02 (−0.487%) | 7.777% |
+| VST | 25 | 161.21 | 168.92 | +USD 192.75 (+4.783%) | 4.224% |
+
+Sector exposure: Healthcare (LLY+UNH) 20.078%, Financials (V) 7.777%, Communication Services (META) 3.634%, Energy/Utilities (VST) 4.224%, Cash 64.288%. All well within the 60% sector cap.
+
+**Step 3 — risk posture check:**
+- **Drawdown circuit breaker:** `history 1M 1D` high-water mark USD 100,322.08 (2026-07-21 close, unchanged). Current live equity USD 99,957.68 → drawdown **0.3633%**. NOT triggered (9.6367pp headroom) ✓.
+- **Intraday shock check:** equity USD 99,957.68 vs account's own `last_equity` USD 99,933.16 (07-23 close — sane value this pull, no anomaly) = **+0.0245%** — no shock ✓ (threshold −4%).
+- **Sector cap:** no group above 60% (see table above) ✓.
+
+**Step 3b — thesis contract review:** LLY (review_by 2026-08-05), UNH (review_by 2026-08-17), VST (review_by 2026-08-05) — none due today, none triggered, thesis unchanged for all three per today's research below. META (review_by 2026-07-27) and V (review_by 2026-07-28) are not yet due either, but see Step 5 below — V's earnings (07-28) is now exactly 2 trading days out from today, inside the earnings-window rule, so an explicit hold/trim decision is made today rather than waiting for Monday.
+
+**Step 3c — Monday-only conviction review:** N/A — today is Friday.
+
+**Step 4 — research (WebSearch, all facts dated 2026-07-24 unless noted):**
+- **Market posture:** Mixed/cautiously constructive pre-market — S&P 500 futures +0.2%, Dow futures +0.4%, but earlier session action showed S&P/Nasdaq contracts down ~0.4% on rising borrowing costs and oil-driven inflation pressure. Polymarket implied a 66% probability of a higher open today despite the crosscurrents. **10yr Treasury rose to 4.71%** — a 4th consecutive rising session, the highest level since January 2025, and now trending very close to (though technically still just below) the **4.75% new-buy gate**. Crude inventories rose 2.0M barrels, keeping inflation worries alive. [TradingEconomics/CNBC via search]
+- **Iran/oil (Active Macro Watch — escalating further, not resolving):** Brent crude trading near **USD 100-101/bbl** after Iran rejected a US ceasefire offer; Houthi attacks on tankers in the Red Sea opened a second shipping-risk front alongside the Strait of Hormuz, and Iran-backed forces have threatened to blockade Saudi shipping. Trump has threatened to extend US strikes on Iran. This is now day 13+ of an escalating, unresolved conflict with no peace-talk progress — treat as an active, worsening risk-off catalyst, consistent with the standing macro watch. [Al Jazeera, Bloomberg, PoliticalWire]
+- **LLY (what changed since yesterday):** nothing materially new — the Novo Nordisk misleading-ad-claims lawsuit (filed 07-21) remains the only overhang, no new developments reported. Thesis (Medicare Bridge live, AtaiBeckley acquisition pending, Retevmo approval, Q1 revenue +55.5% YoY beat) unchanged and strongly intact. Earnings confirmed 2026-08-05 (unchanged).
+- **META (what changed since yesterday):** nothing materially new overnight — price essentially flat (USD 605.40 vs yesterday's USD 604.83 close). One forward-looking piece (Motley Fool, 07-22) speculates Meta could announce a cloud-computing business at its 07-29 earnings — an unconfirmed catalyst, not new information to act on. No fresh downgrades or negative catalysts found today beyond the standing JPMorgan Neutral/PT-725 call already logged 07-23. Thesis unchanged; review_by 2026-07-27 (Monday) still 1 trading day away — will be handled then.
+- **UNH (what changed since yesterday):** incrementally positive — confirmation that UnitedHealthcare will eliminate prior-authorization requirements for 30% of services now, with a further 30% cut targeted by end of 2026; read as a real, company-specific goodwill/utilization-sentiment catalyst reinforcing the managed-care thesis, not just macro tailwind. Stock +3.02% on 07-21 on the back of the Q2 beat-and-raise and stable Medicare Advantage reimbursement sentiment. Thesis unchanged, strengthening if anything. Earnings still 2026-10-27 (far out).
+- **V (what changed since yesterday — earnings-window relevant):** No negative news. Visa's stablecoin platform + AI Financial Assistant rollout continues to draw bullish coverage; Barclays reiterated Buy in early July; stock +10.31% over the trailing 4 weeks. Earnings confirmed **2026-07-28** (after close) — **today, 07-24, is exactly 2 trading days out** (Mon 07-27, Tue 07-28), which puts V inside the earnings-window rule a session earlier than previously logged (07-23 pre-market called it "3 trading days out"). Making the explicit hold/trim decision now rather than deferring to Monday: thesis is intact, sentiment is unambiguously bullish (31 Strong Buy / 4 Moderate Buy / 4 Hold of 39 analysts, no dissenting signal), and there is no company-specific reason to trim ahead of the print. **Decision: HOLD full 22-share position through earnings, no trim.** Acknowledged risk: trailing stops do not protect against overnight earnings gaps (per the 2026-06-04 AVGO lesson) — the 10% trailing stop (stop USD 328.419, HWM USD 364.91) remains the only downside protection if the print disappoints. review_by renewed to 2026-07-29 (the trading day immediately after the print, to force a fresh post-earnings read).
+- **VST (what changed since yesterday):** nothing material — stock has now gained 5 consecutive sessions, closing 07-23 at USD 168.98 (+1.34% that day). 13-analyst Buy consensus intact, PT USD 232.23. Position is +4.783% unrealized. No Cogentrix/Helix-specific news today. Earnings confirmed 2026-08-07 (unchanged, 12 trading days out). Thesis unchanged.
+- **Earnings calendar reconfirmed:** V 2026-07-28 (after close, unchanged), META 2026-07-29 (after close, unchanged), VST 2026-08-07 (unchanged), LLY 2026-08-05 (unchanged), UNH 2026-10-27 (unchanged) — all independently reconfirmed via search today.
+
+**Step 5 — earnings-window rule:** No new buy is being considered today regardless (see Step 6 — weekly cap already used), so the "no new buy within 2 trading days of earnings" clause is moot for today's decision set. For **held** names: **V now falls inside the 2-trading-day window** (earnings 07-28, today is 2 trading days out) — explicit hold decision made above (HOLD, no trim, thesis intact, stop is the only downside protection against gap risk). META remains 3 trading days out (earnings 07-29) — not yet inside the window; its review_by (07-27) is 1 trading day away and will force the same explicit call then.
+
+**Step 6 — cash-drag check:** Cash 64.288%, well above the 25-40% target band in `strategy.md`. However, **this week's 3-new-position cap is already used (BUY UNH 07-20, BUY META 07-20, BUY VST 07-21) — 3/3.** No new position is permitted today regardless of setup quality or elevated cash — the cap, not conviction, is the binding constraint. This is now the fourth consecutive session this week citing the same forced (not discretionary) reason; next slot opens Monday 2026-07-27, where a fresh, un-gated buy decision should be made rather than deferring again by default.
+
+**Step 7 — plan:** **No trades today — weekly new-position cap (3/3) already reached this week (Mon 2026-07-20 – Fri 2026-07-24); next slot opens Monday 2026-07-27.** V gets an explicit hold decision today (earnings-window rule, see Step 5); no other held position triggers a thesis-contract review, blackout action, or −7%/circuit-breaker cut. All 5 positions HOLD; all 5 trailing stops confirmed live (see stop audit below).
+
+**Stop audit (`orders open`, live Alpaca data):** LLY `e3547b9e` (HWM 1196.29 / stop 1076.661), V `2b0a93ba` (HWM 364.91 / stop 328.419), UNH `225cb079` (HWM 436.945 / stop 393.2505), META `14301809` (HWM 655.84 / stop 590.256), VST `87f49386` (HWM 169.06 / stop 152.154) — all 5 status `new` (live), quantities match positions. **5/5 PASS.**
+
+**Planned trades for today:**
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-07-24",
+  "trades": []
+}
+```
+
+**Step 8 — notify:** Telegram sent per playbook — market posture (10yr yield 4.71% nearing the 4.75% gate, Iran/oil escalation continuing, mixed futures) + no trades planned (weekly cap reached) + V hold-through-earnings decision flagged.
+**Step 9 — commit:** done.

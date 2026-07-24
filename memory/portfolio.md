@@ -21,7 +21,9 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-23 ~15:50 ET (close) — EOD: equity USD 99,885.20, down −0.0622% today (last_equity again returned anomalous "0", used recorded 07-22 close USD 99,947.32 as reference); Bull −0.1148% since inception (2026-07-01) vs SPY −1.3082% (735.91 vs anchor 745.665) = **+1.1934pp gap — Bull further extends its lead over SPY** (up from +0.187pp last Friday's close, essentially flat at midweek). A sharp broad market selloff hit today: Brent crude topped USD 100/bbl on the escalating Iran war, and Alphabet (−6.5%) / Tesla (−14%) earnings reignited AI-capex-ROI anxiety — S&P 500 −1.4%, Nasdaq −2.3% (briefly below 25,000). Bull's ~64% cash and non-mega-cap-tech book absorbed almost none of it, the clearest demonstration yet of the cash cushion's protective value this cycle. 0 trades today (weekly cap already used); 5/5 stops confirmed live, no reconciliation needed (no exits); drawdown 0.4355% off HWM USD 100,322.08 (9.5645pp headroom, not triggered); no intraday shock. Full detail below.
+**Last updated:** 2026-07-24 ~08:14 ET (pre-market) — plan: no trades (weekly new-position cap 3/3 already reached this week: UNH/META 07-20, VST 07-21; next slot Monday 07-27). Equity USD 99,957.68, cash USD 64,260.90 (64.288%), long MV USD 35,696.78 (35.712%). Drawdown 0.3633% off HWM USD 100,322.08 (not triggered, 9.6367pp headroom); no intraday shock (+0.0245% vs last_equity USD 99,933.16 — sane value this pull, no anomaly). 5/5 stops confirmed live, unchanged. All 5 positions HOLD (LLY +0.514%, META −5.601%, UNH +0.644%, V −0.487%, VST +4.783%), none near −7%. **V now falls inside the 2-trading-day earnings window** (earnings 07-28) — explicit hold-through-earnings decision made: thesis intact, no negative catalyst, HOLD full position, review_by renewed to 2026-07-29. 10yr Treasury rose to 4.71% (4th straight rising session, highest since Jan 2025), nearing but not yet past the 4.75% new-buy gate. Iran/oil risk-off tape worsening: Iran rejected a US ceasefire offer, Brent ~USD 100-101/bbl, new Red Sea shipping-risk front from Houthi tanker attacks.
+
+**Prior update:** 2026-07-23 ~15:50 ET (close) — EOD: equity USD 99,885.20, down −0.0622% today (last_equity again returned anomalous "0", used recorded 07-22 close USD 99,947.32 as reference); Bull −0.1148% since inception (2026-07-01) vs SPY −1.3082% (735.91 vs anchor 745.665) = **+1.1934pp gap — Bull further extends its lead over SPY** (up from +0.187pp last Friday's close, essentially flat at midweek). A sharp broad market selloff hit today: Brent crude topped USD 100/bbl on the escalating Iran war, and Alphabet (−6.5%) / Tesla (−14%) earnings reignited AI-capex-ROI anxiety — S&P 500 −1.4%, Nasdaq −2.3% (briefly below 25,000). Bull's ~64% cash and non-mega-cap-tech book absorbed almost none of it, the clearest demonstration yet of the cash cushion's protective value this cycle. 0 trades today (weekly cap already used); 5/5 stops confirmed live, no reconciliation needed (no exits); drawdown 0.4355% off HWM USD 100,322.08 (9.5645pp headroom, not triggered); no intraday shock. Full detail below.
 
 **Prior update:** 2026-07-23 ~12:36 ET (midday) — risk check only, no action. Equity USD 99,737.40, drawdown 0.5828% off HWM USD 100,322.08 (not triggered, 9.4172pp headroom), no intraday shock (−0.2100% vs 07-22 close USD 99,947.32 — account `last_equity` again returned anomalous "0", used recorded prior close); 5/5 stops confirmed live (VST ratcheted to stop 151.083); all 5 positions HOLD, none breach −7% (LLY +0.590%, UNH −0.033%, V −1.334%, VST +3.089%, **META −6.162%** — closest to the cut line but still inside it). News scan on META (down >3% from entry) found the drop is broad AI-capex-ROI anxiety ahead of 07-29 earnings, not a company-specific break — analyst PTs were actually raised this week (Raymond James USD 850, Wells Fargo USD 835, Rothschild USD 1,000). META's 07-27 review_by (2 trading days pre-earnings) is now 2 trading days away and must make an explicit hold/trim/exit call, informed by today's compression.
 
@@ -47,16 +49,17 @@ reference but is **not** the live comparison baseline going forward.
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-23 close ~15:50 ET)
+## Account (live Alpaca data, 2026-07-24 pre-market ~08:14 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,885.20 |
-| Cash | $64,260.90 (64.336%) |
-| Long market value | $35,624.30 (35.664%: LLY+V+UNH+META+VST) |
-| Buying power | $64,260.90 |
-| Last equity (Alpaca returned anomalous "0"; used 07-22 close) | $99,947.32 |
+| Equity | $99,957.68 |
+| Cash | $64,260.90 (64.288%) |
+| Long market value | $35,696.78 (35.712%: LLY+V+UNH+META+VST) |
+| Buying power | $356,994.58 |
+| Last equity (sane value this pull) | $99,933.16 |
 
+**Prior (close 07-23 ~15:50 ET):** Equity $99,885.20 | Cash $64,260.90 (64.336%) | Long MV $35,624.30 (35.664%) | Buying power $64,260.90 (last_equity anomaly noted)
 **Prior (midday 07-23 ~12:36 ET):** Equity $99,737.40 | Cash $64,260.90 (64.427%) | Long MV $35,476.50 (35.567%) | Buying power $64,260.90
 **Prior (market-open 07-23 ~09:37 ET):** Equity $99,799.47 | Cash $64,260.90 (64.390%) | Long MV $35,538.57 (35.610%) | Buying power N/A (last_equity anomaly noted)
 **Prior (close 07-22 ~15:51 ET):** Equity $99,947.32 | Cash $64,260.90 (64.297%) | Long MV $35,686.42 (35.703%) | Buying power $356,965.58
@@ -66,27 +69,27 @@ reference but is **not** the live comparison baseline going forward.
 
 ## Open positions
 
-_As of close ~15:50 ET, 2026-07-23:_
+_As of pre-market ~08:14 ET, 2026-07-24:_
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| LLY | 8 | $1,174.35625 | $1,183.15 | +$70.35 (+0.749%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live, unchanged | **A** (thesis intact: Medicare Bridge live, AtaiBeckley deal ~USD 2.8B initial, Retevmo FDA approval; review_by 2026-08-05) |
-| META | 6 | $641.323333 | $604.83 | -$218.96 (-5.690%) | Communication Services | Order 14301809, 10%, HWM $655.84, stop $590.256 — live, unchanged | **A** (recovered slightly off today's intraday low; still tracking broad AI-capex-ROI anxiety pre-earnings (07-29), amplified today by Alphabet's post-earnings −6.5% drop on raised capex guidance; review_by 2026-07-27, now 2 trading days out, forces pre-earnings hold/trim/exit call) |
-| UNH | 25 | $422.28 | $423.755 | +$36.88 (+0.349%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (Q2 beat-and-raise 07-16, PEG 1.73-2.07, GF Value ~30% undervalued; review_by 2026-08-17) |
-| V | 22 | $355.058182 | $350.85 | -$92.58 (-1.185%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (fresh multi-year high on Stablecoin Platform launch, Weiss upgrade; earnings 07-28; next review 2026-07-27) |
-| VST | 25 | $161.21 | $168.70 | +$187.25 (+4.646%) | Energy/Utilities | Order 87f49386, 10%, HWM $169.06, stop $152.154 — live, ratcheted up | **A** (re-entry after 07-16 sector-wide stop-out; best performer today amid the broad selloff; PEG ~0.4-0.6, Scotiabank PT raised to USD 298 (Outperform); review_by 2026-08-05 forces pre-earnings (08-07) hold/trim/exit call) |
+| LLY | 8 | $1,174.35625 | $1,180.3896 | +$48.27 (+0.514%) | Healthcare | Order e3547b9e, 10%, HWM $1,196.29, stop $1,076.661 — live, unchanged | **A** (thesis intact: Medicare Bridge live, AtaiBeckley deal ~USD 2.8B initial, Retevmo FDA approval; Novo Nordisk ad-claims suit ongoing, non-thesis-breaking; review_by 2026-08-05) |
+| META | 6 | $641.323333 | $605.40 | -$215.54 (-5.601%) | Communication Services | Order 14301809, 10%, HWM $655.84, stop $590.256 — live, unchanged | **A** (flat overnight; still tracking pre-earnings AI-capex-ROI anxiety and the 07-23 JPMorgan downgrade; review_by 2026-07-27, now 1 trading day out, forces the explicit hold/trim/exit call) |
+| UNH | 25 | $422.28 | $425.00 | +$68.00 (+0.644%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (Q2 beat-and-raise 07-16; new prior-authorization reduction initiative reinforces the thesis; PEG 1.73-2.07, GF Value ~30% undervalued; review_by 2026-08-17) |
+| V | 22 | $355.058182 | $353.33 | -$38.02 (-0.487%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (fresh multi-year high on Stablecoin Platform launch, Weiss upgrade, Barclays Buy; **earnings-window rule triggered today** — earnings 07-28 now 2 trading days out; explicit HOLD-through-earnings decision made 2026-07-24 pre-market, no trim; review_by renewed to 2026-07-29) |
+| VST | 25 | $161.21 | $168.92 | +$192.75 (+4.783%) | Energy/Utilities | Order 87f49386, 10%, HWM $169.06, stop $152.154 — live, unchanged | **A** (5 consecutive up sessions; 13-analyst Buy consensus, PT USD 232.23; review_by 2026-08-05 forces pre-earnings (08-07) hold/trim/exit call) |
 
-## Risk posture (2026-07-23 close)
+## Risk posture (2026-07-24 pre-market)
 
-- **Drawdown circuit breaker:** Equity $99,885.20 vs running HWM $100,322.08 (2026-07-21 close, from `history 1A 1D`) — drawdown **0.4355%**. NOT triggered (9.5645pp headroom) ✓.
-- **Intraday shock check:** Equity $99,885.20 vs last known close $99,947.32 (07-22; Alpaca `last_equity` again returned anomalous "0") = **−0.0622%** — no shock ✓ (threshold −4%).
-- **Sector exposure:** Healthcare (LLY+UNH) 20.083% ($20,059.05), Financials (V) 7.728% ($7,718.70), Communication Services (META) 3.633% ($3,628.98), Energy/Utilities (VST) 4.222% ($4,217.50), cash 64.336% ($64,260.90) — all well within the 60% sector cap.
+- **Drawdown circuit breaker:** Equity $99,957.68 vs running HWM $100,322.08 (2026-07-21 close, from `history 1M 1D`) — drawdown **0.3633%**. NOT triggered (9.6367pp headroom) ✓.
+- **Intraday shock check:** Equity $99,957.68 vs last_equity $99,933.16 (07-23 close, sane value) = **+0.0245%** — no shock ✓ (threshold −4%).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.078% ($20,068.11), Financials (V) 7.777% ($7,773.26), Communication Services (META) 3.634% ($3,632.40), Energy/Utilities (VST) 4.224% ($4,223.00), cash 64.288% ($64,260.90) — all well within the 60% sector cap.
 - **Weekly new-position count:** 3/3 used this week (UNH, META — 2026-07-20; VST — 2026-07-21). Cap reached — no further new positions until next week (from 2026-07-27).
-- **-7% rule check:** LLY +0.749%, META −5.690%, UNH +0.349%, V −1.185%, VST +4.646% — none within range of the −7% cut threshold (close doesn't cut positions; that's midday's job).
-- **Thesis contracts:** LLY (review_by 2026-08-05), V (review_by 2026-07-28), UNH (review_by 2026-08-17), META (review_by 2026-07-27 — now 2 trading days out), VST (review_by 2026-08-05) — all reviewed, none triggered, none due today — HOLD all five.
-- **Earnings window:** V reports 2026-07-28 (3 trading days out). META reports 2026-07-29 (4 trading days out). Neither inside the 2-day blackout yet — Monday 07-27 pre-market must make the explicit hold/trim/exit call for both as their windows close that day.
-- **Trades today:** none. Stop audit 5/5 PASS (all confirmed live via `orders open`; VST ratcheted HWM $167.87→$169.06, stop $151.083→$152.154). No exits — no `closed-trades.md` reconciliation needed.
-- **Market context:** Sharp broad-market selloff — S&P 500 −1.4%, Nasdaq −2.3% (briefly below 25,000), Dow −541pts (−1%). Brent crude topped USD 100/bbl on the escalating Iran war, driving Treasury yields to their 2026 highs. Alphabet −6.5% (raised capex forecast spooked investors) and Tesla −14% (profit miss despite strong deliveries) dragged the "Magnificent Seven" down 4.4% in its worst day of the year. No thesis-breaking news for any held name — Bull's cash-heavy, non-mega-cap-tech book (LLY, V, UNH, META, VST) was barely dented, extending the since-inception lead over SPY to +1.19pp.
+- **-7% rule check:** LLY +0.514%, META −5.601%, UNH +0.644%, V −0.487%, VST +4.783% — none within range of the −7% cut threshold (pre-market doesn't cut positions; that's midday's job).
+- **Thesis contracts:** LLY (review_by 2026-08-05), V (review_by renewed to 2026-07-29, explicit hold decision made today), UNH (review_by 2026-08-17), META (review_by 2026-07-27 — now 1 trading day out), VST (review_by 2026-08-05) — all reviewed, none triggered — HOLD all five.
+- **Earnings window:** V reports 2026-07-28 — **today, 07-24, is exactly 2 trading days out, inside the earnings-window rule** — explicit hold-through-earnings decision made this run (thesis intact, no trim). META reports 2026-07-29 (3 trading days out, not yet inside the window; forced call comes at Monday 07-27's review_by).
+- **Trades today:** none — weekly cap 3/3 already used. Stop audit 5/5 PASS (all confirmed live via `orders open`, quantities match positions). No exits — no `closed-trades.md` reconciliation needed.
+- **Market context:** Mixed pre-market tape — S&P futures +0.2% despite rising-rate/oil pressure earlier in the session. 10yr Treasury rose to 4.71% (4th straight rising session, highest since Jan 2025), closing in on the 4.75% new-buy gate. Iran/oil risk-off tape still escalating: Iran rejected a US ceasefire offer, Brent ~USD 100-101/bbl, new Red Sea shipping-risk front from Houthi tanker attacks. No thesis-breaking news for any held name.
 
 ## Risk posture (2026-07-23 midday, historical)
 

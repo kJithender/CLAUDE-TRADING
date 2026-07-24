@@ -4177,3 +4177,17 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Monthly/quarterly housekeeping:** N/A — not the first trading day of the month, not a dividend-quarter mid-month check.
 - **Notify:** Telegram sent — EOD summary, 0 trades today, Bull beat SPY by +1.53pp today on a sharp broad selloff, since-inception lead vs SPY now +1.19pp, race scoreboard, AGGRO staleness milestone noted.
 - **Commit:** done.
+
+## 2026-07-24 ~08:14 ET — PRE-MARKET
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Account (live, ~08:13 ET):** Equity USD 99,957.68, cash USD 64,260.90 (64.288%), long market value USD 35,696.78 (35.712%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close) vs equity USD 99,957.68 — drawdown 0.3633%. NOT triggered (9.6367pp headroom).
+- **Intraday shock check:** equity USD 99,957.68 vs last_equity USD 99,933.16 (07-23 close) = +0.0245% — no shock (threshold −4%).
+- **Positions:** LLY +0.514%, META −5.601%, UNH +0.644%, V −0.487%, VST +4.783% — none within the −7% cut range.
+- **V earnings-window rule triggered today:** earnings 07-28 is now exactly 2 trading days out. Explicit hold decision made: thesis intact (stablecoin platform, AI Financial Assistant, 31 Strong Buy/4 Moderate Buy/4 Hold of 39 analysts, no negative catalyst) — HOLD full 22sh position through earnings, no trim. review_by renewed to 2026-07-29 to force a fresh post-earnings read. Trailing stop (stop USD 328.419) remains the only gap-risk protection.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e`, V `2b0a93ba`, UNH `225cb079`, META `14301809`, VST `87f49386` — all 5 status `new` (live), quantities match positions. **5/5 PASS.**
+- **Cash-drag check:** Cash 64.288%, above the 25-40% target band, but weekly new-position cap (3/3: UNH/META 07-20, VST 07-21) already used this week — no new position permitted today regardless of setup quality. Next slot Monday 2026-07-27.
+- **Plan:** No trades today (weekly cap reached). All 5 positions HOLD.
+- **Notify:** Telegram sent — market posture (10yr yield 4.71% nearing the 4.75% gate, Iran/oil escalation, mixed futures), no trades planned, V hold-through-earnings decision flagged, 5/5 stops confirmed live.
+- **Commit:** done.
