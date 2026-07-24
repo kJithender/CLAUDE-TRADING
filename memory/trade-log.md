@@ -3,6 +3,31 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-24 ~15:50 ET — CLOSE
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock acquired (`_lock` was `{}`), `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Half-day/dedup check:** `next_close` 16:00 ET (not a half-day). No existing 2026-07-24 row in `performance.csv` — appending fresh, no dedup needed.
+- **Account (live, ~15:50 ET):** Equity USD 99,754.87, cash USD 64,260.90 (64.418%), long market value USD 35,493.97 (35.582%). `last_equity` USD 99,933.16 (07-23 close, sane value).
+- **Positions (close, ~15:50 ET):**
+  - LLY: 8sh @ avg USD 1,174.35625, current USD 1,192.45, **+1.541%** (+USD 144.75 unrealized).
+  - META: 6sh @ avg USD 641.323333, current USD 596.08, **−7.055%** (−USD 271.46 unrealized) — **past the −7% guardrail line**, but the −7% cut is a midday-only action per CLAUDE.md; no order placed this run. Flagged for Monday 07-27 pre-market's forced review_by decision (2 trading days pre-07-29 earnings) — see `lessons.md`.
+  - UNH: 25sh @ avg USD 422.28, current USD 420.52, **−0.417%** (−USD 44.00 unrealized).
+  - V: 22sh @ avg USD 355.058182, current USD 354.455, **−0.170%** (−USD 13.27 unrealized).
+  - VST: 25sh @ avg USD 161.21, current USD 162.725, **+0.940%** (+USD 37.88 unrealized) — sharp intraday reversal from midday's +4.448%, still well clear of its trailing stop (6.11% buffer).
+  - No exits today. No reconciliation needed vs `closed-trades.md` (quantities unchanged from midday: 8/6/25/22/25).
+- **Stop audit:** LLY `e3547b9e` (HWM 1,206.94 / stop 1,086.246), META `14301809` (HWM 655.84 / stop 590.256), UNH `225cb079` (HWM 436.945 / stop 393.2505), V `2b0a93ba` (HWM 364.91 / stop 328.419), VST `87f49386` (HWM 169.76 / stop 152.784) — all 5 confirmed live via `orders open`, unchanged from midday. **5/5 PASS.**
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) vs equity USD 99,754.87 — drawdown **0.5654%**. NOT triggered (9.4346pp headroom).
+- **Intraday shock check:** equity USD 99,754.87 vs last_equity USD 99,933.16 (07-23 close) = **−0.1784%** — no shock (threshold −4%).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.104% (USD 20,052.60), Financials (V) 7.818% (USD 7,798.01), Communication Services (META) 3.585% (USD 3,576.48), Energy/Utilities (VST) 4.078% (USD 4,068.125), cash 64.418% (USD 64,260.90) — all well within the 60% sector cap.
+- **Performance vs SPY:** SPY `dailyBar.c` (snapshot, settled) USD 737.85 vs 07-23 close USD 738.06 → SPY today **−0.0285%**. Bull today (vs `last_equity` USD 99,933.16) **−0.1784%** → Bull lagged SPY today by **−0.150pp**. Since inception (2026-07-01, USD 100,000.00 / SPY 745.665): Bull **−0.2451%** vs SPY (737.85 vs 745.665) **−1.0482%** → gap **+0.8031pp — Bull's since-inception lead over SPY narrows slightly from +1.19pp yesterday but remains solidly positive**.
+- **Market context:** Choppy week resolved mixed — Thursday's sharp broad selloff (S&P −1.2%, Nasdaq −2.2%, Dow −1%) on Alphabet raising its 2026 capex forecast to USD 195-205B (from USD 180-190B, reigniting AI-capex-ROI anxiety) plus Middle East oil-driven inflation fears gave way to a modest Friday recovery (Dow +0.7%, S&P +0.5%) as Brent eased back from USD 100/bbl even as new Trump tariffs took effect. META's continued slide to −7.055% tracks the same sector-wide AI-capex-ROI anxiety (not company-specific), now compounded by its own earnings landing 07-29. [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html), [The Motley Fool](https://www.fool.com/coverage/stock-market-today/2026/07/24/stock-market-midday-july-24-blue-chip-stocks-rebound-as-oil-prices-plunge/)
+- **Race scoreboard:** Bull −0.245% since inception (2026-07-01) vs SPY −1.048% (same baseline) | AGGRO last known −7.123% since its own 2026-06-04 inception (**STALE — `memory/aggressive/portfolio.md` unchanged since 2026-06-23 EOD, now 31 days stale / a full calendar month plus a week**; today's 4:30pm weekly review is the primary escalation vehicle, no new action this run beyond noting the milestone).
+- **Performance history:** appended `2026-07-24,bull,99754.87,64260.90,737.85` to `performance.csv`.
+- **Friday watchdog:** today is Friday; newest `weekly-review.md` entry (week ending 2026-07-17) is exactly 7 days old, not yet over the 7-day threshold — today's own weekly review runs separately at 4:30pm ET, after this routine. Not flagged.
+- **Monthly/quarterly housekeeping:** N/A — not the first trading day of the month, not a dividend-quarter mid-month check.
+- **Notify:** Telegram sent — 🚨 (META closed the day past the −7% line). EOD summary, 0 trades today, race scoreboard, META flag for Monday's forced review.
+- **Commit:** done.
+
 ## 2026-07-24 12:36 ET — MIDDAY (no action; risk check only)
 
 - **Action:** None — no positions breached −7%, none up >15%. Midday never opens new positions.
