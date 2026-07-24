@@ -3,6 +3,22 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-24 12:36 ET — MIDDAY (no action; risk check only)
+
+- **Action:** None — no positions breached −7%, none up >15%. Midday never opens new positions.
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock/control switch:** `_lock` was free (`{}`); wrote lock for this run. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: true`.
+- **Account:** equity USD 100,010.08, cash USD 64,260.90 (64.253%), long MV USD 35,749.18 (35.745%), last_equity USD 99,933.16.
+- **Shock check:** +0.0770% vs last_equity — no shock (threshold −4%).
+- **Drawdown circuit breaker:** equity USD 100,010.08 vs running HWM USD 100,322.08 (2026-07-21 close) — drawdown **0.3109%**. NOT triggered (9.6891pp headroom).
+- **Positions (% from entry):** LLY +2.300% (USD 1,201.365), META **−6.074%** (USD 602.37), UNH −0.277% (USD 421.11), V −0.314% (USD 353.945), VST +4.448% (USD 168.38). None within range of −7% cut; none up >15%.
+- **News scan (META, down >3% from entry):** WebSearch confirms the drop is broad AI-capex-ROI/ad-spend anxiety ahead of 07-29 earnings, not company-specific negative news — no downgrade, no guidance cut. Hold, no action; META's explicit hold/trim/exit call is forced at Monday 07-27's review_by (2 trading days pre-earnings), not today.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1206.94, stop 1086.246), META `14301809` (HWM 655.84, stop 590.256), UNH `225cb079` (HWM 436.945, stop 393.2505), V `2b0a93ba` (HWM 364.91, stop 328.419), VST `87f49386` (HWM 169.76, stop 152.784) — all 5 status `new` (live), quantities match positions. **5/5 PASS**, no reconciliation needed.
+- **Exits/post-mortems:** none this run.
+- **Notify:** Telegram sent — all positions within range, no action.
+- **Commit:** done.
+
 ## 2026-07-09 08:12 ET — PRE-MARKET (no trades; 🚨 Iran conflict escalates further)
 
 - **Action:** None — no trades planned for today's open.
