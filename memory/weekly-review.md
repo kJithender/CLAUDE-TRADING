@@ -2,6 +2,87 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-07-24 (Week 4 of the new track record — 5 active trading days: Mon Jul 20 – Fri Jul 24)
+
+- **Bull return (week, 2026-07-17 close $99,984.66 → 2026-07-24 close $99,754.87):** −0.2298%
+- **SPY return (week, dailyBar.c $743.28 → $738.90):** −0.5891%
+- **Result:** Bull **beat** SPY by **+0.359pp** this week
+- **Since inception (2026-07-01, $100,000.00 / SPY $745.665):** Bull −0.2451% vs SPY −0.9074% = **+0.662pp gap — Bull remains ahead of SPY since inception**, consistent with the positive trend established 07-17
+- **HWM:** $100,322.08 (set 2026-07-22 close) | drawdown −0.5654% — far within the −10% circuit breaker ✓
+- **Grade:** A−
+
+### Trade statistics (sample still very small — 1 closed trade since reset; read directionally, not conclusively)
+
+| Metric | Value |
+|--------|-------|
+| New trades this week | 3 (BUY UNH 25sh @ USD 422.28, BUY META 6sh @ USD 641.323333 — both 2026-07-20; BUY VST 25sh @ USD 161.21 — re-entry, 2026-07-21) — full 3/3 weekly cap used, first time since the reset |
+| Closed trades this week | 0 |
+| Total closed trades (new baseline, since 2026-07-01) | 1 (VST, trailing-stop fill, 2026-07-16, LOSS) |
+| Win rate | 0% (0 wins / 1 closed trade) |
+| Average win % | N/A — no wins yet |
+| Average loss % | −2.178% (VST) |
+| Profit factor | N/A — no gross wins to divide by |
+| Avg holding days (winners / losers) | N/A winners / 14 days (VST, the one loser) |
+| Biggest standing lesson | Sample of 1 closed trade is still too small to draw a trend from. This week's real story is deployment pace, not exit statistics: all 5 open positions (LLY, V, UNH, META, VST) are held, none closed. |
+
+⚠️ **Ledger cross-check:** `trades.jsonl` has 6 post-reset buy entries (VST 07-02, V 07-07, LLY 07-13, UNH 07-20, META 07-20, VST re-entry 07-21) and 1 stop_fill (VST 07-16, −2.178%), matching `closed-trades.md`'s single post-reset exit (VST) and `trade-log.md`'s narrative. No reconciliation issue — all three ledgers agree.
+
+### Process audit
+
+| Check | Result | Grade |
+|-------|--------|-------|
+| Cash drag (avg ~64.3% this week vs 25–40% target band) | Still above the target band, but **this is the first week since the reset that all 3 weekly new-position slots were used** (UNH/META Monday, VST Tuesday) — directly answering the three-consecutive-week deployment-pace critique from 07-10/07-17. Cash stayed high because entries were sized as disciplined starters (UNH ~10.6%, META ~3.9% halved for ATR, VST ~4.1% halved for ATR), not because slots sat idle. | ✓ improved — full cap used, sizing was deliberate not passive |
+| Sector caps | Healthcare (LLY+UNH) 20.10%, Financials (V) 7.82%, Communication Services (META) 3.59%, Energy/Utilities (VST) 4.08%, cash 64.42% — all well within the 60% cap | ✓ |
+| Stop discipline | 5/5 positions (LLY `e3547b9e`, META `14301809`, UNH `225cb079`, V `2b0a93ba`, VST `87f49386`) confirmed live at every routine session all week (pre-market, market-open, midday, close × 5 days) | ✓ PERFECT |
+| Weekly new-position count | 3/3 slots used (UNH, META — 2026-07-20; VST — 2026-07-21) | ✓ full cap, first time since reset |
+| Thesis contracts | V's earnings-window rule triggered 07-24 (earnings 07-28, 2 trading days out) — explicit hold-through-earnings decision made and journaled, no trim, review_by renewed to 07-29. META's review_by (07-27) is the very next pre-market and now carries extra weight after today's −7% close. LLY (08-05) and UNH (08-17) unchanged, not due. | ✓ |
+| Loss post-mortems | None required — no exits this week | ✓ N/A |
+| Guardrail checks | Complete tables at every routine session all week | ✓ |
+| −7% rule / midday-only design gap | 🚨 META closed today at **−7.055%**, past the guardrail line, for the first time since the reset. The −7% rule is a midday-only action per CLAUDE.md — today's midday check (12:36 ET) had META at −6.074%, inside the line; the breach happened in the afternoon session after midday's window had closed. Correctly not actioned at close (no order-placement step exists there); flagged 🚨 in the notify and in `lessons.md`. The next opportunity to apply the rule is Monday midday, but Monday pre-market already forces META's review_by hold/trim/exit decision first (2 trading days pre-07-29 earnings). | ⚠️ as-designed, but a real weekend risk window worth naming |
+
+### What worked
+
+- **Full weekly deployment for the first time since the reset.** All 3 new-position slots were used this week (UNH, META Monday; VST re-entry Tuesday), each with a written thesis, a 5-of-5 or 4-of-5 entry-signal check, and ATR-based sizing (META and VST both halved for ATR >3%). This directly answers the cash-drag/deployment-pace question flagged in the 07-10 and 07-17 reviews — the strategy is not passively sitting in cash, it deployed at pace the moment qualifying setups appeared.
+- **V's earnings-window hold decision was made cleanly and on schedule.** Pre-market 07-24 forced the explicit call (earnings 07-28, 2 trading days out): thesis intact (Stablecoin Platform launch, 31 Strong Buy/4 Moderate Buy/4 Hold of 39 analysts, fresh multi-year high), HOLD full position, no trim, review_by renewed. This is the thesis-contract discipline working exactly as designed.
+- **Perfect stop-audit compliance across all 5 sessions, all 5 positions, all week** — zero missed audits, zero unprotected positions, despite three new entries mid-week needing fresh stops placed and verified.
+- **VST re-entry thesis is playing out:** +0.94–4.45% intraday swings this week but the Cogentrix/Helix power-buildout thesis remains intact per this week's news scan (Morgan Stanley trimmed VST's PT slightly to USD 208 from USD 210 on 07-23 but reaffirmed Buy — a minor, not thesis-breaking, revision).
+- **UNH continues to validate the 07-20 entry** — Q2 beat-and-raise (07-16) still the operative catalyst, no fresh negative news this week, essentially flat (−0.417% to −0.562% range) — normal variance, not a thesis concern.
+
+### What didn't work / open questions
+
+- **META closed the week past the −7% guardrail line** (−7.055%), the first breach of this threshold since the 2026-07-01 reset. Broad AI-capex-ROI anxiety (Alphabet's capex guidance raise to USD 195-205B reignited the same worry that pressured META all week) drove the move, not a company-specific break — analyst PTs were actually raised this week (Raymond James USD 850, Wells Fargo USD 835, Rothschild USD 1,000). Still, the position sits with only a thin trailing-stop buffer (~0.98% to stop USD 590.256) over the weekend, heading into a Wednesday earnings print. Monday's forced review_by decision is the right mechanism to resolve this, but the weekend gap-risk window is real and worth naming, not just absorbing as routine.
+- **Cash still sits at ~64%, well outside the 25–40% target band**, even after a full deployment week — the three new positions were all correctly sized as small-to-moderate starters (not maxed to the 20% cap), so cash didn't move much in dollar terms. This is a sizing-discipline choice, not a process failure, but worth tracking: as more starters mature into confirmed high-conviction adds (per `strategy.md`'s scale-up rule), cash should start declining meaningfully. If it doesn't move over the next 2-3 weeks even with slots used, that would be the next open question.
+- **Aggressive Bull comparison remains impossible — the outage has now passed a full calendar month.** See "From Aggressive Bull" note below.
+
+### Macro context (week of July 20–24, 2026)
+
+- **S&P 500 fell ~1.2% on the week** (Dow −1%, Nasdaq −2.2%), its second straight weekly decline, closing Friday at 7,408.30. A semiconductor-sector gauge sank 4.4%; 7 of 11 S&P sectors closed the week in the red (Communication Services −5.2%, Consumer Discretionary −5.1%). [CNBC](https://www.cnbc.com/2026/07/24/stock-pullback-couldnt-come-at-a-worse-time-for-market.html)
+- **Alphabet raised its 2026 capex guidance to USD 195-205B** (from USD 180-190B) despite beating Q2 EPS estimates (USD 9.11 vs USD 2.88 est.) — the guidance raise reignited AI-capex-ROI anxiety across the mega-cap-tech complex and dragged META (which doesn't report until 07-29) down in sympathy all week. Tesla fell ~19% on the week (−15% Thursday alone) on the same higher-AI-spending signal. [CNBC](https://www.cnbc.com/2026/07/24/stock-pullback-couldnt-come-at-a-worse-time-for-market.html)
+- **Oil/Iran tensions remained the other major driver**, with Brent crossing USD 100/bbl mid-week before easing modestly by Friday — this week's macro tape was a genuine two-front risk-off story (AI-capex skepticism + Middle East escalation), not a single-cause selloff.
+- **UNH (held):** Continues to trade on its 07-16 Q2 beat-and-raise; no fresh company-specific news this week, +1.9% trailing month vs SPY's +0.6% (Zacks). Thesis unchanged.
+- **V (held):** Reports Q3 FY26 earnings Tuesday 07-28 after the close; Zacks consensus USD 3.23 EPS (+8.4% YoY) on USD 11.35B revenue (+11.6% YoY); still Strong Buy consensus (31 Strong Buy/4 Moderate Buy/4 Hold of 39 analysts), avg PT USD 401.87 (+15.2% implied upside). Thesis unchanged, hold-through-earnings decision already made.
+- **META:** Reports Q2 2026 earnings Wednesday 07-29 after the close; guided USD 58-61B revenue. Framed as one of the week's key "AI-capex-vs-ROI" earnings alongside Microsoft, following Alphabet's guidance raise. This is the central question for Monday's forced review_by decision.
+- **VST (held):** Morgan Stanley trimmed PT to USD 208 (from USD 210, 07-23) while reaffirming Buy; stock up ~7% over the past 2 weeks per stockinvest.us; August 7 earnings back on investors' radar.
+- **10yr Treasury** continued trending toward the 4.75% new-buy gate as of Thursday's read (~4.71%) — watch closely at Monday's pre-market; a breach would block new buys outright regardless of setup quality.
+
+### From Aggressive Bull (section 7b)
+
+**AGGRO's memory is STILL STALE — confirmed via `git log -- memory/aggressive/portfolio.md`: the only commit touching that file is the initial bulk repo-setup commit; there has been zero real content update since the last data point, 2026-06-23 EOD.** That is now **32 days** as of this review (up from 24 days two Fridays ago) — the 9th+ separate flag across close and weekly-review routines since 2026-07-02, spanning over a full calendar month with zero resolution. This review confirmed via git history (not just file content) that no AGGRO routine has committed a real update since the account was 10 days old — strengthening the standing hypothesis that AGGRO's scheduled trigger/cron stopped firing entirely around 2026-06-23/07-02 and has never been restored.
+
+**Last-known AGGRO figures (2026-06-23 EOD, stale, 32 days old):** equity USD 92,876.82, since-inception (2026-06-04) return −7.123%, alpha vs SPY −4.392pp. Cautious Bull's own since-inception return is **+0.662pp positive vs SPY** this review — even on this old, non-comparable timeline, AGGRO is not remotely close to beating Cautious Bull by any measure.
+
+**One lesson worth re-extracting, since there's still nothing fresher:** AGGRO's last live trade (the 2026-06-23 proactive META exit at a 0.713pp stop-buffer, applying its own "MSFT lesson" — thin buffer + selloff tape = exit at market-open, not wait-for-midday) is a genuinely good risk-management idea Cautious Bull doesn't have a direct equivalent of. Cautious Bull's guardrails don't include a proactive-trim-on-thin-buffer rule; the closest analog today is the −7% midday rule, which (as this week's META breach shows) has a structural gap — a position can close a session past −7% with no mechanism to act until the next midday. **Concrete rule-change proposal (not yet adopted, flagged for the human/next strategy review):** consider adding a narrow rule — if a held position closes a session more than 5% below entry (a level between the standard entry zone and the −7% cut) with no company-specific negative catalyst, the very next pre-market must make an explicit hold/trim/exit call, independent of whether a thesis-contract review_by happens to be due that day. This would have triggered on META even before today's −7% breach and closes the exact weekend-gap-risk window flagged above. No rule change is being made this week — this is a proposal for the human to consider, not a unilateral guardrail edit.
+
+**Cross-Bull learning counter update:** AGGRO trails Cautious Bull by every available measure (stale or otherwise) — the >5pp-AGGRO-leads-for-2-weeks trigger condition is nowhere close to being met. Counter = **0** (unchanged, now 5 consecutive weeks at 0). `CROSS_BULL_LEARNING:` in `control.md`: confirmed blank, no change needed.
+
+### Strategy adjustments
+
+- **Watchlist hygiene:** no purges this week. Re-checked every non-held watchlist name against the "dated catalyst" bar: NVDA (earnings 2026-08-26), MSFT (earnings 2026-07-29), PWR (earnings 2026-07-30), LRCX (earnings 2026-07-29) all carry confirmed near-term earnings dates. **COST's catalyst was vague ("~August earnings") and approaching the 4+ week purge threshold (added 2026-05-29, ~8 weeks ago) — resolved via WebSearch: Costco's fiscal Q4 2026 earnings are confirmed for 2026-09-24, not August.** Updated `strategy.md`'s COST row with the precise date rather than purging on a vague-catalyst technicality. Every remaining name now carries a specific, dated forward trigger.
+- **Watchlist addition:** none. This week's "best performing stocks" search surfaced only micro-cap/penny-stock gainers (CPHI, ZYBT, FBRX) — all disqualified by the sub-USD 5 forbidden-list floor and market-cap universe rule. No new large/mid-cap leader emerged worth adding.
+- **No changes to entry/exit signals, sizing, or guardrails this week.** The system performed well under real pressure (META's −7% close, V's earnings-window decision) — see the proposed rule change above for the human's consideration, not adopted unilaterally.
+
+---
+
 ## Week ending 2026-07-17 (Week 3 of the new track record — 5 active trading days: Mon Jul 13 – Fri Jul 17)
 
 - **Bull return (week, 2026-07-10 close → 2026-07-17 close):** −0.0044% ($99,989.04 → $99,984.66)
