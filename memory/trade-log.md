@@ -4264,3 +4264,18 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Trades:** none (pre-market plan was empty — no watchlist candidate cleared the technical gate). Weekly new-position count unchanged: 0/3 used this week.
 - **Notify:** Telegram sent — no trades, reason given (every watchlist name still fails the technical gate per today's pre-market pull), 5/5 stops confirmed live.
 - **Commit:** done.
+
+## 2026-07-27 ~12:37 ET — MIDDAY (Monday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}` before this run); wrote lock for midday. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: true` (next_close 16:00 ET).
+- **Account (live, ~12:37 ET):** Equity USD 99,839.04, cash USD 64,260.90 (64.365%), long market value USD 35,582.08 (35.640%), last_equity USD 99,829.56 (07-24 close).
+- **Shock check:** +0.0095% vs last_equity — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) vs equity USD 99,839.04 — drawdown **0.4815%**. NOT triggered (9.5185pp headroom).
+- **Positions (% from entry):** LLY +1.921% (USD 1,196.91), META **−6.419%** (USD 600.155), UNH −0.736% (USD 419.17), V +2.225% (USD 362.96), VST −2.202% (USD 157.66) — none within range of the −7% cut. None up >15%, no tightening action.
+- **News scan (META, down >3% from entry):** WebSearch found no company-specific negative catalyst — the drop is a broad "AI fatigue" selloff (stock −8.79% on the week, trading below both 50- and 200-day averages, RSI oversold) 2 sessions ahead of the 07-29 earnings print. One positive data point noted: Meta will begin manufacturing its custom "Iris" AI chip in September with Broadcom/TSMC to cut Nvidia/AMD GPU reliance. Consistent with this morning's pre-market forced review_by decision (HOLD, no trim, review_by renewed to 07-30) — no new action, that call stands.
+- **Sector exposure:** Healthcare (LLY+UNH) 20.087% (USD 20,054.53), Financials (V) 7.998% (USD 7,985.12), Communication Services (META) 3.607% (USD 3,600.93), Energy/Utilities (VST) 3.948% (USD 3,941.50), cash 64.365% (USD 64,260.90) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,206.94/stop 1,086.246), META `14301809` (HWM 655.84/stop 590.256), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 364.91/stop 328.419), VST `87f49386` (HWM 169.76/stop 152.784) — all 5 status `new` (live), quantities match positions exactly (8/6/25/22/25). **5/5 PASS** — no recreation needed.
+- **Action:** none — no positions cut, no stops tightened, no exits. No `closed-trades.md`/`trades.jsonl` entries needed.
+- **Notify:** Telegram sent — all positions within range, no action, META news-scan finding noted.
+- **Commit:** done.
