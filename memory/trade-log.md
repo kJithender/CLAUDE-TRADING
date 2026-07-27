@@ -4232,3 +4232,19 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Plan:** No trades today (weekly cap reached). All 5 positions HOLD.
 - **Notify:** Telegram sent — market posture (10yr yield 4.71% nearing the 4.75% gate, Iran/oil escalation, mixed futures), no trades planned, V hold-through-earnings decision flagged, 5/5 stops confirmed live.
 - **Commit:** done.
+
+## 2026-07-27 ~08:20 ET — PRE-MARKET (Monday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock acquired (`_lock` was `{}`), `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Account (live, ~08:20 ET):** Equity USD 100,096.50, cash USD 64,260.90 (64.198%), long market value USD 35,835.60 (35.800%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close) vs equity USD 100,096.50 — drawdown 0.2249%. NOT triggered (9.7751pp headroom).
+- **Intraday shock check:** equity USD 100,096.50 vs last_equity USD 99,829.56 (07-24 close) = +0.2674% — no shock (threshold −4%).
+- **Positions:** LLY +2.362%, META −5.692%, UNH −0.043%, V +1.020%, VST +2.884% — none within the −7% cut range (pre-market check regardless; midday's job).
+- **Monday conviction review:** LLY A, V A, UNH A (first review since 07-20 entry), META **B** (first review since 07-20 entry — thesis intact but conviction dented by a rough pre-earnings week), VST A (first review since 07-21 entry). No name at 3 consecutive Mondays of C — no forced trim.
+- **META earnings-window rule triggered today (review_by was 2026-07-27):** earnings 07-29 is 2 trading days out. Explicit decision: thesis intact (ad-engine fundamentals, +19% impressions/+12% pricing, unrelated to the capex-ROI debate weighing on the stock this week), position small (3.626% of equity, already halved for ATR at entry), no company-specific negative catalyst. **HOLD full 6-share position through earnings, no trim.** Stop buffer 2.406% (HWM USD 655.84/stop USD 590.256 vs current USD 604.82) is the only gap-risk protection per the standing AVGO lesson. review_by renewed to **2026-07-30** (day after the print).
+- **V:** hold-through-earnings decision from 07-24 (earnings 07-28 tomorrow) stands unchanged, no new action.
+- **Cash-drag check:** cash 64.198%, 5th consecutive week above the 25-40% target band. Weekly cap fully available (0/3, resets Monday). Tape today is constructive (Iran de-escalation, oil −4.5%, 10yr eased to 4.63-4.64% comfortably below the 4.75% gate) — pulled fresh 50-day SMA/20-day ATR for every watchlist candidate (NVDA, MSFT, COST, LRCX, PWR): **all 5 fail the technical gate** (NVDA closest at −1.00% vs 50-day, still a fail). No qualifying entry exists today — staying in cash is a disciplined, freshly-verified call, not a default.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1206.94/stop 1086.246), V `2b0a93ba` (HWM 364.91/stop 328.419), UNH `225cb079` (HWM 436.945/stop 393.2505), META `14301809` (HWM 655.84/stop 590.256), VST `87f49386` (HWM 169.76/stop 152.784) — all 5 status `new` (live), quantities match positions. **5/5 PASS** — no recreation needed.
+- **Plan:** No trades today. All 5 positions HOLD.
+- **Notify:** Telegram sent — market posture (Iran de-escalation, oil down sharply, 10yr eased, futures up), no trades planned (every watchlist name fails its technical gate), META hold-through-earnings decision, Monday conviction ratings.
+- **Commit:** done.

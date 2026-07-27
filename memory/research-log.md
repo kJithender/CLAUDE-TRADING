@@ -5239,3 +5239,83 @@ No trades planned.
 
 **Step 8 — notify:** Telegram sent per playbook — market posture (10yr yield 4.71% nearing the 4.75% gate, Iran/oil escalation continuing, mixed futures) + no trades planned (weekly cap reached) + V hold-through-earnings decision flagged.
 **Step 9 — commit:** done.
+
+## 2026-07-27 ~08:20 ET — PRE-MARKET (Monday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock:** `_lock` was free (`{}`); wrote lock for this run (expires ~08:28 ET).
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:` or `QUERY:` pending in `control.md`. `CROSS_BULL_LEARNING:` blank.
+- **Account (live, ~08:20 ET):** Equity USD 100,096.50, cash USD 64,260.90 (64.198%), long market value USD 35,835.60 (35.800%), last_equity USD 99,829.56 (07-24 close).
+
+**Step 2 — portfolio sync (positions, live Alpaca data ~08:20 ET):**
+
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | % of equity |
+|--------|-----|-----------|---------|-----------------|--------------|
+| LLY | 8 | 1174.35625 | 1202.09 | +USD 221.87 (+2.362%) | 9.608% |
+| META | 6 | 641.323333 | 604.82 | −USD 219.02 (−5.692%) | 3.626% |
+| UNH | 25 | 422.28 | 422.10 | −USD 4.50 (−0.043%) | 10.542% |
+| V | 22 | 355.058182 | 358.68 | +USD 79.68 (+1.020%) | 7.884% |
+| VST | 25 | 161.21 | 165.86 | +USD 116.25 (+2.884%) | 4.143% |
+
+Sector exposure: Healthcare (LLY+UNH) 20.150%, Financials (V) 7.884%, Communication Services (META) 3.626%, Energy/Utilities (VST) 4.143%, Cash 64.198%. All well within the 60% sector cap.
+
+**Step 3 — risk posture check:**
+- **Drawdown circuit breaker:** `history 1A 1D` high-water mark USD 100,322.08 (2026-07-21 close, unchanged). Current live equity USD 100,096.50 → drawdown **0.2249%**. NOT triggered (9.7751pp headroom) ✓.
+- **Intraday shock check:** equity USD 100,096.50 vs last_equity USD 99,829.56 (07-24 close) = **+0.2674%** — no shock ✓ (threshold −4%).
+- **Sector cap:** no group above 60% (see table above) ✓.
+
+**Step 3b — thesis contract review:** LLY (review_by 2026-08-05), UNH (review_by 2026-08-17), VST (review_by 2026-08-05) — none due today, none triggered. V (review_by 2026-07-29, renewed 07-24 pre-market) not yet due — earnings 07-28 is 1 trading day out, hold decision already made and unchanged (thesis intact, no negative news this weekend). **META (review_by 2026-07-27) is due TODAY** — see Step 5 for the forced decision.
+
+**Step 3c — Monday conviction-weighted holding review:**
+- **LLY: A.** Thesis strongly intact — retatrutide succeeded in two additional Phase 3 obesity trials (next-gen obesity drug filing planned 2027), Goldman reiterated Buy (PT USD 1,283), JPMorgan raised PT to USD 1,400. Trading near record highs (USD 1,202.09, +2.362% unrealized). No change from last Monday's A rating.
+- **V: A.** Thesis intact — Strong Buy consensus unchanged (31 Strong Buy/4 Moderate Buy/4 Hold of 39 analysts), new Airwallex embedded-finance partnership (07-23) is incremental positive, stablecoin platform narrative continuing to draw coverage. Reports earnings tomorrow (07-28) — hold-through-earnings decision already made and unchanged. No change from last Monday's A rating.
+- **UNH: A.** First Monday review since the 07-20 entry. Thesis intact and reinforcing — Q2 beat-and-raise (07-16) still the active catalyst, three analyst PT raises since entry (Morgan Stanley to USD 529, Oppenheimer to USD 500, Goldman to USD 490). Position essentially flat (−0.043%) — normal variance, not a concern; working as expected for a defensive-growth managed-care name.
+- **META: B.** First Monday review since the 07-20 entry. Thesis (ad ecosystem strength: +19% impressions, +12% pricing; Meta Compute AI-cloud unit; Iris in-house chip) remains intact, but conviction is dented by a rough week (−7.87% over the past 5 sessions, −9.68% YTD) driven by sector-wide AI-capex-ROI anxiety (Alphabet's capex guidance raise) rather than a company-specific break, plus a binary earnings catalyst in 2 trading days that the position has not yet cleared. Rated B (thesis intact but conviction not yet re-confirmed) rather than A pending the post-earnings read forced by the renewed review_by (see Step 5).
+- **VST: A.** First Monday review since the 07-21 re-entry. Thesis intact and outperforming — position +2.884% unrealized, Bernstein and Morgan Stanley both reaffirmed Buy in the past few days (Morgan Stanley trimmed PT slightly to USD 210 but kept Overweight), Scotiabank raised PT to USD 298. No negative company-specific news.
+
+No position has been rated C, so the 3-consecutive-Monday-C forced-trim rule does not apply to any holding this week.
+
+**Step 4 — research (WebSearch, all facts dated 2026-07-27 unless noted):**
+- **Market posture — sharply more constructive than last week:** S&P 500 futures +0.79-0.9%, Dow futures +1%, Nasdaq-100 futures +~1.4%. The US suspended its 13-night airstrike campaign against Iran to allow room for diplomatic talks, and a senior Iranian official confirmed Tehran would halt retaliatory strikes — the first real de-escalation signal after 13+ days of active conflict. Brent crude collapsed **−4.41% to USD 87.64/bbl**, WTI −4.93% to USD 84.91/bbl — both well off the ~USD 100/bbl highs from last week. Prediction markets price an 88% chance of an "Up" open today. **10yr Treasury eased to 4.63-4.64%** — a sharp reversal from the 4.71% reading Thursday that was approaching the 4.75% new-buy gate; the gate is no longer a near-term concern. [Benzinga](https://www.benzinga.com/markets/equities/26/07/60688523/stock-market-today-sp-500-dow-jones-futures-rise-as-us-iran-halt-retaliatory-strikes-microchip-technology-amd-nucor-in-focus), [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-monday-july-27-dow-sp-500-nasdaq-080412540.html)
+- **LLY (what changed since Friday):** retatrutide (next-gen triple-agonist obesity drug) succeeded in two additional Phase 3 trials; Eli Lilly plans to file for approval in 2027 — a genuine pipeline-extension catalyst beyond the current Zepbound/Mounjaro franchise. Goldman Sachs reiterated Buy (PT USD 1,283); JPMorgan's PT sits even higher at USD 1,400. Thesis unchanged and strengthening. Earnings confirmed 2026-08-05 (unchanged).
+- **META (what changed since Friday — review_by due today):** no new negative catalyst since Friday's close; price essentially flat (Friday range USD 594.10-609.98, closed 604.82). 24/7 Wall St (07-25) frames the setup ahead of Wednesday's print: Meta enters near record highs on strong ad fundamentals (+19% impressions, +12% pricing) but the capex question (FY26 guide USD 125-145B, whether Reality Labs losses + AI infra costs compress Q1's 41.4% operating margin) is the central swing factor. Earnings confirmed 2026-07-29 after close (unchanged) — **today, 07-27, is exactly 2 trading days out (Mon→Tue→Wed), inside the earnings-window rule.** See Step 5 for the explicit decision.
+- **UNH (what changed since Friday):** nothing materially new — continued analyst PT-raise momentum from the 07-16 beat-and-raise (Morgan Stanley USD 529, Oppenheimer USD 500, Goldman USD 490, all reported this week). Standard caution flagged by analysts on rising commercial medical costs and regulatory risk — a standing sector risk, not a new company-specific issue. Thesis unchanged. Earnings still 2026-10-27 (far out).
+- **V (what changed since Friday — earnings tomorrow):** new Airwallex embedded-finance partnership for freight/shipping platforms announced 07-23 (incremental positive, not thesis-moving on its own). Consensus remains Strong Buy (31/4/4 of 39 analysts). Q3 FY26 earnings confirmed for tomorrow, 2026-07-28 after close; consensus EPS USD 3.22 (+8.1% YoY on the older estimate cited last week) to USD 3.23 per the freshest StockStory preview, revenue growth expected to decelerate to ~11.9% YoY from 14.3% prior quarter — a deceleration to watch but not a red flag on its own (consistent with a maturing base). No negative news. Hold-through-earnings decision (made 07-24, thesis intact) stands unchanged; review_by 2026-07-29 will force the post-earnings read.
+- **VST (what changed since Friday):** Vistra closed 07-25 in a USD 162.36-169.76 range; Scotiabank raised PT to USD 298 (from USD 293, Outperform), Bernstein reaffirmed Buy, Morgan Stanley reaffirmed Overweight (trimmed PT slightly to USD 210 from USD 212 — a minor, non-thesis-breaking revision already logged last week). Earnings confirmed 2026-08-07 (unchanged, well outside the 2-day blackout). Thesis unchanged.
+- **Earnings calendar reconfirmed:** V 2026-07-28 (after close, 1 trading day out), META 2026-07-29 (after close, 2 trading days out — inside window today), LLY 2026-08-05 (unchanged), UNH 2026-10-27 (unchanged), VST 2026-08-07 (unchanged). Watchlist-only names reporting this week: MSFT 07-29, LRCX 07-29, PWR 07-30 — all inside or entering the 2-day blackout, moot regardless since none clear the technical gate today (see Step 7).
+
+**Step 5 — earnings-window rule (forced decision, META review_by = today):**
+
+**META — explicit hold/trim/exit decision:** Earnings land Wednesday 07-29 after close, 2 trading days from today — inside the blackout window (no new buy, which is moot since META is already held). For the **existing 6-share position** (3.626% of equity, a small starter already halved for ATR at entry): thesis remains intact — the ad-engine fundamentals (+19% impressions, +12% pricing) are the core bull case and are unrelated to the capex-ROI debate that has weighed on the stock. The position is small in dollar terms (max loss at the trailing stop is capped, and a full earnings-gap loss on 6 shares is a bounded, known risk relative to total equity). No company-specific negative catalyst has emerged since entry — the stock's ~8% pullback this week tracks the same sector-wide AI-capex anxiety already priced into the Monday conviction rating (B) above, not a fresh thesis break. Current buffer to the trailing stop: HWM USD 655.84 / stop USD 590.256 vs current USD 604.82 = **2.406% buffer** — thin but not at a level that argues for a pre-emptive trim beyond what the stop already protects. **Decision: HOLD the full 6-share position through earnings, no trim.** Acknowledged risk per the standing 2026-06-04 AVGO lesson: the trailing stop does not protect against an overnight earnings gap; that risk is accepted given the position's small size. **review_by renewed to 2026-07-30** (the trading day immediately after the print) to force a fresh post-earnings read.
+
+**V:** already decided 07-24 (HOLD through earnings, no trim); unchanged today, no new action needed. review_by 2026-07-29 stands.
+
+**Step 6 — cash-drag check:** Cash 64.198%, well above the 25-40% target band — now into a **5th consecutive week** above the band. Weekly new-position slots are fully available (0/3 used this week, cap reset Monday). The tape today is genuinely constructive (Iran de-escalation, oil down ~4.5%, 10yr eased comfortably below the 4.75% gate, futures broadly higher) — precisely the condition that should trigger either a qualifying entry or an explicit sentence explaining why not. **Pulled fresh 50-day SMA and 20-day ATR% for every non-held watchlist name with a live technical gate** (via Alpaca `data.alpaca.markets` bars, 2026-05-01 to 2026-07-25 close):
+
+| Ticker | Price | 50-day SMA | vs 50-day | 20-day ATR% | Gate |
+|--------|-------|-----------|-----------|-------------|------|
+| NVDA | 207.07 | 209.17 | **−1.00%** | 3.29% | FAIL |
+| MSFT | 381.81 | 399.11 | **−4.34%** | 2.75% | FAIL |
+| COST | 935.35 | 969.69 | **−3.54%** | 1.79% | FAIL |
+| LRCX | 305.42 | 338.42 | **−9.75%** | 5.98% | FAIL |
+| PWR | 625.69 | 694.47 | **−9.90%** | 3.14% | FAIL |
+
+Every single watchlist name still fails the technical-confirmation gate (all below their 50-day SMA) — NVDA is the closest at only −1.00%, but a "closest to passing" name is not a passing name. **No qualifying entry exists today despite the constructive tape and available slots.** Staying in cash today is the correct, disciplined call, not a passive default — the gate failure is fresh data pulled this morning, not a stale assumption. If NVDA closes back above its 50-day SMA with 2 consecutive confirmed sessions (per the standing multi-session-confirmation lesson), it becomes the next candidate to watch.
+
+**Step 7 — plan:** **No trades today.** META's forced review_by decision: HOLD, no trim, review_by renewed to 2026-07-30. V's hold-through-earnings decision from 07-24 stands unchanged. Monday conviction ratings recorded (LLY A, V A, UNH A, META B, VST A) — no position has 3 consecutive Mondays at C, so no forced trim applies. Every non-held watchlist candidate fails the technical gate this morning (see table above) — cash stays elevated by discipline, not by default.
+
+**Stop audit (`orders open`, live Alpaca data):** LLY `e3547b9e` (HWM 1206.94 / stop 1086.246), V `2b0a93ba` (HWM 364.91 / stop 328.419), UNH `225cb079` (HWM 436.945 / stop 393.2505), META `14301809` (HWM 655.84 / stop 590.256), VST `87f49386` (HWM 169.76 / stop 152.784) — all 5 status `new` (live), quantities match positions. **5/5 PASS.**
+
+**Planned trades for today:**
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-07-27",
+  "trades": []
+}
+```
+
+**Step 8 — notify:** Telegram sent per playbook — market posture (Iran de-escalation, oil down sharply, 10yr eased below the gate, futures broadly higher) + no trades planned (every watchlist name still fails its technical gate) + META's forced hold-through-earnings decision.
+**Step 9 — commit:** done.
