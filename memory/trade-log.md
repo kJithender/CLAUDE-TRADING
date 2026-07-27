@@ -4248,3 +4248,19 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Plan:** No trades today. All 5 positions HOLD.
 - **Notify:** Telegram sent — market posture (Iran de-escalation, oil down sharply, 10yr eased, futures up), no trades planned (every watchlist name fails its technical gate), META hold-through-earnings decision, Monday conviction ratings.
 - **Commit:** done.
+
+## 2026-07-27 ~09:37 ET — MARKET-OPEN (Monday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}` before this run); wrote lock for market-open. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Plan check:** today's `research-log.md` plan block (`plan_date: 2026-07-27`) confirmed dated today with `trades: []` — pre-market found every watchlist candidate (NVDA, MSFT, COST, LRCX, PWR) still failing the technical gate. No idempotency concern (nothing to execute); no `EXECUTED:` line needed.
+- **Market:** `clock` confirmed `is_open: true` (next_close 16:00 ET).
+- **Breaking-news gate:** N/A — zero symbols in today's plan.
+- **Account (live, ~09:37 ET):** Equity USD 99,902.51, cash USD 64,260.90 (64.324%), long market value USD 35,641.61 (35.677%), last_equity USD 99,829.56 (07-24 close).
+- **Shock check:** +0.0731% vs last_equity — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) vs equity USD 99,902.51 — drawdown **0.4182%**. NOT triggered (9.5818pp headroom).
+- **Positions (% from entry):** LLY +1.579% (USD 1,192.90), META **−5.758%** (USD 604.395), UNH −0.584% (USD 419.8139), V +1.057% (USD 358.81), VST +1.306% (USD 163.315) — none within range of the −7% cut (midday's job regardless).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.058% (USD 20,038.5475), Financials (V) 7.902% (USD 7,893.82), Communication Services (META) 3.630% (USD 3,626.37), Energy/Utilities (VST) 4.087% (USD 4,082.875), cash 64.324% (USD 64,260.90) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,206.94/stop 1,086.246), META `14301809` (HWM 655.84/stop 590.256), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 364.91/stop 328.419), VST `87f49386` (HWM 169.76/stop 152.784) — all 5 status `new` (live), quantities match positions exactly (8/6/25/22/25). **5/5 PASS** — no recreation needed. No exits since pre-market — no `closed-trades.md` reconciliation needed.
+- **Trades:** none (pre-market plan was empty — no watchlist candidate cleared the technical gate). Weekly new-position count unchanged: 0/3 used this week.
+- **Notify:** Telegram sent — no trades, reason given (every watchlist name still fails the technical gate per today's pre-market pull), 5/5 stops confirmed live.
+- **Commit:** done.
