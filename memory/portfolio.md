@@ -21,7 +21,9 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-28 ~12:37 ET (midday, Tuesday) — Equity USD 100,098.20, cash USD 71,553.64 (71.483%), long MV USD 28,544.56 (28.517%), last_equity USD 99,748.02 (07-27 close). Drawdown 0.2232% off HWM USD 100,322.08 (07-21 close, not triggered, 9.7768pp headroom); no intraday shock (+0.3510% vs last_equity). 🚨 **META's 10% trailing stop filled at 10:39:04 AM ET** — 6sh, entry USD 641.323333 → exit USD 590.25 (−7.964%, −USD 306.44), held 8 days; HWM USD 655.84, stop USD 590.256 (filled essentially at the nominal stop, no meaningful slippage). This is the third escalation of the same story this week: META closed past −7% on 07-24 and 07-27, and today the position was fully stopped out one trading day before its 07-29 earnings print. WebSearch (`META stock news today July 28 2026`) found no company-specific negative catalyst — a Meta-BlackRock USD 14B/1GW Texas data-center JV was announced today (neutral-to-positive); the drag is broad AI-capex-ROI anxiety, the same theme flagged repeatedly all week. Recorded in `closed-trades.md`, `trades.jsonl`, dated lesson in `lessons.md` (re-raises the proposed mid-band hold/trim/exit rule from the 07-24 weekly review with a live example). Remaining 3/3 stops confirmed live (LLY 8 ratcheted to HWM 1232.00/stop 1108.80, UNH 25 unchanged, V 22 ratcheted to HWM 369.06/stop 332.154) — no gap, META's stop is absent only because the position itself closed. All 3 remaining positions HOLD (LLY +3.723%, UNH +1.212%, V +3.887%), none within range of the −7% midday cut, none up >15% (no tightening). No new trades — midday never opens new positions. Weekly new-position count unchanged: 0/3 used this week.
+**Last updated:** 2026-07-28 ~15:52 ET (close, Tuesday) — EOD: equity USD 100,162.41, up +0.4154% today (last_equity USD 99,748.02, 07-27 close); Bull +0.16241% since inception (2026-07-01) vs SPY −0.6378% (740.91 vs anchor 745.665) = **+0.800pp gap — Bull remains ahead of SPY since inception**, widened from yesterday's +0.610pp. Drawdown 0.1592% off HWM USD 100,322.08 (07-21 close, not triggered, 9.841pp headroom). Market recovered from the morning's chip-sector rout: Dow +0.5% (262.83pts to 52,210.08), S&P 500 +0.02% (7,413.18), Nasdaq roughly flat — communication services/staples/discretionary led, energy/tech/utilities lagged, as earnings optimism and falling oil offset the AI-circular-financing chip selloff that dominated pre-market; FOMC decision due tomorrow (07-29). This tape supports Bull's current book (Healthcare/Financials, zero AI-semi exposure) sitting outside today's weak sector. 0 trades today (close places no orders); 3/3 stops confirmed live via `orders open` (LLY `e3547b9e` HWM 1232.00/stop 1108.80 unchanged, UNH `225cb079` HWM 436.945/stop 393.2505 unchanged, V `2b0a93ba` ratcheted to HWM 371.16/stop 334.044 on a fresh intraday high before V reports Q3 FY26 earnings today after the close — review_by 07-29 forces tomorrow's post-earnings read). All 3 positions HOLD (LLY +4.322%, UNH +1.553%, V +3.555%), none near the −7% line. No exits today — META and VST's stop-outs (both earlier today, pre-midday) were already reconciled in `closed-trades.md`/`lessons.md` by the midday run; no new `closed-trades.md` entries needed this run. Weekly new-position count unchanged: 0/3 used this week.
+
+**Prior update:** 2026-07-28 ~12:37 ET (midday, Tuesday) — Equity USD 100,098.20, cash USD 71,553.64 (71.483%), long MV USD 28,544.56 (28.517%), last_equity USD 99,748.02 (07-27 close). Drawdown 0.2232% off HWM USD 100,322.08 (07-21 close, not triggered, 9.7768pp headroom); no intraday shock (+0.3510% vs last_equity). 🚨 **META's 10% trailing stop filled at 10:39:04 AM ET** — 6sh, entry USD 641.323333 → exit USD 590.25 (−7.964%, −USD 306.44), held 8 days; HWM USD 655.84, stop USD 590.256 (filled essentially at the nominal stop, no meaningful slippage). This is the third escalation of the same story this week: META closed past −7% on 07-24 and 07-27, and today the position was fully stopped out one trading day before its 07-29 earnings print. WebSearch (`META stock news today July 28 2026`) found no company-specific negative catalyst — a Meta-BlackRock USD 14B/1GW Texas data-center JV was announced today (neutral-to-positive); the drag is broad AI-capex-ROI anxiety, the same theme flagged repeatedly all week. Recorded in `closed-trades.md`, `trades.jsonl`, dated lesson in `lessons.md` (re-raises the proposed mid-band hold/trim/exit rule from the 07-24 weekly review with a live example). Remaining 3/3 stops confirmed live (LLY 8 ratcheted to HWM 1232.00/stop 1108.80, UNH 25 unchanged, V 22 ratcheted to HWM 369.06/stop 332.154) — no gap, META's stop is absent only because the position itself closed. All 3 remaining positions HOLD (LLY +3.723%, UNH +1.212%, V +3.887%), none within range of the −7% midday cut, none up >15% (no tightening). No new trades — midday never opens new positions. Weekly new-position count unchanged: 0/3 used this week.
 
 **Prior update:** 2026-07-28 ~09:36 ET (market-open, Tuesday) — Equity USD 99,851.28, cash USD 68,012.14 (68.116%), long MV USD 31,839.14 (31.888%), last_equity USD 99,748.02 (07-27 close). Drawdown 0.4693% off HWM USD 100,322.08 (07-21 close, not triggered, 9.5307pp headroom); no intraday shock (+0.1035% vs last_equity). 🚨 **VST's 10% trailing stop filled at 09:34:48 AM ET** — 25sh, entry USD 161.21 → exit USD 150.0496 (−6.924%, −USD 279.01), held 7 days; HWM USD 169.76, nominal stop USD 152.784 (filled ~1.8% through the nominal stop, gap-driven slippage). WebSearch found a same-day TD Cowen price-target cut (USD 230→222, kept Buy) layered on 07-27's broad AI-power-sector weakness (Constellation/Talen/NRG also down that session, no company-specific catalyst then either); Goldman and Wells Fargo both reiterated Buy same day — a sector-rotation/single-downgrade exit, not a thesis break. Recorded in `closed-trades.md`, `trades.jsonl`, dated lesson in `lessons.md`. Remaining 4/4 stops confirmed live (LLY 8 ratcheted to HWM 1229.99/stop 1106.991, META 6, UNH 25, V 22 ratcheted to HWM 365.37/stop 328.833) — no gap, VST's stop is absent only because the position itself closed. All 4 remaining positions HOLD (LLY +3.882%, META −6.731%, UNH −0.954%, V +2.856%), none within range of the −7% midday-only cut. No new trades — pre-market plan was empty (every watchlist name still fails the technical gate). Weekly new-position count unchanged: 0/3 used this week.
 
@@ -69,16 +71,17 @@ reference but is **not** the live comparison baseline going forward.
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-28 midday ~12:37 ET)
+## Account (live Alpaca data, 2026-07-28 close ~15:52 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,098.20 |
-| Cash | $71,553.64 (71.483%) |
-| Long market value | $28,544.56 (28.517%: LLY+UNH+V) |
-| Buying power | $366,139.33 |
+| Equity | $100,162.41 |
+| Cash | $71,553.64 (71.446%) |
+| Long market value | $28,608.77 (28.567%: LLY+UNH+V) |
+| Buying power | $366,319.11 |
 | Last equity | $99,748.02 |
 
+**Prior (midday 07-28 ~12:37 ET):** Equity $100,098.20 | Cash $71,553.64 (71.483%) | Long MV $28,544.56 (28.517%) | Buying power $366,139.33
 **Prior (market-open 07-28 ~09:36 ET):** Equity $99,851.28 | Cash $68,012.14 (68.116%) | Long MV $31,839.14 (31.888%) | Buying power $361,198.14
 **Prior (pre-market 07-28 ~08:22 ET):** Equity $99,983.51 | Cash $64,260.90 (64.271%) | Long MV $35,722.61 (35.729%) | Buying power $357,066.91
 **Prior (close 07-27 ~15:51 ET):** Equity $99,708.06 | Cash $64,260.90 (64.447%) | Long MV $35,447.16 (35.552%) | Buying power $356,295.65
@@ -99,17 +102,28 @@ reference but is **not** the live comparison baseline going forward.
 
 ## Open positions
 
-_As of midday ~12:37 ET, 2026-07-28:_
+_As of close ~15:52 ET, 2026-07-28:_
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday 07-27) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| LLY | 8 | $1,174.35625 | $1,218.08 | +$349.79 (+3.723%) | Healthcare | Order e3547b9e, 10%, HWM $1,232.00, stop $1,108.80 — live, ratcheted up | **A** (retatrutide Phase 3 wins, dividend declared ex-date 08-14, Novo Nordisk injunction bid is an escalation of the already-flagged ad-claims suit not a new catalyst; review_by 2026-08-05) |
-| UNH | 25 | $422.28 | $427.40 | +$128.00 (+1.212%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (nothing material overnight; Buy consensus intact, avg PT USD 475; review_by 2026-08-17) |
-| V | 22 | $355.058182 | $368.86 | +$303.64 (+3.887%) | Financials | Order 2b0a93ba, 10%, HWM $369.06, stop $332.154 — live, ratcheted up | **A** (reports Q3 FY26 today 07-28 after close, consensus EPS ~USD 3.23; hold-through-earnings decision from 07-24 stands, no trim; review_by 2026-07-29) |
+| LLY | 8 | $1,174.35625 | $1,225.1168 | +$406.08 (+4.322%) | Healthcare | Order e3547b9e, 10%, HWM $1,232.00, stop $1,108.80 — live, unchanged | **A** (retatrutide Phase 3 wins, dividend declared ex-date 08-14, Novo Nordisk injunction bid is an escalation of the already-flagged ad-claims suit not a new catalyst; review_by 2026-08-05) |
+| UNH | 25 | $422.28 | $428.84 | +$164.00 (+1.553%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (nothing material overnight; Buy consensus intact, avg PT USD 475; review_by 2026-08-17) |
+| V | 22 | $355.058182 | $367.68 | +$277.68 (+3.555%) | Financials | Order 2b0a93ba, 10%, HWM $371.16, stop $334.044 — live, ratcheted up | **A** (reports Q3 FY26 today 07-28 after close, consensus EPS ~USD 3.23; hold-through-earnings decision from 07-24 stands, no trim; review_by 2026-07-29 forces tomorrow's post-earnings read) |
 
 **META — CLOSED 2026-07-28 10:39:04 AM ET.** 10% trailing stop filled (order 14301809, 6sh, entry $641.323333 → exit $590.25, −7.964%, −$306.44, held 8 days). Third escalation of the same story this week (closed past −7% on 07-24 and 07-27); WebSearch found no company-specific negative catalyst today (Meta-BlackRock USD 14B/1GW Texas data-center JV, neutral-to-positive) — broad AI-capex-ROI anxiety, one trading day before the 07-29 earnings print. See `closed-trades.md`. Next earnings 2026-07-29 — no re-entry consideration inside the earnings blackout.
 
 **VST — CLOSED 2026-07-28 09:34:48 AM ET.** 10% trailing stop filled (order 87f49386, 25sh, entry $161.21 → exit $150.0496, −6.924%, −$279.01, held 7 days). TD Cowen PT cut (USD 230→222, kept Buy) layered on 07-27's broad AI-power-sector weakness; Goldman/Wells Fargo kept Buy same day — sector-rotation exit, not a thesis break. See `closed-trades.md`. Next earnings 2026-08-07 — may reconsider as fresh entry if setup re-confirms.
+
+## Risk posture (2026-07-28 close)
+
+- **Drawdown circuit breaker:** Equity $100,162.41 vs running HWM $100,322.08 (2026-07-21 close) — drawdown **0.1592%**. NOT triggered (9.841pp headroom) ✓.
+- **Today's P/L:** Equity $100,162.41 vs last_equity $99,748.02 (07-27 close) = **+0.4154%**.
+- **Sector exposure:** Healthcare (LLY+UNH) 20.492% ($20,521.93), Financials (V) 8.077% ($8,088.96), cash 71.446% ($71,553.64) — all well within the 60% sector cap.
+- **-7% rule check:** LLY +4.322%, UNH +1.553%, V +3.555% — none within range of the −7% midday-only cut threshold (close places no orders regardless).
+- **Stop audit:** LLY, UNH, V — 3/3 live stops confirmed via `orders open`, quantities match positions exactly (8/25/22); V's stop ratcheted to a fresh intraday HWM ($371.16/stop $334.044). No gap.
+- **Weekly new-position count:** 0/3 used this week — unchanged, close places no orders.
+- **Trades this run:** none (close is read-only). No new exits today — META and VST's stop-outs (both this morning) were already reconciled by the midday run.
+- **Market close context:** Dow +0.5% (52,210.08), S&P 500 +0.02% (7,413.18), Nasdaq roughly flat — earnings optimism and falling oil offset an AI-circular-financing chip-sector selloff; Bull's zero-AI-semi book sat outside today's weak sector, in line with the pattern seen most of this week. FOMC decision due tomorrow 07-29.
 
 ## Risk posture (2026-07-28 midday)
 
@@ -133,15 +147,17 @@ _As of midday ~12:37 ET, 2026-07-28:_
 - **Weekly new-position count:** 0/3 used this week — unchanged, no new trades this run.
 - **Trades this run:** none planned (pre-market plan was empty — every watchlist candidate fails the technical gate). One exit (VST, via trailing stop) — reconciled in `closed-trades.md`, `trades.jsonl`, and `lessons.md`.
 
-## Race scoreboard (2026-07-27 close)
+## Race scoreboard (2026-07-28 close)
 
 | Agent | Since inception | Inception date | Notes |
 |-------|-----------------|-----------------|-------|
-| Bull (Cautious) | **−0.292%** | 2026-07-01 | as of 07-27 close |
-| AGGRO (Aggressive) | −7.123% | 2026-06-04 | **STALE — unchanged since 2026-06-23 EOD, now 34 days stale** |
-| SPY | −0.902% | 2026-07-01 (Bull's baseline) | as of 07-27 close (738.94) |
+| Bull (Cautious) | **+0.16241%** | 2026-07-01 | as of 07-28 close |
+| AGGRO (Aggressive) | −7.123% | 2026-06-04 | **STALE — unchanged since 2026-06-23 EOD, now 35 days stale** |
+| SPY | −0.6378% | 2026-07-01 (Bull's baseline) | as of 07-28 close (740.91) |
 
-Bull leads SPY by +0.610pp since inception as of today's close, narrowed slightly from Friday's +0.803pp. AGGRO's figure is not directly comparable (different inception date) and has not updated in over a month — see `lessons.md` for the standing escalation history.
+Bull leads SPY by +0.800pp since inception as of today's close, widened from yesterday's +0.610pp. AGGRO's figure is not directly comparable (different inception date) and has not updated in over a month — see `lessons.md` for the standing escalation history.
+
+**Prior (2026-07-27 close):** Bull −0.292% | AGGRO −7.123% (stale, 34 days) | SPY −0.902% | gap +0.610pp
 
 ## Risk posture (2026-07-28 pre-market)
 
