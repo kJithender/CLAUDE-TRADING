@@ -4301,3 +4301,18 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Monthly/quarterly housekeeping:** N/A — not the first trading day of a month, not a quarterly dividend month.
 - **Trades today:** none. Weekly new-position count unchanged: 0/3 used this week (cap reset 07-27).
 - **Notify:** Telegram sent, 🚨 prefix (META past −7% at close). Commit follows.
+
+## 2026-07-28 ~08:22 ET — PRE-MARKET (Tuesday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock acquired (`_lock` was `{}`), `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Account (live, ~08:22 ET):** Equity USD 99,983.51, cash USD 64,260.90 (64.271%), long market value USD 35,722.61 (35.729%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close) vs equity USD 99,983.51 — drawdown 0.3375%. NOT triggered (9.6625pp headroom).
+- **Intraday shock check:** equity USD 99,983.51 vs last_equity USD 99,748.02 (07-27 close) = +0.236% — no shock (threshold −4%).
+- **Positions:** LLY +3.022%, META −6.696%, UNH −0.365%, V +3.220%, VST −3.920% — none within the −7% cut range (pre-market check regardless; midday's job).
+- **Monday conviction review:** N/A (Tuesday). Ratings unchanged: LLY A, V A, UNH A, META B, VST A.
+- **Earnings-window rule:** **V reports today (07-28) after close** — hold-through-earnings decision from 07-24 reconfirmed, no new negative catalyst, HOLD, no trim; review_by 2026-07-29 forces tomorrow's post-earnings read. **META reports tomorrow (07-29) after close** — hold decision from 07-27 reconfirmed, no new negative catalyst, HOLD, no trim; review_by 2026-07-30 stands. Neither contract is due today.
+- **Cash-drag check:** cash 64.271%, 6th consecutive week above the 25-40% target band. Weekly cap fully available (0/3). Tape is mixed — a deepening Asian chip-sector selloff (Kospi −10%, Samsung/SK Hynix −13%/−14%) hit US chipmakers pre-bell while broader S&P/Dow futures were flat-to-up; 10yr eased to 4.62%, well below the 4.75% gate; FOMC meeting begins today (no change expected tomorrow). Pulled fresh 50-day SMA/20-day ATR for every watchlist candidate: **all 5 fail the technical gate, NVDA and LRCX materially worse than Monday** (NVDA −5.51% vs −1.00%, LRCX −14.07% vs −9.75%) as the chip rout hits them directly. No qualifying entry — staying in cash is a disciplined, freshly-verified call.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1206.94/stop 1086.246), V `2b0a93ba` (HWM 364.91/stop 328.419), UNH `225cb079` (HWM 436.945/stop 393.2505), META `14301809` (HWM 655.84/stop 590.256), VST `87f49386` (HWM 169.76/stop 152.784) — all 5 status `new` (live), quantities match positions. **5/5 PASS** — no recreation needed.
+- **Plan:** No trades today. All 5 positions HOLD.
+- **Notify:** Telegram sent — market posture (chip-sector selloff pre-bell, 10yr eased, FOMC begins today), no trades planned (every watchlist name fails its technical gate, several worse than Monday), V/META hold-through-earnings decisions reconfirmed.
+- **Commit:** done.

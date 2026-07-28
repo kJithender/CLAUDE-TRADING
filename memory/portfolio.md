@@ -21,7 +21,9 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-27 ~15:51 ET (close, Monday) — EOD: equity USD 99,708.06, down −0.1217% today (last_equity USD 99,829.56, 07-24 close); Bull −0.29194% since inception (2026-07-01) vs SPY −0.90200% (738.94 vs anchor 745.665) = **+0.610pp gap — Bull remains ahead of SPY since inception**, narrowed slightly from Friday's +0.803pp (Bull gave back more today than a roughly-flat SPY). Two-track tape: an Iran/oil relief rally (US-Iran strike pause, Brent −as much as 7.4% intraday) lifted the Dow/S&P at the open, but a heavy semiconductor-sector selloff reversed the Nasdaq into a midday decline — a layer Bull's book sits entirely outside of. 🚨 **META closed at −7.324%, past the −7% guardrail line for the second time since the reset** (first was 07-24, −7.055%) — the −7% cut is a midday-only action per CLAUDE.md; today's midday check (12:37 ET) had META at −6.419%, inside the line; no company-specific catalyst found (broad chip/AI-fatigue selloff, oversold ahead of 07-29 earnings, 96% beat odds per prediction markets); see dated lesson in `lessons.md` (this is now a repeating pattern, escalated). 0 trades today; 5/5 stops confirmed live, unchanged from midday (LLY 8, META 6, UNH 25, V 22, VST 25); no exits, no `closed-trades.md` reconciliation needed. Drawdown 0.6120% off HWM USD 100,322.08 (9.388pp headroom, not triggered); no intraday shock. Weekly new-position count unchanged: 0/3 used this week.
+**Last updated:** 2026-07-28 ~08:22 ET (pre-market, Tuesday) — Equity USD 99,983.51, cash USD 64,260.90 (64.271%), long MV USD 35,722.61 (35.729%), last_equity USD 99,748.02 (07-27 close). Drawdown 0.3375% off HWM USD 100,322.08 (07-21 close, not triggered, 9.6625pp headroom); no intraday shock (+0.236% vs last_equity). 5/5 stops confirmed live, unchanged (LLY 8, META 6, UNH 25, V 22, VST 25). All 5 positions HOLD (LLY +3.022%, META −6.696% — recovered somewhat from yesterday's −7.324% close, UNH −0.365%, V +3.220%, VST −3.920%), none within range of the −7% midday-only cut. **Market tape mixed-to-risk-off:** Nasdaq futures down ~1% on a deepening Asian chip-sector selloff (Kospi −10%, Samsung −13%, SK Hynix −14% on AI-circular-financing and China-competition fears) that is bleeding into US chipmakers pre-bell; S&P/Dow futures roughly flat-to-slightly-up; 10yr Treasury eased to 4.62% (3rd straight down session, well below the 4.75% gate); two-day FOMC meeting begins today, decision tomorrow 07-29 (no cut expected, ~35% market-implied odds). **Thesis contracts:** none due today — V's earnings (today, 07-28, after close) hold-through decision was made 07-24 and stands unchanged, review_by 07-29 forces tomorrow's post-earnings read; META's earnings (tomorrow, 07-29, after close) hold decision was made 07-27, review_by 07-30 stands. No held-name news that changes either thesis (LLY: retatrutide Phase 3 wins + dividend declared, Novo Nordisk injunction bid is an escalation of the already-flagged ad-claims suit, not a new catalyst; UNH: nothing material, Buy-consensus intact; VST: yesterday's −4.46% session was broad AI-power-sector weakness — Constellation/Talen/NRG all down too, Scotiabank PT raised to USD 298 — no company-specific catalyst). **Cash-drag check:** cash 64.271%, well above the 25-40% target band for a 6th consecutive week; 0/3 weekly slots used; fresh SMA/ATR pull (Alpaca bars, 2026-05-15 to 2026-07-27) on all 5 non-held watchlist names found **all 5 still fail the technical gate, several materially worse than Monday** — NVDA −5.51% vs 50-day (was −1.00% Monday, the chip selloff pushed it further away), MSFT −2.36%, COST −1.55%, LRCX −14.07%, PWR −10.08%. No qualifying entry; staying in cash is the correct, actively-re-verified call today, not a passive default. No trades planned. 0 trades this run; no exits, no `closed-trades.md` reconciliation needed.
+
+**Prior update:** 2026-07-27 ~15:51 ET (close, Monday) — EOD: equity USD 99,708.06, down −0.1217% today (last_equity USD 99,829.56, 07-24 close); Bull −0.29194% since inception (2026-07-01) vs SPY −0.90200% (738.94 vs anchor 745.665) = **+0.610pp gap — Bull remains ahead of SPY since inception**, narrowed slightly from Friday's +0.803pp (Bull gave back more today than a roughly-flat SPY). Two-track tape: an Iran/oil relief rally (US-Iran strike pause, Brent −as much as 7.4% intraday) lifted the Dow/S&P at the open, but a heavy semiconductor-sector selloff reversed the Nasdaq into a midday decline — a layer Bull's book sits entirely outside of. 🚨 **META closed at −7.324%, past the −7% guardrail line for the second time since the reset** (first was 07-24, −7.055%) — the −7% cut is a midday-only action per CLAUDE.md; today's midday check (12:37 ET) had META at −6.419%, inside the line; no company-specific catalyst found (broad chip/AI-fatigue selloff, oversold ahead of 07-29 earnings, 96% beat odds per prediction markets); see dated lesson in `lessons.md` (this is now a repeating pattern, escalated). 0 trades today; 5/5 stops confirmed live, unchanged from midday (LLY 8, META 6, UNH 25, V 22, VST 25); no exits, no `closed-trades.md` reconciliation needed. Drawdown 0.6120% off HWM USD 100,322.08 (9.388pp headroom, not triggered); no intraday shock. Weekly new-position count unchanged: 0/3 used this week.
 
 **Prior update:** 2026-07-27 ~12:37 ET (midday, Monday) — risk check only, no action. Equity USD 99,839.04, cash USD 64,260.90 (64.365%), long MV USD 35,582.08 (35.640%). Drawdown 0.4815% off HWM USD 100,322.08 (not triggered, 9.5185pp headroom); no intraday shock (+0.0095% vs last_equity USD 99,829.56, 07-24 close). 5/5 stops confirmed live, unchanged since market-open (quantities match exactly: LLY 8, META 6, UNH 25, V 22, VST 25). All 5 positions HOLD (LLY +1.921%, META −6.419%, UNH −0.736%, V +2.225%, VST −2.202%), none near −7%, none up >15%. News scan on META (down >3% from entry) found no company-specific negative catalyst — broad "AI fatigue" selloff into 07-29 earnings, plus a positive "Iris" custom-chip data point; consistent with this morning's pre-market HOLD decision (review_by 07-30), no new action. No exits this run — no `closed-trades.md` reconciliation needed. Weekly new-position count unchanged: 0/3 used this week.
 
@@ -63,16 +65,17 @@ reference but is **not** the live comparison baseline going forward.
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-27 close ~15:51 ET)
+## Account (live Alpaca data, 2026-07-28 pre-market ~08:22 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,708.06 |
-| Cash | $64,260.90 (64.447%) |
-| Long market value | $35,447.16 (35.552%: LLY+V+UNH+META+VST) |
-| Buying power | $356,295.65 |
-| Last equity | $99,829.56 |
+| Equity | $99,983.51 |
+| Cash | $64,260.90 (64.271%) |
+| Long market value | $35,722.61 (35.729%: LLY+V+UNH+META+VST) |
+| Buying power | $357,066.91 |
+| Last equity | $99,748.02 |
 
+**Prior (close 07-27 ~15:51 ET):** Equity $99,708.06 | Cash $64,260.90 (64.447%) | Long MV $35,447.16 (35.552%) | Buying power $356,295.65
 **Prior (midday 07-27 ~12:37 ET):** Equity $99,839.04 | Cash $64,260.90 (64.365%) | Long MV $35,582.08 (35.640%) | Buying power $356,662.39
 **Prior (market-open 07-27 ~09:37 ET):** Equity $99,902.51 | Cash $64,260.90 (64.324%) | Long MV $35,641.61 (35.677%) | Buying power $356,840.12
 **Prior (pre-market 07-27 ~08:20 ET):** Equity $100,096.50 | Cash $64,260.90 (64.198%) | Long MV $35,835.60 (35.800%) | Buying power $357,383.28
@@ -90,15 +93,15 @@ reference but is **not** the live comparison baseline going forward.
 
 ## Open positions
 
-_As of close ~15:51 ET, 2026-07-27:_
+_As of pre-market ~08:22 ET, 2026-07-28:_
 
-| Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday) |
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday 07-27) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| LLY | 8 | $1,174.35625 | $1,198.1225 | +$190.13 (+2.024%) | Healthcare | Order e3547b9e, 10%, HWM $1,206.94, stop $1,086.246 — live, unchanged | **A** (retatrutide succeeded in 2 more Phase 3 obesity trials, filing planned 2027; Goldman Buy PT USD 1,283, JPMorgan PT USD 1,400; review_by 2026-08-05) |
-| META | 6 | $641.323333 | $594.355 | -$281.81 (-7.324%) | Communication Services | Order 14301809, 10%, HWM $655.84, stop $590.256 — live, unchanged | **B** (🚨 closed past −7% guardrail line for the 2nd time since reset; midday-only rule, no action this run; no company-specific catalyst, broad chip/AI-fatigue selloff ahead of 07-29 earnings; review_by 2026-07-30 stands) |
-| UNH | 25 | $422.28 | $416.86 | -$135.50 (-1.284%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (first Monday review since 07-20 entry; 3 analyst PT raises this week — Morgan Stanley USD 529, Oppenheimer USD 500, Goldman USD 490; review_by 2026-08-17) |
-| V | 22 | $355.058182 | $362.15 | +$156.02 (+1.997%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (Strong Buy consensus unchanged, new Airwallex partnership 07-23; earnings tomorrow 07-28 — hold-through-earnings decision from 07-24 stands, no trim; review_by 2026-07-29) |
-| VST | 25 | $161.21 | $156.29 | -$123.00 (-3.052%) | Energy/Utilities | Order 87f49386, 10%, HWM $169.76, stop $152.784 — live, unchanged | **A** (first Monday review since 07-21 re-entry; Scotiabank PT raised to USD 298, Bernstein/Morgan Stanley reaffirmed Buy/Overweight; review_by 2026-08-05) |
+| LLY | 8 | $1,174.35625 | $1,209.85 | +$283.95 (+3.022%) | Healthcare | Order e3547b9e, 10%, HWM $1,206.94, stop $1,086.246 — live, unchanged | **A** (retatrutide Phase 3 wins, dividend declared ex-date 08-14, Novo Nordisk injunction bid is an escalation of the already-flagged ad-claims suit not a new catalyst; review_by 2026-08-05) |
+| META | 6 | $641.323333 | $598.38 | -$257.66 (-6.696%) | Communication Services | Order 14301809, 10%, HWM $655.84, stop $590.256 — live, unchanged | **B** (recovered slightly from yesterday's −7.324% close; earnings tomorrow 07-29 after close — hold decision from 07-27 stands, no trim; review_by 2026-07-30) |
+| UNH | 25 | $422.28 | $420.74 | -$38.50 (-0.365%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (nothing material overnight; Buy consensus intact, avg PT USD 475; review_by 2026-08-17) |
+| V | 22 | $355.058182 | $366.49 | +$251.50 (+3.220%) | Financials | Order 2b0a93ba, 10%, HWM $364.91, stop $328.419 — live, unchanged | **A** (reports Q3 FY26 today 07-28 after close, consensus EPS ~USD 3.23; hold-through-earnings decision from 07-24 stands, no trim; review_by 2026-07-29) |
+| VST | 25 | $161.21 | $154.89 | -$158.00 (-3.920%) | Energy/Utilities | Order 87f49386, 10%, HWM $169.76, stop $152.784 — live, unchanged | **A** (yesterday's −4.46% session was broad AI-power-sector weakness, not company-specific — Constellation/Talen/NRG all down too; Scotiabank PT raised to USD 298; review_by 2026-08-05) |
 
 ## Race scoreboard (2026-07-27 close)
 
@@ -110,7 +113,18 @@ _As of close ~15:51 ET, 2026-07-27:_
 
 Bull leads SPY by +0.610pp since inception as of today's close, narrowed slightly from Friday's +0.803pp. AGGRO's figure is not directly comparable (different inception date) and has not updated in over a month — see `lessons.md` for the standing escalation history.
 
-## Risk posture (2026-07-27 close)
+## Risk posture (2026-07-28 pre-market)
+
+- **Drawdown circuit breaker:** Equity $99,983.51 vs running HWM $100,322.08 (2026-07-21 close, from `history 1A 1D`) — drawdown **0.3375%**. NOT triggered (9.6625pp headroom) ✓.
+- **Intraday shock check:** Equity $99,983.51 vs last_equity $99,748.02 (07-27 close) = **+0.236%** — no shock ✓ (threshold −4%).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.201% ($20,197.30), Financials (V) 8.064% ($8,062.78), Communication Services (META) 3.591% ($3,590.28), Energy/Utilities (VST) 3.872% ($3,872.25), cash 64.271% ($64,260.90) — all well within the 60% sector cap.
+- **-7% rule check:** LLY +3.022%, META −6.696% (recovered from yesterday's −7.324% close, still elevated), UNH −0.365%, V +3.220%, VST −3.920% — none within range of the −7% midday-only cut threshold.
+- **Thesis contracts:** LLY (review_by 2026-08-05), UNH (review_by 2026-08-17), VST (review_by 2026-08-05) — not due. V (review_by 2026-07-29, hold-through-earnings decision from 07-24 stands; earnings today after close) — not due until tomorrow. META (review_by 2026-07-30, hold decision from 07-27 stands; earnings tomorrow after close) — not due.
+- **Cash-drag check:** cash 64.271%, above the 25-40% target band for a 6th consecutive week; 0/3 weekly slots used. Fresh SMA/ATR pull on all 5 non-held watchlist names (NVDA, MSFT, COST, LRCX, PWR) — all 5 fail the technical gate, several worse than Monday amid today's Asian chip-sector selloff (NVDA −5.51% vs 50-day, LRCX −14.07%, PWR −10.08%, MSFT −2.36%, COST −1.55%). No qualifying entry.
+- **Weekly new-position count:** 0/3 used this week — unchanged, no trades this run.
+- **Trades this run:** none — pre-market plans only, market not yet open. Stop audit 5/5 PASS, quantities match positions exactly (8/6/25/22/25). No exits — no `closed-trades.md` reconciliation needed.
+
+## Risk posture (2026-07-27 close, historical)
 
 - **Drawdown circuit breaker:** Equity $99,708.06 vs running HWM $100,322.08 (2026-07-21 close, from `history 1A 1D`) — drawdown **0.6120%**. NOT triggered (9.388pp headroom) ✓.
 - **Intraday shock check:** Equity $99,708.06 vs last_equity $99,829.56 (07-24 close) = **−0.1217%** — no shock ✓ (threshold −4%).

@@ -5319,3 +5319,72 @@ No trades planned.
 
 **Step 8 — notify:** Telegram sent per playbook — market posture (Iran de-escalation, oil down sharply, 10yr eased below the gate, futures broadly higher) + no trades planned (every watchlist name still fails its technical gate) + META's forced hold-through-earnings decision.
 **Step 9 — commit:** done.
+
+## 2026-07-28 ~08:22 ET — PRE-MARKET (Tuesday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock:** `_lock` was free (`{}`); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:` or `QUERY:` pending in `control.md`. `CROSS_BULL_LEARNING:` blank.
+- **Account (live, ~08:22 ET):** Equity USD 99,983.51, cash USD 64,260.90 (64.271%), long market value USD 35,722.61 (35.729%), last_equity USD 99,748.02 (07-27 close).
+
+**Step 2 — portfolio sync (positions, live Alpaca data ~08:22 ET):**
+
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | % of equity |
+|--------|-----|-----------|---------|-----------------|--------------|
+| LLY | 8 | 1174.35625 | 1209.85 | +USD 283.95 (+3.022%) | 9.680% |
+| META | 6 | 641.323333 | 598.38 | −USD 257.66 (−6.696%) | 3.591% |
+| UNH | 25 | 422.28 | 420.74 | −USD 38.50 (−0.365%) | 10.520% |
+| V | 22 | 355.058182 | 366.49 | +USD 251.50 (+3.220%) | 8.064% |
+| VST | 25 | 161.21 | 154.89 | −USD 158.00 (−3.920%) | 3.872% |
+
+Sector exposure: Healthcare (LLY+UNH) 20.201%, Financials (V) 8.064%, Communication Services (META) 3.591%, Energy/Utilities (VST) 3.872%, Cash 64.271%. All well within the 60% sector cap.
+
+**Step 3 — risk posture check:**
+- **Drawdown circuit breaker:** `history 1A 1D` high-water mark USD 100,322.08 (2026-07-21 close, unchanged). Current live equity USD 99,983.51 → drawdown **0.3375%**. NOT triggered (9.6625pp headroom) ✓.
+- **Intraday shock check:** equity USD 99,983.51 vs last_equity USD 99,748.02 (07-27 close) = **+0.236%** — no shock ✓ (threshold −4%).
+- **Sector cap:** no group above 60% (see table above) ✓.
+
+**Step 3b — thesis contract review:** LLY (review_by 2026-08-05), UNH (review_by 2026-08-17), VST (review_by 2026-08-05) — none due today, none triggered. V (review_by 2026-07-29, renewed 07-24) not yet due — earnings land TODAY (07-28) after close; hold-through-earnings decision made 07-24 stands unchanged (no negative news since). META (review_by 2026-07-30, renewed 07-27) not yet due — earnings tomorrow (07-29) after close; hold decision made 07-27 stands unchanged.
+
+**Step 3c — Monday conviction review:** N/A (Tuesday). Ratings unchanged from 07-27: LLY A, V A, UNH A, META B, VST A.
+
+**Step 4 — research (WebSearch, all facts dated 2026-07-28 unless noted):**
+- **Market posture — mixed, risk-off in chips specifically:** Nasdaq-100 futures down ~1% pre-bell as US tech stocks slide on a sell-off in Korean memory makers — South Korea's Kospi tumbled over 10%, SK Hynix and Samsung sank 14% and 13% respectively, on AI-circular-financing anxiety (Nvidia's USD 350B OpenAI chip-purchase commitment cited as a trigger) plus reports that Chinese firms are advancing domestic DUV lithography, reigniting China-competition fears in memory. S&P 500 futures roughly flat-to-modestly positive, Dow futures up, on firm PMI data (services/manufacturing ~53-54) and easing yields. **10yr Treasury eased to 4.62%**, a third consecutive down session, comfortably below the 4.75% new-buy gate. The Fed's two-day FOMC meeting begins today; no rate change expected at tomorrow's (07-29) decision, ~35% market-implied odds of a cut. [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-28-dow-sp-500-nasdaq-082832371.html), [Bloomberg](https://www.bloomberg.com/news/articles/2026-07-28/korean-stocks-sink-as-chipmakers-plung-on-deepening-ai-fatigue)
+- **LLY (what changed since yesterday):** nothing thesis-breaking. Eli Lilly declared a cash dividend of USD 1.73 (ex-date 08-14). Novo Nordisk is now pursuing an injunction to block certain Lilly ad claims — this is an escalation of the ad-claims suit already flagged 07-21 (litigation/PR overhang, not a product or regulatory setback). Analysts continue raising price targets on the obesity/diabetes franchise. Thesis unchanged and strengthening. Earnings confirmed 2026-08-05.
+- **META (what changed since yesterday):** no new negative catalyst; stock recovered modestly from yesterday's −7.324% close to −6.696% this morning. Q2 earnings tomorrow (07-29) after close — consensus EPS USD 7.18, revenue USD 60.22B (~27% YoY growth, decelerating from Q1's 33%); FY26 capex guide USD 125-145B remains the central investor concern (an 8% raise at the midpoint was the trigger for the post-Q1 selloff). Ad impressions/price-per-ad growth and AI-capex commentary will be the key swing factors tomorrow. Meta has beaten EPS 6 straight quarters; prediction markets price ~87% odds of another beat. Hold decision from 07-27 (review_by 2026-07-30) stands unchanged — no action today, decision is due tomorrow after the print.
+- **UNH (what changed since yesterday):** nothing material. Price range USD 412.54-423.70 yesterday, currently USD 420.74. Buy-consensus intact (27 analysts, avg PT USD 475.23, +13.8% upside). Standing regulatory-scrutiny watch (Medicare Advantage MLR, coverage-denial-rate reviews) is a known sector risk, not a new company-specific issue. Thesis unchanged. Earnings still 2026-10-27 (far out).
+- **V (what changed since yesterday — earnings TODAY):** Visa reports Q3 FY26 results today after close (~5:00 PM ET webcast). Zacks consensus EPS USD 3.23 (+8.4% YoY), revenue USD 11.35B (+11.6% YoY); FIFA World Cup 2026 (June) cited as a likely cross-border-volume tailwind for the quarter. No negative news since yesterday. Hold-through-earnings decision (made 07-24, thesis intact) stands unchanged; review_by 2026-07-29 will force tomorrow's post-earnings read — the trailing stop (buffer 10.38% to stop USD 328.419) is the only protection against an overnight earnings gap tonight.
+- **VST (what changed since yesterday):** VST fell 4.46% yesterday (07-27) to close USD 156.09 (now USD 154.89 this morning) — WebSearch confirms this was broad AI-power-sector weakness (Constellation Energy, Talen Energy, and NRG Energy all down too on the same day), not a VST-specific setback; GuruFocus still flags VST as undervalued on GF Value after the drop. Scotiabank raised its PT to USD 298 (from USD 293, Outperform) during the same window. Next earnings 2026-08-07 (unchanged, outside the blackout). Thesis unchanged; trailing-stop buffer has compressed to ~1.36% (current USD 154.89 vs stop USD 152.784) — worth watching but no action triggered (not near the −7% line, which is midday-only in any case).
+- **Earnings calendar reconfirmed:** V 2026-07-28 (today, after close), META 2026-07-29 (tomorrow, after close), LLY 2026-08-05 (unchanged), UNH 2026-10-27 (unchanged), VST 2026-08-07 (unchanged). Watchlist-only names reporting this week: MSFT 07-29, LRCX 07-29 (both 1 trading day out, inside blackout), PWR 07-30 (2 trading days out, inside blackout) — all moot regardless since none clear the technical gate today (see Step 6).
+
+**Step 5 — earnings-window rule:** No new buy is planned in any name (moot — no buys planned today regardless). Held names inside the 2-trading-day window: **V** (earnings today) — hold-through-earnings decision made 07-24, reconfirmed above, no new negative catalyst, HOLD full position, no trim. **META** (earnings tomorrow) — hold decision made 07-27, reconfirmed above, HOLD full position, no trim. Neither contract is due today (V due 07-29, META due 07-30) but both are re-checked here per the earnings-window rule's spirit — no thesis break found for either.
+
+**Step 6 — cash-drag check:** Cash 64.271%, well above the 25-40% target band — now a **6th consecutive week** above the band. Weekly new-position slots fully available (0/3 used this week). The tape today is mixed, not constructive for new tech/semi entries specifically (deepening Asian chip-sector rout bleeding into US chipmakers pre-bell), though the broader S&P/Dow futures and easing 10yr are neutral-to-supportive. **Pulled fresh 50-day SMA and 20-day ATR% for every non-held watchlist name** (via Alpaca `data.alpaca.markets` bars, 2026-05-15 to 2026-07-27 close):
+
+| Ticker | Price | 50-day SMA | vs 50-day | 20-day ATR% | Gate |
+|--------|-------|-----------|-----------|-------------|------|
+| NVDA | 196.56 | 208.03 | **−5.51%** | 3.46% | FAIL |
+| MSFT | 389.15 | 398.58 | **−2.36%** | 2.70% | FAIL |
+| COST | 951.56 | 966.57 | **−1.55%** | 1.79% | FAIL |
+| LRCX | 291.41 | 339.14 | **−14.07%** | 6.17% | FAIL |
+| PWR | 620.08 | 689.57 | **−10.08%** | 3.23% | FAIL |
+
+Every watchlist name still fails the technical gate; NVDA and LRCX are materially worse than Monday's readings (NVDA −5.51% vs −1.00%, LRCX −14.07% vs −9.75%) as today's chip-sector selloff hits them directly — the opposite of a qualifying setup. COST and MSFT narrowed slightly but remain firmly below their 50-day. **No qualifying entry exists today; staying in cash is the correct, actively-re-verified call, not a passive default.** A deepening sector-wide selloff is a reason for additional caution on AI-semi/tech names specifically, not a reason to force an entry to reduce cash drag.
+
+**Step 7 — plan:** **No trades today.** V's hold-through-earnings decision (earnings today after close) stands unchanged; review_by 07-29 forces tomorrow's post-earnings read. META's hold decision (earnings tomorrow after close) stands unchanged; review_by 07-30 forces the post-earnings read the day after. No watchlist candidate clears its technical gate — several got materially worse on today's chip-sector rout. FOMC decision tomorrow (07-29, no change expected) is a mild watch item, not a blocker (10yr well below the 4.75% gate).
+
+**Stop audit (`orders open`, live Alpaca data):** LLY `e3547b9e` (HWM 1206.94 / stop 1086.246), V `2b0a93ba` (HWM 364.91 / stop 328.419), UNH `225cb079` (HWM 436.945 / stop 393.2505), META `14301809` (HWM 655.84 / stop 590.256), VST `87f49386` (HWM 169.76 / stop 152.784) — all 5 status `new` (live), quantities match positions. **5/5 PASS.**
+
+**Planned trades for today:**
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-07-28",
+  "trades": []
+}
+```
+
+**Step 8 — notify:** Telegram sent per playbook — market posture (chip-sector selloff pre-bell, 10yr eased to 4.62%, FOMC begins today) + no trades planned (all watchlist candidates fail the gate, several worse than Monday) + V earnings today / META earnings tomorrow, both hold decisions reconfirmed unchanged.
+**Step 9 — commit:** done.
