@@ -17,6 +17,17 @@ top. The weekly review computes win rate and average win/loss from this file._
 
 -->
 
+## 2026-07-28 — META — LOSS
+- **Entry:** 6 shares @ USD 641.323333 on 2026-07-20
+- **Exit:** USD 590.25 via trailing stop (auto-executed 10:39:04 AM ET, order 14301809, HWM USD 655.84, stop USD 590.256)
+- **P/L:** −USD 306.44 (−7.964%)
+- **Held:** 8 days
+- **Original thesis:** Ad-engine fundamentals compounding (+19% impressions/+12% pricing per Q1 report); Conviction B as of 2026-07-27 review — thesis intact but conviction dented pre-earnings by a rough pre-earnings week.
+- **Why it ended:** Continuing broad AI-capex-ROI anxiety ahead of tomorrow's (2026-07-29) Q2 earnings print — WebSearch found no company-specific negative catalyst (the Meta-BlackRock USD 14B/1GW Texas data-center JV announced today is neutral-to-positive, not negative); stock is off ~10% YTD / ~16% over 12 months on capex-ROI skepticism, the same broad theme that already pushed META past the −7% guardrail line twice this week (closes of 07-24 and 07-27, both flagged in `lessons.md`). The 10% trailing stop did its job, capping the loss the day before the earnings print rather than riding into potential gap risk.
+- **Lesson:** Third occurrence of the same pattern in one week (07-24 close, 07-27 close, now the actual stop-out) — a thesis-intact, Conviction-B position ground down entirely by sector-wide AI-capex sentiment with no company-specific break. Also filed to lessons.md.
+
+---
+
 ## 2026-07-28 — VST — LOSS
 - **Entry:** 25 shares @ USD 161.21 on 2026-07-21
 - **Exit:** USD 150.0496 via trailing stop (auto-executed 09:34:48 AM ET, order 87f49386, HWM USD 169.76, stop USD 152.784)

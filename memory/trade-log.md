@@ -4333,3 +4333,19 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Trades:** none planned, none placed — pre-market plan was empty (every watchlist candidate fails the technical gate). Weekly new-position count unchanged: 0/3 used this week.
 - **Notify:** Telegram sent, 🚨 prefix (stop filled) — VST stopped out, exit price and P/L given, reason noted, remaining 4/4 stops confirmed live.
 - **Commit:** done.
+
+## 2026-07-28 ~12:37 ET (midday, Tuesday)
+
+- **Guardrail check:** `control.md` STATUS: ACTIVE, no `NOTE:`/`QUERY:` pending. Lock acquired and released cleanly.
+- **Market:** `clock` confirmed `is_open: true` (next_close 16:00 ET).
+- **Account (live, ~12:37 ET):** Equity USD 100,098.20, cash USD 71,553.64 (71.483%), long market value USD 28,544.56 (28.517%), last_equity USD 99,748.02 (07-27 close).
+- **Shock check:** +0.3510% vs last_equity — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1M 1D`) vs equity USD 100,098.20 — drawdown **0.2232%**. NOT triggered (9.7768pp headroom).
+- 🚨 **META's trailing stop filled at 10:39:04 AM ET** (order `14301809`, 6sh, entry USD 641.323333 → exit USD 590.25, **−7.964%**, −USD 306.44, held 8 days; HWM USD 655.84, stop USD 590.256 — filled essentially at the nominal stop level, no meaningful slippage). This is the third escalation of the same story this week: META closed past −7% on 07-24 and 07-27, and today the position was fully stopped out one trading day before its 07-29 earnings print. WebSearch (`META stock news today July 28 2026`) found no company-specific negative catalyst — a Meta-BlackRock USD 14B/1GW Texas data-center JV was announced today (neutral-to-positive), and the drag is broad AI-capex-ROI anxiety, the same theme flagged repeatedly all week. Recorded in `closed-trades.md`, `trades.jsonl`, and a dated lesson in `lessons.md` (which also re-raises the proposed mid-band hold/trim/exit rule from the 07-24 weekly review, now with a live example).
+- **Positions remaining (% from entry):** LLY +3.723% (USD 1,218.08), UNH +1.212% (USD 427.40), V +3.887% (USD 368.86) — none within range of the −7% cut, none up >15% (no tightening action).
+- **News scan:** not required — no held position is down >3% or up >10% from entry; META's stop-fill got the ad hoc news check above regardless.
+- **Sector exposure:** Healthcare (LLY+UNH) 20.409% (USD 20,429.64), Financials (V) 8.107% (USD 8,114.92), Communication Services (META) 0% (position closed), cash 71.483% (USD 71,553.64) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 369.06/stop 332.154) — all 3 remaining positions have a live `new`-status stop, quantities match exactly (8/25/22). **3/3 PASS** — META's stop is gone because the position itself is gone (correctly consumed by the fill, not a missing-stop gap); no recreation needed.
+- **Trades:** none placed at midday (this routine only manages existing risk) — one exit observed (META, via trailing stop, pre-dating this run). Weekly new-position count unchanged: 0/3 used this week.
+- **Notify:** Telegram sent, 🚨 prefix (stop filled).
+- **Commit:** done.
