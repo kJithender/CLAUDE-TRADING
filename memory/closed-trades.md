@@ -17,6 +17,17 @@ top. The weekly review computes win rate and average win/loss from this file._
 
 -->
 
+## 2026-07-28 — VST — LOSS
+- **Entry:** 25 shares @ USD 161.21 on 2026-07-21
+- **Exit:** USD 150.0496 via trailing stop (auto-executed 09:34:48 AM ET, order 87f49386, HWM USD 169.76, stop USD 152.784)
+- **P/L:** −USD 279.01 (−6.924%)
+- **Held:** 7 days
+- **Original thesis:** Re-entry on AI-power-buildout diversifier away from AI-semi concentration — Cogentrix acquisition, Helix Digital Infrastructure consortium, hyperscaler power-demand catalysts; 2-consecutive-session technical confirmation bar cleared before entry.
+- **Why it ended:** TD Cowen cut its price target (USD 230→222, still Buy-rated) on 2026-07-28, extending 07-27's broad AI-power-sector weakness (Constellation/Talen/NRG also down that session on no company-specific news). The stock gapped down pre-open and the trailing stop filled with slippage below its nominal USD 152.784 level (filled USD 150.0496, ~1.8% through) — Goldman and Wells Fargo both kept Buy ratings same day, so this is a sector-rotation/single-analyst-PT-cut exit, not a broad thesis break. Next earnings 2026-08-07.
+- **Lesson:** A trailing stop fills at market price once triggered, not at the nominal stop price — a pre-open gap (here, a same-day analyst PT cut layered on the prior session's sector weakness) can produce meaningful slippage (~1.8% here) even without an earnings-driven gap. Also filed to lessons.md.
+
+---
+
 ## 2026-07-16 — VST — LOSS
 - **Entry:** 29 shares @ USD 154.70 on 2026-07-02
 - **Exit:** USD 151.33069 via trailing stop (auto-executed 09:55:47 AM ET, order bdfb5f67, HWM USD 168.21, stop USD 151.389)

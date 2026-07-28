@@ -4316,3 +4316,20 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Plan:** No trades today. All 5 positions HOLD.
 - **Notify:** Telegram sent — market posture (chip-sector selloff pre-bell, 10yr eased, FOMC begins today), no trades planned (every watchlist name fails its technical gate, several worse than Monday), V/META hold-through-earnings decisions reconfirmed.
 - **Commit:** done.
+
+## 2026-07-28 ~09:36 ET — MARKET OPEN (Tuesday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}` before this run); wrote lock for market-open. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending in `control.md`.
+- **Plan check:** Today's pre-market plan (`research-log.md`, `plan_date: 2026-07-28`) was empty — `"trades": []`, no `EXECUTED:` line yet (first run today).
+- **Market:** `clock` confirmed `is_open: true` (next_close 16:00 ET).
+- **Breaking-news gate:** N/A — no planned trades to gate.
+- **Account (live, ~09:36 ET):** Equity USD 99,851.28, cash USD 68,012.14 (68.116%), long market value USD 31,839.14 (31.888%), last_equity USD 99,748.02 (07-27 close).
+- **Shock check:** +0.1035% vs last_equity — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) vs equity USD 99,851.28 — drawdown **0.4693%**. NOT triggered (9.5307pp headroom).
+- 🚨 **VST's trailing stop filled at 09:34:48 AM ET** (order `87f49386`, 25sh, entry USD 161.21 → exit USD 150.0496, **−6.924%**, −USD 279.01, held 7 days; HWM USD 169.76, nominal stop USD 152.784 — filled ~1.8% below the nominal stop, a gap-driven slippage, not an execution error). WebSearch (`VST Vistra stock news today July 28 2026`) found a same-day TD Cowen price-target cut (USD 230→222, kept at Buy) layered on 07-27's broad AI-power-sector weakness (Constellation/Talen/NRG also down that session); Goldman and Wells Fargo both reiterated Buy same day — a sector-rotation/single-downgrade exit, not a thesis break. Recorded in `closed-trades.md`, `trades.jsonl`, and a dated lesson in `lessons.md`. Next VST earnings 2026-08-07 — may reconsider as a fresh entry if the technical/sector setup re-confirms.
+- **Positions remaining (% from entry):** LLY +3.882% (USD 1,219.94), META −6.731% (USD 598.16), UNH −0.954% (USD 418.25), V +2.856% (USD 365.2003) — none within range of the −7% cut (midday's job regardless).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.245% (USD 20,215.77), Financials (V) 8.046% (USD 8,034.4066), Communication Services (META) 3.594% (USD 3,588.96), Energy/Utilities (VST) 0% (position closed), cash 68.116% (USD 68,012.14) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,229.99/stop 1,106.991, ratcheted up since pre-market), META `14301809` (HWM 655.84/stop 590.256), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 365.37/stop 328.833, ratcheted up since pre-market) — all 4 remaining positions have a live `new`-status stop, quantities match exactly (8/6/25/22). **4/4 PASS** — VST's stop is gone because the position itself is gone (correctly consumed by the fill, not a missing-stop gap); no recreation needed.
+- **Trades:** none planned, none placed — pre-market plan was empty (every watchlist candidate fails the technical gate). Weekly new-position count unchanged: 0/3 used this week.
+- **Notify:** Telegram sent, 🚨 prefix (stop filled) — VST stopped out, exit price and P/L given, reason noted, remaining 4/4 stops confirmed live.
+- **Commit:** done.
