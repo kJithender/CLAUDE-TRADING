@@ -4349,3 +4349,19 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Trades:** none placed at midday (this routine only manages existing risk) — one exit observed (META, via trailing stop, pre-dating this run). Weekly new-position count unchanged: 0/3 used this week.
 - **Notify:** Telegram sent, 🚨 prefix (stop filled).
 - **Commit:** done.
+
+## 2026-07-29 ~09:36 ET — MARKET OPEN (Wednesday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}` before this run); wrote lock for market-open. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending in `control.md`.
+- **Plan check:** Today's pre-market plan (`research-log.md`, `plan_date: 2026-07-29`) was empty — `"trades": []`. No `EXECUTED:` line yet before this run (first run today); appended after this run.
+- **Market:** `clock` confirmed `is_open: true` (next_close 16:00 ET).
+- **Breaking-news gate:** N/A — no planned trades to gate.
+- **Account (live, ~09:36 ET):** Equity USD 100,087.65, cash USD 71,553.62 (71.491%), long market value USD 28,534.03 (28.513%), last_equity USD 100,103.63 (07-28 close).
+- **Shock check:** −0.016% vs last_equity — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close) vs equity USD 100,087.65 — drawdown **0.2337%**. NOT triggered (9.7663pp headroom).
+- **Positions (% from entry):** LLY +3.649% (USD 1,217.205), UNH +1.828% (USD 430.00), V +3.053% (USD 365.899) — none within range of the −7% cut (midday's job regardless).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.469% (USD 20,487.64), Financials (V) 8.043% (USD 8,049.778), cash 71.491% (USD 71,553.62) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 371.16/stop 334.044) — all 3 positions have a live `new`-status stop, quantities match exactly (8/25/22). **3/3 PASS** — no recreation needed.
+- **Trades:** none planned, none placed — pre-market plan was empty (FOMC day, all watchlist candidates fail the technical gate or sit in an earnings blackout; V's forced post-earnings review_by was already resolved HOLD at pre-market). Weekly new-position count unchanged: 0/3 used this week.
+- **Notify:** Telegram sent, plain prefix (no trades, no stop fills, stop audit clean).
+- **Commit:** done.
