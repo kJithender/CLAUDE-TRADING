@@ -5,6 +5,76 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-29 — Pre-market research (~08:14 ET, Wednesday) — PLAN: no trades (FOMC day, V post-earnings review, all watchlist gates fail or blackout)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was empty (`{}`) at start of this run. Lock acquired (`premarket`, expires ~08:22 ET).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-07-29T09:30:00-04:00`, `next_close: 2026-07-29T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-07-29)
+S&P 500 and Nasdaq-100 futures modestly higher (+0.2%) ahead of today's FOMC decision — markets price ~70% odds the Fed holds at 3.50-3.75%, decision and Chair Warsh's press conference land this afternoon. Chip stocks soft pre-bell ahead of a heavy Big Tech earnings slate: MSFT, META, and LRCX all report after today's close; PWR reports before tomorrow's open. Middle East tensions remain a simmering background risk. Net posture: a genuine binary-event day (FOMC + three of our watchlist/former-holding names reporting tonight) — no reason to force a new position into it. [Reuters/Investing.com](https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-4819267), [CNBC](https://www.cnbc.com/2026/07/28/stock-market-today-live-updates.html), [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/07/60750402/sp500-july-29-open-up-or-down-polymarket-fed-warsh-microsoft-meta-qualcomm-earnings)
+
+### Held position — LLY — what changed since yesterday
+Alpaca live data: 8sh @ avg USD 1,174.35625, current USD 1,220.88 (+3.962%), unrealized +USD 372.19. Trailing stop `e3547b9e` HWM USD 1,232.00 / stop USD 1,108.80 — live. **What changed:** nothing material — WebSearch found continued bullish analyst coverage (22 Buy / 2 Sell, avg PT USD 1,276.96) and reiteration of the cardiometabolic growth story (Mounjaro/Zepbound combined USD 12.8B, +56% YoY); no new negative catalyst. Thesis unchanged. Earnings confirmed 2026-08-05, review_by 2026-08-05 not yet due.
+
+### Held position — UNH — what changed since yesterday
+Alpaca live data: 25sh @ avg USD 422.28, current USD 426.75 (+1.059%), unrealized +USD 111.75. Trailing stop `225cb079` HWM USD 436.945 / stop USD 393.2505 — live. **What changed:** nothing material — stock continues to build on the 07-16 Q2 beat-and-raise momentum (some sources noted a further +2.1% move yesterday), though one source flagged the "fragile recovery" narrative (rising healthcare-cost/regulatory skepticism) as a standing risk to watch, not a new development. No thesis-breaking news. Earnings not until 2026-10-27ish per prior notes; review_by 2026-08-17 not yet due.
+
+### Held position — V — 🚨 forced review_by decision (earnings 07-28 after close, 2-trading-day window closes today)
+Alpaca live data: 22sh @ avg USD 355.058182, current USD 358.76 (+1.043%), unrealized +USD 81.44, but down **−2.136%** intraday/pre-market vs yesterday's USD 366.59 close. Trailing stop `2b0a93ba` HWM USD 371.16 / stop USD 334.044 — live.
+
+**Q3 FY26 results (reported 2026-07-28 after close):** EPS USD 3.32 (beat consensus USD 3.29), net revenue USD 11.6B (+14% YoY, beat), payments volume +10% constant-dollar, cross-border volume +13% (ex-Europe +12%), processed transactions 71.7B (+10% YoY) — a clean top-and-bottom-line beat with **accelerating** volume growth, not decelerating.
+
+**What drove the pre-market decline:** Visa **moderated full-year guidance to the low end of low-teens** for EPS and net revenue (a trim, not a cut below range), and GAAP operating expenses rose 19% YoY to USD 4.8B on a **USD 563M severance charge** tied to eliminating ~2,600 roles (~7% of the workforce, concentrated in technology/product) — a one-time restructuring cost, not a demand or competitive problem. Stock fell ~1.6% in Tuesday after-hours and is showing ~−2.1% to −2.5% in early pre-market trade this morning. [Invezz](https://invezz.com/en-ae/news/2026/07/28/visa-stock-sinks-on-q3-earnings-as-margin-concerns-take-center-stage/), [Seeking Alpha](https://seekingalpha.com/news/4619545-visa-q3-earnings-beat-as-volume-growth-gains-full-year-outlook-dims), [Investing.com](https://www.investing.com/news/stock-market-news/why-is-visa-stock-sliding-today-93CH-4818150)
+
+**Analyst read:** no downgrades found; consensus remains Strong Buy (31 Strong Buy / 4 Moderate Buy / 4 Hold of 39, avg PT USD 401.87 — ~15% above the current price), consistent with pre-earnings coverage (Truist PT USD 394, BMO USD 387, Baird USD 412, all reiterated/raised in the two weeks before the print).
+
+**Decision (per knowledge-base.md §1.1 — distinguish "beat and lower" from "beat and moderate"):** this is not a beat-and-lower setup (guidance was trimmed to the low end of an already-double-digit range, not cut below it) and the margin hit is a one-time, cost-discipline restructuring charge rather than a sign of decelerating demand — core volume/transaction growth actually accelerated from Q2. Thesis (stablecoin platform, agentic-commerce AI tools, cross-border volume growth) intact. **HOLD full position, no trim.** `review_by` renewed to **2026-08-15** (interim re-check on cost-cutting execution and margin trend, ahead of Q4 FY26 earnings — exact date not yet announced by Visa, estimated late October based on prior-year cadence).
+
+### Watchlist re-verification (fresh Alpaca bars, 2026-05-01 to 2026-07-28 close, 50-day SMA / 20-day ATR%)
+| Ticker | Price | vs 50-day SMA | 20-day ATR% | Gate | Note |
+|---|---|---|---|---|---|
+| NVDA | 197.05 | **−5.18%** | 3.49% | FAIL | Still no confirmed cross; earnings 2026-08-26. |
+| MSFT | 393.44 | **−1.26%** | 2.53% | FAIL | Also earnings today after close — inside 2-day blackout regardless of technical status. |
+| COST | 966.90 | **+0.03%** | 1.82% | UNCONFIRMED | First positive cross since tracking began, but a single session — per the standing NVDA-pattern lesson, requires 2 consecutive confirmed closes above the 50-day before treating as a real signal. Next earnings 2026-09-24, no blackout concern. **Watch for a second confirming session at the next pre-market.** |
+| LRCX | 269.59 | **−20.18%** | 6.30% | FAIL | Earnings today after close — inside blackout regardless; valuation (P/E >60x vs GF Value ~USD 132) remains separately disqualifying. |
+| PWR | 588.20 | **−14.45%** | 3.33% | FAIL | Earnings tomorrow (07-30) before open — inside the 2-trading-day blackout as of today. |
+
+No watchlist name clears its technical gate today, and three of the five (MSFT, LRCX, PWR) are inside an earnings blackout regardless. No qualifying entry.
+
+### Earnings-window rule
+- **Held names:** V's forced review_by (2 trading days post-earnings-announcement-eve) resolved above — HOLD. LLY (08-05) and UNH (~10-27) are outside the window, no action needed.
+- **Buy candidates:** none reach the technical gate, so the earnings-blackout check on MSFT/LRCX/PWR (all inside their window) is moot for new entries today, but is the actual reason (alongside the technical fails) that none would be actionable even if they cleared.
+
+### Cash-drag check
+Cash is 71.641% of equity — still well above the 25–40% target band, and has been for many weeks. **Explicit justification today:** (1) every watchlist name either fails its technical gate outright (NVDA, LRCX, PWR) or is inside today's/tomorrow's earnings blackout (MSFT, LRCX, PWR); (2) COST's first positive SMA cross is a single, unconfirmed session per standing discipline; (3) today is a binary-event day (FOMC decision this afternoon, three names reporting tonight) — a poor day to force a new position regardless of gate status; (4) 0/3 weekly new-position slots used this week, so there is no urgency pressure. Staying in cash today is the correct, actively re-verified call, not a passive default.
+
+### Drawdown / shock / sector checks (live Alpaca data, ~08:14 ET)
+- Equity **USD 99,882.13** | Cash USD 71,553.62 (71.641%) | Long MV USD 28,328.51 (28.359%) | Buying power USD 365,534.31 | last_equity (07-28 close) USD 100,103.63.
+- **Drawdown circuit breaker:** running HWM USD 100,322.08 (2026-07-21 close, from `history 1M 1D`). Current equity USD 99,882.13 → drawdown **0.4385%** — NOT triggered (9.5615pp headroom).
+- **Intraday shock check:** USD 99,882.13 vs last_equity USD 100,103.63 = **−0.2212%** — no shock (threshold −4%; market not yet open, real test is at market-open/midday).
+- **Sector cap:** Healthcare (LLY+UNH) 20.457% (USD 20,435.79), Financials (V) 7.902% (USD 7,892.72), cash 71.641% — all far below the 60% cap.
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,232.00, stop USD 1,108.80), UNH `225cb079` (HWM USD 436.945, stop USD 393.2505), V `2b0a93ba` (HWM USD 371.16, stop USD 334.044) — all 3 confirmed live via `orders open`, quantities match positions exactly (8/25/22). **3/3 PASS.**
+- **Weekly new-position count:** 0/3 used this week (week of 2026-07-27).
+
+### Planned trades for today
+No trades planned. Today is a binary-event day (FOMC decision this afternoon; MSFT, META-successor-watch, and LRCX report after close; PWR reports before tomorrow's open). V's forced post-earnings review_by was resolved above (HOLD, no trim — a beat with a moderated-not-cut guide and a one-time restructuring charge, not a thesis break). No watchlist candidate clears its technical gate, and three of five are inside an earnings blackout regardless. COST's first positive 50-day cross needs a second confirming session before it's actionable. Market-open and midday should watch V closely given its pre-market weakness, and stay alert for FOMC-driven volatility this afternoon.
+
+```json
+{
+  "plan_date": "2026-07-29",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-07-10 weekly review research (~16:40 ET, Friday)
 
 **Week in review (Jul 6-10):** S&P 500 gained ~1.4% on the week (744.86 → 755.36), led narrowly by tech — Nvidia +~4%, Meta +~6% on the week, Nasdaq +1.3% Friday alone. Sector breadth was actually poor: 9 of 11 S&P sectors were negative for stretches of the week (Materials -2.6%, Financials -1.9%, Consumer Discretionary -1.8%) while only Information Technology (+1.2%) and Energy (+1.8%) led — consistent with V (Financials) drifting lower most of the week on tape rotation, not company news. [CNBC](https://www.cnbc.com/2026/07/09/stock-market-today-live-updates.html), [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-10-075400187.html)
