@@ -21,7 +21,9 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-29 ~09:36 ET (market-open, Wednesday) — Equity USD 100,087.65, cash USD 71,553.62 (71.491%), long MV USD 28,534.03 (28.513%), last_equity USD 100,103.63 (07-28 close). Drawdown 0.2337% off HWM USD 100,322.08 (07-21 close, not triggered, 9.7663pp headroom); no intraday shock (−0.016% vs last_equity). 3/3 stops confirmed live, unchanged from pre-market (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80, UNH `225cb079` HWM USD 436.945/stop USD 393.2505, V `2b0a93ba` HWM USD 371.16/stop USD 334.044). All 3 positions HOLD (LLY +3.649%, UNH +1.828%, V +3.053%), none near the −7% line. No trades this run — pre-market plan was empty (FOMC decision this afternoon; MSFT, LRCX report after close, PWR tomorrow before open — all inside blackout regardless of technical status; V's forced post-earnings review_by already resolved HOLD at pre-market). Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27).
+**Last updated:** 2026-07-29 ~12:37 ET (midday, Wednesday) — Equity USD 100,117.81, cash USD 71,553.62 (71.472%), long MV USD 28,564.19 (28.531%), last_equity USD 100,103.63 (07-28 close), buying power USD 366,194.20. Drawdown 0.2036% off HWM USD 100,322.08 (07-21 close, not triggered, 9.7964pp headroom); no intraday shock (+0.01417% vs last_equity). 3/3 stops confirmed live (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80 unchanged, UNH `225cb079` HWM USD 436.945/stop USD 393.2505 unchanged, V `2b0a93ba` HWM USD 373.75/stop USD 336.375, ratcheted up since market-open). All 3 positions HOLD (LLY +3.5985%, UNH +0.5294%, V +5.2110%), none near the −7% cut, none up >15% (no tightening). News scan not triggered — no position moved >3% down or >10% up from entry. No trades this run — midday never opens new positions; no exits, no reconciliation needed. Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27).
+
+**Prior update:** 2026-07-29 ~09:36 ET (market-open, Wednesday) — Equity USD 100,087.65, cash USD 71,553.62 (71.491%), long MV USD 28,534.03 (28.513%), last_equity USD 100,103.63 (07-28 close). Drawdown 0.2337% off HWM USD 100,322.08 (07-21 close, not triggered, 9.7663pp headroom); no intraday shock (−0.016% vs last_equity). 3/3 stops confirmed live, unchanged from pre-market (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80, UNH `225cb079` HWM USD 436.945/stop USD 393.2505, V `2b0a93ba` HWM USD 371.16/stop USD 334.044). All 3 positions HOLD (LLY +3.649%, UNH +1.828%, V +3.053%), none near the −7% line. No trades this run — pre-market plan was empty (FOMC decision this afternoon; MSFT, LRCX report after close, PWR tomorrow before open — all inside blackout regardless of technical status; V's forced post-earnings review_by already resolved HOLD at pre-market). Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27).
 
 **Prior update:** 2026-07-29 ~08:14 ET (pre-market, Wednesday) — Equity USD 99,882.13, cash USD 71,553.62 (71.641%), long MV USD 28,328.51 (28.359%), last_equity USD 100,103.63 (07-28 close). Drawdown 0.4385% off HWM USD 100,322.08 (07-21 close, not triggered, 9.5615pp headroom); no intraday shock (−0.2212% vs last_equity; market not yet open). 3/3 stops confirmed live, unchanged (LLY 8sh stop USD 1,108.80/HWM USD 1,232.00, UNH 25sh stop USD 393.2505/HWM USD 436.945, V 22sh stop USD 334.044/HWM USD 371.16). All 3 positions HOLD (LLY +3.962%, UNH +1.059%, V +1.043%), none near the −7% line. 🚨 **V's forced review_by (earnings 07-28 after close) resolved today: HOLD, no trim.** V beat Q3 FY26 EPS (USD 3.32 vs USD 3.29 est.) and revenue (USD 11.6B, +14% YoY, cross-border volume +13%, all volume metrics accelerating) but moderated full-year guidance to the low end of low-teens and took a USD 563M severance charge for ~2,600 role eliminations (~7% of workforce) — GAAP opex +19% YoY; stock fell ~1.6% in Tuesday after-hours and is showing ~−2.1% pre-market. Read as beat-and-moderate (not beat-and-lower) with a one-time cost-discipline charge, not a demand break — analysts remain Strong Buy consensus (31/4/4, avg PT USD 401.87) with no downgrades found. review_by renewed to 2026-08-15 (interim re-check; next earnings not yet announced, estimated late October). **Watchlist re-verification (fresh Alpaca bars through 07-28 close):** NVDA −5.18% vs 50-day (ATR 3.49%), MSFT −1.26% (ATR 2.53%, earnings today after close — blackout regardless), LRCX −20.18% (ATR 6.30%, earnings today — blackout, valuation still disqualifying), PWR −14.45% (ATR 3.33%, earnings tomorrow — blackout). **COST flipped marginally positive vs 50-day for the first time (+0.03%)** — single-session, unconfirmed per the standing NVDA-pattern lesson; watch for a second confirming session. No qualifying entry; cash-drag (71.641%, above the 25-40% band) justified — every watchlist name fails its gate or sits in an earnings blackout today, and today is a binary-event day (FOMC decision this afternoon; MSFT/LRCX report tonight, PWR tomorrow before open). **Macro:** S&P/Nasdaq futures +0.2% ahead of the Fed decision (~70% market-implied odds of a hold at 3.50-3.75%), chip stocks soft pre-bell. No trades planned. Weekly new-position count: 0/3 used this week (week of 2026-07-27).
 
@@ -75,16 +77,18 @@ reference but is **not** the live comparison baseline going forward.
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-28 close ~15:52 ET)
+## Account (live Alpaca data, 2026-07-29 midday ~12:37 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,162.41 |
-| Cash | $71,553.64 (71.446%) |
-| Long market value | $28,608.77 (28.567%: LLY+UNH+V) |
-| Buying power | $366,319.11 |
-| Last equity | $99,748.02 |
+| Equity | $100,117.81 |
+| Cash | $71,553.62 (71.472%) |
+| Long market value | $28,564.19 (28.531%: LLY+UNH+V) |
+| Buying power | $366,194.20 |
+| Last equity | $100,103.63 |
 
+**Prior (market-open 07-29 ~09:36 ET):** Equity $100,087.65 | Cash $71,553.62 (71.491%) | Long MV $28,534.03 (28.513%) | Buying power N/A recorded
+**Prior (close 07-28 ~15:52 ET):** Equity $100,162.41 | Cash $71,553.64 (71.446%) | Long MV $28,608.77 (28.567%) | Buying power $366,319.11
 **Prior (midday 07-28 ~12:37 ET):** Equity $100,098.20 | Cash $71,553.64 (71.483%) | Long MV $28,544.56 (28.517%) | Buying power $366,139.33
 **Prior (market-open 07-28 ~09:36 ET):** Equity $99,851.28 | Cash $68,012.14 (68.116%) | Long MV $31,839.14 (31.888%) | Buying power $361,198.14
 **Prior (pre-market 07-28 ~08:22 ET):** Equity $99,983.51 | Cash $64,260.90 (64.271%) | Long MV $35,722.61 (35.729%) | Buying power $357,066.91
@@ -106,17 +110,28 @@ reference but is **not** the live comparison baseline going forward.
 
 ## Open positions
 
-_As of close ~15:52 ET, 2026-07-28:_
+_As of midday ~12:37 ET, 2026-07-29:_
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday 07-27) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| LLY | 8 | $1,174.35625 | $1,225.1168 | +$406.08 (+4.322%) | Healthcare | Order e3547b9e, 10%, HWM $1,232.00, stop $1,108.80 — live, unchanged | **A** (retatrutide Phase 3 wins, dividend declared ex-date 08-14, Novo Nordisk injunction bid is an escalation of the already-flagged ad-claims suit not a new catalyst; review_by 2026-08-05) |
-| UNH | 25 | $422.28 | $428.84 | +$164.00 (+1.553%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (nothing material overnight; Buy consensus intact, avg PT USD 475; review_by 2026-08-17) |
-| V | 22 | $355.058182 | $367.68 | +$277.68 (+3.555%) | Financials | Order 2b0a93ba, 10%, HWM $371.16, stop $334.044 — live, ratcheted up | **A** (reports Q3 FY26 today 07-28 after close, consensus EPS ~USD 3.23; hold-through-earnings decision from 07-24 stands, no trim; review_by 2026-07-29 forces tomorrow's post-earnings read) |
+| LLY | 8 | $1,174.35625 | $1,216.61 | +$338.03 (+3.5985%) | Healthcare | Order e3547b9e, 10%, HWM $1,232.00, stop $1,108.80 — live, unchanged | **A** (review_by 2026-08-05, earnings) |
+| UNH | 25 | $422.28 | $424.515 | +$55.875 (+0.5294%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (review_by 2026-08-17) |
+| V | 22 | $355.058182 | $373.56 | +$407.04 (+5.2110%) | Financials | Order 2b0a93ba, 10%, HWM $373.75, stop $336.375 — live, ratcheted up since market-open | **A** (V's post-earnings review_by resolved HOLD 07-29 pre-market; review_by renewed 2026-08-15) |
 
 **META — CLOSED 2026-07-28 10:39:04 AM ET.** 10% trailing stop filled (order 14301809, 6sh, entry $641.323333 → exit $590.25, −7.964%, −$306.44, held 8 days). Third escalation of the same story this week (closed past −7% on 07-24 and 07-27); WebSearch found no company-specific negative catalyst today (Meta-BlackRock USD 14B/1GW Texas data-center JV, neutral-to-positive) — broad AI-capex-ROI anxiety, one trading day before the 07-29 earnings print. See `closed-trades.md`. Next earnings 2026-07-29 — no re-entry consideration inside the earnings blackout.
 
 **VST — CLOSED 2026-07-28 09:34:48 AM ET.** 10% trailing stop filled (order 87f49386, 25sh, entry $161.21 → exit $150.0496, −6.924%, −$279.01, held 7 days). TD Cowen PT cut (USD 230→222, kept Buy) layered on 07-27's broad AI-power-sector weakness; Goldman/Wells Fargo kept Buy same day — sector-rotation exit, not a thesis break. See `closed-trades.md`. Next earnings 2026-08-07 — may reconsider as fresh entry if setup re-confirms.
+
+## Risk posture (2026-07-29 midday)
+
+- **Drawdown circuit breaker:** Equity $100,117.81 vs running HWM $100,322.08 (2026-07-21 close, from `history 1M 1D`) — drawdown **0.2036%**. NOT triggered (9.7964pp headroom) ✓.
+- **Intraday shock check:** Equity $100,117.81 vs last_equity $100,103.63 (07-28 close) = **+0.01417%** — no shock ✓ (threshold −4%).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.325% ($20,345.76), Financials (V) 8.209% ($8,218.32), cash 71.469% ($71,553.62) — all well within the 60% sector cap.
+- **-7% rule check:** LLY +3.5985%, UNH +0.5294%, V +5.2110% — none within range of the −7% midday cut threshold. No positions up >15% (no tightening).
+- **News scan:** not triggered — no position moved >3% down or >10% up from entry.
+- **Stop audit:** LLY, UNH, V — 3/3 live stops confirmed via `orders open`, quantities match positions exactly (8/25/22); V's stop ratcheted to a fresh HWM ($373.75/stop $336.375) since market-open. No gap.
+- **Weekly new-position count:** 0/3 used this week — unchanged, midday never opens new positions.
+- **Trades this run:** none — no positions cut, no tightening, no exits, no reconciliation needed.
 
 ## Risk posture (2026-07-28 close)
 

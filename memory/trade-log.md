@@ -4365,3 +4365,19 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Trades:** none planned, none placed — pre-market plan was empty (FOMC day, all watchlist candidates fail the technical gate or sit in an earnings blackout; V's forced post-earnings review_by was already resolved HOLD at pre-market). Weekly new-position count unchanged: 0/3 used this week.
 - **Notify:** Telegram sent, plain prefix (no trades, no stop fills, stop audit clean).
 - **Commit:** done.
+
+## 2026-07-29 ~12:37 ET — MIDDAY (Wednesday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}` before this run); wrote lock for midday. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending in `control.md`.
+- **Market:** `clock` confirmed `is_open: true` (next_close 16:00 ET).
+- **Account (live, ~12:37 ET):** Equity USD 100,117.81, cash USD 71,553.62 (71.472%), long market value USD 28,564.19 (28.531%), last_equity USD 100,103.63 (07-28 close), buying power USD 366,194.20.
+- **Shock check:** +0.01417% vs last_equity — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1M 1D`) vs equity USD 100,117.81 — drawdown **0.2036%**. NOT triggered (9.7964pp headroom).
+- **Positions (% from entry):** LLY +3.5985% (USD 1,216.61), UNH +0.5294% (USD 424.515), V +5.2110% (USD 373.56) — none within range of the −7% midday cut; none up >15% (no tightening candidates).
+- **News scan:** not triggered — no position is down >3% or up >10% from entry (gate is 3%/10%, all three sit well inside that band).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.325% (USD 20,345.76), Financials (V) 8.209% (USD 8,218.32), cash 71.469% (USD 71,553.62) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.75/stop 336.375, ratcheted up since market-open) — all 3 positions have a live `new`-status stop, quantities match exactly (8/25/22). **3/3 PASS** — no recreation needed.
+- **Actions:** none — no positions cut (all comfortably above −7%), no tightening (none up >15%), no new positions (midday never opens new ones). No exits, no `closed-trades.md` reconciliation needed.
+- **Weekly new-position count:** unchanged, 0/3 used this week (midday places no orders).
+- **Notify:** Telegram sent, plain prefix (all positions within range, stop audit clean, no shock).
+- **Commit:** done.
