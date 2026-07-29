@@ -21,7 +21,9 @@ reference but is **not** the live comparison baseline going forward.
 
 ---
 
-**Last updated:** 2026-07-29 ~12:37 ET (midday, Wednesday) — Equity USD 100,117.81, cash USD 71,553.62 (71.472%), long MV USD 28,564.19 (28.531%), last_equity USD 100,103.63 (07-28 close), buying power USD 366,194.20. Drawdown 0.2036% off HWM USD 100,322.08 (07-21 close, not triggered, 9.7964pp headroom); no intraday shock (+0.01417% vs last_equity). 3/3 stops confirmed live (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80 unchanged, UNH `225cb079` HWM USD 436.945/stop USD 393.2505 unchanged, V `2b0a93ba` HWM USD 373.75/stop USD 336.375, ratcheted up since market-open). All 3 positions HOLD (LLY +3.5985%, UNH +0.5294%, V +5.2110%), none near the −7% cut, none up >15% (no tightening). News scan not triggered — no position moved >3% down or >10% up from entry. No trades this run — midday never opens new positions; no exits, no reconciliation needed. Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27).
+**Last updated:** 2026-07-29 ~15:52 ET (close, Wednesday) — EOD: equity USD 99,884.47, down −0.2189% today (last_equity USD 100,103.63, 07-28 close); Bull −0.1155% since inception (2026-07-01) vs SPY −2.1585% (729.57 vs anchor 745.665) = **+2.0429pp gap — Bull's lead over SPY widens sharply**, up from +0.800pp at yesterday's close, on a genuine broad-market shock day. 🚨 **FOMC held rates steady this afternoon (hawkish hold)** — bond market read this as the Fed falling behind on inflation, sending long-dated yields to an almost two-decade high; simultaneously fresh Iran clashes pushed Brent crude +7.3% to above USD 88/bbl. Combined effect: Dow −2.19% (worst day since April 2025), S&P 500 −1.52% (7,316.15), Nasdaq −1.74% (24,442.94, Nasdaq 100 now ~11% off its record — a technical correction), with chipmakers leading the rout. Bull's ~72% cash and zero-AI-semi book absorbed almost none of it — the day's outperformance is the clearest cash-cushion demonstration since the 07-23 Iran/chip selloff. Drawdown 0.4362% off HWM USD 100,322.08 (07-21 close, not triggered, 9.5638pp headroom). No intraday shock (−0.2189% vs last_equity, well within the −4% threshold). 3/3 stops confirmed live (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80 unchanged, UNH `225cb079` HWM USD 436.945/stop USD 393.2505 unchanged, V `2b0a93ba` HWM USD 373.96/stop USD 336.564, ratcheted up again since midday). All 3 positions HOLD (LLY +3.035%, UNH −0.405%, V +4.165%), none near the −7% cut (close places no orders regardless). 0 trades today (close is read-only); no exits, no `closed-trades.md` reconciliation needed — the ledger is current (META/VST both reconciled 07-28). Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27). **Note for pre-market:** 10yr yields spiking to a ~two-decade high is worth re-checking explicitly against the 4.75% new-buy gate first thing tomorrow — today's macro shift (hawkish Fed + oil-driven inflation fear) is a real regime input, not noise.
+
+**Prior update:** 2026-07-29 ~12:37 ET (midday, Wednesday) — Equity USD 100,117.81, cash USD 71,553.62 (71.472%), long MV USD 28,564.19 (28.531%), last_equity USD 100,103.63 (07-28 close), buying power USD 366,194.20. Drawdown 0.2036% off HWM USD 100,322.08 (07-21 close, not triggered, 9.7964pp headroom); no intraday shock (+0.01417% vs last_equity). 3/3 stops confirmed live (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80 unchanged, UNH `225cb079` HWM USD 436.945/stop USD 393.2505 unchanged, V `2b0a93ba` HWM USD 373.75/stop USD 336.375, ratcheted up since market-open). All 3 positions HOLD (LLY +3.5985%, UNH +0.5294%, V +5.2110%), none near the −7% cut, none up >15% (no tightening). News scan not triggered — no position moved >3% down or >10% up from entry. No trades this run — midday never opens new positions; no exits, no reconciliation needed. Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27).
 
 **Prior update:** 2026-07-29 ~09:36 ET (market-open, Wednesday) — Equity USD 100,087.65, cash USD 71,553.62 (71.491%), long MV USD 28,534.03 (28.513%), last_equity USD 100,103.63 (07-28 close). Drawdown 0.2337% off HWM USD 100,322.08 (07-21 close, not triggered, 9.7663pp headroom); no intraday shock (−0.016% vs last_equity). 3/3 stops confirmed live, unchanged from pre-market (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80, UNH `225cb079` HWM USD 436.945/stop USD 393.2505, V `2b0a93ba` HWM USD 371.16/stop USD 334.044). All 3 positions HOLD (LLY +3.649%, UNH +1.828%, V +3.053%), none near the −7% line. No trades this run — pre-market plan was empty (FOMC decision this afternoon; MSFT, LRCX report after close, PWR tomorrow before open — all inside blackout regardless of technical status; V's forced post-earnings review_by already resolved HOLD at pre-market). Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27).
 
@@ -77,16 +79,17 @@ reference but is **not** the live comparison baseline going forward.
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-29 midday ~12:37 ET)
+## Account (live Alpaca data, 2026-07-29 close ~15:52 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $100,117.81 |
-| Cash | $71,553.62 (71.472%) |
-| Long market value | $28,564.19 (28.531%: LLY+UNH+V) |
-| Buying power | $366,194.20 |
+| Equity | $99,884.47 |
+| Cash | $71,553.62 (71.636%) |
+| Long market value | $28,330.85 (28.364%: LLY+UNH+V) |
+| Buying power | $365,540.87 |
 | Last equity | $100,103.63 |
 
+**Prior (midday 07-29 ~12:37 ET):** Equity $100,117.81 | Cash $71,553.62 (71.472%) | Long MV $28,564.19 (28.531%) | Buying power $366,194.20
 **Prior (market-open 07-29 ~09:36 ET):** Equity $100,087.65 | Cash $71,553.62 (71.491%) | Long MV $28,534.03 (28.513%) | Buying power N/A recorded
 **Prior (close 07-28 ~15:52 ET):** Equity $100,162.41 | Cash $71,553.64 (71.446%) | Long MV $28,608.77 (28.567%) | Buying power $366,319.11
 **Prior (midday 07-28 ~12:37 ET):** Equity $100,098.20 | Cash $71,553.64 (71.483%) | Long MV $28,544.56 (28.517%) | Buying power $366,139.33
@@ -110,17 +113,28 @@ reference but is **not** the live comparison baseline going forward.
 
 ## Open positions
 
-_As of midday ~12:37 ET, 2026-07-29:_
+_As of close ~15:52 ET, 2026-07-29:_
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday 07-27) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| LLY | 8 | $1,174.35625 | $1,216.61 | +$338.03 (+3.5985%) | Healthcare | Order e3547b9e, 10%, HWM $1,232.00, stop $1,108.80 — live, unchanged | **A** (review_by 2026-08-05, earnings) |
-| UNH | 25 | $422.28 | $424.515 | +$55.875 (+0.5294%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (review_by 2026-08-17) |
-| V | 22 | $355.058182 | $373.56 | +$407.04 (+5.2110%) | Financials | Order 2b0a93ba, 10%, HWM $373.75, stop $336.375 — live, ratcheted up since market-open | **A** (V's post-earnings review_by resolved HOLD 07-29 pre-market; review_by renewed 2026-08-15) |
+| LLY | 8 | $1,174.35625 | $1,210.00 | +$285.15 (+3.0352%) | Healthcare | Order e3547b9e, 10%, HWM $1,232.00, stop $1,108.80 — live, unchanged | **A** (review_by 2026-08-05, earnings) |
+| UNH | 25 | $422.28 | $420.57 | −$42.75 (−0.4049%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (review_by 2026-08-17) |
+| V | 22 | $355.058182 | $369.8456 | +$325.32 (+4.1648%) | Financials | Order 2b0a93ba, 10%, HWM $373.96, stop $336.564 — live, ratcheted up again since midday | **A** (V's post-earnings review_by resolved HOLD 07-29 pre-market; review_by renewed 2026-08-15) |
 
 **META — CLOSED 2026-07-28 10:39:04 AM ET.** 10% trailing stop filled (order 14301809, 6sh, entry $641.323333 → exit $590.25, −7.964%, −$306.44, held 8 days). Third escalation of the same story this week (closed past −7% on 07-24 and 07-27); WebSearch found no company-specific negative catalyst today (Meta-BlackRock USD 14B/1GW Texas data-center JV, neutral-to-positive) — broad AI-capex-ROI anxiety, one trading day before the 07-29 earnings print. See `closed-trades.md`. Next earnings 2026-07-29 — no re-entry consideration inside the earnings blackout.
 
 **VST — CLOSED 2026-07-28 09:34:48 AM ET.** 10% trailing stop filled (order 87f49386, 25sh, entry $161.21 → exit $150.0496, −6.924%, −$279.01, held 7 days). TD Cowen PT cut (USD 230→222, kept Buy) layered on 07-27's broad AI-power-sector weakness; Goldman/Wells Fargo kept Buy same day — sector-rotation exit, not a thesis break. See `closed-trades.md`. Next earnings 2026-08-07 — may reconsider as fresh entry if setup re-confirms.
+
+## Risk posture (2026-07-29 close)
+
+- **Drawdown circuit breaker:** Equity $99,884.47 vs running HWM $100,322.08 (2026-07-21 close) — drawdown **0.4362%**. NOT triggered (9.5638pp headroom) ✓.
+- **Today's P/L:** Equity $99,884.47 vs last_equity $100,103.63 (07-28 close) = **−0.2189%**.
+- **Sector exposure:** Healthcare (LLY+UNH) 20.218% ($20,194.25), Financials (V) 8.146% ($8,136.60), cash 71.636% ($71,553.62) — all well within the 60% sector cap.
+- **-7% rule check:** LLY +3.035%, UNH −0.405%, V +4.165% — none within range of the −7% midday-only cut threshold (close places no orders regardless).
+- **Stop audit:** LLY, UNH, V — 3/3 live stops confirmed via `orders open`, quantities match positions exactly (8/25/22); V's stop ratcheted again to a fresh HWM ($373.96/stop $336.564) since midday. No gap.
+- **Weekly new-position count:** 0/3 used this week — unchanged, close places no orders.
+- **Trades this run:** none (close is read-only). No exits today — positions unchanged from midday, no `closed-trades.md` reconciliation needed.
+- **Market close context:** FOMC held rates steady (hawkish read), sending long yields to a ~two-decade high; fresh Iran clashes pushed Brent +7.3% above USD 88/bbl. Dow −2.19% (worst day since April 2025), S&P 500 −1.52% (7,316.15), Nasdaq −1.74% (Nasdaq 100 now ~11% off its record, a technical correction) with chipmakers leading the rout. Bull's cash-heavy, zero-AI-semi book sat almost entirely outside today's damage.
 
 ## Risk posture (2026-07-29 midday)
 
@@ -166,16 +180,17 @@ _As of midday ~12:37 ET, 2026-07-29:_
 - **Weekly new-position count:** 0/3 used this week — unchanged, no new trades this run.
 - **Trades this run:** none planned (pre-market plan was empty — every watchlist candidate fails the technical gate). One exit (VST, via trailing stop) — reconciled in `closed-trades.md`, `trades.jsonl`, and `lessons.md`.
 
-## Race scoreboard (2026-07-28 close)
+## Race scoreboard (2026-07-29 close)
 
 | Agent | Since inception | Inception date | Notes |
 |-------|-----------------|-----------------|-------|
-| Bull (Cautious) | **+0.16241%** | 2026-07-01 | as of 07-28 close |
-| AGGRO (Aggressive) | −7.123% | 2026-06-04 | **STALE — unchanged since 2026-06-23 EOD, now 35 days stale** |
-| SPY | −0.6378% | 2026-07-01 (Bull's baseline) | as of 07-28 close (740.91) |
+| Bull (Cautious) | **−0.1155%** | 2026-07-01 | as of 07-29 close |
+| AGGRO (Aggressive) | −7.123% | 2026-06-04 | **STALE — unchanged since 2026-06-23 EOD, now 36 days stale** |
+| SPY | −2.1585% | 2026-07-01 (Bull's baseline) | as of 07-29 close (729.57) |
 
-Bull leads SPY by +0.800pp since inception as of today's close, widened from yesterday's +0.610pp. AGGRO's figure is not directly comparable (different inception date) and has not updated in over a month — see `lessons.md` for the standing escalation history.
+Bull leads SPY by +2.0429pp since inception as of today's close, widened sharply from yesterday's +0.800pp — today's hawkish FOMC hold + Iran-driven oil spike hit SPY (−1.5153% today) far harder than Bull's cash-heavy, zero-AI-semi book (−0.2189% today). AGGRO's figure is not directly comparable (different inception date) and has not updated in over a month — see `lessons.md` for the standing escalation history.
 
+**Prior (2026-07-28 close):** Bull +0.16241% | AGGRO −7.123% (stale, 35 days) | SPY −0.6378% | gap +0.800pp
 **Prior (2026-07-27 close):** Bull −0.292% | AGGRO −7.123% (stale, 34 days) | SPY −0.902% | gap +0.610pp
 
 ## Risk posture (2026-07-28 pre-market)
