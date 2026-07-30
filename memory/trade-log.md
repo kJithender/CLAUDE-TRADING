@@ -4430,3 +4430,22 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Action:** No trades — no cuts (nothing past −7%), no tightening (nothing past +15%), midday never opens new positions. Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27).
 - **Notify:** Telegram sent — all positions within range, no action.
 - **Commit:** done.
+
+## 2026-07-30 ~15:52 ET — CLOSE (Thursday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}` before this run); wrote lock for close. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending in `control.md`. `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, `next_close: 2026-07-30T16:00:00-04:00` — normal full trading day, not a half-day.
+- **Account (live, ~15:52 ET):** Equity USD 99,404.30, cash USD 71,553.62 (71.977%), long market value USD 27,850.68 (28.023%), buying power USD 364,196.37. Alpaca's own `last_equity` field still returned USD 100,103.63 (stale, two sessions behind); used the recorded 07-29 close USD 99,884.47 as the shock-check reference.
+- **Today's P/L:** −USD 480.17 (−0.4808%) vs recorded 07-29 close.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close) vs equity USD 99,404.30 — drawdown **0.9148%**. NOT triggered (9.0852pp headroom).
+- **Intraday shock check:** −0.4808% — no shock (threshold −4%).
+- **SPY:** `snapshot.dailyBar.c` USD 741.34 (07-30) vs USD 729.57 (07-29) = today's SPY return **+1.6134%**. Since inception (anchor USD 745.665, 2026-07-01) = **−0.58015%**.
+- **Bull vs SPY since inception:** Bull −0.5957% vs SPY −0.58015% = **−0.0156pp — Bull now trails SPY**, reversing yesterday's +2.0429pp lead in a single session. 🚨 See dated lesson in `lessons.md` — a broad tech-led relief rally (Dow +1.2%, S&P +1.7%, Nasdaq +2.8%, MSFT +17%, LRCX +14.1%) hit exactly the sector Bull avoids.
+- **Positions (% from entry, live):** LLY −1.341% (USD 1,158.605), UNH −0.239% (USD 421.27), V +3.085% (USD 366.01) — none within range of the −7% cut (close places no orders regardless).
+- **Sector exposure:** Healthcare (LLY+UNH) 19.9192% (USD 19,800.59), Financials (V) 8.0983% (USD 8,052.22), cash 71.9770% (USD 71,553.62) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades today (market-open and midday both placed none); no exits, no `closed-trades.md` reconciliation needed.
+- **Race scoreboard:** Aggressive Bull's memory is still stale since 2026-06-23 EOD (now 37 days) — see `lessons.md` history; race number reported this run is labeled stale.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-07-27).
+- **Notify:** Telegram sent, 🚨 prefix (since-inception gap flipped negative for the first time since the reset).
+- **Commit:** done.
