@@ -4381,3 +4381,21 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Weekly new-position count:** unchanged, 0/3 used this week (midday places no orders).
 - **Notify:** Telegram sent, plain prefix (all positions within range, stop audit clean, no shock).
 - **Commit:** done.
+
+## 2026-07-30 ~08:13 ET — PRE-MARKET (Thursday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}` before this run); wrote lock for pre-market. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending in `control.md`. `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false` (next_open 09:30 ET today, next_close 16:00 ET) — pre-market, as expected.
+- **Account (live, ~08:13 ET):** Equity USD 99,606.68, cash USD 71,553.62 (71.837%), long market value USD 28,053.06 (28.163%), buying power USD 364,763.05. Alpaca's own `last_equity` field returned USD 100,103.63 — the same stale figure already seen at 07-29 market-open/midday, two sessions behind the actual 07-29 settled close (USD 99,884.47 per yesterday's close entry). Per the standing 07-23 lesson, used the recorded 07-29 close (USD 99,884.47), not the API's `last_equity` field, as the shock-check reference.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, `history 1A 1D`) vs equity USD 99,606.68 — drawdown **0.7130%**. NOT triggered (9.287pp headroom).
+- **Intraday shock check:** equity USD 99,606.68 vs recorded 07-29 close USD 99,884.47 = **−0.278%** — no shock (threshold −4%; market not yet open, pre-market quote move only).
+- **Positions (% from entry, live):** LLY +1.204% (USD 1,188.50), UNH −1.227% (USD 417.10), V +3.921% (USD 368.98) — none within range of the −7% cut (midday's job regardless).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.015% (USD 19,935.50), Financials (V) 8.150% (USD 8,117.56), cash 71.837% (USD 71,553.62) — all well within the 60% sector cap.
+- **Thesis contracts:** LLY (review_by 2026-08-05), UNH (review_by 2026-08-17), V (review_by 2026-08-15, renewed 07-29) — none due today, none triggered.
+- **Monday conviction review:** N/A — today is Thursday.
+- **Earnings-window rule:** no held position reports within the next 2 trading days (LLY confirmed 2026-08-05, 7 days out — verified directly against Lilly's own investor-relations press release after an initial WebSearch snippet gave a contradictory "reported today" summary; UNH 2026-10-27; V's window already resolved 07-29). No new buys planned regardless.
+- **Cash-drag check:** cash 71.837%, still the 6th consecutive week above the 25-40% target band. Every watchlist candidate fails its gate again today (see research-log.md) — staying in cash remains a disciplined, freshly-re-verified call.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS** — no recreation needed.
+- **Plan:** No trades today. All 3 positions HOLD. Full research/macro detail in `research-log.md`.
+- **Notify:** Telegram sent — market posture (MSFT blowout easing AI-capex fears, but a sharp Iran/Israel re-escalation overnight — fresh US strikes, Iran ballistic-missile attack on US forces, oil back up), FOMC held rates steady (hawkish 9-3 vote, 3 dissents wanted a hike), 10yr at 4.70% (still below the 4.75% gate, closest yet), no trades planned.
+- **Commit:** done.

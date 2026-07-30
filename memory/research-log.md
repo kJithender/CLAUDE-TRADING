@@ -5461,3 +5461,70 @@ EXECUTED: 2026-07-28T13:36 ET — no new trades (plan empty: every watchlist nam
 
 **Step 8 — notify:** Telegram sent per playbook — market posture (chip-sector selloff pre-bell, 10yr eased to 4.62%, FOMC begins today) + no trades planned (all watchlist candidates fail the gate, several worse than Monday) + V earnings today / META earnings tomorrow, both hold decisions reconfirmed unchanged.
 **Step 9 — commit:** done.
+
+## 2026-07-30 ~08:13 ET — PRE-MARKET (Thursday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock:** `_lock` was free (`{}`); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:` or `QUERY:` pending in `control.md`. `CROSS_BULL_LEARNING:` blank.
+- **Account (live, ~08:13 ET):** Equity USD 99,606.68, cash USD 71,553.62 (71.837%), long market value USD 28,053.06 (28.163%), buying power USD 364,763.05. Alpaca's `last_equity` field returned USD 100,103.63 — a stale figure, two sessions behind the actual settled 07-29 close (USD 99,884.47). Per the standing 07-23 lesson, USD 99,884.47 (portfolio.md's own recorded 07-29 close) is used below as the shock-check reference, not the API field.
+
+**Step 2 — portfolio sync (positions, live Alpaca data ~08:13 ET):**
+
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | % of equity |
+|--------|-----|-----------|---------|-----------------|--------------|
+| LLY | 8 | 1174.35625 | 1188.50 | +USD 113.15 (+1.204%) | 9.546% |
+| UNH | 25 | 422.28 | 417.10 | −USD 129.50 (−1.227%) | 10.469% |
+| V | 22 | 355.058182 | 368.98 | +USD 306.28 (+3.921%) | 8.150% |
+
+Sector exposure: Healthcare (LLY+UNH) 20.015%, Financials (V) 8.150%, Cash 71.837%. All well within the 60% sector cap.
+
+**Step 3 — risk posture check:**
+- **Drawdown circuit breaker:** `history 1A 1D` high-water mark USD 100,322.08 (2026-07-21 close, unchanged). Current live equity USD 99,606.68 → drawdown **0.7130%**. NOT triggered (9.287pp headroom) ✓.
+- **Intraday shock check:** equity USD 99,606.68 vs recorded 07-29 close USD 99,884.47 = **−0.278%** — no shock ✓ (threshold −4%; market not yet open, pre-market quote move only).
+- **Sector cap:** no group above 60% (see table above) ✓.
+
+**Step 3b — thesis contract review:** LLY (review_by 2026-08-05, earnings), UNH (review_by 2026-08-17), V (review_by 2026-08-15, renewed 07-29 post-earnings) — none due today, none triggered.
+
+**Step 3c — Monday conviction review:** N/A — today is Thursday.
+
+**Step 4 — research (WebSearch, all facts dated 2026-07-30 unless noted):**
+- **Market posture — two-track tape, tech-earnings relief vs. a sharp Middle East re-escalation:** S&P 500 futures +0.4% pre-market as Microsoft's blowout Azure-driven beat eased AI-capex-ROI concerns broadly, but the tape stayed cautious on a fresh US strike wave against Iran and an Iranian ballistic-missile attack on US forces overnight — oil jumped again (Brent ~USD 87-90/bbl, WTI above USD 82-84, both up another ~3.4-3.6% today on top of yesterday's ~8% spike). This is a genuine re-escalation, not the de-escalation-then-reversal pattern seen in late July — treat as an active, worsening risk-off catalyst on top of the AI-capex debate. [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/07/60788305/sp500-july-30-open-up-or-down-polymarket-fed-bond-yields-big-tech-earnings-oil), [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-30-dow-sp-500-nasdaq-082255995.html), [CNBC](https://www.cnbc.com/2026/07/29/oil-prices-today-brent-wti-iran-us-hormuz.html)
+- **FOMC (07-29, confirmed via Fed press release):** held the federal funds rate steady at 3.50-3.75% for a 5th consecutive meeting, but the vote was 9-3 — all three dissents (Cleveland's Hammack, Minneapolis's Kashkari, Dallas's Logan) wanted a ¼-point hike, a materially more hawkish committee split than a simple hold. Fed officials' year-end rate projections span 3.6-4.1%; markets broadly expect a hike at the September meeting despite today's hold. [Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm), [CNBC](https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html)
+- **10yr Treasury:** 4.70% as of today, up ~2bps from yesterday — still comfortably below the 4.75% new-buy gate, but the closest reading yet after several consecutive rising sessions. Re-check explicitly at every future pre-market; a breach would block new buys outright regardless of setup quality. [TradingEconomics](https://tradingeconomics.com/united-states/government-bond-yield)
+- **LLY (what changed since yesterday):** nothing thesis-breaking. An initial WebSearch snippet claimed Lilly "reported Q2 results today" — cross-checked directly against Lilly's own investor-relations press release (BioSpace/investor.lilly.com) and the earnings date is confirmed **2026-08-05**, unchanged; the snippet was a stale/garbled aggregation, not new information. Dividend USD 1.73 (ex-date 08-14) already known. Thesis unchanged, review_by 08-05 stands.
+- **UNH (what changed since yesterday):** nothing material. Analysts continue raising price targets post the 07-16 beat-and-raise (JPMorgan to USD 516 from USD 466, Wells Fargo to USD 526 from USD 485). No negative news. Thesis unchanged.
+- **V (what changed since yesterday):** nothing new beyond 07-29's resolved read — stock +1.5% on the post-earnings reaction, workforce-reduction restructuring (2,600 roles) already priced in. Strong Buy consensus intact. Thesis unchanged, review_by 08-15 stands.
+- **Watchlist re-verification (fresh Alpaca bars through 07-29 close, 2026-05-01 to 2026-07-29, plus live pre-market quotes where available):**
+
+| Ticker | 07-29 close | 50-day SMA | vs 50-day (07-29 close) | Pre-market move | ATR20% | Gate |
+|--------|-------------|-----------|--------------------------|------------------|--------|------|
+| NVDA | 190.10 | 207.10 | −8.209% | ~194.15 (live) | 3.55% | FAIL (chip-sector drag continues) |
+| MSFT | 391.00 | 397.85 | −1.722% | AI blowout, +7.05% AH to ~418.59 (Azure +43%) | 2.55% | Reported 07-29 AC — single-session pop, unconfirmed (needs 2 consecutive sessions per standing lesson); no chase, no entry today regardless |
+| COST | 974.37 | 966.58 | **+0.806%** (only 1st positive session — 07-28 close was still −0.12%, NOT yet 2 consecutive) | — | 1.77% | FAIL (needs a 2nd confirming session) — also independently flagged as expensive by multiple sources today (~46x P/E) |
+| LRCX | 252.09 (reg.) | 337.10 | −25.22% | Beat + blowout guidance (WFE 2026 outlook raised to USD 140B); stock −7.04% intraday then +5.31% AH to ~265.75 | 6.36% | Reported 07-29 AC — deeply extended below 50-day even after the AH pop, single-session unconfirmed, valuation still disqualifying |
+| PWR | 588.20 (07-28 close) | 683.37 | −17.918% (pre-earnings) | Reported THIS MORNING (EPS 4.24 vs 3.33 est, revenue USD 9.56B vs USD 8.70B est — big beat); stock only modestly higher intraday so far | 3.47% | Earnings day itself — inside the blackout regardless of price reaction, no post-earnings SMA data exists yet |
+
+No watchlist candidate qualifies for entry today: NVDA still fails technically despite a pre-market bounce; MSFT and LRCX both popped hard on earnings but a single post-earnings session is unconfirmed by the standing multi-session-confirmation lesson (and chasing an earnings gap violates the no-chasing discipline in `knowledge-base.md` §6.1 regardless); COST has only 1 of the 2 required confirming sessions and is independently flagged as richly valued (~46x P/E) by today's coverage; PWR reported minutes ago and has no post-earnings technical read yet.
+
+**Step 5 — earnings-window rule:** No new buy planned (moot — no watchlist name clears its gate today). No held position reports within the next 2 trading days: LLY confirmed 2026-08-05 (7 trading days out), UNH 2026-10-27, V's earnings-window contract already resolved 07-29.
+
+**Step 6 — cash-drag check:** Cash 71.837%, still the 6th consecutive week above the 25-40% target band. Weekly slots fully available (0/3 used this week). Every watchlist candidate fails its gate again this morning for a distinct, freshly-checked reason (see table above) — two names (MSFT, LRCX) even had blowout earnings overnight, and the discipline call is still to wait for a second confirming session rather than chase the gap, consistent with the standing NVDA-pattern lesson. Staying in cash remains the correct, actively-re-verified call, not a passive default.
+
+**Step 7 — plan:** **No trades today.** All 3 positions HOLD. No thesis contracts due. MSFT and LRCX are the two names to watch most closely for a second confirming session at the next pre-market — both now have a real overnight catalyst, not just a technical wobble.
+
+**Stop audit (`orders open`, live Alpaca data):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS.**
+
+**Planned trades for today:**
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-07-30",
+  "trades": []
+}
+```
+
+**Step 8 — notify:** Telegram sent per playbook — market posture (MSFT blowout easing AI-capex fears vs. a sharp Iran/US re-escalation overnight, oil up again), FOMC held rates steady on a hawkish 9-3 split, 10yr at 4.70% (closest yet to the 4.75% gate, not breached), no trades planned.
+**Step 9 — commit:** done.

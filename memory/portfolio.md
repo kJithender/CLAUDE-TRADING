@@ -3,6 +3,8 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
+**Last updated:** 2026-07-30 ~08:13 ET (pre-market, Thursday) — Equity USD 99,606.68, cash USD 71,553.62 (71.837%), long MV USD 28,053.06 (28.163%), buying power USD 364,763.05. Alpaca's own `last_equity` field returned USD 100,103.63 (stale, two sessions behind); used the recorded 07-29 close USD 99,884.47 as the shock-check reference per the standing 07-23 lesson. Drawdown 0.7130% off HWM USD 100,322.08 (2026-07-21 close, not triggered, 9.287pp headroom); no intraday shock (−0.278% vs 07-29 close). 3/3 stops confirmed live, unchanged (LLY `e3547b9e` HWM 1,232.00/stop 1,108.80, UNH `225cb079` HWM 436.945/stop 393.2505, V `2b0a93ba` HWM 373.96/stop 336.564). All 3 positions HOLD (LLY +1.204%, UNH −1.227%, V +3.921%), none near the −7% line (midday's job regardless). No thesis contracts due (LLY review_by 08-05, UNH 08-17, V 08-15). **Macro:** two-track tape — Microsoft's blowout Q4 print (Azure +43%, stock +7% AH) eased AI-capex-ROI worries broadly, but Iran/US tensions sharply re-escalated overnight (fresh US strikes, an Iranian ballistic-missile attack on US forces, oil up another ~3.4-3.6% on top of yesterday's ~8% spike). FOMC held rates steady 07-29 on a hawkish 9-3 vote (3 regional-Fed-president dissents wanted a hike). **10yr Treasury 4.70%** — still below the 4.75% new-buy gate but the closest reading yet; re-check explicitly every pre-market. **Watchlist:** fresh SMA/ATR pull found NVDA still fails (−8.21% vs 50-day, pre-market bounce to ~194 still leaves it short); MSFT and LRCX both had blowout earnings overnight (MSFT +7% AH, LRCX +5.3% AH despite a revenue miss) but a single post-earnings session is unconfirmed per the standing multi-session lesson — no chase; COST has only 1 of 2 required confirming sessions above its 50-day and is independently flagged as expensive (~46x P/E) by today's coverage; PWR reported this morning (big beat) but has no post-earnings technical read yet and remains in its own earnings-day blackout. No qualifying entry; cash-drag (71.837%, 6th consecutive week above the 25-40% band) justified again today — MSFT/LRCX are the two names to watch closest for a second confirming session. No trades planned. Weekly new-position count: 0/3 used this week (week of 2026-07-27).
+
 ## RE-BASELINED 2026-07-01 (pre-market, third run today, ~16:46 ET)
 
 The paper account was reset to a fresh **$100,000 flat account** (account
@@ -79,16 +81,19 @@ reference but is **not** the live comparison baseline going forward.
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-29 close ~15:52 ET)
+## Account (live Alpaca data, 2026-07-30 pre-market ~08:13 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,884.47 |
-| Cash | $71,553.62 (71.636%) |
-| Long market value | $28,330.85 (28.364%: LLY+UNH+V) |
-| Buying power | $365,540.87 |
-| Last equity | $100,103.63 |
+| Equity | $99,606.68 |
+| Cash | $71,553.62 (71.837%) |
+| Long market value | $28,053.06 (28.163%: LLY+UNH+V) |
+| Buying power | $364,763.05 |
+| Last equity (Alpaca field, stale — see note) | $100,103.63 |
 
+_Note: Alpaca's `last_equity` field is showing the same stale value it showed at 07-29 market-open/midday — two sessions behind the actual settled 07-29 close ($99,884.47, recorded below). Shock checks use the recorded prior close, not this field, per the standing 07-23 lesson._
+
+**Prior (close 07-29 ~15:52 ET):** Equity $99,884.47 | Cash $71,553.62 (71.636%) | Long MV $28,330.85 (28.364%) | Buying power $365,540.87
 **Prior (midday 07-29 ~12:37 ET):** Equity $100,117.81 | Cash $71,553.62 (71.472%) | Long MV $28,564.19 (28.531%) | Buying power $366,194.20
 **Prior (market-open 07-29 ~09:36 ET):** Equity $100,087.65 | Cash $71,553.62 (71.491%) | Long MV $28,534.03 (28.513%) | Buying power N/A recorded
 **Prior (close 07-28 ~15:52 ET):** Equity $100,162.41 | Cash $71,553.64 (71.446%) | Long MV $28,608.77 (28.567%) | Buying power $366,319.11
@@ -113,17 +118,28 @@ reference but is **not** the live comparison baseline going forward.
 
 ## Open positions
 
-_As of close ~15:52 ET, 2026-07-29:_
+_As of pre-market ~08:13 ET, 2026-07-30:_
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday 07-27) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| LLY | 8 | $1,174.35625 | $1,210.00 | +$285.15 (+3.0352%) | Healthcare | Order e3547b9e, 10%, HWM $1,232.00, stop $1,108.80 — live, unchanged | **A** (review_by 2026-08-05, earnings) |
-| UNH | 25 | $422.28 | $420.57 | −$42.75 (−0.4049%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (review_by 2026-08-17) |
-| V | 22 | $355.058182 | $369.8456 | +$325.32 (+4.1648%) | Financials | Order 2b0a93ba, 10%, HWM $373.96, stop $336.564 — live, ratcheted up again since midday | **A** (V's post-earnings review_by resolved HOLD 07-29 pre-market; review_by renewed 2026-08-15) |
+| LLY | 8 | $1,174.35625 | $1,188.50 | +$113.15 (+1.204%) | Healthcare | Order e3547b9e, 10%, HWM $1,232.00, stop $1,108.80 — live, unchanged | **A** (review_by 2026-08-05, earnings) |
+| UNH | 25 | $422.28 | $417.10 | −$129.50 (−1.227%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (review_by 2026-08-17) |
+| V | 22 | $355.058182 | $368.98 | +$306.28 (+3.921%) | Financials | Order 2b0a93ba, 10%, HWM $373.96, stop $336.564 — live, unchanged | **A** (V's post-earnings review_by resolved HOLD 07-29 pre-market; review_by renewed 2026-08-15) |
 
 **META — CLOSED 2026-07-28 10:39:04 AM ET.** 10% trailing stop filled (order 14301809, 6sh, entry $641.323333 → exit $590.25, −7.964%, −$306.44, held 8 days). Third escalation of the same story this week (closed past −7% on 07-24 and 07-27); WebSearch found no company-specific negative catalyst today (Meta-BlackRock USD 14B/1GW Texas data-center JV, neutral-to-positive) — broad AI-capex-ROI anxiety, one trading day before the 07-29 earnings print. See `closed-trades.md`. Next earnings 2026-07-29 — no re-entry consideration inside the earnings blackout.
 
 **VST — CLOSED 2026-07-28 09:34:48 AM ET.** 10% trailing stop filled (order 87f49386, 25sh, entry $161.21 → exit $150.0496, −6.924%, −$279.01, held 7 days). TD Cowen PT cut (USD 230→222, kept Buy) layered on 07-27's broad AI-power-sector weakness; Goldman/Wells Fargo kept Buy same day — sector-rotation exit, not a thesis break. See `closed-trades.md`. Next earnings 2026-08-07 — may reconsider as fresh entry if setup re-confirms.
+
+## Risk posture (2026-07-30 pre-market)
+
+- **Drawdown circuit breaker:** Equity $99,606.68 vs running HWM $100,322.08 (2026-07-21 close) — drawdown **0.7130%**. NOT triggered (9.287pp headroom) ✓.
+- **Intraday shock check:** Equity $99,606.68 vs recorded 07-29 close $99,884.47 = **−0.278%** — no shock (threshold −4%; market not yet open).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.015% ($19,935.50), Financials (V) 8.150% ($8,117.56), cash 71.837% ($71,553.62) — all well within the 60% sector cap.
+- **-7% rule check:** LLY +1.204%, UNH −1.227%, V +3.921% — none within range of the −7% midday-only cut threshold (pre-market check regardless; midday's job).
+- **Stop audit:** LLY, UNH, V — 3/3 live stops confirmed via `orders open`, quantities match positions exactly (8/25/22), unchanged since yesterday's close. No gap.
+- **Weekly new-position count:** 0/3 used this week — unchanged (week of 2026-07-27).
+- **Trades this run:** none planned. Every watchlist candidate fails its gate again today (see `research-log.md`); MSFT and LRCX both popped on blowout overnight earnings but a single post-earnings session is unconfirmed per the standing multi-session lesson.
+- **Market context:** Two-track tape — Microsoft's blowout Q4 print (Azure +43%, stock +7% AH) eased AI-capex-ROI anxiety broadly, but Iran/US tensions sharply re-escalated overnight (fresh US strikes, an Iranian ballistic-missile attack on US forces, oil up another ~3.4-3.6% on top of yesterday's ~8% spike). FOMC held rates steady 07-29 on a hawkish 9-3 vote. 10yr Treasury 4.70% — still below the 4.75% new-buy gate, closest reading yet.
 
 ## Risk posture (2026-07-29 close)
 
