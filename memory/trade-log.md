@@ -4417,3 +4417,16 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Plan:** No trades today. All 3 positions HOLD. Full research/macro detail in `research-log.md`.
 - **Notify:** Telegram sent — market posture (MSFT blowout easing AI-capex fears, but a sharp Iran/Israel re-escalation overnight — fresh US strikes, Iran ballistic-missile attack on US forces, oil back up), FOMC held rates steady (hawkish 9-3 vote, 3 dissents wanted a hike), 10yr at 4.70% (still below the 4.75% gate, closest yet), no trades planned.
 - **Commit:** done.
+
+## 2026-07-30 ~12:36 ET (midday, Thursday)
+
+- **Equity:** USD 99,516.90 | Cash USD 71,553.62 (71.899%) | Long MV USD 27,963.28 (28.100%) | Buying power USD 364,511.65
+- **Drawdown circuit breaker:** USD 99,516.90 vs HWM USD 100,322.08 (2026-07-21 close) = **0.8026%** off high — NOT triggered (9.1974pp headroom).
+- **Intraday shock check:** Alpaca's `last_equity` field returned USD 100,103.63 (stale, still two sessions behind per the standing 07-23 lesson); used the recorded 07-29 close USD 99,884.47 as reference — USD 99,516.90 vs USD 99,884.47 = **−0.3681%**, no shock (threshold −4%).
+- **Positions (% from entry, live):** LLY −0.733% (USD 1,165.75, down from lastday USD 1,210.02 — a genuine intraday pullback, −3.659% today), UNH +0.591% (USD 424.775), V +2.645% (USD 364.45) — none within range of the −7% midday cut, none up >15% (no tightening).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.042% (USD 19,945.375), Financials (V) 8.058% (USD 8,017.90), cash 71.899% (USD 71,553.62) — all well within the 60% sector cap.
+- **News scan:** not triggered — no position moved >3% down or >10% up from entry (closest is LLY at −0.733%).
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS** — no recreation needed.
+- **Action:** No trades — no cuts (nothing past −7%), no tightening (nothing past +15%), midday never opens new positions. Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27).
+- **Notify:** Telegram sent — all positions within range, no action.
+- **Commit:** done.
