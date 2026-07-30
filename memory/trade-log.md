@@ -3,6 +3,24 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-30 ~09:36 ET — MARKET-OPEN (no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Plan check:** latest `research-log.md` block has `plan_date: 2026-07-30`, `trades: []` — pre-market ran today and planned no trades. No `EXECUTED:` line yet under it, so this routine had not already run today.
+- **Market:** `clock` confirmed `is_open: true` (next close 16:00 ET).
+- **Account:** equity USD 99,341.31, cash USD 71,553.62 (72.033%), long MV USD 27,787.69 (27.967%), buying power USD 364,020.01. Alpaca `last_equity` USD 100,103.63 is stale (two sessions behind, per the standing 07-23 lesson) — used recorded 07-29 close USD 99,884.47 as the shock-check reference.
+- **Shock check:** −0.5437% vs USD 99,884.47 — no shock (threshold −4%).
+- **Drawdown circuit breaker:** equity USD 99,341.31 vs running HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) — drawdown **0.9774%**. NOT triggered (9.0226pp headroom).
+- **Breaking-news gate:** N/A — no planned trades to screen.
+- **Execution:** no trades — plan was empty. No math to write for the deployment/sizing guardrails since nothing was bought.
+- **Positions (% from entry):** LLY +0.466% (USD 1,179.83), UNH −2.129% (USD 413.29), V +2.713% (USD 364.69). None near the −7% line (midday's job).
+- **Stop audit:** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 confirmed live via `orders open`, quantities match positions exactly (8/25/22), unchanged since pre-market. **3/3 PASS.** No stops filled since the last run — no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.905% (USD 19,770.89), Financials (V) 8.077% (USD 8,023.18), cash 72.033% (USD 71,553.62) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-07-27) — unchanged.
+- **Notify:** Telegram sent — no trades, reason given (empty pre-market plan).
+- **Commit:** done.
+
 ## 2026-07-24 ~15:50 ET — CLOSE
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock acquired (`_lock` was `{}`), `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
