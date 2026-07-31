@@ -3,7 +3,9 @@
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 
-**Last updated:** 2026-07-31 ~08:16 ET (pre-market, Friday) — Equity USD 99,370.65, cash USD 71,553.62 (72.00%), long MV USD 27,817.03 (27.996%), buying power USD 364,102.16. Alpaca `last_equity` USD 99,388.07 is reasonably close to the recorded 07-30 close (USD 99,404.30, ~USD 16 diff) — no stale-data anomaly this run. Drawdown 0.9483% off HWM USD 100,322.08 (2026-07-21 close, not triggered, 9.0517pp headroom). No intraday shock (market not yet open; −0.034% vs recorded prior close, well within −4%). 3/3 stops confirmed live via `orders open`, unchanged (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80, UNH `225cb079` HWM USD 436.945/stop USD 393.2505, V `2b0a93ba` HWM USD 373.96/stop USD 336.564) — quantities match positions exactly (8/25/22), no gap. All 3 positions HOLD (LLY −1.478%, UNH −0.244%, V +2.797%), none near the −7% cut (pre-market places no orders regardless). Sector exposure: Healthcare (LLY+UNH) 19.918% (USD 19,787.25), Financials (V) 8.081% (USD 8,029.78), cash 72.00% (USD 71,553.62) — all well within the 60% sector cap. Weekly new-position count: 0/3 used this week (week of 2026-07-27). **Market posture:** continuing yesterday's tech-led relief rally — S&P futures +0.47%, Nasdaq futures +1.11% pre-market, driven by yesterday's MSFT (+15.51%) and LRCX (+20.28%) earnings pops. 10yr Treasury ~4.67-4.68%, still below the 4.75% new-buy gate. **No trades planned today** — every watchlist name (NVDA, COST, LRCX, PWR) still fails its technical gate despite the rally, and MSFT's blowout print pushed it newly extended (+13.336% vs 50-day, >10% chase threshold) rather than into a buyable setup. LLY fell ~4.09% yesterday on profit-taking/month-end rebalancing (no thesis break); UNH and V both saw fresh analyst PT raises, no negative news. See `research-log.md` for full detail.
+**Last updated:** 2026-07-31 ~09:36 ET (market-open, Friday) — Equity USD 99,139.98, cash USD 71,553.62 (72.17%), long MV USD 27,586.36 (27.82%), buying power USD 363,456.28. No trades placed — today's pre-market plan (`plan_date` 2026-07-31) was empty, every watchlist name still fails its technical gate or is freshly extended (MSFT). Shock check: equity vs Alpaca `last_equity` USD 99,388.07 = −0.2496% — no shock (threshold −4%). Drawdown 1.1783% off HWM USD 100,322.08 (2026-07-21 close, not triggered, 8.8217pp headroom). 3/3 stops confirmed live via `orders open`, unchanged (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80, UNH `225cb079` HWM USD 436.945/stop USD 393.2505, V `2b0a93ba` HWM USD 373.96/stop USD 336.564) — quantities match positions exactly (8/25/22), no gap. All 3 positions HOLD (LLY −2.772%, UNH −0.641%, V +1.937%), none near the −7% cut (midday's job regardless). Sector exposure: Healthcare (LLY+UNH) 19.789% (USD 19,623.79), Financials (V) 8.031% (USD 7,962.57), cash 72.17% (USD 71,553.62) — all well within the 60% sector cap. Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27).
+
+**Prior update:** 2026-07-31 ~08:16 ET (pre-market, Friday) — Equity USD 99,370.65, cash USD 71,553.62 (72.00%), long MV USD 27,817.03 (27.996%), buying power USD 364,102.16. Alpaca `last_equity` USD 99,388.07 is reasonably close to the recorded 07-30 close (USD 99,404.30, ~USD 16 diff) — no stale-data anomaly this run. Drawdown 0.9483% off HWM USD 100,322.08 (2026-07-21 close, not triggered, 9.0517pp headroom). No intraday shock (market not yet open; −0.034% vs recorded prior close, well within −4%). 3/3 stops confirmed live via `orders open`, unchanged (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80, UNH `225cb079` HWM USD 436.945/stop USD 393.2505, V `2b0a93ba` HWM USD 373.96/stop USD 336.564) — quantities match positions exactly (8/25/22), no gap. All 3 positions HOLD (LLY −1.478%, UNH −0.244%, V +2.797%), none near the −7% cut (pre-market places no orders regardless). Sector exposure: Healthcare (LLY+UNH) 19.918% (USD 19,787.25), Financials (V) 8.081% (USD 8,029.78), cash 72.00% (USD 71,553.62) — all well within the 60% sector cap. Weekly new-position count: 0/3 used this week (week of 2026-07-27). **Market posture:** continuing yesterday's tech-led relief rally — S&P futures +0.47%, Nasdaq futures +1.11% pre-market, driven by yesterday's MSFT (+15.51%) and LRCX (+20.28%) earnings pops. 10yr Treasury ~4.67-4.68%, still below the 4.75% new-buy gate. **No trades planned today** — every watchlist name (NVDA, COST, LRCX, PWR) still fails its technical gate despite the rally, and MSFT's blowout print pushed it newly extended (+13.336% vs 50-day, >10% chase threshold) rather than into a buyable setup. LLY fell ~4.09% yesterday on profit-taking/month-end rebalancing (no thesis break); UNH and V both saw fresh analyst PT raises, no negative news. See `research-log.md` for full detail.
 
 **Prior update:** 2026-07-30 ~15:52 ET (close, Thursday) — EOD: equity USD 99,404.30, down −0.4808% today (recorded 07-29 close USD 99,884.47; Alpaca's own `last_equity` field still stuck at USD 100,103.63, two sessions stale per the standing 07-23 lesson — not used). Bull −0.5957% since inception (2026-07-01) vs SPY −0.58015% (741.34 vs anchor 745.665, per `snapshot.dailyBar.c` — the 07-03 lesson's value of record) = **−0.0156pp gap — Bull now trails SPY since inception for the first time since the reset**, a sharp reversal from yesterday's +2.0429pp lead. 🚨 Today mirrored yesterday's shock in reverse: the Nasdaq-100 (which entered a correction Wednesday) staged a broad tech-led relief rally — Dow +1.2%, S&P 500 +1.7%, Nasdaq +2.8% — driven by Microsoft (+17% on cloud growth) and Lam Research (+14.1% on a beat), even as fresh US strikes on Iran and a bond-market rout continued in the background. Bull's zero-AI-semi, healthcare/financials/cash book (72% cash) captured almost none of the rally — the same defensive positioning that has repeatedly cushioned broad-shock-down days worked squarely against it on a broad-shock-up day. Drawdown 0.9148% off HWM USD 100,322.08 (2026-07-21 close, not triggered, 9.0852pp headroom). No intraday shock (−0.4808% vs recorded prior close, well within −4%). 3/3 stops confirmed live, unchanged (LLY `e3547b9e` HWM USD 1,232.00/stop USD 1,108.80, UNH `225cb079` HWM USD 436.945/stop USD 393.2505, V `2b0a93ba` HWM USD 373.96/stop USD 336.564) — quantities match positions exactly (8/25/22), no gap. All 3 positions HOLD (LLY −1.341%, UNH −0.239%, V +3.085%), none near the −7% cut (close places no orders regardless). 0 trades today (close is read-only, and both market-open and midday planned/placed none); no exits, no `closed-trades.md` reconciliation needed. Sector exposure: Healthcare (LLY+UNH) 19.9192% (USD 19,800.59), Financials (V) 8.0983% (USD 8,052.22), cash 71.9770% (USD 71,553.62) — all well within the 60% sector cap. Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27). **Lesson filed:** today's gap reversal is the direct mirror of the 07-29 lesson (cash cushion widens the lead on broad-shock-down days) — the same mechanism narrows or erases the lead on a sharp broad-shock-up day, especially one led by mega-cap tech/AI-semi names Bull deliberately avoids. Neither single day is a verdict on the sector mix; both are data points for the still-open cash-drag/valuation-calibration question.
 
@@ -87,18 +89,19 @@ reference but is **not** the live comparison baseline going forward.
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-07-31 pre-market ~08:16 ET)
+## Account (live Alpaca data, 2026-07-31 market-open ~09:36 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,370.65 |
-| Cash | $71,553.62 (72.00%) |
-| Long market value | $27,817.03 (27.996%: LLY+UNH+V) |
-| Buying power | $364,102.16 |
+| Equity | $99,139.98 |
+| Cash | $71,553.62 (72.17%) |
+| Long market value | $27,586.36 (27.82%: LLY+UNH+V) |
+| Buying power | $363,456.28 |
 | Last equity (Alpaca field) | $99,388.07 |
 
-_Note: `last_equity` ($99,388.07) is reasonably close to the recorded 07-30 close ($99,404.30, ~$16 diff) — no stale-data anomaly this run, unlike the multi-session staleness documented 07-23 through 07-30._
+_Shock check: equity vs `last_equity` = −0.2496% — no shock (threshold −4%)._
 
+**Prior (pre-market 07-31 ~08:16 ET):** Equity $99,370.65 | Cash $71,553.62 (72.00%) | Long MV $27,817.03 (27.996%) | Buying power $364,102.16
 **Prior (close 07-30 ~15:52 ET):** Equity $99,404.30 | Cash $71,553.62 (71.977%) | Long MV $27,850.68 (28.023%) | Buying power $364,196.37
 **Prior (midday 07-30 ~12:36 ET):** Equity $99,516.90 | Cash $71,553.62 (71.899%) | Long MV $27,963.28 (28.100%) | Buying power $364,511.65
 **Prior (market-open 07-30 ~09:36 ET):** Equity $99,341.31 | Cash $71,553.62 (72.033%) | Long MV $27,787.69 (27.967%) | Buying power $364,020.01
@@ -128,24 +131,24 @@ _Note: `last_equity` ($99,388.07) is reasonably close to the recorded 07-30 clos
 
 ## Open positions
 
-_As of pre-market ~08:16 ET, 2026-07-31:_
+_As of market-open ~09:36 ET, 2026-07-31:_
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (Monday 07-27) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| LLY | 8 | $1,174.35625 | $1,157.00 | −$138.85 (−1.478%) | Healthcare | Order e3547b9e, 10%, HWM $1,232.00, stop $1,108.80 — live, unchanged | **A** (review_by 2026-08-05, earnings) |
-| UNH | 25 | $422.28 | $421.25 | −$25.75 (−0.244%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (review_by 2026-08-17) |
-| V | 22 | $355.058182 | $364.99 | +$218.50 (+2.797%) | Financials | Order 2b0a93ba, 10%, HWM $373.96, stop $336.564 — live, unchanged | **A** (V's post-earnings review_by resolved HOLD 07-29 pre-market; review_by renewed 2026-08-15) |
+| LLY | 8 | $1,174.35625 | $1,141.805 | −$260.41 (−2.772%) | Healthcare | Order e3547b9e, 10%, HWM $1,232.00, stop $1,108.80 — live, unchanged | **A** (review_by 2026-08-05, earnings) |
+| UNH | 25 | $422.28 | $419.5739 | −$67.65 (−0.641%) | Healthcare | Order 225cb079, 10%, HWM $436.945, stop $393.2505 — live, unchanged | **A** (review_by 2026-08-17) |
+| V | 22 | $355.058182 | $361.935 | +$151.29 (+1.937%) | Financials | Order 2b0a93ba, 10%, HWM $373.96, stop $336.564 — live, unchanged | **A** (V's post-earnings review_by resolved HOLD 07-29 pre-market; review_by renewed 2026-08-15) |
 
 **META — CLOSED 2026-07-28 10:39:04 AM ET.** 10% trailing stop filled (order 14301809, 6sh, entry $641.323333 → exit $590.25, −7.964%, −$306.44, held 8 days). Third escalation of the same story this week (closed past −7% on 07-24 and 07-27); WebSearch found no company-specific negative catalyst today (Meta-BlackRock USD 14B/1GW Texas data-center JV, neutral-to-positive) — broad AI-capex-ROI anxiety, one trading day before the 07-29 earnings print. See `closed-trades.md`. Next earnings 2026-07-29 — no re-entry consideration inside the earnings blackout.
 
 **VST — CLOSED 2026-07-28 09:34:48 AM ET.** 10% trailing stop filled (order 87f49386, 25sh, entry $161.21 → exit $150.0496, −6.924%, −$279.01, held 7 days). TD Cowen PT cut (USD 230→222, kept Buy) layered on 07-27's broad AI-power-sector weakness; Goldman/Wells Fargo kept Buy same day — sector-rotation exit, not a thesis break. See `closed-trades.md`. Next earnings 2026-08-07 — may reconsider as fresh entry if setup re-confirms.
 
-## Risk posture (2026-07-31 pre-market)
+## Risk posture (2026-07-31 market-open)
 
-- **Drawdown circuit breaker:** Equity $99,370.65 vs running HWM $100,322.08 (2026-07-21 close) — drawdown **0.9483%**. NOT triggered (9.0517pp headroom) ✓. New buys still permitted on this gate.
-- **Intraday shock check:** Equity $99,370.65 vs recorded 07-30 close $99,404.30 = **−0.034%** — no shock (threshold −4%; market not yet open).
+- **Drawdown circuit breaker:** Equity $99,139.98 vs running HWM $100,322.08 (2026-07-21 close) — drawdown **1.1783%**. NOT triggered (8.8217pp headroom) ✓. New buys still permitted on this gate (moot — no trades planned today).
+- **Intraday shock check:** Equity $99,139.98 vs Alpaca `last_equity` $99,388.07 = **−0.2496%** — no shock (threshold −4%).
 - **10yr Treasury:** ~4.67-4.68% (07-30) — still below the 4.75% new-buy gate.
-- **Sector exposure:** Healthcare (LLY+UNH) 19.918% ($19,787.25), Financials (V) 8.081% ($8,029.78), cash 72.00% ($71,553.62) — all well within the 60% sector cap.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.789% ($19,623.79), Financials (V) 8.031% ($7,962.57), cash 72.17% ($71,553.62) — all well within the 60% sector cap.
 - **-7% rule check:** LLY −1.478%, UNH −0.244%, V +2.797% — none within range of the −7% cut threshold (pre-market places no orders regardless).
 - **Stop audit:** LLY, UNH, V — 3/3 live stops confirmed via `orders open`, quantities match positions exactly (8/25/22), unchanged since yesterday's close. No gap.
 - **Thesis contracts:** LLY (review_by 2026-08-05), UNH (review_by 2026-08-17), V (review_by 2026-08-15) — none due today, none triggered.

@@ -67,6 +67,8 @@ No trades planned. Every watchlist name fails its technical gate (NVDA, COST, LR
 }
 ```
 
+EXECUTED: 2026-07-31T13:36 ET — no trades (plan empty: every watchlist name still fails its technical gate or is freshly extended). Market open confirmed (`clock` `is_open: true`). Breaking-news gate: moot, no planned trades to gate. Account re-check: equity USD 99,139.98 vs Alpaca `last_equity` USD 99,388.07 = **−0.2496%** — no intraday shock (threshold −4%). Drawdown: HWM USD 100,322.08 (2026-07-21 close, unchanged) vs current equity USD 99,139.98 = **1.1783%** — NOT triggered (8.8217pp headroom). All 3 positions HOLD (LLY −2.772%, UNH −0.641%, V +1.937%), none near the −7% cut (midday's job regardless). Sector exposure: Healthcare (LLY+UNH) 19.789% (USD 19,623.79), Financials (V) 8.031% (USD 7,962.57), cash 72.17% (USD 71,553.62) — all well within the 60% sector cap. Stop audit (`orders open` vs `positions`): 3/3 PASS — LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80, qty 8 matches), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25 matches), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22 matches). No stop fills since pre-market, no exits, no `closed-trades.md` reconciliation needed. Weekly new-position count unchanged: 0/3 used this week (week of 2026-07-27).
+
 ## 2026-07-29 — Pre-market research (~08:14 ET, Wednesday) — PLAN: no trades (FOMC day, V post-earnings review, all watchlist gates fail or blackout)
 
 ### Live-switch guard
