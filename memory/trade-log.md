@@ -3,6 +3,22 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-07-31 ~12:37 ET — MIDDAY (no action)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: true` (next close 16:00 ET).
+- **Account:** equity USD 99,246.81, cash USD 71,553.62 (72.10%), long MV USD 27,693.19 (27.90%), buying power USD 363,755.41. Alpaca `last_equity` USD 99,388.07 (07-30 close).
+- **Shock check:** −0.1421% vs USD 99,388.07 — no shock (threshold −4%).
+- **Drawdown circuit breaker:** equity USD 99,246.81 vs running HWM USD 100,322.08 (2026-07-21 close) — drawdown **1.0718%**. NOT triggered (8.928pp headroom).
+- **Positions (% from entry):** LLY −2.661% (USD 1,143.11), UNH −0.388% (USD 420.64), V +2.830% (USD 365.105). None past ±3%/+10% news-scan trigger, none near the −7% cut, none up >15% (no tightening). News scan not triggered.
+- **Stop audit:** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 confirmed live via `orders open`, quantities match positions exactly (8/25/22), unchanged since pre-market. **3/3 PASS.** No stops filled since the last run — no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.812% (USD 19,660.88), Financials (V) 8.094% (USD 8,032.31), cash 72.10% (USD 71,553.62) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-07-27) — unchanged; midday never opens new positions.
+- **Thesis contracts:** none due today (LLY 08-05, UNH 08-17, V 08-15).
+- **Notify:** Telegram sent — all positions within range, no action.
+- **Commit:** done.
+
 ## 2026-07-30 ~09:36 ET — MARKET-OPEN (no trades)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
