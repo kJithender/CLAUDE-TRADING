@@ -5,6 +5,62 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-31 — Weekly review research (~20:40 UTC, Friday)
+
+**S&P 500 weekly performance (2026-07-27 to 2026-07-31):** Alpaca SPY daily bars
+(settled, explicit date range) show SPY closing $738.90 (07-24) → $746.79
+(07-31), a **+1.068% weekly gain**. A choppy week — Iran/oil and a hawkish-read
+FOMC hold drove a sharp broad selloff Wed 07-29 (S&P −1.52%, 10yr yields to a
+near-two-decade high), followed by a tech-earnings-driven relief rally Thu-Fri
+(MSFT +15.51% 07-30 on a blowout Azure print — the largest single-day
+market-cap gain in US corporate history; LRCX +20.28%; Amazon +13% 07-31 on an
+AWS beat). Apple slid ~7% 07-31 on disappointing forecasts. **10yr Treasury
+topped 4.7-4.737% this week, the highest since January 2025** — the closest
+read yet to the 4.75% new-buy gate tracked since 07-24. [CNBC](https://www.cnbc.com/2026/07/30/stock-market-today-live-updates.html) [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-31-2026)
+
+**Held positions:**
+- **LLY:** Closed 07-31 ~$1,147.61-1,151.83, down modestly on the week (from
+  ~$1,154.97 lastday). Barclays reiterated Buy 07-24. USD 750M US manufacturing
+  expansion investment. Earnings confirmed 2026-08-05 (5 days out) — no new
+  negative catalyst, thesis unchanged. [Yahoo Finance](https://finance.yahoo.com/quote/LLY/)
+- **UNH:** Trading $415-419 range this week, essentially flat/slightly down.
+  RBC raised PT to USD 478 (from USD 463) post-07-16 beat-and-raise; 27-analyst
+  consensus "Buy," avg PT USD 475.23. No fresh negative news. [tikr.com](https://tikr.com/blog/unitedhealth-stock-up-6-this-week-heres-the-367-analyst-consensus-case)
+- **V:** Closed the week ~$366, near its 52-week high (range USD 293.89-373.97).
+  JPMorgan/Citi/Wolfe/BofA/UBS/Wells Fargo all raised PTs into the USD 400-450
+  range in July on the Q3 beat. The 07-28 severance/workforce-cut news (~7% of
+  workforce) already priced in and journaled at the time — no new information
+  this week. Strong Buy consensus (38 analysts, 0 sell). [Investing.com](https://www.investing.com/equities/visa-inc)
+
+**Closed this week — post-mortem context:**
+- **META (stopped out 07-28, −7.964%, one trading day before earnings):** Q2
+  2026 results (07-29 after close) came in with revenue USD 60.8B (+28% YoY,
+  a slight beat) but EPS USD 6.18 vs USD 7.18 est. — a miss driven by one-time
+  charges (USD 2.4B legal contingency + USD 1.2B severance; ex-charges would
+  have beaten). Stock fell −7.45% in after-hours to ~USD 542, ~9% lower
+  pre-market Thursday, before recovering somewhat in Friday's broad tech
+  rally (+~3% per index-level reporting). **The 07-28 stop-out was well-timed
+  in hindsight** — it avoided the earnings-day drawdown entirely, reinforcing
+  the standing lesson that a trailing stop firing ahead of a volatile print is
+  not something to second-guess. [tradingkey.com](https://www.tradingkey.com/analysis/stocks/us-stocks/262062391-meta-platforms-report-q2-2026-meta-advertising-dap-capital-expenditures-tradingkey) [indmoney.com](https://www.indmoney.com/blog/us-stocks/why-meta-stock-fell-q2-earnings-analysis)
+- **VST (stopped out 07-28, −6.924%):** Continued weaker this week — fell
+  another −3.86% Monday 07-27 (USD 163.38 → USD 157.08) on broad AI-power-sector
+  softness, though the board still declared its regular USD 0.23/share
+  quarterly dividend 07-29. Q2 earnings confirmed for 2026-08-07. 20-analyst
+  consensus remains "Strong Buy," avg PT USD 221.94 (+49% implied) — thesis
+  not broken, still a re-entry watchlist candidate once technicals reconfirm.
+  [stockinvest.us](https://stockinvest.us/stock/VST)
+
+**Best performers screen:** top movers this week/month were again
+micro-cap/penny names (FBRX +259%, PN, LVWR) — all disqualified by the
+sub-USD-5 forbidden-list floor and market-cap universe rule. Among large/mid
+caps, this week's real leaders were binary post-earnings pops (MSFT, LRCX,
+AMZN) rather than new, unvetted setups; none clear a non-extended technical
+entry per the standing chase-threshold discipline. No new large/mid-cap name
+added to the watchlist this week. [stocktitan.net](https://www.stocktitan.net/rankings/stock-gains-monthly/2026/july)
+
+---
+
 ## 2026-07-31 — Pre-market research (~08:15 ET, Friday) — PLAN: no trades (every watchlist name fails its gate)
 
 ### Live-switch guard

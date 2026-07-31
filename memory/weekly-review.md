@@ -2,6 +2,87 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-07-31 (Week 5 of the new track record — 5 active trading days: Mon Jul 27 – Fri Jul 31)
+
+- **Bull return (week, 2026-07-24 close $99,754.87 → 2026-07-31 close $99,197.93):** −0.5584%
+- **SPY return (week, dailyBar.c $738.90 → $746.79, explicit-date-range bars, settled):** +1.0679%
+- **Result:** Bull **lagged** SPY by **−1.6263pp** this week
+- **Since inception (2026-07-01, $100,000.00 / SPY $745.665):** Bull −0.8021% vs SPY +0.1509% = **−0.9529pp gap — Bull now trails SPY since inception**, a sharp reversal from last Friday's +0.662pp lead
+- **HWM:** $100,322.08 (unchanged, set 2026-07-21 close) | drawdown −1.1205% — far within the −10% circuit breaker ✓
+- **Grade:** B
+
+_Data-quality note: the 2026-07-31 close entry in `portfolio.md` used a snapshot `dailyBar.c` of $748.095 for SPY, pulled at ~15:52 ET (before the 4:00 PM settle) — this review re-pulled SPY's official settled close via the `bars` endpoint with an explicit date range ($746.79), consistent with the 2026-07-03 lesson to never use a pre-settlement snapshot for the SPY comparison of record. The ~0.18% drift changes the since-inception gap from portfolio.md's intraday −1.1496pp figure to this review's settled −0.9529pp — still a trail, just a smaller one. No action needed beyond noting it; `portfolio.md`'s own close entries are pulled 10 minutes before settle by design and this kind of small drift is expected, not a bug._
+
+### Trade statistics (sample still small — 3 closed trades since reset; read directionally, not conclusively)
+
+| Metric | Value |
+|--------|-------|
+| New trades this week | 0 — every watchlist name failed its technical/valuation gate at every single pre-market check this week (see process audit) |
+| Closed trades this week | 2 (VST stop-fill 07-28, −6.924%, held 7 days; META stop-fill 07-28, −7.964%, held 8 days) |
+| Total closed trades (new baseline, since 2026-07-01) | 3 (VST 07-16 −2.178%, VST 07-28 −6.924%, META 07-28 −7.964%) |
+| Win rate | 0% (0 wins / 3 closed trades) |
+| Average win % | N/A — no wins yet |
+| Average loss % | −5.689% (mean of the three losses; magnitudes range −2.178% to −7.964%) |
+| Profit factor | N/A — no gross wins to divide by |
+| Avg holding days (winners / losers) | N/A winners / 9.67 days (losers: 14, 7, 8 days) |
+| Biggest standing lesson | All 3 closed trades are trailing-stop exits driven by sector/macro rotation (chip selloff, AI-power-sector weakness, broad AI-capex-ROI anxiety), with WebSearch confirming **zero company-specific thesis breaks** across all three. The stops are doing exactly what they're designed to do — cap losses at a known amount when a name gets caught in a sector-wide de-rating the individual company didn't cause. |
+
+⚠️ **Ledger cross-check:** `trades.jsonl` has 6 post-reset buy entries and 3 stop_fill entries (VST 07-16, VST 07-28, META 07-28), matching `closed-trades.md`'s 3 post-reset exits and `trade-log.md`'s narrative — counts agree, no reconciliation issue. **Data-hygiene flag (not a reconciliation break):** `trades.jsonl`'s `pnl_pct` field is inconsistently formatted — the 07-16 VST entry stores a fraction (`-0.02178` = −2.178%) while the two 07-28 entries store the percentage directly (`-6.924`, `-7.964`). Both resolve to the correct values already recorded in `closed-trades.md`, so no numbers here are wrong, but a future consumer parsing `trades.jsonl` programmatically would get a 100x error on the older entry if it assumed one consistent unit. Worth a maintenance pass to standardize the field (always store as a fraction, e.g.) the next time `trades.jsonl`-writing code is touched.
+
+### Process audit
+
+| Check | Result | Grade |
+|-------|--------|-------|
+| Cash drag (avg ~69.75% this week across 20 intraday snapshots vs 25–40% target band) | Cash climbed from ~64% Monday to ~72% by Friday — but this was **passive**, not a failure to deploy: both increases came from Tuesday's two stop-outs (VST, META) freeing capital, not from unused weekly slots sitting idle. 0/3 new-position slots were used, and every single pre-market re-verification (5 sessions) found every watchlist name failing its technical or valuation gate — MSFT flipped from failing to *newly extended* (+13.336% vs 50-day) the moment its earnings popped, correctly kept off the table under the no-chase discipline rather than bought on the biggest single-day market-cap gain in US corporate history. | ⚠️ justified daily, but now a materially higher cash level than any prior week — worth a hard look if it persists into next week without a stop-out explanation |
+| Sector caps | Healthcare (LLY+UNH) 19.73%, Financials (V) 8.12%, cash 72.15% (Friday close) — all well within the 60% cap. Communication Services (META) and Energy/Utilities (VST) exposure went to zero mid-week when both stopped out. | ✓ |
+| Stop discipline | 5/5 stops confirmed live Monday through Tuesday morning; 3/3 confirmed live every session after Tuesday's two stop-outs (quantities matched positions exactly at every check, no gap). Both closed positions' "missing" stops were the stop consuming itself on exit, not a lapse. | ✓ PERFECT |
+| Weekly new-position count | 0/3 slots used | ✓ within cap |
+| Thesis contracts | V's post-earnings review_by (07-29) resolved cleanly: beat-and-moderate Q3 print, HOLD, no trim, renewed to 08-15. META's review_by (07-30) became moot — the position was already stopped out 07-28, one day ahead of its own earnings print (see "what worked"). LLY (08-05) and UNH (08-17) not due, unchanged. | ✓ |
+| Loss post-mortems | Both 07-28 exits (VST, META) got same-day entries in `closed-trades.md` and dated lessons in `lessons.md` — no silent losses | ✓ |
+| Guardrail checks | Complete tables at every routine session, all 5 days, including through Wednesday's FOMC/oil shock and Thursday-Friday's tech-led relief rally | ✓ |
+
+### What worked
+
+- **Both Tuesday stop-outs were well-timed in hindsight, not just mechanically correct.** VST's stop fired 07-28 at −6.924%; the stock fell another −3.86% Monday-adjacent weakness and remains soft heading into its 08-07 earnings, per this review's fresh WebSearch. META's stop fired 07-28 at −7.964%, one trading day before its 07-29 earnings print — which came in with an EPS miss (one-time legal/severance charges) and a −7.45% after-hours drop to ~USD 542. The stop protected capital from a real earnings-driven drawdown, not just a hypothetical one — this is the cleanest evidence yet (beyond the general "don't second-guess a fired stop" lesson) that the 10% trailing stop is earning its keep on named-risk avoidance, independent of the ongoing debate about whether it's too tight for sector-rotation noise.
+- **V's post-earnings review_by was resolved cleanly and correctly again** — the "beat-and-moderate vs. beat-and-lower" distinction from the 07-29 lesson held up: no downgrades, Strong Buy consensus intact, PTs still being raised into the 400-450 range by six different banks in July.
+- **Discipline held through a genuine two-sided macro week.** Wednesday's FOMC-hold-read-as-hawkish plus an Iran-driven oil spike produced the single biggest one-day gap-widening of this track record (+2.04pp); Thursday-Friday's tech-earnings relief rally (MSFT's largest-ever single-day market-cap gain, Amazon +13%) erased it and then some. Bull's book sat outside both moves by construction — the same defensive positioning that helped Wednesday cost ground Thursday-Friday. No panic, no chasing MSFT's blowout print into extended territory, no rule bent under either kind of pressure.
+- **Perfect stop-audit and post-mortem compliance across all 5 sessions**, including the two mid-week stop-outs that needed same-day reconciliation.
+
+### What didn't work / open questions
+
+- **Bull trails SPY since inception for the first time this review cycle (−0.953pp), after leading by +0.662pp just one week ago — a −1.615pp swing in a single week.** This is not a process failure (see "what worked") — it is the direct, expected consequence of a cash-heavy, zero-AI-semi/zero-mega-cap-tech book meeting a week where the S&P's gain was concentrated almost entirely in exactly that layer (MSFT, LRCX, AMZN earnings pops). The mechanism is well-documented in `lessons.md` (07-29, 07-30, 07-31 entries) as a "mirror image" — cash cushions shock-down days and gives back ground on shock-up days led by names Bull avoids. Worth tracking whether this trailing streak extends into a third session/week by next Friday, but two data points is not yet a verdict.
+- **Cash at ~72% by Friday close is the highest level of this entire track record**, and unlike prior weeks where elevated cash was purely a function of undeployed slots, this week's rise was compounded by two stop-outs with no redeployment — a real, if passive, widening of the gap between actual and target cash. If next week also produces zero qualifying entries, this is worth an explicit strategy discussion rather than another "justified daily" note.
+- **Aggressive Bull comparison remains impossible — the outage is now confirmed at 38 days and counting.** See "From Aggressive Bull" below.
+
+### Macro context (week of July 27–31, 2026)
+
+- **A genuinely two-sided macro week.** Wednesday 07-29: FOMC held rates steady but the bond market read the hold as hawkish (yields jumped to a near-two-decade high) while fresh Iran-conflict clashes pushed Brent crude +7.3% above USD 88/bbl — Dow −2.19% (worst day since April 2025), S&P −1.52%, Nasdaq 100 technically corrected (~11% off its record). Thursday-Friday reversed sharply: MSFT's blowout FY26 Q4 print (Azure +43%, EPS beat) drove the largest single-day market-cap gain in US corporate history (+15.51%, 07-30); LRCX +20.28% same day on a raised WFE outlook; Amazon +13% Friday on an AWS beat (+37% YoY net sales). Apple fell ~7% Friday on disappointing forecasts. [CNBC](https://www.cnbc.com/2026/07/30/stock-market-today-live-updates.html) [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-31-2026)
+- **10yr Treasury hit 4.7-4.737% this week, the highest since January 2025** — the closest read yet to the 4.75% new-buy gate (tracked since 07-24 at 4.71%). Monday 08-03 pre-market must explicitly re-check this first thing; a breach would block new buys outright regardless of any watchlist name's setup. The 30yr Treasury separately spiked to its highest level since 2007.
+- **META (closed 07-28, before earnings):** Q2 2026 revenue USD 60.8B (+28% YoY, slight beat) but EPS USD 6.18 vs USD 7.18 est. — a miss driven entirely by one-time charges (USD 2.4B legal contingency + USD 1.2B severance; ex-charges would have beaten). Stock fell −7.45% after-hours to ~USD 542, recovering somewhat in Friday's broad tech rally. The stop-out one day earlier avoided this drawdown.
+- **VST (closed 07-28):** Fell a further −3.86% Monday on broad AI-power-sector weakness (not company-specific); board still declared its regular USD 0.23/share quarterly dividend 07-29; Q2 earnings confirmed 08-07; 20-analyst Strong Buy consensus intact, avg PT USD 221.94.
+- **LLY (held):** USD 750M US manufacturing expansion investment; Barclays reiterated Buy 07-24; earnings confirmed 08-05 (5 trading days out at review time) — no thesis change.
+- **UNH (held):** RBC raised PT to USD 478 (from USD 463); 27-analyst Buy consensus, avg PT USD 475.23; no fresh news.
+- **V (held):** Six banks (JPMorgan, Citi, Wolfe, BofA, UBS, Wells Fargo) raised PTs into the USD 400-450 range in July on the Q3 beat; the 07-28 workforce-reduction news was already priced in and journaled at the time.
+- **Best-performers screen:** this week's large/mid-cap leaders were binary post-earnings pops (MSFT, LRCX, AMZN), not new unvetted setups that clear a non-extended entry; the broader "best performing stocks" list was dominated by disqualified micro-caps (FBRX +259%, etc.). No new watchlist addition this week.
+
+### From Aggressive Bull (section 7b)
+
+**AGGRO's memory is STILL STALE — confirmed again via `git log --all -- memory/aggressive/`: the only commit touching `portfolio.md` (and its siblings) is dated 2026-07-16, but its diff shows the file being created (`new file mode`) with content that stops at the 2026-06-23 EOD data point — this is the initial bulk repo-setup commit checking in pre-existing historical data, not a real update.** This confirms, via a second independent method, the same conclusion every review since 2026-07-03 has reached: AGGRO's routines have not produced a genuine content update since 2026-06-23 EOD. That is now **38 days** as of this review (up from 32 two Fridays ago) — the 10th+ separate flag across close and weekly-review routines since 2026-07-02, spanning over five full calendar weeks with zero resolution.
+
+**Last-known AGGRO figures (2026-06-23 EOD, stale, 38 days old):** equity USD 92,876.82, since-inception (2026-06-04) return −7.123%, alpha vs SPY −4.392pp. Cautious Bull's own since-inception return this review is −0.953pp — a genuine trail for the first time, but nowhere close to AGGRO's stale −7.123% even on that old, non-comparable timeline. AGGRO is not ahead of Cautious Bull by any measure, stale or otherwise.
+
+**Lesson worth re-extracting, since there's still nothing fresher:** this week gave Cautious Bull two live examples of its OWN 10% trailing stop capturing exactly the kind of proactive, pre-catalyst protection AGGRO's proactive-trim heuristic (2026-06-18 example, cited repeatedly in past reviews) was designed to achieve — the META stop fired a full trading day ahead of a real earnings-day drawdown, and the VST stop fired ahead of continued sector weakness. The standing, not-yet-adopted proposal (a mid-band >5%-below-entry-no-catalyst rule forcing an explicit pre-market hold/trim/exit call, borrowed from AGGRO's proactive-trim behavior) remains reasonable but is now less urgently needed than it looked in late July — this week's evidence shows the existing 10% stop, on its own, already captured the pre-earnings protection that rule would have added. Not dropping the proposal, just noting the case for it weakened this week. No rule change made.
+
+**Cross-Bull learning counter update:** AGGRO trails Cautious Bull by every available measure (stale or otherwise) — the >5pp-AGGRO-leads-for-2-weeks trigger condition is nowhere close to being met. Counter = **0** (unchanged, now 6 consecutive weeks at 0). `CROSS_BULL_LEARNING:` in `control.md`: confirmed blank at the start of this run, no `NOTE:` or `QUERY:` lines either — no change needed.
+
+### Strategy adjustments
+
+- **Watchlist hygiene:** no purges this week — every remaining name (NVDA, PWR, MSFT, COST, LRCX, VST) still carries either a confirmed earnings date or a daily re-gated technical/valuation setup. **VST's watchlist row updated** to reflect the second stop-out (07-28) and the 08-07 earnings date as the next checkpoint; still not eligible for re-entry consideration until a fresh multi-session technical confirmation, per the standing re-entry bar that worked correctly for the 07-21 re-entry.
+- **Watchlist addition:** none. This week's "best performers" screen surfaced only disqualified micro-caps; this week's real large-cap leaders (MSFT, LRCX, AMZN) are all binary post-earnings pops already extended past the chase threshold, not new candidates.
+- **No changes to entry/exit signals, sizing, or guardrails this week.** The system performed exactly as designed under real two-sided macro pressure (Wednesday's shock, Thursday-Friday's reversal) — see the Aggressive Bull section above for the one candidate rule change under ongoing consideration (not adopted).
+
+---
+
 ## Week ending 2026-07-24 (Week 4 of the new track record — 5 active trading days: Mon Jul 20 – Fri Jul 24)
 
 - **Bull return (week, 2026-07-17 close $99,984.66 → 2026-07-24 close $99,754.87):** −0.2298%
