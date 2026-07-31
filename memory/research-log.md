@@ -5,6 +5,68 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-07-31 — Pre-market research (~08:15 ET, Friday) — PLAN: no trades (every watchlist name fails its gate)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was `{}` (free) at start of this run. Lock acquired (`premarket`, expires ~08:23 ET).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-07-31T09:30:00-04:00`, `next_close: 2026-07-31T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-07-31)
+Continuing yesterday's tech-led relief rally: S&P 500 futures +0.47% (7,507.75), Nasdaq futures +1.11%, Dow futures +0.53%; Polymarket implies 94% odds of a higher open. Yesterday's MSFT (+15.51-16%, largest single-day market-cap gain in US corporate history) and LRCX (+20.28%) earnings-driven surges continue to underpin sentiment; PWR also gapped up (+11.86% on 07-30) on its own beat-and-raise. 10yr Treasury eased slightly to ~4.67-4.68% (07-30) — still below the 4.75% new-buy gate, no breach. Iran conflict remains active and unresolved (Iranian strike on a Kuwait air base reported this morning, Trump-Netanyahu discussed a land blockade) — a standing risk-off factor the tape is currently looking past, not evidence it has resolved. [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/07/60829343/sp500-july-31-open-or-down-polymarket-amazon-microsoft-apple-ai-earnings), [Simply Wall St](https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-alny/alnylam-pharmaceuticals/news/us-stock-market-today-sp-500-futures-edge-higher-on-cooling), [GuruFocus](https://www.gurufocus.com/news/8994478/microsoft-msft-reports-strong-q4-earnings-shares-surge-1551), [GuruFocus](https://www.gurufocus.com/news/8991199/lam-research-lrcx-sees-significant-surge-amidst-market-volatility), [Defense World](https://www.defenseworld.net/2026/07/31/quanta-services-nysepwr-shares-gap-up-following-strong-earnings.html)
+
+### Held position — LLY — what changed since yesterday
+Alpaca live data: 8sh @ avg USD 1,174.35625, current USD 1,157.00 (−1.478%), unrealized −USD 138.85. Trailing stop `e3547b9e` HWM USD 1,232.00 / stop USD 1,108.80 — live. **What changed:** LLY fell ~4.09% yesterday (07-30) — WebSearch found no single hard catalyst; reporting attributes it to profit-taking/month-end institutional rebalancing out of a richly-valued healthcare winner, competitive obesity-drug pressure, and "priced for perfection" sensitivity ahead of the 08-05 print, not a thesis-breaking event (the USD 750M manufacturing-capacity investment some sources cited is a positive-to-neutral capacity signal, not a negative one). Thesis (Medicare Bridge, AtaiBeckley acquisition, Retevmo) unchanged. Fresh technical read: +0.941% vs 50-day SMA (compressed from +3.962% pre-drop but still a pass), ATR 2.53%. Earnings confirmed 2026-08-05 (3 trading days out — outside the 2-day window, no forced decision yet). review_by 2026-08-05 not yet due. [TradingKey](https://www.tradingkey.com/news/market-movers/262064622-market-movers-lly-20260730), [Reuters Breakingviews](https://www.breakingviews.com/columns/considered-view/eli-lilly-is-pharmas-latest-victim-success-2026-07-30/)
+
+### Held position — UNH — what changed since yesterday
+Alpaca live data: 25sh @ avg USD 422.28, current USD 421.25 (−0.244%), unrealized −USD 25.75. Trailing stop `225cb079` HWM USD 436.945 / stop USD 393.2505 — live. **What changed:** nothing material — BofA raised its PT to USD 512 (from USD 475, Buy) and RBC raised to USD 478 (from USD 463, Outperform) this week; consensus remains Buy, avg PT ~USD 475. No negative catalyst. Fresh technical read: +2.919% vs 50-day SMA (pass), ATR 2.75%. Next earnings not until ~2026-10-27, review_by 2026-08-17 not due. [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/unitedhealth-stock-headed-500-121226625.html)
+
+### Held position — V — what changed since yesterday
+Alpaca live data: 22sh @ avg USD 355.058182, current USD 364.99 (+2.797%), unrealized +USD 218.50. Trailing stop `2b0a93ba` HWM USD 373.96 / stop USD 336.564 — live. **What changed:** nothing material since yesterday's resolved post-earnings review_by (HOLD, review_by renewed to 2026-08-15) — stock continues to hold most of its post-earnings gain; GuruFocus flags it ~14.4% undervalued vs GF Value USD 423.17 heading into the now-passed print. Barclays reiterated/initiated Buy earlier in July. The 07-28 workforce-reduction (~7% of staff) story is already priced and unchanged. Fresh technical read: +7.790% vs 50-day SMA (pass, not extended past the 10% chase threshold), ATR 2.07%. review_by 2026-08-15 not due. [GuruFocus](https://www.gurufocus.com/news/8980954/v-looks-144-undervalued-on-gf-value-heading-into-q3-earnings)
+
+### Watchlist re-verification (fresh Alpaca bars, 2026-05-01 to 2026-07-30 close, 50-day SMA / 20-day ATR%)
+| Ticker | Price | vs 50-day SMA | 20-day ATR% | Gate | Note |
+|---|---|---|---|---|---|
+| NVDA | 195.04 | **−5.575%** | 3.52% | FAIL | Improved from Wednesday's −8.21% on the broad relief rally but still fails; no confirmed cross. Earnings 2026-08-26. |
+| MSFT | 451.55 | **+13.336%** | 2.70% | FAIL (extended) | Blowout FY26 Q4 print (+15.51%, largest single-day market-cap gain in US corporate history) pushed MSFT decisively above its 50-day, but now **>10% extended** — fails the "not extended >10% above 50-day" entry signal outright, and is only 1 post-earnings session per the standing NVDA-pattern multi-session-confirmation lesson. No chase. |
+| COST | 953.92 | **−0.904%** | 1.73% | FAIL | Reversed back below the 50-day after Wednesday's marginal +0.806% single-session cross — never got its 2nd confirming session, now moot. Independently flagged as rich (~46x P/E) in prior notes. |
+| LRCX | 297.62 | **−11.815%** | 6.40% | FAIL | +20.28% post-earnings pop (best single-day since 1999) narrowed the gap from Wednesday's −25.22% but still deeply below the 50-day; valuation (P/E >60x) remains separately disqualifying regardless of any technical recovery. |
+| PWR | 657.90 | **−3.542%** | 3.60% | FAIL | +11.86% post-earnings pop (record backlog USD 53.4B, FY26 guidance raised to USD 16.45-16.95 EPS) narrowed the gap materially but still below the 50-day; only 1 post-earnings session, unconfirmed. |
+
+No watchlist name clears its technical gate today. MSFT's blowout print moved it decisively through the SMA but directly into extended/chase territory instead — the entry-signal discipline (not >10% above the 50-day) correctly keeps this off the table rather than chasing the largest one-day market-cap gain in US history. NVDA/COST/LRCX/PWR all still fail outright despite yesterday's broad rally.
+
+### Earnings-window rule
+- **Held names:** none inside the 2-trading-day window. LLY's 08-05 earnings is 3 trading days out (Mon 08-03, Tue 08-04, Wed 08-05) — not yet forced. UNH (~10-27) and V (~mid-Oct, review_by 08-15 interim) are well outside. No forced hold/trim/exit decision today.
+- **Buy candidates:** moot — every watchlist name fails its technical gate (or is extended) regardless of earnings-window status.
+
+### Cash-drag check
+Cash sits at 72.00% (USD 71,553.62 of USD 99,370.65 equity), well above the 25-40% target band, and has been for many weeks. 0/3 weekly new-position slots used this week (week of 2026-07-27 — VST and META's stop-fills earlier this week were exits, not new entries). The tape is genuinely constructive today (continuing relief rally, 94% odds of a higher open per Polymarket), so the cash-drag question is live — but every single watchlist name re-verified this morning still fails its technical gate outright (NVDA, COST, LRCX, PWR) or is freshly disqualified by extension (MSFT, now >10% above its 50-day after the blowout print). Staying in cash today is a disciplined, actively-re-verified decision, not a passive default — there is simply no name on the list that clears the entry bar this morning.
+
+### Drawdown circuit breaker
+`history 1A 1D` high-water mark remains USD 100,322.08 (2026-07-21 close). Current equity USD 99,370.65 → drawdown **0.9483%** — NOT triggered (9.0517pp headroom). New buys remain permitted on this gate (moot today — no candidate clears the entry gate anyway).
+
+### Sector cap
+Healthcare (LLY+UNH) 19.918% (USD 19,787.25), Financials (V) 8.081% (USD 8,029.78), cash 72.00% (USD 71,553.62) — all well within the 60% cap.
+
+### Thesis contracts
+LLY (review_by 2026-08-05), UNH (review_by 2026-08-17), V (review_by 2026-08-15) — none due today, none triggered.
+
+### Planned trades for today
+
+No trades planned. Every watchlist name fails its technical gate (NVDA, COST, LRCX, PWR) or is freshly disqualified by extension (MSFT, >10% above its 50-day after yesterday's blowout earnings pop). No held-name thesis break, no forced review_by decision, drawdown breaker not triggered, 10yr yield still below the 4.75% gate.
+
+```json
+{
+  "plan_date": "2026-07-31",
+  "trades": []
+}
+```
+
 ## 2026-07-29 — Pre-market research (~08:14 ET, Wednesday) — PLAN: no trades (FOMC day, V post-earnings review, all watchlist gates fail or blackout)
 
 ### Live-switch guard
