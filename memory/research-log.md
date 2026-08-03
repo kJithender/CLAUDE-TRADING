@@ -5650,3 +5650,73 @@ EXECUTED: 2026-07-30T09:36 ET — no trades (plan empty: no watchlist candidate 
 
 **Step 8 — notify:** Telegram sent per playbook — market posture (MSFT blowout easing AI-capex fears vs. a sharp Iran/US re-escalation overnight, oil up again), FOMC held rates steady on a hawkish 9-3 split, 10yr at 4.70% (closest yet to the 4.75% gate, not breached), no trades planned.
 **Step 9 — commit:** done.
+
+## 2026-08-03 ~08:21 ET — PRE-MARKET (Monday)
+
+**Step 0 — guards:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}`); wrote lock for pre-market. `STATUS: ACTIVE` in `control.md`, no `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+**Step 2 — portfolio sync (live Alpaca data, ~08:21 ET):**
+
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | % of equity |
+|--------|-----|-----------|---------|-----------------|--------------|
+| LLY | 8 | 1174.35625 | 1164.1243 | −USD 81.86 (−0.871%) | 9.365% |
+| UNH | 25 | 422.28 | 416.60 | −USD 142.00 (−1.345%) | 10.475% |
+| V | 22 | 355.058182 | 371.00 | +USD 350.72 (+4.490%) | 8.209% |
+
+Equity USD 99,443.61 | Cash USD 71,553.62 (71.958%) | Long MV USD 27,889.99 (28.049%) | Buying power USD 364,306.46. `last_equity` (Alpaca field) USD 99,159.20, reasonably close to Friday's recorded close (USD 99,176.30) — no stale-data anomaly this run.
+
+**Step 3 — risk posture check:**
+- **Drawdown circuit breaker:** `history 1A 1D` high-water mark USD 100,322.08 (2026-07-21 close, unchanged). Current equity USD 99,443.61 → drawdown **0.8756%**. NOT triggered (9.1244pp headroom) ✓.
+- **Intraday shock check:** equity USD 99,443.61 vs `last_equity` USD 99,159.20 = **+0.2868%** — no shock (threshold −4%; market not yet open).
+- **Sector cap:** Healthcare (LLY+UNH) 19.840% (USD 19,727.9944), Financials (V) 8.209% (USD 8,162.00), cash 71.958% — all well within the 60% cap.
+- **10yr Treasury:** eased to **4.68%** as of today (tradingeconomics.com, dated 2026-08-03), down ~7bps from Friday's ~4.75% read — comfortably back below the 4.75% new-buy gate that was the closest-ever read last Friday. Gate re-opened; moot today regardless since no watchlist name clears its technical setup (see below).
+
+**Step 3b — thesis contract review:**
+- **LLY: forced decision — earnings confirmed 2026-08-05 (Wednesday, before market open), exactly 2 trading days from today.** This is both the earnings-window rule trigger and LLY's own review_by date landing on the same day. WebSearch found no negative pre-print catalyst: FY26 revenue guidance already raised to USD 82-85B (previously known, GLP-1/Medicare Bridge demand), dividend USD 1.73 declared (ex-date 08-14, already known), consensus estimates USD 6.06-6.71 EPS / USD 20.3-20.7B revenue for the quarter. Technical setup is roughly flat vs the 50-day (+0.115% as of Friday's close per fresh Alpaca bars) — not extended, not broken. Position is essentially breakeven (−0.871% from entry). **Decision: HOLD full position through earnings, no trim.** Thesis (Medicare GLP-1 Bridge, Retevmo, AtaiBeckley, raised guidance) is intact and no new information argues for trimming ahead of a print with no negative signal. Gap risk is real (AVGO 2026-06-04 precedent) and the only protection over the print is the 10% trailing stop (HWM USD 1,232.00/stop USD 1,108.80, ~4.77% buffer to current price) — acknowledged, not actionable further under current guardrails. **review_by renewed to 2026-08-06** (forces a fresh post-earnings read at the very next pre-market).
+- UNH (review_by 2026-08-17) and V (review_by 2026-08-15) — neither due, neither triggered.
+
+**Step 3c — Monday conviction review:**
+- **LLY: A.** Thesis intact and working (essentially flat into a well-guided earnings print, no negative catalyst); see forced hold decision above.
+- **UNH: A.** Q2 beat-and-raise thesis continues to validate; no fresh negative news (see step 4); −1.345% from entry is normal variance, not a thesis concern.
+- **V: A.** Q3 beat-and-moderate thesis intact, Strong Buy consensus, fresh multi-year highs (+4.490% from entry); a same-day insider-sale headline noted below is consistent with V's established pattern of scheduled/10b5-1-style sales, not a fresh bearish signal.
+- No position at 3 consecutive C's — no forced trim today.
+
+**Step 4 — research (WebSearch, all facts dated 2026-08-03 unless noted):**
+- **Market posture:** US equity futures pointing higher — S&P 500 futures +0.42-0.6% pre-market, Polymarket-style prediction markets showing ~86% odds of an "up" open. 10yr Treasury eased to 4.68% (see above). University of Michigan consumer confidence at a 5-month high (55.2, July), though 1-year inflation expectations remain elevated at 4.2%. Broadly constructive, risk-on tone to start the week. [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/08/60863465/stock-market-will-sp-500-open-up-or-down-today-12), [Simply Wall St](https://simplywall.st/stocks/us/media/nyse-rddt/reddit/news/us-stock-market-today-sp-500-futures-rise-as-earnings-optimi)
+- **10yr Treasury:** eased to 4.68% today (tradingeconomics.com), down from Friday's ~4.73-4.75% read — the new-buy gate is not breached, re-opened with some room after being the closest-ever read last Friday. [TradingEconomics](https://tradingeconomics.com/united-states/government-bond-yield)
+- **LLY (what changed since Friday):** nothing thesis-breaking. Earnings confirmed for Wednesday 2026-08-05 before market open (call at 10:00 AM ET); FY26 revenue guidance already raised to USD 82-85B (known); dividend USD 1.73 (ex-date 08-14, known). No negative pre-print catalyst found. See forced hold decision above. [Markets Daily](https://www.themarketsdaily.com/2026/07/29/eli-lilly-and-company-lly-expected-to-announce-earnings-on-wednesday.html), [TipRanks](https://www.tipranks.com/stocks/lly/earnings)
+- **UNH (what changed since Friday):** nothing material — still trading on the 07-16 Q2 beat-and-raise (adj. EPS USD 6.38 vs ~USD 4.85 est., FY26 EPS guidance raised to USD 19.50-20.00, buybacks increased to at least USD 5B). Average analyst PT USD 475.23 (high USD 529, low USD 313). No fresh negative news. Thesis unchanged. [Investing.com](https://www.investing.com/equities/united-health-group)
+- **V (what changed since Friday):** a same-day headline reports an insider sold ~USD 20.9M in Visa stock (Defense World, dated 2026-08-03); this is consistent with the established pattern of a prior 57,272-share sale dated 2026-07-30 also reported this week — treating as a routine/scheduled-plan-style sale per the standing 2026-06-10 lesson (verify 10b5-1 status before reading insider sales as bearish) rather than a fresh bearish signal, especially set against continued Strong Buy consensus and shares at a post-January high (+7.09% trailing month). No thesis change. [Defense World](https://www.defenseworld.net/2026/08/03/insider-selling-visa-nysev-insider-sells-20902561-84-in-stock.html), [TopOne Markets](https://www.top1markets.com/news/visa-stock-analysis-q3-2026)
+- **Watchlist re-verification (fresh Alpaca bars through 2026-07-31 close, explicit date range 2026-05-01 to 2026-08-01):**
+
+| Ticker | Last close (07-31) | 50-day SMA | vs 50-day | ATR20% | Gate |
+|--------|--------------------|-----------|-----------|--------|------|
+| NVDA | 200.74 | 206.16 | −2.628% | 3.51% | FAIL (improved from Friday's −5.575%, still below) |
+| MSFT | 464.70 | 399.36 | **+16.363%** | 2.73% | FAIL (more extended than Friday's +13.336% — the post-earnings run continues, further past the 10% chase threshold) |
+| COST | 951.61 | 959.75 | −0.848% | 1.67% | FAIL (essentially unchanged from Friday's −0.904%) |
+| LRCX | 293.49 | 337.90 | −13.142% | 6.03% | FAIL (narrowed slightly from Friday's −11.815%... actually widened; still deeply below, valuation still disqualifying) |
+| PWR | 667.40 | 681.13 | −2.015% | 3.49% | FAIL (narrowed from Friday's −3.542%, still below) |
+
+No watchlist candidate qualifies for entry today — NVDA and PWR continue to narrow their SMA gap but remain below it; MSFT is now more extended, not less; COST and LRCX are effectively unchanged/still deeply failing. **No qualifying entry exists today.**
+
+**Step 5 — earnings-window rule:** No new buy planned (moot — no watchlist candidate clears its gate). LLY (held) reports 2026-08-05, exactly 2 trading days out — forced hold decision made above (HOLD, no trim). UNH (2026-10-27) and V (~late October, estimated) are both well outside the window.
+
+**Step 6 — cash-drag check:** Cash 71.958%, still well above the 25-40% target band — now the 7th+ consecutive week at an elevated level. Every watchlist candidate fails its technical/valuation gate again this morning for a distinct, freshly-re-verified reason (see table above); staying in cash remains the correct, actively-re-verified call, not a passive default. 0/3 weekly new-position slots used (new week, week of 2026-08-03).
+
+**Step 7 — plan:** **No trades today.** All 3 positions HOLD. LLY's forced earnings-window decision (HOLD, no trim, review_by renewed to 2026-08-06) is the only thesis-contract action this run. Monday conviction review: LLY A, UNH A, V A — no forced trim.
+
+**Stop audit (`orders open`, live Alpaca data):** LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS** — no recreation needed.
+
+**Planned trades for today:**
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-08-03",
+  "trades": []
+}
+```
+
+**Step 8 — notify:** Telegram sent per playbook.
+**Step 9 — commit:** done.

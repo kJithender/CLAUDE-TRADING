@@ -4485,3 +4485,22 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Weekly new-position count:** 0/3 used this week (week of 2026-07-27).
 - **Notify:** Telegram sent, plain prefix (no loss exit, circuit breaker not near, Friday watchdog did not fire).
 - **Commit:** done.
+
+## 2026-08-03 ~08:21 ET — PRE-MARKET (Monday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}`); wrote lock for pre-market. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending in `control.md`. `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false` (next_open 2026-08-03T09:30:00-04:00, next_close 16:00 ET) — pre-market, as expected.
+- **Account (live, ~08:21 ET):** Equity USD 99,443.61, cash USD 71,553.62 (71.958%), long market value USD 27,889.99 (28.049%), buying power USD 364,306.46. `last_equity` USD 99,159.20 — reasonably close to Friday's recorded close (USD 99,176.30), no stale-data anomaly.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, unchanged) vs equity USD 99,443.61 — drawdown **0.8756%**. NOT triggered (9.1244pp headroom).
+- **Intraday shock check:** equity vs `last_equity` = **+0.2868%** — no shock (threshold −4%; market not yet open).
+- **10yr Treasury:** eased to **4.68%** (tradingeconomics.com, dated today) — back below the 4.75% new-buy gate after Friday's closest-ever read (~4.73-4.75%). Re-opened; moot today since no watchlist name clears its technical gate.
+- **Positions (% from entry, live):** LLY −0.871% (USD 1,164.1243), UNH −1.345% (USD 416.60), V +4.490% (USD 371.00) — none within range of the −7% cut (midday's job regardless).
+- **Sector exposure:** Healthcare (LLY+UNH) 19.840% (USD 19,727.9944), Financials (V) 8.209% (USD 8,162.00), cash 71.958% (USD 71,553.62) — all well within the 60% sector cap.
+- **Thesis contracts:** 🚨 **LLY's forced decision resolved today** — earnings confirmed 2026-08-05, exactly 2 trading days out (both the earnings-window trigger and LLY's own review_by). No negative pre-print catalyst found (FY26 guidance already raised to USD 82-85B, dividend already known); technical setup flat vs 50-day, position essentially breakeven. **HOLD full position, no trim.** review_by renewed to 2026-08-06. UNH (08-17) and V (08-15) not due.
+- **Monday conviction review:** LLY A, UNH A, V A — no name at 3 consecutive C's, no forced trim.
+- **Earnings-window rule:** LLY (held) inside the 2-trading-day window — resolved above (HOLD). No new buy planned regardless (no watchlist name clears its gate). UNH/V both well outside any window.
+- **Cash-drag check:** cash 71.958%, 7th+ consecutive week above the 25-40% target band; every watchlist candidate (NVDA, MSFT, COST, LRCX, PWR) fails its gate again this morning for a distinct, freshly re-verified reason — staying in cash remains the correct, actively-re-verified call. 0/3 new-position slots used this week (new week, week of 2026-08-03).
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS** — no recreation needed.
+- **Plan:** No trades today. All 3 positions HOLD. Full detail in `research-log.md`.
+- **Notify:** Telegram sent — market posture (futures higher, 10yr eased to 4.68%, gate re-opened but moot), LLY's forced earnings-window HOLD decision, no trades planned.
+- **Commit:** done.
