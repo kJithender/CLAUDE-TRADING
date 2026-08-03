@@ -4522,3 +4522,19 @@ No trades today per pre-market plan. AVGO exited automatically. Slots 2 and 3 re
 - **Plan:** No trades today. All 3 positions HOLD. Full detail in `research-log.md`.
 - **Notify:** Telegram sent — market posture (futures higher, 10yr eased to 4.68%, gate re-opened but moot), LLY's forced earnings-window HOLD decision, no trades planned.
 - **Commit:** done.
+
+## 2026-08-03 ~12:36 ET — MIDDAY (Monday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was free (`{}`); wrote lock for midday. `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending in `control.md`.
+- **Market:** `clock` confirmed `is_open: true` (next_close 2026-08-03T16:00:00-04:00) — normal trading session.
+- **Account (live, ~12:36 ET):** Equity USD 98,869.76, cash USD 71,553.62 (72.379%), long market value USD 27,316.14 (27.632%), buying power USD 362,699.67. `last_equity` USD 99,159.20 (07-31 close).
+- **Shock check:** equity vs `last_equity` = **−0.2919%** — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, unchanged) vs equity USD 98,869.76 — drawdown **1.4478%**. NOT triggered (8.5522pp headroom).
+- **Positions (% from entry, live):** LLY −5.1454% (USD 1,113.9299), UNH −1.6697% (USD 415.23), V +2.7226% (USD 364.725) — none within range of the −7% cut, none up >15% (no tightening).
+- **News scan (LLY, down >3% from entry):** WebSearch found no fresh company-specific negative catalyst today — the decline continues the known narrative of Foundayo (orforglipron) oral-GLP-1 launch tracking behind Novo Nordisk's oral Wegovy in weekly prescription counts, layered on standard pre-earnings anxiety ahead of the 2026-08-05 Q2 print (2 trading days out; consensus USD 20.26B revenue / USD 6.71 EPS, FY26 guidance already raised to USD 82-85B). No new negative headline, no downgrade found — read as continued sector/pre-earnings pressure, not a thesis break. HOLD, no action; consistent with this morning's pre-market earnings-window resolution (review_by 2026-08-06).
+- **Sector exposure:** Healthcare (LLY+UNH) 19.512% (USD 19,292.19), Financials (V) 8.115% (USD 8,023.95), cash 72.379% (USD 71,553.62) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades this run — midday never opens new positions; no exits, no `closed-trades.md` reconciliation needed.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-03).
+- **Notify:** Telegram sent, plain prefix (no cut, no tightening, no unprotected stop, no shock, no circuit breaker).
+- **Commit:** done.
