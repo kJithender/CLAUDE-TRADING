@@ -3,6 +3,24 @@
 _Every order placed, with its reasoning. Append-only — newest entries at the top.
 The weekly new-position count is derived from this log._
 
+## 2026-08-03 ~09:36 ET — MARKET-OPEN (no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Plan check:** latest `research-log.md` block has `plan_date: 2026-08-03`, `trades: []` — pre-market ran today and planned no trades (no watchlist candidate cleared its technical gate). No `EXECUTED:` line yet under it, so this routine had not already run today.
+- **Market:** `clock` confirmed `is_open: true` (next close 16:00 ET).
+- **Account:** equity USD 99,176.68, cash USD 71,553.62 (72.154%), long MV USD 27,623.06 (27.852%), buying power USD 363,559.05. Alpaca `last_equity` USD 99,159.20 (07-31 close).
+- **Shock check:** +0.0176% vs USD 99,159.20 — no shock (threshold −4%).
+- **Drawdown circuit breaker:** equity USD 99,176.68 vs running HWM USD 100,322.08 (2026-07-21 close) — drawdown **1.1417%**. NOT triggered (8.8583pp headroom).
+- **Breaking-news gate:** moot — no planned trades to gate.
+- **Positions (% from entry):** LLY −3.189% (USD 1,136.91), UNH −1.691% (USD 415.14), V +4.242% (USD 370.12). None near the −7% cut (midday's job regardless).
+- **Stop audit:** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 confirmed live via `orders open`, quantities match positions exactly (8/25/22), unchanged since pre-market. **3/3 PASS.** No stops filled since the last run — no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.635% (USD 19,473.78), Financials (V) 8.211% (USD 8,142.64), cash 72.154% (USD 71,553.62) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-03) — unchanged; no trades executed.
+- **Thesis contracts:** LLY's forced hold-through-earnings decision (08-05 print) was made at pre-market — no new action due at market-open.
+- **Notify:** Telegram sent — no trades, watchlist still fails its gate.
+- **Commit:** done.
+
 ## 2026-07-31 ~12:37 ET — MIDDAY (no action)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
