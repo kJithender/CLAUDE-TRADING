@@ -6,6 +6,23 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-04 ~12:36 ET — MIDDAY (no action)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true` (next close 16:00 ET).
+- **Account:** equity USD 98,946.17, cash USD 71,553.62 (72.318%), long MV USD 27,392.55 (27.682%), buying power USD 362,913.61. `last_equity` USD 98,953.24 (08-03 close).
+- **Shock check:** −0.00714% vs `last_equity` — no shock (threshold −4%).
+- **Drawdown circuit breaker:** equity USD 98,946.17 vs HWM USD 100,322.08 (2026-07-21 close) — drawdown **1.3714%**. NOT triggered (8.6286pp headroom).
+- **Positions (% from entry):** LLY −3.644% (USD 1,131.56), UNH −2.987% (USD 409.665), V +3.752% (USD 368.38). None near the −7% cut, none up >15% (no tightening).
+- **News scan (LLY, down >3% from entry, earnings before market open tomorrow):** WebSearch (`LLY stock news today August 4 2026`) found no new negative catalyst — current price USD 1,125.03 (day range USD 1,109.16–1,131.96), analyst consensus remains Buy (22 buy/2 sell, avg PT USD 1,276.96), and the only recent company-specific news is a second FDA Breakthrough Therapy designation (olomorasib) — a positive pipeline data point. The decline continues to read as broad "priced for perfection" valuation profit-taking ahead of tomorrow's 2026-08-05 print, consistent with pre-market's HOLD decision. No new action; LLY's earnings-window HOLD (no trim, review_by 2026-08-06) stands unchanged.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades this run; no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.499% (USD 19,294.105), Financials (V) 8.190% (USD 8,104.36), cash 72.318% (USD 71,553.62) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-03) — unchanged; midday never opens new positions.
+- **Notify:** Telegram sent, plain prefix (no cuts, no tightens, no unprotected stop, no shock).
+- **Commit:** done.
+
 ## 2026-08-04 ~09:36 ET — MARKET OPEN (no trades)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for market-open.
