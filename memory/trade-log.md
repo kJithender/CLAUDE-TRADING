@@ -6,6 +6,24 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-04 ~09:36 ET — MARKET OPEN (no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for market-open.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Memory / idempotency:** today's plan block (`plan_date: 2026-08-04, trades: []`) in `research-log.md` had no `EXECUTED:` line yet — first run today.
+- **Market:** `clock` confirmed `is_open: true` (next_close 2026-08-04T16:00:00-04:00) — normal trading session.
+- **Breaking-news gate:** moot — pre-market's plan was empty, no symbols to gate.
+- **Account:** equity USD 98,844.71, cash USD 71,553.62 (72.387%), long MV USD 27,291.09 (27.613%), buying power USD 362,629.52. `last_equity` USD 98,953.24 (08-03 close).
+- **Shock check:** −0.1097% vs `last_equity` — no shock (threshold −4%).
+- **Drawdown circuit breaker:** equity USD 98,844.71 vs HWM USD 100,322.08 (2026-07-21 close) — drawdown **1.4726%**. NOT triggered (8.5274pp headroom).
+- **Positions (% from entry, live):** LLY −4.673% (USD 1,119.48), UNH −2.116% (USD 413.345), V +2.487% (USD 363.89) — none near the −7% cut (midday's job regardless).
+- **Sector exposure:** Healthcare (LLY+UNH) 19.514% (USD 19,289.465), Financials (V) 8.099% (USD 8,005.58), cash 72.387% (USD 71,553.62) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades this run (plan was empty); no exits, no `closed-trades.md` reconciliation needed.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-03) — unchanged.
+- **Notify:** Telegram sent, plain prefix (no trades, no stop fills, no unprotected stop, no shock).
+- **Commit:** done.
+
 ## 2026-08-04 ~08:20 ET — PRE-MARKET (no trades planned)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
