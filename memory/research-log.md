@@ -8,6 +8,83 @@ The market-open routine reads the most recent "Planned trades" section._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-04 — Pre-market research (~08:17 ET, Tuesday) — PLAN: no trades (every watchlist name fails its gate; LLY earnings tomorrow before open)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was `{}` (free) at start of this run. Lock acquired (`premarket`, expires ~08:25 ET).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Data-integrity note
+The 2026-08-03 pre-market research-log entry (referenced by that day's market-open/midday/close entries as having `plan_date: 2026-08-03, trades: []`) is not present in this file or in `memory/archive/2026-07.md` — it appears the entry was never actually written that day, even though downstream routines correctly read/acted on an empty plan. Not blocking today's work; flagged as a one-off gap in the audit trail, not a recurring pattern yet.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-08-04T09:30:00-04:00`, `next_close: 2026-08-04T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-08-04)
+S&P 500 futures +0.21%, Nasdaq 100 futures +0.6% ahead of the open, continuing Monday's strong gains. Polymarket implies a 77% probability of a higher S&P open, driven by lower oil prices easing inflation concerns and strong earnings reinforcing confidence in the AI trade (Microsoft's blowout Q4 print continuing to underpin sentiment, NVDA +~3% Monday on the same read-through). **10yr Treasury eased to 4.66% (tradingeconomics.com, explicitly dated 2026-08-04)** — down 0.02pp from the prior session, comfortably below the 4.75% new-buy gate. [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/08/60896308/sp500-aug-4-open-up-or-down-polymarket-trump-iran-tech-rally-amazon-ai-earnings), [Benzinga](https://www.benzinga.com/markets/equities/26/08/60897120/stock-market-today-sp-500-dow-and-nasdaq-futures-rise-after-strong-monday-gains-mcdonalds-amd-palantir-in-focus), [tradingeconomics.com](https://tradingeconomics.com/united-states/government-bond-yield)
+
+### Held position — LLY — 🚨 forced earnings-window decision (reports before market open tomorrow, 2026-08-05 — 1 trading day out, inside the 2-day window)
+Alpaca live data: 8sh @ avg USD 1,174.35625, current USD 1,121.80 (−4.476%), unrealized −USD 420.45. Trailing stop `e3547b9e` HWM USD 1,232.00 / stop USD 1,108.80 — live, confirmed in `orders open`.
+
+**What changed:** LLY continued sliding (−2.3% to −4.5% over the past several sessions per multiple sources) on broad "priced for perfection" valuation profit-taking — the stock trades at ~40x earnings, making it vulnerable to any hint of guidance softness ahead of tomorrow's print. Erste Group Bank trimmed its 2026 EPS estimate to USD 35.34 (from USD 36.33) — a modest full-year estimate cut, not a company-specific negative event (no new FDA setback, no guidance withdrawal, no litigation escalation). Separately, LLY received a second FDA Breakthrough Therapy designation (olomorasib, advanced pancreatic cancer) — a minor positive pipeline data point, not a factor in the drawdown. No company-specific thesis-breaking news found. **Confirmed: Q2 2026 earnings report before market open Wednesday 2026-08-05, conference call 10:00 AM ET** — consensus USD 20.26B revenue / USD 6.71 EPS (Alphastreet has a slightly lower USD 6.55 EPS estimate).
+
+**Decision:** Thesis (Medicare Bridge, GLP-1 dominance, AtaiBeckley acquisition, Retevmo) unchanged; the drawdown is broad multiple compression ahead of a binary event, not a break. **HOLD full position through earnings, no trim.** `review_by` stays **2026-08-06** (already set at 2026-08-03 pre-market — forces the explicit post-earnings hold/trim/exit read the morning after tomorrow's pre-open print, once market-open/midday/close on 08-05 have seen the actual reaction). [Yahoo Finance](https://finance.yahoo.com/quote/LLY/), [Ticker Report](https://www.tickerreport.com/banking-finance/13523148/eli-lilly-and-company-nyselly-trading-down-4-5-whats-next.html), [Lilly IR](https://investor.lilly.com/news-releases/news-release-details/lilly-confirms-date-and-conference-call-second-quarter-2026)
+
+### Held position — UNH — what changed since yesterday
+Alpaca live data: 25sh @ avg USD 422.28, current USD 415.50 (−1.606%), unrealized −USD 169.50. Trailing stop `225cb079` HWM USD 436.945 / stop USD 393.2505 — live. **What changed:** nothing material — Goldman Sachs raised its PT to USD 490 (from USD 435, Buy) following the Q2 beat-and-raise; 27-analyst consensus remains "Buy," avg PT USD 475.23 (+14.7% implied). No negative catalyst. Next earnings not until ~2026-10-27, `review_by` 2026-08-17 not due. [FX Leaders](https://www.fxleaders.com/news/2026/07/28/unitedhealth-unh-stock-touches-430-as-improving-margins-boost-investor-confidence/)
+
+### Held position — V — what changed since yesterday
+Alpaca live data: 22sh @ avg USD 355.058182, current USD 364.756 (+2.732%), unrealized +USD 213.35. Trailing stop `2b0a93ba` HWM USD 373.96 / stop USD 336.564 — live. **What changed:** Visa announced a **USD 2.4B acquisition of BioCatch** (fraud-detection/behavioral-biometrics platform) — a positive extension of the existing fraud-detection/agentic-commerce catalyst thesis, not a new one; stock rallied intraday to USD 371.97 before pulling back to close USD 365.67 (still up on the day). Cantor Fitzgerald raised its PT to USD 445 (from USD 410). A USD 0.67/share dividend was declared, ex-date 2026-08-11. No negative news. `review_by` 2026-08-15 not due. [Cryptonomist](https://en.cryptonomist.ch/2026/08/04/visa-stock-pulls-back-from-2-4b-biocatch-rally-bullish-trend-holds/)
+
+### Watchlist re-verification (fresh Alpaca bars, explicit date range 2026-05-01 to 2026-08-03 close, 50-day SMA / 20-day ATR%, `data.alpaca.markets` with explicit `start`/`end` per the standing 2026-07-03 lesson — a bare `limit` query returns null)
+| Ticker | Price | vs 50-day SMA | 20-day ATR% | Gate | Note |
+|---|---|---|---|---|---|
+| NVDA | 206.72 | **+0.436%** | 3.71% | FAIL (unconfirmed) | **First positive cross since tracking began** (was −2.628% 07-31, −5.575% 07-30) — a genuine multi-session improvement, but per the standing NVDA-pattern lesson (6+ prior failed single-session crosses), this needs a 2nd consecutive confirmed close above the 50-day before it's actionable. **Watch for confirmation at the next pre-market.** Earnings 2026-08-26. |
+| MSFT | 487.57 | **+21.685%** | 2.80% | FAIL (extended) | Continued rally post-earnings (07-30 blowout print) pushed it even further past the 10% chase threshold (was +13.336% on 07-31) — no chase regardless of trend strength. |
+| COST | 954.19 | **−0.330%** | 1.69% | FAIL | Still below the 50-day; reversed slightly back up from Friday's −0.904% but the 07-29 single-session cross (+0.963%) was never confirmed. Independently flagged as rich (~46x P/E). |
+| LRCX | 294.68 | **−12.803%** | 6.11% | FAIL | Gave back some of the post-earnings pop (was −11.815% on 07-31); valuation (P/E >60x) remains separately disqualifying regardless of technicals. |
+| PWR | 680.08 | **−0.066%** | 3.54% | FAIL | Essentially flat, closest to crossing (was −3.542% on 07-30) but has not actually crossed above the 50-day yet. **Watch for the actual cross at the next pre-market.** |
+
+No watchlist name clears its technical gate today. NVDA and PWR are both close (NVDA crossed but unconfirmed single session; PWR hasn't crossed yet) — worth a close look at tomorrow's pre-market, though tomorrow's real focus is LLY's earnings reaction.
+
+### Earnings-window rule
+- **Held names:** LLY forced decision resolved above (HOLD, no trim). UNH (08-17) and V (08-15) not due.
+- **Buy candidates:** moot — no watchlist name clears its technical gate regardless of earnings-window status.
+
+### Cash-drag check
+Cash sits at 72.320% (USD 71,553.62 of USD 98,940.15 equity), well above the 25–40% target band, and has been for many weeks. The tape is constructive today (S&P/Nasdaq futures up, 77% odds of a higher open per Polymarket) and NVDA/PWR are both close to a technical cross — but neither has actually cleared the gate yet (NVDA unconfirmed single session, PWR still marginally below its 50-day), and every other watchlist name fails outright or is disqualified by extension/valuation. 0/3 weekly new-position slots used this week (week of 2026-08-03). Staying in cash today is a disciplined, actively-re-verified decision, not a passive default — there is simply no name that clears the entry bar this morning.
+
+### Drawdown circuit breaker
+`history 1M 1D` high-water mark remains USD 100,322.08 (2026-07-21 close). Current equity USD 98,940.15 → drawdown **1.3775%** — NOT triggered (8.6225pp headroom). New buys remain permitted on this gate (moot today — no candidate clears the entry gate anyway).
+
+### Intraday shock check
+Equity USD 98,940.15 vs Alpaca `last_equity` USD 98,953.24 (2026-08-03 close) = **−0.0132%** — no shock (threshold −4%; market not yet open).
+
+### Sector cap
+Healthcare (LLY+UNH) 19.567% (USD 19,361.90), Financials (V) 8.111% (USD 8,024.63), cash 72.320% (USD 71,553.62) — all well within the 60% cap.
+
+### Stop audit (`orders open` vs `positions`, live)
+LLY `e3547b9e` (HWM USD 1,232.00 / stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945 / stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96 / stop USD 336.564, qty 22) — all 3 status `new` (live), quantities match positions exactly. **3/3 PASS.**
+
+### Weekly new-position count
+0/3 used this week (week of 2026-08-03) — unchanged.
+
+### Planned trades for today
+
+No trades planned. Every watchlist name fails its technical gate (NVDA unconfirmed single-session cross, MSFT extended, COST/LRCX fail outright, PWR hasn't crossed yet). LLY's forced earnings-window decision resolved (HOLD, no trim, earnings tomorrow before open). Drawdown breaker not triggered, 10yr yield still below the 4.75% gate, sector caps and cash policy all in order.
+
+```json
+{
+  "plan_date": "2026-08-04",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-07-31 — Weekly review research (~20:40 UTC, Friday)
 
 **S&P 500 weekly performance (2026-07-27 to 2026-07-31):** Alpaca SPY daily bars

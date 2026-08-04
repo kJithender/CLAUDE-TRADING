@@ -6,6 +6,26 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-04 ~08:20 ET — PRE-MARKET (no trades planned)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false` (pre-market), next open 09:30 ET today.
+- **Account:** equity USD 98,940.15, cash USD 71,553.62 (72.320%), long MV USD 27,386.53 (27.680%), buying power USD 362,896.77. `last_equity` USD 98,953.24 (08-03 close).
+- **Shock check:** −0.0132% vs `last_equity` — no shock (threshold −4%; market not yet open).
+- **Drawdown circuit breaker:** equity USD 98,940.15 vs HWM USD 100,322.08 (2026-07-21 close) — drawdown **1.3775%**. NOT triggered (8.6225pp headroom).
+- **10yr Treasury:** eased to 4.66% (tradingeconomics.com, explicitly dated 08-04) — below the 4.75% new-buy gate.
+- **Positions (% from entry):** LLY −4.476% (USD 1,121.80), UNH −1.606% (USD 415.50), V +2.732% (USD 364.756). None near the −7% cut (midday's job regardless).
+- **Stop audit:** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 confirmed live via `orders open`, quantities match positions exactly (8/25/22). **3/3 PASS.**
+- **Sector exposure:** Healthcare (LLY+UNH) 19.567% (USD 19,361.90), Financials (V) 8.111% (USD 8,024.63), cash 72.320% (USD 71,553.62) — all well within the 60% sector cap.
+- **🚨 LLY earnings-window forced decision:** reports before market open tomorrow (2026-08-05, 1 trading day out — inside the 2-day window). No company-specific negative catalyst found (broad "priced for perfection" valuation profit-taking, ~40x P/E, plus a modest Erste Group EPS-estimate trim). **HOLD full position, no trim.** `review_by` stays 2026-08-06 (forces the post-earnings read).
+- **UNH / V:** no thesis contracts due (review_by 08-17 / 08-15). Both had positive news (UNH: Goldman PT raised to USD 490; V: announced USD 2.4B BioCatch acquisition, Cantor PT raised to USD 445) — no action.
+- **Watchlist re-verification (fresh Alpaca bars, explicit date range, through 08-03 close):** NVDA +0.436% vs 50-day (first positive cross, unconfirmed single session), MSFT +21.685% (extended, no chase), COST −0.330% (fails), LRCX −12.803% (fails, valuation-disqualified), PWR −0.066% (essentially flat, hasn't crossed). No qualifying entry.
+- **Cash-drag check:** 72.320%, many consecutive weeks above the 25-40% target band — justified, no watchlist name clears its gate.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-03) — unchanged.
+- **Notify:** Telegram sent — no trades, LLY earnings tomorrow flagged.
+- **Commit:** done.
+
 ## 2026-08-03 ~15:52 ET — CLOSE (no trades)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
