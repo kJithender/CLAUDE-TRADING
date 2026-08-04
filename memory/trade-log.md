@@ -6,6 +6,30 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-04 ~15:52 ET — CLOSE (no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true` (next_close 2026-08-04T16:00:00-04:00) — normal full trading day, not a half-day.
+- **Dedup check:** `memory/performance.csv` had no 2026-08-04 row for `bull` — appending fresh, no dedup needed.
+- **Account:** equity USD 98,834.80, cash USD 71,553.62 (72.399%), long MV USD 27,281.18 (27.601%), buying power USD 362,601.77. `last_equity` USD 98,953.24 (08-03 close).
+- **Today's P/L:** −USD 118.44 (−0.1197%) vs `last_equity`.
+- **Drawdown circuit breaker:** equity USD 98,834.80 vs HWM USD 100,322.08 (2026-07-21 close) — drawdown **1.4826%**. NOT triggered (8.5174pp headroom, not near the −10% level).
+- **Intraday shock check:** −0.1197% — no shock (threshold −4%).
+- **SPY:** `snapshot.dailyBar.c` USD 772.37 (08-04) vs `prevDailyBar.c` USD 757.72 (08-03) = today's SPY return **+1.9337%**. Since inception (anchor USD 745.665, 2026-07-01) = **+3.5813%**.
+- **Bull vs SPY since inception:** Bull −1.1652% vs SPY +3.5813% = **−4.7465pp — Bull's trail widens sharply for a 4th consecutive session**, up from −2.6802pp yesterday, the widest gap of this track record. Broad tech-led rally today (Dow +1.3% to a fresh record close, S&P +1.5%, Nasdaq +2.1%, META +6%/AMZN +4.6%/GOOGL +4.9%/MSFT +4.9% on easing Middle East oil prices and rebounding AI-trade optimism) hit exactly the sector Bull avoids — same mirror-image mechanism documented 07-29 through 08-03 in `lessons.md`.
+- **Positions (% from entry, live):** LLY −5.278% (USD 1,112.37), UNH −2.976% (USD 409.715), V +4.191% (USD 369.94) — none within range of the −7% cut (close places no orders regardless).
+- **Sector exposure:** Healthcare (LLY+UNH) 19.366% (USD 19,141.835), Financials (V) 8.235% (USD 8,138.68), cash 72.399% (USD 71,553.62) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades today (market-open and midday both placed none); no exits, no `closed-trades.md` reconciliation needed.
+- **Race scoreboard:** Bull −1.165% since inception vs AGGRO's stale (2026-06-23 EOD, now 42 days old) −7.123% vs SPY +3.581% (Bull's own baseline) — Bull remains far ahead of AGGRO by any measure, stale or otherwise.
+- **Friday watchdog:** N/A — today is Tuesday.
+- **Monthly/quarterly housekeeping:** N/A — not the first trading day of the month, not a dividend-quarter mid-month check.
+- **LLY earnings tomorrow:** reports before market open 2026-08-05; `review_by` 2026-08-06 forces the post-print hold/trim/exit read at pre-market.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-03).
+- **Notify:** Telegram sent, plain prefix (no loss exit today, circuit breaker not near/active, not Friday — the since-inception gap widening is noted in the message but doesn't meet the 🚨 trigger criteria).
+- **Commit:** done.
+
 ## 2026-08-04 ~12:36 ET — MIDDAY (no action)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
