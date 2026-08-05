@@ -6,6 +6,28 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-05 ~15:52 ET — CLOSE (no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, next close today 16:00 ET (not a half-day), next open 2026-08-06 09:30 ET.
+- **Account:** equity USD 99,345.95, cash USD 67,595.57 (68.042%), long MV USD 31,750.38 (31.958%: LLY 9.407%+UNH 10.407%+V 8.166%+NVDA 3.990%), buying power USD 359,283.34. `last_equity` USD 98,798.79 (08-04 close).
+- **Today's P/L:** +USD 547.16 (+0.5539%) vs `last_equity` — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) vs equity USD 99,345.95 — drawdown **0.9730%**. NOT triggered (9.027pp headroom, nowhere near the 2%-of-breaker flag zone).
+- **Positions (% from entry, live):** LLY −0.542% (USD −50.93), UNH −2.076% (USD −219.125), V +3.837% (USD +299.68), NVDA +0.127% (USD +5.01). None near the −7% cut (close places no orders regardless), none up >15%.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80, qty 8), UNH `225cb079` (HWM 436.945/stop 393.2505, qty 25), V `2b0a93ba` (HWM 373.96/stop 336.564, qty 22), NVDA `49c544b0` (HWM 222.21/stop 199.989, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 exits today — all 4 positions held the full session; no `closed-trades.md` entry needed.
+- **SPY:** `bars SPY 1Day 30` dailyBar close USD 771.39 today vs USD 772.37 yesterday (08-04) → today's SPY return **−0.1267%**. Since inception (2026-07-01, SPY anchor USD 745.665): SPY **+3.4505%**. Bull is **−0.65405%** since the same inception (USD 100,000) → gap **−4.1046pp**, narrowing from −4.7465pp yesterday — the first improvement after four straight widening sessions, driven by LLY's earnings pop and NVDA's new position both outperforming today while SPY paused after Tuesday's record rally.
+- **Market context (WebSearch):** a mixed, earnings-driven session — Dow +0.69%, S&P roughly flat (+0.02%), Nasdaq −0.59% giving back some of Tuesday's gains. Trump signaled progress on reopening the Strait of Hormuz, steadying oil (Brent >USD 79, WTI ~USD 75). NVDA (Bull's newest position) surged >4% leading semis; AMD and SpaceX fell despite earnings beats on "not exceptional enough" reactions. None of this threatens Bull's LLY/UNH/V/NVDA theses.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.813%, Financials (V) 8.166%, Tech (NVDA) 3.990%, cash 68.042% — all well within the 60% sector cap.
+- **Weekly new-position count:** 1/3 used this week (week of 2026-08-03, NVDA Wednesday) — unchanged, close never opens new positions.
+- **Race scoreboard:** Bull −0.654% since inception (07-01) vs AGGRO's last-known (stale, 2026-06-23 EOD, now **43 days** stale) −7.123% since its own inception (06-04) vs SPY +3.450% (Bull's own 07-01 baseline) — different inception dates, not apples-to-apples, but Bull remains far ahead of AGGRO on any measure while itself trailing SPY.
+- **Friday watchdog:** N/A (Wednesday).
+- **Monthly/quarterly housekeeping:** N/A (not first trading day of month; not a quarterly month).
+- **performance.csv:** row appended (2026-08-05, bull, 99345.95, 67595.57, 771.39).
+- **Notify:** Telegram sent, plain prefix (no loss-close, no breaker, no watchdog).
+- **Commit:** done.
+
 ## 2026-08-05 ~12:37 ET — MIDDAY (no action)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
