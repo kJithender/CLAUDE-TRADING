@@ -6,6 +6,26 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-05 ~09:38 ET — MARKET-OPEN — BUY NVDA 18sh
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Plan check:** latest `research-log.md` block has `plan_date: 2026-08-05`, `trades: [BUY NVDA 18sh]` — pre-market ran today and planned the trade. No `EXECUTED:` line yet under it at the start of this run — first run today.
+- **Market:** `clock` confirmed `is_open: true` (next_close 2026-08-05T16:00:00-04:00).
+- **Breaking-news gate (NVDA):** WebSearch found no thesis-breaking news this morning — no earnings surprise, no downgrade, no trading halt, no SEC action. Only routine positives (SSI partnership, Korea/NAVER/Brookfield AI-factory expansion news). Strong Buy consensus intact (58/61 buy or strong buy, avg PT ~USD 303-315). Gate **CLEAR**.
+- **Account re-check (pre-trade):** equity USD 99,571.77, cash USD 71,553.62, long MV USD 28,018.15. `last_equity` USD 98,798.79 (08-04 close).
+- **Shock check:** +0.7822% vs `last_equity` — no shock (threshold −4%; positive move continuing LLY's earnings pop).
+- **Drawdown circuit breaker:** equity USD 99,571.77 vs HWM USD 100,322.08 (2026-07-21 close) — drawdown **0.7479%**. NOT triggered (9.2521pp headroom). New buys permitted.
+- **Positions (pre-trade, % from entry):** LLY +3.172%, UNH −3.692%, V +4.394%. None near the −7% cut (midday's job regardless).
+- **Execution:** NVDA had moved from the pre-market plan's ~USD 215.03 reference to an ask of USD 219.85 by market-open (~+6.9% vs the ~USD 205.68 implied 50-day SMA) — still well under the 10% chase/extension cap, so the trade proceeded at the current price. Marketable limit = ask USD 219.85 × 1.003 = **USD 220.51**. Placed `buy-limit NVDA 18 220.51` (order `ddc339d3`) — **filled in full within seconds at USD 219.891666 avg** (order `orders open`/`position NVDA` confirmed qty 18, better than the limit).
+- **Trailing stop:** placed immediately — `trailing-stop NVDA sell 18 10` (order `49c544b0`), HWM USD 220.294 / stop USD 198.2646 — confirmed live via `orders open`.
+- **Guardrail math at execution:** position size 3.980% of equity (well under the 20% cap and 15% single-order cap) | weekly new-position count: slot 1/3 used this week (week of 2026-08-03) | daily deployment 3.980% (well under the 25% cap) | post-trade cash 67.912% (well above the 5% min) | risk at the 10% stop ≈0.398% of equity (well under the 1.2% risk-budget cap) | sector exposure post-trade: Healthcare (LLY+UNH) 19.831%, Financials (V) 8.192%, Tech (NVDA) 3.980% — all comfortably within the 60% cap | earnings 2026-08-26 (21 days out) — outside the 2-day window.
+- **Stop audit (all 4 positions):** LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 220.294/stop USD 198.2646, qty 18) — **4/4 PASS**, all `new`/live, quantities match positions exactly.
+- **trades.jsonl:** appended (buy, NVDA, 18sh @ USD 219.891666).
+- **Exits/reconciliation:** none this run — no `closed-trades.md` entry needed.
+- **Notify:** Telegram sent — NVDA bought, stop set, guardrails in order.
+- **Commit:** done.
+
 ## 2026-08-05 ~08:21 ET — PRE-MARKET (PLAN: BUY NVDA 18sh; LLY earnings-window resolved beat-and-raise)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
