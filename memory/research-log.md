@@ -8,6 +8,97 @@ The market-open routine reads the most recent "Planned trades" section._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-05 — Pre-market research (~08:21 ET, Wednesday) — PLAN: BUY NVDA (18sh, first confirmed multi-session technical breakout after 6+ failed crosses); LLY earnings-window decision resolved (beat-and-raise, HOLD, no trim)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was `{}` (free) at start of this run. Lock acquired (`premarket`, expires ~08:27 ET).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-08-05T09:30:00-04:00`, `next_close: 2026-08-05T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-08-05)
+S&P 500 futures +0.3-0.39%, Nasdaq 100 futures little changed, continuing yesterday's record-close rally (S&P 500 +1.79% to 7,736.52, first close above 7,700, Dow also a fresh record). Polymarket implies 87% odds of a higher open. **10yr Treasury 4.61-4.62% (tradingeconomics.com, explicitly dated 2026-08-05)** — comfortably below the 4.75% new-buy gate. [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/08/60938801/will-sp500-open-up-or-down-august-5-polymarket-record-high-ai-earnings-iran), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-04/stock-market-today-dow-s-p-live-updates), [tradingeconomics.com](https://tradingeconomics.com/united-states/government-bond-yield)
+
+### Held position — LLY — 🚨 forced earnings-window decision resolved: clean beat-and-raise
+Alpaca live data (pre-market): 8sh @ avg USD 1,174.35625, current USD 1,177.91 (+0.303% from entry, a huge reversal from yesterday's −5.278%), up **+5.578% just today** on the earnings reaction. Trailing stop `e3547b9e` HWM USD 1,232.00 / stop USD 1,108.80 — live, confirmed in `orders open` (hasn't ratcheted yet since price remains below the prior HWM).
+
+**Q2 2026 results (reported before market open today):** EPS **USD 8.38 vs USD 6.07 consensus** (a ~38% beat), revenue **USD 23.0B, +48% YoY**. Mounjaro revenue +91% YoY to USD 9.9B (USD 4.8B US + USD 5.2B international); Zepbound USD 4.9B US revenue, +44% YoY. **Full-year revenue guidance raised to USD 85-87B** (from USD 82-85B); adjusted EPS guidance USD 35.50-36.50 (essentially maintained, prior USD 35.50-37). Shares up >5% pre-market. [Quartz](https://qz.com/eli-lilly-earnings-q2-2026-revenue-forecast-weight-loss-080526), [CNBC](https://www.cnbc.com/2026/08/05/eli-lilly-lly-earnings-q2-2026.html), [Eli Lilly IR](https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full)
+
+**Decision:** This is an unambiguous beat-and-raise — GLP-1 dominance (Mounjaro/Zepbound) confirmed, not just intact. The prior week's slide to −5.278% reads confirmed as "priced for perfection" profit-taking that overshot, not a thesis crack. **HOLD full position, no trim, no scale-up today** (per the standing AVGO lesson, let the market's post-open reaction fully confirm before any action — the review_by mechanism exists exactly for this). `review_by` stays **2026-08-06** to force the formal post-full-session read tomorrow morning, once today's actual trading (not just the pre-market pop) is in. No action needed today beyond noting the print.
+
+### Held position — UNH — what changed since yesterday
+Alpaca live data: 25sh @ avg USD 422.28, current USD 410.36 (−2.823%), up +0.69% today. Trailing stop `225cb079` HWM USD 436.945 / stop USD 393.2505 — live. **What changed:** nothing material — JPMorgan raised its PT to USD 516 (from USD 466, Overweight) and Wells Fargo raised to USD 526 (from USD 485, Overweight), both following the 07-16 beat-and-raise. Standing regulatory-scrutiny overhang (Medicare Advantage risk-adjustment/coverage-denial investigations) is unchanged, not a new development. No negative catalyst. Next earnings ~2026-10-27, `review_by` 2026-08-17 not due. [Multiple analyst-PT sources via WebSearch]
+
+### Held position — V — what changed since yesterday
+Alpaca live data: 22sh @ avg USD 355.058182, current USD 371.30 (+4.574%), up +0.463% today. Trailing stop `2b0a93ba` HWM USD 373.96 / stop USD 336.564 — live. **What changed:** nothing new since 08-04's BioCatch acquisition announcement — stock continues to hold most of the post-announcement gain (traded USD 360.09-371.11 today). Cantor Fitzgerald's PT raise to USD 445 stands. Dividend ex-date 08-11 (USD 0.67/share) approaching, not an action item. `review_by` 2026-08-15 not due.
+
+### Watchlist re-verification (fresh Alpaca bars, explicit date range 2026-05-01 to 2026-08-04 close, 50-day SMA / 20-day ATR%, `data.alpaca.markets` with explicit `start`/`end`)
+| Ticker | Price (08-04 close) | vs 50-day SMA | 20-day ATR% | Gate | Note |
+|---|---|---|---|---|---|
+| NVDA | 211.96 | **+3.057%** | 3.63% | **PASS — CONFIRMED** | **Second consecutive confirmed session above the 50-day** (+0.436% 08-03 → +3.057% 08-04), clearing the standing multi-session-confirmation bar after 6+ prior failed single-session crosses since tracking began. Pre-market 08-05 extends further to ~USD 215.03 (latest trade), vs-SMA ~+4.55% — not extended past the 10% chase threshold. Earnings 2026-08-26 (21 days out, no blackout). |
+| MSFT | 492.83 | **+22.545%** | 2.97% | FAIL (extended) | Further extended past yesterday's +21.685% — no chase regardless of trend strength. |
+| COST | 948.08 | **−0.757%** | 1.65% | FAIL | Still below the 50-day; independently flagged as rich (~46x P/E). |
+| LRCX | 317.76 | **−6.058%** | 6.03% | FAIL | Improved from −12.803% (08-04) but still fails; valuation (P/E >60x) separately disqualifying regardless. |
+| PWR | 692.90 | **+1.890%** | 3.62% | FAIL (unconfirmed) | **First actual cross above the 50-day** (was −0.066% 08-04, essentially flat) — single session, needs a 2nd consecutive confirming close per the standing multi-session-confirmation discipline (the same bar NVDA just cleared). **Watch for confirmation at the next pre-market.** |
+
+**NVDA entry-signal check (strategy.md, need ≥3 of 5):**
+1. Earnings momentum — no fresh NVDA-specific beat, but sector cloud results (MSFT/AMZN both beat with accelerating growth) revived AI-infrastructure-spend confidence broadly, and BofA reiterated Buy 08-04 (PT USD 220). Partial pass.
+2. Catalyst in 1-6 months — AI infrastructure buildout ongoing; earnings 08-26 (21 days out). **PASS.**
+3. Valuation — PEG ~0.27-0.47 (well under 2.5), forward P/E ~20-24x reasonable for the growth/quality profile. **PASS.**
+4. Technical confirmation — 2 consecutive confirmed closes above 50-day, +3.057% to +4.55%, well under the 10% extension cap. **PASS.**
+5. Macro tailwind — sector trend reconfirmed by MSFT/AMZN cloud beats; Goldman Risk Appetite Indicator (99th percentile) remains a caution flag on sizing/pace, not a stop-trading signal; no major contrary catalyst before earnings. **PASS.**
+
+4-5 of 5 signals clear. Strong Buy consensus (85% buy per S&P Global poll of 61 analysts, avg PT USD 302.83). No insider-selling clusters or accounting flags found. **Clears the entry bar** — first qualifying candidate since the 2026-07-01 reset outside the original three (LLY/UNH/V).
+
+### Volatility check (ATR sizing rule)
+NVDA 20-day ATR 3.63% (>3% threshold) → **halve the planned position size** per the standing volatility-check rule. Starter conviction (7-9% of equity) halved → target ~3.5-4.5%.
+
+### Sizing
+Target ~4% of equity, halved for ATR. Equity USD 99,404.51 (pre-market mark, already reflecting LLY's pop) × 4% = ~USD 3,976. At latest trade price USD 215.03: **18 shares = USD 3,870.54 = 3.894% of equity.** Risk at a 10% trailing stop: 0.389% of equity — well inside the 1.2% risk-budget cap (12% would be the risk-budget-implied max size; 3.894% is a deliberately conservative starter given this is the first NVDA breakout to actually confirm after 6+ false starts). Well under the 20% hard cap, the 15% single-order cap, and the 25% daily-deployment cap.
+
+### Earnings-window rule
+- **Held names:** LLY's forced decision resolved above (beat-and-raise, HOLD, review_by renewed... stays 08-06). UNH (08-17) and V (08-15) not due.
+- **Buy candidate (NVDA):** earnings 2026-08-26, 21 days out — well outside the 2-trading-day window. Clear.
+
+### Cash-drag check
+Cash sits at ~71.98% (USD 71,553.62 of USD 99,404.51 equity), still well above the 25-40% target band — but today's plan deploys into the first qualifying setup since the reset outside the original three names, directly answering the standing cash-drag question with an actual entry rather than another "justified but flagged" note.
+
+### Drawdown circuit breaker
+`history 1A 1D` high-water mark remains USD 100,322.08 (2026-07-21 close). Current equity USD 99,404.51 → drawdown **0.9146%** — NOT triggered (9.0854pp headroom). New buys permitted.
+
+### Intraday shock check
+Equity USD 99,404.51 vs Alpaca `last_equity` USD 98,798.79 (2026-08-04 close) = **+0.6132%** — no shock (threshold −4%; market not yet open, and the move is positive, driven by LLY's earnings pop).
+
+### Sector cap (post-trade projection)
+Healthcare (LLY+UNH) 19.800% (USD 19,682.29), Financials (V) 8.218% (USD 8,168.60), Tech (NVDA, new) ~3.894% (USD 3,870.54), cash post-trade ~68.09% — all comfortably within the 60% single-sector cap.
+
+### Stop audit (`orders open` vs `positions`, live)
+LLY `e3547b9e` (HWM USD 1,232.00 / stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945 / stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96 / stop USD 336.564, qty 22) — all 3 status `new` (live), quantities match positions exactly. **3/3 PASS.**
+
+### Weekly new-position count
+0/3 used this week (week of 2026-08-03) before this plan — NVDA would be slot 1/3.
+
+### Planned trades for today
+
+Eli Lilly's beat-and-raise (EPS USD 8.38 vs USD 6.07 est., revenue +48% YoY, guidance raised) resolves the forced earnings-window decision cleanly positive — HOLD, no trim, no scale-up pending tomorrow's formal post-full-session review_by. NVDA clears its technical gate for the first time since tracking began (2 consecutive confirmed sessions above the 50-day, after 6+ prior failed single-session crosses), passes 4-5 of 5 entry signals, and sits well within every guardrail. Sized as a conservative starter (halved for ATR >3%). PWR crossed for the first time today but remains unconfirmed (single session) — watch for confirmation tomorrow. 10yr yield well below the 4.75% gate, drawdown breaker not triggered, no intraday shock, sector caps in order.
+
+```json
+{
+  "plan_date": "2026-08-05",
+  "trades": [
+    {"action": "buy", "symbol": "NVDA", "qty": 18, "thesis": "AI accelerator monopoly thesis reconfirmed by sector-wide cloud beats (MSFT/AMZN); NVDA cleared 2 consecutive confirmed sessions above its 50-day SMA after 6+ prior failed crosses, the first genuine multi-session confirmation since tracking began. PEG ~0.27-0.47, forward P/E ~20-24x reasonable for the growth profile. Strong Buy consensus (85% buy, avg PT USD 302.83). Earnings not until 08-26, no blackout.",
+     "invalidation": "Closes back below the 50-day SMA (~USD 206-210) on volume, a hyperscaler guides down AI capex materially, or the 10% trailing stop fires.",
+     "review_by": "2026-08-24"}
+  ]
+}
+```
+
+---
+
 ## 2026-08-04 — Pre-market research (~08:17 ET, Tuesday) — PLAN: no trades (every watchlist name fails its gate; LLY earnings tomorrow before open)
 
 ### Live-switch guard

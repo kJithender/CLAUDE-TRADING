@@ -6,6 +6,26 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-05 ~08:21 ET — PRE-MARKET (PLAN: BUY NVDA 18sh; LLY earnings-window resolved beat-and-raise)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false` (pre-market), next open 09:30 ET today.
+- **Account:** equity USD 99,404.51, cash USD 71,553.62 (71.982%), long MV USD 27,850.89 (28.018%), buying power USD 364,196.98. `last_equity` USD 98,798.79 (08-04 close).
+- **Shock check:** +0.6132% vs `last_equity` — no shock (threshold −4%; positive move, LLY's earnings pop).
+- **Drawdown circuit breaker:** equity USD 99,404.51 vs HWM USD 100,322.08 (2026-07-21 close) — drawdown **0.9146%**. NOT triggered (9.0854pp headroom).
+- **10yr Treasury:** 4.61-4.62% (tradingeconomics.com, explicitly dated 08-05) — below the 4.75% new-buy gate.
+- **🚨 LLY earnings-window forced decision:** reported Q2 2026 before market open today — EPS USD 8.38 vs USD 6.07 est. (~38% beat), revenue USD 23.0B (+48% YoY), FY revenue guidance raised to USD 85-87B. Stock +5.578% today, position flipped from −5.278% to +0.303% from entry. **HOLD full position, no trim, no scale-up.** `review_by` stays 2026-08-06 (forces tomorrow's formal post-full-session read).
+- **UNH / V:** no thesis contracts due (review_by 08-17 / 08-15). Both had positive analyst news (UNH: JPMorgan PT to USD 516, Wells Fargo to USD 526; V: BioCatch acquisition gain holding, Cantor PT USD 445) — no action.
+- **Watchlist re-verification (fresh Alpaca bars, explicit date range, through 08-04 close):** NVDA +3.057% vs 50-day — **second consecutive confirmed session, clears the multi-session-confirmation bar** (was +0.436% 08-03). PWR +1.890% (first cross, unconfirmed single session). MSFT +22.545% (extended). COST −0.757%, LRCX −6.058% (both still fail).
+- **NVDA entry-signal check:** 4-5 of 5 pass (sector cloud beats from MSFT/AMZN, PEG ~0.27-0.47, Strong Buy consensus 85%/avg PT USD 302.83, technical confirmed and not extended, earnings 08-26 no blackout). **Clears the entry bar — first qualifying candidate since the 2026-07-01 reset outside the original three.**
+- **Sizing:** ATR 3.63% (>3%) → halve the starter size. Target 18 shares @ ~USD 215.03 = USD 3,870.54 (3.894% of equity); risk at 10% stop = 0.389% of equity (well under the 1.2% risk-budget cap).
+- **Sector cap (post-trade projection):** Healthcare (LLY+UNH) 19.800%, Financials (V) 8.218%, Tech (NVDA) ~3.894%, cash ~68.09% — all within the 60% cap.
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564) — all 3 confirmed live via `orders open`, quantities match positions exactly (8/25/22). **3/3 PASS.**
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-03) before this plan — NVDA would be slot 1/3.
+- **Notify:** Telegram sent — LLY beat-and-raise, NVDA buy planned for market-open.
+- **Commit:** done.
+
 ## 2026-08-04 ~15:52 ET — CLOSE (no trades)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
