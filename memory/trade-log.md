@@ -6,6 +6,22 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-05 ~12:37 ET — MIDDAY (no action)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true` (next_close 2026-08-05T16:00:00-04:00).
+- **Account:** equity USD 99,358.20, cash USD 67,595.57 (68.032%), long MV USD 31,762.63 (31.968%), buying power USD 359,317.63. `last_equity` USD 98,798.79 (08-04 close).
+- **Shock check:** +0.5664% vs `last_equity` — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) vs equity USD 99,358.20 — drawdown **0.9608%**. NOT triggered (9.0392pp headroom).
+- **Positions (% from entry):** LLY −0.831% (USD 1,164.60), UNH −1.763% (USD 414.835), V +3.637% (USD 367.97), NVDA +0.584% (USD 221.175). None near the −7% cut, none up >15% (no tightening), none past the ±3%/+10% news-scan trigger (no WebSearch needed this run).
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564), NVDA `49c544b0` (HWM 222.21/stop 199.989) — all 4 status `new` (live), quantities match positions exactly (8/25/22/18). **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades this run; no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.815%, Financials (V) 8.148%, Tech (NVDA) 4.007%, cash 68.032% — all well within the 60% sector cap.
+- **Weekly new-position count:** 1/3 used this week (week of 2026-08-03) — unchanged; midday never opens new positions.
+- **Notify:** Telegram sent, plain prefix (no cuts, no tightens, no unprotected stop, no shock).
+- **Commit:** done.
+
 ## 2026-08-05 ~09:38 ET — MARKET-OPEN — BUY NVDA 18sh
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
