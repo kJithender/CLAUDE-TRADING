@@ -6,6 +6,26 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-06 ~08:22 ET — PRE-MARKET (no trades; LLY forced review resolved HOLD; PWR clears technical, fails valuation)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false` (pre-market), next open 09:30 ET today.
+- **Account:** equity USD 99,498.66, cash USD 67,595.56 (67.936%), long MV USD 31,903.10 (32.064%), buying power USD 359,710.91. `last_equity` USD 99,327.03 (08-05 close).
+- **Shock check:** +0.1728% vs `last_equity` — no shock (threshold −4%; market not yet open).
+- **Drawdown circuit breaker:** equity USD 99,498.66 vs HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) — drawdown **0.8208%**. NOT triggered (9.1792pp headroom).
+- **10yr Treasury:** 4.65% (tradingeconomics.com, explicitly dated 08-06) — below the 4.75% new-buy gate.
+- **🚨 LLY forced review_by (2026-08-06) resolved:** yesterday's beat-and-raise intraday pop (+5.578%) faded to close the full session at −0.542% from entry — a priced-for-perfection unwind, not a reversal; now +0.566% this morning. **HOLD full position, no trim, no scale-up.** `review_by` renewed to 2026-09-04.
+- **UNH / V / NVDA:** no thesis contracts due (review_by 08-17 / 08-15 / 08-24). No negative news found for any; no action.
+- **Watchlist re-verification (fresh Alpaca bars, explicit date range, through 08-05 close):** PWR cleared the 2-session technical confirmation bar (+1.890% 08-04 → +0.582% 08-05) but is disqualified by the GuruFocus valuation veto (48% above GF Value, P/E ~75-76x) plus a fresh insider-selling cluster — no buy. MSFT +20.796% (extended), COST −1.21%, LRCX −9.02% (valuation-disqualified) all still fail.
+- **Sizing/entry check:** moot — no candidate clears the combined technical + valuation gate.
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 222.21/stop USD 199.989, qty 18) — all 4 confirmed live via `orders open`, quantities match positions exactly. **4/4 PASS.**
+- **Sector exposure:** Healthcare (LLY+UNH) 19.936%, Financials (V) 8.129%, Tech (NVDA) 4.000%, cash 67.936% — all well within the 60% sector cap.
+- **Cash-drag check:** 67.936%, well above the 25-40% target band. Justified: PWR cleared its technical gate for the first time in weeks but the valuation veto (same discipline as the AAPL purge) correctly kept it off the table.
+- **Weekly new-position count:** 1/3 used this week (NVDA, 2026-08-05, week of 2026-08-03) — unchanged.
+- **Notify:** Telegram sent — LLY review resolved HOLD, no trades planned, PWR valuation veto noted.
+- **Commit:** done.
+
 ## 2026-08-05 ~15:52 ET — CLOSE (no trades)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.

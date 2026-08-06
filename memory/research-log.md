@@ -8,6 +8,80 @@ The market-open routine reads the most recent "Planned trades" section._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-06 — Pre-market research (~08:22 ET, Thursday) — PLAN: no trades (LLY's forced review_by resolved HOLD; PWR clears technical but fails valuation)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was `{}` (free) at start of this run. Lock acquired (`premarket`, expires ~08:30 ET).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-08-06T09:30:00-04:00`, `next_close: 2026-08-06T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-08-06)
+S&P 500 futures +0.1%, Dow futures +0.2%, Nasdaq-100 futures −0.6% — a mixed, muted pre-market as investors digest a fresh batch of earnings, prospects of an imminent Strait of Hormuz deal easing Middle East risk, and new labor-market data, with the Dow trading at a record high. **10yr Treasury 4.65% (tradingeconomics.com, explicitly dated 2026-08-06)** — up 0.03pp from the prior session but still comfortably below the 4.75% new-buy gate. [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-6-dow-sp-nasdaq-091620000.html), [tradingeconomics.com](https://tradingeconomics.com/united-states/government-bond-yield)
+
+### Held position — LLY — 🚨 forced review_by decision (post-full-session read after yesterday's beat-and-raise)
+Alpaca live data: 8sh @ avg USD 1,174.35625, current USD 1,181.00 (+0.566% from entry). Trailing stop `e3547b9e` HWM USD 1,232.00 / stop USD 1,108.80 — live, confirmed in `orders open`, unchanged (hasn't ratcheted, price still below the prior HWM).
+
+**What happened since the beat-and-raise:** yesterday's Q2 print (EPS USD 8.38 vs USD 6.01-6.07 est., revenue +48% YoY to ~USD 23.0B, FY guidance raised to USD 85-87B, Mounjaro +91%/Zepbound strong) drove an intraday pop to +5.578% before fading to close the full session at −0.542% from entry (per `trade-log.md` 08-05 close) — a classic "priced for perfection, pop-then-fade" pattern, not a reversal of the beat. This morning the stock is quoted at +0.566% from entry, continuing to hold near/above breakeven. No negative follow-through news found; today's WebSearch confirms the beat-and-raise narrative (Mounjaro/Zepbound combined revenue momentum) remains the active story, with no analyst downgrades or guidance walk-backs since the print.
+
+**Decision:** The post-full-session read confirms the beat-and-raise as a genuine positive catalyst, not a one-day pop that reverses — the position gave back most of its intraday spike but held above breakeven, consistent with heavy pre-earnings "priced for perfection" positioning unwinding rather than any thesis crack. **HOLD full position, no trim, no scale-up** (no fresh technical/ATR setup justifies adding today, and the position is already a full starter). `review_by` renewed to **2026-09-04** (routine ~1-month interim check; no earnings catalyst before then). [Benzinga](https://www.benzinga.com/markets/earnings/26/08/60958279/eli-lillys-weight-loss-empire-keeps-expanding-as-mounjaro-zepbound-generate-nearly-15-billion), [Yahoo Finance](https://finance.yahoo.com/markets/stocks/article/eli-lilly-stock-soars-on-strong-demand-for-weight-loss-drugs-135325819.html)
+
+### Held position — UNH — what changed since yesterday
+Alpaca live data: 25sh @ avg USD 422.28, current USD 415.50 (−1.606%). Trailing stop `225cb079` HWM USD 436.945 / stop USD 393.2505 — live. **What changed:** nothing material — WebSearch found no new company-specific catalyst since the 07-16 beat-and-raise; commentary continues to note the Medicare Advantage margin-recovery narrative and analyst-upgrade momentum from prior weeks, with mixed options positioning noted around the USD 425-426 level (not a signal). No negative news. Next earnings ~2026-10-27, `review_by` 2026-08-17 not due.
+
+### Held position — V — what changed since yesterday
+Alpaca live data: 22sh @ avg USD 355.058182, current USD 367.619 (+3.538%). Trailing stop `2b0a93ba` HWM USD 373.96 / stop USD 336.564 — live. **What changed:** nothing new since the 08-04 BioCatch acquisition announcement — stock continues to hold most of the post-announcement gain, closed 08-05 at USD 368.54, above its 20/50/200-day EMAs (confirmed uptrend), momentum cooling slightly near the upper Bollinger Band. Consensus remains ~41 analysts Buy, avg PT ~USD 398. Dividend ex-date 08-11 (USD 0.67/share) approaching, not an action item. `review_by` 2026-08-15 not due.
+
+### Held position — NVDA — what changed since yesterday
+Alpaca live data: 18sh @ avg USD 219.891667, current USD 221.11 (+0.554%). Trailing stop `49c544b0` HWM USD 222.21 / stop USD 199.989 — live. **What changed:** nothing material — no thesis-breaking news found; consensus remains Strong Buy (58 buy/1 sell of 59), avg PT USD 302.83. Earnings confirmed 2026-08-26 (20 days out, no blackout). `review_by` 2026-08-24 not due.
+
+### Watchlist re-verification (fresh Alpaca bars, explicit date range 2026-05-01 to 2026-08-05 close, 50-day SMA / 20-day ATR%, `data.alpaca.markets` with explicit `start`/`end`)
+| Ticker | Price (08-05 close) | vs 50-day SMA | 20-day ATR% | Gate | Note |
+|---|---|---|---|---|---|
+| PWR | 683.195 | **+0.582%** | 3.62% | **FAIL — valuation veto** | **2nd consecutive confirmed session above the 50-day** (+1.890% 08-04 → +0.582% 08-05, pulled back ~1.4% intraday but stayed above the SMA) — clears the standing multi-session-confirmation bar. Catalyst intact (record USD 53.4B backlog, beat-and-raise 07-30). But GuruFocus flags PWR **"Significantly Overvalued"** — GF Value USD 458.63 vs price ~USD 679-683, **~48% above fair value**; trailing P/E ~75-76x (119% above its own historical average) vs peer average 29.86x; PEG 1.90 (technically under the 2.5 cap but the outright GuruFocus overvaluation flag is the harder veto per the AAPL/LRCX precedent). A fresh USD 2.0B senior-notes offering (closing today) plus a reported insider-selling cluster (directors, ahead of and after the 07-30 print) add caution. **Disqualified on valuation, technical clear notwithstanding.** |
+| MSFT | 487.46 | **+20.796%** | 2.99% | FAIL (extended) | Still far past the 10% chase threshold — no chase regardless of trend strength. |
+| COST | 942.06 | **−1.21%** | 1.66% | FAIL | Still below the 50-day; independently flagged as rich (~46x P/E), earnings not until 2026-09-24. |
+| LRCX | 307.80 | **−9.02%** | 6.14% | FAIL | Improved from −12.803% (08-04) but still fails; valuation (P/E >60x) remains separately disqualifying regardless of technicals. |
+
+No watchlist name clears the entry bar today — PWR is the first name in weeks to pass its technical gate, but the valuation veto (the same discipline that purged AAPL 07-17 and blocked LRCX repeatedly) correctly keeps it off the table. Worth continuing to watch PWR's valuation gap narrow if the price pulls back further without the fundamentals deteriorating.
+
+### Earnings-window rule
+- **Held names:** LLY's forced decision resolved above (HOLD, no trim, review_by renewed to 09-04). UNH (08-17) and V (08-15) not due. NVDA (08-24) not due.
+- **Buy candidates:** moot — no watchlist name clears its combined technical + valuation gate today.
+
+### Cash-drag check
+Cash sits at 67.936% (USD 67,595.56 of USD 99,498.66 equity), still well above the 25-40% target band. 1/3 weekly new-position slots used this week (NVDA, 2026-08-05). Today's tape offered a real test — PWR actually cleared its technical confirmation bar for the first time in weeks — but the valuation veto correctly disqualifies it (48% above GuruFocus fair value, P/E ~75-76x, fresh insider-selling cluster). Staying in cash today is a disciplined, actively-re-verified decision, not a passive default: a name cleared one gate and failed another, and the process held the line rather than lowering the bar to deploy capital.
+
+### Drawdown circuit breaker
+`history 1A 1D` high-water mark remains USD 100,322.08 (2026-07-21 close). Current equity USD 99,498.66 → drawdown **0.8208%** — NOT triggered (9.1792pp headroom). New buys remain permitted on this gate (moot today — no candidate clears the combined gate anyway).
+
+### Intraday shock check
+Equity USD 99,498.66 vs Alpaca `last_equity` USD 99,327.03 (2026-08-05 close) = **+0.1728%** — no shock (threshold −4%; market not yet open).
+
+### Sector cap
+Healthcare (LLY+UNH) 19.936% (USD 19,835.50), Financials (V) 8.129% (USD 8,087.618), Tech (NVDA) 4.000% (USD 3,979.98), cash 67.936% (USD 67,595.56) — all well within the 60% single-sector cap.
+
+### Stop audit (`orders open` vs `positions`, live)
+LLY `e3547b9e` (HWM USD 1,232.00 / stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945 / stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96 / stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 222.21 / stop USD 199.989, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS.**
+
+### Weekly new-position count
+1/3 used this week (NVDA, 2026-08-05, week of 2026-08-03) — 2 slots remain, moot today since no candidate clears the gate.
+
+### Planned trades for today
+
+No trades planned. LLY's forced post-earnings review_by resolved cleanly (HOLD, no trim, review_by renewed to 2026-09-04) — the beat-and-raise held up through a full session, closing near breakeven after the initial pop faded, not a reversal. PWR cleared its technical multi-session-confirmation bar for the first time in weeks but is disqualified by the standing GuruFocus valuation veto (48% above fair value) plus a fresh insider-selling cluster. MSFT stays extended, COST and LRCX both still fail. 10yr yield (4.65%) stays below the 4.75% gate, drawdown breaker not triggered (0.82%), no intraday shock, sector caps and cash policy all in order.
+
+```json
+{
+  "plan_date": "2026-08-06",
+  "trades": []
+}
+```
+
 ## 2026-08-05 — Pre-market research (~08:21 ET, Wednesday) — PLAN: BUY NVDA (18sh, first confirmed multi-session technical breakout after 6+ failed crosses); LLY earnings-window decision resolved (beat-and-raise, HOLD, no trim)
 
 ### Live-switch guard
