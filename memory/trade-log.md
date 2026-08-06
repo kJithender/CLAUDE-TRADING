@@ -6,6 +6,24 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-06 ~09:38 ET — MARKET-OPEN (no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Plan check:** latest `research-log.md` block has `plan_date: 2026-08-06`, `trades: []` — pre-market ran today and planned no trades (LLY's forced review resolved HOLD, PWR fails the valuation veto). No `EXECUTED:` line yet under it at the start of this run — first run today.
+- **Market:** `clock` confirmed `is_open: true` (next_close 2026-08-06T16:00:00-04:00).
+- **Breaking-news gate:** moot — no planned trades to gate.
+- **Account:** equity USD 99,484.00, cash USD 67,595.56 (67.947%), long MV USD 31,888.44 (32.053%: LLY 9.590%+UNH 10.281%+V 8.142%+NVDA 4.033%), buying power USD 359,669.88. `last_equity` USD 99,327.03 (08-05 close).
+- **Shock check:** +0.158% vs `last_equity` — no shock (threshold −4%).
+- **Drawdown circuit breaker:** equity USD 99,484.00 vs HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) — drawdown **0.8353%**. NOT triggered (9.1647pp headroom).
+- **Positions (% from entry, live):** LLY +1.539% (USD 144.63), NVDA +1.359% (USD 53.79), UNH −3.116% (USD −329.00), V +3.695% (USD 288.64). None near the −7% cut (midday's job regardless).
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 223.4399/stop USD 201.09591, qty 18 — ratcheted up from HWM USD 222.21/stop USD 199.989 as NVDA continued rising) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades this run (plan was empty); no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.869% (USD 19,767.48), Financials (V) 8.142% (USD 8,099.92), Tech (NVDA) 4.033% (USD 4,011.84), cash 67.947% (USD 67,595.56) — all well within the 60% sector cap.
+- **Weekly new-position count:** 1/3 used this week (NVDA, 2026-08-05, week of 2026-08-03) — unchanged.
+- **Notify:** Telegram sent, plain prefix (no trades, no stop fills, no unprotected stop, no shock).
+- **Commit:** done.
+
 ## 2026-08-06 ~08:22 ET — PRE-MARKET (no trades; LLY forced review resolved HOLD; PWR clears technical, fails valuation)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
