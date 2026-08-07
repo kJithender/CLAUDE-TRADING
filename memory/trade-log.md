@@ -6,6 +6,28 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-07 ~08:27 ET — PRE-MARKET (no trades; every watchlist name fails its gate, PWR reverses)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false` (pre-market), next open 09:30 ET today.
+- **Account:** equity USD 99,365.02, cash USD 67,595.56 (68.037%), long MV USD 31,765.59 (31.972%: LLY 9.644%+NVDA 3.992%+UNH 10.163%+V 8.170%), buying power USD 359,336.73. `last_equity` USD 99,322.49 (08-06 close).
+- **Shock check:** +0.0428% vs `last_equity` — no shock (threshold −4%; market not yet open).
+- **Drawdown circuit breaker:** equity USD 99,365.02 vs HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`, unchanged) — drawdown **0.9539%**. NOT triggered (9.0461pp headroom).
+- **10yr Treasury:** ~4.6-4.67% (CNBC/tradingeconomics, dated 08-06/08-07) — below the 4.75% new-buy gate, retreated from this week's ~4.75% high.
+- **Held positions (% from entry, live):** LLY +2.005% (analyst PT raises continue, no negative news), UNH −4.348% (no fresh negative catalyst — margin-recovery narrative unchanged, 2.65pp buffer above the −7% line), V +3.927% (holding the 08-04 BioCatch gain), NVDA +0.211% (no thesis-breaking news; NVDA processors in 92% of sovereign-AI LLM deployments per Counterpoint, a positive but non-thesis-changing data point).
+- **Thesis contracts:** LLY (review_by 09-04), UNH (08-17), V (08-15), NVDA (08-24) — none due today, none triggered.
+- **Earnings-window rule:** no held name reports within 2 trading days; moot.
+- **Watchlist re-verification (fresh Alpaca bars, explicit date range through 08-06 close):** PWR reversed back below its 50-day (−1.562%, was +0.582% 08-05) — lost the 2-session confirmation it had just cleared; moot regardless since the GuruFocus valuation veto (~48% above fair value) still applies. MSFT further extended (+23.398%). COST (−0.382%) and LRCX (−9.690%, valuation-disqualified) both still fail. VST reported Q2 2026 earnings this morning (GAAP net income USD 305M vs USD 327M prior-year, EBITDA guidance reaffirmed) — not held, ineligible for re-entry until a fresh multi-session technical confirmation.
+- **Sizing/entry check:** moot — no candidate clears the combined technical + valuation gate.
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 223.6275/stop USD 201.26475, qty 18) — all 4 confirmed live via `orders open`, quantities match positions exactly. **4/4 PASS.**
+- **Sector exposure:** Healthcare (LLY+UNH) 19.807% (USD 19,681.20), Financials (V) 8.170% (USD 8,118.00), Tech (NVDA) 3.992% (USD 3,966.39), cash 68.037% (USD 67,595.56) — all well within the 60% sector cap.
+- **Cash-drag check:** 68.037%, well above the 25-40% target band — an 8th+ consecutive week elevated. 1/3 weekly new-position slots used this week (NVDA, 08-05); every candidate fails its gate for a distinct, freshly-verified reason, including PWR which briefly cleared its technical bar and has now reversed. Justified, not a passive default.
+- **Weekly new-position count:** 1/3 used this week (NVDA, 2026-08-05, week of 2026-08-03) — 2 slots go unused as the week closes today.
+- **Macro note:** July jobs report (BLS nonfarm payrolls) due today — a real intraday volatility catalyst, flagged for market-open/midday, not a reason to change today's plan.
+- **Notify:** Telegram sent — no trades planned, market posture and jobs-report flag included.
+- **Commit:** done.
+
 ## 2026-08-06 ~15:52 ET — CLOSE (no trades)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.

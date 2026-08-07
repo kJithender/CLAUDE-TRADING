@@ -8,6 +8,79 @@ The market-open routine reads the most recent "Planned trades" section._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-07 — Pre-market research (~08:27 ET, Friday) — PLAN: no trades (every watchlist name fails its gate; PWR reverses back below the 50-day)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was `{}` (free) at start of this run. Lock acquired (`premarket`, expires ~08:35 ET).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-08-07T09:30:00-04:00`, `next_close: 2026-08-07T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-08-07)
+S&P 500 futures +0.13-0.16%, Nasdaq futures +0.5%, Dow futures slipping — a mixed, muted pre-market as investors await the July jobs report (BLS nonfarm payrolls, due before/at the open; FactSet consensus +97,500, unemployment rate expected to hold at 4.2%). CME FedWatch shows markets pricing a ~54.7% chance of a September rate move. **10yr Treasury ~4.6-4.67%** (CNBC/tradingeconomics, dated 2026-08-06/07) — retreated from Tuesday-Wednesday's ~4.75% high on lower fuel prices, comfortably below the 4.75% new-buy gate. Today's jobs print is a real volatility catalyst for the session — worth watching, not a blocker for this morning's plan. [Benzinga](https://www.benzinga.com/markets/equities/26/08/61031224/stock-market-today-dow-jones-futures-slip-sp-500-gains-ahead-of-july-jobs-report-atlassian-trade-desk-cloudflare-in-focus), [CNBC](https://www.cnbc.com/quotes/US10Y)
+
+### Held position — LLY — what changed since yesterday
+Alpaca live data: 8sh @ avg USD 1,174.35625, current USD 1,197.90 (+2.005% from entry). Trailing stop `e3547b9e` HWM USD 1,232.00 / stop USD 1,108.80 — live, unchanged. **What changed:** nothing thesis-breaking — continued analyst PT raises off the beat-and-raise (Cantor Fitzgerald to USD 1,410, Morgan Stanley to USD 1,419), Mounjaro/Zepbound momentum still the operative story. No negative news. `review_by` 2026-09-04, not due.
+
+### Held position — UNH — what changed since yesterday
+Alpaca live data: 25sh @ avg USD 422.28, current USD 403.92 (−4.348% from entry). Trailing stop `225cb079` HWM USD 436.945 / stop USD 393.2505 — live, unchanged, buffer ~2.65% to current price. **What changed:** nothing material — WebSearch found no fresh negative catalyst; coverage continues to frame the story as margin-recovery-not-growth (Trefis, dated 08-05) and analyst PT raises off the 07-16 beat-and-raise (KeyBanc to USD 500, UBS to USD 490) remain the active narrative. The continued drift reads as normal variance in a name still ~7% below its 52-week high, not a thesis break. HOLD, no action — worth a closer look if the position approaches the −7% line (currently 2.65pp of buffer above it), but that is midday's job regardless. `review_by` 2026-08-17, not due.
+
+### Held position — V — what changed since yesterday
+Alpaca live data: 22sh @ avg USD 355.058182, current USD 369.00 (+3.927% from entry). Trailing stop `2b0a93ba` HWM USD 373.96 / stop USD 336.564 — live, unchanged. **What changed:** nothing new since the 08-04 BioCatch acquisition announcement — stock continues to hold most of the gain, still trading above all major moving averages per fresh coverage (cryptonomist.ch, dated 08-06), momentum cooling slightly near recent highs. Dividend ex-date 08-11 (USD 0.67/share) approaching, not an action item. `review_by` 2026-08-15, not due.
+
+### Held position — NVDA — what changed since yesterday
+Alpaca live data: 18sh @ avg USD 219.891667, current USD 220.355 (+0.211% from entry). Trailing stop `49c544b0` HWM USD 223.6275 / stop USD 201.26475 — live, ratcheted up further from yesterday's HWM USD 223.4399/stop USD 201.09591 as NVDA continued rising. **What changed:** nothing thesis-breaking — Counterpoint Research highlighted NVDA processors in 92% of ~170 sovereign-AI LLM deployments across ~55 countries, a positive but non-thesis-changing data point; Nasdaq futures +0.5% pre-market on improved tech sentiment. No downgrades, no negative news. Earnings confirmed 2026-08-26 (13 trading days out, no blackout). `review_by` 2026-08-24, not due.
+
+### Watchlist re-verification (fresh Alpaca bars, explicit date range 2026-05-15 to 2026-08-07, 50-day SMA / 20-day ATR%, `data.alpaca.markets` with explicit `start`/`end`)
+| Ticker | Last close (08-06) | vs 50-day SMA | 20-day ATR% | Gate |
+|---|---|---|---|---|
+| PWR | 667.15 | **−1.562%** | 3.66% | FAIL — reversed back below the 50-day (was +0.582% 08-05), losing the 2-session confirmation it had just cleared; moot regardless since the GuruFocus valuation veto (~48% above fair value) still applies |
+| MSFT | 500.04 | **+23.398%** | 2.97% | FAIL (extended) — further past the 10% chase threshold, no chase |
+| COST | 948.88 | −0.382% | 1.63% | FAIL — still below the 50-day |
+| LRCX | 305.21 | −9.690% | 6.20% | FAIL — valuation (P/E >60x) remains separately disqualifying regardless of technicals |
+
+No watchlist candidate clears the entry bar today. **PWR's brief technical clearance was already moot on valuation and has now reversed on its own terms** — a reminder that a single-session pass (even a second confirming one) can give back the gain quickly; the standing multi-session-confirmation discipline continues to earn its keep. **VST reported Q2 2026 earnings this morning** (GAAP net income USD 305M vs USD 327M prior-year, EBITDA guidance reaffirmed USD 6.8-7.6B) — VST is not held (stopped out twice, 07-16 and 07-28) and remains ineligible for re-entry until a fresh 2-consecutive-session technical confirmation re-clears the 50-day gate; today's earnings-day print is not a data point toward that bar yet.
+
+### Earnings-window rule
+- **Held names:** none of the 4 positions (LLY 09-04, UNH 08-17, V 08-15, NVDA 08-24) report within 2 trading days. No forced decision due.
+- **Buy candidates:** moot — no watchlist name clears its technical gate today.
+
+### Cash-drag check
+Cash sits at 68.037% (USD 67,595.56 of USD 99,365.02 equity), still well above the 25-40% target band — now an 8th+ consecutive week at an elevated level. 1/3 weekly new-position slots used this week (NVDA, 2026-08-05, week of 2026-08-03) — 2 slots remain unused as the week closes today, but every watchlist candidate fails its gate again this morning for a distinct, freshly-re-verified reason (see table above), including a name (PWR) that briefly cleared its technical bar and has now reversed. Staying in cash remains the correct, actively-re-verified call, not a passive default — no gate was lowered to force a fill.
+
+### Drawdown circuit breaker
+`history 1A 1D` high-water mark remains USD 100,322.08 (2026-07-21 close, unchanged). Current live equity USD 99,365.02 → drawdown **0.9539%** — NOT triggered (9.0461pp headroom). New buys remain permitted on this gate (moot today — no candidate clears the combined gate anyway).
+
+### Intraday shock check
+Equity USD 99,365.02 vs Alpaca `last_equity` USD 99,322.49 (2026-08-06 close) = **+0.0428%** — no shock (threshold −4%; market not yet open).
+
+### Sector cap
+Healthcare (LLY+UNH) 19.807% (USD 19,681.20), Financials (V) 8.170% (USD 8,118.00), Tech (NVDA) 3.992% (USD 3,966.39), cash 68.037% (USD 67,595.56) — all well within the 60% single-sector cap.
+
+### Stop audit (`orders open` vs `positions`, live)
+LLY `e3547b9e` (HWM USD 1,232.00 / stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945 / stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96 / stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 223.6275 / stop USD 201.26475, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS.**
+
+### Weekly new-position count
+1/3 used this week (NVDA, 2026-08-05, week of 2026-08-03) — 2 slots remain, moot today since no candidate clears the gate. New week starts Monday 2026-08-10.
+
+### Planned trades for today
+
+No trades planned. Every watchlist name fails its technical/valuation gate — PWR briefly cleared its technical bar yesterday but reversed back below the 50-day this morning (was already valuation-vetoed regardless), MSFT stays extended, COST and LRCX both still fail. No held position has a thesis contract due. 10yr yield (~4.6-4.67%) stays below the 4.75% gate, drawdown breaker not triggered (0.95%), no intraday shock, sector caps and cash policy all in order. Today's July jobs report is a real intraday volatility catalyst worth flagging for market-open/midday, not a reason to change today's plan.
+
+```json
+{
+  "plan_date": "2026-08-07",
+  "trades": []
+}
+```
+
+**Step 8 — notify:** Telegram sent per playbook.
+**Step 9 — commit:** done.
+
 ## 2026-08-06 — Pre-market research (~08:22 ET, Thursday) — PLAN: no trades (LLY's forced review_by resolved HOLD; PWR clears technical but fails valuation)
 
 ### Live-switch guard
