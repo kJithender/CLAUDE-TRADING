@@ -8,6 +8,22 @@ The market-open routine reads the most recent "Planned trades" section._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-07 ~21:00 ET — WEEKLY REVIEW macro/sector research (Friday)
+
+**S&P 500 weekly performance:** the index gained ~3.6% for the week of Aug 3-7 (Nasdaq +5.2%, Dow +~3%), a second straight weekly gain, closing Friday at a record 7,757.64 (+0.62% on the day). Chip stocks led the Nasdaq bounce. [CNBC](https://www.cnbc.com/2026/08/06/stock-market-today-live-updates.html), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-06/stock-market-today-dow-s-p-live-updates)
+
+**Macro driver:** Friday's weak July jobs report (nonfarm payrolls −23K vs +80K expected, unemployment 4.1%) was read as raising Fed rate-cut odds, fueling a broad, tech/small-cap-concentrated "bad news is good news" rally that ran through the whole week.
+
+**Held-position checks (WebSearch, all dated this week, no thesis-breaking news found for any of the 4 held positions):**
+- **LLY:** dipped below its 50-day SMA 08-03 (short-term technical pullback only); Q2 print (already known, reported 08-05) delivered a ~48% revenue beat and raised FY guidance to USD 85-87B — fundamentals remain strongly positive.
+- **UNH:** drifted ~-1.9% on the week per TradersUnion, described as "consolidating recent gains" — no fresh negative company-specific catalyst found.
+- **V:** "another robust quarter" per this week's coverage, BioCatch acquisition (08-04) still viewed positively, Strong Buy consensus intact (37 buy/0 sell, avg PT USD 415.39). Friday's modest pullback reads as broad profit-taking.
+- **NVDA:** fresh industry data (Counterpoint) shows NVIDIA processors in 92% of sovereign-AI deployments, reinforcing the thesis; 5-day win streak ended Friday — a normal pause, not a reversal signal.
+
+**Best-performers screen (candidates for the watchlist):** Shopify (SHOP, +2%+ on a "monster" Q2 beat, analysts reaffirmed Buy), Uber (UBER, +3%+), Boeing (BA, +~7% on the week, best week since early April), MSFT (+~3%, already on watchlist but extended). **SHOP added to `strategy.md`'s watchlist as an unvetted candidate** — needs a full price/ATR/valuation gate check before consideration.
+
+Full trade statistics, process audit, and the explicit strategy decision on this week's mirror-image-mechanism gap are in `memory/weekly-review.md`'s "Week ending 2026-08-07" entry.
+
 ## 2026-08-07 — Pre-market research (~08:27 ET, Friday) — PLAN: no trades (every watchlist name fails its gate; PWR reverses back below the 50-day)
 
 ### Live-switch guard

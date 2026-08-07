@@ -2,6 +2,96 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-08-07 (Week 6 of the new track record — 5 active trading days: Mon Aug 3 – Fri Aug 7)
+
+- **Bull return (week, 2026-07-31 close $99,197.93 → 2026-08-07 close $99,239.19):** +0.0416%
+- **SPY return (week, dailyBar.c $746.79 → $773.16, explicit-date-range bars, settled):** +3.5319%
+- **Result:** Bull **lagged** SPY by **−3.4903pp** this week — the widest single-week trail of this track record
+- **Since inception (2026-07-01, $100,000.00 / SPY $745.665):** Bull −0.76081% vs SPY +3.6873% = **−4.4481pp gap — Bull's since-inception trail widens for a third consecutive review** (from −0.9529pp two Fridays ago), continuing the mirror-image mechanism documented daily since 07-29
+- **HWM:** $100,322.08 (unchanged, set 2026-07-21 close) | drawdown −1.0794% — far within the −10% circuit breaker ✓
+- **Grade:** B
+
+### Trade statistics (sample still small — 3 closed trades since reset; read directionally, not conclusively)
+
+| Metric | Value |
+|--------|-------|
+| New trades this week | 1 (BUY NVDA 18sh @ USD 219.891666, 2026-08-05 — the first watchlist name to clear the combined technical + valuation gate since the 2026-07-01 reset, after 6+ prior failed confirmations) |
+| Closed trades this week | 0 |
+| Total closed trades (new baseline, since 2026-07-01) | 3 (VST 07-16 −2.178%, VST 07-28 −6.924%, META 07-28 −7.964%) |
+| Win rate | 0% (0 wins / 3 closed trades) |
+| Average win % | N/A — no wins yet |
+| Average loss % | −5.689% (mean of the three losses; magnitudes range −2.178% to −7.964%) |
+| Profit factor | N/A — no gross wins to divide by |
+| Avg holding days (winners / losers) | N/A winners / 9.67 days (losers: 14, 7, 8 days) |
+| Biggest standing lesson | Unchanged this week — no new closed trades. All 3 closed trades remain trailing-stop exits driven by sector/macro rotation, with zero company-specific thesis breaks confirmed via WebSearch at the time. |
+
+⚠️ **Ledger cross-check:** `trades.jsonl` has 7 post-reset buy entries (VST 07-02, V 07-07, LLY 07-13, UNH 07-20, META 07-20, VST re-entry 07-21, NVDA 08-05) and 3 stop_fill entries (VST 07-16, VST 07-28, META 07-28), matching `closed-trades.md`'s 3 post-reset exits and `trade-log.md`'s narrative — counts agree, no reconciliation issue. **Data-hygiene flag (unresolved, carried from the 2026-07-31 review):** `trades.jsonl`'s `pnl_pct` field is still inconsistently formatted — the 07-16 VST entry stores a fraction (`-0.02178`) while the 07-28 VST/META entries store the percentage directly (`-6.924`, `-7.964`). All values resolve correctly in `closed-trades.md`, so nothing is wrong today, but the standardization maintenance pass flagged a week ago still hasn't happened — next time `trades.jsonl`-writing code is touched, fix it then.
+
+### Process audit
+
+| Check | Result | Grade |
+|-------|--------|-------|
+| Cash drag (avg ~69.79% this week — 72.29–72.40% Mon–Tue, 68.04–68.12% Wed–Fri after the NVDA buy — vs 25–40% target band) | Every non-buy day cited a specific, freshly-re-verified gate failure; NVDA used the week's one qualifying slot. PWR briefly cleared its technical bar Wed–Thu then reversed Friday, correctly never bought (valuation veto stood throughout regardless). Cash fell ~4.3pp the moment a real setup cleared — not a passive default. | ⚠️ justified daily, still far above target band, now a 6th+ consecutive elevated week |
+| Sector caps | Healthcare (LLY+UNH) 19.80%, Financials (V) 8.04%, Tech (NVDA) 4.05%, cash 68.12% (Friday close) — all well within the 60% cap | ✓ |
+| Stop discipline | 3/3 stops confirmed live Mon–Tue (pre-NVDA); 4/4 confirmed live every session Wed–Fri after the NVDA entry, including the new stop placed and verified the same run as the buy. Quantities matched positions exactly at every check, no gap. | ✓ PERFECT |
+| Weekly new-position count | 1/3 slots used (NVDA, 2026-08-05); 2 slots unused, justified — no other candidate cleared the combined technical + valuation gate | ✓ within cap |
+| Thesis contracts | LLY's forced post-earnings review_by (08-06) resolved cleanly: the 08-05 beat-and-raise's intraday pop faded to a modest full-session gain, read correctly as a priced-for-perfection unwind, not a reversal — HOLD, no trim, renewed to 09-04. No other contracts due this week (V 08-15, UNH 08-17, NVDA 08-24 all unchanged). | ✓ |
+| Loss post-mortems | None required — no exits this week | ✓ N/A |
+| Guardrail checks | Complete tables at every routine session, all 5 days | ✓ |
+
+### What worked
+
+- **NVDA's entry was the cleanest evidence yet that the technical-confirmation discipline works, not just protects.** After 6+ consecutive failed single-session crosses since tracking began (documented repeatedly in `lessons.md` and `strategy.md`'s Active Macro Watches), NVDA finally posted two consecutive confirmed sessions above its 50-day (08-03, 08-04) and was bought the next morning at a disciplined, ATR-halved size (3.98% of equity, well under the 20%/15% caps), with full guardrail math logged and 4/4 stops verified live the same run. This is the multi-session-confirmation rule — first codified after NVDA's own repeated false starts — finally paying off on the exact name that taught it.
+- **LLY's earnings-window thesis contract was handled with real discipline across three sessions**, not just one mechanical check: the 08-05 pre-market forced the initial hold call on the print itself, 08-06 forced the formal post-full-session read after the pop faded, and both correctly distinguished "priced-for-perfection unwind" from an actual reversal — no panic trim on a name that is still Conviction A.
+- **PWR's technical whipsaw (crossed 08-04/08-05, reversed 08-07) was handled correctly at every step** — the valuation veto meant it was never a live buy candidate regardless of the technical flip-flop, and the framework didn't need to react to either move.
+- **Perfect stop-audit compliance across all 5 sessions**, including the mid-week transition from 3 to 4 live positions.
+
+### What didn't work / open questions
+
+- **🚨 Bull's since-inception trail vs SPY widened to −4.4481pp, the worst of this track record, on the single worst weekly relative-performance gap (−3.49pp) yet recorded.** The trigger this week was Friday's weak July jobs report (nonfarm payrolls −23K vs +80K expected) read as raising Fed rate-cut odds, extending a broad, tech/small-cap-concentrated risk-on rally that ran through the whole week (S&P +3.6%, Nasdaq +5.2%). This is the same mirror-image mechanism flagged on 07-29, 07-30, 07-31, 08-03, and 08-04 — Bull's book (LLY/UNH/V/NVDA, ~68-72% cash, zero mega-cap-tech beyond one 4%-sized NVDA starter) sits mostly outside the layer leading this rally. **This is the explicit decision the 08-04 lesson asked this review to make, not just observe again — see "Strategy decision" below.**
+- **Cash sat at ~70% on average for a 6th+ consecutive week.** Every daily non-buy was individually justified (see process audit), and the one qualifying setup (NVDA) was taken promptly and disciplined in size — this is not idle indecision. But six-plus weeks of the same elevated-cash pattern is a real, compounding opportunity cost during a sustained rate-cut-driven rally, independent of whether any single day's decision was correct.
+- **Aggressive Bull comparison remains impossible — the outage is now confirmed stale via git history at over 6 weeks with zero real content update.** See "From Aggressive Bull" below.
+
+### Strategy decision (resolving the 2026-08-04 lesson's open action item)
+
+The 08-04 lesson explicitly asked this review to move from "worth watching" to an explicit decision on whether the current sector mix (healthcare/financials/one AI-semi starter, no other mega-cap tech, high cash) needs to change given four-then-six straight sessions of relative underperformance on tech-led rally days. **Decision: no guardrail or entry-signal change.** Reasoning:
+
+1. **The mechanism has a genuine two-sided track record, not just a one-sided cost.** The same posture produced this track record's single largest one-day gap *improvement* on 07-29 (FOMC-hawkish-hold + Iran oil shock, cash cushion outperformed by +2.04pp in a day) before the current losing streak began. A strategy that is evaluated only on the weeks the mechanism costs ground, while ignoring the weeks it pays off, is cherry-picking the sample.
+2. **NVDA is direct evidence the framework already self-corrects when a real setup appears**, rather than needing a rule change to force one. The multi-session-confirmation and ATR-sizing discipline that repeatedly blocked NVDA for 6+ weeks is the same discipline that let it in the moment two genuine confirmed sessions appeared — and the extension/chase cap correctly kept Bull out of MSFT's +15.51% single-day pop (07-30), which would have been dangerous performance-chasing, not disciplined participation.
+3. **Loosening the valuation veto or the extension/chase cap specifically to capture more mega-cap-tech upside would be optimizing for the last six weeks' regime**, not for the multi-month horizon this strategy is built for (CLAUDE.md: "long-term, fundamentals-driven, swing strategy... not day trading"). The mandate is to beat SPY over a multi-month horizon, not to track its every weekly move.
+4. **No rule in CLAUDE.md's guardrails is close to being violated** — sizing, sector caps, cash minimum, and stop discipline are all comfortably inside their bands. The gap is a factor-exposure cost, not a process breakdown.
+
+**What this review does instead of a rule change:** documents the decision explicitly (this section) so it isn't re-litigated as a fresh "worth watching" note every week going forward, and continues watching whether the gap becomes wide enough (CLAUDE.md's stated 5%-over-a-rolling-4-week-window review trigger) to force a harder look at sector weights specifically — that threshold has not yet been crossed (the current trail is a since-inception cumulative figure across 5+ weeks, not a rolling-4-week relative return past 5%). If the trail keeps widening at this pace, the next review should compute the rolling-4-week figure explicitly rather than relying on the since-inception number.
+
+### Macro context (week of August 3–7, 2026)
+
+- **S&P 500 gained ~3.6% this week** (Nasdaq +5.2%, Dow +~3%), a second straight week of gains, closing Friday at a record 7,757.64 (+0.62% on the day). Chip stocks led the Nasdaq's bounce. [CNBC](https://www.cnbc.com/2026/08/06/stock-market-today-live-updates.html), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-06/stock-market-today-dow-s-p-live-updates)
+- **The week's dominant driver was Friday's weak July jobs report** — nonfarm payrolls fell 23,000 vs. +80,000 expected, unemployment eased to 4.1% — read by markets as raising the odds the Fed can hold off on hikes / lean toward cuts, fueling a broad "bad news is good news" risk-on move concentrated in tech and small-caps.
+- **LLY (held):** moved below its 50-day SMA 08-03 (a short-term technical pullback, not a fundamentals concern) ahead of settling; Q2 print (already reported 08-05) delivered a ~48% revenue beat and a raised FY guidance to USD 85-87B — fundamentals remain strongly positive. No thesis-breaking news this week.
+- **UNH (held):** drifted modestly lower (~-1.9% on the week per TradersUnion), described as "consolidating recent gains" — no fresh negative company-specific catalyst found via WebSearch. Continues to read as normal drift on the still-operative 07-16 Q2 beat-and-raise story.
+- **V (held):** delivered "another robust quarter" per this week's coverage (double-digit revenue/EPS growth, resilient consumer spending); BioCatch acquisition (announced 08-04) still viewed positively; Strong Buy consensus intact (37 buy / 0 sell, avg PT USD 415.39). A modest single-day pullback Friday reads as broad profit-taking, not company-specific weakness.
+- **NVDA (held, entered 08-05):** fresh industry data this week reinforces the AI-accelerator-monopoly thesis (NVIDIA processors in 92% of sovereign-AI deployments per Counterpoint); five-day win streak ended Friday, a normal pause after a rally, not a reversal signal. No negative news.
+- **Best-performers screen:** Shopify (SHOP, +2%+ on a "monster" Q2 beat, analysts reaffirmed Buy), Uber (UBER, +3%+), Boeing (BA, best week since early April, +~7% on the week), and MSFT (+~3%, already on Bull's watchlist but extended/no-chase). SHOP is the most interesting new large-cap catalyst-driven name this week — see watchlist addition below.
+
+### From Aggressive Bull (section 7b)
+
+**AGGRO's memory is STILL STALE, now confirmed via `git log --oneline -- memory/aggressive/`: the only commit ever touching that directory (`78c62ca`, dated 2026-07-23) is the initial bulk repo-setup commit that added `.claude/commands/`, `.claude/settings.json`, and the GitHub Actions workflow files — not a content update to any of the actual memory files.** The files' `mtime` (2026-08-07, from this session's container checkout) is misleading — per the standing 2026-07-24 lesson, a checkout event can touch mtimes without touching content. The narrative content itself (verified via `tail`/`grep` on `portfolio.md`) still ends at the same **2026-06-23 EOD** data point every review since 2026-07-03 has reported. This is now **45 days** stale as of this review (up from 38 two Fridays ago) — the 11th+ separate flag across close and weekly-review routines since 2026-07-02, spanning six-plus calendar weeks with zero resolution.
+
+**Last-known AGGRO figures (2026-06-23 EOD, stale, 45 days old):** equity USD 92,876.82, since-inception (2026-06-04) return −7.123%, alpha vs SPY −4.392pp. Cautious Bull's own since-inception return this review is **−0.76081%** vs SPY — a real, widening trail for the third straight review, but nowhere close to AGGRO's stale −7.123% even on that old, non-comparable timeline. AGGRO is not ahead of Cautious Bull by any measure, stale or otherwise.
+
+**Lesson worth extracting this week, since there's still nothing fresher:** AGGRO's own historical playbook (Week 3 review, 2026-06-19) showed it capturing +3.46pp of alpha in a single week when a broad AI-tech rally hit its 8-position, tech-concentrated book — the mirror image of what happened to Cautious Bull's diversified book this week. AGGRO's wider stops and full-tech concentration are built to capture exactly this kind of week; Cautious Bull's tighter stops and cross-sector diversification are built to avoid AGGRO's other historical data point (a -8.17%-from-HWM semiconductor-rout drawdown by 06-23). **Concrete rule change proposed for the human's consideration (not adopted unilaterally):** none this week — the Strategy Decision section above already resolves the open action item without borrowing a rule from AGGRO. If AGGRO's memory is ever restored and shows it actually beating Cautious Bull through a full tech-led rally cycle with acceptable drawdowns, that would be the concrete evidence needed to reconsider a modest, capped mega-cap-tech carve-out — not available today.
+
+**Cross-Bull learning counter update:** AGGRO trails Cautious Bull by every available measure (stale or otherwise) — the >5pp-AGGRO-leads-for-2-weeks trigger condition is nowhere close to being met. Counter = **0** (unchanged, now 7 consecutive weeks at 0). `CROSS_BULL_LEARNING:` in `control.md`: confirmed blank at the start of this run, no `NOTE:` or `QUERY:` lines either — no change needed.
+
+### Strategy adjustments
+
+- **Watchlist hygiene fix:** META's row in `strategy.md` still read "**HELD** (6sh, avg USD 641.323333)" despite being stopped out 2026-07-28 — a stale row that has persisted uncorrected for over a week. Updated to reflect the stop-out and re-entry conditions (mirroring VST's row format), per this review.
+- **Watchlist addition (unvetted):** adding **SHOP** (Shopify, Consumer Discretionary/E-commerce infrastructure) as an unvetted candidate — this week's cleanest large-cap, catalyst-driven mover (a "monster" Q2 2026 beat, analysts reaffirmed Buy). Needs a full price/ATR/valuation gate check before any consideration, same treatment prior unvetted adds (UNH, META) received. Dated 2026-08-07.
+- **No purges this week.** PWR, MSFT, COST, LRCX all still carry either a dated forward catalyst or a daily re-gated technical/valuation setup, consistent with the standing 07-03 hygiene precedent (actively re-verified names are not decoration).
+- **No changes to entry/exit signals, sizing, or guardrails this week** — see the Strategy Decision section above for the explicit reasoning on why the sector-mix question raised 08-04 is resolved without a rule change.
+
+---
+
 ## Week ending 2026-07-31 (Week 5 of the new track record — 5 active trading days: Mon Jul 27 – Fri Jul 31)
 
 - **Bull return (week, 2026-07-24 close $99,754.87 → 2026-07-31 close $99,197.93):** −0.5584%
