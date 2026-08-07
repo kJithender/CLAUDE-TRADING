@@ -6,6 +6,30 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-07 ~15:52 ET — CLOSE (no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, next close today 16:00 ET (not a half-day), next open 2026-08-10 09:30 ET.
+- **Dedup check:** `memory/performance.csv` had no 2026-08-07 row for `bull` — appending fresh, no dedup needed.
+- **Account:** equity USD 99,239.19, cash USD 67,595.56 (68.115%), long MV USD 31,643.63 (31.887%: LLY 9.546%+NVDA 4.045%+UNH 10.256%+V 8.040%), buying power USD 358,984.40. `last_equity` USD 99,322.49 (08-06 close).
+- **Today's P/L:** −USD 83.30 (−0.0839%) vs `last_equity` — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`, unchanged) vs equity USD 99,239.19 — drawdown **1.0794%**. NOT triggered (8.9206pp headroom, not near the 2%-of-breaker flag zone).
+- **Positions (% from entry, live):** LLY +0.831% (USD 78.03), NVDA +1.414% (USD 55.95), UNH −3.595% (USD −379.50), V +2.138% (USD 167.02). None near the −7% cut (close places no orders regardless), none up >15%.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80, qty 8), UNH `225cb079` (HWM 436.945/stop 393.2505, qty 25), V `2b0a93ba` (HWM 373.96/stop 336.564, qty 22), NVDA `49c544b0` (HWM 224.76/stop 202.284, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 exits today — all 4 positions held the full session; no `closed-trades.md` entry needed.
+- **SPY:** `bars SPY 1Day 30` dailyBar close USD 772.945 today vs USD 767.875 yesterday (08-06, value of record) → today's SPY return **+0.6604%**. Since inception (2026-07-01, SPY anchor USD 745.665): SPY **+3.6585%**. Bull is **−0.76081%** since the same inception (USD 100,000) → gap **−4.4193pp — widens again after two sessions of narrowing** (from −3.7052pp 08-06).
+- **Market context (WebSearch):** stocks rallied on a weak July jobs report (nonfarm payrolls −23K vs +83K expected, unemployment steady at 4.1%) read as raising Fed rate-cut odds — Dow +0.3%, S&P +0.6% (closed above 7,700 for the first time this week), Nasdaq +1.2%, a second straight week of gains. The same mirror-image mechanism documented since 07-29: a rate-cut-driven risk-on rally hit tech/small-caps, exactly the layer Bull's book sits outside of. None of this threatens Bull's LLY/UNH/V/NVDA theses. [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-friday-august-7-nasdaq-dow-sp-500-july-jobs-report-surprises-100009572.html), [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-7-2026)
+- **UNH news check (down >3% from entry):** WebSearch (`UNH stock news today August 7 2026`) found no fresh company-specific negative catalyst — the Q2 2026 beat-and-raise (07-16) remains the operative story; described as an active recovery focused on the Medicare Advantage business. Reads as normal drift, not a thesis break. HOLD, no action — consistent with midday's read.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.802% (USD 19,650.38), Financials (V) 8.040% (USD 7,978.30), Tech (NVDA) 4.045% (USD 4,014.00), cash 68.115% (USD 67,595.56) — all well within the 60% sector cap.
+- **Weekly new-position count:** 1/3 used this week (NVDA, 2026-08-05, week of 2026-08-03) — unchanged, close never opens new positions; this closes the week.
+- **Race scoreboard:** Bull −0.761% since inception (07-01) vs AGGRO's last-known (stale, 2026-06-23 EOD, now **45 days** stale) −7.123% since its own inception (06-04) vs SPY +3.659% (Bull's own 07-01 baseline) — Bull remains far ahead of AGGRO on any measure while itself trailing SPY.
+- **Friday watchdog:** newest `weekly-review.md` entry ("Week ending 2026-07-31") is exactly 7 days old today, not >7 — not stale; today's own week-ending-2026-08-07 review is scheduled 4:30 PM ET.
+- **Monthly/quarterly housekeeping:** N/A (not first trading day of month; not a quarterly month).
+- **performance.csv:** row appended (2026-08-07, bull, 99239.19, 67595.56, 772.945).
+- **Notify:** Telegram sent, plain prefix (no loss-close, no breaker, no watchdog).
+- **Commit:** done.
+
 ## 2026-08-07 ~12:37 ET — MIDDAY (no action)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
