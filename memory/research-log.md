@@ -5,6 +5,90 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-08-10 — Pre-market research (~08:21 ET, Monday) — PLAN: no trades (every watchlist name still fails its gate; UNH conviction downgraded to B)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was `{}` (free) at start of this run. Lock acquired (`premarket`, expires ~08:29 ET).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-08-10T09:30:00-04:00`, `next_close: 2026-08-10T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-08-10)
+S&P 500 futures +0.13-0.6% (reports vary), Nasdaq futures also higher, as markets continue digesting Friday's weak July jobs report (nonfarm payrolls −23K vs +83K expected) — read as reducing the odds of a September Fed hike and pushing the Fed toward patience rather than urgency. Dow/S&P/Nasdaq all closed at records Friday (S&P +0.62%, Nasdaq 100 +1.19%). **10yr Treasury holding at 4.65%** (tradingeconomics.com, dated 08-10) — comfortably below the 4.75% new-buy gate, essentially flat over the past month. This week's key catalysts: **CPI Tuesday 08-12, PPI Wednesday 08-13** — real volatility risk for the week, flagged for pre-market re-checks through Wednesday. Some coverage also references prospects of a Middle East de-escalation deal as a secondary tailwind; treated as background color, not a position-relevant catalyst for Bull's book. [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-081128237.html), [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-10-2026), [tradingeconomics.com](https://tradingeconomics.com/united-states/government-bond-yield)
+
+### Held position — LLY — what changed since Friday
+Alpaca live data: 8sh @ avg USD 1,174.35625, current USD 1,182.75 (+0.715% from entry). Trailing stop `e3547b9e` HWM USD 1,232.00 / stop USD 1,108.80 — live, unchanged. **What changed:** nothing thesis-breaking — the Q2 beat-and-raise (48% revenue beat, FY guidance raised to USD 85-87B) remains the operative story; LLY declared a USD 1.73/share cash dividend, ex-date 2026-08-14 (not an action item). No negative news. `review_by` 2026-09-04, not due.
+
+### Held position — UNH — what changed since Friday; conviction downgraded
+Alpaca live data: 25sh @ avg USD 422.28, current USD 406.81 (−3.663% from entry). Trailing stop `225cb079` HWM USD 436.945 / stop USD 393.2505 — live, unchanged, buffer ~3.34pp above the −7% line. **What changed:** no fresh negative catalyst — WebSearch found only a minor, routine insider sale (Optum CEO Patrick Conway, 500 shares/~USD 205K, 08-05), immaterial and not thesis-relevant. Barclays raised its PT to USD 441 (from USD 429), Overweight maintained. Coverage continues to frame the story as "margin recovery," with the stock "consolidating recent gains" — i.e. the 07-16 beat-and-raise catalyst has already been priced in and the position has been flat-to-negative for three straight weeks with no fresh forward trigger until `review_by` 08-17. HOLD, no trim (not near −7%, no thesis break) — but see Monday conviction review below. `review_by` 08-17, not due today.
+
+### Held position — V — what changed since Friday
+Alpaca live data: 22sh @ avg USD 355.058182, current USD 362.28 (+2.034% from entry). Trailing stop `2b0a93ba` HWM USD 373.96 / stop USD 336.564 — live, unchanged. **What changed:** nothing new — BioCatch acquisition (08-04) still viewed positively, AI Financial Assistant pilot for banks slated for August, StockInvest.us rates V a Buy Candidate (+11.94% since its 06-15 buy signal). Dividend ex-date 2026-08-11 (USD 0.67/share) is tomorrow — not an action item. Confirmed via WebSearch: next earnings 2026-10-26 (Q4 FY26), well outside the 2-day window. `review_by` 08-15, not due today.
+
+### Held position — NVDA — what changed since Friday
+Alpaca live data: 18sh @ avg USD 219.891667, current USD 223.37 (+1.582% from entry). Trailing stop `49c544b0` HWM USD 224.76 / stop USD 202.284 — live, unchanged. **What changed:** nothing thesis-breaking — Zayo Group announced plans to build 8,000+ miles of new long-haul fiber using NVIDIA AI infrastructure, and a reported ~USD 3B planned investment in Lancium (per The Information); both reinforce the AI-infrastructure-buildout thesis without changing it. StockInvest.us rates NVDA Hold/Accumulate (technical score 0.82/10). Earnings confirmed 2026-08-26 (12 trading days out, no blackout). `review_by` 08-24, not due today.
+
+### Monday conviction review (Week of 2026-08-10)
+| Ticker | Rating | Rationale |
+|---|---|---|
+| LLY | **A** | Thesis intact and working — beat-and-raise, dividend declared, no negative news. Unchanged from 08-03. |
+| V | **A** | Thesis intact and working — BioCatch integration, Strong Buy consensus, steady uptrend. Unchanged from 08-03. |
+| UNH | **B** (downgraded from A) | Thesis is intact (no company-specific break, Q2 beat-and-raise still the operative story) but the catalyst has been priced in and the position has been flat-to-negative for 3 consecutive weeks (−1.3% to −4.3% range since 07-20 entry) with no fresh forward trigger before `review_by` 08-17. This fits "working but flat, or thesis intact but the catalyst slipped" rather than a fresh-A rating. Not yet at C — no thesis wobble, no position-specific bad news, still well clear of the −7% line. |
+| NVDA | **A** (first review) | First Monday review since the 08-05 entry. Fresh technical confirmation entry, +1.58% from entry, no thesis-breaking news, positive AI-infrastructure data points continuing. |
+
+No name at 3 consecutive C's (none rated C) — no forced trim this week. UNH's downgrade to B is a documentation change only; no trim/exit action triggered by a single B rating.
+
+### Watchlist re-verification (fresh Alpaca bars, explicit date range 2026-05-15 to 2026-08-08, 50-day SMA / 20-day ATR%, `data.alpaca.markets` with explicit `start`/`end`/`feed=iex`)
+| Ticker | Last close (08-07) | vs 50-day SMA | 20-day ATR% | Gate |
+|---|---|---|---|---|
+| PWR | 671.74 | **−0.704%** | 3.77% | FAIL — dipped back below the 50-day again (was −1.562% 08-06); moot regardless, the GuruFocus valuation veto (~48% above fair value) still stands |
+| MSFT | 499.88 | **+22.831%** | 2.90% | FAIL (extended) — still well past the 10% chase threshold, no chase |
+| COST | 947.73 | −0.386% | 1.64% | FAIL — still below the 50-day |
+| LRCX | 311.31 | −7.844% | 6.16% | FAIL — valuation (P/E >60x) remains separately disqualifying regardless of technicals |
+| SHOP | 151.58 | **+27.128%** | 4.56% | FAIL (extended) — this week's Q2 beat-and-raise (revenue +34% YoY) drove a massive post-earnings pop; price has run far past any non-extended entry point (+27% vs 50-day, nearly 3x the 10% chase cap), and fair-value estimates found via WebSearch (~USD 116) sit well below the current USD 151.58 print — the first full gate check on this unvetted add fails decisively on both technical extension and valuation. Not a candidate; would need a substantial pullback before reconsideration. |
+
+No watchlist candidate clears the entry bar today — every name fails on technical extension, technical failure, or valuation (several on more than one dimension). SHOP's first full vetting pass (added 08-07 as an unvetted best-performer) confirms the standing no-chase discipline: a "monster" earnings beat does not override the extension cap.
+
+### Earnings-window rule
+- **Held names:** none of the 4 positions (LLY 09-04 review_by / no near-term earnings, UNH next earnings 10-27, V next earnings 10-26 confirmed via WebSearch, NVDA 08-26) report within 2 trading days. No forced decision due.
+- **Buy candidates:** moot — no watchlist name clears its technical/valuation gate today.
+
+### Cash-drag check
+Cash sits at 68.129% (USD 67,595.56 of USD 99,218.63 equity), still well above the 25-40% target band — now a 9th+ consecutive week at an elevated level. This is a new week (0/3 slots used, week of 2026-08-10) and every watchlist candidate fails its gate again this morning for a distinct, freshly-re-verified reason (see table above), including the first full vetting of this week's most-hyped new name (SHOP), which failed decisively on both technical extension and valuation. Staying in cash remains the correct, actively-re-verified call, not a passive default.
+
+### Drawdown circuit breaker
+`history 1A 1D` high-water mark remains USD 100,322.08 (2026-07-21 close, unchanged). Current live equity USD 99,218.63 → drawdown **1.0999%** — NOT triggered (8.9001pp headroom). New buys remain permitted on this gate (moot today — no candidate clears the combined gate anyway).
+
+### Intraday shock check
+Equity USD 99,218.63 vs Alpaca `last_equity` USD 99,264.52 (2026-08-07 close) = **−0.0462%** — no shock (threshold −4%; market not yet open).
+
+### Sector cap
+Healthcare (LLY+UNH) 19.788% (USD 19,632.25), Financials (V) 8.033% (USD 7,970.16), Tech (NVDA) 4.052% (USD 4,020.66), cash 68.129% (USD 67,595.56) — all well within the 60% single-sector cap.
+
+### Stop audit (`orders open` vs `positions`, live)
+LLY `e3547b9e` (HWM USD 1,232.00 / stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945 / stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96 / stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 224.76 / stop USD 202.284, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS.**
+
+### Weekly new-position count
+0/3 used this new week (week of 2026-08-10) — moot today since no candidate clears the gate.
+
+### Planned trades for today
+
+No trades planned. Every watchlist name fails its technical/valuation gate — PWR dipped back below the 50-day, MSFT and SHOP are both extended well past the chase cap (SHOP's first full vetting pass fails on valuation too), COST and LRCX both still fail outright. No held position has a thesis contract due; UNH's Monday conviction rating was downgraded to B (documentation only, no action triggered). 10yr yield (4.65%) stays below the 4.75% gate, drawdown breaker not triggered (1.10%), no intraday shock, sector caps and cash policy all in order. This week's CPI (08-12) and PPI (08-13) prints are real volatility catalysts worth flagging for the rest of the week, not a reason to change today's plan.
+
+```json
+{
+  "plan_date": "2026-08-10",
+  "trades": []
+}
+```
+
+**Step 8 — notify:** Telegram sent per playbook.
+**Step 9 — commit:** done.
+
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 

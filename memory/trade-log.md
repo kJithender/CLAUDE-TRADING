@@ -6,6 +6,29 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-10 ~08:21 ET — PRE-MARKET (no trades; UNH conviction downgraded to B; SHOP's first vetting pass fails)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false` (pre-market), next open 09:30 ET today.
+- **Account:** equity USD 99,218.63, cash USD 67,595.56 (68.129%), long MV USD 31,623.07 (31.871%: LLY 9.536%+NVDA 4.052%+UNH 10.251%+V 8.033%), buying power USD 358,926.84. `last_equity` USD 99,264.52 (08-07 close).
+- **Shock check:** −0.0462% vs `last_equity` — no shock (threshold −4%; market not yet open).
+- **Drawdown circuit breaker:** equity USD 99,218.63 vs HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`, unchanged) — drawdown **1.0999%**. NOT triggered (8.9001pp headroom).
+- **10yr Treasury:** 4.65% (tradingeconomics.com, explicitly dated 08-10) — below the 4.75% new-buy gate.
+- **Held positions (% from entry, live):** LLY +0.715% (dividend declared, ex-date 08-14, no negative news), UNH −3.663% (no fresh negative catalyst — only a minor, routine insider sale; Barclays PT raised to USD 441; but flat/negative for 3 straight weeks), V +2.034% (BioCatch gain holding, next earnings confirmed 10-26), NVDA +1.582% (Zayo/Lancium AI-infrastructure data points positive, no thesis-breaking news).
+- **Thesis contracts:** LLY (review_by 09-04), UNH (08-17), V (08-15), NVDA (08-24) — none due today, none triggered.
+- **Monday conviction review:** LLY A, V A, UNH **B** (downgraded from A — thesis intact, no company-specific break, but the 07-16 beat-and-raise catalyst is priced in and the position has been flat-to-negative for 3 consecutive weeks with no fresh trigger before 08-17), NVDA A (first review since 08-05 entry). No name at 3 consecutive C's — no forced trim.
+- **Earnings-window rule:** no held name reports within 2 trading days; moot.
+- **Watchlist re-verification (fresh Alpaca bars, explicit date range through 08-07 close):** PWR back below 50-day (−0.704%), MSFT extended (+22.831%), COST fails (−0.386%), LRCX fails technically and on valuation (−7.844%). **SHOP's first full vetting pass (added 08-07 unvetted) fails decisively** — +27.128% vs 50-day (nearly 3x the 10% chase cap) and priced (USD 151.58) above WebSearch-sourced fair-value estimates (~USD 116).
+- **Sizing/entry check:** moot — no candidate clears the combined technical + valuation gate.
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 224.76/stop USD 202.284, qty 18) — all 4 confirmed live via `orders open`, quantities match positions exactly. **4/4 PASS.**
+- **Sector exposure:** Healthcare (LLY+UNH) 19.788% (USD 19,632.25), Financials (V) 8.033% (USD 7,970.16), Tech (NVDA) 4.052% (USD 4,020.66), cash 68.129% (USD 67,595.56) — all well within the 60% sector cap.
+- **Cash-drag check:** 68.129%, 9th+ consecutive week above the 25-40% target band. Justified: every candidate freshly re-verified and failed today, including SHOP's first full gate check (fails both technical and valuation).
+- **Weekly new-position count:** 0/3 used this new week (week of 2026-08-10).
+- **Macro note:** this week's key catalysts are CPI (Tuesday 08-12) and PPI (Wednesday 08-13) — real intraday volatility risk, flagged for the week's pre-market re-checks.
+- **Notify:** Telegram sent — no trades planned, market posture, UNH downgrade, and SHOP vetting result included.
+- **Commit:** done.
+
 ## 2026-08-07 ~15:52 ET — CLOSE (no trades)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
