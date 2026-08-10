@@ -6,6 +6,23 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-10 ~12:38 ET — MIDDAY (no action)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true` (next_close 2026-08-10T16:00:00-04:00).
+- **Account:** equity USD 99,409.96, cash USD 67,595.56 (68.001%), long MV USD 31,814.40 (32.007%: LLY 9.778%+NVDA 3.927%+UNH 10.331%+V 7.970%), buying power USD 359,462.56. `last_equity` USD 99,264.52 (08-07 close).
+- **Shock check:** +0.1465% vs `last_equity` — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`) vs equity USD 99,409.96 — drawdown **0.9092%**. NOT triggered (9.0908pp headroom).
+- **Positions (% from entry):** LLY +3.458% (USD 324.91), NVDA −1.367% (USD −54.12), UNH −2.730% (USD −288.25), V +1.416% (USD 110.59). None near the −7% cut, none up >15% (no tightening).
+- **News scan:** no position crossed the ±3%/+10% trigger (UNH closest at −2.730%, still inside the −3% line) — no WebSearch needed this run.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 224.76/stop USD 202.284, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades this run; no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 20.109% (USD 19,988.51), Financials (V) 7.970% (USD 7,921.87), Tech (NVDA) 3.927% (USD 3,903.93), cash 68.001% (USD 67,595.56) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10) — unchanged; midday never opens new positions.
+- **Notify:** Telegram sent, plain prefix (no cuts, no tightens, no unprotected stop, no shock).
+- **Commit:** done.
+
 ## 2026-08-10 ~09:44 ET — MARKET-OPEN (no trades)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
