@@ -6,6 +6,28 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-10 ~15:52 ET — CLOSE (no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Half-day check:** `clock` `next_close` = 2026-08-10T16:00:00-04:00 — normal full session, not a half-day.
+- **Account (EOD, ~15:52 ET):** equity USD 99,509.41, cash USD 67,595.56 (67.933%), long MV USD 31,913.85 (32.069%: LLY 9.895%+NVDA 3.945%+UNH 10.278%+V 7.957%), buying power USD 359,741.02. `last_equity` USD 99,264.52 (08-07 close).
+- **Today's P/L:** +USD 244.89 (**+0.2467%**).
+- **SPY:** `snapshot` dailyBar.c USD 772.48 today vs prevDailyBar.c USD 773.16 (08-07) — today's SPY return **−0.0880%**.
+- **Bull vs SPY since inception (2026-07-01):** Bull −0.4906% (USD 100,000 base) vs SPY +3.5961% (anchor USD 745.665) — **−4.0867pp gap**.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`, unchanged) vs equity USD 99,509.41 — drawdown **0.8101%**. NOT triggered (9.1899pp headroom, not near the −10% level).
+- **Positions (% from entry, live):** LLY +4.781% (USD 449.15), NVDA −0.838% (USD −33.15), UNH −3.121% (USD −329.50), V +1.359% (USD 106.19). None near the −7% cut (close places no orders regardless).
+- **Market context (WebSearch, `stock market summary today August 10 2026`):** indices roughly flat (S&P +0.01%, Dow −0.14%, Nasdaq −0.11%). NVDA fell ~3% intraday on a Financial Times report that it's arranging a USD 500B AI-infrastructure financing package with Apollo, Blackstone, Goldman Sachs, KKR and others, plus renewed competitive concern over Microsoft's in-house "Maia 300" chip — read as expansionary AI-capex news, not a demand problem; not thesis-breaking ahead of NVDA's 08-26 earnings. Rising oil prices and Iran-negotiation headlines also weighed on the broader tape, following Friday's S&P record close. LLY: no thesis-breaking news (Q2 beat-and-raise, FY26 guidance raised to USD 85-87B). UNH: only a routine top-exec stock sale (08-08), no negative catalyst. V: Goldman Sachs reiterated Buy (PT USD 438), BioCatch deal proceeding.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 224.76/stop USD 202.284, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades today; close is read-only — no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 20.171% (USD 20,071.50), Financials (V) 7.957% (USD 7,917.47), Tech (NVDA) 3.945% (USD 3,924.90), cash 67.933% (USD 67,595.56) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10) — unchanged; this closes Monday, week continues.
+- **Race scoreboard:** Bull −0.491% since inception (07-01) vs AGGRO's last-known (stale, 2026-06-23 EOD, now **48 days** stale) −7.123% since its own inception (06-04) vs SPY +3.596% (Bull's own 07-01 baseline).
+- **Friday watchdog:** N/A (Monday).
+- **Monthly/quarterly housekeeping:** N/A (not first trading day of month; not a quarterly month).
+- **Notify:** Telegram sent, plain prefix (no losing exit, no circuit breaker, no Friday watchdog).
+- **Commit:** done.
+
 ## 2026-08-10 ~12:38 ET — MIDDAY (no action)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
