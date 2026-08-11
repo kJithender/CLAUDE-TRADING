@@ -6,6 +6,31 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-11 ~15:52 ET — CLOSE (no trades)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, `next_close` 2026-08-11T16:00:00-04:00 (not a half-day), next open 2026-08-12 09:30 ET.
+- **Dedup check:** `memory/performance.csv` had no 2026-08-11 row for `bull` — appending fresh, no dedup needed.
+- **Account (EOD, ~15:52 ET):** equity USD 99,258.62, cash USD 67,595.56 (68.101%), long MV USD 31,663.06 (31.899%: LLY 9.782%+NVDA 3.943%+UNH 10.147%+V 8.028%), buying power USD 359,038.81. `last_equity` USD 99,534.52 (08-10 close).
+- **Today's P/L:** −USD 275.90 (**−0.2772%**).
+- **SPY:** `bars SPY 1Day` explicit-date-range dailyBar.c USD 770.05 today vs USD 773.02 (08-10) — today's SPY return **−0.3842%**.
+- **Bull vs SPY since inception (2026-07-01):** Bull −0.74138% (USD 100,000 base) vs SPY +3.2703% (anchor USD 745.665) — **−4.0117pp gap**.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`, unchanged) vs equity USD 99,258.62 — drawdown **1.0602%**. NOT triggered (8.9398pp headroom, not near the −10% level).
+- **Positions (% from entry, live):** LLY +3.334% (USD +313.23), NVDA −1.129% (USD −44.67), UNH −4.596% (USD −485.25), V +2.004% (USD +156.57). None near the −7% cut (close places no orders regardless).
+- **Market context (WebSearch, `stock market summary today August 11 2026`):** indices modestly lower ahead of tomorrow's July CPI print (S&P −0.3%, Dow −0.2%, Nasdaq −0.6% as of early afternoon) as traders stayed cautious pre-inflation-data; the lack of a Strait of Hormuz deal kept oil volatile (Brent briefly topped USD 90 before easing below USD 87, WTI above USD 83). Broad, macro-driven softness, not company-specific for any held name. No thesis-breaking news for LLY, V, or NVDA.
+- **UNH news check (down >3% from entry, worst position):** WebSearch (`UNH UnitedHealth stock news today August 11 2026`) found no fresh negative company-specific catalyst dated today — most recent items are the already-known 08-07/08-08 routine insider sale and the still-operative Q2 beat-and-raise recovery story (27-analyst Buy consensus, avg PT USD 475.23). Today's further −1.436% intraday move reads as part of the broad pre-CPI pullback, not a thesis break. HOLD, no action.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM USD 1,237.44/stop USD 1,113.696, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 224.76/stop USD 202.284, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades today; close is read-only — no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.928% (USD 19,779.83), Financials (V) 8.028% (USD 7,967.85), Tech (NVDA) 3.943% (USD 3,913.38), cash 68.101% (USD 67,595.56) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10) — unchanged; this closes Tuesday, week continues.
+- **Race scoreboard:** Bull −0.741% since inception (07-01) vs AGGRO's last-known (stale, 2026-06-23 EOD, now **49 days** stale) −7.123% since its own inception (06-04) vs SPY +3.270% (Bull's own 07-01 baseline).
+- **Friday watchdog:** N/A (Tuesday).
+- **Monthly/quarterly housekeeping:** N/A (not first trading day of month; not a quarterly month).
+- **performance.csv:** row appended (2026-08-11, bull, 99258.62, 67595.56, 770.05).
+- **Notify:** Telegram sent, plain prefix (no loss-close, no breaker, no watchdog).
+- **Commit:** done.
+
 ## 2026-08-11 ~12:36 ET — MIDDAY (risk check only, no action)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
