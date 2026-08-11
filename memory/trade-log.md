@@ -6,6 +6,21 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-11 ~09:48 ET — MARKET-OPEN (no trades; plan was empty)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Plan check:** today's (2026-08-11) "Planned trades for today" block in `research-log.md` has `trades: []` — pre-market found no watchlist candidate cleared its gate. No `EXECUTED:` line was present yet (first run today).
+- **Market:** `clock` confirmed `is_open: true`.
+- **Breaking-news gate:** moot — no planned trades to gate.
+- **Account re-check:** equity USD 99,584.49 vs `last_equity` USD 99,534.52 (08-10 close) = **+0.0502%** — no intraday shock (threshold −4%).
+- **Execution:** none — plan was empty, nothing to place.
+- **Stop audit (`orders open` vs `positions`, live):** LLY `e3547b9e` (HWM USD 1,237.44/stop USD 1,113.696, qty 8 — ratcheted up since pre-market as price rose), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 224.76/stop USD 202.284, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed, no fills since pre-market.
+- **Sector exposure:** Healthcare (LLY+UNH) 20.158% (USD 20,074.48), Financials (V) 7.981% (USD 7,946.84), Tech (NVDA) 3.981% (USD 3,964.14), cash 67.879% (USD 67,595.56) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10) — unchanged.
+- **Notify:** Telegram sent — no trades, plan was empty.
+- **Commit:** done.
+
 ## 2026-08-11 ~08:26 ET — PRE-MARKET (no trades; COST posts a first, unconfirmed positive SMA cross)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
