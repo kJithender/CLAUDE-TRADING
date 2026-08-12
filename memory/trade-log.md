@@ -6,6 +6,23 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-12 ~09:40 ET — MARKET-OPEN (no trades; plan was empty)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Plan check:** most recent "Planned trades for today" JSON block in `research-log.md` is `plan_date: 2026-08-12` (today), `trades: []` — pre-market ran today, plan is not stale, nothing to execute.
+- **Market:** `clock` confirmed `is_open: true`, next close 2026-08-12T16:00:00-04:00 — normal session.
+- **Breaking-news gate:** moot, no planned trades to gate.
+- **Account (re-checked live):** equity USD 99,312.71, cash USD 67,595.56 (68.065%), long MV USD 31,717.15 (31.935%: LLY 9.700%+NVDA 4.003%+UNH 10.194%+V 8.040%), buying power USD 359,190.25. `last_equity` USD 99,267.51 (08-11 close).
+- **Shock check:** +0.0455% vs `last_equity` — no shock (threshold −4%).
+- **Positions (% from entry, live):** LLY +2.535%, NVDA +0.44%, UNH −4.111%, V +2.218%. None near the −7% cut.
+- **Stop audit (`orders open` vs `positions`):** LLY `e3547b9e` (HWM USD 1,237.44/stop USD 1,113.696, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 224.76/stop USD 202.284, qty 18) — all 4 status `new` (live), quantities match positions exactly, no gap. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** no stop fills since pre-market — all 4 positions unchanged, no `closed-trades.md` entries needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.893% (USD 19,756.04), Financials (V) 8.040% (USD 7,984.57), Tech (NVDA) 4.003% (USD 3,975.48), cash 68.065% (USD 67,595.56) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10, unchanged).
+- **Notify:** Telegram sent — no trades, reason given.
+- **Commit:** done.
+
 ## 2026-08-12 ~08:26 ET — PRE-MARKET (no trades; COST's cross reverses, unconfirmed; CPI due 8:30 AM ET)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
