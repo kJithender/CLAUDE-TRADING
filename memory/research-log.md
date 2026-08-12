@@ -5,6 +5,82 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-08-12 — Pre-market research (~08:26 ET, Wednesday) — PLAN: no trades (every watchlist name still fails its gate; COST's cross reverses, unconfirmed; July CPI due 8:30 AM ET)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was `{}` (free) at start of this run. Lock acquired (`premarket`, started 2026-08-12T12:24:22Z, expires 2026-08-12T12:32:22Z).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-08-12T09:30:00-04:00`, `next_close: 2026-08-12T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-08-12)
+S&P 500 futures edged up ~+0.2% pre-market (E-mini around 7,776), Nasdaq higher, Dow futures climbing — broadly muted as markets brace for **today's July CPI print, due 8:30 AM ET (6 minutes after this note was written) — not yet released as of this pre-market run.** Consensus: headline CPI +0.1% MoM / +3.4% YoY (down from June's 3.5%), core CPI +0.32% MoM / +2.5% YoY. A hotter-than-expected print could revive September-hike odds; a cooler print gives the Fed more room to hold/cut. This is a real, live volatility catalyst for the rest of today's session — flagged explicitly for market-open and midday, not actionable at pre-market since the number isn't out yet. **10yr Treasury eased to 4.66%** (tradingeconomics.com, explicitly dated 2026-08-12, down 0.03pp from the prior session) — comfortably below the 4.75% new-buy gate, though today's CPI print could move it materially either direction. PPI follows tomorrow, 2026-08-13. [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-wednesday-august-12-dow-sp-500-nasdaq-cpi-report-091555133.html), [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-12-2026), [tradingeconomics.com](https://tradingeconomics.com/united-states/government-bond-yield), [Kiplinger](https://www.kiplinger.com/investing/economy/cpi-report-july-2026-what-to-expect)
+
+### Held position — LLY — what changed since yesterday
+Alpaca live data: 8sh @ avg USD 1,174.35625, current USD 1,212.86 (+3.279% from entry, USD +308.03). Trailing stop `e3547b9e` HWM USD 1,237.44 / stop USD 1,113.696 — live, unchanged. **What changed:** nothing thesis-breaking. WebSearch found only already-known items — Q2 beat-and-raise (revenue +47.7% YoY, adj EPS +27.3% beat, FY26 guidance raised to USD 85-87B) remains the operative story; UK approval of oral GLP-1 pill "Foundayo" adds competitive pressure vs Novo Nordisk in that market (not the core US Medicare Bridge thesis) but is not a US thesis break; new Amplia Therapeutics oncology trial collaboration is a minor positive, not material. Dividend USD 1.73/share, ex-date 2026-08-14 (2 days out), not an action item. `review_by` 2026-09-04, not due.
+
+### Held position — UNH — what changed since yesterday
+Alpaca live data: 25sh @ avg USD 422.28, current USD 402.88 (−4.594% from entry, USD −485.00). Trailing stop `225cb079` HWM USD 436.945 / stop USD 393.2505 — live, unchanged, buffer ~2.41pp above the −7% line. **What changed:** nothing material — WebSearch found the same Tennessee health-hub investment already noted yesterday (USD 4M community-health commitment, immaterial) plus general "recovery on Medicare Advantage" framing; no fresh negative catalyst. Conviction stays **B** (last set 08-10 Monday review; next review Monday 08-17, which is also `review_by`). `review_by` 08-17, not due today.
+
+### Held position — V — what changed since yesterday
+Alpaca live data: 22sh @ avg USD 355.058182, current USD 361.80 (+1.899% from entry, USD +148.32). Trailing stop `2b0a93ba` HWM USD 373.96 / stop USD 336.564 — live, unchanged. **What changed:** nothing thesis-breaking — yesterday's dividend ex-date (08-11, USD 0.67/share) already passed, not an action item; BioCatch acquisition and Strong Buy consensus (37 buy/0 sell) remain the operative story. `review_by` 08-15 (3 days out), not due today.
+
+### Held position — NVDA — what changed since yesterday
+Alpaca live data: 18sh @ avg USD 219.891667, current USD 219.25 (−0.292% from entry, USD −11.55). Trailing stop `49c544b0` HWM USD 224.76 / stop USD 202.284 — live, unchanged. **What changed:** nothing thesis-breaking — the USD 500B AI-infrastructure financing consortium (Apollo, Blackstone, Goldman Sachs, KKR et al.) is the same story already logged 08-10/08-11, not new; StockInvest.us upgraded its technical rating from Hold to a Buy Candidate (score 1.90/10), a minor positive, non-thesis-changing data point. Earnings confirmed 2026-08-26 (10 trading days out), no blackout. `review_by` 08-24, not due today.
+
+### Thesis contracts
+LLY (review_by 09-04), UNH (08-17), V (08-15), NVDA (08-24) — none due today, none triggered. Today is Wednesday, not Monday — no conviction-weighted review due (last run 08-10: LLY A, V A, UNH B, NVDA A; no name at 3 consecutive C's).
+
+### Watchlist re-verification (fresh Alpaca bars via direct `data.alpaca.markets` curl, explicit date range 2026-05-01 to 2026-08-11, `feed=iex`, 50-day SMA / 20-day ATR%)
+| Ticker | Last close (08-11) | vs 50-day SMA | 20-day ATR% | Gate |
+|---|---|---|---|---|
+| PWR | 670.26 | −0.595% | 3.85% | FAIL — still below the 50-day (was −2.105% 08-10, narrowed slightly); moot regardless, the GuruFocus valuation veto (~48% above fair value) still stands |
+| MSFT | 503.77 | **+22.981%** | 2.82% | FAIL (extended) — still deeply past the 10% chase threshold, no chase |
+| COST | 944.09 | **−0.654%** | 1.66% | FAIL — the 08-11 first positive cross (+0.233%) **reversed and did not confirm** (a 2nd consecutive session is required per the standing multi-session-confirmation rule); back to a clean fail |
+| LRCX | 311.33 | −7.733% | 6.12% | FAIL — valuation (P/E >60x) remains separately disqualifying regardless of technicals |
+| SHOP | — | — | — | Not re-pulled today; failed decisively on both extension (+27.128%) and valuation two sessions running (08-07 unvetted add, 08-10 first full vetting fail) — no reason to expect a change without a substantial pullback |
+
+No watchlist candidate clears the entry bar today. COST's single-session cross flagged yesterday as "worth watching" did not confirm — exactly the outcome the standing discipline (NVDA's own 6+-failed-crosses history) is built to filter out.
+
+### Earnings-window rule
+- **Held names:** none of the 4 positions (LLY 09-04 review_by / no near-term earnings, UNH next earnings 10-27, V next earnings ~late October, NVDA 08-26) report within 2 trading days. No forced decision due.
+- **Buy candidates:** moot — no watchlist name clears its technical/valuation gate today.
+
+### Cash-drag check
+Cash sits at 68.088% (USD 67,595.56 of USD 99,276.54 equity), still well above the 25-40% target band — now an 11th+ consecutive week at an elevated level. 0/3 weekly new-position slots used this week (week of 2026-08-10). Every watchlist candidate still fails its gate today for a distinct, freshly-re-verified reason — COST's cross reversed rather than confirming, and no other name moved meaningfully. Staying in cash remains the correct, actively-re-verified call, not a passive default.
+
+### Drawdown circuit breaker
+`history 1A 1D` high-water mark remains USD 100,322.08 (2026-07-21 close, unchanged). Current live equity USD 99,276.54 → drawdown **1.0423%** — NOT triggered (8.9577pp headroom). New buys remain permitted on this gate (moot today — no candidate clears the combined gate anyway).
+
+### Intraday shock check
+Equity USD 99,276.54 vs Alpaca `last_equity` USD 99,267.51 (2026-08-11 close) = **+0.0091%** — no shock (threshold −4%; market not yet open).
+
+### Sector cap
+Healthcare (LLY+UNH) 19.919% (USD 19,774.88), Financials (V) 8.017% (USD 7,959.60), Tech (NVDA) 3.976% (USD 3,946.50), cash 68.088% (USD 67,595.56) — all well within the 60% single-sector cap.
+
+### Stop audit (`orders open` vs `positions`, live)
+LLY `e3547b9e` (HWM USD 1,237.44 / stop USD 1,113.696, qty 8), UNH `225cb079` (HWM USD 436.945 / stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96 / stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 224.76 / stop USD 202.284, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS.**
+
+### Weekly new-position count
+0/3 used this week (week of 2026-08-10, unchanged) — moot today since no candidate clears the gate.
+
+### Planned trades for today
+
+No trades planned. Every watchlist name fails its technical/valuation gate — PWR remains below its 50-day, MSFT is deeply extended, COST's single-session positive cross from yesterday reversed without confirming, LRCX still fails technically and on valuation, and SHOP remains extended/overvalued (not re-pulled today, no reason to expect a change). No held position has a thesis contract due today; no Monday conviction review due (Wednesday). 10yr yield (4.66%, eased) stays below the 4.75% gate, drawdown breaker not triggered (1.04%), no intraday shock, sector caps and cash policy all in order. **Today's July CPI print (8:30 AM ET, 6 minutes after this note) is a real volatility catalyst** — consensus +0.1% MoM/+3.4% YoY headline, core +0.32% MoM/+2.5% YoY — flagged explicitly for market-open and midday; not a reason to change today's plan since the number isn't out yet.
+
+```json
+{
+  "plan_date": "2026-08-12",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-08-11 — Pre-market research (~08:26 ET, Tuesday) — PLAN: no trades (every watchlist name still fails its gate; COST posts a first, unconfirmed positive cross)
 
 ### Live-switch guard

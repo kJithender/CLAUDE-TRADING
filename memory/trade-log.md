@@ -6,6 +6,29 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-12 ~08:26 ET — PRE-MARKET (no trades; COST's cross reverses, unconfirmed; CPI due 8:30 AM ET)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false` (pre-market), next open 09:30 ET today.
+- **Account:** equity USD 99,276.54, cash USD 67,595.56 (68.088%), long MV USD 31,680.98 (31.911%: LLY 9.774%+NVDA 3.976%+UNH 10.146%+V 8.017%), buying power USD 359,088.98. `last_equity` USD 99,267.51 (08-11 close).
+- **Shock check:** +0.0091% vs `last_equity` — no shock (threshold −4%; market not yet open).
+- **Drawdown circuit breaker:** equity USD 99,276.54 vs HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`, unchanged) — drawdown **1.0423%**. NOT triggered (8.9577pp headroom).
+- **10yr Treasury:** 4.66% (tradingeconomics.com, explicitly dated 08-12, eased 0.03pp) — below the 4.75% new-buy gate.
+- **Held positions (% from entry, live):** LLY +3.279% (Q2 beat-and-raise intact, dividend ex-date 08-14), UNH −4.594% (no fresh negative catalyst, conviction stays B), V +1.899% (BioCatch/Strong-Buy intact, dividend ex-date 08-11 already passed), NVDA −0.292% (500B USD AI-financing consortium story already known, StockInvest technical rating upgraded to Buy Candidate).
+- **Thesis contracts:** LLY (review_by 09-04), UNH (08-17), V (08-15), NVDA (08-24) — none due today, none triggered.
+- **Conviction review:** Wednesday — no Monday conviction-weighted review due (last run 08-10: LLY A, V A, UNH B, NVDA A; no name at 3 consecutive C's).
+- **Earnings-window rule:** no held name reports within 2 trading days; moot.
+- **Watchlist re-verification (fresh Alpaca bars, explicit date range through 08-11 close):** PWR still below 50-day (−0.595%), MSFT extended (+22.981%), LRCX fails technically and on valuation (−7.733%). **COST's 08-11 first positive cross reversed (−0.654%)** — did not confirm on a second session, back to a clean fail. SHOP not re-pulled today (still extended/overvalued, no reason to expect a change).
+- **Sizing/entry check:** moot — no candidate clears the combined technical + valuation gate.
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,237.44/stop USD 1,113.696, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 224.76/stop USD 202.284, qty 18) — all 4 confirmed live via `orders open`, quantities match positions exactly. **4/4 PASS.**
+- **Sector exposure:** Healthcare (LLY+UNH) 19.919% (USD 19,774.88), Financials (V) 8.017% (USD 7,959.60), Tech (NVDA) 3.976% (USD 3,946.50), cash 68.088% (USD 67,595.56) — all well within the 60% sector cap.
+- **Cash-drag check:** 68.088%, 11th+ consecutive week above the 25-40% target band. Justified: every candidate freshly re-verified and failed today, COST's cross reversed rather than confirming.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10, unchanged from Monday).
+- **Macro note:** July CPI releases today at 8:30 AM ET (6 minutes after this run) — real volatility catalyst, consensus +0.1% MoM/+3.4% YoY headline; PPI follows Thursday 08-13.
+- **Notify:** Telegram sent — no trades planned, market posture, CPI-day flag, and COST's failed confirmation included.
+- **Commit:** done.
+
 ## 2026-08-11 ~15:52 ET — CLOSE (no trades)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
