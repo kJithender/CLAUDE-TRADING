@@ -6,6 +6,22 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-13 ~12:51 ET — MIDDAY (risk check only, no action; all positions within range)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`.
+- **Account:** equity USD 99,361.32, cash USD 67,595.56 (68.038%), long MV USD 31,765.76 (31.977%: LLY 9.796%+NVDA 4.081%+UNH 10.117%+V 7.981%), buying power USD 359,326.36. `last_equity` USD 99,438.41 (08-12 close).
+- **Shock check:** −0.0775% vs `last_equity` — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`, unchanged) vs equity USD 99,361.32 — drawdown **0.9575%**. NOT triggered (9.0425pp headroom).
+- **Positions (% from entry, live):** LLY +3.599%, NVDA +2.432%, UNH −4.810%, V +1.499%. None below the −7% cut line, none above +15% (no tightening).
+- **News scan (UNH, down >3% from entry):** WebSearch (`UNH UnitedHealth stock news today August 13 2026`) — trades USD 403.56, no fresh negative catalyst; recent quarter ~USD 5.5B profit, FY guide USD 18.45-18.95 EPS reaffirmed, USD 2.32/share dividend in view, Bernstein maintains Buy. Normal drift, not a thesis break. HOLD, no action.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM USD 1,240.00/stop USD 1,116.00, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 227.22/stop USD 204.498, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades this run — no exits, no `closed-trades.md`/`trades.jsonl` entries needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.913% (USD 19,782.21), Financials (V) 7.981% (USD 7,928.36), Tech (NVDA) 4.081% (USD 4,054.32), cash 68.038% (USD 67,595.56) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10) — unchanged; midday never opens new positions.
+- **Result:** No action. Journal, portfolio.md refreshed, Telegram notify sent, lock released.
+
 ## 2026-08-13 ~08:26 ET — PRE-MARKET (no trades; PWR posts a fresh, unconfirmed cross, still valuation-vetoed; July PPI due 8:30 AM ET)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
