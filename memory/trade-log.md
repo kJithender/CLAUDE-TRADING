@@ -6,6 +6,31 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-13 ~15:52 ET — CLOSE (no trades; since-inception gap vs SPY widens to −4.93pp, widest of this track record)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, `next_close` 2026-08-13T16:00:00-04:00 (not a half-day), next open 2026-08-14 09:30 ET.
+- **Dedup check:** `memory/performance.csv` had no 2026-08-13 row for `bull` — appending fresh, no dedup needed.
+- **Account (EOD, ~15:52 ET):** equity USD 99,324.59, cash USD 67,595.56 (68.054%), long MV USD 31,729.03 (31.945%: LLY 9.735%+NVDA 4.090%+UNH 10.050%+V 8.068%), buying power USD 359,223.52. `last_equity` USD 99,438.41 (08-12 close).
+- **Today's P/L:** −USD 113.82 (**−0.1145%**).
+- **SPY:** `snapshot` dailyBar.c USD 777.42 today vs USD 772.51 (08-12, value of record) — today's SPY return **+0.6357%**.
+- **Bull vs SPY since inception (2026-07-01):** Bull −0.6754% (USD 100,000 base) vs SPY +4.2592% (anchor USD 745.665) — **−4.9346pp gap, the widest of this track record**, surpassing 08-04's −4.7465pp.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`, unchanged) vs equity USD 99,324.59 — drawdown **0.9942%**. NOT triggered (9.0058pp headroom, not near the −10% level).
+- **Positions (% from entry, live):** LLY +2.930% (USD +275.31), NVDA +2.612% (USD +103.38), UNH −5.437% (USD −574.00), V +2.594% (USD +202.66). None near the −7% cut (close places no orders regardless).
+- **Market context (WebSearch, `stock market summary today August 13 2026`):** S&P 500 closed at a fresh all-time high, 7,814.88, +0.6% and topping 7,800 for the first time; Nasdaq +0.8%. Cooler July CPI (3.4% YoY, +0.1% MoM) and flat July PPI eased Fed rate-hike bets, oil prices fell. Data-center memory suppliers led (SanDisk +16.6%, Western Digital +8.6%) on strong long-term guidance. Broad, macro-driven strength concentrated in tech/semis — the same mirror-image mechanism documented repeatedly since 07-29 (cash-heavy, non-mega-cap-tech book gives back ground on broad risk-on days). No thesis-breaking news for LLY, V, or NVDA. [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-13-2026)
+- **UNH news check (down >3% from entry, worst position):** WebSearch (`UnitedHealth lawsuit cybersecurity governance August 2026`) found an amended shareholder/investor lawsuit filed 2026-08-07 in Minnesota federal court, alleging the board ignored cybersecurity warning signs tied to the 2024 Change Healthcare breach (the largest US healthcare data breach on record) and separately alleging a shut-down internal Medicare-billing audit program. This is litigation re-litigating an already-known, 2+ year old historical breach and known DOJ Medicare-billing scrutiny — not a fresh operational catalyst — and Bernstein still rates the stock Buy. Reads as background litigation noise layered onto the existing recovery thesis, not a thesis break. HOLD, no action — but flagged explicitly since UNH's forced review_by is 2026-08-17 (4 days out) and the position is now the furthest below entry (−5.437%) of any held name. [Insurance Journal](https://www.insurancejournal.com/news/national/2026/08/13/881369.htm)
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM USD 1,240.00/stop USD 1,116.00, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 227.22/stop USD 204.498, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades today; positions unchanged from midday (LLY 8, NVDA 18, UNH 25, V 22) — no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.789% (USD 19,653.16), Financials (V) 8.068% (USD 8,013.94), Tech (NVDA) 4.090% (USD 4,061.43), cash 68.054% (USD 67,595.56) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10) — unchanged; this closes Thursday, week continues.
+- **Race scoreboard:** Bull −0.675% since inception (07-01) vs AGGRO's last-known (stale, 2026-06-23 EOD, now **51 days** stale) −7.123% since its own inception (06-04) vs SPY +4.259% (Bull's own 07-01 baseline).
+- **Friday watchdog:** N/A (Thursday).
+- **Monthly/quarterly housekeeping:** N/A (not first trading day of month; not a quarterly month).
+- **performance.csv:** row appended (2026-08-13, bull, 99324.59, 67595.56, 777.42).
+- **Notify:** Telegram sent, plain prefix (no loss-close, no breaker, no watchdog).
+- **Commit:** done.
+
 ## 2026-08-13 ~12:51 ET — MIDDAY (risk check only, no action; all positions within range)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
