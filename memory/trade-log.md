@@ -6,6 +6,29 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-13 ~08:26 ET — PRE-MARKET (no trades; PWR posts a fresh, unconfirmed cross, still valuation-vetoed; July PPI due 8:30 AM ET)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false` (pre-market), next open 09:30 ET today.
+- **Account:** equity USD 99,577.35, cash USD 67,595.56 (67.882%), long MV USD 31,981.79 (32.117%: LLY 9.876%+NVDA 4.037%+UNH 10.222%+V 7.986%), buying power USD 359,931.25. `last_equity` USD 99,438.41 (08-12 close).
+- **Shock check:** +0.1397% vs `last_equity` — no shock (threshold −4%; market not yet open).
+- **Drawdown circuit breaker:** equity USD 99,577.35 vs HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`, unchanged) — drawdown **0.7424%**. NOT triggered (9.2576pp headroom).
+- **10yr Treasury:** 4.69% (tradingeconomics.com, as of 08-12 close) — below the 4.75% new-buy gate.
+- **Held positions (% from entry, live):** LLY +4.672% (Q2 beat-and-raise intact, dividend ex-date tomorrow 08-14), UNH −3.597% (no fresh negative catalyst, conviction stays B), V +1.789% (BioCatch/robust-quarter story intact, dividend ex-date already passed), NVDA +1.559% (Physical AI Coalition expansion, no thesis change).
+- **Thesis contracts:** LLY (review_by 09-04), UNH (08-17), V (08-15, 2 days out), NVDA (08-24) — none due today, none triggered.
+- **Conviction review:** Thursday — no Monday conviction-weighted review due (last run 08-10: LLY A, V A, UNH B, NVDA A; no name at 3 consecutive C's).
+- **Earnings-window rule:** no held name reports within 2 trading days; moot.
+- **Watchlist re-verification (fresh Alpaca bars, explicit date range through 08-12 close):** **PWR posts its first positive SMA cross in a week (+0.586%, was −0.595% 08-11)** — single session, unconfirmed; moot regardless since a fresh GuruFocus pull (08-08) still shows ~44% overvaluation ("Significantly Overvalued"). MSFT extended (+20.030%), SHOP extended (+24.080%), COST fails (−0.090%), LRCX fails technically (−3.399%, gap narrowed materially) and on valuation (P/E >60x).
+- **Sizing/entry check:** moot — no candidate clears the combined technical + valuation gate.
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,237.44/stop USD 1,113.696, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 225.10/stop USD 202.59, qty 18) — all 4 confirmed live via `orders open`, quantities match positions exactly. **4/4 PASS.**
+- **Sector exposure:** Healthcare (LLY+UNH) 20.097% (USD 20,011.01), Financials (V) 7.986% (USD 7,951.02), Tech (NVDA) 4.037% (USD 4,019.76), cash 67.882% (USD 67,595.56) — all well within the 60% sector cap.
+- **Cash-drag check:** 67.882%, 12th+ consecutive week above the 25-40% target band. Justified: every candidate freshly re-verified and failed today, PWR's cross is unconfirmed and separately valuation-vetoed.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10, unchanged from Monday).
+- **Macro note:** July PPI releases today at 8:30 AM ET (5 minutes after this run) — real volatility catalyst, consensus +0.2% MoM headline/+0.3% core; follows yesterday's cooler-than-feared July CPI (+0.1% MoM).
+- **Notify:** Telegram sent — no trades planned, market posture, PPI-day flag, and PWR's unconfirmed cross included.
+- **Commit:** done.
+
 ## 2026-08-12 ~15:52 ET — CLOSE (no trades)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
