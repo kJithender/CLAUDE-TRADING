@@ -1635,6 +1635,22 @@ _Entries older than 30 days have been moved to `memory/archive/`. See archive fi
 - **Sector exposure:** Healthcare (LLY+UNH) 19.512% (USD 19,292.19), Financials (V) 8.115% (USD 8,023.95), cash 72.379% (USD 71,553.62) — all well within the 60% sector cap.
 - **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM 1,232.00/stop 1,108.80), UNH `225cb079` (HWM 436.945/stop 393.2505), V `2b0a93ba` (HWM 373.96/stop 336.564) — all 3 status `new` (live), quantities match positions exactly (8/25/22). **3/3 PASS** — no recreation needed.
 - **Exits/reconciliation:** 0 trades this run — midday never opens new positions; no exits, no `closed-trades.md` reconciliation needed.
+
+## 2026-08-13 ~09:42 ET — MARKET-OPEN (Thursday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for market-open. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Plan check:** most recent `research-log.md` plan block is `plan_date: 2026-08-13, trades: []` (pre-market ran today, ~08:25 ET) — no `EXECUTED:` line beneath it (this run had not yet run today). Pre-market found PWR's fresh SMA cross unconfirmed and still valuation-vetoed (~44% GuruFocus overvaluation); no other watchlist name clears its gate (MSFT/SHOP extended, COST/LRCX fail). **No trades to execute — steps 2-4 (breaking-news gate, re-check, execution) are no-ops today.**
+- **Market:** `clock` confirmed `is_open: true` (next_close 2026-08-13T16:00:00-04:00) — normal trading session.
+- **Account (live, ~09:42 ET):** Equity USD 99,504.91, cash USD 67,595.56 (67.933%), long market value USD 31,909.35 (32.068%: LLY 9.855%+NVDA 4.070%+UNH 10.184%+V 7.960%), buying power USD 359,728.41. `last_equity` USD 99,438.41 (08-12 close).
+- **Shock check:** equity vs `last_equity` = **+0.0669%** — no shock (threshold −4%).
+- **Drawdown circuit breaker:** pulled `history 1A 1D` — HWM USD 100,322.08 (2026-07-21 close, unchanged) vs equity USD 99,504.91 — drawdown **0.8146%**. NOT triggered (9.1854pp headroom).
+- **Positions (% from entry, live):** LLY +4.377% (USD +411.23), NVDA +2.323% (USD +91.95), UNH −4.013% (USD −423.625), V +1.390% (USD +108.61). None within range of the −7% cut (midday's job regardless).
+- **Sector exposure:** Healthcare (LLY+UNH) 20.039% (USD 19,939.455), Financials (V) 7.960% (USD 7,919.89), Tech (NVDA) 4.070% (USD 4,050.00), cash 67.933% (USD 67,595.56) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM USD 1,240.00/stop USD 1,116.00, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 227.22/stop USD 204.498, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades this run, 4 positions unchanged since pre-market — no exits, no `closed-trades.md` reconciliation needed.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10) — unchanged; no trades placed.
+- **Notify:** Telegram sent, plain prefix (no trades, no cut, no shock, no unprotected stop, no circuit breaker).
+- **Commit:** done.
 - **Weekly new-position count:** 0/3 used this week (week of 2026-08-03).
 - **Notify:** Telegram sent, plain prefix (no cut, no tightening, no unprotected stop, no shock, no circuit breaker).
 - **Commit:** done.
