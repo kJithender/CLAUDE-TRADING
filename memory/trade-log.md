@@ -6,6 +6,31 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-14 ~15:52 ET — CLOSE (no trades; since-inception gap vs SPY sets a new widest-ever −4.9378pp on a post-ATH pause day; UNH's litigation story is confirmed still stale, not new)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, `next_close` 2026-08-14T16:00:00-04:00 (not a half-day), next open 2026-08-17 (Monday) 09:30 ET.
+- **Dedup check:** `memory/performance.csv` had no 2026-08-14 row for `bull` — appending fresh, no dedup needed.
+- **Account (EOD, ~15:52 ET):** equity USD 99,157.82, cash USD 67,595.56 (68.171%), long MV USD 31,562.26 (31.829%: LLY 9.522%+NVDA 4.093%+UNH 10.129%+V 8.089%), buying power USD 358,756.56. `last_equity` USD 99,339.36 (08-13 close).
+- **Today's P/L:** −USD 181.54 (**−0.1828%**).
+- **SPY:** `bars SPY 1Day` explicit dailyBar.c USD 776.20 today vs USD 777.42 (08-13, value of record) — today's SPY return **−0.1569%**.
+- **Bull vs SPY since inception (2026-07-01):** Bull −0.84218% (USD 100,000 base) vs SPY +4.0956% (anchor USD 745.665) — **−4.9378pp gap, a new widest of this track record**, edging past 08-13's −4.9346pp on a mild post-ATH pullback day (weak July Retail Sales, softer UMich prelim sentiment) rather than a sharp reversal — the same mirror-image mechanism (cash-heavy, non-mega-cap-tech book) documented repeatedly since 07-29, not a new mechanism.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, from `history 1A 1D`, unchanged) vs equity USD 99,157.82 — drawdown **1.1605%**. NOT triggered (8.8395pp headroom, not near the −10% level).
+- **Positions (% from entry, live):** LLY +0.476% (USD +44.75), NVDA +2.534% (USD +100.29), UNH −4.869% (USD −513.998), V +2.693% (USD +210.36). None near the −7% cut (close places no orders regardless).
+- **Market context (WebSearch, `stock market summary today August 14 2026`):** S&P 500 pulled back modestly (~−0.2%) the day after Thursday's fresh ATH close (7,814.88), Dow/Nasdaq also softer, as July Retail Sales fell the most in over a year (8:30 AM ET) and UMich prelim consumer sentiment also came in weaker (10:00 AM ET) — a cautious "pause after record highs" tone, not a risk-off shock. Reddit +10-14% on S&P 500 index inclusion; Globant −12.6% on weak earnings — neither relevant to held names. No thesis-breaking news for LLY, V, or NVDA. [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-friday-august-14-dow-sp-500-nasdaq-102635519.html), [Motley Fool](https://www.fool.com/coverage/stock-market-today/2026/08/14/stock-market-midday-aug-14-stocks-wobble-as-retail-sales-disappoint-reddit-jumps-14/)
+- **UNH news check (down >3% from entry, worst position):** WebSearch confirmed today's UNH coverage (ad-hoc-news.de, dated 08-14) is still the same amended shareholder-derivative complaint filed 08-07 (Minnesota federal court, board negligence on cybersecurity/Medicare-billing/Change Healthcare firewall misrepresentations) — media re-headlining an unchanged case, no new filing or catalyst today. UNH traded ~−1.6% intraday, consistent with continued overhang from that stale story plus the weak broader tape, not a fresh company-specific shock. Reads as the third consecutive day of the same recirculating story (first flagged 08-13, again today) — HOLD, no action. [Modern Healthcare](https://www.modernhealthcare.com/insurance/mh-unitedhealth-investor-suit-medicare-change-healthcare/), [ClaimsJournal](https://www.claimsjournal.com/news/national/2026/08/13/339498.htm)
+- **Stop audit (`orders open`, live):** LLY `e3547b9e` (HWM USD 1,240.00/stop USD 1,116.00, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 227.49/stop USD 204.741, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades today; positions unchanged from midday (LLY 8, NVDA 18, UNH 25, V 22) — no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY+UNH) 19.649% (USD 19,482.60), Financials (V) 8.089% (USD 8,021.64), Tech (NVDA) 4.093% (USD 4,058.34), cash 68.171% (USD 67,595.56) — all well within the 60% sector cap.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10) — unchanged, this week closes with zero new positions (every watchlist name failed its gate all 5 sessions).
+- **Race scoreboard:** Bull −0.842% since inception (07-01) vs AGGRO's last-known (stale, 2026-06-23 EOD, now **52 days** stale) −7.123% since its own inception (06-04) vs SPY +4.096% (Bull's own 07-01 baseline) — Bull remains far ahead of AGGRO on any measure while itself trailing SPY.
+- **Friday watchdog:** newest `weekly-review.md` entry is "Week ending 2026-08-07," exactly 7 days old today — not yet stale (today's own weekly review runs separately at 4:30 PM ET). Not triggered.
+- **Monthly/quarterly housekeeping:** N/A (not first trading day of month; not a quarterly month).
+- **performance.csv:** row appended (2026-08-14, bull, 99157.82, 67595.56, 776.20).
+- **Notify:** Telegram sent, plain prefix (no loss-close, no breaker, no watchdog).
+- **Commit:** done.
+
 ## 2026-08-14 ~12:48 ET — MIDDAY (risk check only, no action; all positions within range)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
