@@ -82,6 +82,8 @@ No trades planned. COST posted a first, unconfirmed positive SMA cross (+1.176%,
 }
 ```
 
+EXECUTED: 2026-08-14T10:42 ET — no trades (plan empty: no watchlist candidate cleared its technical gate). Market open confirmed (`clock` `is_open: true`). Breaking-news gate: moot, no planned trades to gate. Account re-check: equity USD 99,075.53 vs Alpaca `last_equity` USD 99,339.36 (08-13 close) = **−0.2656%** — no intraday shock (threshold −4%). Drawdown circuit breaker: HWM USD 100,322.08 (unchanged) vs equity USD 99,075.53 — drawdown **1.2426%** — NOT triggered (8.7574pp headroom). Positions (% from entry, live): LLY +0.097% (pulled back from pre-market's +2.433% on today's session), NVDA +2.760%, UNH −5.085% (improved slightly from pre-market's −5.455%), V +2.271%. None near the −7% cut (midday's job regardless). Sector exposure: Healthcare (LLY+UNH) 19.604% (USD 19,424.05), Financials (V) 8.063% (USD 7,988.64), Tech (NVDA) 4.105% (USD 4,067.28), cash 68.222% (USD 67,595.56) — all well within the 60% sector cap. Stop audit (`orders open` vs `positions`, live): LLY `e3547b9e` (HWM USD 1,240.00/stop USD 1,116.00, qty 8 matches), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25 matches), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22 matches), NVDA `49c544b0` (HWM USD 227.49/stop USD 204.741, qty 18 matches) — **4/4 PASS**, no recreation needed. No stop fills since pre-market, no exits, no `closed-trades.md` reconciliation needed. Weekly new-position count unchanged: 0/3 used this week (week of 2026-08-10).
+
 ---
 
 ## 2026-08-13 — Pre-market research (~08:25 ET, Thursday) — PLAN: no trades (PWR posts a fresh, unconfirmed positive SMA cross but stays valuation-vetoed; July PPI due 8:30 AM ET)
