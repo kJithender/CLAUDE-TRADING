@@ -5,6 +5,85 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-08-14 — Pre-market research (~08:47 ET, Friday) — PLAN: no trades (COST posts a first, unconfirmed positive SMA cross; retail sales + UMich sentiment due today)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was `{}` (free) at start of this run. Lock acquired (`premarket`, started 2026-08-14T12:00:00Z, expires 2026-08-14T12:08:00Z).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-08-14T09:30:00-04:00`, `next_close: 2026-08-14T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-08-14)
+S&P 500 futures essentially flat (ES=F +0.01%), Nasdaq-100 futures +~0.2%, Dow futures −~0.1% — a mixed, "wait and see" tape as traders digest yesterday's fresh record close (S&P 500 7,814.88, first close above 7,800) driven by cooler July CPI/PPI easing Fed-hike fears; lingering Middle East geopolitical tension is a partial offset to the disinflation optimism. **10yr Treasury 4.65%** (tradingeconomics.com, as of 08-13 close, down from ~4.68% Thursday intraday) — comfortably below the 4.75% new-buy gate. **Today's economic calendar:** July Retail Sales at 8:30 AM ET (consensus +0.3% MoM headline, +0.2% core ex-auto) and University of Michigan Consumer Sentiment (prelim) at 10:00 AM ET (consensus 54.1, down from 55.2) — both real volatility catalysts for the session, not yet released as of this pre-market run. [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-14-2026), [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-friday-august-14-dow-sp-500-nasdaq-102635519.html), [tradingeconomics.com](https://tradingeconomics.com/united-states/government-bond-yield)
+
+### Held position — LLY — what changed since yesterday
+Alpaca live data: 8sh @ avg USD 1,174.35625, current USD 1,202.92 (+2.433% from entry, USD +228.51). Trailing stop `e3547b9e` HWM USD 1,240.00 / stop USD 1,116.00 — live, unchanged. **What changed:** nothing thesis-breaking. Today's dividend ex-date (USD 1.73/share) is mechanical, not a catalyst. WebSearch found Lilly itself is suing six companies over unauthorized copies of its weight-loss drugs — offense, not defense, mildly supportive of the GLP-1-moat thesis if anything. Q2 beat-and-raise (revenue +48% YoY, FY26 guidance ~USD 86B) and the oral GLP-1 pill "Foundayo" gaining traction post-UK approval remain the operative, unchanged story. `review_by` 09-04, not due.
+
+### Held position — UNH — what changed since yesterday
+Alpaca live data: 25sh @ avg USD 422.28, current USD 399.2495 (−5.455% from entry, USD −575.76). Trailing stop `225cb079` HWM USD 436.945 / stop USD 393.2505 — live, unchanged, buffer ~1.55pp above the −7% line. **What changed:** confirmed via WebSearch that today's re-reported "lawsuit" headline is the same 08-07-filed amended shareholder/derivative complaint (Minnesota federal court, tied to the 2024 Change Healthcare breach and Medicare/care-denial allegations) already logged as stale 08-13 — not a fresh incremental catalyst, just recirculating coverage. Separately, JPMorgan raised its PT to USD 516 (from USD 466, Overweight) on the 07-16 Q2 beat-and-raise — a positive, non-thesis-changing data point. No fresh negative catalyst. Conviction stays **B** (last set 08-10 Monday review). `review_by` 08-17 (3 days out, Monday), not due today — the position is now the furthest below entry of any held name and its buffer to the −7% line has compressed to ~1.55pp; worth an explicit watch into Monday's forced review.
+
+### Held position — V — what changed since yesterday
+Alpaca live data: 22sh @ avg USD 355.058182, current USD 365.44 (+2.924% from entry, USD +228.40). Trailing stop `2b0a93ba` HWM USD 373.96 / stop USD 336.564 — live, unchanged. **What changed:** nothing thesis-breaking — no update on the BioCatch acquisition (announced 08-04) today; stock trading near a post-June-2025 high on continued momentum (+10.3% over 4 weeks), Strong Buy consensus and the stablecoin/agentic-commerce (OpenAI, Meta) narrative both intact. `review_by` 08-15 (Saturday, non-trading day) — effectively rolls to Monday 08-17's pre-market alongside UNH's own review_by; not due today.
+
+### Held position — NVDA — what changed since yesterday
+Alpaca live data: 18sh @ avg USD 219.891667, current USD 225.94 (+2.751% from entry, USD +108.87). Trailing stop `49c544b0` HWM USD 227.22 / stop USD 204.498 — live, unchanged. **What changed:** nothing thesis-breaking — routine price/analyst-sentiment coverage only (Strong Buy consensus, avg PT ~USD 303), no new catalyst. Earnings confirmed 2026-08-26 (8 trading days out), no blackout. `review_by` 08-24, not due today.
+
+### Thesis contracts
+LLY (review_by 09-04), UNH (08-17), V (08-15, falls on a Saturday — rolls to Monday 08-17), NVDA (08-24) — none due today, none triggered.
+
+### Conviction-weighted review
+Today is Friday, not Monday — no Monday conviction review due (last run 08-10: LLY A, V A, UNH B, NVDA A; no name at 3 consecutive C's). Next review Monday 2026-08-17, which also carries UNH's and (effectively) V's review_by dates — a full stack of decisions due that morning.
+
+### Watchlist re-verification (fresh Alpaca bars via direct `data.alpaca.markets` curl, explicit date range 2026-05-01 to 2026-08-13, `feed=iex`, 50-day SMA / 20-day ATR%)
+| Ticker | Last close (08-13) | vs 50-day SMA | 20-day ATR% | Gate |
+|---|---|---|---|---|
+| PWR | 672.29 | **−0.166%** | 3.73% | FAIL — reversed back below the 50-day (was +0.586% 08-12, a single unconfirmed session that did not follow through). Moot regardless: GuruFocus valuation veto (~44% overvalued, last verified 08-08) still stands. |
+| MSFT | 496.81 | **+20.766%** | 2.67% | FAIL (extended) — still deeply past the 10% chase threshold, no chase |
+| COST | 961.70 | **+1.176%** | 1.58% | **First positive cross** (was −0.090% 08-12) — single session, unconfirmed per the standing multi-session-confirmation rule; needs a 2nd consecutive confirming session before it's actionable |
+| LRCX | 337.12 | **−0.160%** | 5.65% | FAIL — technical gap continues to narrow (was −3.399% 08-12), now essentially at the SMA, but valuation (P/E >60x) remains separately disqualifying regardless |
+| SHOP | 158.52 | **+29.859%** | 4.33% | FAIL (extended) — still well past the chase cap |
+
+No watchlist candidate clears the combined technical + valuation gate today. COST's fresh, unconfirmed positive cross is the first real technical movement in this name in weeks — worth a same-day-next-check tomorrow (Saturday, market closed) and Monday's pre-market, but not actionable on a single session per the standing NVDA-taught discipline.
+
+### Earnings-window rule
+- **Held names:** none of the 4 positions (LLY 09-04 review_by / no near-term earnings, UNH next earnings 10-27, V next earnings ~late October, NVDA 08-26) report within 2 trading days. No forced decision due.
+- **Buy candidates:** moot — no watchlist name clears its technical/valuation gate today.
+
+### Cash-drag check
+Cash sits at 68.069% (USD 67,595.56 of USD 99,306.76 equity), still well above the 25-40% target band — now a 13th+ consecutive week at an elevated level. 0/3 weekly new-position slots used this week (week of 2026-08-10). Every watchlist candidate still fails its gate today for a distinct, freshly-re-verified reason — COST's cross is unconfirmed, PWR reversed back below its SMA, MSFT/SHOP remain deeply extended, LRCX's technical gap has nearly closed but valuation still disqualifies. Staying in cash remains the correct, actively-re-verified call, not a passive default.
+
+### Drawdown circuit breaker
+`history 1A 1D` high-water mark remains USD 100,322.08 (2026-07-21/22 close, unchanged). Current live equity USD 99,306.76 → drawdown **1.0121%** — NOT triggered (8.9879pp headroom). New buys remain permitted on this gate (moot today — no candidate clears the combined gate anyway).
+
+### Intraday shock check
+Equity USD 99,306.76 vs Alpaca `last_equity` USD 99,339.36 (2026-08-13 close) = **−0.0328%** — no shock (threshold −4%; market not yet open).
+
+### Sector cap
+Healthcare (LLY+UNH) 19.743% (USD 19,604.5975), Financials (V) 8.096% (USD 8,039.68), Tech (NVDA) 4.096% (USD 4,066.92), cash 68.069% (USD 67,595.56) — all well within the 60% single-sector cap.
+
+### Stop audit (`orders open` vs `positions`, live)
+LLY `e3547b9e` (HWM USD 1,240.00 / stop USD 1,116.00, qty 8), UNH `225cb079` (HWM USD 436.945 / stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96 / stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 227.22 / stop USD 204.498, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS.**
+
+### Weekly new-position count
+0/3 used this week (week of 2026-08-10, unchanged) — moot today since no candidate clears the gate.
+
+### Planned trades for today
+
+No trades planned. COST posted a first, unconfirmed positive SMA cross (+1.176%, first positive session in weeks) but needs a second confirming session before it's actionable — the same discipline that repeatedly filtered false starts on NVDA before its eventual 08-05 entry. PWR reversed back below its 50-day (moot regardless of the still-standing valuation veto), MSFT and SHOP remain deeply extended, LRCX's technical gap has nearly closed but valuation (P/E >60x) still disqualifies. No held position has a thesis contract due today; no Monday conviction review due (Friday). 10yr yield (4.65%) stays below the 4.75% gate, drawdown breaker not triggered (1.01%), no intraday shock, sector caps and cash policy all in order. **Today's July Retail Sales (8:30 AM ET) and UMich Consumer Sentiment (10:00 AM ET, prelim) are real volatility catalysts** — flagged explicitly for market-open and midday; not a reason to change today's plan since neither number is out yet. UNH's buffer to the −7% line has compressed to ~1.55pp — worth an explicit watch heading into Monday 08-17's stacked review (UNH's own review_by, V's rolled-over review_by, and the Monday conviction-weighted review all land the same morning).
+
+```json
+{
+  "plan_date": "2026-08-14",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-08-13 — Pre-market research (~08:25 ET, Thursday) — PLAN: no trades (PWR posts a fresh, unconfirmed positive SMA cross but stays valuation-vetoed; July PPI due 8:30 AM ET)
 
 ### Live-switch guard

@@ -6,6 +6,29 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-14 ~08:47 ET — PRE-MARKET (no trades; COST posts a first, unconfirmed positive SMA cross; retail sales + UMich sentiment due today)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for this run.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false` (pre-market), next open 09:30 ET today.
+- **Account:** equity USD 99,306.76, cash USD 67,595.56 (68.069%), long MV USD 31,711.20 (31.931%: LLY 9.691%+NVDA 4.096%+UNH 10.052%+V 8.096%), buying power USD 359,173.59. `last_equity` USD 99,339.36 (08-13 close).
+- **Shock check:** −0.0328% vs `last_equity` — no shock (threshold −4%; market not yet open).
+- **Drawdown circuit breaker:** equity USD 99,306.76 vs HWM USD 100,322.08 (unchanged, from `history 1A 1D`) — drawdown **1.0121%**. NOT triggered (8.9879pp headroom).
+- **10yr Treasury:** 4.65% (tradingeconomics.com, as of 08-13 close) — below the 4.75% new-buy gate.
+- **Held positions (% from entry, live):** LLY +2.433% (dividend ex-date today, mechanical only, no thesis change), UNH −5.455% (no fresh negative catalyst — today's "lawsuit" headline is a re-report of the same stale 08-07-filed suit flagged 08-13; JPMorgan raised PT to USD 516; conviction stays B; buffer to −7% now only ~1.55pp), V +2.924% (BioCatch/Strong-Buy story intact, nothing new), NVDA +2.751% (no thesis-breaking news, earnings 08-26 no blackout).
+- **Thesis contracts:** LLY (review_by 09-04), UNH (08-17), V (08-15, Saturday — rolls to Monday 08-17), NVDA (08-24) — none due today, none triggered.
+- **Conviction review:** Friday — no Monday conviction-weighted review due (last run 08-10: LLY A, V A, UNH B, NVDA A; no name at 3 consecutive C's). Monday 08-17 will carry the conviction review plus UNH's and V's (rolled-over) review_by dates in the same run.
+- **Earnings-window rule:** no held name reports within 2 trading days; moot.
+- **Watchlist re-verification (fresh Alpaca bars, explicit date range through 08-13 close):** **COST posts its first positive SMA cross in weeks (+1.176%, was −0.090% 08-12)** — single session, unconfirmed per the standing multi-session-confirmation rule. PWR reversed back below its 50-day (−0.166%, was +0.586% 08-12) — moot regardless of the standing ~44% GuruFocus valuation veto. MSFT extended (+20.766%), SHOP extended (+29.859%), LRCX's technical gap has nearly closed (−0.160%, was −3.399% 08-12) but valuation (P/E >60x) still disqualifies.
+- **Sizing/entry check:** moot — no candidate clears the combined technical + valuation gate.
+- **Stop audit:** LLY `e3547b9e` (HWM USD 1,240.00/stop USD 1,116.00, qty 8), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 227.22/stop USD 204.498, qty 18) — all 4 confirmed live via `orders open`, quantities match positions exactly. **4/4 PASS.**
+- **Sector exposure:** Healthcare (LLY+UNH) 19.743% (USD 19,604.60), Financials (V) 8.096% (USD 8,039.68), Tech (NVDA) 4.096% (USD 4,066.92), cash 68.069% (USD 67,595.56) — all well within the 60% sector cap.
+- **Cash-drag check:** 68.069%, 13th+ consecutive week above the 25-40% target band. Justified: every candidate freshly re-verified and failed today, COST's cross is fresh and unconfirmed.
+- **Weekly new-position count:** 0/3 used this week (week of 2026-08-10, unchanged from Monday).
+- **Macro note:** July Retail Sales (8:30 AM ET) and UMich Consumer Sentiment prelim (10:00 AM ET) are today's real volatility catalysts, not yet released as of this run.
+- **Notify:** Telegram sent — no trades planned, market posture, COST's unconfirmed cross, and UNH's compressed buffer included.
+- **Commit:** done.
+
 ## 2026-08-13 ~15:52 ET — CLOSE (no trades; since-inception gap vs SPY widens to −4.93pp, widest of this track record)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
