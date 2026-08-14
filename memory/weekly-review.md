@@ -2,6 +2,97 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-08-14 (Week 7 of the new track record — 5 active trading days: Mon Aug 10 – Fri Aug 14)
+
+- **Bull return (week, 2026-08-07 close USD 99,239.19 → 2026-08-14 close USD 99,157.82):** −0.0820%
+- **SPY return (week, dailyBar.c USD 773.16 → USD 776.30, explicit-date-range bars, settled):** +0.4062%
+- **Result:** Bull **lagged** SPY by **−0.4882pp** this week — much smaller than the prior two weeks' trails (−3.4903pp week of 08-07, −1.6263pp week of 07-31)
+- **Since inception (2026-07-01, USD 100,000.00 / SPY USD 745.665):** Bull −0.84218% vs SPY +4.1093% = **−4.9515pp gap — a new widest of this track record**, continuing the mirror-image mechanism documented since 07-29, though this week's marginal cost was the smallest in three weeks
+- **🚨 Rolling 4-week trigger FIRED for the first time:** per `strategy.md`'s own Benchmarking rule ("if we lag SPY by >5% over any rolling 4-week window, review and adjust sector weights and position theses before adding new names"), the trailing 4 weeks (2026-07-17 close → 2026-08-14 close) show Bull −0.8270% vs SPY +4.3180% = **−5.1450pp**, crossing the 5% threshold. See "Strategy decision" below — this review performs the mandated review.
+- **HWM:** USD 100,322.08 (unchanged, set 2026-07-21 close) | drawdown −1.1605% — far within the −10% circuit breaker ✓
+- **Grade:** B+
+
+### Trade statistics (sample still small — 3 closed trades since reset; read directionally, not conclusively)
+
+| Metric | Value |
+|--------|-------|
+| New trades this week | 0 — every watchlist name failed its combined gate at every pre-market check through Thursday; COST's technical confirmation only completed with Friday's close (see "What worked") |
+| Closed trades this week | 0 |
+| Total closed trades (since 2026-07-01 reset) | 3 (VST 07-16 −2.178%, VST 07-28 −6.924%, META 07-28 −7.964%) |
+| Win rate | 0% (0 wins / 3 closed trades) |
+| Average win % | N/A — no wins yet |
+| Average loss % | −5.689% (mean of the three losses; magnitudes range −2.178% to −7.964%) |
+| Profit factor | N/A — no gross wins to divide by |
+| Avg holding days (winners / losers) | N/A winners / 9.67 days (losers: 14, 7, 8 days) |
+| Biggest standing lesson | Unchanged this week — no new closed trades. All 3 closed trades remain trailing-stop exits driven by sector/macro rotation, zero company-specific thesis breaks. |
+
+⚠️ **Ledger cross-check:** `trades.jsonl` has 7 post-reset buy entries (VST 07-02, V 07-07, LLY 07-13, UNH 07-20, META 07-20, VST re-entry 07-21, NVDA 08-05) and 3 stop_fill entries (VST 07-16, VST 07-28, META 07-28), matching `closed-trades.md`'s 3 post-reset exits and `trade-log.md`'s narrative — counts agree, no reconciliation issue. **Data-hygiene flag (unresolved, carried since 2026-07-31):** `trades.jsonl`'s `pnl_pct` field is still inconsistently formatted (07-16 VST stores a fraction, the two 07-28 entries store the percentage directly). Still nothing wrong today, still unpatched — next maintenance pass on `trades.jsonl`-writing code should fix it.
+
+### Process audit
+
+| Check | Result | Grade |
+|-------|--------|-------|
+| Cash drag (avg ~68.0–68.2% this week vs 25–40% target band) | Every non-buy day cited a specific, freshly-re-verified gate failure (MSFT/SHOP extended, LRCX fails valuation, PWR valuation-vetoed, COST unconfirmed through Thursday). 14th+ consecutive week above the target band. | ⚠️ justified daily, but see the rolling-4-week trigger above — this is no longer just a routine note |
+| Sector caps | Healthcare (LLY+UNH) ~19.6–20.0%, Financials (V) ~8.0%, Tech (NVDA) ~4.0–4.1%, cash ~68% (Friday close) — all well within the 60% cap | ✓ |
+| Stop discipline | 4/4 stops confirmed live via `orders open` at every single routine session, all 5 days (pre-market, market-open, midday, close × 5) — quantities matched positions exactly at every check, no gap | ✓ PERFECT |
+| Weekly new-position count | 0/3 slots used; justified — no candidate cleared its combined technical + valuation gate until COST's 2nd confirming session completed with today's close, after the week's last new-position opportunity had passed | ✓ within cap |
+| Thesis contracts | None due this week (LLY 09-04, UNH 08-17, V 08-17 rolled from 08-15's Saturday landing, NVDA 08-24) — Monday 08-17 carries a stacked set: UNH's review_by, V's rolled-over review_by, and the Monday conviction review, all the same morning | ✓ N/A this week |
+| Loss post-mortems | None required — no exits this week | ✓ N/A |
+| Guardrail checks | Complete tables at every routine session, all 5 days | ✓ |
+
+### What worked
+
+- **Perfect stop-audit compliance across all 5 sessions, all 4 positions, all week** — zero missed audits, zero unprotected positions, through a week that touched fresh S&P 500 all-time highs (7,814.88 Thursday, first close above 7,800) and a Friday pullback.
+- **Discipline held through a genuine tech/semi-sector rebound.** The semiconductor sector "came back in a big way from July's rout" this week (CNBC) — LRCX's technical gap to its 50-day narrowed sharply (from −3.399% Wed to −1.614% today), and MSFT/SHOP both stayed well past the 10% chase cap (+19.67%, +23.54% respectively) despite the rally. No chasing, no rule bent.
+- **COST cleared a genuine 2-consecutive-session technical confirmation** (+1.690% vs 50-day 08-13, +1.558% today) — the multi-session-confirmation bar that has correctly gated every watchlist name since the reset (see NVDA's own 6+-failed-crosses history). This wasn't visible in Friday's routine close (which used Thursday's numbers) — first surfaced by this review's fresh pull.
+- **Fresh GuruFocus valuation pull materially changes COST's status.** COST's `strategy.md` row has carried a standing "richly valued (~46x P/E)" flag since 2026-05-29 that has never been directly re-verified against GF Value. This review pulled it directly: **GF Value USD 1,029.92 (dated 08-08) vs a current price of ~USD 947.82–960.84 — COST is now "Fairly Valued" per GuruFocus, trading ~7-8% *below* its estimated fair value**, not overvalued. Combined with the fresh technical confirmation, COST now plausibly clears both gates that have kept it off the table for 11+ weeks — pending a full 5-signal entry check (earnings momentum, catalyst, PEG, extension, macro) at Monday's pre-market. **This is the actionable item for Monday**, not a routine watchlist note.
+- **LRCX's valuation veto reconfirmed, not weakened, despite the narrowing technical gap.** A fresh GuruFocus pull shows LRCX still 131.6% overvalued (GF Value USD 134.71 vs price ~USD 311-312, P/E 58.87x vs its own 5-year median 23.27x) — the technical gap closing does not change the standing disqualification. Good discipline test: a narrowing chart is not itself a buy signal when the valuation gate is this decisively failed.
+
+### What didn't work / open questions
+
+- **🚨 The rolling-4-week SPY-lag trigger from `strategy.md`'s own Benchmarking rule fired for the first time this track record** (−5.1450pp over 07-17→08-14, past the >5% threshold). See "Strategy decision" below for the mandated review.
+- **Cash sat at ~68% for a 14th+ consecutive week.** Every daily non-buy was individually justified, but six-plus weeks of the same elevated-cash pattern flagged back on 2026-07-10 has now compounded into a threshold breach codified in the strategy's own rules, not just a recurring observation.
+- **A new geopolitical/macro risk emerged this week:** the US resumed a blockade posture at the Strait of Hormuz, pushing Energy (XLE) up +7.8% on the week (the week's top-performing sector) and lifting oil prices broadly — flagged for next week's pre-market macro checks; no held position has direct energy/oil exposure, but a sustained oil spike is a standing inflation/rate risk (per the 10yr-gate watch).
+- **Aggressive Bull comparison remains impossible — the outage is now confirmed stale at 52 days.** See "From Aggressive Bull" below.
+
+### Strategy decision (mandated review — rolling 4-week trigger fired)
+
+`strategy.md`'s Benchmarking section states: "If we lag SPY by > 5% over any rolling 4-week window, review and adjust sector weights and position theses before adding new names." That threshold crossed this week (−5.1450pp, 07-17→08-14). Performing the mandated review:
+
+1. **Sector weights:** Healthcare (LLY+UNH, ~19.6-20%), Financials (V, ~8%), Tech (NVDA, ~4%), Cash (~68%). No sector is near its 60% cap — the gap is not a concentration problem, it is an under-deployment problem. The mix itself (healthcare/financials/one tech starter) has no structural flaw; the cost is almost entirely explained by ~68% cash sitting out of a market that has run +4.1% since inception, per the "mirror-image mechanism" documented in `lessons.md` since 07-29.
+2. **Position theses:** LLY (A, GLP-1/Medicare Bridge, intact, review_by 09-04), UNH (B, thesis intact but flat/priced-in, review_by 08-17), V (A, BioCatch/fraud-detection expansion, intact, review_by 08-17), NVDA (A, AI-accelerator monopoly, intact and the framework's own proof it self-corrects when a real setup clears). None show any deterioration; no trim or exit is warranted by this review.
+3. **Adjustment (not a guardrail change):** the standing "is the valuation-veto calibration too strict" question, open since 2026-07-10 and re-raised at every review since without resolution, gets an answer this week — **no, the veto is correctly calibrated, and it is not the bottleneck.** The evidence: LRCX's technical gap narrowed materially this week and it is *still* decisively vetoed (131.6% overvalued) — the veto is doing real, discriminating work, not just reflexively blocking everything. The actual bottleneck is that qualifying setups are genuinely rare in this window, not that the bar is miscalibrated. **The concrete process adjustment this review makes: Monday's pre-market must treat COST's now-cleared technical gate and freshly-reconfirmed-fair valuation as a priority full 5-signal vetting, not a routine watchlist mention** — this is the first name besides NVDA to plausibly clear both gates since the reset, and letting it sit as a routine note (as SHOP's and PWR's technical crosses have in past weeks) would repeat the exact under-deployment pattern this review is meant to correct.
+4. **No guardrail or entry-signal rule is loosened.** Sizing, sector caps, cash minimum, extension cap, and the valuation veto all stay exactly as written. The adjustment is process emphasis (act promptly on a name that clears its gates) not a rule change.
+
+### Macro context (week of August 10–14, 2026)
+
+- **S&P 500 capped its third consecutive weekly gain** (longest winning streak since May) despite a −0.2% Friday pullback from Thursday's fresh ATH close (7,800, first close above that level). The index twice touched fresh all-time highs (Monday, Tuesday). [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-friday-august-14-dow-sp-500-nasdaq-102635519.html), [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-14-2026)
+- **Semiconductors rebounded sharply from July's rout** — a real sector rotation, evidenced directly in this review's own LRCX technical-gap narrowing. Market-implied odds of a September Fed rate hike fell to ~30% (from ~45% a week earlier per CME FedWatch), supporting the broad risk-on tone through Thursday.
+- **Friday's pullback was driven by weak data, not a shock:** July retail sales fell −0.6% (worst reading in over a year) and preliminary August UMich consumer sentiment softened, both read as consumers growing more cautious even as markets stay near highs.
+- **New macro risk: Strait of Hormuz blockade resumed**, driving Energy (XLE) to the week's best sector performance (+7.8%, +38% YTD) on rising oil prices — a fresh geopolitical catalyst distinct from the Iran/oil episodes tracked in June-July, worth watching at future pre-markets for any read-through to the 10yr yield gate (currently 4.69%, comfortably below the 4.75% new-buy gate).
+- **Reddit (RDDT) joins the S&P 500 on 08-18**, +10.4% on the announcement — not a Bull candidate (recent IPO, social-media/ad business outside current sector focus, no vetting performed).
+- **LLY (held):** traded USD 1,206-1,240 this week, closed ~USD 1,210-1,220 range; dividend (USD 1.73) ex-date 08-14 (mechanical, no thesis impact); 24-of-31 analysts rate Buy, consensus PT USD 1,276.96. No fresh negative catalyst.
+- **UNH (held):** traded USD 396-403 this week; the amended shareholder/governance lawsuit (originally filed 08-07 over the 2024 Change Healthcare breach) continued recirculating in the financial press all week as "the day's main catalyst" per one outlet — still the same stale, already-priced litigation, not new information; 22 analysts rate Buy, avg PT USD 475.23, YTD +20.8%. Conviction stays B; review_by 08-17 forces the next hold/trim/exit call.
+- **V (held):** traded USD 358-369 this week, pulled back modestly from 08-06's all-time-high close (USD 369.78) to ~USD 365.66; PT USD 413.58; no fresh negative news, reads as broad profit-taking not company-specific weakness.
+- **NVDA (held):** +15.51% over the trailing 2 weeks per one tracker, closed ~USD 225.60; Strong Buy consensus (36 analysts), PT USD 304.36; no thesis-breaking news, benefited from the broad semi-sector rebound this week.
+
+### From Aggressive Bull (section 7b)
+
+**AGGRO's memory is STILL STALE, confirmed again via `git log --oneline -- memory/aggressive/`: the only commit ever touching that directory is the initial 2026-07-23 bulk repo-setup commit.** The narrative content still ends at the same **2026-06-23 EOD** data point every review since 2026-07-03 has reported — now **52 days** stale as of this review (up from 45 two Fridays ago), the 12th+ separate flag across close and weekly-review routines since 2026-07-02, spanning seven-plus calendar weeks with zero resolution.
+
+**Last-known AGGRO figures (2026-06-23 EOD, stale, 52 days old):** equity USD 92,876.82, since-inception (2026-06-04) return −7.123%, alpha vs SPY −4.392pp. Cautious Bull's own since-inception return this review is **−0.84218%** vs SPY — a real, widening trail (now past the strategy's own rolling-4-week threshold, see above), but nowhere close to AGGRO's stale −7.123% even on that old, non-comparable timeline. AGGRO is not ahead of Cautious Bull by any measure, stale or otherwise.
+
+**Lesson worth extracting this week, since there's still nothing fresher:** AGGRO's Week 1 post-mortem (2026-06-05 review, carried in `lessons.md`) flagged VST as "the diversification standout" — a name that fell far less than AGGRO's concentrated semi book during a sector selloff because it was structurally uncorrelated to AI-semi demand, and recommended capping any single correlated group at ≤50% of the book. This week's own finding (COST clearing its gates as a consumer-staples name, sitting alongside LLY/UNH's healthcare, V's financials, and NVDA's single tech starter) is Cautious Bull independently arriving at the same discipline AGGRO's own post-mortem recommended — diversify the *next* addition into an uncorrelated sleeve rather than doubling up on the sector that already ran. No rule change needed; the existing sector-cap framework already enforces this by construction.
+
+**Cross-Bull learning counter update:** AGGRO trails Cautious Bull by every available measure (stale or otherwise) — the >5pp-AGGRO-leads-for-2-weeks trigger condition is nowhere close to being met. Counter = **0** (unchanged, now 8 consecutive weeks at 0). `CROSS_BULL_LEARNING:` in `control.md`: confirmed blank at the start of this run, no `NOTE:` or `QUERY:` lines either — no change needed.
+
+### Strategy adjustments
+
+- **Watchlist update — COST:** upgraded from a standing "fails on valuation" note to **high-priority candidate for Monday's full 5-signal vetting** — 2-consecutive-session technical confirmation (+1.690% 08-13, +1.558% 08-14) plus a freshly-pulled GuruFocus GF Value (USD 1,029.92 vs price ~USD 947.82-960.84, "Fairly Valued," ~7-8% below fair value) reverses the stale ~46x-P/E "richly valued" flag this row has carried since 2026-05-29. `strategy.md` row updated with this finding and the pending Monday action.
+- **Watchlist update — LRCX:** technical gap narrowed sharply this week (−3.399% → −1.614% vs 50-day) on the sector rebound, but a fresh GuruFocus pull reconfirms decisive overvaluation (131.6% overvalued, GF Value USD 134.71 vs price ~USD 311-312). No change to candidate status — still not a candidate on valuation grounds alone, regardless of the technical picture.
+- **No purges this week.** Every remaining watchlist name (PWR, MSFT, SHOP, LRCX, COST) carries either a dated forward catalyst or a daily/weekly re-gated technical/valuation setup — none qualify as stale decoration under the 2026-07-03 hygiene precedent.
+- **Benchmarking section of `strategy.md` updated** to record that the rolling-4-week trigger fired this week for the first time, with the reasoning from the Strategy Decision section above, so future reviews have this precedent on file rather than re-deriving it.
+
 ## Week ending 2026-08-07 (Week 6 of the new track record — 5 active trading days: Mon Aug 3 – Fri Aug 7)
 
 - **Bull return (week, 2026-07-31 close $99,197.93 → 2026-08-07 close $99,239.19):** +0.0416%
