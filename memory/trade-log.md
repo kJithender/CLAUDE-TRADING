@@ -6,6 +6,27 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-17 ~09:41 ET — MARKET-OPEN (Monday) — BUY COST 7sh executed
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for market-open.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Plan check:** most recent "Planned trades for today" JSON block in `research-log.md` is `plan_date: 2026-08-17` (today), `trades: [{"action":"buy","symbol":"COST","qty":7,...}]`. Pre-market ran today, plan not stale. No `EXECUTED:` line present yet (first run today).
+- **Market:** `clock` confirmed `is_open: true`, next close 2026-08-17T16:00:00-04:00.
+- **Breaking-news gate (WebSearch `COST Costco stock news this morning August 17 2026`):** no earnings miss, downgrade, halt, or SEC action found — only routine technical/valuation commentary (P/E 48.4 caution flag already priced into the plan's reduced-size sizing) and confirmation of the Q4 FY26 earnings date (~09-24/09-26, outside blackout either way). Gate clear.
+- **Re-check before executing:** Account equity USD 98,903.38, cash USD 67,595.56 (68.35%), `last_equity` USD 99,144.27 (08-14 close). Shock check: −0.243% — no shock (threshold −4%). Drawdown: HWM USD 100,322.08 vs equity USD 98,903.38 = **1.414%** — NOT triggered. `snapshot COST` price USD 954.35 (dailyBar.c/latestTrade), consistent with the plan's USD 960.84 reference — thesis intact, no adverse move.
+- **Data-quality flag (per the standing 2026-07-07 lesson):** COST's `quote`/`snapshot` ask was stuck at USD 1,006.95 (bid USD 904.46, ~10.2% spread) across 2 polls ~40s apart — treated as unreliable per the standing rule (>1-2% spread on a liquid large-cap = don't trust the ask). Used `latestTrade` price (USD 954.35) × 1.003 = **USD 957.21** marketable limit instead.
+- **Guardrail math:** COST 7sh @ limit USD 957.21 = USD 6,700.47 ≈ **6.775% of equity** (well under 20% single-position cap, under 15% single-order cap). Risk at 10% stop ≈ USD 670.05 ≈ **0.677% of equity** (within the 1.2% risk-budget cap). Daily deployment 6.775% (cap 25%). Weekly new-position count 0/3 → 1/3. Cash after ≈ 61.6% (well above 5% min). Sector: opens new Consumer Defensive sleeve at 6.758%, nowhere near the 60% cap. Earnings window: next COST print ~09-24/09-26, well outside the 2-trading-day blackout.
+- **Order:** `buy-limit COST 7 957.21` — order `e6d72a95`, submitted 13:41:10Z.
+- **Fill verified:** `position COST` — **7sh @ avg USD 955.524286**, filled within the marketable limit.
+- **Trailing stop placed:** `trailing-stop COST sell 7 10` — order `90d27fb4`, HWM USD 954.19 / stop USD 858.771, status `new` (live). Verified via `orders open`.
+- **Stop audit (all 5 positions, `orders open` vs `positions`):** LLY `e3547b9e` (stop USD 1,116.00, qty 8), UNH `225cb079` (stop USD 393.2505, qty 25), V `2b0a93ba` (stop USD 336.564, qty 22), NVDA `49c544b0` (stop USD 204.741, qty 18), COST `90d27fb4` (stop USD 858.771, qty 7) — all 5 status `new` (live), quantities match positions exactly. **5/5 PASS.**
+- **Positions (% from entry, live, post-fill):** LLY −0.190%, NVDA +2.655%, UNH −6.609% (worst position, buffer to the −7% midday rule now only ~0.4pp — flagged for midday's attention), V +2.104%, COST −0.103% (fresh entry, essentially flat).
+- **Sector exposure (post-buy, equity USD 98,868.00):** Healthcare (LLY+UNH) 19.456%, Financials (V) 8.067%, Tech (NVDA) 4.110%, Consumer Defensive (COST) 6.758%, cash 61.611% (USD 60,906.89) — all well within the 60% sector cap.
+- **`trades.jsonl`:** appended buy fill entry (ts 2026-08-17T13:41:10Z).
+- **`research-log.md`:** appended `EXECUTED: 2026-08-17T13:41:10Z` under today's plan block.
+- **Notify:** Telegram sent, plain prefix (no stop fill, no blocked trade, no unprotected position, breaker not active) — trade summary, UNH's compressed buffer to the −7% line flagged for midday's attention.
+- **Commit:** done.
+
 ## 2026-08-17 ~08:30 ET — PRE-MARKET (Monday) — plan: BUY COST 7sh
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for premarket. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.

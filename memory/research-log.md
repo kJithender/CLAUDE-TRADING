@@ -106,6 +106,8 @@ BUY COST 7sh as a reduced starter — 4-of-5 entry signals clear (earnings momen
 }
 ```
 
+EXECUTED: 2026-08-17T13:41:10Z
+
 ## 2026-08-14 — Pre-market research (~08:47 ET, Friday) — PLAN: no trades (COST posts a first, unconfirmed positive SMA cross; retail sales + UMich sentiment due today)
 
 ### Live-switch guard
