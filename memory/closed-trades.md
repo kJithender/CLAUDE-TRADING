@@ -17,6 +17,17 @@ top. The weekly review computes win rate and average win/loss from this file._
 
 -->
 
+## 2026-08-17 — UNH — LOSS
+- **Entry:** 25 shares @ USD 422.28 on 2026-07-20
+- **Exit:** USD 392.94 via trailing stop (auto-executed 10:40:58 AM ET, order 225cb079, HWM USD 436.945, stop USD 393.2505)
+- **P/L:** −USD 733.50 (−6.948%)
+- **Held:** 28 days
+- **Original thesis:** Q2 2026 beat-and-raise (07-16, adj EPS USD 6.38 vs ~USD 4.85 est, FY26 guidance raised to USD 19.50-20.00); PEG 1.73-2.07 (<2.5); GF Value ~30% undervalued; technical +5.76% vs 50-day (not extended), ATR 2.51% (<3%); 5-of-5 entry signals; managed-care diversifier vs LLY's GLP-1/pharma exposure. Downgraded to Conviction B on 2026-08-10 (thesis intact, but the 07-16 catalyst was already priced in and the position had been flat-to-negative for 3 straight weeks with no fresh forward trigger).
+- **Why it ended:** The 10% trailing stop fired this morning, one day short of ever reaching its own 2026-08-17 review_by deadline (set at entry, tied to no specific catalyst). WebSearch found no fresh company-specific negative catalyst today — the only recent news is the already-known 08-13 amended shareholder lawsuit re-litigating the 2024 Change Healthcare breach (old litigation, not a new operational break), and Bernstein still rates the stock Buy. This reads as the same slow, catalyst-less grind that drove the 08-10 conviction downgrade, not a fresh thesis break.
+- **Lesson:** A stop can beat its own review_by date to the finish line — UNH's `invalidation` criteria (SMA break, MLR reversal, or the stop firing) included the stop itself as a valid exit path, and it fired hours before the forced hold/trim/exit review would have run. When a position is already downgraded and drifting into its review_by window with no fresh catalyst either way, don't treat the review_by date as the only checkpoint — the trailing stop remains live and can resolve the decision first. Also filed to `lessons.md`.
+
+---
+
 ## 2026-07-28 — META — LOSS
 - **Entry:** 6 shares @ USD 641.323333 on 2026-07-20
 - **Exit:** USD 590.25 via trailing stop (auto-executed 10:39:04 AM ET, order 14301809, HWM USD 655.84, stop USD 590.256)

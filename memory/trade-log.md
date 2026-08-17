@@ -6,6 +6,21 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-17 ~12:36 ET — MIDDAY (Monday) — UNH stopped out overnight-to-midday, discovered this run
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock found stale (routine `aggro-market-open`, expired 14:19Z, now 16:36Z) — overwrote with a fresh midday lock. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, next close 2026-08-17T16:00:00-04:00 — normal trading session.
+- **Account (live, ~12:36 ET):** Equity USD 98,981.00, cash USD 70,730.39 (71.457%), long market value USD 28,250.61 (28.543%), buying power USD 362,023.26. `last_equity` USD 99,144.27.
+- **Shock check:** equity vs `last_equity` = **−0.1647%** — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, unchanged) vs equity USD 98,981.00 — drawdown **1.3368%**. NOT triggered (8.6632pp headroom).
+- **🚨 UNH stopped out:** discovered UNH is no longer in `positions` — its 10% trailing stop (order `225cb079`, HWM USD 436.945, stop USD 393.2505) filled at **10:40:58 AM ET today, 25sh @ USD 392.94**, entry USD 422.28 (2026-07-20), **−6.948%, −USD 733.50**, held 28 days. This happened after this morning's market-open routine (~09:41 ET, which only executed the planned COST buy) and before this midday run — the first routine to observe it. WebSearch (`UnitedHealth UNH stock news today August 17 2026`) found no fresh company-specific negative catalyst — only the already-known 08-13 shareholder lawsuit (old Change Healthcare breach litigation) and general "stumbling" narrative; Bernstein still Buy-rated. Reads as the same catalyst-less grind that drove the 08-10 Conviction-B downgrade, not a new thesis break — and notably the stop fired hours before UNH's own 2026-08-17 `review_by` deadline would have forced the same hold/trim/exit call anyway. Full post-mortem in `closed-trades.md`; mandatory loss lesson filed in `lessons.md`. `trades.jsonl` appended (`stop_fill`, ts 2026-08-17T14:40:58Z, pnl_pct −6.948).
+- **Positions (% from entry, live):** COST −0.0434% (USD 955.11), LLY +1.729% (USD 1,194.67), NVDA +3.178% (USD 226.8799), V +1.437% (USD 360.16) — none within range of the −7% midday cut, none up >15% (no tightening). No news scan triggered (no position past the ±3%/+10% thresholds).
+- **Sector exposure (post-UNH-exit):** Healthcare (LLY only now) 9.657% (USD 9,557.36), Financials (V) 8.005% (USD 7,923.52), Tech (NVDA) 4.126% (USD 4,083.8382), Consumer Defensive (COST) 6.755% (USD 6,685.77), cash 71.457% (USD 70,730.39) — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** COST `90d27fb4` (HWM 955.73/stop 860.157, qty 7), LLY `e3547b9e` (HWM 1240.00/stop 1116.00, qty 8), NVDA `49c544b0` (HWM 227.92/stop 205.128, qty 18), V `2b0a93ba` (HWM 373.96/stop 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed. UNH's stop order is correctly gone (filled, not orphaned).
+- **Action:** No cuts, no tightening (midday's own job found nothing new past −7% or +15%) — the only event this run journals is reconciling the UNH stop that already fired. Weekly new-position count unchanged: 1/3 used this week (COST, week of 2026-08-17).
+- **Notify:** Telegram sent, 🚨 prefix (a trailing stop filled).
+- **Commit:** done.
+
 ## 2026-08-17 ~09:41 ET — MARKET-OPEN (Monday) — BUY COST 7sh executed
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for market-open.
