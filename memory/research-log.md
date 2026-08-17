@@ -5,6 +5,107 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-08-17 — Pre-market research (~08:30 ET, Monday) — PLAN: BUY COST 7sh (first full 5-signal vetting pass since NVDA; valuation signal fails but 4-of-5 clears)
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was `{}` (free) at start of this run. Lock acquired (`premarket`, started 2026-08-17T12:27:26Z, expires 2026-08-17T12:35:26Z).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-08-17T09:30:00-04:00`, `next_close: 2026-08-17T16:00:00-04:00` — normal trading day.
+
+### Market posture (pre-market 2026-08-17)
+S&P 500 futures +0.1% (third straight weekly gain last week), Dow futures −0.2%, Nasdaq-100 futures +0.5% (storage/semi names SanDisk, Micron rallying pre-market) — a mixed, "wait and see" tape ahead of a heavy retail-earnings week (Walmart, Home Depot, Target, Lowe's all report this week) that will be a real read on consumer health. Polymarket implies 62% odds of a higher S&P close today. **10yr Treasury 4.68%** (as of 08-14 close) — comfortably below the 4.75% new-buy gate. **Fed:** September 16 FOMC meeting — CME FedWatch shows odds shifting toward a hold/cut after the weak July jobs report, fed funds still 3.50-3.75%, no hike expected. No fresh geopolitical shock overnight. [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-17-2026), [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html), [CNBC](https://www.cnbc.com/2026/08/07/odds-the-fed-hikes-in-september-tumble-following-big-july-jobs-miss.html)
+
+### Held position — LLY — what changed since yesterday
+Live: 8sh @ avg USD 1,174.35625, current USD 1,183.44 (+0.774%, USD +72.67). Fresh bars (through 08-14 close): USD 1,180.33 vs 50-day SMA USD 1,169.56 = **+0.920%** (not extended), ATR20% 2.90%. Trailing stop `e3547b9e` HWM USD 1,240.00 / stop USD 1,116.00 — live, unchanged. **What changed:** nothing thesis-breaking found this morning — no fresh catalyst beyond the already-known Q2 beat-and-raise and GLP-1-copycat lawsuits (offense, not defense). Position has drifted from its early-August highs (~USD 1,240) to essentially flat vs. entry over 5 weeks with no new forward trigger this week. `review_by` 09-04, not due.
+
+### Held position — UNH — what changed since yesterday
+Live: 25sh @ avg USD 422.28, current USD 399.10 (−5.489%, USD −579.50). Fresh bars (through 08-14 close): USD 401.67 vs 50-day SMA USD 415.20 = **−3.258%**, ATR20% 2.44%. Trailing stop `225cb079` HWM USD 436.945 / stop USD 393.2505 — live, unchanged, buffer to the −7% cut now only **~1.5pp**. **What changed:** no fresh negative catalyst — WebSearch found only the same recirculating 08-07-filed shareholder/governance lawsuit already logged stale on 08-13/08-14. **Volume check on the SMA break (forced by today's review_by, see Thesis contracts below):** pulled the last 10 sessions of bars/volume — UNH has closed below its 50-day SMA in 7 of the last 8 sessions (since 08-04), but volume has run **0.55x–1.07x** the trailing-20-day average throughout, i.e. this is a low-volume drift, not the sharp volume-confirmed breakdown the original invalidation was written to catch. Treated as NOT triggered on a strict read, but flagged explicitly below given how close the position now sits to the −7% line.
+
+### Held position — V — what changed since yesterday
+Live: 22sh @ avg USD 355.058182, current USD 361.50 (+1.814%, USD +141.72). Fresh bars (through 08-14 close): USD 364.20 vs 50-day SMA USD 348.45 = **+4.522%**, ATR20% 1.73%. Trailing stop `2b0a93ba` HWM USD 373.96 / stop USD 336.564 — live, unchanged. **What changed:** nothing thesis-breaking — no fresh news beyond the already-known BioCatch acquisition and Bernstein's 08-12 Buy reiteration. Comfortably above its 50-day SMA, thesis intact.
+
+### Held position — NVDA — what changed since yesterday
+Live: 18sh @ avg USD 219.891667, current USD 226.89 (+3.183%, USD +125.97). Fresh bars (through 08-14 close): USD 225.16 vs 50-day SMA USD 206.50 = **+9.038%** (approaching but not past the 10% chase cap — a re-entry-style buy would fail extension today, though this is an existing hold, not a new entry), ATR20% 3.04%. Trailing stop `49c544b0` HWM USD 227.22 / stop USD 204.498 — live, unchanged. **What changed:** nothing thesis-breaking — routine Buy-consensus coverage only, benefiting from the broader semiconductor-sector rebound. Earnings confirmed 2026-08-26 (6 trading days out — still outside the 2-day blackout, but close; `review_by` 08-24 will force the hold/trim/exit call next Monday).
+
+### Thesis contracts (both UNH and V land today, per last week's rolled-over V date)
+- **UNH (review_by 2026-08-17 — due today):** Original invalidation: "closes below the 50-day SMA (~USD 403, drifts) on volume, or Medicare Advantage MLR trends reverse the utilization-easing thesis, or the 10% trailing stop fires." Price is below the SMA, but the volume check above shows this is a low-volume drift, not a confirmed breakdown; no MLR-thesis-reversing news found; trailing stop is live and untriggered. **Decision: HOLD, no trim.** The −7% midday rule and the 10% trailing stop are both live, active safety nets sitting very close to the current price (buffer ~1.5pp and ~1.5pp respectively) — the position does not need a discretionary pre-market trim on top of two mechanical nets already primed to act. Given how compressed the buffer is, `review_by` is renewed to a short **2026-08-19 (Wednesday)** instead of the usual multi-week cadence, forcing a fast follow-up rather than waiting for the next Monday.
+- **V (review_by 2026-08-17, rolled over from Saturday 08-15 — due today):** Original invalidation: "closes below the 50-day SMA (~USD 327-332, drifts) on volume." Current price USD 361.50-364.20 vs a freshly drifted SMA of USD 348.45 — well above, not triggered. **Decision: HOLD, no trim.** `review_by` renewed to **2026-09-15** (routine ~1-month interim check; no earnings catalyst confirmed before then).
+
+### Monday conviction-weighted review (Week of 2026-08-17)
+Re-ranked all 4 positions against this morning's fresh data:
+- **LLY: A → B.** Thesis intact (GLP-1/Medicare Bridge dominance unchanged) but the position has been essentially flat vs. entry for 5 weeks with no fresh catalyst this week — "working but flat" is the honest read now, not "conviction still high."
+- **NVDA: A (unchanged).** Thesis intact and working, benefiting from the sector rebound, comfortably positive.
+- **UNH: B → C.** Persistent low-volume drift below the 50-day SMA for 8 sessions, closest position to the −7% cut, no fresh catalyst, conviction was already downgraded 08-10 and has continued to soften since. This is UNH's **first** Monday at C (last 3 reviews: 08-03 A, 08-10 B, today C) — the 3-consecutive-C forced-half-trim rule is NOT triggered yet, but UNH is now on the clock for it.
+- **V: A (unchanged).** Thesis intact, working, comfortably above its 50-day SMA, no fresh negative news.
+
+No name has reached 3 consecutive C's — no forced trim from this rule today (UNH's own thesis-contract HOLD decision above stands on its own reasoning).
+
+### Watchlist re-verification (fresh Alpaca bars via direct `data.alpaca.markets` curl, explicit date range 2026-05-19 to 2026-08-16, `feed=iex`, 50-day SMA / 20-day ATR%)
+| Ticker | Last close (08-14) | vs 50-day SMA | 20-day ATR% | Gate |
+|---|---|---|---|---|
+| **COST** | 960.84 | **+1.087%** | 1.46% | **TECHNICAL PASS — 3rd consecutive confirming session** (was +1.558% 08-13, +1.690% 08-12 by the prior day's numbers; today's fresh rolling window recomputes slightly differently but stays positive throughout) — full 5-signal vetting below |
+| PWR | 685.42 | +1.876% | 3.64% | FAIL (moot) — technical gate would pass, but the GuruFocus valuation veto (~44% overvalued, last verified 08-08) still stands; not re-pulled today since COST is this morning's priority and PWR's picture is unchanged |
+| MSFT | 495.35 | **+20.016%** | 2.62% | FAIL — still deeply extended, no chase |
+| LRCX | 332.44 | **−1.480%** | 5.52% | FAIL (technical) — still below its 50-day; valuation (P/E >60x, 131.6% overvalued per 08-14's GuruFocus pull) remains separately disqualifying regardless |
+| SHOP | 154.31 | **+25.564%** | 4.37% | FAIL — still well past the chase cap |
+
+### COST — full 5-signal entry-check (mandated by last week's weekly review, `strategy.md`)
+1. **Earnings momentum:** PASS. Q3 FY2026 (reported 05-29, most recent print — no fresher earnings since, next one 09-24): EPS USD 4.93 vs ~USD 4.79 est, revenue USD 70.53B vs USD 69.81B est (beat on both); comp sales +9.8% (+6.6% ex-gas/FX), digitally-enabled comps +21.5%, 89.7% worldwide renewal rate. A clean beat, no red flags.
+2. **Catalyst (1-6 months):** PASS. Fiscal Q4 earnings confirmed 2026-09-24 (~26 trading days out, no blackout) is a dated catalyst inside the window; ongoing membership-fee-increase flow-through (still driving ~14% YoY membership-fee growth) and accelerating e-commerce (+20% digitally-enabled) are live, continuing tailwinds, not stale decoration.
+3. **Valuation (PEG < 2.5, or discount vs. peers on NTM P/E/EV-FCF):** **FAIL.** PEG is 3.88 (GuruFocus, well above the 2.5 threshold — this is the same PEG-based test that actually cleared UNH at 1.73-2.07 and NVDA at 0.27-0.47, so it's being applied consistently). Forward P/E ~42-44x vs. the S&P 500 consumer-staples sector average of ~26x — a **premium** to peers, not a discount (Reuters flags COST and WMT together as the two names "driving much of the sector's valuation stretch"). **Correction to last week's weekly review:** that review treated GuruFocus's "Fairly Valued"/~8% discount-to-GF-Value reading as reversing the standing valuation flag — but GF Value is an intrinsic-DCF-style estimate, not the peer/PEG comparison this strategy's signal #3 actually specifies, and it is not equivalent to a PEG or peer-multiple pass. On the metric this strategy has consistently applied to every other entry, COST's valuation signal fails, cleanly.
+4. **Technical confirmation:** PASS. +1.087% vs 50-day SMA (not extended), ATR20% 1.46% — well under the 3% halving threshold, one of the calmest names on the whole watchlist. Three consecutive sessions above the 50-day now (08-12 → 08-14).
+5. **Macro tailwind:** PASS. Consumer-staples/defensive rotation intact, no contrary sector catalyst; this week's broader retail-earnings slate (WMT/TGT/HD/LOW) is a real read-through risk worth watching post-entry but is not itself a negative signal today.
+
+**Result: 4-of-5 signals clear (needs ≥3) — COST qualifies as a buy candidate, with valuation as the acknowledged weak link, not the "fully cleared" read from last week's review.** Sized as a **reduced starter** (below the normal 7-9% range) specifically because of the valuation gap, and as the deliberate uncorrelated-sector addition flagged in last week's weekly review (consumer defensive — zero overlap with the current Healthcare/Financials/Tech book, echoing AGGRO's own Week-1 diversification lesson).
+
+### Earnings-window rule
+- **Held names:** LLY (no near-term earnings, review_by 09-04), UNH (next earnings 10-27), V (next earnings ~late October, not yet confirmed), NVDA (earnings 08-26, 6 trading days out — outside the 2-day blackout, `review_by` 08-24 will force next week's decision). None report within 2 trading days — no forced hold/trim/exit call today beyond the UNH/V thesis-contract reviews above.
+- **Buy candidate (COST):** next earnings 09-24, ~26 trading days out — no blackout concern.
+
+### Cash-drag check
+Cash sits at 68.226% (live, USD 67,595.56 of USD 99,077.60 equity) — a 15th+ consecutive week above the 25-40% target band. This morning's COST plan is the direct, deliberate response mandated by last week's rolling-4-week-trigger review: a genuinely gate-clearing (4-of-5) name, sized down specifically for its one weak signal rather than deferred again. 0/3 new-position slots used this week (new week starts today).
+
+### Drawdown circuit breaker
+`history 1A 1D` high-water mark remains USD 100,322.08 (2026-07-21/22 close, unchanged). Current live equity USD 99,077.60 → drawdown **1.2404%** — NOT triggered (8.7596pp headroom). New buys remain permitted.
+
+### Intraday shock check
+Equity USD 99,077.60 vs Alpaca `last_equity` USD 99,144.27 (2026-08-14 close, last trading session — market closed the weekend) = **−0.0672%** — no shock (threshold −4%; market not yet open regardless).
+
+### Sector cap
+Healthcare (LLY+UNH) 19.625% (USD 19,445.02), Financials (V) 8.026% (USD 7,953.00), Tech (NVDA) 4.122% (USD 4,084.02), cash 68.226% (USD 67,595.56) — all well within the 60% single-sector cap. Planned COST buy (~6.8%) would open a new, uncorrelated Consumer Defensive sleeve, nowhere near its own cap.
+
+### Stop audit (`orders open` vs `positions`, live)
+LLY `e3547b9e` (HWM USD 1,240.00 / stop USD 1,116.00, qty 8), UNH `225cb079` (HWM USD 436.945 / stop USD 393.2505, qty 25), V `2b0a93ba` (HWM USD 373.96 / stop USD 336.564, qty 22), NVDA `49c544b0` (HWM USD 227.49 / stop USD 204.741, qty 18) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS.**
+
+### Weekly new-position count
+0/3 used this week (new week of 2026-08-17) — today's plan would use 1/3.
+
+### Volatility check (sizing)
+COST 20-day ATR% = 1.46%, well under the 3% halving threshold — no size reduction needed on volatility grounds. Sizing is reduced instead for the valuation-signal failure (see above), a discretionary conviction call, not the mechanical ATR halve.
+
+### Sizing
+COST — reduced starter (valuation signal fails, so sized below the normal 7-9% range rather than at it): **7 shares @ ~USD 960.84 reference close = ~USD 6,725.88 (~6.79% of equity).** Risk at a 10% stop: ~USD 672.59 ≈ **0.679% of equity**, comfortably within the 1.2% risk-budget cap. Daily deployment 6.79% (cap 25%). Weekly new-position count: 0/3 → 1/3 if filled. Cash after (if filled): ~61.4%, still far above the 5% minimum and still above the 25-40% target band — continued deliberate, gradual deployment, not a rush.
+
+### Today's plan
+
+BUY COST 7sh as a reduced starter — 4-of-5 entry signals clear (earnings momentum, catalyst, technical, macro); valuation (PEG 3.88, premium to sector peers) is the one signal that fails, which is why this is sized down from a normal starter rather than treated as a clean high-conviction entry. This directly executes last week's weekly-review mandate to act promptly on COST's cleared technical gate rather than let it sit as a routine watchlist note. UNH's and V's thesis contracts (both due today) resolve HOLD/no trim, with UNH's review_by shortened to Wednesday given its compressed buffer to the −7% line. Monday conviction review: LLY A→B, NVDA A, UNH B→C (first C, not yet a 3-streak), V A.
+
+```json
+{
+  "plan_date": "2026-08-17",
+  "trades": [
+    {"action": "buy", "symbol": "COST", "qty": 7, "thesis": "3-consecutive-session technical confirmation above the 50-day SMA (+1.09% 08-14, ATR 1.46%, no halving needed); Q3 FY26 beat (EPS USD 4.93 vs ~USD 4.79 est, revenue USD 70.53B vs USD 69.81B est, comp sales +9.8%, digital comps +21.5%, 89.7% renewal); consumer-staples diversifier with zero current sector overlap; next earnings 09-24 outside blackout. Valuation signal fails (PEG 3.88, forward P/E ~42-44x vs sector ~26x, a premium not a discount) — sized as a reduced starter to reflect the one weak signal, not a full 7-9% starter.",
+     "invalidation": "closes back below the 50-day SMA (~USD 960, drifts) on volume, or Q4 FY26 earnings (09-24) misses/guides down, or the 10% trailing stop fires",
+     "review_by": "2026-09-22"}
+  ]
+}
+```
+
 ## 2026-08-14 — Pre-market research (~08:47 ET, Friday) — PLAN: no trades (COST posts a first, unconfirmed positive SMA cross; retail sales + UMich sentiment due today)
 
 ### Live-switch guard

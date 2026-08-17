@@ -6,6 +6,20 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-17 ~08:30 ET — PRE-MARKET (Monday) — plan: BUY COST 7sh
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for premarket. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Account (live):** Equity USD 99,077.60, cash USD 67,595.56 (68.226%), 4 positions (LLY 8sh, NVDA 18sh, UNH 25sh, V 22sh). Drawdown 1.2404% vs HWM USD 100,322.08 — not triggered. No intraday shock (−0.0672%). 10yr Treasury 4.68% — below the 4.75% gate.
+- **Stop audit:** 4/4 live, quantities match positions exactly — PASS.
+- **Thesis contracts (both due today):** UNH — closed below its 50-day SMA 7 of the last 8 sessions, but on low volume (0.55x-1.07x the 20-day average) — read as unconfirmed drift, not the volume-confirmed breakdown the invalidation specifies. **Decision: HOLD, no trim** — the −7% midday rule and the live 10% trailing stop are both already primed close to the current price (buffer ~1.5pp each), so no discretionary pre-market trim on top of two mechanical nets. `review_by` shortened to 2026-08-19 (Wednesday) given the compressed buffer. V — well above its 50-day SMA (+4.52%), not triggered. **Decision: HOLD, no trim**, `review_by` renewed to 2026-09-15.
+- **Monday conviction-weighted review:** LLY A→B (thesis intact but flat 5 weeks, no fresh catalyst). NVDA A (unchanged). UNH B→C (persistent low-volume drift below its 50-day, closest to the −7% cut; first C, not a 3-consecutive streak — no forced trim from this rule). V A (unchanged).
+- **Watchlist / COST full 5-signal vetting (mandated by 2026-08-14's weekly review):** COST clears technical confirmation (+1.087% vs 50-day, 3rd confirming session, ATR 1.46%), earnings momentum (Q3 FY26 beat, EPS USD 4.93 vs ~USD 4.79 est), catalyst (Q4 earnings 09-24, ongoing membership-fee/e-commerce growth), and macro tailwind (staples rotation intact) — 4 of 5. **Valuation signal FAILS**: PEG 3.88 (>2.5 threshold), forward P/E ~42-44x vs sector ~26x average — a premium, not a discount. This corrects last week's review, which read GuruFocus's "Fairly Valued"/GF-Value-discount finding as reversing the flag; GF Value is a DCF-style intrinsic estimate, not the PEG/peer-multiple test entry-signal #3 actually specifies (the same test that cleared UNH and NVDA). 4-of-5 still clears the "at least three" bar. PWR/MSFT/LRCX/SHOP remain non-candidates (valuation-vetoed or extended).
+- **Sizing:** COST — reduced starter (below the normal 7-9% range, specifically for the failed valuation signal): 7sh @ ~USD 960.84 reference close ≈ USD 6,725.88 (~6.79% of equity). Risk at a 10% stop ≈ 0.679% of equity (well within the 1.2% risk-budget cap). Daily deployment 6.79% (cap 25%). Weekly new-position count 0/3 → would use 1/3. Sector: opens a new, uncorrelated Consumer Defensive sleeve — the diversification move flagged by last week's weekly review.
+- **Cash-drag check:** 68.226%, 15th+ consecutive week above the 25-40% target band; today's COST plan is the deliberate, mandated response — a genuinely gate-clearing name sized down for its one weak signal, not deferred again.
+- **Plan:** `plan_date: 2026-08-17`, `trades: [{"action": "buy", "symbol": "COST", "qty": 7, ...}]`. Full detail and JSON block in `research-log.md`.
+- **Notify:** Telegram sent — plan summary, UNH's compressed buffer flagged.
+- **Commit:** done.
+
 ## 2026-08-14 ~15:52 ET — CLOSE (no trades; since-inception gap vs SPY sets a new widest-ever −4.9378pp on a post-ATH pause day; UNH's litigation story is confirmed still stale, not new)
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
