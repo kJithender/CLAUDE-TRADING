@@ -6,6 +6,29 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-18 ~15:52 ET — CLOSE (Tuesday) — EOD: +0.4621%, gap vs SPY narrows to −3.68pp on a chip-sector-led broad selloff
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free, prior lock from `aggro-midday` had expired); wrote lock for close (started 2026-08-18T19:51:18Z, expires 19:59:18Z).
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, next_close 2026-08-18T16:00:00-04:00 — normal trading session (not a half-day).
+- **Account (live, ~15:52 ET / close routine ran ~19:51 UTC):** Equity USD 99,271.21, cash USD 70,730.16 (71.245%), long market value USD 28,541.05 (28.752%: LLY 9.887% + V 8.098% + COST 6.783% + NVDA 3.983%), buying power USD 362,835.58. `last_equity` USD 98,814.60 (08-17 close).
+- **Today's P/L:** +USD 456.61 (**+0.4621%**).
+- **SPY:** USD 767.69 today (`bars SPY 1Day` dailyBar.c) vs USD 772.895 (08-17, value of record) — **−0.6735%** today. Bull outperformed SPY by +1.1356pp today.
+- **Since inception (2026-07-01, USD 100,000 / SPY anchor USD 745.665):** Bull −0.72879% vs SPY +2.95483% = **−3.68362pp gap**, narrowing sharply from −4.7743pp yesterday.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21/22 close, unchanged) vs equity USD 99,271.21 — drawdown **1.0475%**. NOT triggered (8.9525pp headroom).
+- **Market context (WebSearch):** broad chip-sector selloff (Philly semi index −3.7%; WDC −7%, SNDK −9%, MRVL −9%, STX −8%) plus 30yr Treasury briefly above 5.337% drove Nasdaq −1.3%, S&P −0.3%, Dow −0.1%. NVDA (Bull's only chip exposure, ~4% of equity) fell intraday; LLY/V/COST (no semi exposure) all closed up, more than offsetting it — see `lessons.md` 2026-08-18 entry.
+- **Positions (% from entry, live):** COST +0.669%, LLY +4.473%, NVDA −0.096%, V +2.906%. None near the −7% cut (close places no orders regardless).
+- **Stop audit (`orders open`, live) — 4/4 PASS:** COST `90d27fb4` (HWM 971.9599/stop 874.76391, qty 7), LLY `e3547b9e` (HWM 1,240.00/stop 1,116.00, qty 8), NVDA `49c544b0` (HWM 227.92/stop 205.128, qty 18), V `2b0a93ba` (HWM 373.96/stop 336.564, qty 22) — all live, quantities match positions exactly.
+- **Exits/reconciliation:** 0 trades today; positions unchanged from midday (COST 7, LLY 8, NVDA 18, V 22) — no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY) 9.887%, Financials (V) 8.098%, Consumer Defensive (COST) 6.783%, Tech (NVDA) 3.983%, cash 71.245% — all well within the 60% sector cap.
+- **Weekly new-position count:** 1/3 used this week (COST, week of 2026-08-17) — unchanged.
+- **Friday watchdog:** N/A (Tuesday).
+- **Monthly/quarterly housekeeping:** N/A (not first trading day of month; not a quarterly month).
+- **Race scoreboard:** Bull −0.729% since inception (07-01) vs AGGRO's last-known (stale, 2026-06-23 EOD, now 56 days stale) −7.123% since its own inception (06-04) vs SPY +2.955% (Bull's own 07-01 baseline).
+- **performance.csv:** row appended (2026-08-18, bull, 99271.21, 70730.16, 767.69).
+- **Notify:** Telegram sent, plain prefix (no loss-close, no breaker, no watchdog).
+- **Commit:** done.
+
 ## 2026-08-18 ~12:38 ET — MIDDAY (Tuesday) — No action: all positions within range, 4/4 stops live
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for midday (started 16:35:00Z, expires 16:43:00Z).
