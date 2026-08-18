@@ -6,6 +6,20 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-18 ~09:37 ET — MARKET-OPEN (Tuesday) — No trades: today's plan was empty
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for market-open (started 13:36:51Z, expires 13:44:51Z).
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Plan check:** most recent "Planned trades for today" JSON block in `research-log.md` is `plan_date: 2026-08-18` (today), `trades: []`. Pre-market ran today, plan not stale. Nothing to execute — step 2 (breaking-news gate) is a no-op with no symbols to check.
+- **Market:** `clock` confirmed `is_open: true`, next close 2026-08-18T16:00:00-04:00.
+- **Account (live, ~09:37 ET):** Equity USD 98,980.69, cash USD 70,730.16 (71.454%), long MV USD 28,250.53 (28.546%: LLY 9.747% + V 8.005% + NVDA 4.012% + COST 6.782%), buying power USD 362,022.12. `last_equity` USD 98,814.60. **Shock check:** +0.168% — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (unchanged) vs equity USD 98,980.69 — drawdown **1.3368%**. NOT triggered (8.6632pp headroom).
+- **Stop audit (`orders open` vs `positions`, live):** COST `90d27fb4` (HWM USD 966.11/stop USD 869.499, qty 7), LLY `e3547b9e` (HWM USD 1,240.00/stop USD 1,116.00, qty 8), NVDA `49c544b0` (HWM USD 227.92/stop USD 205.128, qty 18), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 exits since the pre-market run — all 4 positions unchanged (COST 7, LLY 8, NVDA 18, V 22), no stop fired between routines.
+- **Action:** No trades placed — today's pre-market plan was empty (risk-off tape: expired US-Iran ceasefire, oil higher, 10yr at its closest-ever read to the 4.75% gate; no watchlist name clears both the technical and valuation gates). Weekly new-position count unchanged: 1/3 used this week (COST, 2026-08-17).
+- **Notify:** Telegram sent, plain prefix (no stop fill, no blocked trade, no unprotected position, breaker not active).
+- **Commit:** done.
+
 ## 2026-08-18 ~08:15 ET — PRE-MARKET (Tuesday) — No trades: risk-off tape, 10yr at closest-ever read to the gate, no watchlist name clears both gates
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for premarket (started 12:15:15Z, expires 12:23:15Z).
