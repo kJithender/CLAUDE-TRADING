@@ -6,6 +6,23 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-18 ~08:15 ET — PRE-MARKET (Tuesday) — No trades: risk-off tape, 10yr at closest-ever read to the gate, no watchlist name clears both gates
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for premarket (started 12:15:15Z, expires 12:23:15Z).
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Account (live, ~08:15 ET):** Equity USD 98,915.28, cash USD 70,730.16 (71.506%), long MV USD 28,185.12 (28.494%), buying power USD 361,838.98. `last_equity` USD 98,814.60. Shock check +0.102% — no shock.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (unchanged) vs equity USD 98,915.28 — drawdown 1.402%. NOT triggered.
+- **10yr Treasury:** 4.738% (tradingeconomics.com, explicitly dated 08-18) — tied with 07-31's 4.737% as the closest-ever read to the 4.75% new-buy gate. Not breached.
+- **Market posture:** Risk-off — S&P futures −0.41%, Nasdaq-100 futures −0.76% — the 60-day US-Iran ceasefire expired 08-17 with no deal, Iran threatening to escalate in the Strait of Hormuz, oil pushing higher (Brent > USD 90/bbl).
+- **Held positions:** LLY +1.497%, V +1.662%, NVDA +0.327%, COST +0.730% — all thesis-intact, no fresh negative catalysts (full detail in `research-log.md`). No thesis contracts due today (LLY 09-04, V 09-15, NVDA 08-24, COST 09-22).
+- **Stop audit (`orders open`, live):** COST `90d27fb4` (stop 860.157, qty 7), LLY `e3547b9e` (stop 1116.00, qty 8), NVDA `49c544b0` (stop 205.128, qty 18), V `2b0a93ba` (stop 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS.**
+- **Sector exposure:** Healthcare (LLY) 9.639%, Financials (V) 8.028%, Tech (NVDA) 4.014%, Consumer Defensive (COST) 6.812%, cash 71.506% — all within the 60% cap.
+- **Watchlist:** MSFT (+16.158% vs 50-day) and SHOP (+20.300%) still extended; PWR (+7.315%, not extended) stays valuation-vetoed (~44% overvalued); LRCX posted a fresh, unconfirmed first-time positive SMA cross (+1.856%) but is still valuation-vetoed on its last read (131.6% overvalued). No name clears both gates.
+- **Cash-drag check:** cash 71.506%, 15+ weeks above the 10-20% target band, 2/3 weekly slots still open — but today's risk-off macro tape (Iran ceasefire expiry, oil higher, 10yr at the gate) plus no qualifying candidate makes staying in cash the deliberate, correct call, journaled explicitly rather than defaulted into.
+- **Action:** No trades planned today (see `research-log.md` plan JSON, `trades: []`). Weekly new-position count unchanged: 1/3 used this week (COST, 2026-08-17).
+- **Notify:** Telegram sent, plain prefix (no urgent event this run).
+- **Commit:** done.
+
 ## 2026-08-17 ~12:36 ET — MIDDAY (Monday) — UNH stopped out overnight-to-midday, discovered this run
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock found stale (routine `aggro-market-open`, expired 14:19Z, now 16:36Z) — overwrote with a fresh midday lock. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.

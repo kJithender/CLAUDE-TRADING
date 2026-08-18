@@ -5,6 +5,76 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-08-18 — Pre-market research (~08:15 ET, Tuesday) — NO TRADES: risk-off tape, 10yr at its closest-ever read to the 4.75% gate, no watchlist name clears both gates
+
+### Live-switch guard
+- `ALPACA_BASE_URL` contains "paper" ✓.
+
+### Lock / control switch
+- `memory/_lock` was `{}` (free) at start of this run. Lock acquired (`premarket`, started 2026-08-18T12:15:15Z, expires 2026-08-18T12:23:15Z).
+- `memory/control.md`: `STATUS: ACTIVE`. No `NOTE:`/`QUERY:` pending. `CROSS_BULL_LEARNING:` blank.
+
+### Market status
+- `clock`: `is_open: false` (pre-market), `next_open: 2026-08-18T09:30:00-04:00`, `next_close: 2026-08-18T16:00:00-04:00` — normal trading day.
+
+### Account snapshot (live, ~08:15 ET)
+Equity USD 98,915.28, cash USD 70,730.16 (71.506%), long market value USD 28,185.12 (28.494%), buying power USD 361,838.98. `last_equity` USD 98,814.60. **Shock check:** +0.102% — no shock (threshold −4%; market not yet open, negligible overnight drift).
+
+### Drawdown circuit breaker
+HWM USD 100,322.08 (from `history 1A 1D`, unchanged since 2026-07-21/22 close) vs equity USD 98,915.28 — drawdown **1.402%**. NOT triggered (8.598pp headroom).
+
+### Market posture (pre-market 2026-08-18) — turning risk-off
+S&P 500 futures **−0.41%**, Nasdaq-100 futures **−0.76%**, Dow futures −0.16%, Russell 2000 futures −0.24% — a genuinely risk-off open, driven by two compounding factors: (1) the 60-day US–Iran ceasefire expired yesterday (08-17) with no breakthrough — a senior Iranian official told Reuters the country may shift to an "offensive" posture and escalate in the Strait of Hormuz if diplomacy fails; Brent closed above USD 90/bbl, WTI +0.6% to ~USD 85/bbl on the renewed risk; (2) bond yields pushing higher against already-stretched valuations. Polymarket-style prediction markets imply only a 27% chance of a higher S&P close today. [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/08/61265010/stock-market-will-sp-500-open-up-or-down-today-18), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-17/stock-market-today-dow-s-p-live-updates)
+
+**10yr Treasury: 4.738%** (tradingeconomics.com, explicitly dated 2026-08-18 — "rose past 4.7%, not far from the 19-month high of 4.75% tested last week") — still comfortably below-to-borderline the **4.75% new-buy gate**, and this is now tied with 07-31's 4.737% as the closest read of this entire track record. **Not yet breached — new buys remain technically permitted — but this is the closest-ever read and must be re-checked first thing at every future pre-market; a breach blocks new buys outright.**
+
+### Held position — LLY — what changed since yesterday
+Live: 8sh @ avg USD 1,174.35625, current ~USD 1,191.94 (**+1.497%**, USD +140.67). WebSearch (`Eli Lilly stock news August 18 2026`) found no thesis-breaking news — Eli Lilly filed six new lawsuits to shut down the retatrutide black market (defends IP/pricing, not a negative) and an OmniAb collaboration/license agreement (incremental pipeline news, not thesis-moving). Analyst consensus stays Buy (23 buy / 2 sell), avg PT USD 1,310.90. **What changed: nothing material, thesis unchanged.** `review_by` 2026-09-04, not due.
+
+### Held position — V — what changed since yesterday
+Live: 22sh @ avg USD 355.058182, current ~USD 360.96 (**+1.662%**, USD +129.84). WebSearch (`Visa stock news August 18 2026`) found no negative news — Visa's Agentic Ready program launch and renewed Bill Ackman/Pershing Square interest are incrementally positive, not thesis-changing; Strong Buy consensus intact (37 buy / 0 sell), avg PT USD 416.20. **What changed: nothing material, thesis unchanged.** `review_by` 2026-09-15, not due.
+
+### Held position — NVDA — what changed since yesterday
+Live: 18sh @ avg USD 219.891667, current ~USD 220.61 (**+0.327%**, USD +12.93). WebSearch (`Nvidia stock news August 18 2026`) found no thesis-breaking news — a disclosed USD 21B stake in SpaceX (investment activity, not core-thesis-moving) and a USD 1.5B SB Energy Ohio data-center investment leased to OpenAI (reinforces the AI-infrastructure-demand thesis, mildly positive). Strong Buy consensus intact (58 buy / 1 sell), avg PT USD 302.83-304.36. **What changed: nothing material, thesis unchanged.** Earnings confirmed **2026-08-26** (WallStreetZen/TipRanks, after market close) — 6 trading days out from today, still outside the 2-trading-day blackout (which starts 2026-08-24). `review_by` 2026-08-24, not due today (next Monday).
+
+### Held position — COST — what changed since yesterday
+Live: 7sh @ avg USD 955.524286, current ~USD 962.50 (**+0.730%**, USD +48.83). WebSearch (`Costco stock news August 18 2026`) found nothing newer than 08-14 (Canada grocery-chain ranking, politician-trading-ahead-of-earnings coverage) — no fresh company-specific catalyst since entry. **What changed: nothing material, thesis unchanged.** Next earnings 2026-09-24, `review_by` 2026-09-22, not due.
+
+### Earnings-window rule
+No held position reports within the next 2 trading days (NVDA 08-26 is the nearest, still 6 trading days out). No new-buy candidate is being considered today regardless (see Watchlist below), so the earnings-window rule imposes no constraint this run.
+
+### Thesis contracts
+None due today: LLY 2026-09-04, V 2026-09-15, NVDA 2026-08-24, COST 2026-09-22 — all in the future. UNH's shortened 2026-08-19 review_by is moot (position stopped out 2026-08-17, already reconciled).
+
+### Stop audit (`orders open`, live)
+COST `90d27fb4` (HWM USD 955.73 / stop USD 860.157, qty 7), LLY `e3547b9e` (HWM USD 1,240.00 / stop USD 1,116.00, qty 8), NVDA `49c544b0` (HWM USD 227.92 / stop USD 205.128, qty 18), V `2b0a93ba` (HWM USD 373.96 / stop USD 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+
+### Sector exposure
+Healthcare (LLY) 9.639% (USD 9,535.52), Financials (V) 8.028% (USD 7,941.12), Tech (NVDA) 4.014% (USD 3,970.98), Consumer Defensive (COST) 6.812% (USD 6,737.50), cash 71.506% (USD 70,730.16) — all comfortably within the 60% sector cap.
+
+### Watchlist re-verification (fresh Alpaca bars, explicit date range 2026-06-01 to 2026-08-17)
+- **MSFT:** USD 480.65 vs 50-day SMA USD 413.79 = **+16.158%** — still decisively extended (>10% chase cap). Not a candidate.
+- **SHOP:** USD 148.63 vs 50-day SMA USD 123.55 = **+20.300%** — still decisively extended. Not a candidate.
+- **PWR:** USD 722.08 vs 50-day SMA USD 672.86 = **+7.315%** (not extended), ATR20% 3.74% (>3%, would need halved sizing). Still valuation-vetoed per the standing GuruFocus read (~44% overvalued, last reconfirmed 08-08) — not re-pulled today given no new trigger and today's risk-off tape; not a candidate regardless of the technical picture.
+- **LRCX:** USD 343.84 vs 50-day SMA USD 337.58 = **+1.856% — a fresh, first-time positive cross** (was −1.614% at the 08-14 weekly review). ATR20% 5.38% (>3%). Single unconfirmed session — per the standing multi-session-confirmation discipline (the same rule that gated NVDA through 6+ failed crosses before its real breakout), this alone is not a signal. The valuation veto (131.6% overvalued, GF Value USD 134.71 vs price ~USD 311-312 as of the 08-14 GuruFocus pull) was too decisive to plausibly have closed in 4 days and was not re-pulled today — flagged for the next pre-market to watch for a second confirming session before any valuation re-check is warranted.
+- **COST:** held, see above.
+- No name clears both the technical and valuation gates today. No qualifying entry.
+
+### Cash-drag check
+Cash (71.506%) has sat well above the 10-20% steady-state target band (`strategy.md`) for 15+ consecutive weeks. Two of three weekly new-position slots remain open (COST used 1/3 this week, 2026-08-17). However, today's tape is explicitly **not** constructive — a risk-off open driven by the expired US-Iran ceasefire and escalation risk in the Strait of Hormuz, oil pushing higher, and the 10yr at its closest-ever read to the 4.75% new-buy gate — layered on top of the fact that no watchlist name clears both its technical and valuation gates. Staying heavy in cash today is the correct, deliberate decision, not a passive default: adding risk into a deteriorating macro tape with no qualifying setup would be forcing a trade to reduce cash drag, exactly the discipline `lessons.md` (2026-05-29, 2026-07-10) warns against.
+
+### Planned trades for today
+No trades planned. Every watchlist name fails its combined technical + valuation gate (LRCX's fresh single-session cross is unconfirmed and still valuation-vetoed on the last available read); today's macro backdrop (Iran ceasefire expiry, oil higher, 10yr at its closest-ever read to the 4.75% gate, S&P futures −0.41%) further argues against forcing a marginal entry. All 4 held positions HOLD, no trim (thesis intact for LLY/V/NVDA/COST, no thesis contracts due, 4/4 stops live). No thesis-breaking news for any held name.
+
+```json
+{
+  "plan_date": "2026-08-18",
+  "trades": []
+}
+```
+
+---
+
 ## 2026-08-17 — Pre-market research (~08:30 ET, Monday) — PLAN: BUY COST 7sh (first full 5-signal vetting pass since NVDA; valuation signal fails but 4-of-5 clears)
 
 ### Live-switch guard
