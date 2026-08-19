@@ -5,6 +5,88 @@ The market-open routine reads the most recent "Planned trades" section._
 
 ---
 
+## 2026-08-19 — Pre-market research (~08:20 ET, Wednesday) — NO TRADES: risk-off tape continues (Asian selloff, FOMC minutes today, Middle East tensions), no watchlist name clears both gates
+
+### Step 0 — guards
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓.
+- **Lock:** `memory/_lock` was `{}` (free) at start of this run. Wrote lock (`premarket`, started 2026-08-19T12:15:41Z, expires 12:23:41Z).
+- **Control switch:** `control.md` — `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Memory:** read `control.md`, `strategy.md`, `portfolio.md`, `trade-log.md`, `research-log.md`, `lessons.md`, `weekly-review.md`, `knowledge-base.md`, `closed-trades.md`, `trades.jsonl` (full, 20 lines).
+
+### Step 2 — portfolio sync (live Alpaca data, ~08:20 ET)
+
+| Symbol | Qty | Avg entry | Current | Unrealized P/L | % of equity |
+|--------|-----|-----------|---------|-----------------|--------------|
+| COST | 7 | 955.524286 | 964.55 | +USD 63.18 (+0.945%) | 6.797% |
+| LLY | 8 | 1174.35625 | 1232.00 | +USD 461.15 (+4.909%) | 9.923% |
+| NVDA | 18 | 219.891667 | 220.63 | +USD 13.29 (+0.336%) | 3.998% |
+| V | 22 | 355.058182 | 364.86 | +USD 215.64 (+2.761%) | 8.081% |
+
+Equity USD 99,336.27 | Cash USD 70,730.16 (71.211%) | Long MV USD 28,606.11 (28.795%) | Buying power USD 363,017.75. Alpaca `last_equity` USD 99,234.27 (08-18 close, close routine's own recorded figure was USD 99,271.21 — a ~USD 37/0.037% drift consistent with the standing "small settle-timing drift is expected, not a bug" lesson, not a stale-data anomaly).
+
+Sector exposure: Healthcare (LLY) 9.923%, Financials (V) 8.081%, Consumer Defensive (COST) 6.797%, Tech (NVDA) 3.998%, cash 71.211%. All well within the 60% sector cap.
+
+### Step 3 — risk posture check
+- **Drawdown circuit breaker:** `history 1A 1D` high-water mark USD 100,322.08 (2026-07-22 close, unchanged). Current equity USD 99,336.27 → drawdown **0.9827%**. NOT triggered (9.0173pp headroom) ✓.
+- **Intraday shock check:** equity USD 99,336.27 vs `last_equity` USD 99,234.27 = **+0.1028%** — no shock ✓ (threshold −4%; market not yet open).
+- **Sector cap:** no group above 60% (see table above) ✓.
+- **10yr Treasury:** eased to **4.70%** (tradingeconomics.com, dated today) — comfortably below the 4.75% new-buy gate.
+
+### Step 3b — thesis contract review
+LLY (review_by 2026-09-04), V (review_by 2026-09-15), NVDA (review_by 2026-08-24 — 5 trading days out, forcing the pre-earnings hold/trim/exit call ahead of NVDA's 08-26 print), COST (review_by 2026-09-22) — none due today, none triggered.
+
+### Step 3c — Monday conviction review
+N/A — today is Wednesday.
+
+### Step 4 — research (WebSearch, all facts dated 2026-08-19 unless noted)
+- **Market posture — risk-off, second consecutive session:** S&P 500 futures −0.18% pre-market, chipmakers continuing to lag after Tuesday's sector rout. U.S. futures trending lower following a sharp overnight Asian-market selloff, ahead of today's FOMC July-meeting minutes release, plus continued Middle East tension and a heavy retail-earnings slate. [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-18/stock-market-today-dow-s-p-live-updates), [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/08/61292397/stock-market-will-sp-500-open-up-or-down-today-19)
+- **10yr Treasury:** eased slightly to 4.70% (tradingeconomics.com, dated today) — pulled back from Tuesday's near-decade-high levels; comfortably below the 4.75% new-buy gate. [TradingEconomics](https://tradingeconomics.com/united-states/government-bond-yield)
+- **LLY (what changed since yesterday):** nothing thesis-breaking — the +3.19% move Tuesday (already captured in yesterday's close entry) was driven by two BD deals: acquiring global rights to AlzeCure's preclinical Alzheimer's candidate ACD680 (USD 10M upfront, potential >USD 1B total) and an OmniAb ion-channel collaboration; Lilly also filed 6 new lawsuits to shut down black-market retatrutide sales (defensive IP action, not a setback). Barclays reaffirmed Buy. No negative catalyst. Thesis unchanged, review_by 09-04 stands. [Simply Wall St](https://simplywall.st/stocks/us/pharmaceuticals-biotech/nyse-lly/eli-lilly/news/eli-lilly-lly-raises-2026-revenue-guidance-is-the-stock-stil), [TradingKey](https://www.tradingkey.com/news/market-movers/262115804-market-movers-lly-20260818)
+- **V (what changed since yesterday):** nothing thesis-breaking — Pershing Square disclosed Visa among six new positions as of 08-17 (a fresh positive institutional-interest data point); Lithic/Lightspark and Zerohash both announced Visa-linked stablecoin-infrastructure partnerships in early August, reinforcing the existing agentic-commerce/stablecoin catalyst. No negative news. Thesis unchanged, review_by 09-15 stands. [Top1Markets](https://www.top1markets.com/news/visa-stock-analysis-q3-2026)
+- **NVDA (what changed since yesterday):** nothing thesis-breaking — routine coverage of the Ohio AI data-center bid (SB Energy) and BofA commentary that AI-financing risk concerns "may be overstated," alongside one bearish commentary (Gundlach comparing Nvidia's AI financing to "bananas-backed bonds") — background noise, not a new catalyst either way. Earnings confirmed 2026-08-26 (5 trading days out; review_by 08-24 will force the pre-earnings hold/trim/exit call next Monday). Thesis unchanged. [MarketBeat](https://www.marketbeat.com/stocks/NASDAQ/NVDA/news/)
+- **COST (what changed since yesterday):** nothing thesis-breaking — up 11% YTD, closed 961.35 (08-18, +0.82%); recent items (Costco-branded Medicare plans per WSJ, #2 Canadian grocery chain status, Bernstein Buy on 300-new-warehouse expansion plan, July comp sales +8.9%) are all already-known, positive, non-thesis-changing. Thesis unchanged, review_by 09-22 stands.
+
+### Watchlist re-verification (fresh Alpaca bars, explicit date range 2026-06-01 to 2026-08-19)
+
+| Ticker | Last close | 50-day SMA | vs 50-day | ATR20% | Gate |
+|--------|-----------|-----------|-----------|--------|------|
+| MSFT | 481.82 | 415.09 | **+16.075%** | 2.61% | FAIL (extended, more than 10% chase cap) |
+| SHOP | 146.59 | 124.29 | **+17.942%** | 4.34% | FAIL (extended) |
+| PWR | 696.78 | 672.89 | +3.551% | 3.81% | Technical PASS (not extended) but **valuation veto stands** — fresh GuruFocus pull today: price USD 680.20 vs GF Value USD 459.56 / DCF-earnings intrinsic USD 419.06, margin of safety −62.3%, P/E 76.96x (152% above its own 10-year median) — decisively overvalued |
+| LRCX | 328.34 | 338.08 | −2.880% | 5.32% | FAIL (still below 50-day; last valuation pull 131.6% overvalued, not re-pulled today given the technical fail is independently disqualifying) |
+
+No watchlist candidate qualifies for entry today. PWR is the closest on technicals (not extended for the first time in weeks) but the valuation veto is freshly reconfirmed and decisive — same discipline as the 08-14 weekly review's LRCX precedent (a narrowing technical gap does not override a clear valuation fail).
+
+### Step 5 — earnings-window rule
+No new buy planned (moot — no watchlist candidate clears its combined gate). No held position reports within the next 2 trading days: LLY (09-04), V (~late Oct, estimated), NVDA (08-26, 5 trading days out — outside the 2-day window), COST (~09-24).
+
+### Step 6 — cash-drag check
+Cash 71.211%, still far above the 25–40% target band (16th+ consecutive week elevated), but only 1/3 weekly slots used (COST, week of 2026-08-17) — 2 remain. Today's tape is explicitly **not** constructive for forcing a new entry: risk-off futures, a fresh overnight Asian-market selloff, FOMC minutes due today, and continued Middle East tension, layered on the fact that no watchlist name clears both its technical and valuation gates (PWR is the closest and still fails valuation decisively). Staying in cash today is the correct, actively-re-verified call, not a passive default — this is the explicit sentence required when a qualifying entry isn't taken.
+
+### Step 7 — plan
+**No trades today.** All 4 positions HOLD. No thesis contracts due. NVDA's review_by (08-24) is the next scheduled forced decision, landing next Monday ahead of its 08-26 earnings print.
+
+**Stop audit (`orders open`, live Alpaca data):** COST `90d27fb4` (HWM USD 971.9599/stop USD 874.76391, qty 7), LLY `e3547b9e` (HWM USD 1,240.00/stop USD 1,116.00, qty 8), NVDA `49c544b0` (HWM USD 227.92/stop USD 205.128, qty 18), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS.**
+
+**Planned trades for today:**
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-08-19",
+  "trades": []
+}
+```
+
+### Step 8 — notify
+Telegram sent per playbook — market posture (risk-off, Asian selloff, FOMC minutes today, 10yr eased to 4.70%), no trades planned.
+
+### Step 9 — commit
+done.
+
+---
+
 ## 2026-08-18 — Pre-market research (~08:15 ET, Tuesday) — NO TRADES: risk-off tape, 10yr at its closest-ever read to the 4.75% gate, no watchlist name clears both gates
 
 ### Live-switch guard

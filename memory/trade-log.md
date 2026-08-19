@@ -6,6 +6,24 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-19 ~08:20 ET — PRE-MARKET (Wednesday) — No trades: risk-off tape continues, PWR clears the technical gate but valuation veto stands, no qualifying entry
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for premarket. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Account (live, ~08:20 ET):** Equity USD 99,336.27, cash USD 70,730.16 (71.211%), long MV USD 28,606.11 (28.795%: LLY 9.923% + V 8.081% + COST 6.797% + NVDA 3.998%), buying power USD 363,017.75. `last_equity` USD 99,234.27 (08-18 close, ~USD 37 drift from the close routine's own recorded USD 99,271.21 — immaterial settle-timing drift, not an anomaly).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-22 close, unchanged) vs equity USD 99,336.27 — drawdown **0.9827%**. NOT triggered (9.0173pp headroom).
+- **Intraday shock check:** equity vs `last_equity` = **+0.1028%** — no shock (threshold −4%; market not yet open).
+- **10yr Treasury:** eased to **4.70%** (tradingeconomics.com, dated today) — comfortably below the 4.75% new-buy gate.
+- **Positions (% from entry, live):** COST +0.945%, LLY +4.909%, NVDA +0.336%, V +2.761% — none within range of the −7% cut (midday's job regardless).
+- **Sector exposure:** Healthcare (LLY) 9.923%, Financials (V) 8.081%, Consumer Defensive (COST) 6.797%, Tech (NVDA) 3.998%, cash 71.211% — all well within the 60% sector cap.
+- **Thesis contracts:** LLY (09-04), V (09-15), NVDA (08-24, 5 trading days out), COST (09-22) — none due today.
+- **Market posture:** risk-off, second consecutive session — S&P futures −0.18%, chipmakers still lagging after Tuesday's rout, overnight Asian-market selloff, FOMC July-minutes release due today, continued Middle East tension. No thesis-breaking news for any held name (LLY: 2 new BD deals, Barclays reaffirmed Buy; V: Pershing Square disclosed a new stake, stablecoin-partnership news; NVDA: routine Ohio data-center/AI-financing coverage; COST: Medicare-plan rollout, Canada #2-grocery-chain status — all positive/neutral, non-thesis-changing).
+- **Watchlist:** PWR clears the technical gate for the first time in weeks (+3.551% vs 50-day, not extended) but a fresh GuruFocus pull today reconfirms decisive overvaluation (price USD 680.20 vs GF Value USD 459.56, −62.3% margin of safety, P/E 76.96x) — still vetoed. MSFT (+16.075%) and SHOP (+17.942%) both remain extended past the chase cap. LRCX (−2.880% vs 50-day) still fails technically. No qualifying entry.
+- **Stop audit (`orders open`, live):** COST `90d27fb4` (HWM USD 971.9599/stop USD 874.76391, qty 7), LLY `e3547b9e` (HWM USD 1,240.00/stop USD 1,116.00, qty 8), NVDA `49c544b0` (HWM USD 227.92/stop USD 205.128, qty 18), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Cash-drag check:** cash 71.211%, 16th+ consecutive week above the 25-40% target band; 1/3 weekly slots used (COST, week of 2026-08-17), 2 remain — but today's risk-off tape plus PWR's valuation veto (the only watchlist name near a technical clear) makes staying in cash the deliberate, correct call, journaled explicitly rather than defaulted into.
+- **Plan:** No trades today. All 4 positions HOLD. Full detail in `research-log.md`.
+- **Notify:** Telegram sent — market posture (risk-off, Asian selloff, FOMC minutes today, 10yr 4.70%), PWR's valuation-vetoed near-miss, no trades planned.
+- **Commit:** done.
+
 ## 2026-08-18 ~15:52 ET — CLOSE (Tuesday) — EOD: +0.4621%, gap vs SPY narrows to −3.68pp on a chip-sector-led broad selloff
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free, prior lock from `aggro-midday` had expired); wrote lock for close (started 2026-08-18T19:51:18Z, expires 19:59:18Z).
