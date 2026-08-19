@@ -6,6 +6,22 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-19 ~12:37 ET — MIDDAY (Wednesday) — No action: all 4 positions within range, 4/4 stops live
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for midday.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true`, next close 2026-08-19T16:00:00-04:00.
+- **Account (live, ~12:37 ET):** Equity USD 99,684.50, cash USD 70,730.16 (70.955%), long market value USD 28,954.34 (29.045%), buying power USD 363,992.79. `last_equity` USD 99,234.27.
+- **Shock check:** equity vs `last_equity` = **+0.4537%** — no shock (threshold −4%).
+- **Positions (% from entry, live):** LLY +7.733% (USD +726.51), V +3.963% (USD +309.58), COST +1.124% (USD +75.15), NVDA −0.319% (USD −12.63). None past the −7% midday cut, none past +15% (no tightening candidates). No position crosses the ±3%-down/+10%-up news-scan threshold, so no WebSearch triggered this run.
+- **Sector exposure:** Healthcare (LLY) 10.153% (USD 10,121.36), Financials (V) 8.146% (USD 8,120.86), Consumer Defensive (COST) 6.786% (USD 6,763.82), Tech (NVDA) 3.958% (USD 3,945.42), cash 70.955% — all well within the 60% sector cap.
+- **Stop audit (`orders open` vs `positions`):** LLY `e3547b9e` (HWM 1,292.65/stop 1,163.385, qty 8), NVDA `49c544b0` (HWM 227.92/stop 205.128, qty 18), V `2b0a93ba` (HWM 373.96/stop 336.564, qty 22), COST `90d27fb4` (HWM 978.70/stop 880.83, qty 7) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades this run, 0 stop fills since market-open — no exits, no `closed-trades.md`/`trades.jsonl` entry needed.
+- **Note:** `portfolio.md`'s structured "Account"/"Open positions" sections had drifted stale (still showing 2026-08-04 account data and an 2026-08-17-pre-market open-positions table listing UNH as held and COST as unfilled) — refreshed both to today's live state this run.
+- **Weekly new-position count:** 1/3 used this week (COST, week of 2026-08-17 carried into this week — see `trade-log.md` archive/history for exact week boundary).
+- **Notify:** Telegram sent, plain prefix (no cut, no tightening, no unprotected stop, no shock, no circuit breaker).
+- **Commit:** done.
+
 ## 2026-08-19 ~08:20 ET — PRE-MARKET (Wednesday) — No trades: risk-off tape continues, PWR clears the technical gate but valuation veto stands, no qualifying entry
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for premarket. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
