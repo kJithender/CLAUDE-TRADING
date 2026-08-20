@@ -6,6 +6,23 @@ The weekly new-position count is derived from this log._
 
 _Entries older than 30 days have been moved to `memory/archive/`. See archive files for full history._
 
+## 2026-08-20 ~09:36 ET — MARKET-OPEN (Thursday) — No trades: today's plan was empty
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for market-open.
+- **Control switch:** `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Plan check:** most recent `research-log.md` plan block is `plan_date: 2026-08-20, trades: []` (pre-market ran today, ~08:20 ET) — no `EXECUTED:` line beneath it before this run. Pre-market found no watchlist candidate clearing both its technical and valuation gates (PWR closest but valuation-vetoed, LRCX moved further from its gate, MSFT/SHOP deeply extended). **No trades to execute — breaking-news gate, re-check, and execution steps are all no-ops today.**
+- **Market:** `clock` confirmed `is_open: true` (next_close 2026-08-20T16:00:00-04:00) — normal trading session.
+- **Account (live, ~09:36 ET):** Equity USD 99,416.17, cash USD 70,730.16 (71.153%), long market value USD 28,686.01 (28.856%: LLY 10.169% + V 8.094% + COST 6.626% + NVDA 3.971%), buying power USD 363,241.45. `last_equity` USD 99,629.77 (08-19 close).
+- **Shock check:** equity vs `last_equity` = **−0.2144%** — no shock (threshold −4%).
+- **Drawdown circuit breaker:** `history 1A 1D` high-water mark USD 100,322.08 (2026-07-21/22 close, unchanged) vs equity USD 99,416.17 — drawdown **0.9029%**. NOT triggered (9.0971pp headroom).
+- **Positions (% from entry, live):** COST −1.517%, LLY +7.599%, NVDA −0.283%, V +3.003%. None within range of the −7% cut (midday's job regardless).
+- **Sector exposure:** Healthcare (LLY) 10.169%, Financials (V) 8.094%, Consumer Defensive (COST) 6.626%, Tech (NVDA) 3.971%, cash 71.153% — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** COST `90d27fb4` (HWM USD 978.70/stop USD 880.83, qty 7), LLY `e3547b9e` (HWM USD 1,292.65/stop USD 1,163.385, qty 8), NVDA `49c544b0` (HWM USD 227.92/stop USD 205.128, qty 18), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 trades this run, 4 positions unchanged since pre-market — no exits, no `closed-trades.md` reconciliation needed.
+- **Weekly new-position count:** 1/3 used this week (COST, week of 2026-08-17) — unchanged; no trades placed.
+- **Notify:** Telegram sent, plain prefix (no trades, no cut, no shock, no unprotected stop, no circuit breaker).
+- **Commit:** done.
+
 ## 2026-08-19 ~15:52 ET — CLOSE (Wednesday) — EOD: +0.4380%, gap vs SPY narrows to −3.3881pp on LLY's company-specific +5.18% pop
 
 - **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close.
