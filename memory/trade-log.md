@@ -1991,3 +1991,26 @@ _Entries older than 30 days have been moved to `memory/archive/`. See archive fi
 - **Weekly new-position count:** 1/3 used this week (week of 2026-08-17: COST 08-17) — unchanged, midday places no orders.
 - **Notify:** Telegram sent, plain prefix (no cut, no tightening, no unprotected stop, no shock, no circuit breaker).
 - **Commit:** done.
+
+
+## 2026-08-20 ~15:52 ET — CLOSE (Thursday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Half-day/dedup guard:** `clock` `next_close` = 2026-08-20T16:00:00-04:00 — normal full session, not a half-day. `performance.csv` has no existing 2026-08-20/bull row — appending, not updating.
+- **Account (live, ~15:51 ET):** Equity USD 99,216.20, cash USD 70,730.16 (71.288%), long market value USD 28,486.04 (28.712%: COST 6.592% + LLY 10.058% + NVDA 3.932% + V 8.132%), buying power USD 362,681.55. `last_equity` USD 99,629.77 (08-19 close).
+- **Today's P/L:** USD 99,216.20 − USD 99,629.77 = **−USD 413.57 (−0.4151%)**.
+- **SPY:** USD 763.25 today (`bars SPY 1Day` explicit-date-range dailyBar.c, pulled ~15:51 ET, 9 min before settle — value of record per the 2026-07-03 lesson) vs USD 768.46 (08-19) = **−0.6780%**. Bull outperformed SPY by **+0.2629pp today**.
+- **Since inception (2026-07-01, USD 100,000 / SPY USD 745.665):** Bull **−0.78380%** vs SPY **+2.35850%** = **−3.14230pp gap**, narrowing from −3.3881pp yesterday (third consecutive narrowing session).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21/22 close, unchanged via `history 1A 1D`) vs equity USD 99,216.20 — drawdown **1.1024%**. NOT triggered, not near the −10% level (8.8976pp headroom).
+- **Market close context (WebSearch, `stock market summary today August 20 2026`):** Dow −1.2%, S&P 500 −0.7%, Nasdaq −0.9% — Trump vowed to squeeze Iran economically (oil higher, ~USD 88/bbl), a Treasury-intervention-driven bond rally fizzled and yields rebounded on doubts it's more than a short-term fix; Walmart −9.7% on disappointing sales (not held). No thesis-breaking news for LLY, V, NVDA, or COST — all fell/held with the broad risk-off tape, none semi/AI-capex or WMT-adjacent. Today's mild relative outperformance vs SPY (Bull −0.415% vs SPY −0.678%) is the same cash-cushion/diversification mechanism documented repeatedly since 07-29 — supports current position theses, no threat identified.
+- **Positions (% from entry, live):** COST −2.229% (USD −149.10), LLY +6.204% (USD +582.83), NVDA −1.433% (USD −56.73), V +3.286% (USD +256.67). None near the −7% cut (close places no orders regardless).
+- **Stop audit (`orders open` vs `positions`, live):** COST `90d27fb4` (HWM USD 978.70/stop USD 880.83, qty 7), LLY `e3547b9e` (HWM USD 1,292.65/stop USD 1,163.385, qty 8), NVDA `49c544b0` (HWM USD 227.92/stop USD 205.128, qty 18), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 fills today (verified via `orders all` — no order filled on or after 2026-08-20); positions unchanged from midday (COST 7, LLY 8, NVDA 18, V 22) — no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY) 10.058%, Financials (V) 8.132%, Consumer Defensive (COST) 6.592%, Tech (NVDA) 3.932%, cash 71.288% — all well within the 60% sector cap.
+- **Weekly new-position count:** 1/3 used this week (week of 2026-08-17: COST 08-17) — unchanged.
+- **Race scoreboard:** Bull −0.784% since inception (07-01) vs AGGRO's last-known (stale, 2026-06-23 EOD, now **58 days** stale, confirmed via `git log --oneline -- memory/aggressive/` — still only the single 2026-07-23 bulk repo-setup commit, zero real content update) −7.123% since its own inception (06-04) vs SPY +2.359% (Bull's own 07-01 baseline) — Bull remains far ahead of AGGRO on any measure while itself trailing SPY.
+- **Friday watchdog:** N/A (Thursday).
+- **Monthly/quarterly housekeeping:** N/A (not first trading day of month; not a quarterly month).
+- **performance.csv:** row appended (2026-08-20, bull, 99216.20, 70730.16, 763.25).
+- **Notify:** Telegram sent, plain prefix (no loss-close, no breaker, no watchdog).
+- **Commit:** done.
