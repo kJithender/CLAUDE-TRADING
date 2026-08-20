@@ -193,18 +193,19 @@ reference but is **not** the live comparison baseline going forward.
 **New inception:** 2026-07-01 — starting equity $100,000.00 | SPY anchor price $745.665 (today's close)
 **Prior inception (superseded):** 2026-05-21 — $100,000.00 | SPY $739.44 (see git history / weekly-review.md)
 
-## Account (live Alpaca data, 2026-08-19 close ~15:52 ET)
+## Account (live Alpaca data, 2026-08-20 midday ~12:37 ET)
 
 | Metric | Value |
 |--------|-------|
-| Equity | $99,668.88 |
-| Cash | $70,730.16 (70.966%) |
-| Long market value | $28,938.72 (29.034%: LLY+NVDA+V+COST) |
-| Buying power | $363,949.06 |
-| Last equity (Alpaca field) | $99,234.27 |
+| Equity | $99,433.31 |
+| Cash | $70,730.16 (71.133%) |
+| Long market value | $28,703.15 (28.867%: LLY+NVDA+V+COST) |
+| Buying power | $363,289.46 |
+| Last equity (Alpaca field) | $99,629.77 |
 
-_Today's P/L: +USD 434.61 (+0.4380%). No shock (threshold −4%)._
+_Intraday vs 08-19 close: −USD 196.46 (−0.1972%). No shock (threshold −4%)._
 
+**Prior (close 08-19 ~15:52 ET):** Equity $99,668.88 | Cash $70,730.16 (70.966%) | Long MV $28,938.72 (29.034%) | Buying power $363,949.06 | Today's P/L +USD 434.61 (+0.4380%)
 **Prior (midday 08-19 ~12:37 ET):** Equity $99,684.50 | Cash $70,730.16 (70.955%) | Long MV $28,954.34 (29.045%) | Buying power $363,992.79
 
 **Prior (2026-08-04 close ~15:52 ET, section had gone stale — see `trade-log.md` for the full 08-05 through 08-19 history):** Equity $98,834.80 | Cash $71,553.62 (72.399%) | Long MV $27,281.18 (27.601%: LLY+UNH+V) | Buying power $362,601.77
@@ -250,20 +251,30 @@ _Today's P/L: +USD 434.61 (+0.4380%). No shock (threshold −4%)._
 
 ## Open positions
 
-_As of close ~15:52 ET, 2026-08-19:_
+_As of midday ~12:37 ET, 2026-08-20:_
 
 | Symbol | Qty | Avg entry | Current | Unrealized P/L | Sector | Trailing stop | Conviction (last review) |
 |--------|-----|-----------|---------|-----------------|--------|----------------|----------------------|
-| LLY | 8 | $1,174.35625 | $1,281.435 | +$856.63 (+9.118%) | Healthcare | Order e3547b9e, 10%, HWM $1,292.65, stop $1,163.385 — live, unchanged | **B** (08-17; flat several weeks, no fresh catalyst; today's +5.18% pop is company-specific — Foundayo oral-GLP-1 weekly prescriptions +14% WoW to ~38,900, not sector-wide; review_by 2026-09-04) |
-| NVDA | 18 | $219.891667 | $217.8015 | −$37.62 (−0.951%) | Tech | Order 49c544b0, 10%, HWM $227.92, stop $205.128 — live, unchanged | **A** (08-17; earnings 08-26, review_by 2026-08-24) |
-| V | 22 | $355.058182 | $366.58 | +$253.48 (+3.245%) | Financials | Order 2b0a93ba, 10%, HWM $373.96, stop $336.564 — live, unchanged | **A** (08-17; thesis-contract HOLD, review_by 2026-09-15) |
-| COST | 7 | $955.524286 | $957.44 | +$13.41 (+0.200%) | Consumer Defensive | Order 90d27fb4, 10%, HWM $978.70, stop $880.83 — live, unchanged | Not yet formally rated (entered 08-17, reduced starter; valuation signal failed at entry, PEG 3.88) |
+| LLY | 8 | $1,174.35625 | $1,265.45 | +$728.75 (+7.757%) | Healthcare | Order e3547b9e, 10%, HWM $1,292.65, stop $1,163.385 — live, unchanged | **B** (08-17; flat several weeks, no fresh catalyst; the 08-19 +5.18% Foundayo oral-GLP-1 prescription pop gave back −1.163% today, normal drift; review_by 2026-09-04) |
+| NVDA | 18 | $219.891667 | $216.89 | −$54.03 (−1.365%) | Tech | Order 49c544b0, 10%, HWM $227.92, stop $205.128 — live, unchanged | **A** (08-17; earnings 08-26, review_by 2026-08-24) |
+| V | 22 | $355.058182 | $368.43 | +$294.18 (+3.766%) | Financials | Order 2b0a93ba, 10%, HWM $373.96, stop $336.564 — live, unchanged | **A** (08-17; thesis-contract HOLD, review_by 2026-09-15) |
+| COST | 7 | $955.524286 | $938.62 | −$118.33 (−1.769%) | Consumer Defensive | Order 90d27fb4, 10%, HWM $978.70, stop $880.83 — live, unchanged | Not yet formally rated (entered 08-17, reduced starter; valuation signal failed at entry, PEG 3.88) |
 
 **UNH — STOPPED OUT 2026-08-17 10:40:58 AM ET.** 10% trailing stop filled (order 225cb079, 25sh, entry USD 422.28 → exit USD 392.94, −6.948%, −USD 733.50, held 28 days). No fresh company-specific negative catalyst found (only the already-known 08-13 shareholder lawsuit over the 2024 Change Healthcare breach); reads as the same catalyst-less grind that drove the 08-10 Conviction-B downgrade. See `closed-trades.md` and `lessons.md` (2026-08-17 midday entry).
 
 **META — CLOSED 2026-07-28 10:39:04 AM ET.** 10% trailing stop filled (order 14301809, 6sh, entry $641.323333 → exit $590.25, −7.964%, −$306.44, held 8 days). Third escalation of the same story this week (closed past −7% on 07-24 and 07-27); WebSearch found no company-specific negative catalyst today (Meta-BlackRock USD 14B/1GW Texas data-center JV, neutral-to-positive) — broad AI-capex-ROI anxiety, one trading day before the 07-29 earnings print. See `closed-trades.md`. Next earnings 2026-07-29 — no re-entry consideration inside the earnings blackout.
 
 **VST — CLOSED 2026-07-28 09:34:48 AM ET.** 10% trailing stop filled (order 87f49386, 25sh, entry $161.21 → exit $150.0496, −6.924%, −$279.01, held 7 days). TD Cowen PT cut (USD 230→222, kept Buy) layered on 07-27's broad AI-power-sector weakness; Goldman/Wells Fargo kept Buy same day — sector-rotation exit, not a thesis break. See `closed-trades.md`. Next earnings 2026-08-07 — may reconsider as fresh entry if setup re-confirms.
+
+## Risk posture (2026-08-20 midday)
+
+- **Shock check:** equity USD 99,433.31 vs `last_equity` USD 99,629.77 = **−0.1972%**. NOT triggered (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21 close, unchanged) vs equity USD 99,433.31 — drawdown **0.8859%**. NOT triggered (9.1141pp headroom).
+- **−7% cut / +15% tighten:** LLY +7.757%, V +3.766%, NVDA −1.365%, COST −1.769% — no position near either threshold (closest to the cut is COST with 5.23pp of buffer). No action.
+- **News scan:** not triggered — no position down >3% or up >10% from entry.
+- **Stop audit:** 4/4 positions carry a live trailing stop matching current quantity (COST `90d27fb4`, LLY `e3547b9e`, NVDA `49c544b0`, V `2b0a93ba`). PASS.
+- **Sector caps:** Healthcare 10.181%, Financials 8.152%, Consumer Defensive 6.608%, Tech 3.926%, cash 71.133% — all well within the 60% cap.
+- No trades this run (midday never opens new positions); no fills since the 08-19 close, so no exit reconciliation needed.
 
 ## Risk posture (2026-08-19 close)
 

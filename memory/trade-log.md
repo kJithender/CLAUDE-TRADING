@@ -1974,3 +1974,20 @@ _Entries older than 30 days have been moved to `memory/archive/`. See archive fi
 - **Notify:** Telegram sent, plain prefix (no cut, no tightening, no unprotected stop, no shock, no circuit breaker).
 - **Commit:** done.
 
+
+## 2026-08-20 ~12:37 ET — MIDDAY (Thursday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for midday. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: true` (next_close 2026-08-20T16:00:00-04:00) — normal trading session.
+- **Account (live, ~12:37 ET):** Equity USD 99,433.31, cash USD 70,730.16 (71.133%), long market value USD 28,703.15 (28.867%), buying power USD 363,289.46. `last_equity` USD 99,629.77 (08-19 close, matches the recorded close within rounding — no stale-data anomaly).
+- **Shock check:** equity USD 99,433.31 vs `last_equity` USD 99,629.77 = **−0.1972%** — no shock (threshold −4%).
+- **Drawdown circuit breaker:** `history 1A 1D` HWM USD 100,322.08 (2026-07-21 close, unchanged) vs equity USD 99,433.31 — drawdown **0.8859%**. NOT triggered (9.1141pp headroom).
+- **Positions (% from entry, live):** LLY +7.757% (USD 1,265.45, −1.163% intraday), V +3.766% (USD 368.43, +0.791% intraday), NVDA −1.365% (USD 216.89, −0.308% intraday), COST −1.769% (USD 938.62, −1.920% intraday). None within range of the −7% cut (closest: COST at −1.769%, 5.23pp of buffer), none up >15% (closest: LLY at +7.757%).
+- **News scan:** not triggered — no position is down >3% or up >10% from entry (closest on either side: LLY +7.757%, COST −1.769%). Today's mild pullbacks in LLY (−1.163%) and COST (−1.920%) are intraday drift well inside the scan thresholds, not a flagged move.
+- **Sector exposure:** Healthcare (LLY) 10.181% (USD 10,123.60), Financials (V) 8.152% (USD 8,105.46), Consumer Defensive (COST) 6.608% (USD 6,570.34), Tech (NVDA) 3.926% (USD 3,904.02), cash 71.133% (USD 70,730.16) — all well within the 60% sector cap.
+- **Stop audit (`orders open` vs `positions`, live):** COST `90d27fb4` (HWM USD 978.70/stop USD 880.83, qty 7), LLY `e3547b9e` (HWM USD 1,292.65/stop USD 1,163.385, qty 8), NVDA `49c544b0` (HWM USD 227.92/stop USD 205.128, qty 18), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 fills since the 08-19 close (verified via `orders all` — no order filled on or after 2026-08-19); no exits, no `closed-trades.md` or `trades.jsonl` entry needed.
+- **Actions:** none — no positions cut (all comfortably above −7%), no stops tightened (none up >15%), no new positions (midday never opens them).
+- **Weekly new-position count:** 1/3 used this week (week of 2026-08-17: COST 08-17) — unchanged, midday places no orders.
+- **Notify:** Telegram sent, plain prefix (no cut, no tightening, no unprotected stop, no shock, no circuit breaker).
+- **Commit:** done.
