@@ -2014,3 +2014,22 @@ _Entries older than 30 days have been moved to `memory/archive/`. See archive fi
 - **performance.csv:** row appended (2026-08-20, bull, 99216.20, 70730.16, 763.25).
 - **Notify:** Telegram sent, plain prefix (no loss-close, no breaker, no watchdog).
 - **Commit:** done.
+
+
+## 2026-08-21 ~08:18 ET — PRE-MARKET (Friday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for premarket. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Market:** `clock` confirmed `is_open: false`, `next_open` 2026-08-21T09:30:00-04:00 — normal trading day, pre-market.
+- **Account (live, ~08:16 ET):** Equity USD 99,170.37, cash USD 70,730.16 (71.331%), long market value USD 28,440.21 (28.680%: COST 6.599% + LLY 9.993% + NVDA 3.959% + V 8.130%), buying power USD 362,553.23. `last_equity` USD 99,169.29 (08-20 close).
+- **Shock check:** equity vs `last_equity` = **+0.001%** — no shock (threshold −4%; market not yet open).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21/22 close, unchanged) vs equity USD 99,170.37 — drawdown **1.148%**. NOT triggered (8.852pp headroom).
+- **10yr Treasury:** 4.71% — still below the 4.75% new-buy gate, closest sustained read in weeks.
+- **Thesis contracts:** LLY (09-04), V (09-15), NVDA (08-24 — 3 trading days out, forced pre-earnings call lands Monday 08-24 ahead of the 08-26 print), COST (09-22) — none due today, none triggered.
+- **News scan (all 4 positions):** nothing thesis-breaking for any — LLY pulled back modestly on ordinary profit-taking after two positive BD deals this week; V's DOJ antitrust suit remains in known, ongoing discovery (fact discovery closes 10-16, no new ruling today); NVDA got a fresh BMO Outperform initiation ($340 PT); COST continues circulating on its Medicare Advantage/SCAN partnership (already-known, positive). HOLD all four.
+- **Watchlist re-verification (fresh Alpaca bars, explicit date range through 08-20 close):** MSFT +15.091% vs 50-day (extended, fails), SHOP +17.050% (extended, fails), PWR −1.392% (reversed back below its 50-day, was +0.701% yesterday; valuation veto also stands), LRCX −7.944% (narrowed slightly from −9.050% but still fails; valuation independently disqualifying). No qualifying entry.
+- **Sector exposure:** Healthcare (LLY) 9.993%, Financials (V) 8.130%, Consumer Defensive (COST) 6.599%, Tech (NVDA) 3.959%, cash 71.331% — all well within the 60% sector cap.
+- **Stop audit (`orders open`, live):** COST `90d27fb4` (HWM USD 978.70/stop USD 880.83, qty 7), LLY `e3547b9e` (HWM USD 1,292.65/stop USD 1,163.385, qty 8), NVDA `49c544b0` (HWM USD 227.92/stop USD 205.128, qty 18), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Cash-drag check:** 71.331% cash, 18th+ consecutive week above the 25-40% target band; only 1/3 weekly slots used (COST, week of 2026-08-17), 2 remain. Justified explicitly — no watchlist name clears its combined technical + valuation gate today.
+- **Plan:** No trades today. All 4 positions HOLD.
+- **Notify:** Telegram sent, plain prefix (no trades, no shock, no unprotected stop, no circuit breaker).
+- **Commit:** done.
