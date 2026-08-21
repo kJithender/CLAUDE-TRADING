@@ -2050,3 +2050,17 @@ _Entries older than 30 days have been moved to `memory/archive/`. See archive fi
 - **Sector exposure:** Healthcare (LLY) 10.038%, Financials (V) 8.148%, Consumer Defensive (COST) 6.616%, Tech (NVDA) 3.945%, cash 71.256% — within all caps.
 - **Notify:** Telegram sent, plain prefix (no trades, no shock, no unprotected stop).
 - **Commit:** done.
+
+## 2026-08-21 ~12:36 ET — MIDDAY (Friday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for midday. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Market:** `clock` confirmed `is_open: true`.
+- **Account (live):** Equity USD 99,518.99, cash USD 70,730.16 (71.077%), `last_equity` USD 99,169.29 (08-20 close).
+- **Shock check:** equity vs `last_equity` = **+0.352%** — no shock (threshold −4%).
+- **Drawdown circuit breaker:** HWM USD 100,322.08 vs equity USD 99,518.99 — drawdown **0.801%**. NOT triggered (9.199pp headroom).
+- **Positions (% from entry, live):** COST −0.699%, LLY +7.486%, NVDA −1.924%, V +4.553% — none down >3%/up >10% (no WebSearch news-scan triggered), none past the −7% cut line, none over +15% (no tighten action).
+- **Stop audit (`orders open` vs `positions`):** COST `90d27fb4` (HWM USD 978.70/stop USD 880.83, qty 7), LLY `e3547b9e` (HWM USD 1,292.65/stop USD 1,163.385, qty 8), NVDA `49c544b0` (HWM USD 227.92/stop USD 205.128, qty 18), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Action taken:** none — no cuts, no tightening, no exits. This routine never opens new positions.
+- **Sector exposure:** Healthcare (LLY) 10.147%, Financials (V) 8.207%, Consumer Defensive (COST) 6.674%, Tech (NVDA) 3.901%, cash 71.077% — all within the 60% sector cap.
+- **Notify:** Telegram sent, plain prefix (all positions within range, no action).
+- **Commit:** done.
