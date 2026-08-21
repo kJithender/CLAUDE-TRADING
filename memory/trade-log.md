@@ -2064,3 +2064,25 @@ _Entries older than 30 days have been moved to `memory/archive/`. See archive fi
 - **Sector exposure:** Healthcare (LLY) 10.147%, Financials (V) 8.207%, Consumer Defensive (COST) 6.674%, Tech (NVDA) 3.901%, cash 71.077% — all within the 60% sector cap.
 - **Notify:** Telegram sent, plain prefix (all positions within range, no action).
 - **Commit:** done.
+
+## 2026-08-21 ~15:52 ET — CLOSE (Friday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for close. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending, `CROSS_BULL_LEARNING:` blank.
+- **Half-day/dedup guard:** `clock` `next_close` = 2026-08-21T16:00:00-04:00 — normal full session, not a half-day. `performance.csv` had no existing 2026-08-21/bull row — appended, not updated.
+- **Account (live, ~15:51 ET):** Equity USD 99,473.71, cash USD 70,730.16 (71.104%), long market value USD 28,743.55 (28.896%: COST 6.674% + LLY 10.108% + NVDA 3.892% + V 8.222%), buying power USD 363,402.58. `last_equity` USD 99,169.29 (08-20 close).
+- **Today's P/L:** USD 99,473.71 − USD 99,169.29 = **+USD 304.42 (+0.3070%)**.
+- **SPY:** USD 766.205 today (`bars SPY 1Day` explicit-date-range dailyBar.c, pulled ~15:51 ET, 9 min before settle — value of record per the 2026-07-03 lesson) vs USD 763.25 (08-20) = **+0.3872%**. Bull trailed SPY by **−0.0802pp today**.
+- **Since inception (2026-07-01, USD 100,000 / SPY USD 745.665):** Bull **−0.52629%** vs SPY **+2.75459%** = **−3.2809pp gap**, widening from −3.14230pp yesterday — the same mirror-image mechanism documented since 07-29: Friday's broad risk-on tape (Dow +0.8%, S&P +0.4%, Nasdaq +0.4% on bond-market stabilization and a bitcoin surge toward its best weekly gain in 3+ years) outran Bull's own modest gain, driven mostly by cash sitting out of the rally rather than any thesis problem.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 (2026-07-21/22 close, unchanged via `history 1A 1D`) vs equity USD 99,473.71 — drawdown **0.8456%**. NOT triggered, not near the −10% level (9.1544pp headroom).
+- **Market close context (WebSearch, `stock market summary today August 21 2026`):** Dow +0.8%, S&P 500 +0.4%, Nasdaq +0.4% — stocks rose as bonds stabilized after a rocky week and bitcoin surged toward $77K on renewed risk appetite; Treasury Secretary Bessent said Treasury doubled the size of its long-term debt buybacks (USD 2B → at least USD 4B per operation), read as supportive for the bond market. Marvell (not held) fell 6% on profit-taking ahead of its 08-27 earnings. No thesis-breaking news found for LLY, V, NVDA, or COST — all four rose or held with the broad tape; today's mild relative trail vs SPY is the standard cash-cushion/diversification mechanism, not a threat to any position thesis. Despite Friday's gains, all four major indexes were still headed for a weekly loss.
+- **Positions (% from entry, live):** COST −0.746% (USD −49.87), LLY +7.019% (USD +659.47), NVDA −2.181% (USD −86.34), V +4.704% (USD +367.44). None near the −7% cut (close places no orders regardless).
+- **Stop audit (`orders open` vs `positions`, live):** COST `90d27fb4` (HWM USD 978.70/stop USD 880.83, qty 7), LLY `e3547b9e` (HWM USD 1,292.65/stop USD 1,163.385, qty 8), NVDA `49c544b0` (HWM USD 227.92/stop USD 205.128, qty 18), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22) — all 4 status `new` (live), quantities match positions exactly. **4/4 PASS** — no recreation needed.
+- **Exits/reconciliation:** 0 fills today (verified via `orders all` state and positions matching midday exactly — COST 7, LLY 8, NVDA 18, V 22); no exits, no `closed-trades.md` reconciliation needed.
+- **Sector exposure:** Healthcare (LLY) 10.108%, Financials (V) 8.222%, Consumer Defensive (COST) 6.674%, Tech (NVDA) 3.892%, cash 71.104% — all well within the 60% sector cap.
+- **Weekly new-position count:** 1/3 used this week (week of 2026-08-17: COST 08-17) — unchanged.
+- **Race scoreboard:** Bull −0.526% since inception (07-01) vs AGGRO's last-known (stale, 2026-06-23 EOD, now **59 days** stale, confirmed via `git log --oneline -- memory/aggressive/` — the only commit touching that directory is a bulk content-add, not a genuine update past the same 2026-06-23 EOD data point) −7.123% since its own inception (06-04) vs SPY +2.755% (Bull's own 07-01 baseline) — Bull remains far ahead of AGGRO on any measure while itself trailing SPY.
+- **Friday watchdog:** newest `weekly-review.md` entry is "Week ending 2026-08-14," dated exactly 7 days ago — not stale (>7 days) as of this run; today's own weekly review (week ending 08-21) is scheduled for 4:30 PM ET, after this routine.
+- **Monthly/quarterly housekeeping:** N/A (not first trading day of month; not a quarterly month).
+- **performance.csv:** row appended (2026-08-21, bull, 99473.71, 70730.16, 766.205).
+- **Notify:** Telegram sent, plain prefix (no loss-close, no breaker, no watchdog).
+- **Commit:** done.
