@@ -85,6 +85,8 @@ Telegram sent per playbook — market posture (modestly risk-on, awaiting flash 
 ### Step 9 — commit
 done.
 
+EXECUTED: 2026-08-21T09:36 ET — no trades (plan empty: no watchlist candidate cleared its combined technical + valuation gate; PWR reversed below its 50-day, LRCX/MSFT/SHOP all still fail). Market open confirmed (`clock` `is_open: true`). Breaking-news gate: moot, no planned trades to gate. Account re-check: equity USD 99,265.97 vs `last_equity` USD 99,169.29 = **+0.0975%** — no intraday shock (threshold −4%). Drawdown: HWM USD 100,322.08 (2026-07-21/22 close, unchanged) vs current equity USD 99,265.97 = **1.052%** — NOT triggered (8.948pp headroom). All 4 positions HOLD (COST −1.818%, LLY +6.063%, NVDA −1.076%, V +3.549%), none near the −7% cut (midday's job regardless). Sector exposure: Healthcare (LLY) 10.038%, Financials (V) 8.148%, Consumer Defensive (COST) 6.616%, Tech (NVDA) 3.945%, cash 71.256% (USD 70,730.16) — all well within the 60% sector cap. Stop audit (`orders open` vs `positions`): 4/4 PASS — COST `90d27fb4` (HWM USD 978.70/stop USD 880.83, qty 7 matches), LLY `e3547b9e` (HWM USD 1,292.65/stop USD 1,163.385, qty 8 matches), NVDA `49c544b0` (HWM USD 227.92/stop USD 205.128, qty 18 matches), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22 matches). No stop fills since pre-market, no exits, no `closed-trades.md` reconciliation needed. Weekly new-position count unchanged: 1/3 used this week (COST, week of 2026-08-17).
+
 ---
 
 ## 2026-08-20 — Pre-market research (~08:20 ET, Thursday) — NO TRADES: modest risk-on tape, no watchlist name clears both gates

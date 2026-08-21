@@ -2033,3 +2033,20 @@ _Entries older than 30 days have been moved to `memory/archive/`. See archive fi
 - **Plan:** No trades today. All 4 positions HOLD.
 - **Notify:** Telegram sent, plain prefix (no trades, no shock, no unprotected stop, no circuit breaker).
 - **Commit:** done.
+
+---
+
+## 2026-08-21 — MARKET OPEN (Friday)
+
+- **Live-switch guard:** `ALPACA_BASE_URL` contains "paper" ✓. Lock was `{}` (free); wrote lock for market-open. `control.md`: `STATUS: ACTIVE`, no `NOTE:`/`QUERY:` pending.
+- **Plan check:** most recent plan block (`research-log.md`, plan_date 2026-08-21) — no trades planned (all 4 watchlist candidates fail technical/valuation gates). No `EXECUTED:` line yet — not a re-run.
+- **Market:** `clock` confirmed `is_open: true`.
+- **Account (live):** Equity USD 99,265.97, cash USD 70,730.16 (71.256%), `last_equity` USD 99,169.29.
+- **Shock check:** equity vs `last_equity` = **+0.0975%** — no shock.
+- **Drawdown circuit breaker:** HWM USD 100,322.08 vs equity USD 99,265.97 — drawdown **1.052%**. NOT triggered.
+- **No trades executed** — plan was empty, breaking-news gate moot.
+- **Stop audit (`orders open` vs `positions`):** COST `90d27fb4` (qty 7, HWM 978.70/stop 880.83), LLY `e3547b9e` (qty 8, HWM 1,292.65/stop 1,163.385), NVDA `49c544b0` (qty 18, HWM 227.92/stop 205.128), V `2b0a93ba` (qty 22, HWM 373.96/stop 336.564) — all live, quantities match. **4/4 PASS**, no recreation needed.
+- **Positions:** COST −1.818%, LLY +6.063%, NVDA −1.076%, V +3.549% from entry — none near the −7% cut.
+- **Sector exposure:** Healthcare (LLY) 10.038%, Financials (V) 8.148%, Consumer Defensive (COST) 6.616%, Tech (NVDA) 3.945%, cash 71.256% — within all caps.
+- **Notify:** Telegram sent, plain prefix (no trades, no shock, no unprotected stop).
+- **Commit:** done.
