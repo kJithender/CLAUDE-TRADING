@@ -756,3 +756,17 @@ _Prior-account performance (2026-05-21 to 2026-06-23, superseded by the reset): 
 **2026-07-20 market-open (~09:38-09:39 ET, Monday):** `clock` confirmed `is_open: true`. Breaking-news gate (WebSearch) cleared for both UNH and META — no thesis-breaking developments beyond what pre-market already knew. Pre-execution shock check: equity $99,941.19 vs last_equity $100,017.31 = -0.0761% — no shock. **BUY UNH:** ask/bid tight ($421.51/$421.14) — marketable limit $422.77, filled 25sh @ avg $422.28 (order `2f0a6ce1`). **BUY META:** ask stuck at $675 across repeated polls while bid (~$639.5) and `trades/latest` (~$639.8-639.9) moved together — treated as unreliable per the 2026-07-07 lesson, used latest-trade $639.82 × 1.003 = $641.74 marketable limit, filled 6sh @ avg $641.323333 (order `b99c60a5`). Both fills verified via `positions`. 10% trailing stops placed and verified live for both: UNH `225cb079` (HWM $421.455, stop $379.3095), META `14301809` (HWM $641.5267, stop $577.37403). **Stop audit: 4/4 positions protected** (LLY, V, UNH, META). Guardrails: UNH 10.56% + META 3.85% = 14.41% daily deployment (cap 25%); weekly count 2/3; cash ~68.6% (min 5%); risk budget both under 1.2%; sector caps Healthcare ~19.94%, Comm Services ~3.85% (cap 60% each); drawdown ~0.28% vs HWM $100,218.48 (breaker -10%, not triggered). All ✓. Fills logged to `trades.jsonl`; `EXECUTED:` appended in `research-log.md`; narrative in `trade-log.md`. Notified via Telegram.
 
 **2026-08-21 market-open (~09:36 ET, Friday):** `clock` confirmed `is_open: true`. Plan for today was empty (no watchlist candidate cleared its combined technical + valuation gate). No trades executed. Live snapshot: equity USD 99,265.97, cash USD 70,730.16 (71.256%), positions COST 7sh (−1.818%), LLY 8sh (+6.063%), NVDA 18sh (−1.076%), V 22sh (+3.549%). Shock check +0.0975% vs last_equity — no shock. Drawdown 1.052% vs HWM USD 100,322.08 — not triggered. Sector exposure: Healthcare 10.038%, Financials 8.148%, Consumer Defensive 6.616%, Tech 3.945%, cash 71.256% — all within caps. Stop audit 4/4 PASS (COST `90d27fb4`, LLY `e3547b9e`, NVDA `49c544b0`, V `2b0a93ba`, all live, quantities match). Notified via Telegram.
+
+## Midday Update 2026-09-02 19:25 UTC
+
+### Current Positions
+| Symbol | Qty | Avg Entry | Current | P/L% | Trailing Stop |
+|--------|-----|-----------|---------|------|---------------|
+| COST | 7 | $919.00 | ~$883.85 | -3.60% | 10% trail (stop $880.83) |
+| NVDA | 18 | $133.00 | ~$135.78 | +2.09% | 10% trail (stop $207.42) |
+
+### Summary
+- Total market value: ~$10,800
+- Cash: ~$100,800
+- Both positions within risk bands. No action taken.
+- Stop audit passed — all positions protected.
