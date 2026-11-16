@@ -1,5 +1,7 @@
 # Portfolio Snapshot
 
+**Last updated:** 2026-11-16 ~08:15 ET (pre-market, Monday) — Equity USD 98,860.71, cash USD 98,860.71 (100%), NO open positions, no open orders. All prior positions exited (LLY stop 08-28, V sold 09-02, NVDA stop 09-14, COST sold 10-13). HWM USD 100,322.08, drawdown 1.46%. Sector exposure: Cash 100%.
+
 _Updated by every routine from live Alpaca data. The next agent trusts this as
 the last known state, but always re-fetches live data before trading._
 

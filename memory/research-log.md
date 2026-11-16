@@ -2693,3 +2693,22 @@ No trades planned.
 
 EXECUTED: 2026-08-03T09:36 ET — no trades (plan empty: no watchlist candidate cleared its technical gate). Market open confirmed (`clock` `is_open: true`). Breaking-news gate: moot, no planned trades to gate. Account re-check: equity USD 99,176.68 vs Alpaca `last_equity` USD 99,159.20 = **+0.0176%** — no intraday shock (threshold −4%). Drawdown: HWM USD 100,322.08 (2026-07-21 close, unchanged) vs current equity USD 99,176.68 = **1.1417%** — NOT triggered (8.8583pp headroom). All 3 positions HOLD (LLY −3.189%, UNH −1.691%, V +4.242%), none near the −7% cut (midday's job regardless). Sector exposure: Healthcare (LLY+UNH) 19.635% (USD 19,473.78), Financials (V) 8.211% (USD 8,142.64), cash 72.154% (USD 71,553.62) — all well within the 60% sector cap. Stop audit (`orders open` vs `positions`): 3/3 PASS — LLY `e3547b9e` (HWM USD 1,232.00/stop USD 1,108.80, qty 8 matches), UNH `225cb079` (HWM USD 436.945/stop USD 393.2505, qty 25 matches), V `2b0a93ba` (HWM USD 373.96/stop USD 336.564, qty 22 matches). No stop fills since pre-market, no exits, no `closed-trades.md` reconciliation needed. Weekly new-position count unchanged: 0/3 used this week (week of 2026-08-03).
 
+
+## Pre-market 2026-11-16 (Monday)
+
+- Guards: paper endpoint OK; stale lock (2026-11-13) expired, replaced; control STATUS ACTIVE, no NOTE/QUERY.
+- **State reconciliation:** memory was last updated 2026-08-21; Alpaca order history shows every position since closed: NVDA trailing stop 09-14 (18sh @ 209.71), V market sell 09-02 (22 @ 379.43), LLY trailing stop 08-28 (8 @ 1162.91), COST market sell 10-13 (7 @ 957.94). Account is **all cash, 0 positions, 0 open orders**. Equity USD 98,860.71 (= cash, last_equity same). Inception USD 100,000 -> -1.14%.
+- Drawdown: HWM USD 100,322.08, drawdown 1.46% -> breaker NOT triggered. No shock (no positions).
+- Thesis contracts / Monday ratings / stop audit: N/A (no holdings).
+- Market (WebSearch, dated): week of 11-06 S&P 500 closed 7,376.86 (-2.7%), Nasdaq -3.4%, 10yr 4.86% (down from 4.94%), Nvidia lost ~450B USD that week; NVDA earnings this week (Wed after close, ~6.5% implied move). SPY 754.27 on 11-13 (vs 766 on 08-21). No dated 11-16 futures quote found.
+- 10yr at ~4.86% is above the strategy's 4.75% new-buy gate -> no new buys. Watchlist SMA/ATR data in strategy.md is months stale; not re-vetted today.
+- Cash-drag: 100% cash is a decision: risk-off tape (index -2.7% last week, yields above gate, NVDA earnings binary event this week). Revisit after NVDA print and a fresh watchlist vetting.
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-11-16",
+  "trades": []
+}
+```
