@@ -2116,3 +2116,6 @@ Market closed at run time (clock is_open=false, 08:35 ET; next_open 09:30 ET) â€
 
 ## 2026-11-16 midday
 Market open (11:36 ET). Control ACTIVE. Equity USD 98,860.71 = last_equity, 100% cash, no positions, no open orders. No shock, no exits, stop audit n/a. No action.
+
+## 2026-11-16 close
+Control ACTIVE. Flat 100% cash, 0 trades. SPY -2.06% on the day (738.71 from 754.27); Bull 0.00%. Since inception Bull -1.139% vs SPY -0.933%. Cash is protecting capital in this selloff; no thesis positions to threaten. AGGRO snapshot stale since 06-23 (flagged). Run fired ~14:50 ET, before the official close.
