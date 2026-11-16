@@ -2110,3 +2110,6 @@ _Entries older than 30 days have been moved to `memory/archive/`. See archive fi
 - `clock` returned `is_open: false` (market closed; next open 2026-10-22 09:30 ET). **Market closed, no action.**
 - No positions reviewed, no orders placed, no stop audit (routine skips to notify per playbook step 1).
 - Notified via Telegram.
+
+## 2026-11-16 market-open
+Market closed at run time (clock is_open=false, 08:35 ET; next_open 09:30 ET) — routine fired early. No trades, no action. Control STATUS ACTIVE, lock was clear.
