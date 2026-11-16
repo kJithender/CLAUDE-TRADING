@@ -2113,3 +2113,6 @@ _Entries older than 30 days have been moved to `memory/archive/`. See archive fi
 
 ## 2026-11-16 market-open
 Market closed at run time (clock is_open=false, 08:35 ET; next_open 09:30 ET) — routine fired early. No trades, no action. Control STATUS ACTIVE, lock was clear.
+
+## 2026-11-16 midday
+Market open (11:36 ET). Control ACTIVE. Equity USD 98,860.71 = last_equity, 100% cash, no positions, no open orders. No shock, no exits, stop audit n/a. No action.
