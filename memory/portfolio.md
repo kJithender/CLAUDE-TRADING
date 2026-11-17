@@ -1,5 +1,7 @@
 # Portfolio Snapshot
 
+**Last updated:** 2026-11-17 ~11:45 ET (midday, Tuesday) - unchanged: equity USD 98,860.71 = cash, 100% cash, no positions, no open orders (stop audit n/a). last_equity 98,860.71, no shock. Sector: Cash 100%.
+
 **Last updated:** 2026-11-17 ~07:20 ET (pre-market, Tuesday) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. HWM drawdown 1.46%. Sector: Cash 100%.
 
 **Last updated:** 2026-11-16 ~14:55 ET (close, Monday; run fired ~14:50 ET, before 16:00 ET close — figures are intraday-final). Equity USD 98,860.71 = cash, 100% cash, NO positions, no open orders (stop audit n/a). last_equity 98,860.71 → today P/L 0.00 (0.00%). SPY 738.71 vs 754.27 prior close = **-2.06%** today (sharp selloff; Bull flat in cash, +2.06pp relative). Since inception (2026-07-01, USD 100,000 / SPY 745.665): Bull **-1.139%** vs SPY **-0.933%** = **-0.206pp** gap. HWM USD 100,322.08, drawdown 1.46% (breaker not near). No exits today, no closed-trades reconciliation needed. Control ACTIVE. Sector exposure: Cash 100%. Race: AGGRO snapshot stale (last 2026-06-23 EOD, -7.12%); SPY since AGGRO anchor 754.18 = -2.05%. No same-day market summary found via search (latest found: 11-10).

@@ -2122,3 +2122,6 @@ Control ACTIVE. Flat 100% cash, 0 trades. SPY -2.06% on the day (738.71 from 754
 
 ## 2026-11-17 market-open
 Market closed at run time (clock is_open=false, 08:35 ET; next_open 09:30 ET) - routine fired early. No trades. Control ACTIVE, paper endpoint OK. Equity USD 98,860.71, 100% cash, no positions/orders, stop audit n/a.
+
+## 2026-11-17 midday
+Market open. No positions, no open orders; nothing to cut/tighten, stop audit n/a. No trades. Control ACTIVE.
