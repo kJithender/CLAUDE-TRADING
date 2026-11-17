@@ -2712,3 +2712,20 @@ No trades planned.
   "trades": []
 }
 ```
+
+
+## Pre-market 2026-11-17 (Tuesday)
+
+- Guards: paper endpoint OK; lock was `{}` (free), replaced then released; control ACTIVE, no NOTE/QUERY.
+- Account (live): equity USD 98,860.71 = cash, 0 positions, 0 open orders. HWM USD 100,322.08, drawdown 1.46% - breaker not triggered. Thesis contracts / stop audit / Monday ratings: N/A (no holdings).
+- Market: WebSearch returned no dated 11-17 futures or yield data (only older 2026 items: 10yr 5.15% on 09-24, 5.28% on 10-05, both far above the 4.75% new-buy gate). SPY closed 740.04 on 11-16 (-2.06%). NVDA earnings Wed 11-18 after close - binary event this week.
+- Cash-drag: staying 100% cash is a decision: risk-off tape (SPY -2.06% yesterday, -2.7% prior week), the yield gate is unconfirmed/likely breached, NVDA print pending, watchlist technicals months stale. Revisit after NVDA.
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-11-17",
+  "trades": []
+}
+```
