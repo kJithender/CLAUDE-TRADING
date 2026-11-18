@@ -1,5 +1,7 @@
 # Portfolio Snapshot
 
+**Last updated:** 2026-11-18 ~14:55 ET (close, Wednesday; fired before 16:00 ET - intraday-final figures; regular session, not half-day). Equity USD 98,860.71 = cash, 100% cash, NO positions, no orders. Today P/L 0.00 (0.00%). SPY 729.61 vs 729.97 prior = **-0.05%**. Since inception (SPY 745.665): Bull **-1.139%** vs SPY **-2.153%** = **+1.01pp**. HWM 100,322.08, drawdown 1.46% (breaker not near). No exits, no reconciliation needed. Control ACTIVE. Sector: Cash 100%. Race: Bull -1.14 | AGGRO -7.12 (stale, 2026-06-23) | SPY -2.15. Context: Nvidia beat (rev +103% y/y) but selloff continued, Dow weakest, S&P ~-0.5% midday ahead of Anthropic IPO pricing and Fed minutes; cash remains the right posture.
+
 **Last updated:** 2026-11-18 ~11:45 ET (midday, Wednesday) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. Sector: Cash 100%.
 
 **Last updated:** 2026-11-17 ~14:51 ET (close, Tuesday; run fired before 16:00 ET close — intraday-final figures). Equity USD 98,860.71 = cash, 100% cash, NO positions, no open orders. Today P/L 0.00 (0.00%). SPY 729.97 vs 738.71 prior = **-1.18%** today. Since inception (SPY 745.665): Bull **-1.139%** vs SPY **-2.104%** = **+0.965pp**. HWM 100,322.08, drawdown 1.46% (breaker not near). No exits, no reconciliation needed. Control ACTIVE. Sector: Cash 100%. Race: AGGRO stale (-7.12% as of 2026-06-23). Context: chip/AI-led selloff ahead of Nvidia earnings after close (S&P -1.9% Mon, 3rd straight down day); Fed hike priced in. Cash is the right posture.
