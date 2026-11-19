@@ -1,3 +1,5 @@
+**Last updated:** 2026-11-19 ~14:51 ET (close, Thursday; fired before 16:00 ET - intraday-final figures; regular session, not half-day). Equity USD 98,860.71 = cash, 100% cash, NO positions, no orders. Today P/L 0.00 (0.00%). SPY 719.38 vs 729.61 prior = **-1.40%**. Since inception (SPY 745.665): Bull **-1.139%** vs SPY **-3.525%** = **+2.39pp**. HWM 100,322.08, drawdown 1.46% (breaker not near). No exits, no reconciliation needed. Control ACTIVE. Sector: Cash 100%. Race: Bull -1.14 | AGGRO -7.12 (stale, 2026-06-23) | SPY -3.53. Context: S&P on track for 6th straight loss as Anthropic IPO debuted (+34% open, faded); Dow -1.7%, Nvidia fell despite beat. Cash remains right posture.
+
 **Last updated:** 2026-11-19 ~11:45 ET (midday, Thursday) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. Sector: Cash 100%.
 
 # Portfolio Snapshot
