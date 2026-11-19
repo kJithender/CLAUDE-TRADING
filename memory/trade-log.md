@@ -2137,3 +2137,6 @@ Market closed at run time (clock is_open=false, 08:35 ET; next_open 09:30 ET) - 
 
 ## 2026-11-19 midday
 Market open (11:42 ET). No positions, no open orders; nothing to cut/tighten, stop audit n/a. Equity USD 98,860.71 = last_equity, no shock. SPY ~730.9 (-0.05% vs prior close 730-ish). No trades. Control ACTIVE.
+
+## 2026-11-19 market-open (second run, 16:44 ET)
+Routine fired after the close (clock is_open=false, next_open 2026-11-20 09:30 ET). No trades placed. Today's plan (2026-11-19) is empty (no trades planned) and already journaled by the earlier 08:35 ET run; no EXECUTED line needed (nothing to execute). Account: 0 positions, 0 open orders - stop audit n/a, no exits to reconcile. Control ACTIVE, paper endpoint OK. Equity USD 98,860.71, 100% cash. No action.
