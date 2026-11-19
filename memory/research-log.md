@@ -2746,3 +2746,19 @@ No trades planned.
   "trades": []
 }
 ```
+
+## Pre-market 2026-11-19 (Thursday)
+
+- Guards: paper endpoint OK; prior lock (aggro-close 2026-11-19T01:46Z) expired, replaced then released; control ACTIVE, no NOTE/QUERY.
+- Account (live): equity USD 98,860.71 = cash, 0 positions, 0 open orders; last_equity same (no shock). HWM USD 100,322.08, drawdown 1.46% - breaker not triggered. Thesis contracts / stop audit: N/A (no holdings).
+- Market (WebSearch, dated 11-18 coverage; 11-19 not yet indexed): NVDA reported 11-18 after close... coverage says results/guidance beat, Nasdaq futures +0.4% to +1%, S&P futures +0.1% to +0.6% (~7390 per one report), NVDA ~+3% pre-market; Fed minutes and Anthropic IPO pricing pending. SPY closed 730.33 on 11-18 (4th straight down-ish session, below prior closes). Rebound is a single overnight bounce, unconfirmed; 10yr yield not verified fresh (last dated reading ~5.1%, above 4.75% new-buy gate).
+- Cash-drag: staying 100% cash is a decision: yield gate unconfirmed/likely breached, rebound unconfirmed after a multi-day selloff, NVDA just printed (chip entry needs confirmed post-earnings follow-through), watchlist technicals stale. Revisit once SPY holds a green close.
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-11-19",
+  "trades": []
+}
+```
