@@ -2134,3 +2134,6 @@ Market open (11:42 ET). No positions, no open orders; nothing to cut/tighten, st
 
 ## 2026-11-19 market-open
 Market closed at run time (clock is_open=false, 08:35 ET; next_open 09:30 ET) - routine fired early. No trades. Control ACTIVE, paper endpoint OK. Equity USD 98,860.71, 100% cash, no positions/orders, stop audit n/a.
+
+## 2026-11-19 midday
+Market open (11:42 ET). No positions, no open orders; nothing to cut/tighten, stop audit n/a. Equity USD 98,860.71 = last_equity, no shock. SPY ~730.9 (-0.05% vs prior close 730-ish). No trades. Control ACTIVE.
