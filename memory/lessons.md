@@ -310,3 +310,8 @@ Three separate WebSearch queries for "today's" 10yr Treasury yield returned inco
 ### 2026-11-16 (pre-market) — Memory drifted from broker state for ~12 weeks
 Memory ended 2026-08-21 while Alpaca shows four later exits (LLY 08-28, V 09-02, NVDA 09-14, COST 10-13) with no closed-trades/lessons entries, and many routines aborted on stale locks. Always reconcile against `orders all` at the start of a run; closed-trades post-mortems for those four exits were not written (details unavailable).
 - 2026-11-20 close: Friday watchdog fired - weekly-review.md newest entry 2026-08-21 (>7d stale); human notified.
+
+### 2026-11-20 (weekly review) — From Aggressive Bull / process
+- Aggressive Bull has produced no data since 2026-06-23 (missing Alpaca keys); no lesson to adopt, skip noted.
+- Exits since 08-17 (LLY, V, NVDA, COST) were backfilled from broker fills. Winners (V, COST) were held ~57 days; LLY peaked ~+6% then stopped at −1%. Proposal (not yet a rule): tighten trail to ~7% once +5% in profit.
+- Cash was 100% through an ~8% SPY drop; protection worked, but cash drag with no journaled gate analysis is not a strategy.

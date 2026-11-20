@@ -2779,3 +2779,8 @@ No trades planned.
   "trades": []
 }
 ```
+
+## 2026-11-20 weekly review research
+- SPY ~690.91 (live 15:37 ET) vs 754.27 on 11-13: ~−8.4% week (Alpaca bars). Prior week (11-09 to 11-13) S&P +~2.5% per LPL/AP; 10yr reportedly ~5.15% (tapeboard, 11-13) — above the 4.75% new-buy gate if accurate.
+- WebSearch could not find a post-close wrap for 11-16..20; macro drivers of this week's selloff unverified. Next pre-market should research them before any entry.
+- Watchlist purged (all catalysts from July/Aug expired). To rebuild 2026-11-23.

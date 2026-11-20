@@ -2,6 +2,49 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-11-20 (Friday; 5 trading days Mon Nov 16 – Fri Nov 20)
+
+- **Bull return (week):** 0.00% (equity USD 98,860.71 → USD 98,860.71, 100% cash, no positions all week)
+- **SPY return (week):** about −8.4% (754.27 on 11-13 → ~690.91 live at 15:37 ET 11-20; final close may differ slightly) — a severe selloff week
+- **Result:** Bull **beat** SPY by ~+8.4pp purely by being in cash
+- **Since inception (2026-07-01, USD 100,000 / SPY 745.665):** Bull −1.139% vs SPY ≈ −7.34% = **+6.2pp ahead**
+- **HWM:** USD 100,322.08 | drawdown −1.46% (breaker not triggered)
+- **Grade:** C+ (process) — rules were followed and cash protected capital, but the journal drifted ~12 weeks from broker state, four exits had no post-mortem, many routines aborted on stale locks, and the weekly review itself was skipped for ~13 weeks. The week's outperformance is luck of timing, not edge.
+
+### Trade statistics (8 closed trades since 2026-07-01 reset — small sample)
+| Metric | Value |
+|---|---|
+| Closed trades | 8: VST −2.18, VST −6.92, META −7.96, UNH −6.95, LLY −0.98, NVDA −4.63, V +6.86, COST +0.25 |
+| Win rate | 25% (2/8) |
+| Avg win / avg loss | +3.56% / −4.94% |
+| Profit factor (sum of % returns) | ≈0.24 |
+| Avg hold winners / losers | 57 days / ~24 days — winners held longer; no "hold losers" gap |
+| Ledger cross-check | trades.jsonl lacked the 4 exits after 08-17; **appended today from Alpaca fills**, closed-trades.md entries added (details thin). Counts now agree at 8. |
+| Repeated lesson | Stops/exits fire in chop; entries rarely follow through (6 of 8 closes at a loss), and 10% trails let slow winners (LLY) round-trip. |
+
+### Process audit
+- **Cash drag:** 100% cash all week and since ~10-13 (COST exit); target band 25–40%. Weekly slots 0/3 used. Selloff week makes it look wise, but there is no journaled entry-gate analysis — premarket just said "risk-off tape". Graded down.
+- **Sector exposure:** none (cash).
+- **Stop discipline:** nothing held, so n/a. Four exits (LLY, V, NVDA, COST) lacked same-run post-mortems — a violation, now backfilled.
+- **Control:** ACTIVE, no NOTE/QUERY. CROSS_BULL_LEARNING blank (not triggered).
+
+### What worked
+- Staying in cash through an ~8% weekly SPY drop; no shock/breaker issues; routines journaled daily this week.
+
+### What didn't
+- Memory drift and stale-lock aborts (Aug–Nov); no weekly reviews written; 3 straight months with no new entries despite watchlist.
+- 25% win rate with sub-1 profit factor; stale watchlist.
+
+### Adjustments
+- Watchlist is ~3 months stale (all catalysts expired) — **purged; rebuild at Monday pre-market** with fresh dated catalysts after the selloff (do not buy into the falling tape without 2-session confirmation).
+- Tighten trail on a position that reaches +5% (to ~7%) — proposed, to evaluate on next entries.
+- Every run: reconcile `orders all` vs trades.jsonl first.
+
+### From Aggressive Bull
+Aggressive Bull has no usable data: portfolio.md last updated 2026-06-23 and recent aggro-close runs aborted on missing Alpaca keys. Comparison skipped; cross-Bull counter not incremented (stays 0). Human should fix AGGRO credentials.
+
+---
+
 ## Week ending 2026-08-21 (Week 8 of the new track record — 5 active trading days: Mon Aug 17 – Fri Aug 21)
 
 - **Bull return (week, 2026-08-14 close USD 99,157.82 → 2026-08-21 close USD 99,473.71):** +0.3186%

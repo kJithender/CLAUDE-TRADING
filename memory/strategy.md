@@ -210,3 +210,7 @@ _Purged (carried from 2026-06-19 weekly review — still not near-term candidate
 - **PWR — technical gate still fails, roughly flat:** -10.15% vs 50-day. Q2 earnings 07-30 plus the transformer-capacity-expansion catalyst keep it off the stale-decoration purge list regardless.
 - **LLY — Novo Nordisk filed suit 2026-07-21 alleging misleading GLP-1 ad claims.** Litigation/PR headline, not a product or regulatory setback; explains today's -2.924% pullback alongside general profit-taking. Thesis (Medicare Bridge, Zepbound leadership, Retevmo, AtaiBeckley) unchanged; invalidation and review_by unchanged.
 - **Open positions:** LLY (since 2026-07-13, conviction A), V (since 2026-07-07, conviction A), UNH (since 2026-07-20, conviction A), META (since 2026-07-20, conviction B), VST (since 2026-07-21, conviction A). No trades planned 2026-07-28 (all watchlist candidates fail the technical gate, several worse than Monday). See `portfolio.md` for live conviction rating, thesis contract, and sector exposure.
+
+
+## 2026-11-20 watchlist hygiene
+All prior watchlist entries (NVDA, LLY, PWR, MSFT, COST, LRCX, SHOP etc.) have expired catalysts (>4 weeks, dated July/Aug) and are **purged as stale**. Rebuild at 2026-11-23 pre-market with date-added + catalyst expiry. Proposed: 7% trail once +5%.

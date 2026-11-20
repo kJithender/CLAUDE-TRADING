@@ -17,6 +17,37 @@ top. The weekly review computes win rate and average win/loss from this file._
 
 -->
 
+## 2026-10-13 — COST — WIN (scratch)
+- **Entry:** 7 shares @ USD 955.524 on 2026-08-17
+- **Exit:** USD 957.94 via discretionary market sell (trailing stop apparently cancelled first; no journal) 
+- **P/L:** +USD 16.9 (+0.253%)
+- **Held:** 57 days
+- **Why it ended / thesis:** details unavailable — reconstructed 2026-11-20 from Alpaca fills; memory had drifted ~12 weeks.
+- **Lesson:** a 57-day hold returned ~0 — dead money; a flat position past review_by should be exited deliberately and logged.
+
+## 2026-09-14 — NVDA — LOSS
+- **Entry:** 18 shares @ USD 219.89 on 2026-08-05
+- **Exit:** USD 209.71 (fill 09-14 pre-open, stop-type exit)
+- **P/L:** −USD 183 (−4.63%)
+- **Held:** 40 days
+- **Why it ended:** details unavailable (reconstructed from broker fills).
+- **Lesson:** see 2026-11-16 reconciliation lesson — write the post-mortem the run the exit is seen.
+
+## 2026-09-02 — V — WIN
+- **Entry:** 22 shares @ USD 355.058 on 2026-07-07
+- **Exit:** USD 379.43 via market sell
+- **P/L:** +USD 536 (+6.864%)
+- **Held:** 57 days
+- **Why it ended:** discretionary sale into strength (details unavailable; reconstructed from fills). First win of the track record.
+
+## 2026-08-28 — LLY — LOSS
+- **Entry:** 8 shares @ USD 1,174.356 on 2026-07-13
+- **Exit:** USD 1,162.91 via trailing stop (6 partial fills)
+- **P/L:** −USD 91.6 (−0.975%)
+- **Held:** 46 days
+- **Why it ended:** stop fired after trailing up from the +6% peak — gave back the gain (stop ratcheted to just below entry). Details otherwise unavailable.
+- **Lesson:** winners that peak +6% and round-trip to scratch suggest 10% trail is too loose for slow grinders; consider tightening to ~7% once +5%.
+
 ## 2026-08-17 — UNH — LOSS
 - **Entry:** 25 shares @ USD 422.28 on 2026-07-20
 - **Exit:** USD 392.94 via trailing stop (auto-executed 10:40:58 AM ET, order 225cb079, HWM USD 436.945, stop USD 393.2505)
