@@ -2140,3 +2140,6 @@ Market open (11:42 ET). No positions, no open orders; nothing to cut/tighten, st
 
 ## 2026-11-19 market-open (second run, 16:44 ET)
 Routine fired after the close (clock is_open=false, next_open 2026-11-20 09:30 ET). No trades placed. Today's plan (2026-11-19) is empty (no trades planned) and already journaled by the earlier 08:35 ET run; no EXECUTED line needed (nothing to execute). Account: 0 positions, 0 open orders - stop audit n/a, no exits to reconcile. Control ACTIVE, paper endpoint OK. Equity USD 98,860.71, 100% cash. No action.
+
+## 2026-11-20 market-open
+Market closed at run time (clock is_open=false, 08:35 ET; next_open 09:30 ET) - routine fired early. No trades placed. Control ACTIVE, paper endpoint OK. No account re-check performed (last known: 100% cash, no positions/orders, so stop audit n/a). No action.
