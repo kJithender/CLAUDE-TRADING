@@ -2143,3 +2143,5 @@ Routine fired after the close (clock is_open=false, next_open 2026-11-20 09:30 E
 
 ## 2026-11-20 market-open
 Market closed at run time (clock is_open=false, 08:35 ET; next_open 09:30 ET) - routine fired early. No trades placed. Control ACTIVE, paper endpoint OK. No account re-check performed (last known: 100% cash, no positions/orders, so stop audit n/a). No action.
+
+- 2026-11-20 ~11:45 ET midday: market open, no positions, no open orders, equity 98,860.71 = last_equity (no shock). Control ACTIVE. No action; stop audit n/a.
