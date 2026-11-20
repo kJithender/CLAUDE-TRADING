@@ -2762,3 +2762,20 @@ No trades planned.
   "trades": []
 }
 ```
+
+## Pre-market 2026-11-20 (Friday)
+
+- Guards: paper endpoint OK; prior lock (aggro-close 2026-11-20T01:42Z) expired, replaced then released; control ACTIVE, no NOTE/QUERY.
+- Account (live): equity USD 98,860.71 = cash, 0 positions, 0 open orders. HWM USD 100,322.08, drawdown 1.46% - breaker not triggered. Thesis contracts / stop audit: N/A (no holdings).
+- Market (WebSearch, 11-20 dated): S&P futures -0.38% to -0.50%, Nasdaq-100 futures -0.9% to -1.1% (TipRanks, Benzinga, Tradetank). Thursday 11-19 indexes fell >2% each (sixth straight S&P loss, longest streak of the year); biggest weekly loss in over a year pending. Anthropic IPO debut failed to lift sentiment.
+- Rates: 10yr closed 11-19 at ~5.04-5.08% (BondStats, Weekend Spread), above the 4.75% new-buy gate. December rate-hike pricing reported near-certain.
+- Cash-drag: staying 100% cash is a decision: yield gate breached, tape in an accelerating selloff with futures lower again, hike risk priced, no confirmed bottom. Revisit after a green close and yields below gate.
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-11-20",
+  "trades": []
+}
+```
