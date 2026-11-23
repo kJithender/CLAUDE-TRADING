@@ -1,3 +1,5 @@
+**Last updated:** 2026-11-23 ~07:20 ET (premarket, Monday) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. HWM drawdown 1.46%. Sector: Cash 100%.
+
 **Last updated:** 2026-11-20 ~14:51 ET (close, Friday; fired before 16:00 ET - intraday-final; regular session). Equity USD 98,860.71 = cash, 100% cash, NO positions, no orders. Today P/L 0.00 (0.00%). SPY 695.62 vs 719.38 prior = **-3.30%**. Since inception (SPY 745.665): Bull **-1.139%** vs SPY **-6.71%** = **+5.57pp**. HWM 100,322.08, drawdown 1.46% (breaker not near). No exits, no reconciliation needed. Control ACTIVE. Sector: Cash 100%. Race: Bull -1.14 | AGGRO -7.12 (stale, 2026-06-23) | SPY -6.71. Context: AI/chip-led selloff deepened after Anthropic IPO, VIX ~28, S&P near correction territory; cash remains right posture.
 
 **Last updated:** 2026-11-20 ~11:45 ET (midday, Friday) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. Sector: Cash 100%.

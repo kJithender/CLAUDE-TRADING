@@ -2784,3 +2784,20 @@ No trades planned.
 - SPY ~690.91 (live 15:37 ET) vs 754.27 on 11-13: ~−8.4% week (Alpaca bars). Prior week (11-09 to 11-13) S&P +~2.5% per LPL/AP; 10yr reportedly ~5.15% (tapeboard, 11-13) — above the 4.75% new-buy gate if accurate.
 - WebSearch could not find a post-close wrap for 11-16..20; macro drivers of this week's selloff unverified. Next pre-market should research them before any entry.
 - Watchlist purged (all catalysts from July/Aug expired). To rebuild 2026-11-23.
+
+## Pre-market 2026-11-23 (Monday)
+
+- Guards: paper endpoint OK; prior `_lock` was a stale malformed placeholder (aggro-midday, committed 2026-11-20, no real timestamps) - treated as expired, replaced, released at end. Control ACTIVE, no NOTE/QUERY.
+- Account (live): equity USD 98,860.71 = cash, 0 positions, 0 open orders (stop audit / thesis contracts / Monday A-B-C ratings: N/A). HWM USD 100,322.08, drawdown 1.46% - breaker not triggered.
+- Market (WebSearch): no dated 11-23 futures, yield, or week-ahead coverage found (results were from Apr-Oct 2026). Last verified: SPY ~690.91 on 11-20 (-8.4% week), 10yr ~5.04-5.08% on 11-19 (above 4.75% new-buy gate), December hike priced. Thanksgiving week (market closed 11-26, half-day 11-27).
+- Watchlist: still purged; rebuild deferred - no fresh vetted data available and gate is breached anyway. Rebuild once a green close and yields < gate are confirmed.
+- Cash-drag: staying 100% cash is a decision: yield gate breached, six-plus-session selloff with no confirmed bottom, hike risk, holiday-thin week, no vetted candidates.
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-11-23",
+  "trades": []
+}
+```
