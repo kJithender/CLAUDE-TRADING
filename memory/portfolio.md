@@ -14,6 +14,8 @@
 
 # Portfolio Snapshot
 
+**Last updated:** 2026-11-23 ~14:55 ET (close, Monday; fired before 16:00 ET - intraday-final figures; regular session). Equity USD 98,860.71 = cash, 100% cash, NO positions, no orders. Today P/L 0.00 (0.00%). SPY 720.65 vs 695.62 prior = **+3.60%**. Since inception (SPY 745.665): Bull **-1.139%** vs SPY **-3.35%** = **+2.21pp**. HWM 100,322.08, drawdown 1.46% (breaker not near). No exits, no reconciliation needed. Control ACTIVE. Sector: Cash 100%. Race: Bull -1.14 | AGGRO -7.12 (stale, 2026-06-23) | SPY -3.35. Context: violent rebound as Nvidia jumped ~30% on Jensen Huang's reinstatement as CEO; Nasdaq up ~6-7%, S&P ~+4-5% intraday, ending a 7-day losing streak. Bull in cash, so lagged the bounce; no thesis to test.
+
 **Last updated:** 2026-11-18 ~14:55 ET (close, Wednesday; fired before 16:00 ET - intraday-final figures; regular session, not half-day). Equity USD 98,860.71 = cash, 100% cash, NO positions, no orders. Today P/L 0.00 (0.00%). SPY 729.61 vs 729.97 prior = **-0.05%**. Since inception (SPY 745.665): Bull **-1.139%** vs SPY **-2.153%** = **+1.01pp**. HWM 100,322.08, drawdown 1.46% (breaker not near). No exits, no reconciliation needed. Control ACTIVE. Sector: Cash 100%. Race: Bull -1.14 | AGGRO -7.12 (stale, 2026-06-23) | SPY -2.15. Context: Nvidia beat (rev +103% y/y) but selloff continued, Dow weakest, S&P ~-0.5% midday ahead of Anthropic IPO pricing and Fed minutes; cash remains the right posture.
 
 **Last updated:** 2026-11-18 ~11:45 ET (midday, Wednesday) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. Sector: Cash 100%.
