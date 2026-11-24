@@ -2803,3 +2803,19 @@ No trades planned.
 ```
 
 EXECUTED: 2026-11-23 market-open - no trades (plan empty; clock is_open=false at 08:35 ET)
+
+## Pre-market 2026-11-24 (Tuesday)
+
+- Guards: paper endpoint OK; prior `_lock` was a malformed placeholder (literal "+8min", aggro-close) - treated as expired, replaced, released at end. Control ACTIVE, no NOTE/QUERY.
+- Account (live): equity USD 98,860.71 = cash, 0 positions, 0 orders (stop audit / thesis contracts: N/A; not Monday). HWM USD 100,322.08, drawdown 1.46% - breaker not triggered.
+- Market: WebSearch found no dated 11-24 futures coverage. SPY 11-23 close ~722.56 (Alpaca snapshot; +3.9% bounce off 11-20 low). 10yr 5.051% on 11-19 (Morningstar) - last verified, above 4.75% new-buy gate. No newer yield data found.
+- Cash-drag: staying 100% cash is a decision: yield gate breached (unverified improvement), one-day bounce unconfirmed after an ~8% drawdown, December hike priced, Thanksgiving week thin liquidity, watchlist still unbuilt.
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-11-24",
+  "trades": []
+}
+```
