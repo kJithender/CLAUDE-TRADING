@@ -2820,3 +2820,19 @@ No trades planned.
 }
 ```
 EXECUTED: 2026-11-24T13:36Z (no trades; plan empty, market closed at run time)
+
+## Pre-market 2026-11-25 (Wednesday)
+
+- Guards: paper endpoint OK; prior `_lock` was `{}` (free), replaced, released at end. Control ACTIVE, no NOTE/QUERY.
+- Account (live): equity USD 98,860.71 = cash, 0 positions, 0 orders (stop audit / thesis contracts: N/A; not Monday). HWM USD 100,322.08, drawdown 1.46% - breaker not triggered. Clock: market closed, opens 09:30 ET.
+- Market: WebSearch found no dated 11-25 futures or yield coverage (newest hit was Oct). SPY 11-24 close ~717.6 (Alpaca; -0.7% on day after Monday's bounce). 10yr last verified ~5.05% (11-19), above 4.75% new-buy gate; no newer data. Pre-Thanksgiving, market closed 11-26, half-day 11-27.
+- Cash-drag: staying 100% cash is a decision: yield gate unverified/breached, choppy post-selloff tape, December hike priced, holiday-thin liquidity, watchlist still unbuilt.
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-11-25",
+  "trades": []
+}
+```

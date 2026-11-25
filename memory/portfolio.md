@@ -1,3 +1,7 @@
+# Portfolio Snapshot
+
+**Last updated:** 2026-11-25 ~07:20 ET (premarket, Wednesday) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. HWM drawdown 1.46%. Sector: Cash 100%.
+
 **Last updated:** 2026-11-24 ~14:51 ET (close, Tuesday; fired before 16:00 ET - intraday-final; regular session). Equity USD 98,860.71 = cash, 100% cash, NO positions, no orders. Today P/L 0.00 (0.00%). SPY 717.13 vs 720.65 prior = **-0.49%**. Since inception (SPY 745.665): Bull **-1.139%** vs SPY **-3.83%** = **+2.69pp**. HWM 100,322.08, drawdown 1.46% (breaker not near). No exits, no reconciliation needed. Control ACTIVE. Sector: Cash 100%. Race: Bull -1.14 | AGGRO -7.12 (stale, 2026-06-23) | SPY -3.83. Context: Monday's Nvidia-led rally reversed, chips weak (SMH low -7%), Nasdaq ~-1.8%, AI-spend doubts and tariff/inflation worries; cash remains right posture.
 
 **Last updated:** 2026-11-24 ~07:20 ET (premarket, Tuesday) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. Sector: Cash 100%.
