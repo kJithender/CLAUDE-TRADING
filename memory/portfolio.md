@@ -1,5 +1,7 @@
 # Portfolio Snapshot
 
+**Last updated:** 2026-11-26 ~14:51 ET (close, Thanksgiving - market closed) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders, no exits to reconcile. Control ACTIVE. No performance.csv row (no session). Friday 11-27 is a half-day (close 13:00 ET).
+
 **Last updated:** 2026-11-26 ~11:45 ET (midday, market closed - Thanksgiving) - unchanged: 100% cash, no positions/orders.
 
 **Last updated:** 2026-11-26 ~07:20 ET (premarket, Thursday - Thanksgiving, market closed) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. HWM drawdown 1.46%. Sector: Cash 100%.
