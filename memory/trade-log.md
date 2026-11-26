@@ -2163,3 +2163,6 @@ Market open. 100% cash, no positions, no open orders. Equity 98860.71 = last_equ
 
 ## 2026-11-25 midday (11:42 ET)
 Control ACTIVE, market open, paper endpoint confirmed. No positions, no open orders; equity USD 98,860.71 = cash. No action.
+
+## 2026-11-26 market-open
+Market closed (Thanksgiving), no action. 100% cash, no positions/orders, control ACTIVE.
