@@ -2836,3 +2836,19 @@ No trades planned.
   "trades": []
 }
 ```
+
+## Pre-market 2026-11-26 (Thursday - Thanksgiving, US markets CLOSED)
+
+- Guards: paper endpoint OK; prior `_lock` (aggro-midday, expired 2026-11-26T00:46Z) stale, replaced, released at end. Control ACTIVE, no NOTE/QUERY. Clock: is_open=false, next open 2026-11-27 09:30 ET (half-day, closes 13:00).
+- Account (live): equity USD 98,860.71 = cash, 0 positions, 0 orders (stop audit / thesis contracts N/A; not Monday). HWM 100,322.08, drawdown 1.46% - breaker not triggered.
+- Market (11-25 data, no holiday-day quotes): 10yr ~4.82-4.85% (Kitco/Yahoo/CNBC, 11-25), down ~6-7bp but still above the 4.75% new-buy gate. Oct PCE 3.8% y/y, Q3 GDP 4.3%, December hike priced. Dow ended 11-25 positive, S&P/Nasdaq recovered from AI sell-off lows. Unverified outlet cites futures +0.6%.
+- Cash-drag: staying 100% cash is a decision: market closed today, yield gate still breached (4.83% vs 4.75%), hike priced, AI/chip selloff unresolved, half-day Friday thin liquidity, watchlist unbuilt.
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-11-26",
+  "trades": []
+}
+```
