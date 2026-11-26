@@ -1,5 +1,7 @@
 # Portfolio Snapshot
 
+**Last updated:** 2026-11-26 ~11:45 ET (midday, market closed - Thanksgiving) - unchanged: 100% cash, no positions/orders.
+
 **Last updated:** 2026-11-26 ~07:20 ET (premarket, Thursday - Thanksgiving, market closed) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. HWM drawdown 1.46%. Sector: Cash 100%.
 
 **Last updated:** 2026-11-25 ~14:51 ET (close, Wednesday; fired before 16:00 ET - intraday-final; regular session). Equity USD 98,860.71 = cash, 100% cash, NO positions, no orders. Today P/L 0.00 (0.00%). SPY 715.73 vs 717.13 prior = **-0.20%**. Since inception (SPY 745.665): Bull **-1.139%** vs SPY **-4.01%** = **+2.87pp**. HWM 100,322.08, drawdown 1.46% (breaker not near). No exits, no reconciliation needed. Control ACTIVE, no NOTE/QUERY. Sector: Cash 100%. Race: Bull -1.14 | AGGRO -7.12 (stale, 2026-06-23) | SPY -4.01. Context: Nasdaq plunged up to -4% intraday on hot core PCE, new tariff proposals (up to 35%) and AI/chip sell-off (NVDA -8%), VIX >30, then recovered much of it; Nasdaq in correction (-14% from ATH). Cash remains right posture. Thursday closed (Thanksgiving), Friday half-day.

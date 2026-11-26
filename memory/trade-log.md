@@ -2166,3 +2166,6 @@ Control ACTIVE, market open, paper endpoint confirmed. No positions, no open ord
 
 ## 2026-11-26 market-open
 Market closed (Thanksgiving), no action. 100% cash, no positions/orders, control ACTIVE.
+
+### 2026-11-26 (midday)
+Market closed (Thanksgiving), no action. Equity USD 98,860.71, 100% cash, no positions/orders.
