@@ -1,5 +1,7 @@
 # Portfolio Snapshot
 
+**Last updated:** 2026-11-27 ~14:50 ET (close, Friday HALF-DAY, market closed 13:00 ET) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders, no exits to reconcile. Today P/L 0.00%. SPY close 728.32 (+1.8% vs 11-25 715.73; -2.33% since inception anchor 745.665). Bull -1.139% vs SPY -2.33% = +1.19pp. HWM 100,322.08, drawdown 1.46% (breaker 10% not near). Sector: Cash 100%. Control ACTIVE. Market context: holiday-shortened session, SPY rebounded on the week. Aggro snapshot stale (last 2026-06-23, 92,876.82, -7.1%).
+
 **Last updated:** 2026-11-27 ~11:45 ET (midday) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. Shock check: flat vs last_equity.
 
 **Last updated:** (prev) 2026-11-27 ~07:20 ET (premarket, Friday half-day) - unchanged: equity USD 98,860.71, 100% cash, no positions/orders. HWM drawdown 1.46%. Sector: Cash 100%.
