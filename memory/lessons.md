@@ -315,3 +315,7 @@ Memory ended 2026-08-21 while Alpaca shows four later exits (LLY 08-28, V 09-02,
 - Aggressive Bull has produced no data since 2026-06-23 (missing Alpaca keys); no lesson to adopt, skip noted.
 - Exits since 08-17 (LLY, V, NVDA, COST) were backfilled from broker fills. Winners (V, COST) were held ~57 days; LLY peaked ~+6% then stopped at −1%. Proposal (not yet a rule): tighten trail to ~7% once +5% in profit.
 - Cash was 100% through an ~8% SPY drop; protection worked, but cash drag with no journaled gate analysis is not a strategy.
+
+## 2026-11-27 (weekly review)
+- Staying 100% cash is not a strategy: it beat SPY by 8.4pp in the 11-16 week and lagged by 4.7pp in the 11-23 week. A gate left "unverified" defaults to doing nothing; verify the 10yr from a dated source every premarket, and build the watchlist when told to.
+- From Aggressive Bull: no usable data (stale since June, broken credentials); nothing to learn or adopt. Counter 0.

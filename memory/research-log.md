@@ -2868,3 +2868,8 @@ No trades planned.
   "trades": []
 }
 ```
+
+## 2026-11-27 weekly review research
+- SPY closes (Alpaca): 11-20 695.62, 11-23 720.65, 11-24 717.13, 11-25 715.73, 11-27 728.32 -> week +4.70%.
+- WebSearch (11-27) found no dated Thanksgiving-week recaps; only an 11-13 AP note (S&P +2.5% that week). Macro drivers for 11-23..27 unverified. Last known 10yr ~4.83% (11-25), Oct PCE 3.8% y/y, Dec hike priced (from prior premarkets).
+- No held positions to research. No new leader names could be verified; watchlist rebuild deferred to Mon 11-30 premarket.

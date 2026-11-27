@@ -2,6 +2,40 @@
 
 _Written every Friday by the weekly-review routine. Newest at the top._
 
+## Week ending 2026-11-27 (Friday; Thanksgiving week, 4 trading days Mon Nov 23 – Fri Nov 27, Fri half-day)
+
+- **Bull return (week):** 0.00% (equity USD 98,860.71 flat, 100% cash, no positions all week)
+- **SPY return (week):** +4.70% (695.62 on 11-20 -> 728.32 on 11-27 close)
+- **Result:** Bull **lagged** SPY by ~4.70pp — the mirror image of last week's +8.4pp "win" from cash. Two-week net: Bull 0.00% vs SPY ~-4.0% (738.71->728.32 from 11-16 base is about -1.4%; from 11-13 754.27 about -3.4%).
+- **Since inception (2026-07-01, USD 100,000 / SPY 745.665):** Bull -1.139% vs SPY -2.326% = **+1.19pp ahead** (down from +6.2pp last week)
+- **HWM:** USD 100,322.08 | drawdown -1.46% (breaker not triggered)
+- **Grade:** C+ (process). Rules obeyed, journals daily, no stale-lock problems, nothing unprotected. But the Monday watchlist rebuild promised last week never happened, and the cash decision rests on an unverified yield gate.
+
+### Trade statistics (unchanged: 8 closed trades, no exits this week — small sample)
+Win rate 25% (2/8); avg win +3.56% / avg loss -4.94%; profit factor ~0.24 (sum of % returns); winners held ~57d vs losers ~24d. trades.jsonl (24 lines) and closed-trades.md still agree at 8 closed. Repeated lesson: entries rarely follow through and 10% trails give back slow winners.
+
+### Process audit
+- **Cash drag:** 100% cash, 0/3 weekly slots used, vs 25-40% target band. Journaled reason each day (10yr ~4.83% vs 4.75% new-buy gate, hike priced, thin holiday liquidity). Valid on paper, but the yield figure was last verified 11-25 and several premarkets found no fresh data. Cash was right last week and wrong this week; neither is edge.
+- **Sector exposure:** none (cash).
+- **Stop discipline:** nothing held; no violations; no unlogged exits.
+- **Control:** ACTIVE, no NOTE/QUERY. CROSS_BULL_LEARNING blank.
+
+### What worked
+- No lock aborts, daily journals, accurate broker/memory reconciliation. Capital preserved through the prior selloff.
+
+### What didn't
+- Missed a +4.7% rebound with no entry and no rebuilt watchlist; third straight week of zero pipeline work. This week's web research returned almost nothing dated 11-23..11-27 (search tool surfaced older years), so macro read is thin.
+
+### Adjustments
+- **Monday 11-30 premarket MUST build a dated watchlist** (name, date added, catalyst + expiry) — non-negotiable; first starter entries allowed only if 10yr is freshly verified <=4.75% and the name passes the SMA/valuation gates and earnings-window rule.
+- Require the premarket to pull the 10yr yield from a dated source (e.g. FRED/Treasury.gov via WebFetch) rather than letting the gate default to "unverified = no".
+- Cash is a position: if 100% cash persists a 4th week with a recovered tape, consider a staged half-size starter (<=12% sizing rule) once 2-session confirmation exists.
+
+### From Aggressive Bull
+No new data: memory/aggressive/ last updated ~2026-06-23, trade-log empty since; Aggro credentials still apparently broken. Comparison skipped; cross-Bull counter stays 0 (AGGRO not ahead by >5pp), CROSS_BULL_LEARNING stays blank.
+
+---
+
 ## Week ending 2026-11-20 (Friday; 5 trading days Mon Nov 16 – Fri Nov 20)
 
 - **Bull return (week):** 0.00% (equity USD 98,860.71 → USD 98,860.71, 100% cash, no positions all week)
