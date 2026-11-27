@@ -2852,3 +2852,19 @@ No trades planned.
   "trades": []
 }
 ```
+
+## Pre-market 2026-11-27 (Friday - half-day, closes 13:00 ET)
+
+- Guards: paper endpoint OK; no prior `_lock`; control ACTIVE, no NOTE/QUERY. Clock: is_open=false, opens 09:30 ET.
+- Account (live): equity USD 98,860.71 = cash, 0 positions, 0 orders (stop audit / thesis contracts N/A). HWM 100,322.08, drawdown 1.46% - breaker not triggered.
+- Market: WebSearch found no dated 11-27 futures/yield coverage (only prior-year Black Fridays). Last SPY close 716.7 (11-25). 10yr last verified ~4.83% (11-25), above 4.75% new-buy gate.
+- Cash-drag: staying 100% cash is a decision: half-day thin liquidity, yield gate unverified/breached, hike priced, AI/chip selloff unresolved, no fresh data to support an entry.
+
+No trades planned.
+
+```json
+{
+  "plan_date": "2026-11-27",
+  "trades": []
+}
+```
