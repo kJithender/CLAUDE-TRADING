@@ -2175,3 +2175,6 @@ Market closed (Thanksgiving), no action. Equity USD 98,860.71, 100% cash, no pos
 
 ## 2026-11-27 midday
 Market open (half-day). 100% cash, no positions, no orders; no cuts, no stop audit needed. No NOTE/QUERY in control.md.
+
+## 2026-11-28 midday
+Market closed at run time (clock is_open=false, 19:08 ET Fri 11-27; next_open 2026-11-30 09:30 ET — weekend). No positions, no open orders; stop audit n/a. No action.
